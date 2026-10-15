@@ -8,8 +8,8 @@ from pathlib import Path
 
 from busin.paths import DATA
 from busin.text import (
-    _load_chunk, _script_chunks, check_lines, counted_chunks, counted_messages, encode_message,
-    message_prose, script_messages, script_shows, text_cursors,
+    PACKED_CHUNKS, _load_chunk, _script_chunks, check_lines, counted_chunks, counted_messages,
+    encode_message, message_prose, script_messages, script_shows, text_cursors,
 )
 
 
@@ -65,9 +65,7 @@ def init_text(chunk: int, align: str | None = None, root: Path | None = None) ->
         for at, _end, words in counted_messages(data):
             source = message_prose(words, align)
             if any(source):
-                messages.append({
-                    "offset": f"0x{at:04X}", "show": "screen", "source": "\n".join(source), "text": None,
-                })
+                messages.append(_entry(chunk, at, "screen", source))
         skipped = []
     else:
         align = align or "left"
@@ -80,61 +78,90 @@ def init_text(chunk: int, align: str | None = None, root: Path | None = None) ->
         for at, words in found:
             source = message_prose(words[:-1], align)
             if any(source):
-                messages.append({
-                    "offset": f"0x{at:04X}", "show": shows[at], "source": "\n".join(source), "text": None,
-                })
+                messages.append(_entry(chunk, at, shows[at], source))
         skipped = [f"0x{at:04X}" for at in unread]
     doc = {"chunk": chunk, "base": f"0x{start * 2048:X}", "align": align, "messages": messages}
     _save(chunk, doc, root)
     return path, len(messages), skipped
 
 
+def _entry(chunk: int, at: int, show: str, source: list[str]) -> dict:
+    """One message. Packed chunks omit the disc address; packing computes the position."""
+    item = {"show": show, "source": "\n".join(source), "text": None}
+    if chunk not in PACKED_CHUNKS:
+        item = {"offset": f"0x{at:04X}", **item}
+    return item
+
+
+def _by_disc(chunk: int, doc: dict) -> dict[int, dict]:
+    """Disc address to message. Packed chunks are aligned in file order."""
+    if chunk not in PACKED_CHUNKS:
+        return {int(item["offset"], 16): item for item in doc["messages"]}
+    disc = list(_disc_words(chunk))
+    if len(disc) != len(doc["messages"]):
+        raise ValueError(f"chunk {chunk} does not match the disc")
+    return {at: item for at, item in zip(disc, doc["messages"])}
+
+
 def apply_text(chunk: int, files: list[str], root: Path | None = None) -> None:
-    """Merge translation fragments into one chunk. Filled lines are left alone."""
+    """Merge translation fragments into one chunk. Filled lines are left alone.
+
+    A fragment names a line by its disc address. Packed chunks do not store that address.
+    """
     doc = _load(chunk, root)
-    index = {int(item["offset"], 16): item for item in doc["messages"]}
+    index = _by_disc(chunk, doc)
     for name in files:
         frag = json.loads(Path(name).read_text(encoding="utf-8"))
         if frag.get("chunk") != chunk:
             raise ValueError(f"{name} is chunk {frag.get('chunk')}")
         for message in frag["messages"]:
-            item = index.get(int(message["offset"], 16))
+            label = message["offset"]
+            item = index.get(int(label, 16))
             if item is None:
-                raise ValueError(f"{name} offset {message['offset']} is not in chunk {chunk}")
+                raise ValueError(f"{name} offset {label} is not in chunk {chunk}")
             if item["text"] is not None:
-                raise ValueError(f"chunk {chunk} {item['offset']} is already translated")
+                raise ValueError(f"chunk {chunk} {label} is already translated")
             text = message.get("text")
             if type(text) is not list or not text or any(type(line) is not str for line in text):
-                raise ValueError(f"{name} {message['offset']} text is not a list of strings")
+                raise ValueError(f"{name} {label} text is not a list of strings")
             item["text"] = text
     _save(chunk, doc, root)
 
 
 def check_text(chunk: int, offsets: list[str] | None = None, root: Path | None = None) -> None:
-    """Check translated lines against the disc. Untranslated lines are skipped."""
+    """Check translated lines against the disc. Untranslated lines are skipped.
+
+    Packed chunks are aligned in order. An offset argument is the disc address.
+    """
     doc = _load(chunk, root)
     disc = _disc_words(chunk)
     want = None if not offsets else {int(item, 16) for item in offsets}
     errors = []
     narration = chunk in counted_chunks()
-    for item in doc["messages"]:
+    if chunk in PACKED_CHUNKS:
+        pairs = list(disc.items())
+        if len(pairs) != len(doc["messages"]):
+            raise ValueError(f"chunk {chunk} does not match the disc")
+        rows = [(at, words, item) for (at, words), item in zip(pairs, doc["messages"])]
+    else:
+        rows = [(int(item["offset"], 16), disc.get(int(item["offset"], 16)), item) for item in doc["messages"]]
+    for at, original, item in rows:
         if item["text"] is None:
             continue
-        at = int(item["offset"], 16)
+        label = f"0x{at:04X}"
         if want is not None and at not in want:
             continue
-        original = disc.get(at)
         if original is None:
-            errors.append(f"{item['offset']}: is not on the disc")
+            errors.append(f"{label}: is not on the disc")
             continue
         if message_prose(original, doc["align"]) != item["source"].split("\n"):
-            errors.append(f"{item['offset']}: source does not match the disc")
+            errors.append(f"{label}: source does not match the disc")
             continue
         try:
             check_lines(original, item["text"], doc["align"], item["show"], narration)
             encode_message(original, item["text"], doc["align"], lambda char: 0x4001)
         except ValueError as error:
-            errors.append(f"{item['offset']}: {error}")
+            errors.append(f"{label}: {error}")
     if errors:
         raise ValueError("\n".join(errors))
 

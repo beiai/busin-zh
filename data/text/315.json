@@ -4,7 +4,6 @@
   "align": "left",
   "messages": [
     {
-      "offset": "0x0E80",
       "show": "window",
       "source": "ゾンビ\n<FB03>モ…モシ…モシモシ……？<FB02>",
       "text": [
@@ -13,7 +12,6 @@
       ]
     },
     {
-      "offset": "0x0EAE",
       "show": "screen",
       "source": "ゾンビが話し掛けて来た<BREAK>",
       "text": [
@@ -21,7 +19,6 @@
       ]
     },
     {
-      "offset": "0x0EC8",
       "show": "screen",
       "source": "応対しますか？\n\n用件を聞く\n無視する\n",
       "text": [
@@ -33,7 +30,6 @@
       ]
     },
     {
-      "offset": "0x0EF8",
       "show": "window",
       "source": "ゾンビ\n<FB03>ク…クスリ…クスリヤ…\nゾンビング…ファーマシー……<FB02>",
       "text": [
@@ -43,7 +39,6 @@
       ]
     },
     {
-      "offset": "0x0F48",
       "show": "window",
       "source": "ゾンビ\n<FB03>クスリ……ウル…ウリマス…\nウラセテ…イタダキマス…<FB02>",
       "text": [
@@ -53,7 +48,6 @@
       ]
     },
     {
-      "offset": "0x0F98",
       "show": "window",
       "source": "ゾンビ\n<FB03>クスリ…カエ…カッテ…\nカッテ…イタダケマセンカ…？<FB02>",
       "text": [
@@ -63,7 +57,6 @@
       ]
     },
     {
-      "offset": "0x0FE8",
       "show": "screen",
       "source": "薬を買いますか？\n\nは い\nいいえ\n",
       "text": [
@@ -75,7 +68,6 @@
       ]
     },
     {
-      "offset": "0x1012",
       "show": "window",
       "source": "ゾンビ\n<FB03>ク…クスリ…クスリヤ…\nゾンビング…ファーマシー……<FB02>",
       "text": [
@@ -85,7 +77,6 @@
       ]
     },
     {
-      "offset": "0x1062",
       "show": "window",
       "source": "ゾンビ\n<FB03>クスリ……ウル…ウリマス…\nウラセテ…イタダキマス…<FB02>",
       "text": [
@@ -95,7 +86,6 @@
       ]
     },
     {
-      "offset": "0x10B2",
       "show": "window",
       "source": "ゾンビ\n<FB03>クスリ…カエ…カッテ…\nカッテ…イタダケマセンカ…？<FB02>",
       "text": [
@@ -105,7 +95,6 @@
       ]
     },
     {
-      "offset": "0x1102",
       "show": "screen",
       "source": "薬を買いますか？\n\nは い\nいいえ\n",
       "text": [
@@ -117,7 +106,6 @@
       ]
     },
     {
-      "offset": "0x112C",
       "show": "screen",
       "source": "無視して通り過ぎる\nことにした。<BREAK>",
       "text": [
@@ -126,7 +114,6 @@
       ]
     },
     {
-      "offset": "0x1150",
       "show": "window",
       "source": "ゾンビ\n<FB03>・・・・・・・・・・・・・・・\n・・・・・・・ヴァァ・・・・・<FB02>",
       "text": [
@@ -136,7 +123,6 @@
       ]
     },
     {
-      "offset": "0x11A4",
       "show": "screen",
       "source": "ゾンビング ファーマシー<STYLE:0>\n\n転移の薬    500ゴールド\n封傷の薬    250ゴールド\n解毒の薬    250ゴールド\n快癒の薬  20000ゴールド\n還魂の薬 100000ゴールド\nやめる\n",
       "text": [
@@ -152,7 +138,6 @@
       ]
     },
     {
-      "offset": "0x1292",
       "show": "window",
       "source": "ゾンビ\n<FB03>マタ…コイ…キテ…クダサイ…<FB02>",
       "text": [
@@ -161,7 +146,6 @@
       ]
     },
     {
-      "offset": "0x12C2",
       "show": "screen",
       "source": "ゾンビに<FB01>500ゴールド<FB00>支払った。<BREAK>",
       "text": [
@@ -169,7 +153,6 @@
       ]
     },
     {
-      "offset": "0x12EA",
       "show": "screen",
       "source": "<FB01>転移の薬<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -177,7 +160,6 @@
       ]
     },
     {
-      "offset": "0x1308",
       "show": "window",
       "source": "ゾンビ\n<FB03>ハイ…コレ…転移ノ薬…\n街帰レル…トッテモウレシイ…<FB02>",
       "text": [
@@ -187,7 +169,6 @@
       ]
     },
     {
-      "offset": "0x1358",
       "show": "window",
       "source": "ゾンビ\n<FB03>オカネ…タリナイ…ビンボーメ…\nアッチイケ…オトトイ…キヤガレ…<FB02>",
       "text": [
@@ -197,7 +178,6 @@
       ]
     },
     {
-      "offset": "0x13AE",
       "show": "screen",
       "source": "ゾンビに<FB01>250ゴールド<FB00>支払った。<BREAK>",
       "text": [
@@ -205,7 +185,6 @@
       ]
     },
     {
-      "offset": "0x13D6",
       "show": "screen",
       "source": "<FB01>封傷の薬<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -213,7 +192,6 @@
       ]
     },
     {
-      "offset": "0x13F4",
       "show": "window",
       "source": "ゾンビ\n<FB03>ハイ…コレ…封傷ノ薬…\n元気ニナル…モリモリモリ……<FB02>",
       "text": [
@@ -223,7 +201,6 @@
       ]
     },
     {
-      "offset": "0x1444",
       "show": "window",
       "source": "ゾンビ\n<FB03>オカネ…タリナイ…ビンボーメ…\nアッチイケ…オトトイ…キヤガレ…<FB02>",
       "text": [
@@ -233,7 +210,6 @@
       ]
     },
     {
-      "offset": "0x149A",
       "show": "screen",
       "source": "ゾンビに<FB01>250ゴールド<FB00>支払った。<BREAK>",
       "text": [
@@ -241,7 +217,6 @@
       ]
     },
     {
-      "offset": "0x14C2",
       "show": "screen",
       "source": "<FB01>解毒の薬<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -249,7 +224,6 @@
       ]
     },
     {
-      "offset": "0x14E0",
       "show": "window",
       "source": "ゾンビ\n<FB03>ハイ…コレ…解毒ノ薬…\n毒ガ消エル…アースッキリ……<FB02>",
       "text": [
@@ -259,7 +233,6 @@
       ]
     },
     {
-      "offset": "0x1530",
       "show": "window",
       "source": "ゾンビ\n<FB03>オカネ…タリナイ…ビンボーメ…\nアッチイケ…オトトイ…キヤガレ…<FB02>",
       "text": [
@@ -269,7 +242,6 @@
       ]
     },
     {
-      "offset": "0x1586",
       "show": "screen",
       "source": "ゾンビに<FB01>20000ゴールド<FB00>支払った。<BREAK>",
       "text": [
@@ -277,7 +249,6 @@
       ]
     },
     {
-      "offset": "0x15B2",
       "show": "screen",
       "source": "<FB01>快癒の薬<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -285,7 +256,6 @@
       ]
     },
     {
-      "offset": "0x15D0",
       "show": "window",
       "source": "ゾンビ\n<FB03>ハイ…コレ…快癒ノ薬…\n健康ニナル…スコヤカー…<FB02>",
       "text": [
@@ -295,7 +265,6 @@
       ]
     },
     {
-      "offset": "0x161E",
       "show": "window",
       "source": "ゾンビ\n<FB03>オカネ…タリナイ…ビンボーメ…\nアッチイケ…オトトイ…キヤガレ…<FB02>",
       "text": [
@@ -305,7 +274,6 @@
       ]
     },
     {
-      "offset": "0x1674",
       "show": "screen",
       "source": "ゾンビに<FB01>100000ゴールド<FB00>\n支払った。<BREAK>",
       "text": [
@@ -314,7 +282,6 @@
       ]
     },
     {
-      "offset": "0x16A4",
       "show": "screen",
       "source": "<FB01>還魂の薬<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -322,7 +289,6 @@
       ]
     },
     {
-      "offset": "0x16C2",
       "show": "window",
       "source": "ゾンビ\n<FB03>ハイ…コレ…還魂ノ薬…\n生キカエル…フッカツー",
       "text": [
@@ -332,7 +298,6 @@
       ]
     },
     {
-      "offset": "0x170C",
       "show": "window",
       "source": "ゾンビ\n<FB03>オカネ…タリナイ…ビンボーメ…\nアッチイケ…オトトイ…キヤガレ…<FB02>",
       "text": [
@@ -342,7 +307,6 @@
       ]
     },
     {
-      "offset": "0x1762",
       "show": "window",
       "source": "ゾンビ\n<FB03>アナタ…ニモツ…イッパイ…イッパイ\nナニカ…ポイ…シテ…<FB02>",
       "text": [
@@ -352,7 +316,6 @@
       ]
     },
     {
-      "offset": "0x17B4",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -364,7 +327,6 @@
       ]
     },
     {
-      "offset": "0x17DE",
       "show": "screen",
       "source": "ゾンビに<FB01>500ゴールド<FB00>支払った。<BREAK>",
       "text": [
@@ -372,7 +334,6 @@
       ]
     },
     {
-      "offset": "0x1806",
       "show": "screen",
       "source": "<FB01>転移の薬<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -380,7 +341,6 @@
       ]
     },
     {
-      "offset": "0x1824",
       "show": "window",
       "source": "ゾンビ\n<FB03>ハイ…コレ…転移ノ薬…\n街帰レル…トッテモウレシイ…<FB02>",
       "text": [
@@ -390,7 +350,6 @@
       ]
     },
     {
-      "offset": "0x1874",
       "show": "window",
       "source": "ゾンビ\n<FB03>アナタ…ニモツ…イッパイ…イッパイ\nナニカ…ポイ…シテ…<FB02>",
       "text": [
@@ -400,7 +359,6 @@
       ]
     },
     {
-      "offset": "0x18C6",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -412,7 +370,6 @@
       ]
     },
     {
-      "offset": "0x18F0",
       "show": "screen",
       "source": "ゾンビに<FB01>250ゴールド<FB00>支払った。<BREAK>",
       "text": [
@@ -420,7 +377,6 @@
       ]
     },
     {
-      "offset": "0x1918",
       "show": "screen",
       "source": "<FB01>封傷の薬<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -428,7 +384,6 @@
       ]
     },
     {
-      "offset": "0x1936",
       "show": "window",
       "source": "ゾンビ\n<FB03>ハイ…コレ…封傷ノ薬…\n元気ニナル…モリモリモリ……<FB02>",
       "text": [
@@ -438,7 +393,6 @@
       ]
     },
     {
-      "offset": "0x1986",
       "show": "window",
       "source": "ゾンビ\n<FB03>アナタ…ニモツ…イッパイ…イッパイ\nナニカ…ポイ…シテ…<FB02>",
       "text": [
@@ -448,7 +402,6 @@
       ]
     },
     {
-      "offset": "0x19D8",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -460,7 +413,6 @@
       ]
     },
     {
-      "offset": "0x1A02",
       "show": "screen",
       "source": "ゾンビに<FB01>250ゴールド<FB00>支払った。<BREAK>",
       "text": [
@@ -468,7 +420,6 @@
       ]
     },
     {
-      "offset": "0x1A2A",
       "show": "screen",
       "source": "<FB01>解毒の薬<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -476,7 +427,6 @@
       ]
     },
     {
-      "offset": "0x1A48",
       "show": "window",
       "source": "ゾンビ\n<FB03>ハイ…コレ…解毒ノ薬…\n毒ガ消エル…アースッキリ……<FB02>",
       "text": [
@@ -486,7 +436,6 @@
       ]
     },
     {
-      "offset": "0x1A98",
       "show": "window",
       "source": "ゾンビ\n<FB03>アナタ…ニモツ…イッパイ…イッパイ\nナニカ…ポイ…シテ…<FB02>",
       "text": [
@@ -496,7 +445,6 @@
       ]
     },
     {
-      "offset": "0x1AEA",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -508,7 +456,6 @@
       ]
     },
     {
-      "offset": "0x1B14",
       "show": "screen",
       "source": "ゾンビに<FB01>20000ゴールド<FB00>支払った。<BREAK>",
       "text": [
@@ -516,7 +463,6 @@
       ]
     },
     {
-      "offset": "0x1B40",
       "show": "screen",
       "source": "<FB01>快癒の薬<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -524,7 +470,6 @@
       ]
     },
     {
-      "offset": "0x1B5E",
       "show": "window",
       "source": "ゾンビ\n<FB03>ハイ…コレ…快癒ノ薬…\n健康ニナル…スコヤカー…<FB02>",
       "text": [
@@ -534,7 +479,6 @@
       ]
     },
     {
-      "offset": "0x1BAC",
       "show": "window",
       "source": "ゾンビ\n<FB03>アナタ…ニモツ…イッパイ…イッパイ\nナニカ…ポイ…シテ…<FB02>",
       "text": [
@@ -544,7 +488,6 @@
       ]
     },
     {
-      "offset": "0x1BFE",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -556,7 +499,6 @@
       ]
     },
     {
-      "offset": "0x1C28",
       "show": "screen",
       "source": "ゾンビに<FB01>100000ゴールド<FB00>\n支払った。<BREAK>",
       "text": [
@@ -565,7 +507,6 @@
       ]
     },
     {
-      "offset": "0x1C58",
       "show": "screen",
       "source": "<FB01>還魂の薬<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -573,7 +514,6 @@
       ]
     },
     {
-      "offset": "0x1C76",
       "show": "window",
       "source": "ゾンビ\n<FB03>ハイ…コレ…還魂ノ薬…\n生キカエル…フッカツー",
       "text": [
@@ -583,7 +523,6 @@
       ]
     },
     {
-      "offset": "0x1CC0",
       "show": "window",
       "source": "ゾンビ\n<FB03>ニモツ…オオスギ…ダメ…ダメヨ…<FB02>",
       "text": [
@@ -592,7 +531,6 @@
       ]
     },
     {
-      "offset": "0x1CF2",
       "show": "screen",
       "source": "他にも何か買いますか？\n\nは い\nいいえ\n",
       "text": [
@@ -604,7 +542,6 @@
       ]
     },
     {
-      "offset": "0x1D22",
       "show": "window",
       "source": "露天商「おぉっ！\n久しぶりだねぇ！」",
       "text": [
@@ -613,7 +550,6 @@
       ]
     },
     {
-      "offset": "0x1D4A",
       "show": "window",
       "source": "露天商「まさか、こんな所で会うとは\n思ってもみなかったよ」",
       "text": [
@@ -622,7 +558,6 @@
       ]
     },
     {
-      "offset": "0x1D88",
       "show": "window",
       "source": "露天商「俺は最近ちょくちょく、\nこの辺まで商売しに\n来てるんだ」",
       "text": [
@@ -632,7 +567,6 @@
       ]
     },
     {
-      "offset": "0x1DCE",
       "show": "window",
       "source": "露天商「どうだい、\n何か見ていくかい？」",
       "text": [
@@ -641,7 +575,6 @@
       ]
     },
     {
-      "offset": "0x1DFA",
       "show": "screen",
       "source": "買い物をしますか？\n\nは い\nいいえ\n",
       "text": [
@@ -653,7 +586,6 @@
       ]
     },
     {
-      "offset": "0x1E26",
       "show": "window",
       "source": "露天商「んじゃ、まあ\nまた見かけたらよろしくな！」",
       "text": [
@@ -662,7 +594,6 @@
       ]
     },
     {
-      "offset": "0x1E5C",
       "show": "window",
       "source": "露天商「んじゃ、まあ\nまた見かけたらよろしくな！」",
       "text": [
@@ -671,7 +602,6 @@
       ]
     },
     {
-      "offset": "0x1E92",
       "show": "window",
       "source": "露天商「おっ！\nまた会ったな！」",
       "text": [
@@ -680,7 +610,6 @@
       ]
     },
     {
-      "offset": "0x1EB6",
       "show": "window",
       "source": "露天商「どうだい、\n何か見ていくかい？」",
       "text": [
@@ -689,7 +618,6 @@
       ]
     },
     {
-      "offset": "0x1EE2",
       "show": "screen",
       "source": "買い物をしますか？\n\nは い\nいいえ\n",
       "text": [
@@ -701,7 +629,6 @@
       ]
     },
     {
-      "offset": "0x1F0E",
       "show": "window",
       "source": "露天商「んじゃ、まあ\nまた見かけたらよろしくな！」",
       "text": [
@@ -710,7 +637,6 @@
       ]
     },
     {
-      "offset": "0x1F44",
       "show": "window",
       "source": "露天商「んじゃ、まあ\nまた見かけたらよろしくな！」",
       "text": [
@@ -719,7 +645,6 @@
       ]
     },
     {
-      "offset": "0x1F7A",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>イラッシャイマシ…\nホテル・ラヴ<STYLE:1>♥<STYLE:3>コープス<STYLE:0>へヨウコソ…",
       "text": [
@@ -729,7 +654,6 @@
       ]
     },
     {
-      "offset": "0x1FDC",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>休憩ハ、二時間3000ゴールド\n宿泊ハ、ヤッテナイ",
       "text": [
@@ -739,7 +663,6 @@
       ]
     },
     {
-      "offset": "0x2036",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>宿泊ナイカラ、レベルアップ無理\nダケド、ピンピンヨ",
       "text": [
@@ -749,7 +672,6 @@
       ]
     },
     {
-      "offset": "0x2090",
       "show": "screen",
       "source": "休憩していきますか？\n\nは い\nいいえ\n",
       "text": [
@@ -761,7 +683,6 @@
       ]
     },
     {
-      "offset": "0x20BE",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>ソ…添イ寝…シテホシイ…？",
       "text": [
@@ -770,7 +691,6 @@
       ]
     },
     {
-      "offset": "0x20F8",
       "show": "screen",
       "source": "添い寝して欲しいですか？\n\nは い\nいいえ\n",
       "text": [
@@ -782,7 +702,6 @@
       ]
     },
     {
-      "offset": "0x212A",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>マ…マタ今度…待ッテルワ…",
       "text": [
@@ -791,7 +710,6 @@
       ]
     },
     {
-      "offset": "0x2164",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>ソンナ…ダ…ダメヨ……",
       "text": [
@@ -800,7 +718,6 @@
       ]
     },
     {
-      "offset": "0x219C",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>エ…エッチ…",
       "text": [
@@ -809,7 +726,6 @@
       ]
     },
     {
-      "offset": "0x21CE",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>3000ゴールド…\nモラットイタカラ…",
       "text": [
@@ -819,7 +735,6 @@
       ]
     },
     {
-      "offset": "0x2222",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>マタ…キテネ…",
       "text": [
@@ -828,7 +743,6 @@
       ]
     },
     {
-      "offset": "0x2256",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>ホッ…",
       "text": [
@@ -837,7 +751,6 @@
       ]
     },
     {
-      "offset": "0x2286",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>3000ゴールド…\nモラットイタカラ…",
       "text": [
@@ -847,7 +760,6 @@
       ]
     },
     {
-      "offset": "0x22DA",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>マタ…キテネ…",
       "text": [
@@ -856,7 +768,6 @@
       ]
     },
     {
-      "offset": "0x230E",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>イラッシャイマシ…\nホテル・ラヴ<STYLE:1>♥<STYLE:3>コープス<STYLE:0>へヨウコソ…",
       "text": [
@@ -866,7 +777,6 @@
       ]
     },
     {
-      "offset": "0x2370",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>休憩ハ、二時間3000ゴールド\n宿泊ハ、ヤッテナイ",
       "text": [
@@ -876,7 +786,6 @@
       ]
     },
     {
-      "offset": "0x23CA",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>宿泊ナイカラ、レベルアップ無理\nダケド、ピンピンヨ",
       "text": [
@@ -886,7 +795,6 @@
       ]
     },
     {
-      "offset": "0x2424",
       "show": "screen",
       "source": "休憩していきますか？\n\nは い\nいいえ\n",
       "text": [
@@ -898,7 +806,6 @@
       ]
     },
     {
-      "offset": "0x2452",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>ゴユックリ……",
       "text": [
@@ -907,7 +814,6 @@
       ]
     },
     {
-      "offset": "0x2486",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>3000ゴールド…\nモラットイタカラ…",
       "text": [
@@ -917,7 +823,6 @@
       ]
     },
     {
-      "offset": "0x24DA",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>マタ…キテネ…",
       "text": [
@@ -926,7 +831,6 @@
       ]
     },
     {
-      "offset": "0x250E",
       "show": "window",
       "source": "ロッティングコープス\n<FB03>マ…マタ今度…待ッテルワ…",
       "text": [

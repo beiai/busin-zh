@@ -562,7 +562,33 @@ def script_messages(data: bytes, origin: int) -> tuple[list[tuple[int, list[int]
 
 # Operand readers. Signed u16, u16, and the two u32 readers. None sits in a delay slot.
 _READERS = {0x28B3F8: ("s16", 2), 0x28B428: ("u16", 2), 0x28B450: ("u32", 4), 0x28B4A0: ("u32", 4)}
-PACKED_CHUNKS = (282, 285)
+# Placed in order while packing. The translation does not store those positions.
+# 293, 297, 301 and 309 fit, but packing them frees no sector, so they stay at the disc address.
+# Narration chunks 265–272 keep their counted header, so they stay padded.
+PACKED_CHUNKS = (282, 285, 291, 292, 296, 298, 299, 302, 306, 308, 310, 312, 313, 314, 315, 316)
+# Packed length, sector count, and screen lines.
+PACKED_LAYOUT = {
+    282: (0x3E26, 8, 80),
+    285: (0x1014E, 33, 337),
+    291: (0x124C2, 37, 600),
+    292: (0x96F6, 19, 174),
+    296: (0x11044, 35, 401),
+    298: (0x14E36, 42, 393),
+    299: (0x5924, 12, 75),
+    302: (0xCE6E, 26, 630),
+    306: (0x9810, 20, 245),
+    308: (0x769E, 15, 234),
+    310: (0x6BAC, 14, 90),
+    312: (0x1DD4, 4, 37),
+    313: (0x1DD4, 4, 37),
+    314: (0x1DD4, 4, 37),
+    315: (0x1DD4, 4, 37),
+    316: (0x1DD4, 4, 37),
+}
+# Once every line has text, pack the chunk and drop the disc address from the file.
+AWAITING_PACK = (283, 286, 287, 288, 289, 290, 300, 304, 305)
+# A script number matches a message start, so this chunk cannot be moved even when it is translated.
+UNMOVABLE_PACK = (294,)
 
 
 def _elf():
@@ -951,8 +977,20 @@ def script_self_test() -> None:
         raise AssertionError("tavern pointer 0x15A2 is missing")
     if _unclassified(data, found, refs) != 0:
         raise AssertionError("chunk 282 has a text pointer outside opcodes 4 and 11")
-    _assert_packed(282, cursors[282], 0x3E28, 8, 80)
-    _assert_packed(285, cursors[285], 0x1014E, 33, 337)
+    if tuple(PACKED_LAYOUT) != PACKED_CHUNKS:
+        raise AssertionError("packed layout is not the packed chunk list")
+    if set(AWAITING_PACK) & set(PACKED_CHUNKS) or set(UNMOVABLE_PACK) & set(PACKED_CHUNKS):
+        raise AssertionError("a chunk is both packed and waiting")
+    for chunk, (end, sectors, screens) in PACKED_LAYOUT.items():
+        _assert_packed(chunk, cursors[chunk], end, sectors, screens)
+    for chunk in AWAITING_PACK:
+        waiting = json.loads((DATA / "text" / f"{chunk}.json").read_text(encoding="utf-8"))
+        if waiting["messages"] and all(item.get("text") for item in waiting["messages"]):
+            raise AssertionError(f"chunk {chunk} is translated and still not packed")
+    for chunk in UNMOVABLE_PACK:
+        held = json.loads((DATA / "text" / f"{chunk}.json").read_text(encoding="utf-8"))
+        if held["messages"] and all(item.get("text") for item in held["messages"]):
+            raise AssertionError(f"chunk {chunk} is translated, but a script number matches a message start")
     open_start, open_count = next((item[1], item[2]) for item in _script_chunks() if item[0] == 266)
     opening = counted_messages(_load_chunk(open_start, open_count))
     castle = next((end, words) for at, end, words in opening if at == 0xC6)
@@ -1036,11 +1074,14 @@ def _assert_beats(doc: dict, messages, data: bytes) -> None:
 def _assert_packed(chunk: int, cursor: int, end: int, sectors: int, screens: int) -> None:
     start, count = next((item[1], item[2]) for item in _script_chunks() if item[0] == chunk)
     doc = json.loads((DATA / "text" / f"{chunk}.json").read_text(encoding="utf-8"))
-    packed, offsets = compact_chunk(_load_chunk(start, count), cursor, doc["messages"], doc["align"], lambda _char: 0x4001)
-    if b"\xff\xfc" in packed[cursor:] or len(packed) != end or (len(packed) + 2047) // 2048 != sectors or sectors >= count:
+    packed, _offsets = compact_chunk(_load_chunk(start, count), cursor, doc["messages"], doc["align"], lambda _char: 0x4001)
+    body = packed[cursor:]
+    # Word-aligned. The byte pair can straddle a terminator and the next glyph.
+    padded = len(body) % 2 or any(int.from_bytes(body[i:i + 2], "big") == FILL for i in range(0, len(body), 2))
+    if padded or len(packed) != end or (len(packed) + 2047) // 2048 != sectors or sectors >= count:
         raise AssertionError(f"chunk {chunk} packs to {len(packed):#x}")
-    if [int(item["offset"], 0) for item in doc["messages"]] != offsets:
-        raise AssertionError(f"chunk {chunk} offsets do not match the packed stream")
+    if any("offset" in item for item in doc["messages"]):
+        raise AssertionError(f"chunk {chunk} stores a packed position")
     if sum(item["show"] == "screen" for item in doc["messages"]) != screens:
         raise AssertionError(f"chunk {chunk} screen count is not {screens}")
     if [nxt for _index, nxt, _size in _script_chunks() if nxt == start + count] != [start + count]:

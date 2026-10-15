@@ -132,7 +132,7 @@ def chunk_table(handle):
 def load_messages(handle, texts, cells):
     """Pack offset -> (source token, translated token) for every word that changes.
 
-    Chunks 282 and 285 are packed without 0xFFFC and returned separately.
+    Packed chunks are rewritten without 0xFFFC and returned separately.
     """
     changed, starts, errors, packs = {}, set(), [], []
     cursors = text_cursors()
@@ -227,17 +227,17 @@ def ending_spans(handle, texts, cells):
 
 
 def pack_script(handle, doc, cells, cursor, rows):
-    """Rewrite one script chunk and describe the sectors it no longer claims."""
+    """Rewrite one script chunk and describe the sectors it no longer claims.
+
+    Each line is placed in order. The translation file does not store that position.
+    """
     chunk = doc["chunk"]
     start, count = next((item[1], item[2]) for item in rows if item[0] == chunk)
     base = start * 2048
     if int(doc.get("base", "0"), 0) != base:
         raise ValueError(f"base is not sector {start}")
     data = read_user(handle, PACK_LBA + start, count)
-    packed, offsets = compact_chunk(data, cursor, doc["messages"], doc["align"], lambda char: PAD + cells[char])
-    for have, want in zip((int(item["offset"], 0) for item in doc["messages"]), offsets, strict=True):
-        if have != want:
-            raise ValueError(f"offset {have:#x} is packed at {want:#x}")
+    packed, _offsets = compact_chunk(data, cursor, doc["messages"], doc["align"], lambda char: PAD + cells[char])
     sectors = (len(packed) + 2047) // 2048
     if sectors >= count:
         raise ValueError(f"sector count did not shrink ({count} -> {sectors})")

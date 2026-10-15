@@ -4,7 +4,6 @@
   "align": "left",
   "messages": [
     {
-      "offset": "0x2B00",
       "show": "screen",
       "source": "カンバンには、ヘタな字で\nこうかいてあった。<BREAK>",
       "text": [
@@ -13,7 +12,6 @@
       ]
     },
     {
-      "offset": "0x2B30",
       "show": "screen",
       "source": "クリムゾンとは紅\n紅は命のみなもとたる血を表わす\nマナとは魔力\nマナが満ち、魔法はつむがれる\n水晶は引き合い、奇蹟がおこるだろう\nえらい魔術師言っていた\n？？？ いったいどういう事だろう？\n\n<FB01>いだいなる戦士<FFD0>オトム<BREAK>",
       "text": [
@@ -29,7 +27,6 @@
       ]
     },
     {
-      "offset": "0x2C0C",
       "show": "window",
       "source": "店員\nまいど！！\n<FB01><FB09>キャスタ商店<FB00>にようこそ！！",
       "text": [
@@ -39,7 +36,6 @@
       ]
     },
     {
-      "offset": "0x2C54",
       "show": "window",
       "source": "店員\nさあドンドン買ってくれよ！",
       "text": [
@@ -48,7 +44,6 @@
       ]
     },
     {
-      "offset": "0x2C7C",
       "show": "screen",
       "source": "何を買いますか？<STYLE:0>\n\nアイテム\n宝玉\n何も買わない\n",
       "text": [
@@ -61,7 +56,6 @@
       ]
     },
     {
-      "offset": "0x2CC6",
       "show": "screen",
       "source": "何を買いますか？<STYLE:0>\n\n転移の薬    500ゴールド\n封傷の薬    250ゴールド\n解毒の薬    250ゴールド\n快癒の薬  20000ゴールド\n還魂の薬 100000ゴールド\n戻る\n何も買わない\n",
       "text": [
@@ -78,7 +72,6 @@
       ]
     },
     {
-      "offset": "0x2DCE",
       "show": "window",
       "source": "店員\nほらよっ、転移の薬だ！\nまいどありー！",
       "text": [
@@ -88,7 +81,6 @@
       ]
     },
     {
-      "offset": "0x2E10",
       "show": "window",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
@@ -98,7 +90,6 @@
       ]
     },
     {
-      "offset": "0x2E5C",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -110,7 +101,6 @@
       ]
     },
     {
-      "offset": "0x2E86",
       "show": "window",
       "source": "店員\nほらよっ、転移の薬だ！\nまいどありー！",
       "text": [
@@ -120,7 +110,6 @@
       ]
     },
     {
-      "offset": "0x2EC8",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -130,7 +119,6 @@
       ]
     },
     {
-      "offset": "0x2F0A",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -140,7 +128,6 @@
       ]
     },
     {
-      "offset": "0x2F4C",
       "show": "window",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
@@ -150,7 +137,6 @@
       ]
     },
     {
-      "offset": "0x2F8E",
       "show": "window",
       "source": "店員\nほらよっ、封傷の薬だ！\nまいどありー！",
       "text": [
@@ -160,7 +146,6 @@
       ]
     },
     {
-      "offset": "0x2FD0",
       "show": "window",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
@@ -170,7 +155,6 @@
       ]
     },
     {
-      "offset": "0x301C",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -182,7 +166,6 @@
       ]
     },
     {
-      "offset": "0x3046",
       "show": "window",
       "source": "店員\nほらよっ、封傷の薬だ！\nまいどありー！",
       "text": [
@@ -192,7 +175,6 @@
       ]
     },
     {
-      "offset": "0x3088",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -202,7 +184,6 @@
       ]
     },
     {
-      "offset": "0x30CA",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -212,7 +193,6 @@
       ]
     },
     {
-      "offset": "0x310C",
       "show": "window",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
@@ -222,7 +202,6 @@
       ]
     },
     {
-      "offset": "0x314E",
       "show": "window",
       "source": "店員\nほらよっ、解毒の薬だ！\nまいどありー！",
       "text": [
@@ -232,7 +211,6 @@
       ]
     },
     {
-      "offset": "0x3190",
       "show": "window",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
@@ -242,7 +220,6 @@
       ]
     },
     {
-      "offset": "0x31DC",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -254,7 +231,6 @@
       ]
     },
     {
-      "offset": "0x3206",
       "show": "window",
       "source": "店員\nほらよっ、解毒の薬だ！\nまいどありー！",
       "text": [
@@ -264,7 +240,6 @@
       ]
     },
     {
-      "offset": "0x3248",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -274,7 +249,6 @@
       ]
     },
     {
-      "offset": "0x328A",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -284,7 +258,6 @@
       ]
     },
     {
-      "offset": "0x32CC",
       "show": "window",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
@@ -294,7 +267,6 @@
       ]
     },
     {
-      "offset": "0x330E",
       "show": "window",
       "source": "店員\nほらよっ、快癒の薬だ！\nまいどありー！",
       "text": [
@@ -304,7 +276,6 @@
       ]
     },
     {
-      "offset": "0x3350",
       "show": "window",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
@@ -314,7 +285,6 @@
       ]
     },
     {
-      "offset": "0x339C",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -326,7 +296,6 @@
       ]
     },
     {
-      "offset": "0x33C6",
       "show": "window",
       "source": "店員\nほらよっ、快癒の薬だ！\nまいどありー！",
       "text": [
@@ -336,7 +305,6 @@
       ]
     },
     {
-      "offset": "0x3408",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -346,7 +314,6 @@
       ]
     },
     {
-      "offset": "0x344A",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -356,7 +323,6 @@
       ]
     },
     {
-      "offset": "0x348C",
       "show": "window",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
@@ -366,7 +332,6 @@
       ]
     },
     {
-      "offset": "0x34CE",
       "show": "window",
       "source": "店員\nほらよっ、還魂の薬だ！\nまいどありー！",
       "text": [
@@ -376,7 +341,6 @@
       ]
     },
     {
-      "offset": "0x3510",
       "show": "window",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
@@ -386,7 +350,6 @@
       ]
     },
     {
-      "offset": "0x355C",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -398,7 +361,6 @@
       ]
     },
     {
-      "offset": "0x3586",
       "show": "window",
       "source": "店員\nほらよっ、還魂の薬だ！\nまいどありー！",
       "text": [
@@ -408,7 +370,6 @@
       ]
     },
     {
-      "offset": "0x35C8",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -418,7 +379,6 @@
       ]
     },
     {
-      "offset": "0x360A",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -428,7 +388,6 @@
       ]
     },
     {
-      "offset": "0x364C",
       "show": "window",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
@@ -438,7 +397,6 @@
       ]
     },
     {
-      "offset": "0x368E",
       "show": "screen",
       "source": "何を買いますか？<STYLE:0>\n\n戦士の宝玉  50000ゴールド\n魔術師の宝玉 50000ゴールド\n僧侶の宝玉  50000ゴールド\n盗賊の宝玉  50000ゴールド\n次のページへ\n戻る\n何も買わない\n",
       "text": [
@@ -455,7 +413,6 @@
       ]
     },
     {
-      "offset": "0x37A4",
       "show": "window",
       "source": "店員\nほらよっ、戦士の宝玉！\nまいどありー！",
       "text": [
@@ -465,7 +422,6 @@
       ]
     },
     {
-      "offset": "0x37E6",
       "show": "window",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
@@ -475,7 +431,6 @@
       ]
     },
     {
-      "offset": "0x3832",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -487,7 +442,6 @@
       ]
     },
     {
-      "offset": "0x385C",
       "show": "window",
       "source": "店員\nほらよっ、戦士の宝玉！\nまいどありー！",
       "text": [
@@ -497,7 +451,6 @@
       ]
     },
     {
-      "offset": "0x389E",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -507,7 +460,6 @@
       ]
     },
     {
-      "offset": "0x38E0",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -517,7 +469,6 @@
       ]
     },
     {
-      "offset": "0x3922",
       "show": "window",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
@@ -527,7 +478,6 @@
       ]
     },
     {
-      "offset": "0x3964",
       "show": "window",
       "source": "店員\nほらよ、魔術師の宝玉！\nまいどありー！",
       "text": [
@@ -537,7 +487,6 @@
       ]
     },
     {
-      "offset": "0x39A6",
       "show": "window",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
@@ -547,7 +496,6 @@
       ]
     },
     {
-      "offset": "0x39F2",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -559,7 +507,6 @@
       ]
     },
     {
-      "offset": "0x3A1C",
       "show": "window",
       "source": "店員\nほらよ、魔術師の宝玉！\nまいどありー！",
       "text": [
@@ -569,7 +516,6 @@
       ]
     },
     {
-      "offset": "0x3A5E",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -579,7 +525,6 @@
       ]
     },
     {
-      "offset": "0x3AA0",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -589,7 +534,6 @@
       ]
     },
     {
-      "offset": "0x3AE2",
       "show": "window",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
@@ -599,7 +543,6 @@
       ]
     },
     {
-      "offset": "0x3B24",
       "show": "window",
       "source": "店員\nほらよっ、僧侶の宝玉！\nまいどありー！",
       "text": [
@@ -609,7 +552,6 @@
       ]
     },
     {
-      "offset": "0x3B66",
       "show": "window",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
@@ -619,7 +561,6 @@
       ]
     },
     {
-      "offset": "0x3BB2",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -631,7 +572,6 @@
       ]
     },
     {
-      "offset": "0x3BDC",
       "show": "window",
       "source": "店員\nほらよっ、僧侶の宝玉！\nまいどありー！",
       "text": [
@@ -641,7 +581,6 @@
       ]
     },
     {
-      "offset": "0x3C1E",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -651,7 +590,6 @@
       ]
     },
     {
-      "offset": "0x3C60",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -661,7 +599,6 @@
       ]
     },
     {
-      "offset": "0x3CA2",
       "show": "window",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
@@ -671,7 +608,6 @@
       ]
     },
     {
-      "offset": "0x3CE4",
       "show": "window",
       "source": "店員\nほらよっ、盗賊の宝玉！\nまいどありー！",
       "text": [
@@ -681,7 +617,6 @@
       ]
     },
     {
-      "offset": "0x3D26",
       "show": "window",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
@@ -691,7 +626,6 @@
       ]
     },
     {
-      "offset": "0x3D72",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -703,7 +637,6 @@
       ]
     },
     {
-      "offset": "0x3D9C",
       "show": "window",
       "source": "店員\nほらよっ、盗賊の宝玉！\nまいどありー！",
       "text": [
@@ -713,7 +646,6 @@
       ]
     },
     {
-      "offset": "0x3DDE",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -723,7 +655,6 @@
       ]
     },
     {
-      "offset": "0x3E20",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -733,7 +664,6 @@
       ]
     },
     {
-      "offset": "0x3E62",
       "show": "window",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
@@ -743,7 +673,6 @@
       ]
     },
     {
-      "offset": "0x3EA4",
       "show": "screen",
       "source": "何を買いますか？<STYLE:0>\n\n侍の宝玉   70000ゴールド\n忍者の宝玉  70000ゴールド\n騎士の宝玉  70000ゴールド\n司教の宝玉  70000ゴールド\n前のページへ\n戻る\n何も買わない\n",
       "text": [
@@ -760,7 +689,6 @@
       ]
     },
     {
-      "offset": "0x3FBA",
       "show": "window",
       "source": "店員\nほらよっ、侍の宝玉だ！\nまいどありー！",
       "text": [
@@ -770,7 +698,6 @@
       ]
     },
     {
-      "offset": "0x3FFC",
       "show": "window",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
@@ -780,7 +707,6 @@
       ]
     },
     {
-      "offset": "0x4048",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -792,7 +718,6 @@
       ]
     },
     {
-      "offset": "0x4072",
       "show": "window",
       "source": "店員\nほらよっ、侍の宝玉だ！\nまいどありー！",
       "text": [
@@ -802,7 +727,6 @@
       ]
     },
     {
-      "offset": "0x40B4",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -812,7 +736,6 @@
       ]
     },
     {
-      "offset": "0x40F6",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -822,7 +745,6 @@
       ]
     },
     {
-      "offset": "0x4138",
       "show": "window",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
@@ -832,7 +754,6 @@
       ]
     },
     {
-      "offset": "0x417A",
       "show": "window",
       "source": "店員\nほらよっ、忍者の宝玉！\nまいどありー！",
       "text": [
@@ -842,7 +763,6 @@
       ]
     },
     {
-      "offset": "0x41BC",
       "show": "window",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
@@ -852,7 +772,6 @@
       ]
     },
     {
-      "offset": "0x4208",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -864,7 +783,6 @@
       ]
     },
     {
-      "offset": "0x4232",
       "show": "window",
       "source": "店員\nほらよっ、忍者の宝玉！\nまいどありー！",
       "text": [
@@ -874,7 +792,6 @@
       ]
     },
     {
-      "offset": "0x4274",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -884,7 +801,6 @@
       ]
     },
     {
-      "offset": "0x42B6",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -894,7 +810,6 @@
       ]
     },
     {
-      "offset": "0x42F8",
       "show": "window",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
@@ -904,7 +819,6 @@
       ]
     },
     {
-      "offset": "0x433A",
       "show": "window",
       "source": "店員\nほらよっ、騎士の宝玉！\nまいどありー！",
       "text": [
@@ -914,7 +828,6 @@
       ]
     },
     {
-      "offset": "0x437C",
       "show": "window",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
@@ -924,7 +837,6 @@
       ]
     },
     {
-      "offset": "0x43C8",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -936,7 +848,6 @@
       ]
     },
     {
-      "offset": "0x43F2",
       "show": "window",
       "source": "店員\nほらよっ、騎士の宝玉！\nまいどありー！",
       "text": [
@@ -946,7 +857,6 @@
       ]
     },
     {
-      "offset": "0x4434",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -956,7 +866,6 @@
       ]
     },
     {
-      "offset": "0x4476",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -966,7 +875,6 @@
       ]
     },
     {
-      "offset": "0x44B8",
       "show": "window",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
@@ -976,7 +884,6 @@
       ]
     },
     {
-      "offset": "0x44FA",
       "show": "window",
       "source": "店員\nほらよっ、司教の宝玉！\nまいどありー！",
       "text": [
@@ -986,7 +893,6 @@
       ]
     },
     {
-      "offset": "0x453C",
       "show": "window",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
@@ -996,7 +902,6 @@
       ]
     },
     {
-      "offset": "0x4588",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -1008,7 +913,6 @@
       ]
     },
     {
-      "offset": "0x45B2",
       "show": "window",
       "source": "店員\nほらよっ、司教の宝玉！\nまいどありー！",
       "text": [
@@ -1018,7 +922,6 @@
       ]
     },
     {
-      "offset": "0x45F4",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -1028,7 +931,6 @@
       ]
     },
     {
-      "offset": "0x4636",
       "show": "window",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
@@ -1038,7 +940,6 @@
       ]
     },
     {
-      "offset": "0x4678",
       "show": "window",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
@@ -1048,7 +949,6 @@
       ]
     },
     {
-      "offset": "0x46BA",
       "show": "window",
       "source": "店員\nまた来てくれよな！",
       "text": [
@@ -1057,7 +957,6 @@
       ]
     },
     {
-      "offset": "0x46DE",
       "show": "window",
       "source": "キャスタ\n<FB03>おお～っ、もうきてくれただか！",
       "text": [
@@ -1066,7 +965,6 @@
       ]
     },
     {
-      "offset": "0x470E",
       "show": "window",
       "source": "キャスタ\n<FB03>オダ、いろんなもの\nあつめてきたどー！",
       "text": [
@@ -1076,7 +974,6 @@
       ]
     },
     {
-      "offset": "0x4756",
       "show": "window",
       "source": "キャスタ\n<FB03>さあ、何がほしいだか？！",
       "text": [
@@ -1085,7 +982,6 @@
       ]
     },
     {
-      "offset": "0x4782",
       "show": "screen",
       "source": "何を買いますか？<STYLE:0>\n\nアイテム\n宝玉\n何も買わない\n",
       "text": [
@@ -1098,7 +994,6 @@
       ]
     },
     {
-      "offset": "0x47CC",
       "show": "screen",
       "source": "何を買いますか？<STYLE:0>\n\n転移の薬    500ゴールド\n封傷の薬    250ゴールド\n解毒の薬    250ゴールド\n快癒の薬  20000ゴールド\n還魂の薬 100000ゴールド\n戻る\n何も買わない\n",
       "text": [
@@ -1115,7 +1010,6 @@
       ]
     },
     {
-      "offset": "0x48D4",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだっ、転移の薬だっ！",
       "text": [
@@ -1124,7 +1018,6 @@
       ]
     },
     {
-      "offset": "0x4900",
       "show": "window",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
@@ -1134,7 +1027,6 @@
       ]
     },
     {
-      "offset": "0x4952",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -1146,7 +1038,6 @@
       ]
     },
     {
-      "offset": "0x497C",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだっ、転移の薬だっ！",
       "text": [
@@ -1155,7 +1046,6 @@
       ]
     },
     {
-      "offset": "0x49A8",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1165,7 +1055,6 @@
       ]
     },
     {
-      "offset": "0x49F8",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1175,7 +1064,6 @@
       ]
     },
     {
-      "offset": "0x4A48",
       "show": "window",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
@@ -1184,7 +1072,6 @@
       ]
     },
     {
-      "offset": "0x4A76",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだっ、封傷の薬だっ！",
       "text": [
@@ -1193,7 +1080,6 @@
       ]
     },
     {
-      "offset": "0x4AA2",
       "show": "window",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
@@ -1203,7 +1089,6 @@
       ]
     },
     {
-      "offset": "0x4AF4",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -1215,7 +1100,6 @@
       ]
     },
     {
-      "offset": "0x4B1E",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだっ、封傷の薬だっ！",
       "text": [
@@ -1224,7 +1108,6 @@
       ]
     },
     {
-      "offset": "0x4B4A",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1234,7 +1117,6 @@
       ]
     },
     {
-      "offset": "0x4B9A",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1244,7 +1126,6 @@
       ]
     },
     {
-      "offset": "0x4BEA",
       "show": "window",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
@@ -1253,7 +1134,6 @@
       ]
     },
     {
-      "offset": "0x4C18",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだっ、解毒の薬だっ！",
       "text": [
@@ -1262,7 +1142,6 @@
       ]
     },
     {
-      "offset": "0x4C44",
       "show": "window",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
@@ -1272,7 +1151,6 @@
       ]
     },
     {
-      "offset": "0x4C96",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -1284,7 +1162,6 @@
       ]
     },
     {
-      "offset": "0x4CC0",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだっ、解毒の薬だっ！",
       "text": [
@@ -1293,7 +1170,6 @@
       ]
     },
     {
-      "offset": "0x4CEC",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1303,7 +1179,6 @@
       ]
     },
     {
-      "offset": "0x4D3C",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1313,7 +1188,6 @@
       ]
     },
     {
-      "offset": "0x4D8C",
       "show": "window",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
@@ -1322,7 +1196,6 @@
       ]
     },
     {
-      "offset": "0x4DBA",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだっ、快癒の薬だっ！",
       "text": [
@@ -1331,7 +1204,6 @@
       ]
     },
     {
-      "offset": "0x4DE6",
       "show": "window",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
@@ -1341,7 +1213,6 @@
       ]
     },
     {
-      "offset": "0x4E38",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -1353,7 +1224,6 @@
       ]
     },
     {
-      "offset": "0x4E62",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだっ、封傷の薬だっ！",
       "text": [
@@ -1362,7 +1232,6 @@
       ]
     },
     {
-      "offset": "0x4E8E",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1372,7 +1241,6 @@
       ]
     },
     {
-      "offset": "0x4EDE",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1382,7 +1250,6 @@
       ]
     },
     {
-      "offset": "0x4F2E",
       "show": "window",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
@@ -1391,7 +1258,6 @@
       ]
     },
     {
-      "offset": "0x4F5C",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだっ、還魂の薬だっ！",
       "text": [
@@ -1400,7 +1266,6 @@
       ]
     },
     {
-      "offset": "0x4F88",
       "show": "window",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
@@ -1410,7 +1275,6 @@
       ]
     },
     {
-      "offset": "0x4FDA",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -1422,7 +1286,6 @@
       ]
     },
     {
-      "offset": "0x5004",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだっ、還魂の薬だっ！",
       "text": [
@@ -1431,7 +1294,6 @@
       ]
     },
     {
-      "offset": "0x5030",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1441,7 +1303,6 @@
       ]
     },
     {
-      "offset": "0x5080",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1451,7 +1312,6 @@
       ]
     },
     {
-      "offset": "0x50D0",
       "show": "window",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
@@ -1460,7 +1320,6 @@
       ]
     },
     {
-      "offset": "0x50FE",
       "show": "screen",
       "source": "何を買いますか？<STYLE:0>\n\n戦士の宝玉  50000ゴールド\n魔術師の宝玉 50000ゴールド\n僧侶の宝玉  50000ゴールド\n盗賊の宝玉  50000ゴールド\n次のページへ\n戻る\n何も買わない\n",
       "text": [
@@ -1477,7 +1336,6 @@
       ]
     },
     {
-      "offset": "0x5214",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだ、戦士の宝玉だどーっ！",
       "text": [
@@ -1486,7 +1344,6 @@
       ]
     },
     {
-      "offset": "0x5242",
       "show": "window",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
@@ -1496,7 +1353,6 @@
       ]
     },
     {
-      "offset": "0x5294",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -1508,7 +1364,6 @@
       ]
     },
     {
-      "offset": "0x52BE",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだ、戦士の宝玉だどーっ！",
       "text": [
@@ -1517,7 +1372,6 @@
       ]
     },
     {
-      "offset": "0x52EC",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1527,7 +1381,6 @@
       ]
     },
     {
-      "offset": "0x533C",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1537,7 +1390,6 @@
       ]
     },
     {
-      "offset": "0x538C",
       "show": "window",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
@@ -1546,7 +1398,6 @@
       ]
     },
     {
-      "offset": "0x53BA",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだ、魔術師の宝玉だどー！",
       "text": [
@@ -1555,7 +1406,6 @@
       ]
     },
     {
-      "offset": "0x53E8",
       "show": "window",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
@@ -1565,7 +1415,6 @@
       ]
     },
     {
-      "offset": "0x543A",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -1577,7 +1426,6 @@
       ]
     },
     {
-      "offset": "0x5464",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだ、魔術師の宝玉だどー！",
       "text": [
@@ -1586,7 +1434,6 @@
       ]
     },
     {
-      "offset": "0x5492",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1596,7 +1443,6 @@
       ]
     },
     {
-      "offset": "0x54E2",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1606,7 +1452,6 @@
       ]
     },
     {
-      "offset": "0x5532",
       "show": "window",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
@@ -1615,7 +1460,6 @@
       ]
     },
     {
-      "offset": "0x5560",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだ、僧侶の宝玉だどーっ！",
       "text": [
@@ -1624,7 +1468,6 @@
       ]
     },
     {
-      "offset": "0x558E",
       "show": "window",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
@@ -1634,7 +1477,6 @@
       ]
     },
     {
-      "offset": "0x55E0",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -1646,7 +1488,6 @@
       ]
     },
     {
-      "offset": "0x560A",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだ、僧侶の宝玉だどーっ！",
       "text": [
@@ -1655,7 +1496,6 @@
       ]
     },
     {
-      "offset": "0x5638",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1665,7 +1505,6 @@
       ]
     },
     {
-      "offset": "0x5688",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1675,7 +1514,6 @@
       ]
     },
     {
-      "offset": "0x56D8",
       "show": "window",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
@@ -1684,7 +1522,6 @@
       ]
     },
     {
-      "offset": "0x5706",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだ、盗賊の宝玉だどーっ！",
       "text": [
@@ -1693,7 +1530,6 @@
       ]
     },
     {
-      "offset": "0x5734",
       "show": "window",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
@@ -1703,7 +1539,6 @@
       ]
     },
     {
-      "offset": "0x5786",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -1715,7 +1550,6 @@
       ]
     },
     {
-      "offset": "0x57B0",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだ、盗賊の宝玉だどーっ！",
       "text": [
@@ -1724,7 +1558,6 @@
       ]
     },
     {
-      "offset": "0x57DE",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1734,7 +1567,6 @@
       ]
     },
     {
-      "offset": "0x582E",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1744,7 +1576,6 @@
       ]
     },
     {
-      "offset": "0x587E",
       "show": "window",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
@@ -1753,7 +1584,6 @@
       ]
     },
     {
-      "offset": "0x58AC",
       "show": "screen",
       "source": "何を買いますか？<STYLE:0>\n\n侍の宝玉   70000ゴールド\n忍者の宝玉  70000ゴールド\n騎士の宝玉  70000ゴールド\n司教の宝玉  70000ゴールド\n前のページへ\n戻る\n何も買わない\n",
       "text": [
@@ -1770,7 +1600,6 @@
       ]
     },
     {
-      "offset": "0x59C2",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだ、侍の宝玉だどー！",
       "text": [
@@ -1779,7 +1608,6 @@
       ]
     },
     {
-      "offset": "0x59EE",
       "show": "window",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
@@ -1789,7 +1617,6 @@
       ]
     },
     {
-      "offset": "0x5A40",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -1801,7 +1628,6 @@
       ]
     },
     {
-      "offset": "0x5A6A",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだ、侍の宝玉だどー！",
       "text": [
@@ -1810,7 +1636,6 @@
       ]
     },
     {
-      "offset": "0x5A96",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1820,7 +1645,6 @@
       ]
     },
     {
-      "offset": "0x5AE6",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1830,7 +1654,6 @@
       ]
     },
     {
-      "offset": "0x5B36",
       "show": "window",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
@@ -1839,7 +1662,6 @@
       ]
     },
     {
-      "offset": "0x5B64",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだ、忍者の宝玉だどーっ！",
       "text": [
@@ -1848,7 +1670,6 @@
       ]
     },
     {
-      "offset": "0x5B92",
       "show": "window",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
@@ -1858,7 +1679,6 @@
       ]
     },
     {
-      "offset": "0x5BE4",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -1870,7 +1690,6 @@
       ]
     },
     {
-      "offset": "0x5C0E",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだ、忍者の宝玉だどーっ！",
       "text": [
@@ -1879,7 +1698,6 @@
       ]
     },
     {
-      "offset": "0x5C3C",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1889,7 +1707,6 @@
       ]
     },
     {
-      "offset": "0x5C8C",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1899,7 +1716,6 @@
       ]
     },
     {
-      "offset": "0x5CDC",
       "show": "window",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
@@ -1908,7 +1724,6 @@
       ]
     },
     {
-      "offset": "0x5D0A",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだ、騎士の宝玉だどーっ！",
       "text": [
@@ -1917,7 +1732,6 @@
       ]
     },
     {
-      "offset": "0x5D38",
       "show": "window",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
@@ -1927,7 +1741,6 @@
       ]
     },
     {
-      "offset": "0x5D8A",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -1939,7 +1752,6 @@
       ]
     },
     {
-      "offset": "0x5DB4",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだ、騎士の宝玉だどーっ！",
       "text": [
@@ -1948,7 +1760,6 @@
       ]
     },
     {
-      "offset": "0x5DE2",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1958,7 +1769,6 @@
       ]
     },
     {
-      "offset": "0x5E32",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -1968,7 +1778,6 @@
       ]
     },
     {
-      "offset": "0x5E82",
       "show": "window",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
@@ -1977,7 +1786,6 @@
       ]
     },
     {
-      "offset": "0x5EB0",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだ、司教の宝玉だどーっ！",
       "text": [
@@ -1986,7 +1794,6 @@
       ]
     },
     {
-      "offset": "0x5EDE",
       "show": "window",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
@@ -1996,7 +1803,6 @@
       ]
     },
     {
-      "offset": "0x5F30",
       "show": "screen",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -2008,7 +1814,6 @@
       ]
     },
     {
-      "offset": "0x5F5A",
       "show": "window",
       "source": "キャスタ\n<FB03>ほだ、司教の宝玉だどーっ！",
       "text": [
@@ -2017,7 +1822,6 @@
       ]
     },
     {
-      "offset": "0x5F88",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -2027,7 +1831,6 @@
       ]
     },
     {
-      "offset": "0x5FD8",
       "show": "window",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
@@ -2037,7 +1840,6 @@
       ]
     },
     {
-      "offset": "0x6028",
       "show": "window",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
@@ -2046,7 +1848,6 @@
       ]
     },
     {
-      "offset": "0x6056",
       "show": "window",
       "source": "キャスタ\n<FB03>また、きてくで～！",
       "text": [
@@ -2055,7 +1856,6 @@
       ]
     },
     {
-      "offset": "0x6080",
       "show": "window",
       "source": "キャスタ\n<FB03>オダ、とうぶんここにいるだよ！",
       "text": [
@@ -2064,7 +1864,6 @@
       ]
     },
     {
-      "offset": "0x60B0",
       "show": "screen",
       "source": "バケツの中に、魔物の卵が\n産み付けられている。<BREAK>",
       "text": [
@@ -2073,7 +1872,6 @@
       ]
     },
     {
-      "offset": "0x60E2",
       "show": "screen",
       "source": "魔物の卵を拾いますか？\n\nは い\nいいえ\n",
       "text": [
@@ -2085,7 +1883,6 @@
       ]
     },
     {
-      "offset": "0x6112",
       "show": "screen",
       "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -2098,7 +1895,6 @@
       ]
     },
     {
-      "offset": "0x6154",
       "show": "screen",
       "source": "<FB01>魔物の卵<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -2106,7 +1902,6 @@
       ]
     },
     {
-      "offset": "0x6172",
       "show": "screen",
       "source": "<FB01>魔物の卵<FB00>をあきらめた。<BREAK>",
       "text": [
@@ -2114,7 +1909,6 @@
       ]
     },
     {
-      "offset": "0x6190",
       "show": "screen",
       "source": "<FB01>魔物の卵<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -2122,7 +1916,6 @@
       ]
     },
     {
-      "offset": "0x61AE",
       "show": "screen",
       "source": "よく見ると、木箱の上に\n黒光りしている髪束が\n置かれている。<BREAK>",
       "text": [
@@ -2132,7 +1925,6 @@
       ]
     },
     {
-      "offset": "0x61EE",
       "show": "screen",
       "source": "魔力のような不思議な力を\n感じ取る事が出来るこの髪束は\nおそらく僧侶の髪であろう。<BREAK>",
       "text": [
@@ -2142,7 +1934,6 @@
       ]
     },
     {
-      "offset": "0x6244",
       "show": "screen",
       "source": "僧侶の髪を拾いますか？\n\nは い\nいいえ\n",
       "text": [
@@ -2154,7 +1945,6 @@
       ]
     },
     {
-      "offset": "0x6274",
       "show": "screen",
       "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -2167,7 +1957,6 @@
       ]
     },
     {
-      "offset": "0x62B6",
       "show": "screen",
       "source": "<FB01>僧侶の髪<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -2175,7 +1964,6 @@
       ]
     },
     {
-      "offset": "0x62D4",
       "show": "screen",
       "source": "<FB01>僧侶の髪<FB00>をあきらめた。<BREAK>",
       "text": [
@@ -2183,7 +1971,6 @@
       ]
     },
     {
-      "offset": "0x62F2",
       "show": "screen",
       "source": "<FB01>僧侶の髪<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -2191,7 +1978,6 @@
       ]
     },
     {
-      "offset": "0x6310",
       "show": "screen",
       "source": "よく見ると、木箱の上に\n忍者の頭巾が放りっぱなしに\nされている。<BREAK>",
       "text": [
@@ -2201,7 +1987,6 @@
       ]
     },
     {
-      "offset": "0x6354",
       "show": "screen",
       "source": "忍者の頭巾を拾いますか？\n\nは い\nいいえ\n",
       "text": [
@@ -2213,7 +1998,6 @@
       ]
     },
     {
-      "offset": "0x6386",
       "show": "screen",
       "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -2226,7 +2010,6 @@
       ]
     },
     {
-      "offset": "0x63C8",
       "show": "screen",
       "source": "<FB01>忍者の頭巾<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -2234,7 +2017,6 @@
       ]
     },
     {
-      "offset": "0x63E8",
       "show": "screen",
       "source": "<FB01>忍者の頭巾<FB00>をあきらめた。<BREAK>",
       "text": [
@@ -2242,7 +2024,6 @@
       ]
     },
     {
-      "offset": "0x6408",
       "show": "screen",
       "source": "<FB01>忍者の頭巾<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -2250,7 +2031,6 @@
       ]
     },
     {
-      "offset": "0x6428",
       "show": "screen",
       "source": "土の山の頂上に、マユが\n転がっているのを見つけた。<BREAK>",
       "text": [
@@ -2259,7 +2039,6 @@
       ]
     },
     {
-      "offset": "0x645E",
       "show": "screen",
       "source": "マユを拾いますか？\n\nは い\nいいえ\n",
       "text": [
@@ -2271,7 +2050,6 @@
       ]
     },
     {
-      "offset": "0x648A",
       "show": "screen",
       "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
@@ -2284,7 +2062,6 @@
       ]
     },
     {
-      "offset": "0x64CC",
       "show": "screen",
       "source": "<FB01>マユ<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -2292,7 +2069,6 @@
       ]
     },
     {
-      "offset": "0x64E6",
       "show": "screen",
       "source": "<FB01>マユ<FB00>をあきらめた。<BREAK>",
       "text": [
@@ -2300,7 +2076,6 @@
       ]
     },
     {
-      "offset": "0x6500",
       "show": "screen",
       "source": "<FB01>マユ<FB00>を手に入れた！<BREAK>",
       "text": [
@@ -2308,7 +2083,6 @@
       ]
     },
     {
-      "offset": "0x651A",
       "show": "screen",
       "source": "泉がある………<BREAK>",
       "text": [
@@ -2316,7 +2090,6 @@
       ]
     },
     {
-      "offset": "0x652C",
       "show": "screen",
       "source": "賢者の石を投げこみますか？\n\nは い\nいいえ\n",
       "text": [
@@ -2328,7 +2101,6 @@
       ]
     },
     {
-      "offset": "0x6560",
       "show": "screen",
       "source": "泉の中に賢者の石を放りこんだ。<BREAK>",
       "text": [
@@ -2336,7 +2108,6 @@
       ]
     },
     {
-      "offset": "0x6582",
       "show": "screen",
       "source": "どこからともなく聞こえてきた\n美しい音色とともに、\n泉全体がまばゆい光に包まれた。<BREAK>",
       "text": [
@@ -2346,7 +2117,6 @@
       ]
     },
     {
-      "offset": "0x65D8",
       "show": "screen",
       "source": "まばゆい光が泉から立ち上り、\n香しいにおいが\n辺りにたちこめた。<BREAK>",
       "text": [
@@ -2356,7 +2126,6 @@
       ]
     },
     {
-      "offset": "0x661C",
       "show": "screen",
       "source": "体全体が浄化された様な\n気分になった。<BREAK>",
       "text": [
@@ -2365,7 +2134,6 @@
       ]
     },
     {
-      "offset": "0x6646",
       "show": "screen",
       "source": "<FB01>HPが回復した！<BREAK>",
       "text": [
@@ -2373,7 +2141,6 @@
       ]
     },
     {
-      "offset": "0x665C",
       "show": "screen",
       "source": "<FB01>MPが回復した！<BREAK>",
       "text": [
@@ -2381,7 +2148,6 @@
       ]
     },
     {
-      "offset": "0x6672",
       "show": "screen",
       "source": "<FB01>ステータス異常が回復した！<BREAK>",
       "text": [
@@ -2389,7 +2155,6 @@
       ]
     },
     {
-      "offset": "0x6692",
       "show": "screen",
       "source": "香しいにおいが\n辺りにたちこめた。<BREAK>",
       "text": [
@@ -2398,7 +2163,6 @@
       ]
     },
     {
-      "offset": "0x66B8",
       "show": "screen",
       "source": "体全体が浄化された様な\n気分になった。<BREAK>",
       "text": [
@@ -2407,7 +2171,6 @@
       ]
     },
     {
-      "offset": "0x66E2",
       "show": "screen",
       "source": "<FB01>HPが回復した！<BREAK>",
       "text": [
@@ -2415,7 +2178,6 @@
       ]
     },
     {
-      "offset": "0x66F8",
       "show": "screen",
       "source": "<FB01>MPが回復した！<BREAK>",
       "text": [
@@ -2423,7 +2185,6 @@
       ]
     },
     {
-      "offset": "0x670E",
       "show": "screen",
       "source": "<FB01>ステータス異常が回復した！<BREAK>",
       "text": [
