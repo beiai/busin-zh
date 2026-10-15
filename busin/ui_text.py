@@ -524,8 +524,8 @@ def _centered(codes):
     return bool(codes) and codes[0] == 0 and codes[-1] == 0 and any(code not in (0, 0xFFFE) for code in codes)
 
 
-# 人間 and 戻る were stretched with a gap. Chinese keeps the two glyphs together.
-_PLAIN = {"11 43DDF0", "15 43DE20"}
+# 人間, 戻る, and 知恵 were stretched with a gap. Chinese keeps the two glyphs together.
+_PLAIN = {"11 43DDF0", "15 43DE20", "589F66"}
 # The race list centers a name in the four-cell column: two glyphs at x+16, three at x+8.
 # 0x14D638 was addiu s6, s2, 8. 0x14D650 was sltiu s1, 2. Index 4 stays at x+8.
 # 0x14D808 was the alignment list's 戻る. Its names keep their x; only 返回 moves to x+16.
@@ -539,9 +539,8 @@ _RACE_X = {
     0x14D808: (0x00163400, 0x26460010),
     0x14D818: (0x00063403, 0x00000000),
 }
-# Status sheet fills a three-cell column. 姓名 is glyph, blank, glyph at x+0.
-# Stat names were centered by the Japanese length: one glyph at x+16, two at x+8, three at x+0.
-# Chinese names are two glyphs with the same blank, so they start at x+0 too.
+# Status sheet centers a stat name by its Japanese length: one glyph at x+16, two at x+8, three at x+0.
+# Chinese names are two glyphs with no blank, and share the left edge of 姓名 at x+0.
 _STAT_X = {
     0x582A20: (0x0010000B, 0x0000000B),
     0x582A24: (0x0008000C, 0x0000000C),
@@ -549,6 +548,12 @@ _STAT_X = {
     0x582A2C: (0x0000000E, 0x0000000E),
     0x582A30: (0x0000000F, 0x0000000F),
     0x582A34: (0x00000010, 0x00000010),
+}
+# Creation screen places the first stat at x+16 and the second at x+8.
+# Chinese names are two glyphs, so those two rows use the same x as the other four.
+_CREATE_STAT_X = {
+    0x14D174: (0x27C20010, 0x27C20000),
+    0x14D188: (0x27C30008, 0x27C30000),
 }
 
 
@@ -929,6 +934,11 @@ def ui_patches(elf):
         if struct.unpack_from("<I", elf, off)[0] != old or off in writes:
             raise AssertionError(f"stat name x at {va:#x}")
         writes[off] = struct.pack("<I", new)
+    for va, (old, new) in _CREATE_STAT_X.items():
+        off = va - FILE_BASE
+        if struct.unpack_from("<I", elf, off)[0] != old or off in writes:
+            raise AssertionError(f"create stat x at {va:#x}")
+        writes[off] = struct.pack("<I", new)
     info = {"strings": len(pending), "glyphs": len(extra)}
     return writes, extra, info
 
@@ -1082,6 +1092,7 @@ def disc_self_test():
     pitch = {va - FILE_BASE for va in PAPER_PITCH}
     race_x = {va - FILE_BASE for va in _RACE_X}
     stat_x = {va - FILE_BASE for va in _STAT_X}
+    create_stat_x = {va - FILE_BASE for va in _CREATE_STAT_X}
     if any(writes.get(off) != struct.pack("<I", PAPER_PITCH_NEW) for off in pitch):
         raise AssertionError("paper line pitch was not written")
     for va, (_old, new) in _RACE_X.items():
@@ -1090,13 +1101,16 @@ def disc_self_test():
     for va, (_old, new) in _STAT_X.items():
         if writes.get(va - FILE_BASE) != struct.pack("<I", new):
             raise AssertionError(f"stat name x at {va:#x}")
+    for va, (_old, new) in _CREATE_STAT_X.items():
+        if writes.get(va - FILE_BASE) != struct.pack("<I", new):
+            raise AssertionError(f"create stat x at {va:#x}")
     for va in range(0x43DDC0, 0x43DDF0, 8):
-        codes = struct.unpack_from("<4H", _span(writes, va))
-        if codes[1] != 0 or codes[3] != 0xFFFF or not codes[0] or not codes[2]:
+        codes = struct.unpack_from("<2H", _span(writes, va))
+        if not codes[0] or not codes[1]:
             raise AssertionError(f"stat name gap at {va:#x}")
     for va in range(0x589F60, 0x589F84, 6):
-        codes = struct.unpack_from("<3H", _span(writes, va))
-        if codes[1] != 0 or not codes[0] or not codes[2]:
+        codes = struct.unpack_from("<2H", _span(writes, va))
+        if not codes[0] or not codes[1]:
             raise AssertionError(f"stat cell gap at {va:#x}")
     human = struct.unpack_from("<3H", _span(writes, 0x43DE20), 0)
     back = struct.unpack_from("<3H", _span(writes, 0x43DDF0), 0)
@@ -1116,7 +1130,7 @@ def disc_self_test():
         if char not in extra or extra[char] < 0x0418:
             raise AssertionError(f"{char} is not on the Chinese pages")
     for off, data in writes.items():
-        if off in pitch or off in race_x or off in stat_x:
+        if off in pitch or off in race_x or off in stat_x or off in create_stat_x:
             continue
         codes = struct.unpack(f"<{len(data) // 2}H", data)
         if any(code not in (0, 0xFFFE, 0xFFFD) and code < 0x0418 for code in codes):
