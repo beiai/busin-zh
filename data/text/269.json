@@ -1,0 +1,263 @@
+{
+  "chunk": 269,
+  "base": "0x3C9C800",
+  "align": "center",
+  "messages": [
+    {
+      "offset": "0x0002",
+      "show": "screen",
+      "source": "How can I let you know？",
+      "text": [
+        "我该如何让你知道？"
+      ]
+    },
+    {
+      "offset": "0x0032",
+      "show": "screen",
+      "source": "I wish you’re never hurt",
+      "text": [
+        "但愿你永不受伤"
+      ]
+    },
+    {
+      "offset": "0x0064",
+      "show": "screen",
+      "source": "If you have a soft heart",
+      "text": [
+        "若你有一颗柔软的心"
+      ]
+    },
+    {
+      "offset": "0x0096",
+      "show": "screen",
+      "source": "I’m not made a sad feeling",
+      "text": [
+        "我并非为悲伤而生"
+      ]
+    },
+    {
+      "offset": "0x00CC",
+      "show": "screen",
+      "source": "Nothing can be seen",
+      "text": [
+        "什么也看不见"
+      ]
+    },
+    {
+      "offset": "0x00F4",
+      "show": "screen",
+      "source": "This world is believed",
+      "text": [
+        "这世界仍被相信"
+      ]
+    },
+    {
+      "offset": "0x0122",
+      "show": "screen",
+      "source": "Why do you fight again？",
+      "text": [
+        "你为何再次战斗？"
+      ]
+    },
+    {
+      "offset": "0x0152",
+      "show": "screen",
+      "source": "Tell me，，",
+      "text": [
+        "告诉我，，"
+      ]
+    },
+    {
+      "offset": "0x0166",
+      "show": "screen",
+      "source": "If it can smile again",
+      "text": [
+        "若还能再次微笑"
+      ]
+    },
+    {
+      "offset": "0x0192",
+      "show": "screen",
+      "source": "Chosen way is believed",
+      "text": [
+        "选定之路被人相信"
+      ]
+    },
+    {
+      "offset": "0x01C0",
+      "show": "screen",
+      "source": "It’s sworn to the heart",
+      "text": [
+        "已对心许下誓言"
+      ]
+    },
+    {
+      "offset": "0x01F0",
+      "show": "screen",
+      "source": "A bond with the friend",
+      "text": [
+        "与友人的羁绊"
+      ]
+    },
+    {
+      "offset": "0x021E",
+      "show": "screen",
+      "source": "Though there is no form",
+      "text": [
+        "尽管没有形体"
+      ]
+    },
+    {
+      "offset": "0x024E",
+      "show": "screen",
+      "source": "Such a word holds me",
+      "text": [
+        "这句话支撑着我"
+      ]
+    },
+    {
+      "offset": "0x0278",
+      "show": "screen",
+      "source": "The dream of the truth",
+      "text": [
+        "真实的梦境"
+      ]
+    },
+    {
+      "offset": "0x02A6",
+      "show": "screen",
+      "source": "With you，，",
+      "text": [
+        "与你，，"
+      ]
+    },
+    {
+      "offset": "0x02BC",
+      "show": "screen",
+      "source": "Though there is much lonely thought",
+      "text": [
+        "尽管有许多孤独的念头"
+      ]
+    },
+    {
+      "offset": "0x0304",
+      "show": "screen",
+      "source": "I want to believe your words",
+      "text": [
+        "我想相信你的话"
+      ]
+    },
+    {
+      "offset": "0x033E",
+      "show": "screen",
+      "source": "Even if，a little smile，too",
+      "text": [
+        "哪怕，一点微笑，也好"
+      ]
+    },
+    {
+      "offset": "0x0374",
+      "show": "screen",
+      "source": "That’s happy for me，too",
+      "text": [
+        "那对我也是幸福"
+      ]
+    },
+    {
+      "offset": "0x03A4",
+      "show": "screen",
+      "source": "If there is gentle feeling",
+      "text": [
+        "若有温柔的心意"
+      ]
+    },
+    {
+      "offset": "0x03DA",
+      "show": "screen",
+      "source": "I want to stare at you more",
+      "text": [
+        "我想再多看你一眼"
+      ]
+    },
+    {
+      "offset": "0x0412",
+      "show": "screen",
+      "source": "To feel your heart beat",
+      "text": [
+        "去感受你的心跳"
+      ]
+    },
+    {
+      "offset": "0x0442",
+      "show": "screen",
+      "source": "As feeling your warmth",
+      "text": [
+        "感受着你的温暖"
+      ]
+    },
+    {
+      "offset": "0x0470",
+      "show": "screen",
+      "source": "I shut my eyes again",
+      "text": [
+        "我再次闭上眼睛"
+      ]
+    },
+    {
+      "offset": "0x049A",
+      "show": "screen",
+      "source": "And pray future hope",
+      "text": [
+        "并祈祷未来的希望"
+      ]
+    },
+    {
+      "offset": "0x04C4",
+      "show": "screen",
+      "source": "there are no tears",
+      "text": [
+        "便没有泪水"
+      ]
+    },
+    {
+      "offset": "0x04EA",
+      "show": "screen",
+      "source": "With love，，",
+      "text": [
+        "带着爱，，"
+      ]
+    },
+    {
+      "offset": "0x0502",
+      "show": "screen",
+      "source": "You will know that you’re not dreaming",
+      "text": [
+        "你会知道自己不是在做梦"
+      ]
+    },
+    {
+      "offset": "0x0550",
+      "show": "screen",
+      "source": "A day to know love is near now",
+      "text": [
+        "懂得爱的日子已经临近"
+      ]
+    },
+    {
+      "offset": "0x058E",
+      "show": "screen",
+      "source": "Even if I am not here",
+      "text": [
+        "即便我不在这里"
+      ]
+    },
+    {
+      "offset": "0x05BA",
+      "show": "screen",
+      "source": "I pray you from the sky",
+      "text": [
+        "我从天上为你祈祷"
+      ]
+    }
+  ]
+}

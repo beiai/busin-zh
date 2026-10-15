@@ -1,0 +1,306 @@
+{
+  "format": 1,
+  "cell_size": 24,
+  "columns": 42,
+  "rows": 42,
+  "extension_token_base": "0x4000",
+  "page_capacity": 1764,
+  "pages": [
+    {
+      "id": 0,
+      "role": "original"
+    },
+    {
+      "id": 1,
+      "role": "external"
+    },
+    {
+      "id": 2,
+      "role": "external"
+    },
+    {
+      "id": 3,
+      "role": "external"
+    }
+  ],
+  "characters": {
+    "剑": {
+      "page": 1,
+      "cell": "0x1",
+      "token": "0x4001"
+    },
+    "士": {
+      "page": 1,
+      "cell": "0x2",
+      "token": "0x4002"
+    },
+    "「": {
+      "page": 1,
+      "cell": "0x3",
+      "token": "0x4003"
+    },
+    "你": {
+      "page": 1,
+      "cell": "0x4",
+      "token": "0x4004"
+    },
+    "来": {
+      "page": 1,
+      "cell": "0x5",
+      "token": "0x4005"
+    },
+    "了": {
+      "page": 1,
+      "cell": "0x6",
+      "token": "0x4006"
+    },
+    "。": {
+      "page": 1,
+      "cell": "0x7",
+      "token": "0x4007"
+    },
+    "这": {
+      "page": 1,
+      "cell": "0x8",
+      "token": "0x4008"
+    },
+    "里": {
+      "page": 1,
+      "cell": "0x9",
+      "token": "0x4009"
+    },
+    "的": {
+      "page": 1,
+      "cell": "0xA",
+      "token": "0x400A"
+    },
+    "人": {
+      "page": 1,
+      "cell": "0xB",
+      "token": "0x400B"
+    },
+    "都": {
+      "page": 1,
+      "cell": "0xC",
+      "token": "0x400C"
+    },
+    "会": {
+      "page": 1,
+      "cell": "0xD",
+      "token": "0x400D"
+    },
+    "欢": {
+      "page": 1,
+      "cell": "0xE",
+      "token": "0x400E"
+    },
+    "迎": {
+      "page": 1,
+      "cell": "0xF",
+      "token": "0x400F"
+    },
+    "吧": {
+      "page": 1,
+      "cell": "0x10",
+      "token": "0x4010"
+    },
+    "」": {
+      "page": 1,
+      "cell": "0x11",
+      "token": "0x4011"
+    },
+    "在": {
+      "page": 1,
+      "cell": "0x12",
+      "token": "0x4012"
+    },
+    "丽": {
+      "page": 1,
+      "cell": "0x13",
+      "token": "0x4013"
+    },
+    "治": {
+      "page": 1,
+      "cell": "0x14",
+      "token": "0x4014"
+    },
+    "沉": {
+      "page": 1,
+      "cell": "0x15",
+      "token": "0x4015"
+    },
+    "浸": {
+      "page": 1,
+      "cell": "0x16",
+      "token": "0x4016"
+    },
+    "时": {
+      "page": 1,
+      "cell": "0x17",
+      "token": "0x4017"
+    },
+    "圣": {
+      "page": 1,
+      "cell": "0x18",
+      "token": "0x4018"
+    },
+    "杜": {
+      "page": 1,
+      "cell": "0x19",
+      "token": "0x4019"
+    },
+    "汉": {
+      "page": 1,
+      "cell": "0x1A",
+      "token": "0x401A"
+    },
+    "然": {
+      "page": 1,
+      "cell": "0x1B",
+      "token": "0x401B"
+    },
+    "闪": {
+      "page": 1,
+      "cell": "0x1C",
+      "token": "0x401C"
+    },
+    "倾": {
+      "page": 1,
+      "cell": "0x1D",
+      "token": "0x401D"
+    },
+    "泻": {
+      "page": 1,
+      "cell": "0x1E",
+      "token": "0x401E"
+    },
+    "而": {
+      "page": 1,
+      "cell": "0x1F",
+      "token": "0x401F"
+    },
+    "芒": {
+      "page": 1,
+      "cell": "0x20",
+      "token": "0x4020"
+    },
+    "将": {
+      "page": 1,
+      "cell": "0x21",
+      "token": "0x4021"
+    },
+    "烧": {
+      "page": 1,
+      "cell": "0x22",
+      "token": "0x4022"
+    },
+    "灰": {
+      "page": 1,
+      "cell": "0x23",
+      "token": "0x4023"
+    },
+    "烬": {
+      "page": 1,
+      "cell": "0x24",
+      "token": "0x4024"
+    },
+    "美": {
+      "page": 1,
+      "cell": "0x25",
+      "token": "0x4025"
+    },
+    "女": {
+      "page": 1,
+      "cell": "0x26",
+      "token": "0x4026"
+    },
+    "王": {
+      "page": 1,
+      "cell": "0x27",
+      "token": "0x4027"
+    },
+    "下": {
+      "page": 1,
+      "cell": "0x28",
+      "token": "0x4028"
+    },
+    "一": {
+      "page": 1,
+      "cell": "0x29",
+      "token": "0x4029"
+    },
+    "日": {
+      "page": 1,
+      "cell": "0x2A",
+      "token": "0x402A"
+    },
+    "、": {
+      "page": 1,
+      "cell": "0x2B",
+      "token": "0x402B"
+    },
+    "天": {
+      "page": 1,
+      "cell": "0x2C",
+      "token": "0x402C"
+    },
+    "降": {
+      "page": 1,
+      "cell": "0x2D",
+      "token": "0x402D"
+    },
+    "光": {
+      "page": 1,
+      "cell": "0x2E",
+      "token": "0x402E"
+    },
+    "切": {
+      "page": 1,
+      "cell": "0x2F",
+      "token": "0x402F"
+    },
+    "成": {
+      "page": 1,
+      "cell": "0x30",
+      "token": "0x4030"
+    },
+    "平": {
+      "page": 1,
+      "cell": "0x31",
+      "token": "0x4031"
+    },
+    "和": {
+      "page": 1,
+      "cell": "0x32",
+      "token": "0x4032"
+    },
+    "中": {
+      "page": 1,
+      "cell": "0x33",
+      "token": "0x4033"
+    }
+  },
+  "style": {
+    "font": "NotoSerifSC-VF.ttf",
+    "variation": "Black",
+    "size": 22,
+    "alpha": [
+      121,
+      113,
+      105,
+      97,
+      89,
+      82,
+      74,
+      66,
+      58,
+      51,
+      43,
+      35,
+      27,
+      19,
+      11,
+      0
+    ]
+  }
+}

@@ -1,0 +1,662 @@
+[
+  {
+    "id": "00 4869C8",
+    "source": "ON",
+    "text": "ON"
+  },
+  {
+    "id": "01 4869D0",
+    "source": "OFF",
+    "text": "OFF"
+  },
+  {
+    "id": "02 4869D8",
+    "source": "リーダーフラグALL OFF",
+    "text": "领袖标志ALL OFF"
+  },
+  {
+    "id": "03 4869F8",
+    "source": "レベル",
+    "text": "等级"
+  },
+  {
+    "id": "04 486A00",
+    "source": "種族",
+    "text": "种族"
+  },
+  {
+    "id": "05 486A08",
+    "source": "職業",
+    "text": "职业"
+  },
+  {
+    "id": "06 486A10",
+    "source": "属性",
+    "text": "阵营"
+  },
+  {
+    "id": "07 486A18",
+    "source": "ステータス",
+    "text": "状态"
+  },
+  {
+    "id": "08 486A28",
+    "source": "消滅",
+    "text": "消灭"
+  },
+  {
+    "id": "09 486A30",
+    "source": "灰",
+    "text": "灰"
+  },
+  {
+    "id": "0A 486A38",
+    "source": "死",
+    "text": "死亡"
+  },
+  {
+    "id": "0B 486A40",
+    "source": "石化",
+    "text": "石化"
+  },
+  {
+    "id": "0C 486A48",
+    "source": "麻痺",
+    "text": "麻痹"
+  },
+  {
+    "id": "0D 486A50",
+    "source": "毒",
+    "text": "毒"
+  },
+  {
+    "id": "0E 486A58",
+    "source": "睡眠",
+    "text": "睡眠"
+  },
+  {
+    "id": "0F 486A60",
+    "source": "気ぜつ",
+    "text": "昏迷"
+  },
+  {
+    "id": "10 486A68",
+    "source": "封魔",
+    "text": "封魔"
+  },
+  {
+    "id": "11 486A70",
+    "source": "発狂",
+    "text": "发狂"
+  },
+  {
+    "id": "12 486A78",
+    "source": "死神",
+    "text": "死神"
+  },
+  {
+    "id": "13 486A80",
+    "source": "PARTY ALL",
+    "text": "PARTY ALL"
+  },
+  {
+    "id": "14 486A98",
+    "source": "PERSONAL",
+    "text": "PERSONAL"
+  },
+  {
+    "id": "15 486AB0",
+    "source": "リーダーフラグ",
+    "text": "领袖标志"
+  },
+  {
+    "id": "16 486AC0",
+    "source": "イベント",
+    "text": "事件"
+  },
+  {
+    "id": "17 486AD0",
+    "source": "MFLAG",
+    "text": "MFLAG"
+  },
+  {
+    "id": "18 486AE0",
+    "source": "FFLAG",
+    "text": "FFLAG"
+  },
+  {
+    "id": "19 486AF0",
+    "source": "AFLAG",
+    "text": "AFLAG"
+  },
+  {
+    "id": "1A 486B00",
+    "source": "ダンジョン トラップ",
+    "text": "迷宫陷阱"
+  },
+  {
+    "id": "1B 486B18",
+    "source": "フロアセレクト",
+    "text": "楼层选择"
+  },
+  {
+    "id": "1C 486B28",
+    "source": "F",
+    "text": "F"
+  },
+  {
+    "id": "1D 486B30",
+    "source": "スタミナ",
+    "text": "耐力"
+  },
+  {
+    "id": "1E 486B40",
+    "source": "あり",
+    "text": "有"
+  },
+  {
+    "id": "1F 486B48",
+    "source": "なし",
+    "text": "无"
+  },
+  {
+    "id": "20 486B50",
+    "source": "TOWN!",
+    "text": "TOWN!"
+  },
+  {
+    "id": "21 486B60",
+    "source": "戦闘",
+    "text": "战斗"
+  },
+  {
+    "id": "22 486B68",
+    "source": "する",
+    "text": "进行"
+  },
+  {
+    "id": "23 486B70",
+    "source": "しない",
+    "text": "不进行"
+  },
+  {
+    "id": "24 486B78",
+    "source": "パーティランク",
+    "text": "队伍阶级"
+  },
+  {
+    "id": "25 486B88",
+    "source": "TEXT EVENT",
+    "text": "TEXT EVENT"
+  },
+  {
+    "id": "26 486BA0",
+    "source": "RANDOM",
+    "text": "RANDOM"
+  },
+  {
+    "id": "27 486BB0",
+    "source": "SPEAR",
+    "text": "SPEAR"
+  },
+  {
+    "id": "28 486BC0",
+    "source": "DARK_FOG",
+    "text": "DARK_FOG"
+  },
+  {
+    "id": "29 486BD8",
+    "source": "HEARING_BLASTER",
+    "text": "HEARING_BLASTER"
+  },
+  {
+    "id": "2A 486BF8",
+    "source": "SHOOT",
+    "text": "SHOOT"
+  },
+  {
+    "id": "2B 486C08",
+    "source": "CROSS_BOW",
+    "text": "CROSS_BOW"
+  },
+  {
+    "id": "2C 486C20",
+    "source": "CROSS_BOW",
+    "text": "CROSS_BOW"
+  },
+  {
+    "id": "2D 486C38",
+    "source": "CROSS_BOW",
+    "text": "CROSS_BOW"
+  },
+  {
+    "id": "2E 486C50",
+    "source": "CROSS_BOW",
+    "text": "CROSS_BOW"
+  },
+  {
+    "id": "2F 486C68",
+    "source": "ROOFFALL",
+    "text": "ROOFFALL"
+  },
+  {
+    "id": "30 486C80",
+    "source": "ANTIMAGIC_BLASTER",
+    "text": "ANTIMAGIC_BLASTER"
+  },
+  {
+    "id": "31 486CA8",
+    "source": "POISONGAS",
+    "text": "POISONGAS"
+  },
+  {
+    "id": "32 486CC0",
+    "source": "TELEPORTER",
+    "text": "TELEPORTER"
+  },
+  {
+    "id": "33 486CD8",
+    "source": "VOMIT_OF_SPIRIT",
+    "text": "VOMIT_OF_SPIRIT"
+  },
+  {
+    "id": "34 486CF8",
+    "source": "RANDOM_UP",
+    "text": "RANDOM_UP"
+  },
+  {
+    "id": "35 486D10",
+    "source": "RANDOM_DOWN",
+    "text": "RANDOM_DOWN"
+  },
+  {
+    "id": "36 486D28",
+    "source": "RANDOM_LEFT",
+    "text": "RANDOM_LEFT"
+  },
+  {
+    "id": "37 486D40",
+    "source": "RANDOM_RIGHT",
+    "text": "RANDOM_RIGHT"
+  },
+  {
+    "id": "38 486D60",
+    "source": "SET_TRAP",
+    "text": "SET_TRAP"
+  },
+  {
+    "id": "39 486D78",
+    "source": "%",
+    "text": "%"
+  },
+  {
+    "id": "3A 486D80",
+    "source": "発生りつ",
+    "text": "发生率"
+  },
+  {
+    "id": "3B 486D90",
+    "source": "とりついた!!",
+    "text": "附身了!!"
+  },
+  {
+    "id": "3C 486DA0",
+    "source": "とりついてない。",
+    "text": "未附身。"
+  },
+  {
+    "id": "3D 486DB8",
+    "source": "死神とりつき時間",
+    "text": "死神附身时间"
+  },
+  {
+    "id": "3E 486DD0",
+    "source": "死神移動可能時間",
+    "text": "死神可移动时间"
+  },
+  {
+    "id": "3F 486DE8",
+    "source": "死神復活WAIT",
+    "text": "死神复活WAIT"
+  },
+  {
+    "id": "40 486E00",
+    "source": "アイテム",
+    "text": "物品"
+  },
+  {
+    "id": "41 486E10",
+    "source": "どうぐ",
+    "text": "道具"
+  },
+  {
+    "id": "42 486E18",
+    "source": "アクセサリー",
+    "text": "饰品"
+  },
+  {
+    "id": "43 486E28",
+    "source": "ぼうぐ",
+    "text": "防具"
+  },
+  {
+    "id": "44 486E30",
+    "source": "ぶき",
+    "text": "武器"
+  },
+  {
+    "id": "45 486E38",
+    "source": "装備",
+    "text": "装备"
+  },
+  {
+    "id": "46 486E40",
+    "source": "破れた",
+    "text": "破损"
+  },
+  {
+    "id": "47 486E48",
+    "source": "破れてない",
+    "text": "未破损"
+  },
+  {
+    "id": "48 486E58",
+    "source": "呪われてる",
+    "text": "已诅咒"
+  },
+  {
+    "id": "49 486E68",
+    "source": "呪われてない",
+    "text": "未诅咒"
+  },
+  {
+    "id": "4A 486E78",
+    "source": "確認",
+    "text": "确认"
+  },
+  {
+    "id": "4B 486E80",
+    "source": "Ok!",
+    "text": "Ok!"
+  },
+  {
+    "id": "4C 486E88",
+    "source": "No!",
+    "text": "No!"
+  },
+  {
+    "id": "4D 486E90",
+    "source": "E",
+    "text": "E"
+  },
+  {
+    "id": "4E 486E98",
+    "source": "魔法",
+    "text": "魔法"
+  },
+  {
+    "id": "4F 486EA0",
+    "source": "剣技",
+    "text": "剑技"
+  },
+  {
+    "id": "50 486EA8",
+    "source": "僧侶",
+    "text": "僧侣"
+  },
+  {
+    "id": "51 486EB0",
+    "source": "魔術師",
+    "text": "魔法师"
+  },
+  {
+    "id": "52 486EB8",
+    "source": "レベル",
+    "text": "等级"
+  },
+  {
+    "id": "53 486EC0",
+    "source": "使用数",
+    "text": "使用数"
+  },
+  {
+    "id": "54 486EC8",
+    "source": "MAX使用数",
+    "text": "MAX使用数"
+  },
+  {
+    "id": "55 486ED8",
+    "source": "/",
+    "text": "/"
+  },
+  {
+    "id": "56 486EE0",
+    "source": "カメラのゆれ",
+    "text": "镜头晃动"
+  },
+  {
+    "id": "57 486EF0",
+    "source": "あたり",
+    "text": "碰撞"
+  },
+  {
+    "id": "58 486EF8",
+    "source": "RAND DUNGEON",
+    "text": "RAND DUNGEON"
+  },
+  {
+    "id": "59 486F18",
+    "source": "OFS",
+    "text": "OFS"
+  },
+  {
+    "id": "5A 486F20",
+    "source": "ALARM",
+    "text": "ALARM"
+  },
+  {
+    "id": "5B 486F30",
+    "source": "ランク",
+    "text": "阶级"
+  },
+  {
+    "id": "5C 486F38",
+    "source": "パラメーター",
+    "text": "参数"
+  },
+  {
+    "id": "5D 486F48",
+    "source": "力",
+    "text": "力量"
+  },
+  {
+    "id": "5E 486F50",
+    "source": "知恵",
+    "text": "智力"
+  },
+  {
+    "id": "5F 486F58",
+    "source": "信仰心",
+    "text": "信仰"
+  },
+  {
+    "id": "60 486F60",
+    "source": "生命力",
+    "text": "体力"
+  },
+  {
+    "id": "61 486F68",
+    "source": "敏捷度",
+    "text": "敏捷"
+  },
+  {
+    "id": "62 486F70",
+    "source": "HP",
+    "text": "HP"
+  },
+  {
+    "id": "63 486F78",
+    "source": "魔法/パラメーター",
+    "text": "魔法/参数"
+  },
+  {
+    "id": "64 486F90",
+    "source": "幸運度",
+    "text": "幸运"
+  },
+  {
+    "id": "65 486F98",
+    "source": "もう目",
+    "text": "盲目"
+  },
+  {
+    "id": "66 486FA0",
+    "source": "糸",
+    "text": "丝"
+  },
+  {
+    "id": "67 486FA8",
+    "source": "ゲイズ",
+    "text": "凝视"
+  },
+  {
+    "id": "68 486FB0",
+    "source": "魔法石",
+    "text": "魔法石"
+  },
+  {
+    "id": "69 486FB8",
+    "source": "合成",
+    "text": "合成"
+  },
+  {
+    "id": "6A 486FC0",
+    "source": "おかね",
+    "text": "金钱"
+  },
+  {
+    "id": "6B 486FC8",
+    "source": "GIMMICK",
+    "text": "GIMMICK"
+  },
+  {
+    "id": "6C 486FD8",
+    "source": "EVENT OBJECT",
+    "text": "EVENT OBJECT"
+  },
+  {
+    "id": "6D 486FF8",
+    "source": "死神アレイド",
+    "text": "死神连携"
+  },
+  {
+    "id": "6E 487008",
+    "source": "MAX",
+    "text": "MAX"
+  },
+  {
+    "id": "6F 487010",
+    "source": "月",
+    "text": "月"
+  },
+  {
+    "id": "70 487018",
+    "source": "NEW",
+    "text": "NEW"
+  },
+  {
+    "id": "71 487020",
+    "source": "D-HORNED",
+    "text": "D-HORNED"
+  },
+  {
+    "id": "72 487038",
+    "source": "HARF",
+    "text": "HARF"
+  },
+  {
+    "id": "73 487048",
+    "source": "FULL",
+    "text": "FULL"
+  },
+  {
+    "id": "74 487058",
+    "source": "YOUNG",
+    "text": "YOUNG"
+  },
+  {
+    "id": "75 487068",
+    "source": "U-HORNED",
+    "text": "U-HORNED"
+  },
+  {
+    "id": "76 487080",
+    "source": "CRIMSON",
+    "text": "CRIMSON"
+  },
+  {
+    "id": "77 487090",
+    "source": "RFLAG",
+    "text": "RFLAG"
+  },
+  {
+    "id": "78 4870A0",
+    "source": "ステージトラップ",
+    "text": "关卡陷阱"
+  },
+  {
+    "id": "79 4870B8",
+    "source": "ランダムトラップ",
+    "text": "随机陷阱"
+  },
+  {
+    "id": "7A 4870D0",
+    "source": "イベントパラメータ",
+    "text": "事件参数"
+  },
+  {
+    "id": "7B 4870E8",
+    "source": "REQUEST",
+    "text": "REQUEST"
+  },
+  {
+    "id": "7C 4870F8",
+    "source": "経験値",
+    "text": "经验值"
+  },
+  {
+    "id": "7D 487100",
+    "source": "魔術師魔法経験値",
+    "text": "魔法师魔法经验值"
+  },
+  {
+    "id": "7E 487118",
+    "source": "僧侶魔法経験値",
+    "text": "僧侣魔法经验值"
+  },
+  {
+    "id": "7F 487128",
+    "source": "戦闘回数(ALL)",
+    "text": "战斗次数(ALL)"
+  },
+  {
+    "id": "80 487140",
+    "source": "(Floorごと)",
+    "text": "(每Floor)"
+  },
+  {
+    "id": "81 487158",
+    "source": "信頼度",
+    "text": "信任度"
+  },
+  {
+    "id": "82 487160",
+    "source": "STAGE MODEL",
+    "text": "STAGE MODEL"
+  },
+  {
+    "id": "83 487178",
+    "source": "あれいど({9})",
+    "text": "连携({9})"
+  }
+]

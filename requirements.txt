@@ -1,0 +1,4 @@
+Pillow==12.1.1
+zstandard==0.25.0
+capstone==5.0.7
+pytest==8.4.2

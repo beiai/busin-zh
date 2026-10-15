@@ -1,0 +1,237 @@
+[
+  {
+    "id": "589F60",
+    "source": "力",
+    "text": "力量"
+  },
+  {
+    "id": "589F66",
+    "source": "知恵",
+    "text": "智力"
+  },
+  {
+    "id": "589F6C",
+    "source": "信仰心",
+    "text": "信仰"
+  },
+  {
+    "id": "589F72",
+    "source": "生命力",
+    "text": "体力"
+  },
+  {
+    "id": "589F78",
+    "source": "敏捷度",
+    "text": "敏捷"
+  },
+  {
+    "id": "589F7E",
+    "source": "幸運度",
+    "text": "幸运"
+  },
+  {
+    "id": "589F88",
+    "source": "HUM",
+    "text": "HUM"
+  },
+  {
+    "id": "589F90",
+    "source": "ELF",
+    "text": "ELF"
+  },
+  {
+    "id": "589F98",
+    "source": "DWA",
+    "text": "DWA"
+  },
+  {
+    "id": "589FA0",
+    "source": "GNO",
+    "text": "GNO"
+  },
+  {
+    "id": "589FA8",
+    "source": "HOB",
+    "text": "HOB"
+  },
+  {
+    "id": "589FB0",
+    "source": "人間",
+    "text": "人类"
+  },
+  {
+    "id": "589FB8",
+    "source": "エルフ",
+    "text": "精灵"
+  },
+  {
+    "id": "589FC0",
+    "source": "ドワーフ",
+    "text": "矮人"
+  },
+  {
+    "id": "589FC8",
+    "source": "ノーム",
+    "text": "侏儒"
+  },
+  {
+    "id": "589FD0",
+    "source": "ホビット",
+    "text": "霍比特"
+  },
+  {
+    "id": "589FD8",
+    "source": "戦士",
+    "text": "战士"
+  },
+  {
+    "id": "589FDE",
+    "source": "盗賊",
+    "text": "盗贼"
+  },
+  {
+    "id": "589FE4",
+    "source": "侍",
+    "text": "武士"
+  },
+  {
+    "id": "589FEA",
+    "source": "忍者",
+    "text": "忍者"
+  },
+  {
+    "id": "589FF0",
+    "source": "魔術師",
+    "text": "魔法师"
+  },
+  {
+    "id": "589FF6",
+    "source": "僧侶",
+    "text": "僧侣"
+  },
+  {
+    "id": "589FFC",
+    "source": "騎士",
+    "text": "骑士"
+  },
+  {
+    "id": "58A002",
+    "source": "司教",
+    "text": "主教"
+  },
+  {
+    "id": "58A008",
+    "source": "FIG",
+    "text": "FIG"
+  },
+  {
+    "id": "58A00E",
+    "source": "THI",
+    "text": "THI"
+  },
+  {
+    "id": "58A014",
+    "source": "SAM",
+    "text": "SAM"
+  },
+  {
+    "id": "58A01A",
+    "source": "NIN",
+    "text": "NIN"
+  },
+  {
+    "id": "58A020",
+    "source": "MAG",
+    "text": "MAG"
+  },
+  {
+    "id": "58A026",
+    "source": "PRI",
+    "text": "PRI"
+  },
+  {
+    "id": "58A02C",
+    "source": "PAL",
+    "text": "PAL"
+  },
+  {
+    "id": "58A032",
+    "source": "BIS",
+    "text": "BIS"
+  },
+  {
+    "id": "58A038",
+    "source": "好戦的",
+    "text": "好战"
+  },
+  {
+    "id": "58A042",
+    "source": "弱虫",
+    "text": "懦弱"
+  },
+  {
+    "id": "58A04C",
+    "source": "優しい",
+    "text": "温柔"
+  },
+  {
+    "id": "58A056",
+    "source": "友情的",
+    "text": "重友情"
+  },
+  {
+    "id": "58A060",
+    "source": "孤独的",
+    "text": "孤僻"
+  },
+  {
+    "id": "58A06A",
+    "source": "恐がり",
+    "text": "胆小"
+  },
+  {
+    "id": "58A074",
+    "source": "感動家",
+    "text": "易感动"
+  },
+  {
+    "id": "58A07E",
+    "source": "知的",
+    "text": "知性"
+  },
+  {
+    "id": "58A088",
+    "source": "飽き性",
+    "text": "易厌倦"
+  },
+  {
+    "id": "58A092",
+    "source": "欲張り",
+    "text": "贪心"
+  },
+  {
+    "id": "58A09C",
+    "source": "収集家",
+    "text": "收藏家"
+  },
+  {
+    "id": "58A0A6",
+    "source": "虫嫌い",
+    "text": "讨厌虫子"
+  },
+  {
+    "id": "58A0B0",
+    "source": "犬嫌い",
+    "text": "讨厌狗"
+  },
+  {
+    "id": "58A0BA",
+    "source": "竜嫌い",
+    "text": "讨厌龙"
+  },
+  {
+    "id": "58A0C4",
+    "source": "正義感",
+    "text": "正义感"
+  }
+]

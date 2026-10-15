@@ -1,0 +1,278 @@
+{
+  "chunk": 301,
+  "base": "0x40CB000",
+  "align": "left",
+  "messages": [
+    {
+      "offset": "0x0500",
+      "show": "screen",
+      "source": "カンバンには、ヘタな字で\nこうかいてあった。<BREAK>",
+      "text": [
+        "告示牌上，用拙劣的字",
+        "这样写着。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x0530",
+      "show": "screen",
+      "source": "石化には、ウィルの魔法しかききめがない\nウィルの魔法がなかったら・・・\n快癒の薬の出番だぞ\nそれも、持ってなかったら・・・\nあとは、寺院にかけこもう！\n\n<FB01>いだいなる戦士<FFD0>オトム<BREAK>",
+      "text": [
+        "石化只有意志魔法管用",
+        "没有意志魔法的话…",
+        "就轮到痊愈药了",
+        "那个也没带的话…",
+        "然后就冲进寺院吧！",
+        "",
+        "<FB01>伟大的战士<FFD0>奥托姆<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x05E6",
+      "show": "screen",
+      "source": "よく見ると木箱の上に、\n司教の腕輪が置かれていた。<BREAK>",
+      "text": [
+        "仔细一看，木箱上",
+        "放着主教手镯。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x061C",
+      "show": "screen",
+      "source": "司教の腕輪を拾いますか？\n\nは い\nいいえ\n",
+      "text": [
+        "要拾起主教手镯吗？",
+        "",
+        "是",
+        "否",
+        ""
+      ]
+    },
+    {
+      "offset": "0x064E",
+      "show": "screen",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "text": [
+        "携带物品已经满了。",
+        "要丢弃什么吗？",
+        "",
+        "是",
+        "否",
+        ""
+      ]
+    },
+    {
+      "offset": "0x0690",
+      "show": "screen",
+      "source": "<FB01>司教の腕輪<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "得到了<FB01>主教手镯<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x06B0",
+      "show": "screen",
+      "source": "<FB01>司教の腕輪<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "放弃了<FB01>主教手镯<FB00>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x06D0",
+      "show": "screen",
+      "source": "<FB01>司教の腕輪<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "得到了<FB01>主教手镯<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x06F0",
+      "show": "screen",
+      "source": "よく見ると、骸骨の手には\n黒光りしている髪束が\n握りしめられていた。<BREAK>",
+      "text": [
+        "仔细一看，骸骨的手里",
+        "紧紧攥着一束",
+        "泛着黑光的头发。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x0738",
+      "show": "screen",
+      "source": "魔力のような不思議な力を\n感じ取る事が出来るこの髪束は\nおそらく僧侶の髪であろう。<BREAK>",
+      "text": [
+        "能从这束头发上",
+        "感到如魔力般的奇异力量，",
+        "大概是僧侣的头发。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x078E",
+      "show": "screen",
+      "source": "僧侶の髪を拾いますか？\n\nは い\nいいえ\n",
+      "text": [
+        "要拾起僧侣头发吗？",
+        "",
+        "是",
+        "否",
+        ""
+      ]
+    },
+    {
+      "offset": "0x07BE",
+      "show": "screen",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "text": [
+        "携带物品已经满了。",
+        "要丢弃什么吗？",
+        "",
+        "是",
+        "否",
+        ""
+      ]
+    },
+    {
+      "offset": "0x0800",
+      "show": "screen",
+      "source": "<FB01>僧侶の髪<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "得到了<FB01>僧侣头发<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x081E",
+      "show": "screen",
+      "source": "<FB01>僧侶の髪<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "放弃了<FB01>僧侣头发<FB00>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x083C",
+      "show": "screen",
+      "source": "<FB01>僧侶の髪<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "得到了<FB01>僧侣头发<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x085A",
+      "show": "screen",
+      "source": "樽の上に、魔物の卵が\n転がっている。<BREAK>",
+      "text": [
+        "木桶上滚着一枚",
+        "魔物之卵。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x0882",
+      "show": "screen",
+      "source": "魔物の卵を拾いますか？\n\nは い\nいいえ\n",
+      "text": [
+        "要拾起魔物之卵吗？",
+        "",
+        "是",
+        "否",
+        ""
+      ]
+    },
+    {
+      "offset": "0x08B2",
+      "show": "screen",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "text": [
+        "携带物品已经满了。",
+        "要丢弃什么吗？",
+        "",
+        "是",
+        "否",
+        ""
+      ]
+    },
+    {
+      "offset": "0x08F4",
+      "show": "screen",
+      "source": "<FB01>魔物の卵<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "得到了<FB01>魔物之卵<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x0912",
+      "show": "screen",
+      "source": "<FB01>魔物の卵<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "放弃了<FB01>魔物之卵<FB00>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x0930",
+      "show": "screen",
+      "source": "<FB01>魔物の卵<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "得到了<FB01>魔物之卵<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x094E",
+      "show": "screen",
+      "source": "一行は袋を開けた。\n中には、インキュバスの翼が入っていた。<BREAK>",
+      "text": [
+        "一行打开了袋子。",
+        "里面装着梦魔之翼。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x098C",
+      "show": "screen",
+      "source": "<PAGE>は袋を開けた。\n中には、インキュバスの翼が入っていた。<BREAK>",
+      "text": [
+        "<PAGE>打开了袋子。",
+        "里面装着梦魔之翼。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x09C8",
+      "show": "screen",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "text": [
+        "携带物品已经满了。",
+        "要丢弃什么吗？",
+        "",
+        "是",
+        "否",
+        ""
+      ]
+    },
+    {
+      "offset": "0x0A0A",
+      "show": "screen",
+      "source": "<FB01>インキュバスの翼<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "得到了<FB01>梦魔之翼<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x0A30",
+      "show": "screen",
+      "source": "<FB01>インキュバスの翼<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "放弃了<FB01>梦魔之翼<FB00>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x0A56",
+      "show": "screen",
+      "source": "<FB01>インキュバスの翼<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "放弃了<FB01>梦魔之翼<FB00>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x0A7C",
+      "show": "screen",
+      "source": "<FB01>インキュバスの翼<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "得到了<FB01>梦魔之翼<FB00>！<BREAK>"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+# Local inputs and applications
+/private/
+/config.toml
+/ps2-bios-*.zip
+/external/
+/local/
+/.cursor/
+
+# Disc images, savestates and original GS captures, wherever stored
+*.[bB][iI][nN]
+*.[cC][uU][eE]
+*.[iI][sS][oO]
+*.[cC][hH][dD]
+*.p2s
+*.ps2
+*.gs
+*.gs.zst
+*.gs.xz
+
+# Reproducible outputs and Python environments
+/build/
+/tmp/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# OS metadata
+Thumbs.db
+.DS_Store

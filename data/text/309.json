@@ -1,0 +1,133 @@
+{
+  "chunk": 309,
+  "base": "0x4161800",
+  "align": "left",
+  "messages": [
+    {
+      "offset": "0x0380",
+      "show": "screen",
+      "source": "一行は袋を開けた。\n中には、魔剣の破片が入っていた。<BREAK>",
+      "text": [
+        "一行打开了袋子。",
+        "里面装着魔剑碎片。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x03B8",
+      "show": "screen",
+      "source": "<PAGE>は袋を開けた。\n中には、魔剣の破片が入っていた。<BREAK>",
+      "text": [
+        "<PAGE>打开了袋子。",
+        "里面装着魔剑碎片。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x03EE",
+      "show": "screen",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "text": [
+        "携带物品已经满了。",
+        "要丢弃什么吗？",
+        "",
+        "是",
+        "否",
+        ""
+      ]
+    },
+    {
+      "offset": "0x0430",
+      "show": "screen",
+      "source": "<FB01>魔剣の破片<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "得到了<FB01>魔剑碎片<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x0450",
+      "show": "screen",
+      "source": "<FB01>魔剣の破片<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "放弃了<FB01>魔剑碎片<FB00>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x0470",
+      "show": "screen",
+      "source": "<FB01>魔剣の破片<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "放弃了<FB01>魔剑碎片<FB00>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x0490",
+      "show": "screen",
+      "source": "<FB01>魔剣の破片<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "得到了<FB01>魔剑碎片<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x04B0",
+      "show": "screen",
+      "source": "一行は\nそっと剣に手をのばした。<BREAK>",
+      "text": [
+        "一行",
+        "轻轻把手伸向了剑。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x04D4",
+      "show": "screen",
+      "source": "<PAGE>は\nそっと剣に手をのばした。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "轻轻把手伸向了剑。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x04F6",
+      "show": "screen",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "text": [
+        "携带物品已经满了。",
+        "要丢弃什么吗？",
+        "",
+        "是",
+        "否",
+        ""
+      ]
+    },
+    {
+      "offset": "0x0538",
+      "show": "screen",
+      "source": "<FB01>クイーンガードの剣<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "得到了<FB01>女王近卫剑<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x0560",
+      "show": "screen",
+      "source": "<FB01>クイーンガードの剣<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "放弃了<FB01>女王近卫剑<FB00>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x0588",
+      "show": "screen",
+      "source": "<FB01>クイーンガードの剣<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "放弃了<FB01>女王近卫剑<FB00>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x05B0",
+      "show": "screen",
+      "source": "<FB01>クイーンガードの剣<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "得到了<FB01>女王近卫剑<FB00>！<BREAK>"
+      ]
+    }
+  ]
+}

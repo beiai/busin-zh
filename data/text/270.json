@@ -1,0 +1,43 @@
+{
+  "chunk": 270,
+  "base": "0x3C9D000",
+  "align": "center",
+  "messages": [
+    {
+      "offset": "0x0002",
+      "show": "screen",
+      "source": "何も思い出さぬまま",
+      "text": null
+    },
+    {
+      "offset": "0x0016",
+      "show": "screen",
+      "source": "何もなさぬままに",
+      "text": null
+    },
+    {
+      "offset": "0x0028",
+      "show": "screen",
+      "source": "かの魂は冥府の門をくぐる",
+      "text": null
+    },
+    {
+      "offset": "0x0042",
+      "show": "screen",
+      "source": "後にはただ",
+      "text": null
+    },
+    {
+      "offset": "0x004E",
+      "show": "screen",
+      "source": "永遠の夜だけが",
+      "text": null
+    },
+    {
+      "offset": "0x005E",
+      "show": "screen",
+      "source": "静かにドゥーハンをおおった……",
+      "text": null
+    }
+  ]
+}

@@ -1,0 +1,6907 @@
+{
+  "chunk": 300,
+  "base": "0x40B2000",
+  "align": "left",
+  "messages": [
+    {
+      "offset": "0x7F80",
+      "show": "screen",
+      "source": "血まみれの兵士がふらふらと歩いて来た。\n倒れる彼を、<PAGE>が支える。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x7FC4",
+      "show": "window",
+      "source": "兵士「これは悪夢だ……\nこんな事があってはならない…」",
+      "text": null
+    },
+    {
+      "offset": "0x7FFE",
+      "show": "window",
+      "source": "兵士「ドゥーハンは、女王が治める\n聖なる都」",
+      "text": null
+    },
+    {
+      "offset": "0x802E",
+      "show": "window",
+      "source": "兵士「あんなモノが存在していては\nいけないんだ」",
+      "text": null
+    },
+    {
+      "offset": "0x8062",
+      "show": "window",
+      "source": "兵士「あんなモノに我らの女王が…」",
+      "text": null
+    },
+    {
+      "offset": "0x8086",
+      "show": "screen",
+      "source": "うわ言の様に呟いていた兵士が\nガッと<PAGE>の手を握った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x80BE",
+      "show": "window",
+      "source": "兵士「た、頼む！！\n女王陛下を救ってくれ！」",
+      "text": null
+    },
+    {
+      "offset": "0x80EE",
+      "show": "window",
+      "source": "兵士「我らの女王を、あれ以上\n汚さないでくれぇっ！！」",
+      "text": null
+    },
+    {
+      "offset": "0x8128",
+      "show": "screen",
+      "source": "兵士はそのまま、崩れ落ちる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x8148",
+      "show": "screen",
+      "source": "<PAGE>は、邪悪な妖気がただよう\n扉をにらみつけた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x817A",
+      "show": "screen",
+      "source": "血まみれの兵士がふらふらと歩いて来た。\n倒れる彼を、一行が支える。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x81C0",
+      "show": "window",
+      "source": "兵士「これは悪夢だ……\nこんな事があってはならない…」",
+      "text": null
+    },
+    {
+      "offset": "0x81FA",
+      "show": "window",
+      "source": "兵士「ドゥーハンは、女王が治める\n聖なる都」",
+      "text": null
+    },
+    {
+      "offset": "0x822A",
+      "show": "window",
+      "source": "兵士「あんなモノが存在していては\nいけないんだ」",
+      "text": null
+    },
+    {
+      "offset": "0x825E",
+      "show": "window",
+      "source": "兵士「あんなモノに我らの女王が…」",
+      "text": null
+    },
+    {
+      "offset": "0x8282",
+      "show": "screen",
+      "source": "うわ言の様に呟いていた兵士が\nガッと一行の手を握った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x82BC",
+      "show": "window",
+      "source": "兵士「た、頼む！！\n女王陛下を救ってくれ！」",
+      "text": null
+    },
+    {
+      "offset": "0x82EC",
+      "show": "window",
+      "source": "兵士「我らの女王を、あれ以上\n汚さないでくれぇっ！！」",
+      "text": null
+    },
+    {
+      "offset": "0x8326",
+      "show": "screen",
+      "source": "兵士はそのまま、崩れ落ちる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x8346",
+      "show": "screen",
+      "source": "一行は、邪悪な妖気がただよう\n扉をにらみつけた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x837A",
+      "show": "screen",
+      "source": "吹き荒れる風の中、一人の女性が\n宙に浮いていた。<BREAK>\n白いドレスがひらひらと風に舞う。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x83D2",
+      "show": "screen",
+      "source": "ユージンにさらわれた\n<FB09><FB01>女王オティーリエ<FB00>その人に\nまちがいなかった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x841E",
+      "show": "screen",
+      "source": "<PAGE>は思わず\n女王に駆け寄った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x8440",
+      "show": "screen",
+      "source": "<PAGE>の手が今まさに\n女王に触れようとした瞬間\n魂が凍える様な声が響いた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x848A",
+      "show": "screen",
+      "source": "汝、触れる事かなわぬ。",
+      "text": null
+    },
+    {
+      "offset": "0x84A4",
+      "show": "screen",
+      "source": "<PAGE>は\n用心深く一歩しりぞいた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x84C6",
+      "show": "screen",
+      "source": "女王の後ろに、暗いもやがわだかまり\nだんだんとひとつの形をなしてゆく。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x8510",
+      "show": "screen",
+      "source": "姿を現したのは、一体の悪魔……\n人を悪夢の世界にいざない、もてあそぶ\nインキュバスとよばれる夢魔だった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x857C",
+      "show": "window",
+      "source": "夢魔「私の可愛い人形に\n汚らしい指で触る事は\n許さぬ」",
+      "text": null
+    },
+    {
+      "offset": "0x85B8",
+      "show": "window",
+      "source": "夢魔「これは契約にもとづき\n私に引き渡されたのだ」",
+      "text": null
+    },
+    {
+      "offset": "0x85EE",
+      "show": "window",
+      "source": "夢魔「指も、<FD01>瞳も、<FD01>唇も、<FD01>その髪の一筋に\nいたるまで、<FD01>全て私の物だ。\n何者にも触れさせはしない」",
+      "text": null
+    },
+    {
+      "offset": "0x865A",
+      "show": "screen",
+      "source": "夢魔は、女王の細いあごを\n乱暴につかんだ。<BREAK>\n何故か、<PAGE>の胸が\n激しく痛む。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x86AA",
+      "show": "window",
+      "source": "夢魔「あの男は、またとない\n貴重なる物をくれた事よ」",
+      "text": null
+    },
+    {
+      "offset": "0x86E2",
+      "show": "window",
+      "source": "夢魔「夢を見ぬ物に悪夢を与える…\n恐怖を知らぬ物に恐怖を与える…\nまさに、最上の悦びではないか」",
+      "text": null
+    },
+    {
+      "offset": "0x8748",
+      "show": "screen",
+      "source": "それ自体が意思を持つかの様に\n夢魔の舌がなまめかしく\nチロチロとうごめいた。<BREAK>\n笑っている様だ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x87AC",
+      "show": "window",
+      "source": "夢魔「これは、私の悪夢の中で\n恐怖を知り、悦びを知り\n一人の女になるのだ」",
+      "text": null
+    },
+    {
+      "offset": "0x87FC",
+      "show": "window",
+      "source": "夢魔「その時こそ、極上の夢の中で\n私と交わろうぞ」",
+      "text": null
+    },
+    {
+      "offset": "0x8832",
+      "show": "window",
+      "source": "夢魔「堕落し、甘美なる海に\nひたろうではないか………」",
+      "text": null
+    },
+    {
+      "offset": "0x886C",
+      "show": "screen",
+      "source": "ソノヒトヲ、ケガスナ！！",
+      "text": null
+    },
+    {
+      "offset": "0x8888",
+      "show": "screen",
+      "source": "カッ、と<PAGE>の頭に\n血がのぼった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x88AC",
+      "show": "screen",
+      "source": "<PAGE>は、夢魔に放つべく\n魔力をねりあげようとする。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x88E0",
+      "show": "screen",
+      "source": "ソノヒトヲ、ケガスナ！！",
+      "text": null
+    },
+    {
+      "offset": "0x88FC",
+      "show": "screen",
+      "source": "カッ、と<PAGE>の頭に\n血がのぼった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x8920",
+      "show": "screen",
+      "source": "<PAGE>は、夢魔に飛びかかるべく\n武器を構えようとする。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x8956",
+      "show": "screen",
+      "source": "吹き荒れる風の中、一人の女性が\n宙に浮いていた。<BREAK>\n白いドレスがひらひらと風に舞う。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x89AE",
+      "show": "screen",
+      "source": "ユージンにさらわれた\n<FB09><FB01>女王オティーリエ<FB00>その人に\nまちがいなかった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x89FA",
+      "show": "screen",
+      "source": "一行は思わず\n女王に駆け寄った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x8A1E",
+      "show": "screen",
+      "source": "一行の手が今まさに\n女王に触れようとした瞬間\n魂が凍える様な声が響いた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x8A6A",
+      "show": "screen",
+      "source": "汝、触れる事かなわぬ。",
+      "text": null
+    },
+    {
+      "offset": "0x8A84",
+      "show": "screen",
+      "source": "一行は、用心深く一歩しりぞいた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x8AA8",
+      "show": "screen",
+      "source": "女王の後ろに、暗いもやがわだかまり\nだんだんとひとつの形をなしてゆく。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x8AF2",
+      "show": "screen",
+      "source": "姿を現したのは、一体の悪魔……\n人を悪夢の世界にいざない、もてあそぶ\nインキュバスとよばれる夢魔だった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x8B5E",
+      "show": "window",
+      "source": "夢魔「私の可愛い人形に\nきたならしい指で触る事は\n許さぬ」",
+      "text": null
+    },
+    {
+      "offset": "0x8B9E",
+      "show": "window",
+      "source": "夢魔「これは契約にもとづき\n私に引き渡されたのだ」",
+      "text": null
+    },
+    {
+      "offset": "0x8BD4",
+      "show": "window",
+      "source": "夢魔「指も、<FD01>瞳も、<FD01>唇も、<FD01>その髪の一筋に\nいたるまで、<FD01>全て私の物だ。\n何者にも触れさせはしない」",
+      "text": null
+    },
+    {
+      "offset": "0x8C40",
+      "show": "screen",
+      "source": "夢魔は、女王の細いあごを\n乱暴につかんだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x8C6E",
+      "show": "window",
+      "source": "夢魔「あの男は、またとない\n貴重なる物をくれた事よ」",
+      "text": null
+    },
+    {
+      "offset": "0x8CA6",
+      "show": "window",
+      "source": "夢魔「夢を見ぬ物に悪夢を与える…\n恐怖を知らぬ物に恐怖を与える…\nまさに、最上の悦びではないか」",
+      "text": null
+    },
+    {
+      "offset": "0x8D0C",
+      "show": "screen",
+      "source": "それ自体が意思を持つかのように\n夢魔の舌がなまめかしく\nチロチロとうごめいた。<BREAK>\n笑っている様だ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x8D72",
+      "show": "window",
+      "source": "夢魔「これは、私の悪夢の中で\n恐怖を知り、悦びを知り\n一人の女になるのだ」",
+      "text": null
+    },
+    {
+      "offset": "0x8DC2",
+      "show": "window",
+      "source": "夢魔「その時こそ、極上の夢の中で\n私と交わろうぞ」",
+      "text": null
+    },
+    {
+      "offset": "0x8DF8",
+      "show": "window",
+      "source": "夢魔「堕落し、甘美なる海に\nひたろうではないか………」",
+      "text": null
+    },
+    {
+      "offset": "0x8E32",
+      "show": "screen",
+      "source": "一行は、武器を手に取り\n夢魔をにらみつける。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x8E62",
+      "show": "screen",
+      "source": "口から魔界の瘴気を吐き散らして\n夢魔が哄笑した。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x8E96",
+      "show": "window",
+      "source": "夢魔「かよわき生き物の分際で\n私を傷つけようというのか？」",
+      "text": null
+    },
+    {
+      "offset": "0x8ED4",
+      "show": "window",
+      "source": "夢魔「我が悪夢にたえられもせぬ\n貧弱な生き物が！」",
+      "text": null
+    },
+    {
+      "offset": "0x8F0A",
+      "show": "screen",
+      "source": "夢魔のまわりに悪夢が実体化する。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x8F2E",
+      "show": "window",
+      "source": "夢魔「我が蜜月を邪魔する愚か者。\n狂おしいほどの悪夢を\nとくと味わうが良い」",
+      "text": null
+    },
+    {
+      "offset": "0x8F80",
+      "show": "window",
+      "source": "夢魔「理性の鎖を解き放ち\n快楽に意識をゆだねよ」",
+      "text": null
+    },
+    {
+      "offset": "0x8FB4",
+      "show": "window",
+      "source": "夢魔「来世まで忘れる事が出来ぬ\n悦びと恐怖を汝の魂に\nきざんでくれるわ！！」",
+      "text": null
+    },
+    {
+      "offset": "0x9006",
+      "show": "screen",
+      "source": "ククク、クハハハ！！",
+      "text": null
+    },
+    {
+      "offset": "0x901E",
+      "show": "screen",
+      "source": "私を倒したとて悪夢は覚めぬ。\nいや、悪夢の様な現実が\n汝をうちのめすだろう。",
+      "text": null
+    },
+    {
+      "offset": "0x9072",
+      "show": "screen",
+      "source": "私は汝が血涙を流すその様を\n魔界からじっくりと見届けてやるわ！\nククク、ハハハハハ………！！",
+      "text": null
+    },
+    {
+      "offset": "0x90D6",
+      "show": "screen",
+      "source": "何やら、予言めいた言葉を残し\n夢魔は、実体のある魔界へと\n退散して行った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9124",
+      "show": "screen",
+      "source": "完全に夢魔の気配が\n消え失せたのを確認し\n<PAGE>は、倒れた女王を\n助け起こす。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9172",
+      "show": "screen",
+      "source": "ククク、クハハハ！！",
+      "text": null
+    },
+    {
+      "offset": "0x918A",
+      "show": "screen",
+      "source": "私を倒したとて悪夢は覚めぬ。\nいや、悪夢の様な現実が\n汝をうちのめすだろう。",
+      "text": null
+    },
+    {
+      "offset": "0x91DE",
+      "show": "screen",
+      "source": "私は汝が血涙を流すその様を\n魔界からじっくりと見届けてやるわ！\nククク、ハハハハハ………！！",
+      "text": null
+    },
+    {
+      "offset": "0x9242",
+      "show": "screen",
+      "source": "<PAGE>は、夢魔が何やら\n予言めいた言葉を残すのを\n麻痺した身体で聞いていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x928E",
+      "show": "screen",
+      "source": "麻痺の毒は身体をむしばみ\n指一本動かせない。<BREAK>空気の流れを、身体で感じる事さえ\n出来ない。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x92EC",
+      "show": "screen",
+      "source": "出来ないはずなのに………\n暖かな手がそっと頬に触れるのを\n確かに感じた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9338",
+      "show": "screen",
+      "source": "<PAGE>の身体の痺れが\nゆっくりと癒されていく。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9366",
+      "show": "screen",
+      "source": "<PAGE>は驚いて\n両の手を握りしめた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x938A",
+      "show": "screen",
+      "source": "身体の自由を取り戻した\n<PAGE>は辺りを見回すが\nすでに暖かな気配は消え失せている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x93DC",
+      "show": "screen",
+      "source": "<PAGE>はわきあがってきた\n感傷を振り払い、倒れ伏した女王を\n助け起こした。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9426",
+      "show": "screen",
+      "source": "<PAGE>の身体は\nかたく石化し動けない。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x944C",
+      "show": "screen",
+      "source": "その感覚まで、石の様になり\n何も感じとる事が出来ない。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9486",
+      "show": "screen",
+      "source": "出来ないはずなのに………\n暖かな手がそっと頬に触れるのを\n確かに感じた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x94D2",
+      "show": "screen",
+      "source": "<PAGE>の身体のこわばりが\nゆっくりと癒されていく。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9504",
+      "show": "screen",
+      "source": "ピクリ、と指が動いた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x951E",
+      "show": "screen",
+      "source": "<PAGE>は驚いて\n両の手をにぎりしめる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9544",
+      "show": "screen",
+      "source": "途端、急速に五感が戻って来た。<BREAK>\n夢魔の声が、耳に届く。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9580",
+      "show": "screen",
+      "source": "それは、夢魔の断末魔の声だった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x95A4",
+      "show": "screen",
+      "source": "ククク、クハハハ！！",
+      "text": null
+    },
+    {
+      "offset": "0x95BC",
+      "show": "screen",
+      "source": "私を倒したとて悪夢は覚めぬ。\nいや、悪夢の様な現実が\n汝をうちのめすだろう。",
+      "text": null
+    },
+    {
+      "offset": "0x9610",
+      "show": "screen",
+      "source": "私は汝が血涙を流すその様を\n魔界からじっくりと見届けてやるわ！\nククク、ハハハハハ………！！",
+      "text": null
+    },
+    {
+      "offset": "0x9674",
+      "show": "screen",
+      "source": "完全に夢魔の気配が\n消えうせたのを確認し\n<PAGE>は、倒れた女王を\n助け起こした。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x96C4",
+      "show": "screen",
+      "source": "石化を癒した暖かな気配が\n気にはかかったが\n今は、それを心の奥へと\nしまいこむ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9718",
+      "show": "screen",
+      "source": "<PAGE>は深い闇の中を\nただよっていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x973E",
+      "show": "screen",
+      "source": "気だるい眠りが\n<PAGE>を永遠に\n捕らえようとする。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9770",
+      "show": "screen",
+      "source": "<PAGE>が意識を\n手放そうとした瞬間\n暖かな手がそっと頬に\n触れるのを感じた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x97BC",
+      "show": "screen",
+      "source": "途端、急速に五感が戻って来た。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x97DE",
+      "show": "screen",
+      "source": "起きあがった<PAGE>を見て\n仲間が驚く。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9804",
+      "show": "screen",
+      "source": "<PAGE>が口を開こうとした\n瞬間、夢魔の呪いの声が響いた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x983C",
+      "show": "screen",
+      "source": "ククク、クハハハ！！",
+      "text": null
+    },
+    {
+      "offset": "0x9854",
+      "show": "screen",
+      "source": "私を倒したとて悪夢は覚めぬ。\nいや、悪夢の様な現実が\n汝をうちのめすだろう。",
+      "text": null
+    },
+    {
+      "offset": "0x98A8",
+      "show": "screen",
+      "source": "私は汝が血涙を流すその様を\n魔界からじっくりと見届けてやるわ！\nククク、ハハハハハ………！！",
+      "text": null
+    },
+    {
+      "offset": "0x990C",
+      "show": "screen",
+      "source": "完全に夢魔の気配が\n消えうせたのを確認し\n<PAGE>は、倒れた女王を\n助け起こした。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x995C",
+      "show": "screen",
+      "source": "死の国から現へと\n魂を呼び戻した暖かな気配が\n気にはかかったが\n今は、それを心の奥へと\nしまいこむ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x99C4",
+      "show": "screen",
+      "source": "<PAGE>は深い闇の中を\nただよっていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x99EA",
+      "show": "screen",
+      "source": "気だるい眠りが\n<PAGE>を永遠に\n捕らえようとする。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9A1C",
+      "show": "screen",
+      "source": "<PAGE>が意識を\n手放そうとした瞬間\n暖かな手がそっと頬に\n触れるのを感じた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9A68",
+      "show": "screen",
+      "source": "途端、急速に五感が戻って来た。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9A8A",
+      "show": "screen",
+      "source": "起きあがった<PAGE>を見て\n仲間が驚く。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9AB0",
+      "show": "screen",
+      "source": "灰と化していた者が蘇ったのだ。\n無理もない。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9AE0",
+      "show": "screen",
+      "source": "<PAGE>が口を開こうとした\n瞬間、夢魔の呪いの声が響いた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9B18",
+      "show": "screen",
+      "source": "ククク、クハハハ！！",
+      "text": null
+    },
+    {
+      "offset": "0x9B30",
+      "show": "screen",
+      "source": "私を倒したとて悪夢は覚めぬ。\nいや、悪夢の様な現実が\n汝をうちのめすだろう。",
+      "text": null
+    },
+    {
+      "offset": "0x9B84",
+      "show": "screen",
+      "source": "私は汝が血涙を流すその様を\n魔界からじっくりと見届けてやるわ！\nククク、ハハハハハ………！！",
+      "text": null
+    },
+    {
+      "offset": "0x9BE8",
+      "show": "screen",
+      "source": "完全に夢魔の気配が\n消えうせたのを確認し\n<PAGE>は、倒れた女王を\n助け起こした。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9C38",
+      "show": "screen",
+      "source": "死の国から現へと\n魂を呼び戻した暖かな気配が\n気にはかかったが\n今は、それを心の奥へと\nしまいこむ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9CA0",
+      "show": "screen",
+      "source": "意識を取り戻した女王は\n<PAGE>の手にすがりながら\n立ち上がった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9CE0",
+      "show": "screen",
+      "source": "女王は、硬質的なザワリとする声で\n何かを確認するかのように\nゆっくりと呟く。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9D30",
+      "show": "window",
+      "source": "女王「わたくしは………」",
+      "text": null
+    },
+    {
+      "offset": "0x9D4A",
+      "show": "window",
+      "source": "女王「わたくしは………\nオティーリエ」",
+      "text": null
+    },
+    {
+      "offset": "0x9D74",
+      "show": "window",
+      "source": "女王「聖都………\nドゥーハンの女王」",
+      "text": null
+    },
+    {
+      "offset": "0x9D9C",
+      "show": "window",
+      "source": "女王「わたくしは………\nオティーリエ」",
+      "text": null
+    },
+    {
+      "offset": "0x9DC6",
+      "show": "window",
+      "source": "女王「聖都………\nドゥーハンの女王」",
+      "text": null
+    },
+    {
+      "offset": "0x9DEE",
+      "show": "screen",
+      "source": "まるで、自分に言い聞かせて\nいるかのようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9E1E",
+      "show": "screen",
+      "source": "それしか言葉を知らぬオウムの様に\n同じ言葉を繰り返す。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9E58",
+      "show": "screen",
+      "source": "「陛下はご無事か！？」",
+      "text": null
+    },
+    {
+      "offset": "0x9E72",
+      "show": "screen",
+      "source": "レドゥアとクルガンが\nやっと駆けつけてきた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9EA2",
+      "show": "window",
+      "source": "女王「レドゥア！」",
+      "text": null
+    },
+    {
+      "offset": "0x9EB6",
+      "show": "screen",
+      "source": "女王は、クイーンガード長の名を呼ぶと\nおさな子の様なしぐさで\n側へと駆け寄った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9F0A",
+      "show": "screen",
+      "source": "その行動に一番驚いたのは\n駆け寄られたレドゥアだった。\nらしくもなく狼狽し、目をみはる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x9F66",
+      "show": "window",
+      "source": "レドゥア「陛下！？」",
+      "text": null
+    },
+    {
+      "offset": "0x9F7C",
+      "show": "window",
+      "source": "女王「あなたが側にいなければ\nわたくしは、何をすればよいのか\nわからない！」",
+      "text": null
+    },
+    {
+      "offset": "0x9FCE",
+      "show": "window",
+      "source": "女王「兵に命じればよいのですか！？」",
+      "text": null
+    },
+    {
+      "offset": "0x9FF4",
+      "show": "window",
+      "source": "女王「それとも、竜の心臓を……！？」",
+      "text": null
+    },
+    {
+      "offset": "0xA01A",
+      "show": "window",
+      "source": "レドゥア「落ち着かれませい、陛下！」",
+      "text": null
+    },
+    {
+      "offset": "0xA040",
+      "show": "screen",
+      "source": "レドゥアは、何かを恐れるかのように\n鋭い声で女王を一喝した。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA080",
+      "show": "screen",
+      "source": "女王がビクッと肩を震わせる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA0A0",
+      "show": "screen",
+      "source": "レドゥアの眉間のシワが\nますます深くなった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA0D0",
+      "show": "window",
+      "source": "レドゥア「尊きお身体がご無事で\n何よりでございました」",
+      "text": null
+    },
+    {
+      "offset": "0xA10A",
+      "show": "window",
+      "source": "レドゥア「私はここにおります。\n安心して、役目をはたして\n下さいませ」",
+      "text": null
+    },
+    {
+      "offset": "0xA156",
+      "show": "window",
+      "source": "レドゥア「さしあたり……」",
+      "text": null
+    },
+    {
+      "offset": "0xA172",
+      "show": "screen",
+      "source": "レドゥアは、ちらりとこちらに\n視線を走らせる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA1A4",
+      "show": "window",
+      "source": "レドゥア「陛下を夢魔から救った\n冒険者に、お言葉を\nたまわれますよう」",
+      "text": null
+    },
+    {
+      "offset": "0xA1F0",
+      "show": "screen",
+      "source": "レドゥアのその言葉を聞いた途端\nスッと女王の顔に冷静さが戻った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA234",
+      "show": "screen",
+      "source": "その変わり様の早さにその場にいた\nレドゥアと女王以外の者は\nギョッとなる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA282",
+      "show": "screen",
+      "source": "クルガンでさえ、いぶかしげに\n二人を見る。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA2B0",
+      "show": "screen",
+      "source": "女王は、<PAGE>に向き直ると\n口を開いた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA2D8",
+      "show": "window",
+      "source": "女王「大儀、ご苦労。\n冒険者よ」",
+      "text": null
+    },
+    {
+      "offset": "0xA2FC",
+      "show": "screen",
+      "source": "<FC05><STYLE:2>チガウ！！",
+      "text": null
+    },
+    {
+      "offset": "0xA30C",
+      "show": "screen",
+      "source": "胸がむかつく様な違和感と共に\n<PAGE>の頭に雷光が走った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA344",
+      "show": "screen",
+      "source": "大儀、ご苦労でした。\nわたくしのガード達。\nゆっくり身体を癒すのですよ。",
+      "text": null
+    },
+    {
+      "offset": "0xA390",
+      "show": "screen",
+      "source": "そなたは、だんだんと\nクイーンガードらしくなる。\n始めの内は、どうなる事かと\n思ったがな。",
+      "text": null
+    },
+    {
+      "offset": "0xA3EE",
+      "show": "screen",
+      "source": "陛下は、国を背負うには\n心が優しすぎるの。\nだから、わたし達が\n少しでも陛下をお助けしなければ。",
+      "text": null
+    },
+    {
+      "offset": "0xA452",
+      "show": "screen",
+      "source": "行くぞ、<PAGE>！\n陛下のご命令だ。\n\n陛下のお優しいお顔を\nくもらせてはならない。\n迅速に命令を遂行するんだ！",
+      "text": null
+    },
+    {
+      "offset": "0xA4C0",
+      "show": "screen",
+      "source": "この光景は………？",
+      "text": null
+    },
+    {
+      "offset": "0xA4D4",
+      "show": "screen",
+      "source": "<PAGE>は、ぼうぜんとして\n立ちすくんだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA4FC",
+      "show": "window",
+      "source": "クルガン「おそれながら\n陛下に申し上げます！」",
+      "text": null
+    },
+    {
+      "offset": "0xA52E",
+      "show": "screen",
+      "source": "クルガンの鋭い声が\n<PAGE>を現実に引き戻した。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA55C",
+      "show": "window",
+      "source": "クルガン「陛下をお助けしたと言えど\n<PAGE>は裏切り者…」",
+      "text": null
+    },
+    {
+      "offset": "0xA594",
+      "show": "window",
+      "source": "クルガン「死によってしか\n罪はつぐなえません」",
+      "text": null
+    },
+    {
+      "offset": "0xA5C6",
+      "show": "window",
+      "source": "クルガン「今度こそ、私に\n<PAGE>を処刑する\n許可をお与え下さい！」",
+      "text": null
+    },
+    {
+      "offset": "0xA60A",
+      "show": "window",
+      "source": "レドゥア「その必要はない」",
+      "text": null
+    },
+    {
+      "offset": "0xA626",
+      "show": "window",
+      "source": "レドゥア「今、真に裁くべきは\n陛下誘拐を画策した\nユージン＝ギュスターム」",
+      "text": null
+    },
+    {
+      "offset": "0xA676",
+      "show": "window",
+      "source": "クルガン「長！？」",
+      "text": null
+    },
+    {
+      "offset": "0xA68A",
+      "show": "window",
+      "source": "女王「クイーンガード、クルガンに\n命を下します」",
+      "text": null
+    },
+    {
+      "offset": "0xA6BE",
+      "show": "window",
+      "source": "女王「国家転覆をはかった\nユージン＝ギュスタームを\n捕らえなさい！」",
+      "text": null
+    },
+    {
+      "offset": "0xA708",
+      "show": "window",
+      "source": "クルガン「<FD14>…<FD14>…<FD14>…<FD02>ハッ」",
+      "text": null
+    },
+    {
+      "offset": "0xA728",
+      "show": "screen",
+      "source": "クルガンは唇をかみしめると\n<PAGE>をにらみつけ\n部屋から出て行った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA76C",
+      "show": "screen",
+      "source": "クルガンの足音が遠ざかると\nレドゥアは、こちらに向き直った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA7AC",
+      "show": "window",
+      "source": "レドゥア「では、我らは戻るが…\n此度の事はいっさい\n他言無用」",
+      "text": null
+    },
+    {
+      "offset": "0xA7F0",
+      "show": "window",
+      "source": "レドゥア「そなたの口から噂が\n広まったと私が知れば\n命はないものと思うがよい」",
+      "text": null
+    },
+    {
+      "offset": "0xA844",
+      "show": "screen",
+      "source": "レドゥアは、鋭い視線を\n<PAGE>に向けると\n女王の手を取り、転移の魔法を\n唱える。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA894",
+      "show": "screen",
+      "source": "後に残った<PAGE>は\n女王を助けたという達成感と\n奇妙な違和感に、一人顔をしかめた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA8E6",
+      "show": "screen",
+      "source": "一行は袋を開けた。\n中には、インキュバスの翼が入っていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA924",
+      "show": "screen",
+      "source": "<PAGE>は袋を開けた。\n中には、インキュバスの翼が入っていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA960",
+      "show": "screen",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "text": null
+    },
+    {
+      "offset": "0xA9A2",
+      "show": "screen",
+      "source": "<FB01>インキュバスの翼<FB00>を手に入れた！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA9C8",
+      "show": "screen",
+      "source": "<FB01>インキュバスの翼<FB00>をあきらめた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xA9EE",
+      "show": "screen",
+      "source": "<FB01>インキュバスの翼<FB00>をあきらめた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xAA14",
+      "show": "screen",
+      "source": "<FB01>インキュバスの翼<FB00>を手に入れた！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xAA3A",
+      "show": "screen",
+      "source": "ドゥーハンの侍兵が数匹のオーガを\n次々と斬り倒して行く。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xAA76",
+      "show": "window",
+      "source": "侍「アラベラ！ 魔法を！！」",
+      "text": null
+    },
+    {
+      "offset": "0xAA94",
+      "show": "window",
+      "source": "アラベラ「はい、タイガ！」",
+      "text": null
+    },
+    {
+      "offset": "0xAAB0",
+      "show": "screen",
+      "source": "加勢しますか？\n\nは い\nいいえ\n",
+      "text": null
+    },
+    {
+      "offset": "0xAAD8",
+      "show": "screen",
+      "source": "無理に加勢する必要はないと判断し\n女僧侶が、魔法を使った隙に\nその場から離れた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xAB32",
+      "show": "screen",
+      "source": "しかし、<PAGE>の態度は\n善と中立の仲間に、良い印象を\n与えなかった………<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xAB7A",
+      "show": "screen",
+      "source": "しかし、<PAGE>の態度は\n中立の仲間に、良い印象を\n与えなかった………<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xABBE",
+      "show": "screen",
+      "source": "しかし、<PAGE>の態度は\n善の仲間に、良い印象を\n与えなかった………<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xAC00",
+      "show": "screen",
+      "source": "<PAGE>の態度は\n善と中立の仲間に\n良い印象を与えたようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xAC3A",
+      "show": "screen",
+      "source": "<PAGE>の態度は\n中立の仲間に良い印象を\n与えたようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xAC70",
+      "show": "screen",
+      "source": "<PAGE>の態度は\n善の仲間に、良い印象を\n与えたようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xACA6",
+      "show": "screen",
+      "source": "<PAGE>は武器を手に取り\nオーガに立ち向かった！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xACD4",
+      "show": "screen",
+      "source": "一行は武器を手に取り\nオーガに立ち向かった！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xAD04",
+      "show": "screen",
+      "source": "<PAGE>達がオーガを倒すと同時に\n侍達も、残りのオーガを倒したようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xAD48",
+      "show": "screen",
+      "source": "<PAGE>がオーガを倒すと同時に\n侍達も、残りのオーガを倒したようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xAD8A",
+      "show": "window",
+      "source": "タイガ「また、君達に助けられたな」",
+      "text": null
+    },
+    {
+      "offset": "0xADAE",
+      "show": "window",
+      "source": "タイガ「また、君に助けられたな」",
+      "text": null
+    },
+    {
+      "offset": "0xADD0",
+      "show": "window",
+      "source": "タイガ「すまない、感謝する」",
+      "text": null
+    },
+    {
+      "offset": "0xADEE",
+      "show": "window",
+      "source": "タイガ「………もう、知っていると思うが\n女王陛下が、誘拐された」",
+      "text": null
+    },
+    {
+      "offset": "0xAE32",
+      "show": "window",
+      "source": "タイガ「犯人は、禁呪を使って魔神を\n呼びよせたらしい」",
+      "text": null
+    },
+    {
+      "offset": "0xAE6C",
+      "show": "window",
+      "source": "タイガ「捕らえたオークから聞き出した\nところ、戦争を始めるつもり\nだとか」",
+      "text": null
+    },
+    {
+      "offset": "0xAEBC",
+      "show": "window",
+      "source": "タイガ「そのため、次々に強大な\n魔神が呼びだされたそうだ」",
+      "text": null
+    },
+    {
+      "offset": "0xAEFA",
+      "show": "window",
+      "source": "タイガ「この階に、濃く邪悪な空気が\n渦巻くのを感じる」",
+      "text": null
+    },
+    {
+      "offset": "0xAF34",
+      "show": "window",
+      "source": "タイガ「君達も、この先に進むなら\n十分に注意する事だ」",
+      "text": null
+    },
+    {
+      "offset": "0xAF6E",
+      "show": "window",
+      "source": "タイガ「アラベラ」",
+      "text": null
+    },
+    {
+      "offset": "0xAF82",
+      "show": "window",
+      "source": "タイガ「君も、この先に進むなら\n十分に注意する事だ」",
+      "text": null
+    },
+    {
+      "offset": "0xAFBA",
+      "show": "window",
+      "source": "タイガ「アラベラ」",
+      "text": null
+    },
+    {
+      "offset": "0xAFCE",
+      "show": "screen",
+      "source": "侍、タイガの呼びかけに\nアラベラがうなずいた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB000",
+      "show": "window",
+      "source": "アラベラ「せめてもの御礼に\n回復をさせて下さいね」",
+      "text": null
+    },
+    {
+      "offset": "0xB036",
+      "show": "screen",
+      "source": "アラベラは、癒しの魔法をとなえた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB05C",
+      "show": "screen",
+      "source": "<FB01>HPが回復した！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB072",
+      "show": "screen",
+      "source": "<FB01>ステータス異常が回復した！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB092",
+      "show": "screen",
+      "source": "<FB01>死者は蘇った！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB0A6",
+      "show": "screen",
+      "source": "<FB01>死者は蘇った！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB0BA",
+      "show": "screen",
+      "source": "<FB01>死者は蘇った！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB0CE",
+      "show": "screen",
+      "source": "<FB01>死者は蘇った！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB0E2",
+      "show": "screen",
+      "source": "<FB01>死者は蘇った！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB0F6",
+      "show": "window",
+      "source": "アラベラ「そして、これを」",
+      "text": null
+    },
+    {
+      "offset": "0xB112",
+      "show": "screen",
+      "source": "アラベラは、銀色にかがやく\n水晶の破片の様な物をさしだした。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB152",
+      "show": "screen",
+      "source": "<FB01>マナクォーツ<FB00>を手に入れた！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB174",
+      "show": "window",
+      "source": "アラベラ「優しく、哀しい力を感じます。\n引き離された何かを求める\nような…」",
+      "text": null
+    },
+    {
+      "offset": "0xB1C6",
+      "show": "window",
+      "source": "アラベラ「いずれ、何かのお役に立つかも\nしれません」",
+      "text": null
+    },
+    {
+      "offset": "0xB1FE",
+      "show": "window",
+      "source": "タイガ「では、これで失礼する。\n互いの武運を祈ろう」",
+      "text": null
+    },
+    {
+      "offset": "0xB236",
+      "show": "screen",
+      "source": "ドゥーハンの忍者兵と\n魔神が戦っている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB262",
+      "show": "screen",
+      "source": "こちらが、手をかすまでもなく\n忍者兵達が勝利を収めそうだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB2A0",
+      "show": "screen",
+      "source": "しかし、もはや魔界に逃げ戻るしか\n道のないはずの魔神が\nいやらしく笑った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB2EE",
+      "show": "window",
+      "source": "魔神「ククク、小さな勝利に\n酔いしれるが良い」",
+      "text": null
+    },
+    {
+      "offset": "0xB320",
+      "show": "window",
+      "source": "魔神「お前達のさきに待つは\n深遠なる悪夢のみ！！」",
+      "text": null
+    },
+    {
+      "offset": "0xB356",
+      "show": "window",
+      "source": "忍者兵「ほざけ、魔物め！！」",
+      "text": null
+    },
+    {
+      "offset": "0xB374",
+      "show": "window",
+      "source": "魔神「ククク、お前達の大切な物は\n今ごろ、あの方の御手の中……」",
+      "text": null
+    },
+    {
+      "offset": "0xB3B8",
+      "show": "window",
+      "source": "魔神「もはや希望はないぞ！」",
+      "text": null
+    },
+    {
+      "offset": "0xB3D6",
+      "show": "window",
+      "source": "忍者兵「消えろォォォッ！！」",
+      "text": null
+    },
+    {
+      "offset": "0xB3F4",
+      "show": "screen",
+      "source": "忍者兵の一撃と共に\n魔神の姿はかき消えた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB422",
+      "show": "screen",
+      "source": "しかし、忍者兵達は勝利の喜びを\nかみしめる事が出来ないようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB464",
+      "show": "screen",
+      "source": "彼らは、肩であらく息をしながら\n不安気に顔を見合わせた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB4A0",
+      "show": "window",
+      "source": "忍者兵「………魔神の言葉など\n信じる必要はない」",
+      "text": null
+    },
+    {
+      "offset": "0xB4D4",
+      "show": "window",
+      "source": "忍者兵「しかし、あの御方とはいったい？\n大切な者とは陛下の事では…」",
+      "text": null
+    },
+    {
+      "offset": "0xB51C",
+      "show": "window",
+      "source": "忍者兵「黙れ、冒険者だ」",
+      "text": null
+    },
+    {
+      "offset": "0xB536",
+      "show": "screen",
+      "source": "忍者兵達はやっとこちらに\n気づいたようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB564",
+      "show": "window",
+      "source": "忍者兵「………行くぞ」",
+      "text": null
+    },
+    {
+      "offset": "0xB57C",
+      "show": "screen",
+      "source": "彼らはスッと表情を消すと\n風の様に立ち去った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB5AE",
+      "show": "screen",
+      "source": "忍者兵を引き連れたクルガンが\n魔神達と戦っていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB5E4",
+      "show": "screen",
+      "source": "なかでもひときわ目をひくのは\n異臭を放つ巨人の姿だ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB61C",
+      "show": "screen",
+      "source": "クルガンの声が響き渡る。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB638",
+      "show": "window",
+      "source": "クルガン「気をつけろ！\nヤツは毒のブレスを吐く！」",
+      "text": null
+    },
+    {
+      "offset": "0xB66E",
+      "show": "screen",
+      "source": "クルガンの注意と同時に\n巨人は毒のブレスをはきちらした。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB6AA",
+      "show": "screen",
+      "source": "ブレスの威力は強く\n<PAGE>達まで\n毒におかされてしまう。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB6E2",
+      "show": "screen",
+      "source": "ブレスの威力は強く\n<PAGE>まで\n毒におかされてしまう。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB718",
+      "show": "screen",
+      "source": "ブレスの威力は強く\n一行まで、毒におかされてしまう。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB750",
+      "show": "screen",
+      "source": "何人もの忍者兵が今の攻撃で\n倒れ去った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB77C",
+      "show": "screen",
+      "source": "チッとクルガンが舌打ちをする。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB79E",
+      "show": "window",
+      "source": "クルガン「戦力が足りない」",
+      "text": null
+    },
+    {
+      "offset": "0xB7BA",
+      "show": "window",
+      "source": "クルガン「クイーンガード長を…\nレドゥア様をお呼びしろ！」",
+      "text": null
+    },
+    {
+      "offset": "0xB7F8",
+      "show": "window",
+      "source": "クルガン「やつらに立ち向かうには\n長の魔力が必要だ！！」",
+      "text": null
+    },
+    {
+      "offset": "0xB834",
+      "show": "window",
+      "source": "忍者兵「ハッ！」",
+      "text": null
+    },
+    {
+      "offset": "0xB846",
+      "show": "window",
+      "source": "クルガン「残りの者は、俺と共に\nあの巨人を倒すんだ！！」",
+      "text": null
+    },
+    {
+      "offset": "0xB882",
+      "show": "screen",
+      "source": "クルガンと忍者兵達は\n毒巨人へと立ち向かって行く。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB8B8",
+      "show": "screen",
+      "source": "その場はたちまち乱戦となった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB8DA",
+      "show": "screen",
+      "source": "混乱の中、オーガの一群がこちらへと\n向かって来る。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB910",
+      "show": "screen",
+      "source": "<PAGE>達は、武器を手に取り\nオーガに立ち向かった！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB942",
+      "show": "screen",
+      "source": "<PAGE>は、武器を手に取り\nオーガに立ち向かった！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB972",
+      "show": "screen",
+      "source": "一行は、武器を手に取り\nオーガに立ち向かった！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB9A4",
+      "show": "screen",
+      "source": "<PAGE>達がオーガを\n倒し終ったころには\n戦いは、だいぶ落ちついていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xB9EA",
+      "show": "screen",
+      "source": "クルガン達が\n勝利を、おさめつつあるようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBA1A",
+      "show": "screen",
+      "source": "こちらに気づいた忍者兵が\n駆け寄って来る。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBA48",
+      "show": "screen",
+      "source": "<PAGE>がオーガを\n倒し終った頃には\n戦いは、だいぶ落ちついていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBA8A",
+      "show": "screen",
+      "source": "クルガン達が\n勝利を、おさめつつあるようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBABA",
+      "show": "screen",
+      "source": "こちらに気づいた忍者兵が\n駆け寄って来る。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBAE8",
+      "show": "screen",
+      "source": "一行がオーガを倒し終ったころには\n戦いは、だいぶ落ちついていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBB2C",
+      "show": "screen",
+      "source": "クルガン達が\n勝利を、おさめつつあるようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBB5C",
+      "show": "screen",
+      "source": "こちらに気づいた忍者兵が\n駆け寄ってくる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBB8A",
+      "show": "window",
+      "source": "忍者「毒を受けたか………」",
+      "text": null
+    },
+    {
+      "offset": "0xBBA6",
+      "show": "screen",
+      "source": "忍者は、解毒の薬を使った！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBBC4",
+      "show": "screen",
+      "source": "身体から、毒が消えて行った！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBBE4",
+      "show": "window",
+      "source": "忍者兵「この辺りは戦場となる！」",
+      "text": null
+    },
+    {
+      "offset": "0xBC06",
+      "show": "window",
+      "source": "忍者兵「冒険者がまきこまれても\n我らは助ける事が出来ない。\n即刻、立ち去ってくれ！」",
+      "text": null
+    },
+    {
+      "offset": "0xBC60",
+      "show": "window",
+      "source": "クルガン「持ち場を離れるな！\n冒険者にかまっている\n時間はない！！」",
+      "text": null
+    },
+    {
+      "offset": "0xBCAA",
+      "show": "window",
+      "source": "忍者兵「忠告はしたぞ！」",
+      "text": null
+    },
+    {
+      "offset": "0xBCC4",
+      "show": "screen",
+      "source": "忍者兵は、クルガンの元へと\n戻って行った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBCF2",
+      "show": "screen",
+      "source": "魔神達は、彼らが、全力であたらねば\n倒せない相手なのだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBD2E",
+      "show": "screen",
+      "source": "一瞬、クルガン達に協力しようかとも\n考えたが、四階でのクルガンの態度を\n思い起こすと、それも難しいだろう。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBD9C",
+      "show": "screen",
+      "source": "ひとまず、<PAGE>達は\nその場を離れた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBDC2",
+      "show": "screen",
+      "source": "クルガンなら、大丈夫だ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBDDE",
+      "show": "screen",
+      "source": "不思議と、そんな思いが\n<PAGE>の胸にあった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBE0A",
+      "show": "window",
+      "source": "忍者兵「この辺りは戦場となる！」",
+      "text": null
+    },
+    {
+      "offset": "0xBE2C",
+      "show": "window",
+      "source": "忍者兵「冒険者が巻きこまれても\n我らは助ける事が出来ない。\n即刻、立ち去ってくれ！」",
+      "text": null
+    },
+    {
+      "offset": "0xBE86",
+      "show": "window",
+      "source": "クルガン「持ち場を離れるな！\n冒険者に構っている\n時間はない！！」",
+      "text": null
+    },
+    {
+      "offset": "0xBECE",
+      "show": "window",
+      "source": "忍者兵「忠告はしたぞ！」",
+      "text": null
+    },
+    {
+      "offset": "0xBEE8",
+      "show": "screen",
+      "source": "忍者兵は、クルガンの元へと\n戻って行った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBF16",
+      "show": "screen",
+      "source": "魔神達は、彼らが、全力であたらねば\n倒せない相手なのだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBF52",
+      "show": "screen",
+      "source": "一瞬、クルガン達に協力しようかとも\n考えたが、四階でのクルガンの態度を\n思い起こすと、それも難しいだろう。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBFC0",
+      "show": "screen",
+      "source": "ひとまず、<PAGE>は\nその場を離れた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xBFE4",
+      "show": "screen",
+      "source": "クルガンなら、大丈夫だ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xC000",
+      "show": "screen",
+      "source": "不思議と、そんな思いが\n<PAGE>の胸にあった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xC02C",
+      "show": "window",
+      "source": "忍者兵「この辺りは戦場となる！」",
+      "text": null
+    },
+    {
+      "offset": "0xC04E",
+      "show": "window",
+      "source": "忍者兵「冒険者がまきこまれても\n我らは助ける事が出来ない。\n即刻、立ち去ってくれ！」",
+      "text": null
+    },
+    {
+      "offset": "0xC0A8",
+      "show": "window",
+      "source": "クルガン「持ち場を離れるな！\n冒険者にかまっている\n時間はない！！」",
+      "text": null
+    },
+    {
+      "offset": "0xC0F2",
+      "show": "window",
+      "source": "忍者兵「忠告はしたぞ！」",
+      "text": null
+    },
+    {
+      "offset": "0xC10C",
+      "show": "screen",
+      "source": "忍者兵は、クルガンの元へと\n戻って行った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xC13A",
+      "show": "screen",
+      "source": "魔神達は、彼らが、全力であたらねば\n倒せない相手なのだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xC176",
+      "show": "screen",
+      "source": "一瞬、クルガン達に協力しようかとも\n考えたが、四階でのクルガンの態度を\n思い起こすと、それも難しいだろう。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xC1E4",
+      "show": "screen",
+      "source": "ひとまず、一行はその場を離れた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xC208",
+      "show": "screen",
+      "source": "カンバンには、ヘタな字で\nこうかいてあった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xC238",
+      "show": "screen",
+      "source": "石化には、ウィルの魔法しかききめがない\nウィルの魔法がなかったら・・・\n快癒の薬の出番だぞ\nそれも、持ってなかったら・・・\nあとは、寺院にかけこもう！\n\n<FB01>いだいなる戦士<FFD0>オトム<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xC2EE",
+      "show": "window",
+      "source": "リカルド「なんだいあのクソジジイ！」",
+      "text": null
+    },
+    {
+      "offset": "0xC314",
+      "show": "window",
+      "source": "リカルド「人がせっかく助けてやったのに\n何が、他言無用、だよ！」",
+      "text": null
+    },
+    {
+      "offset": "0xC358",
+      "show": "window",
+      "source": "リカルド「なんで良い事したのに誰にも\n言っちゃいけないんだ？」",
+      "text": null
+    },
+    {
+      "offset": "0xC39A",
+      "show": "window",
+      "source": "リカルド「まるで俺達、要らない事をした\nようなあつかいじゃないか」",
+      "text": null
+    },
+    {
+      "offset": "0xC3E0",
+      "show": "window",
+      "source": "リカルド「くそっ…ムカツク…\nなんか損した気分だぜ」",
+      "text": null
+    },
+    {
+      "offset": "0xC418",
+      "show": "window",
+      "source": "グレッグ「女王のあの取り乱し様は、\n尋常ではないな」",
+      "text": null
+    },
+    {
+      "offset": "0xC450",
+      "show": "window",
+      "source": "グレッグ「夢魔の影響だけが原因だとは\nどうしても思えぬ」",
+      "text": null
+    },
+    {
+      "offset": "0xC48C",
+      "show": "window",
+      "source": "グレッグ「心の深い部分が欠如していると\nでも言うのか…」",
+      "text": null
+    },
+    {
+      "offset": "0xC4C8",
+      "show": "window",
+      "source": "グレッグ「まるで人間を真似ようとする\n悪趣味な人形を見ている様な\nそんな気がしてならぬ…」",
+      "text": null
+    },
+    {
+      "offset": "0xC528",
+      "show": "window",
+      "source": "グレッグ「考えすぎかもしれぬな。\n私も迷宮の魔風にあてられ\nでもしたか」",
+      "text": null
+    },
+    {
+      "offset": "0xC576",
+      "show": "window",
+      "source": "サラ「ねえ、あの女王様の態度、\nちょっとおかしいと思わない？」",
+      "text": null
+    },
+    {
+      "offset": "0xC5B8",
+      "show": "window",
+      "source": "サラ「同じ言葉を何度も繰り返したり、\nなんだか気味悪い…」",
+      "text": null
+    },
+    {
+      "offset": "0xC5F6",
+      "show": "window",
+      "source": "サラ「それにあのクルガンの\n<PAGE>に対する憎しみも\n変だといえば変だし…」",
+      "text": null
+    },
+    {
+      "offset": "0xC642",
+      "show": "window",
+      "source": "サラ「彼ら絶対に何か隠している。\nわたし達には言えない何かを…」",
+      "text": null
+    },
+    {
+      "offset": "0xC686",
+      "show": "screen",
+      "source": "ダニエルがにこにこ微笑み\n口笛を吹き鳴らしていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xC6BC",
+      "show": "window",
+      "source": "ダニエル「へへへ、オイラはお礼よりも\nお宝お宝♪」",
+      "text": null
+    },
+    {
+      "offset": "0xC6F2",
+      "show": "window",
+      "source": "ダニエル「ほら、あの憎たらしい\nジジイから、くすねて\nおいたからね！」",
+      "text": null
+    },
+    {
+      "offset": "0xC73E",
+      "show": "screen",
+      "source": "ルイがいたずらっぽく\nウィンクする。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xC766",
+      "show": "window",
+      "source": "ルイ「心は冷たそうな老人だけど\n懐だけは暖かいみたいね」",
+      "text": null
+    },
+    {
+      "offset": "0xC7A2",
+      "show": "screen",
+      "source": "ダニエルとルイは、顔を見合わせると\n金貨でふくらんだ袋を差し出した。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xC7EA",
+      "show": "window",
+      "source": "ルイ「転んでもただでは起きない。\nこれは盗賊のセオリーよ」",
+      "text": null
+    },
+    {
+      "offset": "0xC828",
+      "show": "window",
+      "source": "ダニエル「今ごろあのじいちゃん\n怒り狂っているんじゃない」",
+      "text": null
+    },
+    {
+      "offset": "0xC866",
+      "show": "window",
+      "source": "ダニエル「まあ、礼も言われなかったから\nこれぐらいもらわなきゃね」",
+      "text": null
+    },
+    {
+      "offset": "0xC8AC",
+      "show": "screen",
+      "source": "<FB01>10000ゴールド<FB00>手に入れた！<FB00><BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xC8D4",
+      "show": "screen",
+      "source": "ルイがいたずらっぽく\nウィンクする。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xC8FC",
+      "show": "window",
+      "source": "ルイ「心は冷たそうな老人だけど\n懐だけは暖かいみたいね」",
+      "text": null
+    },
+    {
+      "offset": "0xC938",
+      "show": "screen",
+      "source": "ルイは、金貨でふくらんだ袋を\n差し出した。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xC966",
+      "show": "window",
+      "source": "ルイ「転んでもただでは起きない。\nこれは盗賊のセオリーよ」",
+      "text": null
+    },
+    {
+      "offset": "0xC9A4",
+      "show": "screen",
+      "source": "<FB01>5000ゴールド<FB00>手に入れた！<FB00><BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xC9CA",
+      "show": "screen",
+      "source": "ダニエルがにこにこ微笑み\n口笛を吹き鳴らしていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xCA00",
+      "show": "window",
+      "source": "ダニエル「へへへ、オイラはお礼よりも\nお宝お宝♪」",
+      "text": null
+    },
+    {
+      "offset": "0xCA36",
+      "show": "window",
+      "source": "ダニエル「ほら、あの憎たらしい\nジジイから、くすねて\nおいたからね！」",
+      "text": null
+    },
+    {
+      "offset": "0xCA82",
+      "show": "screen",
+      "source": "ダニエルは、金貨でふくらんだ袋を\n差し出した。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xCAB4",
+      "show": "window",
+      "source": "ダニエル「今ごろあのじいちゃん\n怒り狂っているんじゃない」",
+      "text": null
+    },
+    {
+      "offset": "0xCAF2",
+      "show": "window",
+      "source": "ダニエル「ま、礼も言われなかったから\nこれぐらいもらわなきゃね」",
+      "text": null
+    },
+    {
+      "offset": "0xCB36",
+      "show": "screen",
+      "source": "<FB01>5000ゴールド<FB00>手に入れた！<FB00><BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xCB5C",
+      "show": "screen",
+      "source": "大木の上ではピクシー達が\n光のリン紛をまき散らせ\n甲高い笑い声を上げている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xCBAC",
+      "show": "screen",
+      "source": "大木から一匹のピクシーが\n降りてきた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xCBD6",
+      "show": "window",
+      "source": "ピクシー「キャハハハ！\n人と人が殺し合ってるよ！」",
+      "text": null
+    },
+    {
+      "offset": "0xCC0C",
+      "show": "window",
+      "source": "ピクシー「ねえねえ、たくさんの悲鳴が\n聞こえない？」",
+      "text": null
+    },
+    {
+      "offset": "0xCC44",
+      "show": "window",
+      "source": "ピクシー「昔からそうだった。\n人間は殺し合うのが大好き！」",
+      "text": null
+    },
+    {
+      "offset": "0xCC82",
+      "show": "window",
+      "source": "ピクシー「うふふっ、\n人間っていつまで経っても\n変わらないのね」",
+      "text": null
+    },
+    {
+      "offset": "0xCCC8",
+      "show": "window",
+      "source": "ピクシー「わたし達魔物の事を\n口では憎しみ罵るけど…」",
+      "text": null
+    },
+    {
+      "offset": "0xCD02",
+      "show": "window",
+      "source": "ピクシー「いつも、わたし達の\n真似ばかり」",
+      "text": null
+    },
+    {
+      "offset": "0xCD30",
+      "show": "window",
+      "source": "ピクシー「憎悪に、殺し合い、\nねたみに裏切りまで\n数えたらきりがない」",
+      "text": null
+    },
+    {
+      "offset": "0xCD7C",
+      "show": "window",
+      "source": "ピクシー「反省するのはいつも\n好きな事をしてから」",
+      "text": null
+    },
+    {
+      "offset": "0xCDB2",
+      "show": "window",
+      "source": "ピクシー「しばらくすると\nまた同じ事を繰り返す」",
+      "text": null
+    },
+    {
+      "offset": "0xCDE6",
+      "show": "window",
+      "source": "ピクシー「物覚えが悪いの？\nそれとも本当は\n悪い事が好きなの？」",
+      "text": null
+    },
+    {
+      "offset": "0xCE2C",
+      "show": "window",
+      "source": "ピクシー「反省なんかしない\nわたし達の方がずーっと\n正直だと思うけど」",
+      "text": null
+    },
+    {
+      "offset": "0xCE78",
+      "show": "window",
+      "source": "ピクシー「あらあら、大変。\n早く逃げなきゃ！」",
+      "text": null
+    },
+    {
+      "offset": "0xCEAA",
+      "show": "window",
+      "source": "ピクシー「ほんと！\nとっても大きな黒い霧が\n向こうの方で渦巻いている」",
+      "text": null
+    },
+    {
+      "offset": "0xCEF6",
+      "show": "window",
+      "source": "ピクシー「きっと馬鹿な奴等が\n魔神を蘇らそうと\nしているんだ！」",
+      "text": null
+    },
+    {
+      "offset": "0xCF3C",
+      "show": "screen",
+      "source": "ピクシー達は\nクスクス笑いながら\n飛び去って行った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xCF74",
+      "show": "screen",
+      "source": "死体は、手に古文書を持っている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xCF98",
+      "show": "screen",
+      "source": "その古文書の表紙には、\n二つの三角形が組み合わさった\n模様があった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xCFE0",
+      "show": "screen",
+      "source": "そして、古文書の裏表紙には\n死体が書き残したと思われる\n手記があった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xD02A",
+      "show": "screen",
+      "source": "どうしますか？\n\n手記を読む\nやめておく\n",
+      "text": null
+    },
+    {
+      "offset": "0xD05A",
+      "show": "screen",
+      "source": "死体は、手に古文書を持っている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xD07E",
+      "show": "screen",
+      "source": "その古文書の表紙には、\n二つの三角形が組み合わさった\n模様があった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xD0C6",
+      "show": "screen",
+      "source": "どうやらこれが、ウォルターが\n探している古文書であろう。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xD102",
+      "show": "screen",
+      "source": "そして、古文書の裏表紙には\n死体が書き残したと思われる\n手記があった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xD14C",
+      "show": "screen",
+      "source": "どうしますか？\n\n手記を読む\nそのまま拾う\nやめておく\n",
+      "text": null
+    },
+    {
+      "offset": "0xD190",
+      "show": "screen",
+      "source": "私は真実を知るために\nこの迷宮を進む事を決意する。\n\n待ち受ける運命が\nどれほど過酷な物であっても、\n救いが残されているとしたら\n私の歩みは止まる事はない。\n\n次のページへ\n手記を閉じる\n",
+      "text": null
+    },
+    {
+      "offset": "0xD276",
+      "show": "screen",
+      "source": "妖魔共の国とも言うべき\nこの迷宮の内に立ってみると、\n見えなかった物が見え、\n確かだったものが不確かになる。\n\n\n\n\n次のページへ\n手記を閉じる\n",
+      "text": null
+    },
+    {
+      "offset": "0xD332",
+      "show": "screen",
+      "source": "私はこの迷宮に\n相反する二つの意思を見る。\n\n我々は生きる事を許され、\nそして死を求められている。\n\n\n\n次のページへ\n手記を閉じる\n",
+      "text": null
+    },
+    {
+      "offset": "0xD3E2",
+      "show": "screen",
+      "source": "何故、神はこの迷宮の存在を\n許されるのだろうか？\n\n深遠なる神の意志は\n我々人間にはうかがい知れぬ\n物かもしれない。\n\n\n次のページへ\n手記を閉じる\n",
+      "text": null
+    },
+    {
+      "offset": "0xD4A2",
+      "show": "screen",
+      "source": "だが、そこになんらかの意味が\n隠されているとしたら、\n迷宮の最深部まで行く事が、\n一つの答えになるのかもしれない。\n\n\n\n\n次のページへ\n手記を閉じる\n",
+      "text": null
+    },
+    {
+      "offset": "0xD564",
+      "show": "screen",
+      "source": "何故ならその場所には、\n確固たる強い意志と、\n幾多の犠牲を払った者しか\n辿り着けないからだ。\n\n\n\n\n次のページへ\n手記を閉じる\n",
+      "text": null
+    },
+    {
+      "offset": "0xD610",
+      "show": "screen",
+      "source": "私は一人の男に会った。\n\n眼光の鋭い男であった。\n\n惟悴しきった顔、\n全身は疲労と怪我で\n歩く事もままならない。\n\n次のページへ\n手記を閉じる\n",
+      "text": null
+    },
+    {
+      "offset": "0xD6CA",
+      "show": "screen",
+      "source": "白くなった髪を肩に垂らし\nぼろぼろに刃こぼれした\n剣を杖代わりに近づいてくる。\n\n男のその姿は\nさながら荒野をさまよう\n亡霊の様だった。\n\n次のページへ\n手記を閉じる\n",
+      "text": null
+    },
+    {
+      "offset": "0xD79C",
+      "show": "screen",
+      "source": "男は迷宮の奥底まで辿り着き、\nその深遠の秘密に触れてきた者だった。\n\n\n\nその者は呟いた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xD7FA",
+      "show": "screen",
+      "source": "手記はここで終わっていた。\n残りの部分はカビで覆われ、\n読む事が出来ない。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xD848",
+      "show": "screen",
+      "source": "<FB01>無名祭儀の書<FB00>を手に入れた！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xD86A",
+      "show": "screen",
+      "source": "<FB09><FB01>ウォルター<FB00>の依頼を達成しました。\n酒場で報酬を受け取ってください。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xD8B6",
+      "show": "screen",
+      "source": "一歩足を踏み入れると\n血と酸の匂いが鼻をついた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xD8EA",
+      "show": "screen",
+      "source": "手足が寸断された死体が\nごろごろと転がっている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xD91E",
+      "show": "screen",
+      "source": "どうやら冒険者の屍らしいが、\n風化具合から見ると死亡してから\nそう時間は経っていないようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xD97E",
+      "show": "screen",
+      "source": "さらに気づいたのは、\n寸断された骨の断面の奇妙さ\nであった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xD9BE",
+      "show": "screen",
+      "source": "その断面は鋭利な刃物で\nスパッと切られたかの様な\n滑らかさがあった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xDA06",
+      "show": "screen",
+      "source": "ヒナは死体の一つに近づき、\nかがみこんで見つめた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xDA3C",
+      "show": "window",
+      "source": "ヒナ「やはり、この斬り口は…\n刀の物………」",
+      "text": null
+    },
+    {
+      "offset": "0xDA6C",
+      "show": "window",
+      "source": "ヒナ「よほど腕の立つ剣士\nでなくては、こうは斬れない」",
+      "text": null
+    },
+    {
+      "offset": "0xDAA6",
+      "show": "window",
+      "source": "ヒナ「わたしは、この斬り口を\n知っている…」",
+      "text": null
+    },
+    {
+      "offset": "0xDAD6",
+      "show": "screen",
+      "source": "ゾクリと背筋が寒くなる様な\n気配を感じた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xDB04",
+      "show": "screen",
+      "source": "それにひかれた様に\n気配のする方向に視線を向ける。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xDB3A",
+      "show": "screen",
+      "source": "まだ足らぬ…\n奴を呼び出すにはもっと\n血が必要だ…",
+      "text": null
+    },
+    {
+      "offset": "0xDB70",
+      "show": "screen",
+      "source": "わだかまった闇から\nふらりと一人の男が現われた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xDBA4",
+      "show": "screen",
+      "source": "その手には血に濡れた刀が\n握られていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xDBD0",
+      "show": "screen",
+      "source": "侍とおぼしき長い黒髪の\nその男は、低い笑い声をもらした。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xDC0C",
+      "show": "window",
+      "source": "侍「愚かな奴等め…\n餌食になりに来たのか」",
+      "text": null
+    },
+    {
+      "offset": "0xDC3A",
+      "show": "screen",
+      "source": "ヒナ「兄上！！」",
+      "text": null
+    },
+    {
+      "offset": "0xDC4E",
+      "show": "screen",
+      "source": "ヒナ「兄上……、やめて下さい！！」",
+      "text": null
+    },
+    {
+      "offset": "0xDC74",
+      "show": "screen",
+      "source": "ヒナの叫びが一瞬男の\n動きを止めた様に見えたが、\n\n男は氷の様な笑みを浮かべ\n刀を振り抜いた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xDCD6",
+      "show": "screen",
+      "source": "すさまじい疾風が巻き起こり、\n一行は腕で目をかばった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xDD10",
+      "show": "screen",
+      "source": "一瞬の後に風が止んだ。<BREAK>\nゆっくりと腕を下ろすと、\nそこには、もはや侍の姿はなかった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xDD6A",
+      "show": "window",
+      "source": "ヒナ「ナチ…、いえ、兄上」",
+      "text": null
+    },
+    {
+      "offset": "0xDD86",
+      "show": "window",
+      "source": "ヒナ「あなたは、侍の魂を捨てて\n何をしようとしているの？」",
+      "text": null
+    },
+    {
+      "offset": "0xDDC4",
+      "show": "window",
+      "source": "ヒナ「弟を亡くした悲しみと狂気で\n人を斬りつづけるだけなの？」",
+      "text": null
+    },
+    {
+      "offset": "0xDE06",
+      "show": "window",
+      "source": "ヒナ「でも…、わたしは信じたい。\nあなたの心に、まだ優しさが\n残っていると」",
+      "text": null
+    },
+    {
+      "offset": "0xDE58",
+      "show": "window",
+      "source": "ヒナ「だって、斬ろうと思えば\n斬れたはずなのに、あなたは\nわたしを斬りはしなかった…」",
+      "text": null
+    },
+    {
+      "offset": "0xDEB4",
+      "show": "window",
+      "source": "ヒナ「わたしは、それに\nいちるの望みを懸ける………！」",
+      "text": null
+    },
+    {
+      "offset": "0xDEEE",
+      "show": "window",
+      "source": "コボルド「うぎぎゃゃゃゃーーー！」",
+      "text": null
+    },
+    {
+      "offset": "0xDF12",
+      "show": "screen",
+      "source": "逃げ去ったコボルドが\n途中でこちらを振り返り、\n舌打ちしながらやってきた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xDF60",
+      "show": "window",
+      "source": "コボルド「な、なんだよテメエ～！\nくそっ、マジむかつく…」",
+      "text": null
+    },
+    {
+      "offset": "0xDF9E",
+      "show": "window",
+      "source": "コボルド「突然現われやがるから、\nてっきりあの黒髪野郎だと\n思ったじゃねえかよ！」",
+      "text": null
+    },
+    {
+      "offset": "0xDFF6",
+      "show": "window",
+      "source": "コボルド「ちくしょう、馬鹿にすんな！\n俺だってほんとはな、\nコソコソしたくねえんだよ」",
+      "text": null
+    },
+    {
+      "offset": "0xE052",
+      "show": "window",
+      "source": "コボルド「だけどあの黒髪野郎は、\n人でも魔物でも見境なしに\n殺しやがるんだ！」",
+      "text": null
+    },
+    {
+      "offset": "0xE0A6",
+      "show": "window",
+      "source": "コボルド「ありゃ完全にいかれてるね。\nあいつ魔神の名前を叫び\nながら斬り刻むんだぜ！」",
+      "text": null
+    },
+    {
+      "offset": "0xE102",
+      "show": "screen",
+      "source": "コボルドは身体を縮め、\nぶるると身震いした。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xE132",
+      "show": "window",
+      "source": "コボルド「見ろよ…、\n俺の首の後の毛がチリチリ\n立っちまってるよ…」",
+      "text": null
+    },
+    {
+      "offset": "0xE17C",
+      "show": "window",
+      "source": "コボルド「ぜったい来るぜ…\nマジであんな事してたら」",
+      "text": null
+    },
+    {
+      "offset": "0xE1B4",
+      "show": "window",
+      "source": "オルフェ「探したぞ貴様達！」",
+      "text": null
+    },
+    {
+      "offset": "0xE1D2",
+      "show": "screen",
+      "source": "目の前をさえぎる様に\n現われたのはオルフェであった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xE20A",
+      "show": "screen",
+      "source": "怒りで青光りする瞳を向けながら\n今にも斬りかからんばかりの\n勢いで話し掛けてきた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xE260",
+      "show": "window",
+      "source": "オルフェ「父の姿が何処にもない！」",
+      "text": null
+    },
+    {
+      "offset": "0xE284",
+      "show": "window",
+      "source": "オルフェ「墓場から帰った後\n父に会いに行ったのだが\n何処にも見当たらないのだ」",
+      "text": null
+    },
+    {
+      "offset": "0xE2D8",
+      "show": "window",
+      "source": "オルフェ「酒場の店主に聞けば\n最後に出会ったのは\nお前達と言うではないか！」",
+      "text": null
+    },
+    {
+      "offset": "0xE32A",
+      "show": "window",
+      "source": "オルフェ「父はどこに行った？\n貴様達知っているだろ！\n言わぬか！」",
+      "text": null
+    },
+    {
+      "offset": "0xE372",
+      "show": "screen",
+      "source": "侍「多分、この人達は\n何も知らないと思いますがね」",
+      "text": null
+    },
+    {
+      "offset": "0xE3B8",
+      "show": "window",
+      "source": "オルフェ「アオバ！\n貴様、何処にいたのだ！」",
+      "text": null
+    },
+    {
+      "offset": "0xE3E8",
+      "show": "window",
+      "source": "オルフェ「父は言わば貴様にとって\n師匠の様なものでは\nないか！」",
+      "text": null
+    },
+    {
+      "offset": "0xE42E",
+      "show": "window",
+      "source": "オルフェ「その師匠の行方が\nわからぬというのに…」",
+      "text": null
+    },
+    {
+      "offset": "0xE464",
+      "show": "window",
+      "source": "アオバ「酒場でのやり取りの後、\nちょっと気になる事が\nありましてね…」",
+      "text": null
+    },
+    {
+      "offset": "0xE4B0",
+      "show": "window",
+      "source": "アオバ「多分、お嬢さんに言えば\n首を斬り飛ばされるんで、\n黙ってたのですよ」",
+      "text": null
+    },
+    {
+      "offset": "0xE502",
+      "show": "window",
+      "source": "オルフェ「…どういう事だ」",
+      "text": null
+    },
+    {
+      "offset": "0xE51E",
+      "show": "window",
+      "source": "アオバ「俺はあの後、もう一度墓場に\n行って確かめてみたんです」",
+      "text": null
+    },
+    {
+      "offset": "0xE560",
+      "show": "window",
+      "source": "アオバ「あの盾が落ちていた場所の\n死体が気になったからね」",
+      "text": null
+    },
+    {
+      "offset": "0xE59E",
+      "show": "window",
+      "source": "オルフェ「死体…」",
+      "text": null
+    },
+    {
+      "offset": "0xE5B2",
+      "show": "window",
+      "source": "アオバ「お嬢さんも気づいたんじゃ\nないですか？」",
+      "text": null
+    },
+    {
+      "offset": "0xE5E6",
+      "show": "window",
+      "source": "アオバ「死体の頭から顔にかけて\n大きな刀傷があるのを…」",
+      "text": null
+    },
+    {
+      "offset": "0xE622",
+      "show": "screen",
+      "source": "オルフェの顔が青ざめた。\n彼が何を言おうとしているか\nわかったのだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xE66A",
+      "show": "window",
+      "source": "オルフェ「ば、ばかな…」",
+      "text": null
+    },
+    {
+      "offset": "0xE684",
+      "show": "window",
+      "source": "オルフェ「そんなもの冒険者なら\nあり得る傷だ」",
+      "text": null
+    },
+    {
+      "offset": "0xE6B6",
+      "show": "window",
+      "source": "アオバ「だけどあそこの死体は\n全て王宮の騎士隊のもの」",
+      "text": null
+    },
+    {
+      "offset": "0xE6F0",
+      "show": "window",
+      "source": "アオバ「それに私は騎士隊の者は\n全員顔を知ってますが、\n頭に傷があったのは…」",
+      "text": null
+    },
+    {
+      "offset": "0xE744",
+      "show": "window",
+      "source": "オルフェ「うるさい！\nならお前はこう言うのか！」",
+      "text": null
+    },
+    {
+      "offset": "0xE778",
+      "show": "window",
+      "source": "オルフェ「父はすでに死んでいる。\nそして亡霊となって\n我々の前に姿を現したと！」",
+      "text": null
+    },
+    {
+      "offset": "0xE7CE",
+      "show": "window",
+      "source": "オルフェ「そんなものだけで、\n父だという証拠にならぬ！」",
+      "text": null
+    },
+    {
+      "offset": "0xE80A",
+      "show": "window",
+      "source": "オルフェ「馬鹿馬鹿しい…\nきっと父は今回の遠征に\nついてきているのだ！」",
+      "text": null
+    },
+    {
+      "offset": "0xE858",
+      "show": "window",
+      "source": "オルフェ「ドゥーハン兵士達に\n聞けばそう言うはず！」",
+      "text": null
+    },
+    {
+      "offset": "0xE890",
+      "show": "screen",
+      "source": "オルフェはアオバを\nにらみつけ走り去って行った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xE8C4",
+      "show": "window",
+      "source": "アオバ「遠征ね…\n歩くのもままならない程\n怪我をしていた親父さんがね」",
+      "text": null
+    },
+    {
+      "offset": "0xE910",
+      "show": "window",
+      "source": "アオバ「妙な感じがしませんか？」",
+      "text": null
+    },
+    {
+      "offset": "0xE932",
+      "show": "window",
+      "source": "アオバ「楽しく酒場で喋っていた者が\n次の日には行方知れずに\nなっていたり…」",
+      "text": null
+    },
+    {
+      "offset": "0xE984",
+      "show": "window",
+      "source": "アオバ「街を出て行ったという者も\n誰も行き先を聞いて\nいなかったり…」",
+      "text": null
+    },
+    {
+      "offset": "0xE9D0",
+      "show": "window",
+      "source": "アオバ「何やら我々は死者の国に\n来ているような…」",
+      "text": null
+    },
+    {
+      "offset": "0xEA06",
+      "show": "window",
+      "source": "アオバ「そんな薄気味悪い感じが\nするんですよ。\n考えすぎですかね…」",
+      "text": null
+    },
+    {
+      "offset": "0xEA50",
+      "show": "window",
+      "source": "アオバ「まあとりあえず、\nお嬢さんを追いかけなきゃ」",
+      "text": null
+    },
+    {
+      "offset": "0xEA88",
+      "show": "window",
+      "source": "アオバ「頭に血がのぼって魔物に\n捕まってなきゃ良いんだが」",
+      "text": null
+    },
+    {
+      "offset": "0xEAC6",
+      "show": "screen",
+      "source": "吐き気を催す獣臭い匂いが\nあたりに立ちこめる………<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xEAFC",
+      "show": "screen",
+      "source": "壁には鎖でつながれた\n死体がぶら下げられていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xEB30",
+      "show": "screen",
+      "source": "血で描かれた不気味な模様。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xEB4E",
+      "show": "screen",
+      "source": "通りの向こうから\n獣の唸り声の様な音が\n聞こえてきた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xEB88",
+      "show": "screen",
+      "source": "常世の闇に包まれし\n幼き骸よ…",
+      "text": null
+    },
+    {
+      "offset": "0xEBAA",
+      "show": "screen",
+      "source": "お前の無念を\nあやつの血で流してやろう…",
+      "text": null
+    },
+    {
+      "offset": "0xEBD4",
+      "show": "screen",
+      "source": "淋しい闇夜を\nあやつの悲鳴で満たしてやろう…",
+      "text": null
+    },
+    {
+      "offset": "0xEC02",
+      "show": "screen",
+      "source": "暗闇から全身に手傷を負った\n侍の姿が浮かび上がった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xEC3A",
+      "show": "screen",
+      "source": "ヒナ「兄上！！」",
+      "text": null
+    },
+    {
+      "offset": "0xEC4E",
+      "show": "screen",
+      "source": "しかし、鬼火走るその瞳には\nこちらの姿など映っていない。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xEC8A",
+      "show": "window",
+      "source": "ナチ「や…やっと会えたぞ…\n逃がしはせぬ……」",
+      "text": null
+    },
+    {
+      "offset": "0xECBC",
+      "show": "screen",
+      "source": "よろめく足取りで\nナチは横を通り過ぎ\nわだかまった「闇」へと\n向かって行った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xED0E",
+      "show": "screen",
+      "source": "肉の引き裂かれる音と\n刀の音が響き渡る。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xED3A",
+      "show": "screen",
+      "source": "男の断末魔の叫び声が\n幾度も迷宮にこだました。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xED6C",
+      "show": "window",
+      "source": "ヒナ「兄が、ナチが殺されてしまう…！\nどうか、ご助力を！！」",
+      "text": null
+    },
+    {
+      "offset": "0xEDAC",
+      "show": "window",
+      "source": "ナチ「クククク……」",
+      "text": null
+    },
+    {
+      "offset": "0xEDC2",
+      "show": "window",
+      "source": "ナチ「迷宮は願いを聞いてくれた！\nさらなる強さと、\n弟を殺した魔神への復讐を！」",
+      "text": null
+    },
+    {
+      "offset": "0xEE18",
+      "show": "window",
+      "source": "ナチ「ハハッ…\nだが、なんという皮肉な事だ」",
+      "text": null
+    },
+    {
+      "offset": "0xEE48",
+      "show": "window",
+      "source": "ナチ「最後になって、私の手から\nそれをかすめ取ってしまうとは」",
+      "text": null
+    },
+    {
+      "offset": "0xEE8A",
+      "show": "window",
+      "source": "ナチ「そして、それをなしたのが\n戦いを嫌っていた、ヒナ……\nお前だとは………」",
+      "text": null
+    },
+    {
+      "offset": "0xEEDE",
+      "show": "window",
+      "source": "ナチ「迷宮は、私をおとしめ\nあざ笑っただけだというのか！？」",
+      "text": null
+    },
+    {
+      "offset": "0xEF1E",
+      "show": "window",
+      "source": "ナチ「ククク、ならば、私も己の運命を\n嘲笑おうではないか！」",
+      "text": null
+    },
+    {
+      "offset": "0xEF5E",
+      "show": "screen",
+      "source": "ヒナ「兄上…帰りましょう…\n帰って、もう一度やり直せば…」",
+      "text": null
+    },
+    {
+      "offset": "0xEFAA",
+      "show": "window",
+      "source": "ナチ「もう私はお前の兄ではない…」",
+      "text": null
+    },
+    {
+      "offset": "0xEFCE",
+      "show": "window",
+      "source": "ナチ「魔神を憎むあまりに\n侍としての魂も捨て去った。\n幾多の人を殺めた………」",
+      "text": null
+    },
+    {
+      "offset": "0xF022",
+      "show": "window",
+      "source": "ナチ「この闇の底で私の魂もまた、\n闇に染まってしまったのだ…」",
+      "text": null
+    },
+    {
+      "offset": "0xF064",
+      "show": "screen",
+      "source": "ナチは、哀しげな笑みを\nヒナに向けた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF08E",
+      "show": "window",
+      "source": "ナチ「血のつながらないお前を………」",
+      "text": null
+    },
+    {
+      "offset": "0xF0B4",
+      "show": "window",
+      "source": "ナチ「愚かな兄弟の、愚かな運命に\nつきあわせてしまった」",
+      "text": null
+    },
+    {
+      "offset": "0xF0F0",
+      "show": "screen",
+      "source": "ナチの言葉にヒナは\n雷に打たれたかの様に硬直した。\n\nヒナは、必死で、ナチに首を\nふってみせる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF154",
+      "show": "screen",
+      "source": "ナチの声が震え始めた。<BREAK>\n苦しそうに咳き込むと\nそれでも最後の言葉を口にする。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF1A6",
+      "show": "window",
+      "source": "ナチ「もう、お前が私達にしばられる\n必要はない」",
+      "text": null
+    },
+    {
+      "offset": "0xF1DA",
+      "show": "window",
+      "source": "ナチ「後を追おうなどとは考えず\n自由に、生きて、いくが良い…」",
+      "text": null
+    },
+    {
+      "offset": "0xF21C",
+      "show": "window",
+      "source": "ナチ「あぁ、迎えが来た」",
+      "text": null
+    },
+    {
+      "offset": "0xF236",
+      "show": "window",
+      "source": "ナチ「死神の、魔剣のうなりが\n聞こえる…」",
+      "text": null
+    },
+    {
+      "offset": "0xF264",
+      "show": "window",
+      "source": "ナチ「待っているのは、永遠の………」",
+      "text": null
+    },
+    {
+      "offset": "0xF28A",
+      "show": "screen",
+      "source": "ナチはそのまま息を引き取り、\n血だまりに倒れ伏した。\n\n彼の身体はみるみるうちに\n灰となっていく。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF2F0",
+      "show": "window",
+      "source": "ヒナ「………兄上」",
+      "text": null
+    },
+    {
+      "offset": "0xF304",
+      "show": "screen",
+      "source": "ヒナは懐から短刀を取り出す。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF324",
+      "show": "window",
+      "source": "ヒナ「せめて魂の半分だけ、\n側にいる事を許して下さい…」",
+      "text": null
+    },
+    {
+      "offset": "0xF360",
+      "show": "window",
+      "source": "ヒナ「あなた達と共にいる間\n確かに、私達は兄弟だったのだ\nという、証しの為に………」",
+      "text": null
+    },
+    {
+      "offset": "0xF3BA",
+      "show": "screen",
+      "source": "ヒナは、髪に短刀をあてると\nその美しいひとふさを切り取った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF3FA",
+      "show": "screen",
+      "source": "そのまま髪をさらさらと\n灰の上に落とす。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF426",
+      "show": "screen",
+      "source": "かすかに吹いた風が、ナチの灰と\nヒナの髪を、宙へと巻き上げ\n迷宮の奥深くへと運んで行った………<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF488",
+      "show": "screen",
+      "source": "ヒナは涙をぐいとふき取ると\nくるりとこちらに向き直った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF4C4",
+      "show": "screen",
+      "source": "そして丁寧に頭を下げる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF4E0",
+      "show": "window",
+      "source": "ヒナ「…有難うございました」",
+      "text": null
+    },
+    {
+      "offset": "0xF4FE",
+      "show": "screen",
+      "source": "<FB09><FB01>ヒナ<FB00>の依頼が終了しました。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF522",
+      "show": "screen",
+      "source": "ヒナは、しばらく、悲しげに\n沈黙していたが\nやがて、意を決したように\n口を開いた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF578",
+      "show": "window",
+      "source": "ヒナ「このまま、共に行く事を\n許して下さい」",
+      "text": null
+    },
+    {
+      "offset": "0xF5A8",
+      "show": "window",
+      "source": "ヒナ「兄と、弟が生きたこの迷宮を…\n最後まで歩いてみたいのです」",
+      "text": null
+    },
+    {
+      "offset": "0xF5EC",
+      "show": "window",
+      "source": "ヒナ「それに、此度の御恩をお返し\nしなければ、なりませんもの」",
+      "text": null
+    },
+    {
+      "offset": "0xF62E",
+      "show": "screen",
+      "source": "そう言ったヒナの顔には\nかすかに笑みが、浮かんでいた…<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF668",
+      "show": "screen",
+      "source": "<FB09><FB01>ヒナ<FB00>の依頼が終了しました。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF68C",
+      "show": "window",
+      "source": "ナチ「ヒナァ！！」",
+      "text": null
+    },
+    {
+      "offset": "0xF6A0",
+      "show": "screen",
+      "source": "髪を振り乱したナチが\n倒れ伏したヒナに駆け寄った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF6D6",
+      "show": "screen",
+      "source": "ナチはヒナを抱き起こし、\n彼女の唇に還魂の薬を注ぐ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF70E",
+      "show": "screen",
+      "source": "ゆっくりと目を開いたヒナは\nナチを見つめると、涙を浮かべ\n彼に抱きついた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF75C",
+      "show": "window",
+      "source": "ヒナ「ナチ………！」",
+      "text": null
+    },
+    {
+      "offset": "0xF772",
+      "show": "screen",
+      "source": "しかし、ナチは何かを恐れるかのように\nヒナから離れた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF7AC",
+      "show": "window",
+      "source": "ナチ「フ………\nククククク………」",
+      "text": null
+    },
+    {
+      "offset": "0xF7D2",
+      "show": "window",
+      "source": "ナチ「私は、全てを捨てたはずだ。\n魔神への復讐のために！！」",
+      "text": null
+    },
+    {
+      "offset": "0xF812",
+      "show": "window",
+      "source": "ナチ「なのに、まだ、こんな感情が\n残っていたとはな」",
+      "text": null
+    },
+    {
+      "offset": "0xF84A",
+      "show": "screen",
+      "source": "ナチは、力なく笑うと\n己の手を見つめた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF876",
+      "show": "window",
+      "source": "ヒナ「兄上…帰りましょう…\n帰って、もう一度やり直せば…」",
+      "text": null
+    },
+    {
+      "offset": "0xF8B4",
+      "show": "window",
+      "source": "ナチ「もう私はお前の兄ではない…」",
+      "text": null
+    },
+    {
+      "offset": "0xF8D8",
+      "show": "window",
+      "source": "ナチ「魔神を憎むあまりに\n侍としての魂も捨て去った。\n幾多の人を殺めた………」",
+      "text": null
+    },
+    {
+      "offset": "0xF92C",
+      "show": "window",
+      "source": "ナチ「この闇の底で私の魂もまた、\n闇に染まってしまったのだ…」",
+      "text": null
+    },
+    {
+      "offset": "0xF96E",
+      "show": "screen",
+      "source": "ナチは、哀しげな笑みを\nヒナに向けた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xF998",
+      "show": "window",
+      "source": "ナチ「血のつながらないお前を………」",
+      "text": null
+    },
+    {
+      "offset": "0xF9BE",
+      "show": "window",
+      "source": "ナチ「愚かな兄弟の、愚かな運命に\nつきあわせてしまった」",
+      "text": null
+    },
+    {
+      "offset": "0xF9FA",
+      "show": "screen",
+      "source": "ナチの言葉にヒナは\n雷に打たれたかの様に硬直した。\n\nヒナは、必死で、ナチに首を\nふってみせる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xFA5E",
+      "show": "screen",
+      "source": "ナチの声が震え始めた。<BREAK>\n苦しそうに咳き込むと\nそれでも最後の言葉を口にする。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xFAB0",
+      "show": "window",
+      "source": "ナチ「もう、お前が私達にしばられる\n必要はない」",
+      "text": null
+    },
+    {
+      "offset": "0xFAE4",
+      "show": "window",
+      "source": "ナチ「後を追おうなどとは考えず\n自由に、生きて、いくが良い…」",
+      "text": null
+    },
+    {
+      "offset": "0xFB26",
+      "show": "window",
+      "source": "ナチ「あぁ、迎えが来た」",
+      "text": null
+    },
+    {
+      "offset": "0xFB40",
+      "show": "window",
+      "source": "ナチ「死神の、魔剣のうなりが\n聞こえる…」",
+      "text": null
+    },
+    {
+      "offset": "0xFB6E",
+      "show": "window",
+      "source": "ナチ「待っているのは、永遠の………」",
+      "text": null
+    },
+    {
+      "offset": "0xFB94",
+      "show": "screen",
+      "source": "ナチはそのまま息を引き取り、\n血だまりに倒れ伏した。\n\n彼の身体はみるみるうちに\n灰となっていく。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xFBFA",
+      "show": "window",
+      "source": "ヒナ「………兄上」",
+      "text": null
+    },
+    {
+      "offset": "0xFC0E",
+      "show": "screen",
+      "source": "ヒナは懐から短刀を取り出した。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xFC30",
+      "show": "window",
+      "source": "ヒナ「せめて魂の半分だけ、\n側にいる事を許して下さい…」",
+      "text": null
+    },
+    {
+      "offset": "0xFC6C",
+      "show": "window",
+      "source": "ヒナ「あなた達と共にいる間\n確かに、私達は兄弟だったのだ\nという、証しの為に………」",
+      "text": null
+    },
+    {
+      "offset": "0xFCC6",
+      "show": "screen",
+      "source": "ヒナは、髪に短刀をあてると\nその美しいひとふさを切り取った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xFD06",
+      "show": "screen",
+      "source": "そのまま髪をさらさらと\n灰の上に落とす。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xFD32",
+      "show": "screen",
+      "source": "かすかに吹いた風が、ナチの灰と\nヒナの髪を、宙へと巻き上げ\n迷宮の奥深くへと運んで行った………<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xFD94",
+      "show": "screen",
+      "source": "ヒナは涙をぐいとふき取ると\nくるりとこちらに向き直った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xFDD0",
+      "show": "screen",
+      "source": "そして丁寧に頭を下げる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xFDEC",
+      "show": "window",
+      "source": "ヒナ「…有難うございました」",
+      "text": null
+    },
+    {
+      "offset": "0xFE0A",
+      "show": "screen",
+      "source": "<FB09><FB01>ヒナ<FB00>の依頼が終了しました。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xFE2E",
+      "show": "screen",
+      "source": "ヒナは、しばらく、悲しげに\n沈黙していたが\nやがて、意を決したように\n口を開いた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xFE84",
+      "show": "window",
+      "source": "ヒナ「このまま、共に行く事を\n許して下さい」",
+      "text": null
+    },
+    {
+      "offset": "0xFEB4",
+      "show": "window",
+      "source": "ヒナ「兄と、弟が生きたこの迷宮を…\n最後まで歩いてみたいのです」",
+      "text": null
+    },
+    {
+      "offset": "0xFEF8",
+      "show": "window",
+      "source": "ヒナ「それに、此度の御恩をお返し\nしなければ、なりませんもの」",
+      "text": null
+    },
+    {
+      "offset": "0xFF3A",
+      "show": "screen",
+      "source": "そう言ったヒナの顔には\nかすかに笑みが、浮かんでいた…<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xFF74",
+      "show": "window",
+      "source": "ナチ「ヒナァ！！」",
+      "text": null
+    },
+    {
+      "offset": "0xFF88",
+      "show": "screen",
+      "source": "髪を振り乱したナチが\n灰と化したヒナに駆け寄った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0xFFBE",
+      "show": "screen",
+      "source": "ナチは自らの傷にかまう事なく\nヒナの灰に、還魂の薬をふりまいた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10002",
+      "show": "screen",
+      "source": "灰は、ゆっくりとヒナの姿となる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10026",
+      "show": "screen",
+      "source": "生き返った彼女は、しばし呆然と\nしていたが、ナチを見つめると\n涙を浮かべ、彼に抱きついた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10084",
+      "show": "window",
+      "source": "ヒナ「ナチ………！」",
+      "text": null
+    },
+    {
+      "offset": "0x1009A",
+      "show": "screen",
+      "source": "しかし、ナチは何かを恐れるかのように\nヒナから離れた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x100D4",
+      "show": "window",
+      "source": "ナチ「フ………\nククククク………」",
+      "text": null
+    },
+    {
+      "offset": "0x100FA",
+      "show": "window",
+      "source": "ナチ「私は、全てを捨てたはずだ。\n魔神への復讐のために！！」",
+      "text": null
+    },
+    {
+      "offset": "0x1013A",
+      "show": "window",
+      "source": "ナチ「なのに、まだ、こんな感情が\n残っていたとはな」",
+      "text": null
+    },
+    {
+      "offset": "0x10172",
+      "show": "screen",
+      "source": "ナチは、力なく笑うと\n己の手を見つめた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1019E",
+      "show": "window",
+      "source": "ヒナ「兄上…帰りましょう…\n帰って、もう一度やり直せば…」",
+      "text": null
+    },
+    {
+      "offset": "0x101DC",
+      "show": "window",
+      "source": "ナチ「もう私はお前の兄ではない…」",
+      "text": null
+    },
+    {
+      "offset": "0x10200",
+      "show": "window",
+      "source": "ナチ「魔神を憎むあまりに\n侍としての魂も捨て去った。\n幾多の人を殺めた………」",
+      "text": null
+    },
+    {
+      "offset": "0x10254",
+      "show": "window",
+      "source": "ナチ「この闇の底で私の魂もまた、\n闇に染まってしまったのだ…」",
+      "text": null
+    },
+    {
+      "offset": "0x10296",
+      "show": "screen",
+      "source": "ナチは、哀しげな笑みを\nヒナに向けた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x102C0",
+      "show": "window",
+      "source": "ナチ「血のつながらないお前を………」",
+      "text": null
+    },
+    {
+      "offset": "0x102E6",
+      "show": "window",
+      "source": "ナチ「愚かな兄弟の、愚かな運命に\nつきあわせてしまった」",
+      "text": null
+    },
+    {
+      "offset": "0x10322",
+      "show": "screen",
+      "source": "ナチの言葉にヒナは\n雷に打たれたかの様に硬直した。\n\nヒナは、必死で、ナチに首を\nふってみせる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10386",
+      "show": "screen",
+      "source": "ナチの声が震え始めた。<BREAK>\n苦しそうに咳き込むと\nそれでも最後の言葉を口にする。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x103D8",
+      "show": "window",
+      "source": "ナチ「もう、お前が私達にしばられる\n必要はない」",
+      "text": null
+    },
+    {
+      "offset": "0x1040C",
+      "show": "window",
+      "source": "ナチ「後を追おうなどとは考えず\n自由に、生きて、いくが良い…」",
+      "text": null
+    },
+    {
+      "offset": "0x1044E",
+      "show": "window",
+      "source": "ナチ「あぁ、迎えが来た」",
+      "text": null
+    },
+    {
+      "offset": "0x10468",
+      "show": "window",
+      "source": "ナチ「死神の、魔剣のうなりが\n聞こえる…」",
+      "text": null
+    },
+    {
+      "offset": "0x10496",
+      "show": "window",
+      "source": "ナチ「待っているのは、永遠の………」",
+      "text": null
+    },
+    {
+      "offset": "0x104BC",
+      "show": "screen",
+      "source": "ナチはそのまま息を引き取り、\n血だまりに倒れ伏した。\n\n彼の身体はみるみるうちに\n灰となっていく。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10522",
+      "show": "window",
+      "source": "ヒナ「………兄上」",
+      "text": null
+    },
+    {
+      "offset": "0x10536",
+      "show": "screen",
+      "source": "ヒナは懐から短刀を取り出した。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10558",
+      "show": "window",
+      "source": "ヒナ「せめて魂の半分だけ、\n側にいる事を許して下さい…」",
+      "text": null
+    },
+    {
+      "offset": "0x10594",
+      "show": "window",
+      "source": "ヒナ「あなた達と共にいる間\n確かに、私達は兄弟だったのだ\nという、証しの為に………」",
+      "text": null
+    },
+    {
+      "offset": "0x105EE",
+      "show": "screen",
+      "source": "ヒナは、髪に短刀をあてると\nその美しいひとふさを切り取った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1062E",
+      "show": "screen",
+      "source": "そのまま髪をさらさらと\n灰の上に落とす。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1065A",
+      "show": "screen",
+      "source": "かすかに吹いた風が、ナチの灰と\nヒナの髪を、宙へと巻き上げ\n迷宮の奥深くへと運んで行った………<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x106BC",
+      "show": "screen",
+      "source": "ヒナは涙をぐいとふき取ると\nくるりとこちらに向き直った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x106F8",
+      "show": "screen",
+      "source": "そして丁寧に頭を下げる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10714",
+      "show": "window",
+      "source": "ヒナ「…有難うございました」",
+      "text": null
+    },
+    {
+      "offset": "0x10732",
+      "show": "screen",
+      "source": "<FB09><FB01>ヒナ<FB00>の依頼が終了しました。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10756",
+      "show": "screen",
+      "source": "ヒナは、しばらく、悲しげに\n沈黙していたが\nやがて、意を決したように\n口を開いた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x107AC",
+      "show": "window",
+      "source": "ヒナ「このまま、共に行く事を\n許して下さい」",
+      "text": null
+    },
+    {
+      "offset": "0x107DC",
+      "show": "window",
+      "source": "ヒナ「兄と、弟が生きたこの迷宮を…\n最後まで歩いてみたいのです」",
+      "text": null
+    },
+    {
+      "offset": "0x10820",
+      "show": "window",
+      "source": "ヒナ「それに、此度の御恩をお返し\nしなければ、なりませんもの」",
+      "text": null
+    },
+    {
+      "offset": "0x10862",
+      "show": "screen",
+      "source": "そう言ったヒナの顔には\nかすかに笑みが、浮かんでいた…<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1089C",
+      "show": "window",
+      "source": "ナチ「ヒナ！！」",
+      "text": null
+    },
+    {
+      "offset": "0x108AE",
+      "show": "screen",
+      "source": "髪を振り乱したナチが\n麻痺毒に侵されたヒナに駆け寄った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x108EA",
+      "show": "screen",
+      "source": "ナチは自分の傷にかまう事なく\nヒナの唇に快癒の薬を注ぐ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10926",
+      "show": "screen",
+      "source": "自由を通り戻したヒナは\nナチを見つめると、涙を浮かべ\n彼に抱きついた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10970",
+      "show": "window",
+      "source": "ヒナ「ナチ………！」",
+      "text": null
+    },
+    {
+      "offset": "0x10986",
+      "show": "screen",
+      "source": "しかし、ナチは何かを恐れるかのように\nヒナから離れた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x109C0",
+      "show": "window",
+      "source": "ナチ「フ………\nククククク………」",
+      "text": null
+    },
+    {
+      "offset": "0x109E6",
+      "show": "window",
+      "source": "ナチ「私は、全てを捨てたはずだ。\n魔神への復讐のために！！」",
+      "text": null
+    },
+    {
+      "offset": "0x10A26",
+      "show": "window",
+      "source": "ナチ「なのに、まだ、こんな感情が\n残っていたとはな」",
+      "text": null
+    },
+    {
+      "offset": "0x10A5E",
+      "show": "screen",
+      "source": "ナチは、力なく笑うと\n己の手を見つめた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10A8A",
+      "show": "window",
+      "source": "ヒナ「兄上…帰りましょう…\n帰って、もう一度やり直せば…」",
+      "text": null
+    },
+    {
+      "offset": "0x10AC8",
+      "show": "window",
+      "source": "ナチ「もう私はお前の兄ではない…」",
+      "text": null
+    },
+    {
+      "offset": "0x10AEC",
+      "show": "window",
+      "source": "ナチ「魔神を憎むあまりに\n侍としての魂も捨て去った。\n幾多の人を殺めた………」",
+      "text": null
+    },
+    {
+      "offset": "0x10B40",
+      "show": "window",
+      "source": "ナチ「この闇の底で私の魂もまた、\n闇に染まってしまったのだ…」",
+      "text": null
+    },
+    {
+      "offset": "0x10B82",
+      "show": "screen",
+      "source": "ナチは、哀しげな笑みを\nヒナに向けた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10BAC",
+      "show": "window",
+      "source": "ナチ「血のつながらないお前を………」",
+      "text": null
+    },
+    {
+      "offset": "0x10BD2",
+      "show": "window",
+      "source": "ナチ「愚かな兄弟の、愚かな運命に\nつきあわせてしまった」",
+      "text": null
+    },
+    {
+      "offset": "0x10C0E",
+      "show": "screen",
+      "source": "ナチの言葉にヒナは\n雷に打たれたかの様に硬直した。\n\nヒナは、必死で、ナチに首を\nふってみせる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10C72",
+      "show": "screen",
+      "source": "ナチの声が震え始めた。<BREAK>\n苦しそうに咳き込むと\nそれでも最後の言葉を口にする。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10CC4",
+      "show": "window",
+      "source": "ナチ「もう、お前が私達にしばられる\n必要はない」",
+      "text": null
+    },
+    {
+      "offset": "0x10CF8",
+      "show": "window",
+      "source": "ナチ「後を追おうなどとは考えず\n自由に、生きて、いくが良い…」",
+      "text": null
+    },
+    {
+      "offset": "0x10D3A",
+      "show": "window",
+      "source": "ナチ「あぁ、迎えが来た」",
+      "text": null
+    },
+    {
+      "offset": "0x10D54",
+      "show": "window",
+      "source": "ナチ「死神の、魔剣のうなりが\n聞こえる…」",
+      "text": null
+    },
+    {
+      "offset": "0x10D82",
+      "show": "window",
+      "source": "ナチ「待っているのは、永遠の………」",
+      "text": null
+    },
+    {
+      "offset": "0x10DA8",
+      "show": "screen",
+      "source": "ナチはそのまま息を引き取り、\n血だまりに倒れ伏した。\n\n彼の身体はみるみるうちに\n灰となっていく。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10E0E",
+      "show": "window",
+      "source": "ヒナ「………兄上」",
+      "text": null
+    },
+    {
+      "offset": "0x10E22",
+      "show": "screen",
+      "source": "ヒナは懐から短刀を取り出した。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10E44",
+      "show": "window",
+      "source": "ヒナ「せめて魂の半分だけ、\n側にいる事を許して下さい…」",
+      "text": null
+    },
+    {
+      "offset": "0x10E80",
+      "show": "window",
+      "source": "ヒナ「あなた達と共にいる間\n確かに、私達は兄弟だったのだ\nという、証しの為に………」",
+      "text": null
+    },
+    {
+      "offset": "0x10EDA",
+      "show": "screen",
+      "source": "ヒナは、髪に短刀をあてると\nその美しいひとふさを切り取った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10F1A",
+      "show": "screen",
+      "source": "そのまま髪をさらさらと\n灰の上に落とす。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10F46",
+      "show": "screen",
+      "source": "かすかに吹いた風が、ナチの灰と\nヒナの髪を、宙へと巻き上げ\n迷宮の奥深くへと運んで行った………<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10FA8",
+      "show": "screen",
+      "source": "ヒナは涙をぐいとふき取ると\nくるりとこちらに向き直った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x10FE4",
+      "show": "screen",
+      "source": "そして丁寧に頭を下げる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x11000",
+      "show": "window",
+      "source": "ヒナ「…有難うございました」",
+      "text": null
+    },
+    {
+      "offset": "0x1101E",
+      "show": "screen",
+      "source": "<FB09><FB01>ヒナ<FB00>の依頼が終了しました。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x11042",
+      "show": "screen",
+      "source": "ヒナは、しばらく、悲しげに\n沈黙していたが\nやがて、意を決したように\n口を開いた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x11098",
+      "show": "window",
+      "source": "ヒナ「このまま、共に行く事を\n許して下さい」",
+      "text": null
+    },
+    {
+      "offset": "0x110C8",
+      "show": "window",
+      "source": "ヒナ「兄と、弟が生きたこの迷宮を…\n最後まで歩いてみたいのです」",
+      "text": null
+    },
+    {
+      "offset": "0x1110C",
+      "show": "window",
+      "source": "ヒナ「それに、此度の御恩をお返し\nしなければ、なりませんもの」",
+      "text": null
+    },
+    {
+      "offset": "0x1114E",
+      "show": "screen",
+      "source": "そう言ったヒナの顔には\nかすかに笑みが、浮かんでいた…<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x11188",
+      "show": "window",
+      "source": "ナチ「ヒナ！！」",
+      "text": null
+    },
+    {
+      "offset": "0x1119A",
+      "show": "screen",
+      "source": "髪を振り乱したナチが\n石と化したヒナに駆け寄った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x111D0",
+      "show": "screen",
+      "source": "ナチは自分の傷にかまう事なく\nヒナの唇に快癒の薬を注ぐ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1120C",
+      "show": "screen",
+      "source": "自由を通り戻したヒナは\nナチを見つめると、涙を浮かべ\n彼に抱きついた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x11256",
+      "show": "window",
+      "source": "ヒナ「ナチ………！」",
+      "text": null
+    },
+    {
+      "offset": "0x1126C",
+      "show": "screen",
+      "source": "しかし、ナチは何かを恐れるかのように\nヒナから離れた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x112A6",
+      "show": "window",
+      "source": "ナチ「フ………\nククククク………」",
+      "text": null
+    },
+    {
+      "offset": "0x112CC",
+      "show": "window",
+      "source": "ナチ「私は、全てを捨てたはずだ。\n魔神への復讐のために！！」",
+      "text": null
+    },
+    {
+      "offset": "0x1130C",
+      "show": "window",
+      "source": "ナチ「なのに、まだ、こんな感情が\n残っていたとはな」",
+      "text": null
+    },
+    {
+      "offset": "0x11344",
+      "show": "screen",
+      "source": "ナチは、力なく笑うと\n己の手を見つめた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x11370",
+      "show": "window",
+      "source": "ヒナ「兄上…帰りましょう…\n帰って、もう一度やり直せば…」",
+      "text": null
+    },
+    {
+      "offset": "0x113AE",
+      "show": "window",
+      "source": "ナチ「もう私はお前の兄ではない…」",
+      "text": null
+    },
+    {
+      "offset": "0x113D2",
+      "show": "window",
+      "source": "ナチ「魔神を憎むあまりに\n侍としての魂も捨て去った。\n幾多の人を殺めた………」",
+      "text": null
+    },
+    {
+      "offset": "0x11426",
+      "show": "window",
+      "source": "ナチ「この闇の底で私の魂もまた、\n闇に染まってしまったのだ…」",
+      "text": null
+    },
+    {
+      "offset": "0x11468",
+      "show": "screen",
+      "source": "ナチは、哀しげな笑みを\nヒナに向けた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x11492",
+      "show": "window",
+      "source": "ナチ「血のつながらないお前を………」",
+      "text": null
+    },
+    {
+      "offset": "0x114B8",
+      "show": "window",
+      "source": "ナチ「愚かな兄弟の、愚かな運命に\nつきあわせてしまった」",
+      "text": null
+    },
+    {
+      "offset": "0x114F4",
+      "show": "screen",
+      "source": "ナチの言葉にヒナは\n雷に打たれたかの様に硬直した。\n\nヒナは、必死で、ナチに首を\nふってみせる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x11558",
+      "show": "screen",
+      "source": "ナチの声が震え始めた。<BREAK>\n苦しそうに咳き込むと\nそれでも最後の言葉を口にする。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x115AA",
+      "show": "window",
+      "source": "ナチ「もう、お前が私達にしばられる\n必要はない」",
+      "text": null
+    },
+    {
+      "offset": "0x115DE",
+      "show": "window",
+      "source": "ナチ「後を追おうなどとは考えず\n自由に、生きて、いくが良い…」",
+      "text": null
+    },
+    {
+      "offset": "0x11620",
+      "show": "window",
+      "source": "ナチ「あぁ、迎えが来た」",
+      "text": null
+    },
+    {
+      "offset": "0x1163A",
+      "show": "window",
+      "source": "ナチ「死神の、魔剣のうなりが\n聞こえる…」",
+      "text": null
+    },
+    {
+      "offset": "0x11668",
+      "show": "window",
+      "source": "ナチ「待っているのは、永遠の………」",
+      "text": null
+    },
+    {
+      "offset": "0x1168E",
+      "show": "screen",
+      "source": "ナチはそのまま息を引き取り、\n血だまりに倒れ伏した。\n\n彼の身体はみるみるうちに\n灰となっていく。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x116F4",
+      "show": "window",
+      "source": "ヒナ「………兄上」",
+      "text": null
+    },
+    {
+      "offset": "0x11708",
+      "show": "screen",
+      "source": "ヒナは懐から短刀を取り出した。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1172A",
+      "show": "window",
+      "source": "ヒナ「せめて魂の半分だけ、\n側にいる事を許して下さい…」",
+      "text": null
+    },
+    {
+      "offset": "0x11766",
+      "show": "window",
+      "source": "ヒナ「あなた達と共にいる間\n確かに、私達は兄弟だったのだ\nという、証しの為に………」",
+      "text": null
+    },
+    {
+      "offset": "0x117C0",
+      "show": "screen",
+      "source": "ヒナは、髪に短刀をあてると\nその美しいひとふさを切り取った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x11800",
+      "show": "screen",
+      "source": "そのまま髪をさらさらと\n灰の上に落とす。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1182C",
+      "show": "screen",
+      "source": "かすかに吹いた風が、ナチの灰と\nヒナの髪を、宙へと巻き上げ\n迷宮の奥深くへと運んで行った………<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1188E",
+      "show": "screen",
+      "source": "ヒナは涙をぐいとふき取ると\nくるりとこちらに向き直った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x118CA",
+      "show": "screen",
+      "source": "そして丁寧に頭を下げる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x118E6",
+      "show": "window",
+      "source": "ヒナ「…有難うございました」",
+      "text": null
+    },
+    {
+      "offset": "0x11904",
+      "show": "screen",
+      "source": "<FB09><FB01>ヒナ<FB00>の依頼が終了しました。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x11928",
+      "show": "screen",
+      "source": "ヒナは、しばらく、悲しげに\n沈黙していたが\nやがて、意を決したように\n口を開いた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1197E",
+      "show": "window",
+      "source": "ヒナ「このまま、共に行く事を\n許して下さい」",
+      "text": null
+    },
+    {
+      "offset": "0x119AE",
+      "show": "window",
+      "source": "ヒナ「兄と、弟が生きたこの迷宮を…\n最後まで歩いてみたいのです」",
+      "text": null
+    },
+    {
+      "offset": "0x119F2",
+      "show": "window",
+      "source": "ヒナ「それに、此度の御恩をお返し\nしなければ、なりませんもの」",
+      "text": null
+    },
+    {
+      "offset": "0x11A34",
+      "show": "screen",
+      "source": "そう言ったヒナの顔には\nかすかに笑みが、浮かんでいた…<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x11A6E",
+      "show": "window",
+      "source": "ナチ「クククク……」",
+      "text": null
+    },
+    {
+      "offset": "0x11A84",
+      "show": "window",
+      "source": "ナチ「迷宮は願いを聞いてくれた！\nさらなる強さと、\n弟を殺した魔神への復讐を！」",
+      "text": null
+    },
+    {
+      "offset": "0x11ADA",
+      "show": "window",
+      "source": "ナチ「ハハッ…\nだが、なんという皮肉な事だ」",
+      "text": null
+    },
+    {
+      "offset": "0x11B0A",
+      "show": "window",
+      "source": "ナチ「残されていた大切な者を\n奪って行ってしまうとは！！」",
+      "text": null
+    },
+    {
+      "offset": "0x11B48",
+      "show": "window",
+      "source": "ナチ「迷宮は、私をおとしめ\nあざ笑っただけだというのか！？」",
+      "text": null
+    },
+    {
+      "offset": "0x11B88",
+      "show": "window",
+      "source": "ナチ「ククク、ならば、私も己の運命を\n嘲笑おうではないか！」",
+      "text": null
+    },
+    {
+      "offset": "0x11BC8",
+      "show": "screen",
+      "source": "ナチは、狂ったような笑い声を\n上げると、迷宮の闇の中へと\n消えて行った………<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x11C18",
+      "show": "screen",
+      "source": "<FB09><FB01>ヒナ<FB00>の依頼が終了しました。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x11C3C",
+      "show": "window",
+      "source": "ジョセフ「おおおおお…\nとうとう第六階層まで\n来てしもうたのう…」",
+      "text": null
+    },
+    {
+      "offset": "0x11C84",
+      "show": "window",
+      "source": "ベス「そうですねえ…\n私達の迷宮名所ガイドブックも\nこの階層が最後ですからねえ」",
+      "text": null
+    },
+    {
+      "offset": "0x11CDA",
+      "show": "window",
+      "source": "ジョセフ「この階層の名所は\n<FB01>カビ地獄の通り抜け<FB00>じゃ！」",
+      "text": null
+    },
+    {
+      "offset": "0x11D18",
+      "show": "window",
+      "source": "ベス「なんだか、本当に名所なのか\nよくわからない不気味な地名\nなんですけどねえ…」",
+      "text": null
+    },
+    {
+      "offset": "0x11D70",
+      "show": "window",
+      "source": "ジョセフ「まあ、よいではないか！\nたまには物騒な所に行ってこそ\n真の冒険者じゃぞい！」",
+      "text": null
+    },
+    {
+      "offset": "0x11DCC",
+      "show": "window",
+      "source": "ベス「じいさんは、いつから\n冒険者になったのですか…」",
+      "text": null
+    },
+    {
+      "offset": "0x11E06",
+      "show": "window",
+      "source": "ジョセフ「たった今じゃ！」",
+      "text": null
+    },
+    {
+      "offset": "0x11E22",
+      "show": "window",
+      "source": "ジョセフ「さぁ！\nあどべんちゃーわーるど\nとやらにレッツゴーじゃ！」",
+      "text": null
+    },
+    {
+      "offset": "0x11E6C",
+      "show": "window",
+      "source": "ベス「…はぁ…」",
+      "text": null
+    },
+    {
+      "offset": "0x11E7E",
+      "show": "window",
+      "source": "ジョセフ「おおおおおおおお…！\nな…なんじゃ、ここは！」",
+      "text": null
+    },
+    {
+      "offset": "0x11EBA",
+      "show": "window",
+      "source": "ジョセフ「モヤモヤして\n何にも見えないぞい…！」",
+      "text": null
+    },
+    {
+      "offset": "0x11EEE",
+      "show": "window",
+      "source": "ベス「本当に、カビくさくて\n息がつまりそうですねえ…」",
+      "text": null
+    },
+    {
+      "offset": "0x11F28",
+      "show": "window",
+      "source": "ベス「もしかして、ここがあの\nカビ地獄ですかね、じいさん？」",
+      "text": null
+    },
+    {
+      "offset": "0x11F68",
+      "show": "window",
+      "source": "ジョセフ「ふむ、きっとそうじゃろう！」",
+      "text": null
+    },
+    {
+      "offset": "0x11F90",
+      "show": "window",
+      "source": "ジョセフ「何せ、このカビ臭さは\n今まで歩いて来た所と\n比べ物にならん！」",
+      "text": null
+    },
+    {
+      "offset": "0x11FDE",
+      "show": "window",
+      "source": "ジョセフ「こうして話しておるだけで\n菌を鼻で吸い込んで\nしまっ…」",
+      "text": null
+    },
+    {
+      "offset": "0x12026",
+      "show": "window",
+      "source": "ジョセフ「ゲフッ…！！\nゴホッ…ゴホッ…！！」",
+      "text": null
+    },
+    {
+      "offset": "0x12058",
+      "show": "window",
+      "source": "ベス「あらあら、じいさん\n言ってるそばから、菌を\n鼻で吸い込んでどうしますか…」",
+      "text": null
+    },
+    {
+      "offset": "0x120AE",
+      "show": "screen",
+      "source": "ベスばあさんは、ジョセフじいさんの\n背中を優しく摩りながら\n呆れた口調で言葉をかけた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x12108",
+      "show": "screen",
+      "source": "しばらくして、やっと咳が落ち着いた\nジョセフじいさんが再び話し始めた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x12152",
+      "show": "window",
+      "source": "ジョセフ「はぁ…はぁ…\n本当に息が止まるかと\n思ったわい…」",
+      "text": null
+    },
+    {
+      "offset": "0x12194",
+      "show": "window",
+      "source": "ベス「まったく、いつ死んでも\n不思議でないんですから\n少しは気をつけて下さいよ」",
+      "text": null
+    },
+    {
+      "offset": "0x121EA",
+      "show": "window",
+      "source": "ジョセフ「あ…ああ、大丈夫じゃ…」",
+      "text": null
+    },
+    {
+      "offset": "0x1220E",
+      "show": "window",
+      "source": "ジョセフ「さあ、気を取り直して\nいよいよ通り抜けするぞい！\n張り切っ……」",
+      "text": null
+    },
+    {
+      "offset": "0x1225E",
+      "show": "window",
+      "source": "ジョセフ「ゲフッ…！！\nゴホッ…ゴホッ…！！」",
+      "text": null
+    },
+    {
+      "offset": "0x12290",
+      "show": "window",
+      "source": "ベス「…はぁ…」",
+      "text": null
+    },
+    {
+      "offset": "0x122A2",
+      "show": "window",
+      "source": "ジョセフ「ふぅぅ…やっと\n出てこられたわい…」",
+      "text": null
+    },
+    {
+      "offset": "0x122D4",
+      "show": "window",
+      "source": "ベス「本当にカビ地獄でしたねえ…\nこんな場所を、名所と呼ぶなんて\n変な話だ事…」",
+      "text": null
+    },
+    {
+      "offset": "0x1232A",
+      "show": "window",
+      "source": "ジョセフ「うむ…、確かにつらかったが\n本当に冒険者みたいで\n面白かったぞい！」",
+      "text": null
+    },
+    {
+      "offset": "0x1237E",
+      "show": "window",
+      "source": "ベス「まったく、じいさんは\n幸せそうで良いですねえ…」",
+      "text": null
+    },
+    {
+      "offset": "0x123B8",
+      "show": "window",
+      "source": "ジョセフ「ふぉふぉふぉ！\nそのとおりじゃ！\nワシゃ幸せじゃぞい！」",
+      "text": null
+    },
+    {
+      "offset": "0x12400",
+      "show": "window",
+      "source": "ジョセフ「じゃが、これで名所を\n全てまわってしもうた…」",
+      "text": null
+    },
+    {
+      "offset": "0x1243C",
+      "show": "window",
+      "source": "ジョセフ「いよいよ街へ戻らねば\nならんのだのう…」",
+      "text": null
+    },
+    {
+      "offset": "0x12472",
+      "show": "window",
+      "source": "ベス「そうですねえ…」",
+      "text": null
+    },
+    {
+      "offset": "0x1248A",
+      "show": "window",
+      "source": "ベス「だけど、じいさん。\nもうよろしいでしょう」",
+      "text": null
+    },
+    {
+      "offset": "0x124BE",
+      "show": "window",
+      "source": "ベス「私達は、ついこの間まで\n夢のまた夢だった事を\n成し遂げたのですよ」",
+      "text": null
+    },
+    {
+      "offset": "0x1250C",
+      "show": "window",
+      "source": "ベス「迷宮のこんな奥深くまで\n観光して回るだなんて\n普通じゃあ考えられませんよ」",
+      "text": null
+    },
+    {
+      "offset": "0x12562",
+      "show": "window",
+      "source": "ベス「それだけで、\nもう充分じゃありませんか」",
+      "text": null
+    },
+    {
+      "offset": "0x12594",
+      "show": "window",
+      "source": "ジョセフ「うむ、確かに！」",
+      "text": null
+    },
+    {
+      "offset": "0x125B0",
+      "show": "window",
+      "source": "ジョセフ「今のご時世に、こんなに\n素晴らしい経験は\nそう滅多に出来ぬじゃろう」",
+      "text": null
+    },
+    {
+      "offset": "0x12604",
+      "show": "window",
+      "source": "ジョセフ「ワシらは街で一番の\n幸せ者かも知れんのう！」",
+      "text": null
+    },
+    {
+      "offset": "0x1263E",
+      "show": "window",
+      "source": "ベス「そうですよ、じいさん」",
+      "text": null
+    },
+    {
+      "offset": "0x1265C",
+      "show": "window",
+      "source": "ベス「だから今度は、早く街へ戻って\n皆に楽しい話をたんと\n聞かせてあげればよいでしょう」",
+      "text": null
+    },
+    {
+      "offset": "0x126BA",
+      "show": "window",
+      "source": "ジョセフ「勿論じゃ！\nさあ、そうと決まれば\n早く帰るぞい！」",
+      "text": null
+    },
+    {
+      "offset": "0x126FC",
+      "show": "window",
+      "source": "ジョセフ「帰りは、あの有名な転移の薬を\n使って帰ると、最初から\n決めておったのじゃ！」",
+      "text": null
+    },
+    {
+      "offset": "0x12758",
+      "show": "window",
+      "source": "ベス「決めておった…って、じいさん\n転移の薬なんて何処にあるって\n言うんですか…」",
+      "text": null
+    },
+    {
+      "offset": "0x127B0",
+      "show": "window",
+      "source": "ジョセフ「ここじゃっ！」",
+      "text": null
+    },
+    {
+      "offset": "0x127CA",
+      "show": "screen",
+      "source": "ジョセフじいさんは、嬉しそうに\n目をキラキラと輝かせながら\n腰にさげている水筒を振って見せた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1282C",
+      "show": "window",
+      "source": "ベス「あれまっ！\n知らない間に、そんな所に\n詰めていたんですか…」",
+      "text": null
+    },
+    {
+      "offset": "0x12874",
+      "show": "window",
+      "source": "ジョセフ「ふぉふぉふぉ！」",
+      "text": null
+    },
+    {
+      "offset": "0x12890",
+      "show": "window",
+      "source": "ジョセフ「さぁ、たっぷりあるから\n贅沢に使えるぞい！」",
+      "text": null
+    },
+    {
+      "offset": "0x128CA",
+      "show": "screen",
+      "source": "ジョセフじいさんは、水筒の栓を取り\n中に入っている転移の薬をグイッと\n二、三回飲んだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x12924",
+      "show": "screen",
+      "source": "そして、すぐにベスばあさんに\n水筒を手渡し、ベスばあさんもまた\nジョセフじいさんと同じ位の量を\n口にした。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x12992",
+      "show": "window",
+      "source": "ジョセフ「おおお…！\nなんじゃ…体が無くなる様な\n感じがするぞい！」",
+      "text": null
+    },
+    {
+      "offset": "0x129DC",
+      "show": "window",
+      "source": "ジョセフ「それに、街の風景が\nどんどんはっきりと\n見えてくるのじゃ！」",
+      "text": null
+    },
+    {
+      "offset": "0x12A28",
+      "show": "window",
+      "source": "ジョセフ「ガイドさんや、報酬は\n酒場で渡すからの！\nさらばじゃ…！」",
+      "text": null
+    },
+    {
+      "offset": "0x12A72",
+      "show": "screen",
+      "source": "ジョセフじいさんと\nエリザベスばあさんは、\n転移の薬の効力で\n街へと帰って行った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x12AC8",
+      "show": "screen",
+      "source": "<FB01><FB09>エリザベス<FB00>の依頼を達成しました。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x12AF2",
+      "show": "screen",
+      "source": "酒場で報酬を受け取ってください。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x12B16",
+      "show": "screen",
+      "source": "大気中に低くたちこめた細かい霧が\n辺り一面を覆っている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x12B52",
+      "show": "screen",
+      "source": "漂うもやの流れの中に、\n微かに死臭が混じっている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x12B88",
+      "show": "screen",
+      "source": "コケむしたこの城塞で\n何かが起こっていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x12BB6",
+      "show": "screen",
+      "source": "「どうやら本格的な討伐に\nかかったようですね」",
+      "text": null
+    },
+    {
+      "offset": "0x12BEC",
+      "show": "window",
+      "source": "女騎士「こんなに深い階層まで来て\nまだ初めてお目にかかる\n冒険者の方がいるとは…」",
+      "text": null
+    },
+    {
+      "offset": "0x12C44",
+      "show": "window",
+      "source": "女騎士「初めまして。\nわたしは<FB01><FB09>グレース<FB00>と申します」",
+      "text": null
+    },
+    {
+      "offset": "0x12C80",
+      "show": "window",
+      "source": "グレース「ドゥーハンの兵士の姿が、\n迷宮のいたるところで\n見受けられます」",
+      "text": null
+    },
+    {
+      "offset": "0x12CD0",
+      "show": "window",
+      "source": "グレース「女王誘拐を計画した\nユージン卿を捕まえるための\n処置だと聞きました」",
+      "text": null
+    },
+    {
+      "offset": "0x12D24",
+      "show": "window",
+      "source": "グレース「だけど何故、女王誘拐なんて\n恐ろしい事を…」",
+      "text": null
+    },
+    {
+      "offset": "0x12D5E",
+      "show": "window",
+      "source": "グレース「ユージン卿は魔に魅入られた\nのでしょうか？」",
+      "text": null
+    },
+    {
+      "offset": "0x12D98",
+      "show": "window",
+      "source": "グレース「何しろ魔神と契約したと\nいう噂もあるほどです」",
+      "text": null
+    },
+    {
+      "offset": "0x12DD4",
+      "show": "window",
+      "source": "グレース「是非、会って彼の真意を\n確かめねば…」",
+      "text": null
+    },
+    {
+      "offset": "0x12E08",
+      "show": "window",
+      "source": "グレース「もし…あなた方が…、\nユージン卿を見かける事が\nあったら……」",
+      "text": null
+    },
+    {
+      "offset": "0x12E56",
+      "show": "window",
+      "source": "グレース「いえ…すみません……」",
+      "text": null
+    },
+    {
+      "offset": "0x12E78",
+      "show": "window",
+      "source": "グレース「やはり他の方にご迷惑を\nかけては…」",
+      "text": null
+    },
+    {
+      "offset": "0x12EAA",
+      "show": "screen",
+      "source": "グレースは軽くお辞儀をして\n立ち去って行った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x12EDC",
+      "show": "window",
+      "source": "リカルド「薄気味悪い所だな…」",
+      "text": null
+    },
+    {
+      "offset": "0x12EFC",
+      "show": "window",
+      "source": "リカルド「なんか廃墟の街って感じが\nしないか？」",
+      "text": null
+    },
+    {
+      "offset": "0x12F30",
+      "show": "window",
+      "source": "リカルド「戦争か、もしくは疫病で\n住民が全て死んでしまった\n街みたいな」",
+      "text": null
+    },
+    {
+      "offset": "0x12F7E",
+      "show": "screen",
+      "source": "リカルドは顔をしかめ、\n辺りを見渡した。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x12FAA",
+      "show": "window",
+      "source": "リカルド「それにこのかび臭せえ\n匂いと湿気……」",
+      "text": null
+    },
+    {
+      "offset": "0x12FDE",
+      "show": "window",
+      "source": "リカルド「まったく頭がどうにか\nなってきそうだぜ」",
+      "text": null
+    },
+    {
+      "offset": "0x13014",
+      "show": "window",
+      "source": "サラ「妖気が強くなっているのを\n感じない？」",
+      "text": null
+    },
+    {
+      "offset": "0x13044",
+      "show": "window",
+      "source": "サラ「ここに降りてきてから、\n頭にもやがかかったみたいに\n気分が悪くて仕方ないの」",
+      "text": null
+    },
+    {
+      "offset": "0x1309C",
+      "show": "window",
+      "source": "サラ「無数の怨念の様なものが、\nここには渦巻いている\nそんな感じがする…」",
+      "text": null
+    },
+    {
+      "offset": "0x130EC",
+      "show": "window",
+      "source": "サラ「丁度…ほら、二層目で\n死神が出てきた時の様な、\nそれに近いっていうのかな」",
+      "text": null
+    },
+    {
+      "offset": "0x13142",
+      "show": "window",
+      "source": "サラ「なんか目の前の景色が色あせ、\n灰色になっていくような\nそんな嫌な気分…」",
+      "text": null
+    },
+    {
+      "offset": "0x13196",
+      "show": "screen",
+      "source": "遠くから兵士達の叫び声と\n爆発音が聞こえてきた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x131CA",
+      "show": "screen",
+      "source": "地面が微かに震えている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x131E6",
+      "show": "screen",
+      "source": "グレースが言ったように、\nあちこちで小規模な戦闘が\n行なわれているようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x13234",
+      "show": "window",
+      "source": "グレッグ「噂が事実ならば、\nあれはドゥーハンの兵士と\nユージン卿一味の戦い」",
+      "text": null
+    },
+    {
+      "offset": "0x13286",
+      "show": "window",
+      "source": "グレッグ「ユージン卿が何の目的で\n女王をさらったのかは\nわからぬが」",
+      "text": null
+    },
+    {
+      "offset": "0x132D0",
+      "show": "window",
+      "source": "グレッグ「この強い瘴気といい、\nこの地で何かが行なわれて\nいるのは確かだ」",
+      "text": null
+    },
+    {
+      "offset": "0x13320",
+      "show": "window",
+      "source": "グレッグ「先程の娘の話では、\n魔神と契約云々と言って\nいた程だから」",
+      "text": null
+    },
+    {
+      "offset": "0x1336A",
+      "show": "window",
+      "source": "グレッグ「形勢が悪くなれば、\nユージン卿は魔神を呼び寄せる\nことすらもしかねぬ…」",
+      "text": null
+    },
+    {
+      "offset": "0x133C2",
+      "show": "window",
+      "source": "グレッグ「この先に何が待ち受けて\nいるのかわからぬが」",
+      "text": null
+    },
+    {
+      "offset": "0x133FC",
+      "show": "window",
+      "source": "グレッグ「充分に気を引きしめて\nいかねばな」",
+      "text": null
+    },
+    {
+      "offset": "0x1342C",
+      "show": "window",
+      "source": "リカルド「薄気味悪い所だな…」",
+      "text": null
+    },
+    {
+      "offset": "0x1344C",
+      "show": "window",
+      "source": "リカルド「なんか廃墟の街って感じが\nしないか？」",
+      "text": null
+    },
+    {
+      "offset": "0x13480",
+      "show": "window",
+      "source": "リカルド「戦争か、もしくは疫病で\n住民が全て死んでしまった\n街みたいな」",
+      "text": null
+    },
+    {
+      "offset": "0x134CE",
+      "show": "screen",
+      "source": "リカルドは顔をしかめ、\n辺りを見渡した。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x134FA",
+      "show": "window",
+      "source": "リカルド「それにこのかび臭せえ\n匂いと湿気……」",
+      "text": null
+    },
+    {
+      "offset": "0x1352E",
+      "show": "window",
+      "source": "リカルド「まったく頭がどうにか\nなってきそうだぜ」",
+      "text": null
+    },
+    {
+      "offset": "0x13564",
+      "show": "window",
+      "source": "サラ「妖気が強くなっているのを\n感じない？」",
+      "text": null
+    },
+    {
+      "offset": "0x13594",
+      "show": "window",
+      "source": "サラ「ここに降りてきてから、\n頭にもやがかかったみたいに\n気分が悪くて仕方ないの」",
+      "text": null
+    },
+    {
+      "offset": "0x135EC",
+      "show": "window",
+      "source": "サラ「無数の怨念の様なものが、\nここには渦巻いている\nそんな感じがする…」",
+      "text": null
+    },
+    {
+      "offset": "0x1363C",
+      "show": "window",
+      "source": "サラ「丁度…ほら、二層目で\n死神が出てきた時の様な、\nそれに近いっていうのかな」",
+      "text": null
+    },
+    {
+      "offset": "0x13692",
+      "show": "window",
+      "source": "サラ「なんか目の前の景色が色あせ、\n灰色になっていくような\nそんな嫌な気分…」",
+      "text": null
+    },
+    {
+      "offset": "0x136E6",
+      "show": "screen",
+      "source": "遠くから兵士達の叫び声と\n爆発音が聞こえてきた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1371A",
+      "show": "screen",
+      "source": "地面が微かに震えている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x13736",
+      "show": "screen",
+      "source": "グレースが言ったように、\nあちこちで小規模な戦闘が\n行なわれているようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x13784",
+      "show": "window",
+      "source": "リカルド「薄気味悪い所だな…」",
+      "text": null
+    },
+    {
+      "offset": "0x137A4",
+      "show": "window",
+      "source": "リカルド「なんか廃墟の街って感じが\nしないか？」",
+      "text": null
+    },
+    {
+      "offset": "0x137D8",
+      "show": "window",
+      "source": "リカルド「戦争か、もしくは疫病で\n住民が全て死んでしまった\n街みたいな」",
+      "text": null
+    },
+    {
+      "offset": "0x13826",
+      "show": "screen",
+      "source": "リカルドは顔をしかめ、\n辺りを見渡した。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x13852",
+      "show": "window",
+      "source": "リカルド「それにこのかび臭せえ\n匂いと湿気……」",
+      "text": null
+    },
+    {
+      "offset": "0x13886",
+      "show": "window",
+      "source": "リカルド「まったく頭がどうにか\nなってきそうだぜ」",
+      "text": null
+    },
+    {
+      "offset": "0x138BC",
+      "show": "screen",
+      "source": "遠くから兵士達の叫び声と\n爆発音が聞こえてきた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x138F0",
+      "show": "screen",
+      "source": "地面が微かに震えている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1390C",
+      "show": "screen",
+      "source": "グレースが言ったように、\nあちこちで小規模な戦闘が\n行なわれているようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1395A",
+      "show": "window",
+      "source": "グレッグ「噂が事実ならば、\nあれはドゥーハンの兵士と\nユージン卿一味の戦い」",
+      "text": null
+    },
+    {
+      "offset": "0x139AC",
+      "show": "window",
+      "source": "グレッグ「ユージン卿が何の目的で\n女王をさらったのかは\nわからぬが」",
+      "text": null
+    },
+    {
+      "offset": "0x139F6",
+      "show": "window",
+      "source": "グレッグ「この強い瘴気といい、\nこの地で何かが行なわれて\nいるのは確かだ」",
+      "text": null
+    },
+    {
+      "offset": "0x13A46",
+      "show": "window",
+      "source": "グレッグ「先程の娘の話では、\n魔神と契約云々と言って\nいた程だから」",
+      "text": null
+    },
+    {
+      "offset": "0x13A90",
+      "show": "window",
+      "source": "グレッグ「形勢が悪くなれば、\nユージン卿は魔神を呼び寄せる\n事すらもしかねぬ…」",
+      "text": null
+    },
+    {
+      "offset": "0x13AE6",
+      "show": "window",
+      "source": "グレッグ「この先に何が待ち受けて\nいるのかわからぬが」",
+      "text": null
+    },
+    {
+      "offset": "0x13B20",
+      "show": "window",
+      "source": "グレッグ「充分に気を引きしめて\nいかねばな」",
+      "text": null
+    },
+    {
+      "offset": "0x13B50",
+      "show": "window",
+      "source": "リカルド「薄気味悪い所だな…」",
+      "text": null
+    },
+    {
+      "offset": "0x13B70",
+      "show": "window",
+      "source": "リカルド「なんか廃墟の街って感じが\nしないか？」",
+      "text": null
+    },
+    {
+      "offset": "0x13BA4",
+      "show": "window",
+      "source": "リカルド「戦争か、もしくは疫病で\n住民が全て死んでしまった\n街みたいな」",
+      "text": null
+    },
+    {
+      "offset": "0x13BF2",
+      "show": "screen",
+      "source": "リカルドは顔をしかめ、\n辺りを見渡した。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x13C1E",
+      "show": "window",
+      "source": "リカルド「それにこのかび臭せえ\n匂いと湿気……」",
+      "text": null
+    },
+    {
+      "offset": "0x13C52",
+      "show": "window",
+      "source": "リカルド「まったく頭がどうにか\nなってきそうだぜ」",
+      "text": null
+    },
+    {
+      "offset": "0x13C88",
+      "show": "screen",
+      "source": "遠くから兵士達の叫び声と\n爆発音が聞こえてきた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x13CBC",
+      "show": "screen",
+      "source": "地面が微かに震えている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x13CD8",
+      "show": "screen",
+      "source": "グレースが言ったように、\nあちこちで小規模な戦闘が\n行なわれているようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x13D26",
+      "show": "window",
+      "source": "サラ「妖気が強くなっているのを\n感じない？」",
+      "text": null
+    },
+    {
+      "offset": "0x13D56",
+      "show": "window",
+      "source": "サラ「ここに降りてきてから、\n頭にもやがかかったみたいに\n気分が悪くて仕方ないの」",
+      "text": null
+    },
+    {
+      "offset": "0x13DAE",
+      "show": "window",
+      "source": "サラ「無数の怨念の様なものが、\nここには渦巻いている\nそんな感じがする…」",
+      "text": null
+    },
+    {
+      "offset": "0x13DFE",
+      "show": "window",
+      "source": "サラ「丁度…ほら、二層目で\n死神が出てきた時の様な、\nそれに近いっていうのかな」",
+      "text": null
+    },
+    {
+      "offset": "0x13E54",
+      "show": "window",
+      "source": "サラ「なんか目の前の景色が色あせ、\n灰色になっていくような\nそんな嫌な気分…」",
+      "text": null
+    },
+    {
+      "offset": "0x13EA8",
+      "show": "screen",
+      "source": "遠くから兵士達の叫び声と\n爆発音が聞こえてきた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x13EDC",
+      "show": "screen",
+      "source": "地面が微かに震えている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x13EF8",
+      "show": "screen",
+      "source": "グレースが言ったように、\nあちこちで小規模な戦闘が\n行なわれているようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x13F46",
+      "show": "window",
+      "source": "グレッグ「噂が事実ならば、\nあれはドゥーハンの兵士と\nユージン卿一味の戦い」",
+      "text": null
+    },
+    {
+      "offset": "0x13F98",
+      "show": "window",
+      "source": "グレッグ「ユージン卿が何の目的で\n女王をさらったのかは\nわからぬが」",
+      "text": null
+    },
+    {
+      "offset": "0x13FE2",
+      "show": "window",
+      "source": "グレッグ「この強い瘴気といい、\nこの地で何かが行なわれて\nいるのは確かだ」",
+      "text": null
+    },
+    {
+      "offset": "0x14032",
+      "show": "window",
+      "source": "グレッグ「先程の娘の話では、\n魔神と契約云々と言って\nいた程だから」",
+      "text": null
+    },
+    {
+      "offset": "0x1407C",
+      "show": "window",
+      "source": "グレッグ「形勢が悪くなれば、\nユージン卿は魔神を呼び寄せる\n事すらもしかねぬ…」",
+      "text": null
+    },
+    {
+      "offset": "0x140D2",
+      "show": "window",
+      "source": "グレッグ「この先に何が待ち受けて\nいるのかわからぬが」",
+      "text": null
+    },
+    {
+      "offset": "0x1410C",
+      "show": "window",
+      "source": "グレッグ「充分に気を引きしめて\nいかねばな」",
+      "text": null
+    },
+    {
+      "offset": "0x1413C",
+      "show": "screen",
+      "source": "遠くから兵士達の叫び声と\n爆発音が聞こえてきた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x14170",
+      "show": "screen",
+      "source": "地面が微かに震えている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1418C",
+      "show": "screen",
+      "source": "グレースが言ったように、\nあちこちで小規模な戦闘が\n行なわれているようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x141DA",
+      "show": "window",
+      "source": "グレッグ「噂が事実ならば、\nあれはドゥーハンの兵士と\nユージン卿一味の戦い」",
+      "text": null
+    },
+    {
+      "offset": "0x1422C",
+      "show": "window",
+      "source": "グレッグ「ユージン卿が何の目的で\n女王をさらったのかは\nわからぬが」",
+      "text": null
+    },
+    {
+      "offset": "0x14276",
+      "show": "window",
+      "source": "グレッグ「この強い瘴気といい、\nこの地で何かが行なわれて\nいるのは確かだ」",
+      "text": null
+    },
+    {
+      "offset": "0x142C6",
+      "show": "window",
+      "source": "グレッグ「先程の娘の話では、\n魔神と契約云々と言って\nいた程だから」",
+      "text": null
+    },
+    {
+      "offset": "0x14310",
+      "show": "window",
+      "source": "グレッグ「形勢が悪くなれば、\nユージン卿は魔神を呼び寄せる\n事すらもしかねぬ…」",
+      "text": null
+    },
+    {
+      "offset": "0x14366",
+      "show": "window",
+      "source": "グレッグ「この先に何が待ち受けて\nいるのかわからぬが」",
+      "text": null
+    },
+    {
+      "offset": "0x143A0",
+      "show": "window",
+      "source": "グレッグ「充分に気を引きしめて\nいかねばな」",
+      "text": null
+    },
+    {
+      "offset": "0x143D0",
+      "show": "window",
+      "source": "サラ「妖気が強くなっているのを\n感じない？」",
+      "text": null
+    },
+    {
+      "offset": "0x14400",
+      "show": "window",
+      "source": "サラ「ここに降りてきてから、\n頭にもやがかかったみたいに\n気分が悪くて仕方ないの」",
+      "text": null
+    },
+    {
+      "offset": "0x14458",
+      "show": "window",
+      "source": "サラ「無数の怨念の様なものが、\nここには渦巻いている\nそんな感じがする…」",
+      "text": null
+    },
+    {
+      "offset": "0x144A8",
+      "show": "window",
+      "source": "サラ「丁度…ほら、二層目で\n死神が出てきた時の様な、\nそれに近いっていうのかな」",
+      "text": null
+    },
+    {
+      "offset": "0x144FE",
+      "show": "window",
+      "source": "サラ「なんか目の前の景色が色あせ、\n灰色になっていくような\nそんな嫌な気分…」",
+      "text": null
+    },
+    {
+      "offset": "0x14552",
+      "show": "screen",
+      "source": "遠くから兵士達の叫び声と\n爆発音が聞こえてきた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x14586",
+      "show": "screen",
+      "source": "地面が微かに震えている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x145A2",
+      "show": "screen",
+      "source": "グレースが言ったように、\nあちこちで小規模な戦闘が\n行なわれているようだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x145F0",
+      "show": "screen",
+      "source": "ミシェルの様子がおかしい。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1460E",
+      "show": "screen",
+      "source": "先ほどから一人離れ、\n辺りを見渡していたが、<BREAK>\nその表情には緊張と驚きが\n浮かんでいる。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1466A",
+      "show": "window",
+      "source": "ミシェル「もしかしてここは、\n古いエルフの街では…」",
+      "text": null
+    },
+    {
+      "offset": "0x146A2",
+      "show": "window",
+      "source": "ミシェル「時間と人々から捨て去られ、\n永遠にその存在を封印された\n呪われたエルフの王国…」",
+      "text": null
+    },
+    {
+      "offset": "0x14702",
+      "show": "window",
+      "source": "ミシェル「遥か昔の事なので、\nわたしも実際には見た事は\nありませんが」",
+      "text": null
+    },
+    {
+      "offset": "0x1474E",
+      "show": "window",
+      "source": "ミシェル「子供の頃から老人達に\n聞かされていた街並みに\n似ています」",
+      "text": null
+    },
+    {
+      "offset": "0x14798",
+      "show": "window",
+      "source": "ミシェル「伝説では人心の腐敗と\n忌まわしき祭儀のために\n神に滅ぼされたと聞きます」",
+      "text": null
+    },
+    {
+      "offset": "0x147F0",
+      "show": "window",
+      "source": "ミシェル「だけど、どうしてこんな\n迷宮の奥底なんかに…」",
+      "text": null
+    },
+    {
+      "offset": "0x1482C",
+      "show": "window",
+      "source": "ミシェル「先を急ぎましょう。\n何やら嫌な予感がします」",
+      "text": null
+    },
+    {
+      "offset": "0x14866",
+      "show": "screen",
+      "source": "風を裂く剣の音と、\n激しい気合の声がこだまする。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1489A",
+      "show": "screen",
+      "source": "女戦士オルフェの声であった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x148BA",
+      "show": "screen",
+      "source": "オルフェは姿勢を低くしながら\n頭上を飛び回るフェアリーの群れに\n突っ込んで行った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x14910",
+      "show": "screen",
+      "source": "侍アオバが叫んだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x14926",
+      "show": "screen",
+      "source": "「お、お嬢さん！\n奴らの魔法に気をつけて！」",
+      "text": null
+    },
+    {
+      "offset": "0x14964",
+      "show": "screen",
+      "source": "援護するように侍アオバが\n攻撃魔法を放つ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x14992",
+      "show": "screen",
+      "source": "「くそっ、きりがないぜ！」",
+      "text": null
+    },
+    {
+      "offset": "0x149B0",
+      "show": "screen",
+      "source": "こちらに気づいたようだ。\nアオバが叫んだ。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x149DE",
+      "show": "screen",
+      "source": "「手を、手を貸してくれないか！」",
+      "text": null
+    },
+    {
+      "offset": "0x14A02",
+      "show": "screen",
+      "source": "オルフェ達に手を貸しますか？\n\n手を貸す\n手を貸さない\n",
+      "text": null
+    },
+    {
+      "offset": "0x14A44",
+      "show": "screen",
+      "source": "<PAGE>のその優しい態度は\n善と中立の仲間に、良い印象を\n与えたらしい。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x14A8A",
+      "show": "screen",
+      "source": "<PAGE>のその優しい態度は\n中立の仲間に、良い印象を\n与えたらしい。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x14ACC",
+      "show": "screen",
+      "source": "<PAGE>のその優しい態度は\n善の仲間に、良い印象を\n与えたらしい。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x14B0C",
+      "show": "screen",
+      "source": "オルフェとアオバの二人は\nフェアリーの群れに襲われている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x14B4A",
+      "show": "screen",
+      "source": "オルフェ達に手を貸しますか？\n\n助けに入る\nひとまず退散する\n",
+      "text": null
+    },
+    {
+      "offset": "0x14B94",
+      "show": "screen",
+      "source": "よどんだ空気と血臭の中、\n亡霊の様な一つの影が\n目の前に浮かび上がった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x14BE0",
+      "show": "screen",
+      "source": "戦いの陶酔も彼女の苦悩を\n消し去る事が出来なかったのか、\n\nオルフェは目に涙を溜め、\n表情に暗いかげりを落として\nぼんやりと立っている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x14C6C",
+      "show": "screen",
+      "source": "「お嬢さん、怪我はないですか」",
+      "text": null
+    },
+    {
+      "offset": "0x14C8E",
+      "show": "window",
+      "source": "アオバ「フェアリーの群れを見たら、\n逃げ出せってあれほど言った\nじゃないですか」",
+      "text": null
+    },
+    {
+      "offset": "0x14CE4",
+      "show": "window",
+      "source": "アオバ「それを突っ込んで行くなんて\n自殺ものですぜ」",
+      "text": null
+    },
+    {
+      "offset": "0x14D1C",
+      "show": "window",
+      "source": "オルフェ「父の姿がどこにもない…、\n兵士達に聞いても誰も\n父の事を知らぬ……」",
+      "text": null
+    },
+    {
+      "offset": "0x14D70",
+      "show": "window",
+      "source": "オルフェ「どういう事だ？\nいったい父はどこに消えた」",
+      "text": null
+    },
+    {
+      "offset": "0x14DA8",
+      "show": "window",
+      "source": "アオバ「さあ、それは……\n酒場の誰かが言っていたように\n街を出て行ったんじゃ？」",
+      "text": null
+    },
+    {
+      "offset": "0x14DFE",
+      "show": "window",
+      "source": "オルフェ「……バカな！」",
+      "text": null
+    },
+    {
+      "offset": "0x14E18",
+      "show": "window",
+      "source": "オルフェ「私を放って父がどこに行く\nというのだ！」",
+      "text": null
+    },
+    {
+      "offset": "0x14E4E",
+      "show": "window",
+      "source": "オルフェ「わたし達は…わたし達は……\nこの世でたった二人の\n家族なのだ……」",
+      "text": null
+    },
+    {
+      "offset": "0x14EA0",
+      "show": "window",
+      "source": "アオバ「お嬢さん、怒らないで\nきいて下さいよ」",
+      "text": null
+    },
+    {
+      "offset": "0x14ED2",
+      "show": "window",
+      "source": "アオバ「私はお父さんをこれ以上、\nいくら探しても無駄だと\n思うのですがね」",
+      "text": null
+    },
+    {
+      "offset": "0x14F22",
+      "show": "window",
+      "source": "アオバ「何故なら、すでにお父さんは\nこの世の人じゃないからだと」",
+      "text": null
+    },
+    {
+      "offset": "0x14F66",
+      "show": "window",
+      "source": "オルフェ「アオバ、貴様…」",
+      "text": null
+    },
+    {
+      "offset": "0x14F82",
+      "show": "window",
+      "source": "アオバ「ちょ、ちょっと冷静に\n聞いてみて下さい」",
+      "text": null
+    },
+    {
+      "offset": "0x14FB6",
+      "show": "window",
+      "source": "アオバ「不死者がぞろぞろと、\n街に向かってきているって\n噂がありますよね」",
+      "text": null
+    },
+    {
+      "offset": "0x15006",
+      "show": "window",
+      "source": "アオバ「そして街に来たやつらは\nいずこへと姿を消して行く」",
+      "text": null
+    },
+    {
+      "offset": "0x15044",
+      "show": "window",
+      "source": "アオバ「色々と噂話はされてますが、\n誰も不死者がどこに消えたか\n知らない」",
+      "text": null
+    },
+    {
+      "offset": "0x15094",
+      "show": "window",
+      "source": "アオバ「だけどおかしな事に、\nそれから数日の間に行方不明\nだった者や」",
+      "text": null
+    },
+    {
+      "offset": "0x150E0",
+      "show": "window",
+      "source": "アオバ「外からの訪問者が\n街に現われる」",
+      "text": null
+    },
+    {
+      "offset": "0x1510C",
+      "show": "window",
+      "source": "アオバ「確かめたわけじゃないですが、\nそれって結びつきませんか？\n不死者が街で消える事と…」",
+      "text": null
+    },
+    {
+      "offset": "0x1516E",
+      "show": "window",
+      "source": "オルフェ「アオバ、お前それを本気で\n言っているのか？」",
+      "text": null
+    },
+    {
+      "offset": "0x151A8",
+      "show": "window",
+      "source": "オルフェ「わたしの父が、不死者\nだったと？」",
+      "text": null
+    },
+    {
+      "offset": "0x151D8",
+      "show": "window",
+      "source": "オルフェ「まったくどうかしている！」",
+      "text": null
+    },
+    {
+      "offset": "0x151FE",
+      "show": "window",
+      "source": "アオバ「ちょ、ちょっと待って！\n怒らずに聞いて下さい」",
+      "text": null
+    },
+    {
+      "offset": "0x15238",
+      "show": "window",
+      "source": "オルフェ「くだらん、怒る気も失せた」",
+      "text": null
+    },
+    {
+      "offset": "0x1525E",
+      "show": "screen",
+      "source": "冷たい眼差しを向け、\nオルフェは立ち去った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1528E",
+      "show": "window",
+      "source": "アオバ「馬鹿馬鹿しい話だと自分でも\n思いますがね」",
+      "text": null
+    },
+    {
+      "offset": "0x152C4",
+      "show": "window",
+      "source": "アオバ「突然現われたこの迷宮といい、\nおかしな事が立て続けに\n起こっている事からも」",
+      "text": null
+    },
+    {
+      "offset": "0x1531E",
+      "show": "window",
+      "source": "アオバ「あながち的外れ…ってわけでも\nないと思うんだがな」",
+      "text": null
+    },
+    {
+      "offset": "0x1535C",
+      "show": "window",
+      "source": "アオバ「だけど不死者がいつの間にか\n街の者になっているとしたら」",
+      "text": null
+    },
+    {
+      "offset": "0x153A0",
+      "show": "window",
+      "source": "アオバ「私達も不死者…って\n事になりますかね？」",
+      "text": null
+    },
+    {
+      "offset": "0x153D4",
+      "show": "window",
+      "source": "アオバ「ハハハハ、そう考えれば\nやはり馬鹿馬鹿しい話ですな」",
+      "text": null
+    },
+    {
+      "offset": "0x15414",
+      "show": "screen",
+      "source": "「助けて頂いたお礼は\nまた近いうちに」",
+      "text": null
+    },
+    {
+      "offset": "0x15442",
+      "show": "screen",
+      "source": "「お嬢さんを急いで捜さなきゃ。\nまた魔物に食ってかかっている\nかもしれないのでね」",
+      "text": null
+    },
+    {
+      "offset": "0x154A4",
+      "show": "screen",
+      "source": "大気中にむせかえす様な\n毒気が渦巻いている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x154D4",
+      "show": "screen",
+      "source": "濃密な血の匂いが鼻をついた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x154F4",
+      "show": "screen",
+      "source": "圧倒する様な殺気を周囲に\n放ちつつ姿を現したのは、\n\n巨人族最強を誇る二体の\nポイズンジャイアントであった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x15564",
+      "show": "screen",
+      "source": "「いったい誰が予想しただろうか、\nこの悲劇の結末を」",
+      "text": null
+    },
+    {
+      "offset": "0x155AA",
+      "show": "window",
+      "source": "ユージン「我々が女王と呼んでいる\n愛しき者の正体は、\n魂無き紛い物だったのだ」",
+      "text": null
+    },
+    {
+      "offset": "0x155FE",
+      "show": "window",
+      "source": "ユージン「あれはホムンクルス。\n神から誕生を許されていない\n出来そこないの生物だよ」",
+      "text": null
+    },
+    {
+      "offset": "0x15658",
+      "show": "screen",
+      "source": "ユージン＝ギュスターム卿。\n妖魔達に女王誘拐を指示した\n男であった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x156A0",
+      "show": "window",
+      "source": "ユージン「魔神インキュバスの反応を\n見て気づいたのだ」",
+      "text": null
+    },
+    {
+      "offset": "0x156DA",
+      "show": "window",
+      "source": "ユージン「あやつは楽しんでいたが、\n私にとっては無駄な時間に\n他ならなかった」",
+      "text": null
+    },
+    {
+      "offset": "0x1572E",
+      "show": "window",
+      "source": "ユージン「何故ならばあの女の心は、\nそこから何もくみだせぬ\n空っぽの泉と同じだった」",
+      "text": null
+    },
+    {
+      "offset": "0x15788",
+      "show": "window",
+      "source": "ユージン「そう、ちょうどまるで\n人形の様にね」",
+      "text": null
+    },
+    {
+      "offset": "0x157BA",
+      "show": "window",
+      "source": "ユージン「我々全ては愚かにも、\nあのレドゥアという男に\n騙されていたというわけだ」",
+      "text": null
+    },
+    {
+      "offset": "0x15812",
+      "show": "screen",
+      "source": "ユージンは言葉を止めた。\nその表情が深く思案に沈む。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1584A",
+      "show": "window",
+      "source": "ユージン「だが女王が偽物だと考えると\n全てが符合してくる」",
+      "text": null
+    },
+    {
+      "offset": "0x15888",
+      "show": "window",
+      "source": "ユージン「住民達の嘆きに心を\n動かされないのも当然だ」",
+      "text": null
+    },
+    {
+      "offset": "0x158C2",
+      "show": "window",
+      "source": "ユージン「魂無き者に人の心がわかる\nはずはないのでな」",
+      "text": null
+    },
+    {
+      "offset": "0x158FC",
+      "show": "window",
+      "source": "ユージン「では本物の女王はどこに？」",
+      "text": null
+    },
+    {
+      "offset": "0x15922",
+      "show": "window",
+      "source": "ユージン「あの閃光の時に死んだのか？\nそれともどこかにとらわれて\nいるのか？」",
+      "text": null
+    },
+    {
+      "offset": "0x15976",
+      "show": "window",
+      "source": "ユージン「それを確かめねばならん…」",
+      "text": null
+    },
+    {
+      "offset": "0x1599C",
+      "show": "window",
+      "source": "ユージン「そのためには何度でも、\nこの魂を魔神に売り続ける\nつもりだ」",
+      "text": null
+    },
+    {
+      "offset": "0x159E8",
+      "show": "window",
+      "source": "ユージン「この魂が証文だらけで\n身動き出来なくなるまでな」",
+      "text": null
+    },
+    {
+      "offset": "0x15A26",
+      "show": "screen",
+      "source": "「皆が言っていた噂は\n本当だったのですか！」",
+      "text": null
+    },
+    {
+      "offset": "0x15A5C",
+      "show": "screen",
+      "source": "透き通った女性の声が\n迷宮に響き渡った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x15A88",
+      "show": "window",
+      "source": "グレース「ユージン、あなたは…、\nほんとに王国を乗っ取るため\n魔神と契約したのですか？」",
+      "text": null
+    },
+    {
+      "offset": "0x15AE6",
+      "show": "screen",
+      "source": "「いかにも、そうだとしたら？」",
+      "text": null
+    },
+    {
+      "offset": "0x15B08",
+      "show": "window",
+      "source": "グレース「そ、そのような事…、\n神がお許しになると思って\nいるのですか！」",
+      "text": null
+    },
+    {
+      "offset": "0x15B58",
+      "show": "window",
+      "source": "グレース「今ならまだ間に合います。\n目を覚まして下さい」",
+      "text": null
+    },
+    {
+      "offset": "0x15B94",
+      "show": "window",
+      "source": "グレース「お忘れになったのですか？」",
+      "text": null
+    },
+    {
+      "offset": "0x15BBA",
+      "show": "window",
+      "source": "グレース「悪魔の使いや妖術師の類に\n待っているのは、地獄の業火\nだけです！」",
+      "text": null
+    },
+    {
+      "offset": "0x15C0C",
+      "show": "window",
+      "source": "グレース「神様が最後に祝福をお与えに\nなるのは、平和を愛する我々\nではないですか」",
+      "text": null
+    },
+    {
+      "offset": "0x15C64",
+      "show": "window",
+      "source": "グレース「信心深いご両親に育てられた\nあなたはそれをよく\nご存知のはず」",
+      "text": null
+    },
+    {
+      "offset": "0x15CB2",
+      "show": "window",
+      "source": "グレース「それなのに何故……」",
+      "text": null
+    },
+    {
+      "offset": "0x15CD2",
+      "show": "screen",
+      "source": "グレースの声は震えて細く、\n今にも消え入りそうである。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x15D0C",
+      "show": "screen",
+      "source": "「手を血に染める勇気がなければ、\n何事も成せぬ」",
+      "text": null
+    },
+    {
+      "offset": "0x15D52",
+      "show": "window",
+      "source": "グレース「よ、よくも…そんな…\n神を恐れぬ事を……」",
+      "text": null
+    },
+    {
+      "offset": "0x15D8A",
+      "show": "window",
+      "source": "ユージン「ここまで来れば死も破滅も\n恐れはしない」",
+      "text": null
+    },
+    {
+      "offset": "0x15DC0",
+      "show": "window",
+      "source": "ユージン「いずれにしても、\n私が取る道はただ一つ」",
+      "text": null
+    },
+    {
+      "offset": "0x15DF6",
+      "show": "window",
+      "source": "ユージン「王冠をこの手にするか、\nそれとも屍になるか…」",
+      "text": null
+    },
+    {
+      "offset": "0x15E32",
+      "show": "window",
+      "source": "ユージン「一度、手をつけた悪事。\n目的を達成するには\n悪事を重ねるしかない」",
+      "text": null
+    },
+    {
+      "offset": "0x15E84",
+      "show": "screen",
+      "source": "「そ、それなら私も\nご一緒させていただきます！」",
+      "text": null
+    },
+    {
+      "offset": "0x15EC6",
+      "show": "screen",
+      "source": "「何かあった場合に一人よりも、\n二人の方が心強いと思います」",
+      "text": null
+    },
+    {
+      "offset": "0x15F08",
+      "show": "window",
+      "source": "ユージン「もう私に関わるな…」",
+      "text": null
+    },
+    {
+      "offset": "0x15F28",
+      "show": "window",
+      "source": "ユージン「そなたとは婚約はしたが\nまだ式をあげておらぬ」",
+      "text": null
+    },
+    {
+      "offset": "0x15F64",
+      "show": "window",
+      "source": "ユージン「なれぬ格好までして\nこんな迷宮をうろつかずに」",
+      "text": null
+    },
+    {
+      "offset": "0x15FA0",
+      "show": "window",
+      "source": "ユージン「一刻も早く街へと戻り、\n別の人生を歩んだ方が\nそなたのためだ」",
+      "text": null
+    },
+    {
+      "offset": "0x15FEE",
+      "show": "screen",
+      "source": "「ほ、本気で言っているの……」",
+      "text": null
+    },
+    {
+      "offset": "0x1600E",
+      "show": "window",
+      "source": "ユージン「ドゥーハン王家を手に入れる\nその日まで、私にはこの世に\n大切な物など何一つない」",
+      "text": null
+    },
+    {
+      "offset": "0x1606E",
+      "show": "window",
+      "source": "ユージン「それに、もし私がこの野望を\n捨てたとしても…」",
+      "text": null
+    },
+    {
+      "offset": "0x160AA",
+      "show": "window",
+      "source": "ユージン「すでに私の魂も身体も、\n自分の物ではないのだ」",
+      "text": null
+    },
+    {
+      "offset": "0x160E6",
+      "show": "screen",
+      "source": "「ユ、ユージン……」",
+      "text": null
+    },
+    {
+      "offset": "0x160FE",
+      "show": "screen",
+      "source": "グレースは動揺していた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1611A",
+      "show": "screen",
+      "source": "わなわなと唇を一文字に結び、\n震える手が哀れにも所在なげ\nである。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x16160",
+      "show": "window",
+      "source": "グレース「憎い…あの閃光が憎い……」",
+      "text": null
+    },
+    {
+      "offset": "0x16186",
+      "show": "window",
+      "source": "グレース「あの閃光は街だけでなく\n人の心まで壊してしまった」",
+      "text": null
+    },
+    {
+      "offset": "0x161C6",
+      "show": "window",
+      "source": "グレース「信心深く優しかったあの人は\nもうどこにもいない」",
+      "text": null
+    },
+    {
+      "offset": "0x16204",
+      "show": "window",
+      "source": "グレース「暗くにごった野望の炎が\n消えぬ限り…、\n彼が戻ってくる事はない」",
+      "text": null
+    },
+    {
+      "offset": "0x16254",
+      "show": "window",
+      "source": "グレース「…街に戻ります」",
+      "text": null
+    },
+    {
+      "offset": "0x16270",
+      "show": "window",
+      "source": "グレース「もうわたしでは、彼を止める\n事は出来ません」",
+      "text": null
+    },
+    {
+      "offset": "0x162AA",
+      "show": "screen",
+      "source": "大気中にむせかえす様な\n毒気が渦巻いている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x162DA",
+      "show": "screen",
+      "source": "濃密な血の匂いが鼻をついた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x162FA",
+      "show": "screen",
+      "source": "圧倒する様な殺気を周囲に\n放ちつつ姿を現したのは、\n\n巨人族最強を誇る二体の\nポイズンジャイアントであった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1636A",
+      "show": "screen",
+      "source": "「一体、誰が予想しただろうか、\nこの悲劇の結末を」",
+      "text": null
+    },
+    {
+      "offset": "0x163AC",
+      "show": "window",
+      "source": "ユージン「我々が女王と呼んでいる\n愛しき者の正体は、\n魂無き紛い物だったのだ」",
+      "text": null
+    },
+    {
+      "offset": "0x16400",
+      "show": "window",
+      "source": "ユージン「あれはホムンクルス。\n神から誕生を許されていない\n出来そこないの生物だよ」",
+      "text": null
+    },
+    {
+      "offset": "0x1645A",
+      "show": "screen",
+      "source": "ユージン＝ギュスターム卿。\n妖魔達に女王誘拐を指示した\n男であった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x164A2",
+      "show": "window",
+      "source": "ユージン「魔神インキュバスの反応を\n見て気づいたのだ」",
+      "text": null
+    },
+    {
+      "offset": "0x164DC",
+      "show": "window",
+      "source": "ユージン「あやつは楽しんでいたが、\n私にとっては無駄な時間に\n他ならなかった」",
+      "text": null
+    },
+    {
+      "offset": "0x16530",
+      "show": "window",
+      "source": "ユージン「何故ならばあの女の心は、\nそこから何もくみだせぬ\n空っぽの泉と同じだった」",
+      "text": null
+    },
+    {
+      "offset": "0x1658A",
+      "show": "window",
+      "source": "ユージン「そう、ちょうどまるで\n人形の様にね」",
+      "text": null
+    },
+    {
+      "offset": "0x165BC",
+      "show": "window",
+      "source": "ユージン「我々全ては愚かにも、\nあのレドゥアという男に\n騙されていたというわけだ」",
+      "text": null
+    },
+    {
+      "offset": "0x16614",
+      "show": "screen",
+      "source": "ユージンは言葉を止めた。\nその表情が深く思案に沈む。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1664C",
+      "show": "window",
+      "source": "ユージン「だが女王が偽物だと考えると\n全てが符合してくる」",
+      "text": null
+    },
+    {
+      "offset": "0x1668A",
+      "show": "window",
+      "source": "ユージン「住民達の嘆きに心を\n動かされないのも当然だ」",
+      "text": null
+    },
+    {
+      "offset": "0x166C4",
+      "show": "window",
+      "source": "ユージン「魂無き者に人の心がわかる\nはずはないのでな」",
+      "text": null
+    },
+    {
+      "offset": "0x166FE",
+      "show": "window",
+      "source": "ユージン「では本物の女王はどこに？」",
+      "text": null
+    },
+    {
+      "offset": "0x16724",
+      "show": "window",
+      "source": "ユージン「あの閃光の時に死んだのか？\nそれともどこかにとらわれて\nいるのか？」",
+      "text": null
+    },
+    {
+      "offset": "0x16778",
+      "show": "window",
+      "source": "ユージン「それを確かめねばならん…」",
+      "text": null
+    },
+    {
+      "offset": "0x1679E",
+      "show": "window",
+      "source": "ユージン「そのためには何度でも、\nこの魂を魔神に売り続ける\nつもりだ」",
+      "text": null
+    },
+    {
+      "offset": "0x167EA",
+      "show": "window",
+      "source": "ユージン「この魂が証文だらけで\n身動き出来なくなるまでな」",
+      "text": null
+    },
+    {
+      "offset": "0x16828",
+      "show": "screen",
+      "source": "「皆が言っていた噂は\n本当だったのですか！」",
+      "text": null
+    },
+    {
+      "offset": "0x1685E",
+      "show": "screen",
+      "source": "透き通った女性の声が\n迷宮に響き渡った。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1688A",
+      "show": "window",
+      "source": "グレース「ユージン、あなたは…、\n本当に王国を乗っ取るため\n魔神と契約したのですか？」",
+      "text": null
+    },
+    {
+      "offset": "0x168E6",
+      "show": "screen",
+      "source": "「いかにも、そうだとしたら？」",
+      "text": null
+    },
+    {
+      "offset": "0x16908",
+      "show": "window",
+      "source": "グレース「そ、そのような事…、\n神がお許しになると思って\nいるのですか！」",
+      "text": null
+    },
+    {
+      "offset": "0x16958",
+      "show": "window",
+      "source": "グレース「今ならまだ間に合います。\n目を覚まして下さい」",
+      "text": null
+    },
+    {
+      "offset": "0x16994",
+      "show": "window",
+      "source": "グレース「お忘れになったのですか？」",
+      "text": null
+    },
+    {
+      "offset": "0x169BA",
+      "show": "window",
+      "source": "グレース「悪魔の使いや妖術師の類に\n待っているのは、地獄の業火\nだけです！」",
+      "text": null
+    },
+    {
+      "offset": "0x16A0C",
+      "show": "window",
+      "source": "グレース「神様が最後に祝福をお与えに\nなるのは、平和を愛する我々\nではないですか」",
+      "text": null
+    },
+    {
+      "offset": "0x16A64",
+      "show": "window",
+      "source": "グレース「信心深いご両親に育てられた\nあなたはそれをよく\nご存知のはず」",
+      "text": null
+    },
+    {
+      "offset": "0x16AB2",
+      "show": "window",
+      "source": "グレース「それなのに何故……」",
+      "text": null
+    },
+    {
+      "offset": "0x16AD2",
+      "show": "screen",
+      "source": "グレースの声は震えて細く、\n今にも消え入りそうである。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x16B0C",
+      "show": "screen",
+      "source": "「手を血に染める勇気がなければ、\n何ごとも成せぬ」",
+      "text": null
+    },
+    {
+      "offset": "0x16B52",
+      "show": "window",
+      "source": "グレース「よ、よくも…そんな…\n神を恐れぬ事を……」",
+      "text": null
+    },
+    {
+      "offset": "0x16B8A",
+      "show": "window",
+      "source": "ユージン「ここまで来れば死も破滅も\n恐れはしない」",
+      "text": null
+    },
+    {
+      "offset": "0x16BC0",
+      "show": "window",
+      "source": "ユージン「いずれにしても、\n私が取る道はただ一つ」",
+      "text": null
+    },
+    {
+      "offset": "0x16BF6",
+      "show": "window",
+      "source": "ユージン「王冠をこの手にするか、\nそれとも屍になるか…」",
+      "text": null
+    },
+    {
+      "offset": "0x16C32",
+      "show": "window",
+      "source": "ユージン「一度、手をつけた悪事。\n目的を達成するには\n悪事を重ねるしかない」",
+      "text": null
+    },
+    {
+      "offset": "0x16C84",
+      "show": "screen",
+      "source": "「そ、それなら私もご一緒させて\nいただきます！」",
+      "text": null
+    },
+    {
+      "offset": "0x16CBA",
+      "show": "screen",
+      "source": "「何かあった場合に一人よりも、\n二人が心強いと思います」",
+      "text": null
+    },
+    {
+      "offset": "0x16CF8",
+      "show": "window",
+      "source": "ユージン「もう私に関わるな…」",
+      "text": null
+    },
+    {
+      "offset": "0x16D18",
+      "show": "window",
+      "source": "ユージン「そなたと婚約はしたが\nまだ式をあげておらぬ」",
+      "text": null
+    },
+    {
+      "offset": "0x16D52",
+      "show": "window",
+      "source": "ユージン「なれぬ格好までして\nこんな迷宮をうろつかずに」",
+      "text": null
+    },
+    {
+      "offset": "0x16D8E",
+      "show": "window",
+      "source": "ユージン「一刻も早く街へと戻り、\n別の人生を歩んだ方が\nそなたのためだ」",
+      "text": null
+    },
+    {
+      "offset": "0x16DDC",
+      "show": "screen",
+      "source": "「ほ、本気で言っているの……」",
+      "text": null
+    },
+    {
+      "offset": "0x16DFC",
+      "show": "window",
+      "source": "ユージン「ドゥーハン王家を手に入れる\nその日まで、私にはこの世に\n大切な物など何一つない」",
+      "text": null
+    },
+    {
+      "offset": "0x16E5C",
+      "show": "window",
+      "source": "ユージン「それにもし私がこの野望を\n捨てたとしても…」",
+      "text": null
+    },
+    {
+      "offset": "0x16E96",
+      "show": "window",
+      "source": "ユージン「すでに私の魂も身体も、\n自分の物ではないのだ」",
+      "text": null
+    },
+    {
+      "offset": "0x16ED2",
+      "show": "screen",
+      "source": "「ユ、ユージン……」",
+      "text": null
+    },
+    {
+      "offset": "0x16EEA",
+      "show": "screen",
+      "source": "グレースは動揺していた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x16F06",
+      "show": "screen",
+      "source": "わなわなと唇を一文字に結び、\n震える手が哀れにも所在なげ\nである。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x16F4C",
+      "show": "window",
+      "source": "グレース「憎い…あの閃光が憎い……」",
+      "text": null
+    },
+    {
+      "offset": "0x16F72",
+      "show": "window",
+      "source": "グレース「あの閃光は街だけでなく\n人の心まで壊してしまった」",
+      "text": null
+    },
+    {
+      "offset": "0x16FB2",
+      "show": "window",
+      "source": "グレース「信心深く優しかったあの人は\nもうどこにもいない」",
+      "text": null
+    },
+    {
+      "offset": "0x16FF0",
+      "show": "window",
+      "source": "グレース「暗くにごった野望の炎が\n消えぬかぎり…、\n彼が戻ってくる事はない」",
+      "text": null
+    },
+    {
+      "offset": "0x17042",
+      "show": "window",
+      "source": "グレース「…街に戻ります」",
+      "text": null
+    },
+    {
+      "offset": "0x1705E",
+      "show": "window",
+      "source": "グレース「もうわたしでは彼を止める\n事は出来ません」",
+      "text": null
+    },
+    {
+      "offset": "0x17096",
+      "show": "window",
+      "source": "リカルド「おいおい、聞いたかよ？\n奴が言った事を」",
+      "text": null
+    },
+    {
+      "offset": "0x170CC",
+      "show": "window",
+      "source": "リカルド「俺達の女王様が\nホムンクルスだってよ！」",
+      "text": null
+    },
+    {
+      "offset": "0x17102",
+      "show": "window",
+      "source": "リカルド「そんな事、信じられるか？」",
+      "text": null
+    },
+    {
+      "offset": "0x17128",
+      "show": "window",
+      "source": "リカルド「ホムンクルスって、\n人造生物って事だよな」",
+      "text": null
+    },
+    {
+      "offset": "0x17160",
+      "show": "window",
+      "source": "リカルド「そんなものを作って奴は\nどうするんだ？」",
+      "text": null
+    },
+    {
+      "offset": "0x17196",
+      "show": "window",
+      "source": "リカルド「もし本物の女王様が\n戻ってきたらどうする\nつもりなんだよ」",
+      "text": null
+    },
+    {
+      "offset": "0x171E0",
+      "show": "window",
+      "source": "リカルド「俺はさっぱりわからんね」",
+      "text": null
+    },
+    {
+      "offset": "0x17204",
+      "show": "window",
+      "source": "グレッグ「ユージン卿が言った事が\n事実だとすれば…」",
+      "text": null
+    },
+    {
+      "offset": "0x1723C",
+      "show": "window",
+      "source": "グレッグ「我々国民は今まで、\nだまされていた事になる」",
+      "text": null
+    },
+    {
+      "offset": "0x17276",
+      "show": "window",
+      "source": "グレッグ「だが、何故レドゥアは、\nそんな馬鹿な事をした？」",
+      "text": null
+    },
+    {
+      "offset": "0x172B4",
+      "show": "window",
+      "source": "グレッグ「そのような卑劣な事は、\nいつかは必ず陽の下に\nさらされるはず」",
+      "text": null
+    },
+    {
+      "offset": "0x17302",
+      "show": "window",
+      "source": "グレッグ「それでなくとも国民の皆は、\n近頃の女王様の言動を\n不思議に思っていたのだ」",
+      "text": null
+    },
+    {
+      "offset": "0x1735C",
+      "show": "window",
+      "source": "グレッグ「それともレドゥアは愚かにも、\n国民をずっとだまし続けられ\nるとでも思っていたのか…」",
+      "text": null
+    },
+    {
+      "offset": "0x173C0",
+      "show": "window",
+      "source": "サラ「わたし、レドゥアが\n何を考えているのか\n分かるような気がする」",
+      "text": null
+    },
+    {
+      "offset": "0x1740A",
+      "show": "window",
+      "source": "サラ「本物の女王様はどこかで\n生きているのよきっと」",
+      "text": null
+    },
+    {
+      "offset": "0x17442",
+      "show": "window",
+      "source": "サラ「そしてわたし達冒険者は、\n女王様を探すために利用\nされているんじゃない？」",
+      "text": null
+    },
+    {
+      "offset": "0x17498",
+      "show": "window",
+      "source": "サラ「迷宮をそのままにしているのも、\n迷宮探索を奨励していたのも\nそう考えれば納得できる」",
+      "text": null
+    },
+    {
+      "offset": "0x174F8",
+      "show": "window",
+      "source": "サラ「もちろんこの推論は、\nユージン卿の言った事が\n正しいとしたらだけど」",
+      "text": null
+    },
+    {
+      "offset": "0x17548",
+      "show": "window",
+      "source": "サラ「そうでも考えないと\nレドゥアの行動に説明が\nつかないわ」",
+      "text": null
+    },
+    {
+      "offset": "0x1758C",
+      "show": "window",
+      "source": "ルイ「気味が悪いわね、\nホムンクルスだなんて…」",
+      "text": null
+    },
+    {
+      "offset": "0x175C0",
+      "show": "window",
+      "source": "ルイ「自分がそんな事されたらって\n考えたら、ぞっとする…」",
+      "text": null
+    },
+    {
+      "offset": "0x175FE",
+      "show": "window",
+      "source": "ルイ「何がレドゥアを狂わせたの\nかしら？」",
+      "text": null
+    },
+    {
+      "offset": "0x1762C",
+      "show": "window",
+      "source": "ルイ「元々はそんな事をする人間\nだったわけじゃないでしょ」",
+      "text": null
+    },
+    {
+      "offset": "0x1766A",
+      "show": "window",
+      "source": "ルイ「もちろんレドゥアの事を\nそれほど知っているわけでは\nないけど」",
+      "text": null
+    },
+    {
+      "offset": "0x176B4",
+      "show": "window",
+      "source": "ルイ「そんな人間だったらきっと、\nクイーンガードの長など\n勤まるわけないもの」",
+      "text": null
+    },
+    {
+      "offset": "0x17708",
+      "show": "window",
+      "source": "ルイ「やっぱりユージン卿が言うように\n女王様が原因なのかしらね」",
+      "text": null
+    },
+    {
+      "offset": "0x1774C",
+      "show": "window",
+      "source": "ダニエル「オイラ何かあやしいって\n前から思ってたんだよな」",
+      "text": null
+    },
+    {
+      "offset": "0x1778A",
+      "show": "window",
+      "source": "ダニエル「昔の女王様なら、\nこんな迷宮や魔物なんか\n放っておきやしないんだ」",
+      "text": null
+    },
+    {
+      "offset": "0x177DC",
+      "show": "window",
+      "source": "ダニエル「自ら先頭に立って\nぶっ壊していたはずだよ」",
+      "text": null
+    },
+    {
+      "offset": "0x17814",
+      "show": "window",
+      "source": "ダニエル「なのに今は盗賊顔負けで\n迷宮探索に熱を上げて\nいるもんね」",
+      "text": null
+    },
+    {
+      "offset": "0x1785E",
+      "show": "window",
+      "source": "ダニエル「そんなのどう考えても\n別人としか思えないよ」",
+      "text": null
+    },
+    {
+      "offset": "0x17898",
+      "show": "window",
+      "source": "オルフェ「わたしもユージン卿の意見に\n賛成だな」",
+      "text": null
+    },
+    {
+      "offset": "0x178CC",
+      "show": "window",
+      "source": "オルフェ「あの閃光より王室の行動には\n奇妙な点が多い」",
+      "text": null
+    },
+    {
+      "offset": "0x17906",
+      "show": "window",
+      "source": "オルフェ「決して国民の悲痛なる声に\n耳を傾ける事なく」",
+      "text": null
+    },
+    {
+      "offset": "0x17940",
+      "show": "window",
+      "source": "オルフェ「街の復旧をする様子もないし\n被災者の援助もしない」",
+      "text": null
+    },
+    {
+      "offset": "0x17980",
+      "show": "window",
+      "source": "オルフェ「挙句の果てには冒険者を集め\n迷宮探索を奨励する始末」",
+      "text": null
+    },
+    {
+      "offset": "0x179C2",
+      "show": "window",
+      "source": "オルフェ「迷宮を存続させなければならぬ\n謎があるのだと考えるほうが\n自然ではないか？」",
+      "text": null
+    },
+    {
+      "offset": "0x17A1E",
+      "show": "window",
+      "source": "アオバ「確かにレドゥアの行為には、\n不可解な点が山ほど\nありますが」",
+      "text": null
+    },
+    {
+      "offset": "0x17A68",
+      "show": "window",
+      "source": "アオバ「その理由は我々が考えるより、\nもっと単純なものかもしれま\nせんよ」",
+      "text": null
+    },
+    {
+      "offset": "0x17AB8",
+      "show": "window",
+      "source": "アオバ「冒険者の間で広まっている\n馬鹿な噂は知ってますね？」",
+      "text": null
+    },
+    {
+      "offset": "0x17AF8",
+      "show": "window",
+      "source": "アオバ「この迷宮深くに眠る魔神の\n宝なるものの噂です」",
+      "text": null
+    },
+    {
+      "offset": "0x17B32",
+      "show": "window",
+      "source": "アオバ「奴はそれを手に入れようと\nしているんじゃ？」",
+      "text": null
+    },
+    {
+      "offset": "0x17B6A",
+      "show": "window",
+      "source": "アオバ「賢い者が賢い行動をする\nとは限りませんからね」",
+      "text": null
+    },
+    {
+      "offset": "0x17BA4",
+      "show": "window",
+      "source": "アオバ「あながちそういった\nものかもしれませんよ」",
+      "text": null
+    },
+    {
+      "offset": "0x17BDA",
+      "show": "window",
+      "source": "ヒナ「クイーンガード長が\n禁じられた秘術にたよる」",
+      "text": null
+    },
+    {
+      "offset": "0x17C10",
+      "show": "window",
+      "source": "ヒナ「それが意味する物は\nなんなのでしょう………」",
+      "text": null
+    },
+    {
+      "offset": "0x17C46",
+      "show": "window",
+      "source": "ヒナ「真実は、いつも彼方にあって\n容易に見えはしないけれど」",
+      "text": null
+    },
+    {
+      "offset": "0x17C86",
+      "show": "window",
+      "source": "ヒナ「この事は、ことさら深い闇に\n包まれている…………」",
+      "text": null
+    },
+    {
+      "offset": "0x17CC2",
+      "show": "window",
+      "source": "ヒナ「その闇に触れた者は、\nきっと無事ではすまない。\nそんな不吉な予感がします」",
+      "text": null
+    },
+    {
+      "offset": "0x17D18",
+      "show": "window",
+      "source": "ヒナ「この迷宮は本当に………\n深い闇に満たされている\nのですね」",
+      "text": null
+    },
+    {
+      "offset": "0x17D5E",
+      "show": "window",
+      "source": "ミシェル「わたし思うんです…」",
+      "text": null
+    },
+    {
+      "offset": "0x17D7E",
+      "show": "window",
+      "source": "ミシェル「レドゥアの行為が狂って\nいるとしても」",
+      "text": null
+    },
+    {
+      "offset": "0x17DB2",
+      "show": "window",
+      "source": "ミシェル「完全なる絶望が決して人を\n狂わせる事はないと\n思うんです」",
+      "text": null
+    },
+    {
+      "offset": "0x17DFC",
+      "show": "window",
+      "source": "ミシェル「レドゥアは絶望の中にある\n微かだけど、何か一つの\n希望のようなもの…」",
+      "text": null
+    },
+    {
+      "offset": "0x17E52",
+      "show": "window",
+      "source": "ミシェル「それにしがみつこうとして、\nああなっているんじゃない\nでしょうか」",
+      "text": null
+    },
+    {
+      "offset": "0x17EA4",
+      "show": "window",
+      "source": "ミシェル「それがユージン卿の言う\n女王様の行方なのかもしれ\nませんが」",
+      "text": null
+    },
+    {
+      "offset": "0x17EF0",
+      "show": "screen",
+      "source": "何処からか差し込んでくる陽光と、\n芳しい匂いが立ち込めている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x17F32",
+      "show": "screen",
+      "source": "\nそこは澄んだ空気と静けさに\n満ちた場所であった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x17F6A",
+      "show": "screen",
+      "source": "「過去とは常にはかない物だ…」",
+      "text": null
+    },
+    {
+      "offset": "0x17F8C",
+      "show": "screen",
+      "source": "五層の滝のところで出会った\nカザという青年だった。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x17FC2",
+      "show": "screen",
+      "source": "彼はまぶしげに目を細め、\nこの風景を眺めていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x17FF6",
+      "show": "window",
+      "source": "カザ「我々は昔から聞かされてきた。\n人間や他の種族共の忌まわしき\n所業の事を」",
+      "text": null
+    },
+    {
+      "offset": "0x1804A",
+      "show": "window",
+      "source": "カザ「確かにそれは間違いではない。\nだが血と呪いに満ちた歴史は、\n我々エルフもまた同じ」",
+      "text": null
+    },
+    {
+      "offset": "0x180A8",
+      "show": "window",
+      "source": "カザ「古き時代、我々もまた呪われし\n力をもって血を流し合ったのだ」",
+      "text": null
+    },
+    {
+      "offset": "0x180EE",
+      "show": "window",
+      "source": "カザ「この地がその証拠だ…」",
+      "text": null
+    },
+    {
+      "offset": "0x1810C",
+      "show": "screen",
+      "source": "カザは言葉を止め、\n悲しげな表情を浮かべた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x1813C",
+      "show": "window",
+      "source": "カザ「この風景はドゥーハンが誕生する\n遥か昔、我々エルフがその地に作っ\nたとされる失われた都の一部」",
+      "text": null
+    },
+    {
+      "offset": "0x181A6",
+      "show": "window",
+      "source": "カザ「かつて我々エルフ族は巨大なる\n魔法文明の元、あらゆる幸福を\n享受していた」",
+      "text": null
+    },
+    {
+      "offset": "0x181FC",
+      "show": "window",
+      "source": "カザ「そこでは、あらゆる苦悩から\n解き放たれ、全ての者の心に\n平安があった」",
+      "text": null
+    },
+    {
+      "offset": "0x1824E",
+      "show": "window",
+      "source": "カザ「だが古き言い伝えでは…\nたった一人の憎しみが発端で、\nその楽園は滅んだらしい」",
+      "text": null
+    },
+    {
+      "offset": "0x182A8",
+      "show": "window",
+      "source": "カザ「最初は小さな種だった。\n誰もが気にしないほどの小さい\nからし種程度の…」",
+      "text": null
+    },
+    {
+      "offset": "0x182FC",
+      "show": "window",
+      "source": "カザ「しかし憎しみという闇の心は\n甘美な味を持っていた」",
+      "text": null
+    },
+    {
+      "offset": "0x18338",
+      "show": "window",
+      "source": "カザ「心の暗黒面に初心だった彼らに\n闇の心が広がるのは、さほど時間は\nかからなかったに違いない」",
+      "text": null
+    },
+    {
+      "offset": "0x1839E",
+      "show": "screen",
+      "source": "こちらに向いたカザの顔には、\n以前出会った時の様な\n険しさは完全に失せていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x183F0",
+      "show": "window",
+      "source": "カザ「ソフィアは知っていたのかもな」",
+      "text": null
+    },
+    {
+      "offset": "0x18416",
+      "show": "window",
+      "source": "カザ「憎しみが憎しみを生み、\nその種を刈り取らない限り\n闇は大きくなっていく事を」",
+      "text": null
+    },
+    {
+      "offset": "0x1846E",
+      "show": "window",
+      "source": "カザ「だが……」",
+      "text": null
+    },
+    {
+      "offset": "0x18480",
+      "show": "screen",
+      "source": "カザは言葉を止めた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x18498",
+      "show": "screen",
+      "source": "その顔には深い苦悩の影が\n落とされている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x184C6",
+      "show": "window",
+      "source": "カザ「全てを失った我々には、\n憎む事しか何も残されて\nいないのだよ…」",
+      "text": null
+    },
+    {
+      "offset": "0x18512",
+      "show": "window",
+      "source": "ミシェル「可哀想な人……」",
+      "text": null
+    },
+    {
+      "offset": "0x1852E",
+      "show": "window",
+      "source": "ミシェル「彼もわたしと同じ…、\n闇に追われているんです」",
+      "text": null
+    },
+    {
+      "offset": "0x1856A",
+      "show": "window",
+      "source": "ミシェル「忍び寄る虚無から…\n失った者の声無き叫びから」",
+      "text": null
+    },
+    {
+      "offset": "0x185A6",
+      "show": "window",
+      "source": "ミシェル「彼はそれらから逃れるために\n憎しみ続ける」",
+      "text": null
+    },
+    {
+      "offset": "0x185DE",
+      "show": "window",
+      "source": "ミシェル「きっと彼も、誰かに言って\nもらいたいんです」",
+      "text": null
+    },
+    {
+      "offset": "0x18618",
+      "show": "window",
+      "source": "ミシェル「これまで生きてきた事は\n意味があったと」",
+      "text": null
+    },
+    {
+      "offset": "0x1864E",
+      "show": "window",
+      "source": "ミシェル「美しき記憶が幻でなく、\nそれこそ真実であったと」",
+      "text": null
+    },
+    {
+      "offset": "0x1868C",
+      "show": "window",
+      "source": "ミシェル「行きましょう」",
+      "text": null
+    },
+    {
+      "offset": "0x186A6",
+      "show": "window",
+      "source": "ミシェル「閃光というわたし達の遺産が\nもたらした悲劇の結末を、\n見届けさせてください」",
+      "text": null
+    },
+    {
+      "offset": "0x18702",
+      "show": "screen",
+      "source": "よく見ると木箱の上に、\nマユが転がっていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x18732",
+      "show": "screen",
+      "source": "マユを拾いますか？\n\nは い\nいいえ\n",
+      "text": null
+    },
+    {
+      "offset": "0x1875E",
+      "show": "screen",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "text": null
+    },
+    {
+      "offset": "0x187A0",
+      "show": "screen",
+      "source": "<FB01>マユ<FB00>を手に入れた！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x187BA",
+      "show": "screen",
+      "source": "<FB01>マユ<FB00>をあきらめた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x187D4",
+      "show": "screen",
+      "source": "<FB01>マユ<FB00>を手に入れた！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x187EE",
+      "show": "screen",
+      "source": "よく見ると木箱の上に、\n司教の腕輪が置かれていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x18824",
+      "show": "screen",
+      "source": "司教の腕輪を拾いますか？\n\nは い\nいいえ\n",
+      "text": null
+    },
+    {
+      "offset": "0x18856",
+      "show": "screen",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "text": null
+    },
+    {
+      "offset": "0x18898",
+      "show": "screen",
+      "source": "<FB01>司教の腕輪<FB00>を手に入れた！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x188B8",
+      "show": "screen",
+      "source": "<FB01>司教の腕輪<FB00>をあきらめた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x188D8",
+      "show": "screen",
+      "source": "<FB01>司教の腕輪<FB00>を手に入れた！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x188F8",
+      "show": "screen",
+      "source": "よく見ると、骸骨の手には\n黒光りしている髪束が\n握りしめられていた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x18940",
+      "show": "screen",
+      "source": "魔力のような不思議な力を\n感じ取る事が出来るこの髪束は\nおそらく僧侶の髪であろう。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x18996",
+      "show": "screen",
+      "source": "僧侶の髪を拾いますか？\n\nは い\nいいえ\n",
+      "text": null
+    },
+    {
+      "offset": "0x189C6",
+      "show": "screen",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "text": null
+    },
+    {
+      "offset": "0x18A08",
+      "show": "screen",
+      "source": "<FB01>僧侶の髪<FB00>を手に入れた！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x18A26",
+      "show": "screen",
+      "source": "<FB01>僧侶の髪<FB00>をあきらめた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x18A44",
+      "show": "screen",
+      "source": "<FB01>僧侶の髪<FB00>を手に入れた！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x18A62",
+      "show": "screen",
+      "source": "樽の上に、魔物の卵が\n転がっている。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x18A8A",
+      "show": "screen",
+      "source": "魔物の卵を拾いますか？\n\nは い\nいいえ\n",
+      "text": null
+    },
+    {
+      "offset": "0x18ABA",
+      "show": "screen",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "text": null
+    },
+    {
+      "offset": "0x18AFC",
+      "show": "screen",
+      "source": "<FB01>魔物の卵<FB00>を手に入れた！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x18B1A",
+      "show": "screen",
+      "source": "<FB01>魔物の卵<FB00>をあきらめた。<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x18B38",
+      "show": "screen",
+      "source": "<FB01>魔物の卵<FB00>を手に入れた！<BREAK>",
+      "text": null
+    },
+    {
+      "offset": "0x18B56",
+      "show": "screen",
+      "source": "その違和感は迷宮の第一層で\n女王と最初に出会った時から、\n感じていたものだった。",
+      "text": null
+    },
+    {
+      "offset": "0x18BA8",
+      "show": "screen",
+      "source": "バラバラになったピースは\n未だ埋まってはいないが、",
+      "text": null
+    },
+    {
+      "offset": "0x18BDC",
+      "show": "screen",
+      "source": "懐かしさと切なさが入り混じった\nあの幻影が、真実を語っている。",
+      "text": null
+    },
+    {
+      "offset": "0x18C1C",
+      "show": "screen",
+      "source": "いかなる理由でレドゥアが\n偽っているのかわからないが、",
+      "text": null
+    },
+    {
+      "offset": "0x18C54",
+      "show": "screen",
+      "source": "記憶の彼方から呼びかけてくる\n声が告げていた。",
+      "text": null
+    },
+    {
+      "offset": "0x18C84",
+      "show": "screen",
+      "source": "狂態を演じていたあの女は、\n自分が知る陛下とは違う。",
+      "text": null
+    },
+    {
+      "offset": "0x18CBA",
+      "show": "screen",
+      "source": "あの慈愛に満ちた陛下ではないと。",
+      "text": null
+    }
+  ]
+}

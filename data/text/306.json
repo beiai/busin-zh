@@ -1,0 +1,4389 @@
+{
+  "chunk": 306,
+  "base": "0x414C800",
+  "align": "left",
+  "messages": [
+    {
+      "offset": "0x4F80",
+      "show": "screen",
+      "source": "突如巻き起こった炎の中から\n人影が現われた。<BREAK>",
+      "text": [
+        "骤然卷起的火焰中",
+        "现出一个人影。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x4FB0",
+      "show": "window",
+      "source": "男「次元のゆがみ………」",
+      "text": [
+        "男人「次元扭曲………」"
+      ]
+    },
+    {
+      "offset": "0x4FCA",
+      "show": "window",
+      "source": "男「切り裂かれた空間………」",
+      "text": [
+        "男人「被撕裂的空间………」"
+      ]
+    },
+    {
+      "offset": "0x4FE8",
+      "show": "window",
+      "source": "男「嘆き、おののく大地………」",
+      "text": [
+        "男人「哀叹、战栗的大地………」"
+      ]
+    },
+    {
+      "offset": "0x5008",
+      "show": "window",
+      "source": "男「それが、私と炎を招いたか。\n迷惑な事よ」",
+      "text": [
+        "男人「就是这些召来了我和火焰么。",
+        "麻烦啊」"
+      ]
+    },
+    {
+      "offset": "0x5038",
+      "show": "screen",
+      "source": "男はそう言うと\nうまそうに炎を飲み込んだ。<BREAK>",
+      "text": [
+        "男人说完，",
+        "便津津有味地吞下了火焰。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5066",
+      "show": "window",
+      "source": "男「私はギムレイ。\n死の国で、炎を御する者」",
+      "text": [
+        "男人「我是吉姆雷。",
+        "在死之国驭火的人」"
+      ]
+    },
+    {
+      "offset": "0x5096",
+      "show": "window",
+      "source": "ギムレイ「死の国へと堕ちた者を\n我が炎にて焼きつくし、\n浄化するが役目」",
+      "text": [
+        "吉姆雷「堕入死之国的人，",
+        "我用火焰烧尽，",
+        "净化他们，这是职责」"
+      ]
+    },
+    {
+      "offset": "0x50E4",
+      "show": "window",
+      "source": "ギムレイ「死の国から解放されて\n炎めが暴れよるわ」",
+      "text": [
+        "吉姆雷「这火焰被放出死之国，",
+        "便撒起野来了」"
+      ]
+    },
+    {
+      "offset": "0x511A",
+      "show": "screen",
+      "source": "ギムレイは、ゆっくりと\nひからびた唇をなめた。<BREAK>",
+      "text": [
+        "吉姆雷缓缓地",
+        "舔了舔干枯的嘴唇。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x514C",
+      "show": "window",
+      "source": "ギムレイ「この炎は死の国で燃え盛る\n猛き炎」",
+      "text": [
+        "吉姆雷「这是死之国里",
+        "熊熊燃烧的烈焰」"
+      ]
+    },
+    {
+      "offset": "0x517C",
+      "show": "window",
+      "source": "ギムレイ「死の国にあってこそ\n初めてきよめの炎となる」",
+      "text": [
+        "吉姆雷「唯有在死之国，",
+        "这才成为净化之炎」"
+      ]
+    },
+    {
+      "offset": "0x51B6",
+      "show": "window",
+      "source": "ギムレイ「見知らぬ地に呼びよせられた今\n猛り狂い、手近にある物を\n焼きつくそうとするだろう」",
+      "text": [
+        "吉姆雷「如今被召至陌生之地，",
+        "它便发狂，要把手边的东西",
+        "烧得一干二净吧」"
+      ]
+    },
+    {
+      "offset": "0x5218",
+      "show": "screen",
+      "source": "<PAGE>は驚いて\n炎とギムレイを見つめた。<BREAK>",
+      "text": [
+        "<PAGE>吃了一惊，",
+        "望着火焰和吉姆雷。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5240",
+      "show": "screen",
+      "source": "「手近にある物」とは\n自分達の事ではないだろうか。<BREAK>",
+      "text": [
+        "「手边的东西」，",
+        "难道不是说我们自己？<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5276",
+      "show": "window",
+      "source": "ギムレイ「この場に居合わせたのが\n不運よ」",
+      "text": [
+        "吉姆雷「碰巧在场的，",
+        "便是不幸啊」"
+      ]
+    },
+    {
+      "offset": "0x52A4",
+      "show": "window",
+      "source": "ギムレイ「生きながらにして死の国の炎に\n焼かれてみるか？」",
+      "text": [
+        "吉姆雷「要不要试试，活着被",
+        "死之国的火焰烧死？」"
+      ]
+    },
+    {
+      "offset": "0x52E2",
+      "show": "screen",
+      "source": "ギムレイの笑い声に\n合わせたかのように炎が猛る。<BREAK>",
+      "text": [
+        "仿佛应着吉姆雷的笑声，",
+        "火焰狂暴起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5316",
+      "show": "window",
+      "source": "ギムレイ「私なら、この炎を御す事が\n出来る」",
+      "text": [
+        "吉姆雷「若是我，便能驾驭",
+        "这火焰」"
+      ]
+    },
+    {
+      "offset": "0x5346",
+      "show": "window",
+      "source": "ギムレイ「私の言葉にしたがえば\nむざむざ死ぬる事はないぞ」",
+      "text": [
+        "吉姆雷「只要听我的话，",
+        "就不会白白送死！」"
+      ]
+    },
+    {
+      "offset": "0x5384",
+      "show": "screen",
+      "source": "ギムレイの瞳が\n奇妙な光に彩られた。<BREAK>",
+      "text": [
+        "吉姆雷的眼睛",
+        "染上了奇异的光。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x53AC",
+      "show": "window",
+      "source": "ギムレイ「お前の最も大切な者を\n炎に捧げるのだ」",
+      "text": [
+        "吉姆雷「把你最珍视的人",
+        "献给火焰」"
+      ]
+    },
+    {
+      "offset": "0x53E0",
+      "show": "screen",
+      "source": "ギムレイの言葉が、残酷に響いた。<BREAK>",
+      "text": [
+        "吉姆雷的话，残酷地响起。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5404",
+      "show": "window",
+      "source": "ギムレイ「聞こえなかったか？\nお前の最も大切な者を\n炎に捧げよと言ったのだ」",
+      "text": [
+        "吉姆雷「没听见么？",
+        "把你最珍视的人",
+        "献给火焰。我说过了」"
+      ]
+    },
+    {
+      "offset": "0x5456",
+      "show": "window",
+      "source": "ギムレイ「たった一人の犠牲で\n他の者が助かるのだぞ？」",
+      "text": [
+        "吉姆雷「只牺牲一个人，",
+        "其余的人不就得救了？」"
+      ]
+    },
+    {
+      "offset": "0x5490",
+      "show": "window",
+      "source": "ギムレイ「しかも、捧げられた者は\n役立つ品へと姿を変える」",
+      "text": [
+        "吉姆雷「而且，被献上的人",
+        "会变成有用的物品」"
+      ]
+    },
+    {
+      "offset": "0x54CE",
+      "show": "window",
+      "source": "ギムレイ「お前への気持ちが\n強ければ、強いほど\n強力な品にな」",
+      "text": [
+        "吉姆雷「那人对你的心意",
+        "越是强烈，",
+        "变成的物品就越强」"
+      ]
+    },
+    {
+      "offset": "0x5512",
+      "show": "window",
+      "source": "ギムレイ「悪い話ではあるまい？」",
+      "text": [
+        "吉姆雷「这可不算坏事吧？」"
+      ]
+    },
+    {
+      "offset": "0x5534",
+      "show": "screen",
+      "source": "<PAGE>は………\n\nギムレイの言う事を聞く\nそんな駅にはいかない\n",
+      "text": [
+        "<PAGE>………",
+        "",
+        "听吉姆雷的话",
+        "不能那么做",
+        ""
+      ]
+    },
+    {
+      "offset": "0x5578",
+      "show": "screen",
+      "source": "<PAGE>はギムレイに\n向かってうなずいた。<BREAK>",
+      "text": [
+        "<PAGE>朝吉姆雷",
+        "点了点头。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x55A0",
+      "show": "screen",
+      "source": "背後で、仲間が息を呑むのがわかる。<BREAK>",
+      "text": [
+        "能感到背后的同伴倒吸了一口气。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x55C6",
+      "show": "screen",
+      "source": "誰を炎に捧げますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "把谁献给火焰？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x5604",
+      "show": "screen",
+      "source": "名前を告げられた瞬間\n<FE00>の瞳は大きく見開かれた。<BREAK>",
+      "text": [
+        "名字被说出的瞬间，",
+        "<FE00>的眼睛猛地睁大。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5638",
+      "show": "screen",
+      "source": "信じられないといった顔で\n<PAGE>を見る。<BREAK>",
+      "text": [
+        "一脸难以置信地",
+        "看着<PAGE>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5660",
+      "show": "window",
+      "source": "ギムレイ「その者が\nお前の最も大切な者か」",
+      "text": [
+        "吉姆雷「那个人",
+        "是你最珍视的人么」"
+      ]
+    },
+    {
+      "offset": "0x568E",
+      "show": "window",
+      "source": "ギムレイ「では、<FE00>よ。\n炎の洗礼を受けるが良い」",
+      "text": [
+        "吉姆雷「那么，<FE00>。",
+        "去领受火焰的洗礼」"
+      ]
+    },
+    {
+      "offset": "0x56C2",
+      "show": "screen",
+      "source": "生き物の様にうごめいた\n死の国の炎は、あっという間に\n<FE00>を包み込んだ。<BREAK>",
+      "text": [
+        "像活物般扭动的",
+        "死之国的火焰，转眼",
+        "便将<FE00>裹住了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x570C",
+      "show": "screen",
+      "source": "想像を絶する様な\n<FE00>の悲鳴が上がる。<BREAK>",
+      "text": [
+        "难以想象的",
+        "<FE00>的惨叫响了起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5734",
+      "show": "screen",
+      "source": "<FE00>の姿が炎の中に\n完全に消え去ると\n見る間に炎の力が薄らいだ。<BREAK>",
+      "text": [
+        "<FE00>的身影在火焰中",
+        "彻底消失之后，",
+        "火焰的力量眼看着减弱了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5776",
+      "show": "screen",
+      "source": "ついさっきまで\n<FE00>が立っていた所に\n一つの兜が転がっている。<BREAK>",
+      "text": [
+        "直到方才",
+        "<FE00>还站着的地方，",
+        "滚着一顶头盔。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x57B6",
+      "show": "window",
+      "source": "ギムレイ「ほう。\nこれは、これは………」",
+      "text": [
+        "吉姆雷「哦。",
+        "真是、真是………」"
+      ]
+    },
+    {
+      "offset": "0x57E2",
+      "show": "screen",
+      "source": "ギムレイはその兜を取り上げ\nしげしげと眺める。<BREAK>",
+      "text": [
+        "吉姆雷拿起那顶头盔，",
+        "细细端详起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5814",
+      "show": "window",
+      "source": "ギムレイ「<FE00>にとっても\nお前はたいせつな者だった\nようだな」",
+      "text": [
+        "吉姆雷「对<FE00>而言，",
+        "你也曾是珍贵之人",
+        "看来是这样」"
+      ]
+    },
+    {
+      "offset": "0x5856",
+      "show": "window",
+      "source": "ギムレイ「うけとるが良い」",
+      "text": [
+        "吉姆雷「领受吧」"
+      ]
+    },
+    {
+      "offset": "0x5872",
+      "show": "window",
+      "source": "ギムレイ「これが<FE00>の\n重みだ」",
+      "text": [
+        "吉姆雷「这就是<FE00>的",
+        "分量」"
+      ]
+    },
+    {
+      "offset": "0x5894",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>武玄の兜<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>",
+        "得到了<FB01>武玄头盔<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x58B8",
+      "show": "screen",
+      "source": "武玄の兜は、ずしりと重かった。<BREAK>",
+      "text": [
+        "武玄头盔，沉甸甸的。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x58DA",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x58FA",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "背后同伴的视线，",
+        "仿佛刺了进来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x592C",
+      "show": "screen",
+      "source": "<FE00>の姿が炎の中に\n完全に消え去ると\n見る間に炎の力が薄らいだ。<BREAK>",
+      "text": [
+        "<FE00>的身影在火焰中",
+        "彻底消失之后，",
+        "火焰的力量眼看着减弱了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x596E",
+      "show": "screen",
+      "source": "ついさっきまで\n<FE00>が立っていた所に\n一本の剣が転がっている。<BREAK>",
+      "text": [
+        "直到方才",
+        "<FE00>还站着的地方，",
+        "滚着一把剑。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x59AE",
+      "show": "window",
+      "source": "ギムレイ「ほう。\nこれは、これは………」",
+      "text": [
+        "吉姆雷「哦。",
+        "真是、真是………」"
+      ]
+    },
+    {
+      "offset": "0x59DA",
+      "show": "screen",
+      "source": "ギムレイはその剣を取り上げると\n失笑した。<BREAK>",
+      "text": [
+        "吉姆雷拿起那把剑，",
+        "冷笑了一声。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5A08",
+      "show": "window",
+      "source": "ギムレイ「<FE00>が\n最も大切と言ったが…」",
+      "text": [
+        "吉姆雷「你说<FE00>",
+        "最为珍贵，可是…」"
+      ]
+    },
+    {
+      "offset": "0x5A32",
+      "show": "window",
+      "source": "ギムレイ「<FE00>は\nお前をそれほどおもっては\nいなかったようだな」",
+      "text": [
+        "吉姆雷「<FE00>",
+        "并没有那么重视你",
+        "看来是这样」"
+      ]
+    },
+    {
+      "offset": "0x5A76",
+      "show": "window",
+      "source": "ギムレイ「それなのに、命を落とすとは\nなかなか愉快ではないか」",
+      "text": [
+        "吉姆雷「即便如此还丢了命，",
+        "岂不相当愉快么」"
+      ]
+    },
+    {
+      "offset": "0x5AB8",
+      "show": "window",
+      "source": "ギムレイ「さあ、うけとるが良い」",
+      "text": [
+        "吉姆雷「来，收下吧」"
+      ]
+    },
+    {
+      "offset": "0x5ADA",
+      "show": "window",
+      "source": "ギムレイ「これが<FE00>の\nお前に対する重みだ」",
+      "text": [
+        "吉姆雷「这就是<FE00>对你的",
+        "分量」"
+      ]
+    },
+    {
+      "offset": "0x5B08",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>ロングソード<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>",
+        "得到了<FB01>长剑<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5B30",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5B50",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "背后同伴的视线，",
+        "仿佛刺了进来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5B82",
+      "show": "screen",
+      "source": "名前を告げられた瞬間\n<FE00>の瞳は大きく見開かれた。<BREAK>",
+      "text": [
+        "名字被说出的瞬间，",
+        "<FE00>的眼睛猛地睁大。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5BB6",
+      "show": "screen",
+      "source": "信じられないといった顔で\n<PAGE>を見る。<BREAK>",
+      "text": [
+        "一脸难以置信地",
+        "看着<PAGE>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5BDE",
+      "show": "window",
+      "source": "ギムレイ「その者が\nお前の最も大切な者か」",
+      "text": [
+        "吉姆雷「那个人",
+        "是你最珍视的人么」"
+      ]
+    },
+    {
+      "offset": "0x5C0C",
+      "show": "window",
+      "source": "ギムレイ「では、<FE00>よ。\n炎の洗礼を受けるが良い」",
+      "text": [
+        "吉姆雷「那么，<FE00>。",
+        "去领受火焰的洗礼」"
+      ]
+    },
+    {
+      "offset": "0x5C40",
+      "show": "screen",
+      "source": "生き物の様にうごめいた\n死の国の炎は、あっという間に\n<FE00>を包み込んだ。<BREAK>",
+      "text": [
+        "像活物般扭动的",
+        "死之国的火焰，转眼",
+        "便将<FE00>裹住了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5C8A",
+      "show": "screen",
+      "source": "想像を絶する様な\n<FE00>の悲鳴が上がる。<BREAK>",
+      "text": [
+        "难以想象的",
+        "<FE00>的惨叫响了起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5CB2",
+      "show": "screen",
+      "source": "<FE00>の姿が炎の中に\n完全に消え去ると\n見る間に炎の力が薄らいだ。<BREAK>",
+      "text": [
+        "<FE00>的身影在火焰中",
+        "彻底消失之后，",
+        "火焰的力量眼看着减弱了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5CF4",
+      "show": "screen",
+      "source": "ついさっきまで\n<FE00>が立っていた所に\n小さな指輪が転がっている。<BREAK>",
+      "text": [
+        "直到方才",
+        "<FE00>还站着的地方，",
+        "滚着一枚小戒指。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5D36",
+      "show": "window",
+      "source": "ギムレイ「ほう。\nこれは、これは………」",
+      "text": [
+        "吉姆雷「哦。",
+        "真是、真是………」"
+      ]
+    },
+    {
+      "offset": "0x5D62",
+      "show": "screen",
+      "source": "ギムレイはその指輪を取り上げ\nしげしげと眺める。<BREAK>",
+      "text": [
+        "吉姆雷拿起那枚戒指，",
+        "细细端详起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5D96",
+      "show": "window",
+      "source": "ギムレイ「<FE00>にとっても\nお前はたいせつな者だった\nようだな」",
+      "text": [
+        "吉姆雷「对<FE00>而言，",
+        "你也曾是珍贵之人",
+        "看来是这样」"
+      ]
+    },
+    {
+      "offset": "0x5DD8",
+      "show": "window",
+      "source": "ギムレイ「うけとるが良い」",
+      "text": [
+        "吉姆雷「领受吧」"
+      ]
+    },
+    {
+      "offset": "0x5DF4",
+      "show": "window",
+      "source": "ギムレイ「これが<FE00>の\n重みだ」",
+      "text": [
+        "吉姆雷「这就是<FE00>的",
+        "分量」"
+      ]
+    },
+    {
+      "offset": "0x5E16",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>回復の指輪<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>",
+        "得到了<FB01>恢复戒指<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5E3C",
+      "show": "screen",
+      "source": "小さいはずの回復の指輪が\nずしりと重く感じられた。<BREAK>",
+      "text": [
+        "本该很小的恢复戒指，",
+        "感觉却沉甸甸的。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5E72",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5E92",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "背后同伴的视线，",
+        "仿佛刺了进来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5EC4",
+      "show": "screen",
+      "source": "<FE00>の姿が炎の中に\n完全に消え去ると\n見る間に炎の力が薄らいだ。<BREAK>",
+      "text": [
+        "<FE00>的身影在火焰中",
+        "彻底消失之后，",
+        "火焰的力量眼看着减弱了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5F06",
+      "show": "screen",
+      "source": "ついさっきまで\n<FE00>が立っていた所に\n一本の短剣が転がっている。<BREAK>",
+      "text": [
+        "直到方才",
+        "<FE00>还站着的地方，",
+        "滚着一把短剑。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5F48",
+      "show": "window",
+      "source": "ギムレイ「ほう。\nこれは、これは………」",
+      "text": [
+        "吉姆雷「哦。",
+        "真是、真是………」"
+      ]
+    },
+    {
+      "offset": "0x5F74",
+      "show": "screen",
+      "source": "ギムレイは短剣を取り上げると\n失笑した。<BREAK>",
+      "text": [
+        "吉姆雷拿起短剑，",
+        "冷笑了一声。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5FA0",
+      "show": "window",
+      "source": "ギムレイ「<FE00>が\n最も大切と言ったが…」",
+      "text": [
+        "吉姆雷「你说<FE00>",
+        "最为珍贵，可是…」"
+      ]
+    },
+    {
+      "offset": "0x5FCA",
+      "show": "window",
+      "source": "ギムレイ「<FE00>は\nお前をそれほどおもっては\nいなかったようだな」",
+      "text": [
+        "吉姆雷「<FE00>",
+        "并没有那么重视你",
+        "看来是这样」"
+      ]
+    },
+    {
+      "offset": "0x600E",
+      "show": "window",
+      "source": "ギムレイ「それなのに、命を落とすとは\nなかなか愉快ではないか」",
+      "text": [
+        "吉姆雷「即便如此还丢了命，",
+        "岂不相当愉快么」"
+      ]
+    },
+    {
+      "offset": "0x6050",
+      "show": "window",
+      "source": "ギムレイ「さあ、うけとるが良い」",
+      "text": [
+        "吉姆雷「来，收下吧」"
+      ]
+    },
+    {
+      "offset": "0x6072",
+      "show": "window",
+      "source": "ギムレイ「これが<FE00>の\nお前に対する重みだ」",
+      "text": [
+        "吉姆雷「这就是<FE00>对你的",
+        "分量」"
+      ]
+    },
+    {
+      "offset": "0x60A0",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>ショートソード<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>",
+        "得到了<FB01>短剑<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x60CA",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x60EA",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "背后同伴的视线，",
+        "仿佛刺了进来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x611C",
+      "show": "screen",
+      "source": "名前を告げられた瞬間\n<FE00>の瞳は大きく見開かれた。<BREAK>",
+      "text": [
+        "名字被说出的瞬间，",
+        "<FE00>的眼睛猛地睁大。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6150",
+      "show": "screen",
+      "source": "信じられないといった顔で\n<PAGE>を見る。<BREAK>",
+      "text": [
+        "一脸难以置信地",
+        "看着<PAGE>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6178",
+      "show": "window",
+      "source": "ギムレイ「その者が\nお前の最も大切な者か」",
+      "text": [
+        "吉姆雷「那个人",
+        "是你最珍视的人么」"
+      ]
+    },
+    {
+      "offset": "0x61A6",
+      "show": "window",
+      "source": "ギムレイ「では、<FE00>よ。\n炎の洗礼を受けるが良い」",
+      "text": [
+        "吉姆雷「那么，<FE00>。",
+        "去领受火焰的洗礼」"
+      ]
+    },
+    {
+      "offset": "0x61DA",
+      "show": "screen",
+      "source": "生き物の様にうごめいた\n死の国の炎は、あっという間に\n<FE00>を包み込んだ。<BREAK>",
+      "text": [
+        "像活物般扭动的",
+        "死之国的火焰，转眼",
+        "便将<FE00>裹住了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6224",
+      "show": "screen",
+      "source": "想像を絶する様な\n<FE00>の悲鳴が上がる。<BREAK>",
+      "text": [
+        "难以想象的",
+        "<FE00>的惨叫响了起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x624C",
+      "show": "screen",
+      "source": "<FE00>の姿が炎の中に\n完全に消え去ると\n見る間に炎の力が薄らいだ。<BREAK>",
+      "text": [
+        "<FE00>的身影在火焰中",
+        "彻底消失之后，",
+        "火焰的力量眼看着减弱了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x628E",
+      "show": "screen",
+      "source": "ついさっきまで\n<FE00>が立っていた所に\n一本の刀が転がっている。<BREAK>",
+      "text": [
+        "直到方才",
+        "<FE00>还站着的地方，",
+        "滚着一把刀。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x62CE",
+      "show": "window",
+      "source": "ギムレイ「ほう。\nこれは、これは………」",
+      "text": [
+        "吉姆雷「哦。",
+        "真是、真是………」"
+      ]
+    },
+    {
+      "offset": "0x62FA",
+      "show": "screen",
+      "source": "ギムレイはその刀を取り上げ\nしげしげと眺める。<BREAK>",
+      "text": [
+        "吉姆雷拿起那把刀，",
+        "细细端详起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x632C",
+      "show": "window",
+      "source": "ギムレイ「<FE00>にとっても\nお前はたいせつな者だった\nようだな」",
+      "text": [
+        "吉姆雷「对<FE00>而言，",
+        "你也曾是珍贵之人",
+        "看来是这样」"
+      ]
+    },
+    {
+      "offset": "0x636E",
+      "show": "window",
+      "source": "ギムレイ「うけとるが良い」",
+      "text": [
+        "吉姆雷「领受吧」"
+      ]
+    },
+    {
+      "offset": "0x638A",
+      "show": "window",
+      "source": "ギムレイ「これが<FE00>の\n重みだ」",
+      "text": [
+        "吉姆雷「这就是<FE00>的",
+        "分量」"
+      ]
+    },
+    {
+      "offset": "0x63AC",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>正宗<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>",
+        "得到了<FB01>正宗<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x63CC",
+      "show": "screen",
+      "source": "手にした正宗は、ずしりと重かった。<BREAK>",
+      "text": [
+        "手里的正宗，沉甸甸的。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x63F2",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6412",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "背后同伴的视线，",
+        "仿佛刺了进来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6444",
+      "show": "screen",
+      "source": "<FE00>の姿が炎の中に\n完全に消え去ると\n見る間に炎の力が薄らいだ。<BREAK>",
+      "text": [
+        "<FE00>的身影在火焰中",
+        "彻底消失之后，",
+        "火焰的力量眼看着减弱了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6486",
+      "show": "screen",
+      "source": "ついさっきまで\n<FE00>が立っていた所に\n一本の刀が転がっている。<BREAK>",
+      "text": [
+        "直到方才",
+        "<FE00>还站着的地方，",
+        "滚着一把刀。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x64C6",
+      "show": "window",
+      "source": "ギムレイ「ほう。\nこれは、これは………」",
+      "text": [
+        "吉姆雷「哦。",
+        "真是、真是………」"
+      ]
+    },
+    {
+      "offset": "0x64F2",
+      "show": "screen",
+      "source": "ギムレイは刀を取り上げると\n失笑した。<BREAK>",
+      "text": [
+        "吉姆雷拿起刀，",
+        "冷笑了一声。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x651C",
+      "show": "window",
+      "source": "ギムレイ「<FE00>が\n最も大切と言ったが…」",
+      "text": [
+        "吉姆雷「你说<FE00>",
+        "最为珍贵，可是…」"
+      ]
+    },
+    {
+      "offset": "0x6546",
+      "show": "window",
+      "source": "ギムレイ「<FE00>は\nお前をそれほどおもっては\nいなかったようだな」",
+      "text": [
+        "吉姆雷「<FE00>",
+        "并没有那么重视你",
+        "看来是这样」"
+      ]
+    },
+    {
+      "offset": "0x658A",
+      "show": "window",
+      "source": "ギムレイ「それなのに、命を落とすとは\nなかなか愉快ではないか」",
+      "text": [
+        "吉姆雷「即便如此还丢了命，",
+        "岂不相当愉快么」"
+      ]
+    },
+    {
+      "offset": "0x65CC",
+      "show": "window",
+      "source": "ギムレイ「さあ、うけとるが良い」",
+      "text": [
+        "吉姆雷「来，收下吧」"
+      ]
+    },
+    {
+      "offset": "0x65EE",
+      "show": "window",
+      "source": "ギムレイ「これが<FE00>の\nお前に対する重みだ」",
+      "text": [
+        "吉姆雷「这就是<FE00>对你的",
+        "分量」"
+      ]
+    },
+    {
+      "offset": "0x661C",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>刀<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>",
+        "得到了<FB01>刀<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x663A",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x665A",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "背后同伴的视线，",
+        "仿佛刺了进来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x668C",
+      "show": "screen",
+      "source": "名前を告げられた瞬間\n<FE00>の瞳は大きく見開かれた。<BREAK>",
+      "text": [
+        "名字被说出的瞬间，",
+        "<FE00>的眼睛猛地睁大。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x66C0",
+      "show": "screen",
+      "source": "信じられないといった顔で\n<PAGE>を見る。<BREAK>",
+      "text": [
+        "一脸难以置信地",
+        "看着<PAGE>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x66E8",
+      "show": "window",
+      "source": "ギムレイ「その者が\nお前の最も大切な者か」",
+      "text": [
+        "吉姆雷「那个人",
+        "是你最珍视的人么」"
+      ]
+    },
+    {
+      "offset": "0x6716",
+      "show": "window",
+      "source": "ギムレイ「では、<FE00>よ。\n炎の洗礼を受けるが良い」",
+      "text": [
+        "吉姆雷「那么，<FE00>。",
+        "去领受火焰的洗礼」"
+      ]
+    },
+    {
+      "offset": "0x674A",
+      "show": "screen",
+      "source": "生き物の様にうごめいた\n死の国の炎は、あっという間に\n<FE00>を包み込んだ。<BREAK>",
+      "text": [
+        "像活物般扭动的",
+        "死之国的火焰，转眼",
+        "便将<FE00>裹住了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6794",
+      "show": "screen",
+      "source": "想像を絶する様な\n<FE00>の悲鳴が上がる。<BREAK>",
+      "text": [
+        "难以想象的",
+        "<FE00>的惨叫响了起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x67BC",
+      "show": "screen",
+      "source": "<FE00>の姿が炎の中に\n完全に消え去ると\n見る間に炎の力が薄らいだ。<BREAK>",
+      "text": [
+        "<FE00>的身影在火焰中",
+        "彻底消失之后，",
+        "火焰的力量眼看着减弱了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x67FE",
+      "show": "screen",
+      "source": "ついさっきまで\n<FE00>が立っていた所に\n小手が転がっている。<BREAK>",
+      "text": [
+        "直到方才",
+        "<FE00>还站着的地方，",
+        "滚着一只护手。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x683A",
+      "show": "window",
+      "source": "ギムレイ「ほう。\nこれは、これは………」",
+      "text": [
+        "吉姆雷「哦。",
+        "真是、真是………」"
+      ]
+    },
+    {
+      "offset": "0x6866",
+      "show": "screen",
+      "source": "ギムレイはその小手を取り上げ\nしげしげと眺める。<BREAK>",
+      "text": [
+        "吉姆雷拿起那只护手，",
+        "细细端详起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x689A",
+      "show": "window",
+      "source": "ギムレイ「<FE00>にとっても\nお前はたいせつな者だった\nようだな」",
+      "text": [
+        "吉姆雷「对<FE00>而言，",
+        "你也曾是珍贵之人",
+        "看来是这样」"
+      ]
+    },
+    {
+      "offset": "0x68DC",
+      "show": "window",
+      "source": "ギムレイ「うけとるが良い」",
+      "text": [
+        "吉姆雷「领受吧」"
+      ]
+    },
+    {
+      "offset": "0x68F8",
+      "show": "window",
+      "source": "ギムレイ「これが<FE00>の\n重みだ」",
+      "text": [
+        "吉姆雷「这就是<FE00>的",
+        "分量」"
+      ]
+    },
+    {
+      "offset": "0x691A",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>悪の小手<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>",
+        "得到了<FB01>恶之护手<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x693E",
+      "show": "screen",
+      "source": "悪の小手は、ずしりと重かった。<BREAK>",
+      "text": [
+        "恶之护手，沉甸甸的。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6960",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6980",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "背后同伴的视线，",
+        "仿佛刺了进来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x69B2",
+      "show": "screen",
+      "source": "<FE00>の姿が炎の中に\n完全に消え去ると\n見る間に炎の力が薄らいだ。<BREAK>",
+      "text": [
+        "<FE00>的身影在火焰中",
+        "彻底消失之后，",
+        "火焰的力量眼看着减弱了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x69F4",
+      "show": "screen",
+      "source": "ついさっきまで\n<FE00>が立っていた所に\n一本の短刀が転がっている。<BREAK>",
+      "text": [
+        "直到方才",
+        "<FE00>还站着的地方，",
+        "滚着一把短刀。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6A36",
+      "show": "window",
+      "source": "ギムレイ「ほう。\nこれは、これは………」",
+      "text": [
+        "吉姆雷「哦。",
+        "真是、真是………」"
+      ]
+    },
+    {
+      "offset": "0x6A62",
+      "show": "screen",
+      "source": "ギムレイは短刀を取り上げると\n失笑した。<BREAK>",
+      "text": [
+        "吉姆雷拿起短刀，",
+        "冷笑了一声。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6A8E",
+      "show": "window",
+      "source": "ギムレイ「<FE00>が\n最も大切と言ったが…」",
+      "text": [
+        "吉姆雷「你说<FE00>",
+        "最为珍贵，可是…」"
+      ]
+    },
+    {
+      "offset": "0x6AB8",
+      "show": "window",
+      "source": "ギムレイ「<FE00>は\nお前をそれほどおもっては\nいなかったようだな」",
+      "text": [
+        "吉姆雷「<FE00>",
+        "并没有那么重视你",
+        "看来是这样」"
+      ]
+    },
+    {
+      "offset": "0x6AFC",
+      "show": "window",
+      "source": "ギムレイ「それなのに、命を落とすとは\nなかなか愉快ではないか」",
+      "text": [
+        "吉姆雷「即便如此还丢了命，",
+        "岂不相当愉快么」"
+      ]
+    },
+    {
+      "offset": "0x6B3E",
+      "show": "window",
+      "source": "ギムレイ「さあ、うけとるが良い」",
+      "text": [
+        "吉姆雷「来，收下吧」"
+      ]
+    },
+    {
+      "offset": "0x6B60",
+      "show": "window",
+      "source": "ギムレイ「これが<FE00>の\nお前に対する重みだ」",
+      "text": [
+        "吉姆雷「这就是<FE00>对你的",
+        "分量」"
+      ]
+    },
+    {
+      "offset": "0x6B8E",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>ダガー<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>",
+        "得到了<FB01>匕首<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6BB0",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6BD0",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "背后同伴的视线，",
+        "仿佛刺了进来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6C02",
+      "show": "screen",
+      "source": "名前を告げられた瞬間\n<FE00>の瞳は大きく見開かれた。<BREAK>",
+      "text": [
+        "名字被说出的瞬间，",
+        "<FE00>的眼睛猛地睁大。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6C36",
+      "show": "screen",
+      "source": "信じられないといった顔で\n<PAGE>を見る。<BREAK>",
+      "text": [
+        "一脸难以置信地",
+        "看着<PAGE>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6C5E",
+      "show": "window",
+      "source": "ギムレイ「その者が\nお前の最も大切な者か」",
+      "text": [
+        "吉姆雷「那个人",
+        "是你最珍视的人么」"
+      ]
+    },
+    {
+      "offset": "0x6C8C",
+      "show": "window",
+      "source": "ギムレイ「では、<FE00>よ。\n炎の洗礼を受けるが良い」",
+      "text": [
+        "吉姆雷「那么，<FE00>。",
+        "去领受火焰的洗礼」"
+      ]
+    },
+    {
+      "offset": "0x6CC0",
+      "show": "screen",
+      "source": "生き物の様にうごめいた\n死の国の炎は、あっという間に\n<FE00>を包み込んだ。<BREAK>",
+      "text": [
+        "像活物般扭动的",
+        "死之国的火焰，转眼",
+        "便将<FE00>裹住了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6D0A",
+      "show": "screen",
+      "source": "想像を絶する様な\n<FE00>の悲鳴が上がる。<BREAK>",
+      "text": [
+        "难以想象的",
+        "<FE00>的惨叫响了起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6D32",
+      "show": "screen",
+      "source": "<FE00>の姿が炎の中に\n完全に消え去ると\n見る間に炎の力が薄らいだ。<BREAK>",
+      "text": [
+        "<FE00>的身影在火焰中",
+        "彻底消失之后，",
+        "火焰的力量眼看着减弱了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6D74",
+      "show": "screen",
+      "source": "ついさっきまで\n<FE00>が立っていた所に\n魔法石が転がっている。<BREAK>",
+      "text": [
+        "直到方才",
+        "<FE00>还站着的地方，",
+        "滚着一块魔法石。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6DB2",
+      "show": "window",
+      "source": "ギムレイ「ほう。\nこれは、これは………」",
+      "text": [
+        "吉姆雷「哦。",
+        "真是、真是………」"
+      ]
+    },
+    {
+      "offset": "0x6DDE",
+      "show": "screen",
+      "source": "ギムレイはその魔法石を取り上げ\nしげしげと眺める。<BREAK>",
+      "text": [
+        "吉姆雷拿起那块魔法石，",
+        "细细端详起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6E14",
+      "show": "window",
+      "source": "ギムレイ「<FE00>にとっても\nお前はたいせつな者だった\nようだな」",
+      "text": [
+        "吉姆雷「对<FE00>而言，",
+        "你也曾是珍贵之人",
+        "看来是这样」"
+      ]
+    },
+    {
+      "offset": "0x6E56",
+      "show": "window",
+      "source": "ギムレイ「うけとるが良い」",
+      "text": [
+        "吉姆雷「领受吧」"
+      ]
+    },
+    {
+      "offset": "0x6E72",
+      "show": "window",
+      "source": "ギムレイ「これが<FE00>の\n重みだ」",
+      "text": [
+        "吉姆雷「这就是<FE00>的",
+        "分量」"
+      ]
+    },
+    {
+      "offset": "0x6E94",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>メガデスの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>",
+        "得到了<FB01>梅加德斯石<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6EBC",
+      "show": "screen",
+      "source": "手にしたメガデスの石は\nずしりと重かった。<BREAK>",
+      "text": [
+        "手里的梅加德斯石，",
+        "沉甸甸的。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6EEA",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6F0A",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "背后同伴的视线，",
+        "仿佛刺了进来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6F3C",
+      "show": "screen",
+      "source": "<FE00>の姿が炎の中に\n完全に消え去ると\n見る間に炎の力が薄らいだ。<BREAK>",
+      "text": [
+        "<FE00>的身影在火焰中",
+        "彻底消失之后，",
+        "火焰的力量眼看着减弱了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6F7E",
+      "show": "screen",
+      "source": "ついさっきまで\n<FE00>が立っていた所に\n魔法石が転がっている。<BREAK>",
+      "text": [
+        "直到方才",
+        "<FE00>还站着的地方，",
+        "滚着一块魔法石。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6FBC",
+      "show": "window",
+      "source": "ギムレイ「ほう。\nこれは、これは………」",
+      "text": [
+        "吉姆雷「哦。",
+        "真是、真是………」"
+      ]
+    },
+    {
+      "offset": "0x6FE8",
+      "show": "screen",
+      "source": "ギムレイは魔法石を取り上げると\n失笑した。<BREAK>",
+      "text": [
+        "吉姆雷拿起魔法石，",
+        "冷笑了一声。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7016",
+      "show": "window",
+      "source": "ギムレイ「<FE00>が\n最も大切と言ったが…」",
+      "text": [
+        "吉姆雷「你说<FE00>",
+        "最为珍贵，可是…」"
+      ]
+    },
+    {
+      "offset": "0x7040",
+      "show": "window",
+      "source": "ギムレイ「<FE00>は\nお前をそれほどおもっては\nいなかったようだな」",
+      "text": [
+        "吉姆雷「<FE00>",
+        "并没有那么重视你",
+        "看来是这样」"
+      ]
+    },
+    {
+      "offset": "0x7084",
+      "show": "window",
+      "source": "ギムレイ「それなのに、命を落とすとは\nなかなか愉快ではないか」",
+      "text": [
+        "吉姆雷「即便如此还丢了命，",
+        "岂不相当愉快么」"
+      ]
+    },
+    {
+      "offset": "0x70C6",
+      "show": "window",
+      "source": "ギムレイ「さあ、うけとるが良い」",
+      "text": [
+        "吉姆雷「来，收下吧」"
+      ]
+    },
+    {
+      "offset": "0x70E8",
+      "show": "window",
+      "source": "ギムレイ「これが<FE00>の\nお前に対する重みだ」",
+      "text": [
+        "吉姆雷「这就是<FE00>对你的",
+        "分量」"
+      ]
+    },
+    {
+      "offset": "0x7116",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>クレタの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>",
+        "得到了<FB01>克雷塔石<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x713C",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x715C",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "背后同伴的视线，",
+        "仿佛刺了进来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x718E",
+      "show": "screen",
+      "source": "名前を告げられた瞬間\n<FE00>の瞳は大きく見開かれた。<BREAK>",
+      "text": [
+        "名字被说出的瞬间，",
+        "<FE00>的眼睛猛地睁大。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x71C2",
+      "show": "screen",
+      "source": "信じられないといった顔で\n<PAGE>を見る。<BREAK>",
+      "text": [
+        "一脸难以置信地",
+        "看着<PAGE>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x71EA",
+      "show": "window",
+      "source": "ギムレイ「その者が\nお前の最も大切な者か」",
+      "text": [
+        "吉姆雷「那个人",
+        "是你最珍视的人么」"
+      ]
+    },
+    {
+      "offset": "0x7218",
+      "show": "window",
+      "source": "ギムレイ「では、<FE00>よ。\n炎の洗礼を受けるが良い」",
+      "text": [
+        "吉姆雷「那么，<FE00>。",
+        "去领受火焰的洗礼」"
+      ]
+    },
+    {
+      "offset": "0x724C",
+      "show": "screen",
+      "source": "生き物の様にうごめいた\n死の国の炎は、あっという間に\n<FE00>を包み込んだ。<BREAK>",
+      "text": [
+        "像活物般扭动的",
+        "死之国的火焰，转眼",
+        "便将<FE00>裹住了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7296",
+      "show": "screen",
+      "source": "想像を絶する様な\n<FE00>の悲鳴が上がる。<BREAK>",
+      "text": [
+        "难以想象的",
+        "<FE00>的惨叫响了起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x72BE",
+      "show": "screen",
+      "source": "<FE00>の姿が炎の中に\n完全に消え去ると\n見る間に炎の力が薄らいだ。<BREAK>",
+      "text": [
+        "<FE00>的身影在火焰中",
+        "彻底消失之后，",
+        "火焰的力量眼看着减弱了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7300",
+      "show": "screen",
+      "source": "ついさっきまで\n<FE00>が立っていた所に\n魔法石が転がっている。<BREAK>",
+      "text": [
+        "直到方才",
+        "<FE00>还站着的地方，",
+        "滚着一块魔法石。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x733E",
+      "show": "window",
+      "source": "ギムレイ「ほう。\nこれは、これは………」",
+      "text": [
+        "吉姆雷「哦。",
+        "真是、真是………」"
+      ]
+    },
+    {
+      "offset": "0x736A",
+      "show": "screen",
+      "source": "ギムレイはその魔法石を取り上げ\nしげしげと眺める。<BREAK>",
+      "text": [
+        "吉姆雷拿起那块魔法石，",
+        "细细端详起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x73A0",
+      "show": "window",
+      "source": "ギムレイ「<FE00>にとっても\nお前はたいせつな者だった\nようだな」",
+      "text": [
+        "吉姆雷「对<FE00>而言，",
+        "你也曾是珍贵之人",
+        "看来是这样」"
+      ]
+    },
+    {
+      "offset": "0x73E2",
+      "show": "window",
+      "source": "ギムレイ「うけとるが良い」",
+      "text": [
+        "吉姆雷「领受吧」"
+      ]
+    },
+    {
+      "offset": "0x73FE",
+      "show": "window",
+      "source": "ギムレイ「これが<FE00>の\n重みだ」",
+      "text": [
+        "吉姆雷「这就是<FE00>的",
+        "分量」"
+      ]
+    },
+    {
+      "offset": "0x7420",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>ウィルの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>",
+        "得到了<FB01>威尔石<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7446",
+      "show": "screen",
+      "source": "手にしたウィルの石は\nずしりと重かった。<BREAK>",
+      "text": [
+        "手里的威尔石，",
+        "沉甸甸的。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7472",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7492",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "背后同伴的视线，",
+        "仿佛刺了进来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x74C4",
+      "show": "screen",
+      "source": "<FE00>の姿が炎の中に\n完全に消え去ると\n見る間に炎の力が薄らいだ。<BREAK>",
+      "text": [
+        "<FE00>的身影在火焰中",
+        "彻底消失之后，",
+        "火焰的力量眼看着减弱了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7506",
+      "show": "screen",
+      "source": "ついさっきまで\n<FE00>が立っていた所に\n魔法石が転がっている。<BREAK>",
+      "text": [
+        "直到方才",
+        "<FE00>还站着的地方，",
+        "滚着一块魔法石。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7544",
+      "show": "window",
+      "source": "ギムレイ「ほう。\nこれは、これは………」",
+      "text": [
+        "吉姆雷「哦。",
+        "真是、真是………」"
+      ]
+    },
+    {
+      "offset": "0x7570",
+      "show": "screen",
+      "source": "ギムレイは魔法石を取り上げると\n失笑した。<BREAK>",
+      "text": [
+        "吉姆雷拿起魔法石，",
+        "冷笑了一声。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x759E",
+      "show": "window",
+      "source": "ギムレイ「<FE00>が\n最も大切と言ったが…」",
+      "text": [
+        "吉姆雷「你说<FE00>",
+        "最为珍贵，可是…」"
+      ]
+    },
+    {
+      "offset": "0x75C8",
+      "show": "window",
+      "source": "ギムレイ「<FE00>は\nお前をそれほどおもっては\nいなかったようだな」",
+      "text": [
+        "吉姆雷「<FE00>",
+        "并没有那么重视你",
+        "看来是这样」"
+      ]
+    },
+    {
+      "offset": "0x760C",
+      "show": "window",
+      "source": "ギムレイ「それなのに、命を落とすとは\nなかなか愉快ではないか」",
+      "text": [
+        "吉姆雷「即便如此，竟把命送掉，",
+        "岂不相当有趣？」"
+      ]
+    },
+    {
+      "offset": "0x764E",
+      "show": "window",
+      "source": "ギムレイ「さあ、うけとるが良い」",
+      "text": [
+        "吉姆雷「来，收下便是」"
+      ]
+    },
+    {
+      "offset": "0x7670",
+      "show": "window",
+      "source": "ギムレイ「これが<FE00>の\nお前に対する重みだ」",
+      "text": [
+        "吉姆雷「这就是<FE00>",
+        "对你的分量」"
+      ]
+    },
+    {
+      "offset": "0x769E",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>フィールの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>得到了",
+        "<FB01>感知石<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x76C6",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x76E6",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "身后同伴的目光",
+        "仿佛刺了过来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7718",
+      "show": "screen",
+      "source": "名前を告げられた瞬間\n<FE00>の瞳は大きく見開かれた。<BREAK>",
+      "text": [
+        "听到名字的瞬间，",
+        "<FE00>双眼猛地睁大。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x774C",
+      "show": "screen",
+      "source": "信じられないといった顔で\n<PAGE>を見る。<BREAK>",
+      "text": [
+        "满脸不可置信，",
+        "看着<PAGE>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7774",
+      "show": "window",
+      "source": "ギムレイ「その者が\nお前の最も大切な者か」",
+      "text": [
+        "吉姆雷「那人，",
+        "是你最重要的人吗」"
+      ]
+    },
+    {
+      "offset": "0x77A2",
+      "show": "window",
+      "source": "ギムレイ「では、<FE00>よ。\n炎の洗礼を受けるが良い」",
+      "text": [
+        "吉姆雷「那么，<FE00>啊。",
+        "去受火焰的洗礼」"
+      ]
+    },
+    {
+      "offset": "0x77D6",
+      "show": "screen",
+      "source": "生き物の様にうごめいた\n死の国の炎は、あっという間に\n<FE00>を包み込んだ。<BREAK>",
+      "text": [
+        "如活物般蠕动的",
+        "死之国的火焰，转眼",
+        "将<FE00>裹住。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7820",
+      "show": "screen",
+      "source": "想像を絶する様な\n<FE00>の悲鳴が上がる。<BREAK>",
+      "text": [
+        "难以想象的",
+        "<FE00>惨叫响了起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7848",
+      "show": "screen",
+      "source": "<FE00>の姿が炎の中に\n完全に消え去ると\n見る間に炎の力が薄らいだ。<BREAK>",
+      "text": [
+        "<FE00>的身影在火焰中",
+        "彻底消失之后，",
+        "火焰转眼弱了下去。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x788A",
+      "show": "screen",
+      "source": "ついさっきまで\n<FE00>が立っていた所に\n鎧が転がっている。<BREAK>",
+      "text": [
+        "直到刚才，",
+        "<FE00>站立之处，",
+        "躺着一副铠甲。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x78C4",
+      "show": "window",
+      "source": "ギムレイ「ほう。\nこれは、これは………」",
+      "text": [
+        "吉姆雷「嗬。",
+        "真是，真是………」"
+      ]
+    },
+    {
+      "offset": "0x78F0",
+      "show": "screen",
+      "source": "ギムレイはその鎧を\nしげしげと眺める。<BREAK>",
+      "text": [
+        "吉姆雷盯着那副铠甲，",
+        "细细打量。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x791A",
+      "show": "window",
+      "source": "ギムレイ「<FE00>にとっても\nお前はたいせつな者だった\nようだな」",
+      "text": [
+        "吉姆雷「看来<FE00>也曾",
+        "把你视作",
+        "重要的人」"
+      ]
+    },
+    {
+      "offset": "0x795C",
+      "show": "window",
+      "source": "ギムレイ「うけとるが良い」",
+      "text": [
+        "吉姆雷「收下便是」"
+      ]
+    },
+    {
+      "offset": "0x7978",
+      "show": "window",
+      "source": "ギムレイ「これが<FE00>の\n重みだ」",
+      "text": [
+        "吉姆雷「这就是<FE00>的",
+        "分量」"
+      ]
+    },
+    {
+      "offset": "0x799A",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>極上の鎧<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>得到了",
+        "<FB01>极品铠<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x79BE",
+      "show": "screen",
+      "source": "極上の鎧は、ずしりと重かった。<BREAK>",
+      "text": [
+        "极品铠沉甸甸的。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x79E0",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7A00",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "身后同伴的目光",
+        "仿佛刺了过来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7A32",
+      "show": "screen",
+      "source": "<FE00>の姿が炎の中に\n完全に消え去ると\n見る間に炎の力が薄らいだ。<BREAK>",
+      "text": [
+        "<FE00>的身影在火焰中",
+        "彻底消失之后，",
+        "火焰转眼弱了下去。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7A74",
+      "show": "screen",
+      "source": "ついさっきまで\n<FE00>が立っていた所に\n盾が転がっている。<BREAK>",
+      "text": [
+        "直到刚才，",
+        "<FE00>站立之处，",
+        "躺着一面盾牌。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7AAE",
+      "show": "window",
+      "source": "ギムレイ「ほう。\nこれは、これは………」",
+      "text": [
+        "吉姆雷「嗬。",
+        "真是，真是………」"
+      ]
+    },
+    {
+      "offset": "0x7ADA",
+      "show": "screen",
+      "source": "ギムレイは盾を取り上げると\n失笑した。<BREAK>",
+      "text": [
+        "吉姆雷拿起盾牌，",
+        "失笑一声。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7B04",
+      "show": "window",
+      "source": "ギムレイ「<FE00>が\n最も大切と言ったが…」",
+      "text": [
+        "吉姆雷「你说<FE00>",
+        "最为重要，可是…」"
+      ]
+    },
+    {
+      "offset": "0x7B2E",
+      "show": "window",
+      "source": "ギムレイ「<FE00>は\nお前をそれほどおもっては\nいなかったようだな」",
+      "text": [
+        "吉姆雷「看来<FE00>",
+        "并没有把你",
+        "看得那么重」"
+      ]
+    },
+    {
+      "offset": "0x7B72",
+      "show": "window",
+      "source": "ギムレイ「それなのに、命を落とすとは\nなかなか愉快ではないか」",
+      "text": [
+        "吉姆雷「即便如此，竟把命送掉，",
+        "岂不相当有趣？」"
+      ]
+    },
+    {
+      "offset": "0x7BB4",
+      "show": "window",
+      "source": "ギムレイ「さあ、うけとるが良い」",
+      "text": [
+        "吉姆雷「来，收下便是」"
+      ]
+    },
+    {
+      "offset": "0x7BD6",
+      "show": "window",
+      "source": "ギムレイ「これが<FE00>の\nお前に対する重みだ」",
+      "text": [
+        "吉姆雷「这就是<FE00>",
+        "对你的分量」"
+      ]
+    },
+    {
+      "offset": "0x7C04",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>盾<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>得到了",
+        "<FB01>盾牌<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7C22",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7C42",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "身后同伴的目光",
+        "仿佛刺了过来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7C74",
+      "show": "screen",
+      "source": "名前を告げられた瞬間\n<FE00>の瞳は大きく見開かれた。<BREAK>",
+      "text": [
+        "听到名字的瞬间，",
+        "<FE00>双眼猛地睁大。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7CA8",
+      "show": "screen",
+      "source": "信じられないといった顔で\n<PAGE>を見る。<BREAK>",
+      "text": [
+        "满脸不可置信，",
+        "看着<PAGE>。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7CD0",
+      "show": "window",
+      "source": "ギムレイ「その者が\nお前の最も大切な者か」",
+      "text": [
+        "吉姆雷「那人，",
+        "是你最重要的人吗」"
+      ]
+    },
+    {
+      "offset": "0x7CFE",
+      "show": "window",
+      "source": "ギムレイ「では、<FE00>よ。\n炎の洗礼を受けるが良い」",
+      "text": [
+        "吉姆雷「那么，<FE00>啊。",
+        "去受火焰的洗礼」"
+      ]
+    },
+    {
+      "offset": "0x7D32",
+      "show": "screen",
+      "source": "生き物の様にうごめいた\n死の国の炎は、あっという間に\n<FE00>を包み込んだ。<BREAK>",
+      "text": [
+        "如活物般蠕动的",
+        "死之国的火焰，转眼",
+        "将<FE00>裹住。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7D7C",
+      "show": "screen",
+      "source": "想像を絶する様な\n<FE00>の悲鳴が上がる。<BREAK>",
+      "text": [
+        "难以想象的",
+        "<FE00>惨叫响了起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7DA4",
+      "show": "screen",
+      "source": "<FE00>の姿が炎の中に\n完全に消え去ると\n見る間に炎の力が薄らいだ。<BREAK>",
+      "text": [
+        "<FE00>的身影在火焰中",
+        "彻底消失之后，",
+        "火焰转眼弱了下去。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7DE6",
+      "show": "screen",
+      "source": "ついさっきまで\n<FE00>が立っていた所に\n魔法石が転がっている。<BREAK>",
+      "text": [
+        "直到刚才，",
+        "<FE00>站立之处，",
+        "躺着一颗魔法石。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7E24",
+      "show": "window",
+      "source": "ギムレイ「ほう。\nこれは、これは………」",
+      "text": [
+        "吉姆雷「嗬。",
+        "真是，真是………」"
+      ]
+    },
+    {
+      "offset": "0x7E50",
+      "show": "screen",
+      "source": "ギムレイは魔法石を取り上げ\nしげしげと眺める。<BREAK>",
+      "text": [
+        "吉姆雷拿起魔法石，",
+        "细细打量。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7E82",
+      "show": "window",
+      "source": "ギムレイ「<FE00>にとっても\nお前はたいせつな者だった\nようだな」",
+      "text": [
+        "吉姆雷「看来<FE00>也曾",
+        "把你视作",
+        "重要的人」"
+      ]
+    },
+    {
+      "offset": "0x7EC4",
+      "show": "window",
+      "source": "ギムレイ「うけとるが良い」",
+      "text": [
+        "吉姆雷「收下便是」"
+      ]
+    },
+    {
+      "offset": "0x7EE0",
+      "show": "window",
+      "source": "ギムレイ「これが<FE00>の\n重みだ」",
+      "text": [
+        "吉姆雷「这就是<FE00>的",
+        "分量」"
+      ]
+    },
+    {
+      "offset": "0x7F02",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>ウィルの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>得到了",
+        "<FB01>意志石<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7F28",
+      "show": "screen",
+      "source": "手にしたウィルの石は\nずしりと重かった。<BREAK>",
+      "text": [
+        "手里的意志石",
+        "沉甸甸的。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7F54",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>メガデスの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>得到了",
+        "<FB01>大灭绝石<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7F7C",
+      "show": "screen",
+      "source": "手にしたメガデスの石は\nずしりと重かった。<BREAK>",
+      "text": [
+        "手里的大灭绝石",
+        "沉甸甸的。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7FAA",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>カテドラルの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>得到了",
+        "<FB01>大教堂石<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7FD4",
+      "show": "screen",
+      "source": "手にしたカテドラルの石は\nずしりと重かった。<BREAK>",
+      "text": [
+        "手里的大教堂石",
+        "沉甸甸的。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8004",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8024",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "身后同伴的目光",
+        "仿佛刺了过来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8056",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>ウィルの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>得到了",
+        "<FB01>意志石<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x807C",
+      "show": "screen",
+      "source": "<FB01>メガデスの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "得到了<FB01>大灭绝石<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x809E",
+      "show": "screen",
+      "source": "<FB01>カテドラルの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "得到了<FB01>大教堂石<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x80C2",
+      "show": "screen",
+      "source": "手にした三つの魔法石は\nずしりと重かった。<BREAK>",
+      "text": [
+        "手里的三颗魔法石",
+        "沉甸甸的。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x80F0",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8110",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "身后同伴的目光",
+        "仿佛刺了过来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8142",
+      "show": "screen",
+      "source": "<FE00>の姿が炎の中に\n完全に消え去ると\n見る間に炎の力が薄らいだ。<BREAK>",
+      "text": [
+        "<FE00>的身影在火焰中",
+        "彻底消失之后，",
+        "火焰转眼弱了下去。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8184",
+      "show": "screen",
+      "source": "ついさっきまで\n<FE00>が立っていた所に\nメイスが転がっている。<BREAK>",
+      "text": [
+        "直到刚才，",
+        "<FE00>站立之处，",
+        "躺着一把钉锤。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x81C2",
+      "show": "window",
+      "source": "ギムレイ「ほう。\nこれは、これは………」",
+      "text": [
+        "吉姆雷「嗬。",
+        "真是，真是………」"
+      ]
+    },
+    {
+      "offset": "0x81EE",
+      "show": "screen",
+      "source": "ギムレイはメイスを取り上げると\n失笑した。<BREAK>",
+      "text": [
+        "吉姆雷拿起钉锤，",
+        "失笑一声。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x821C",
+      "show": "window",
+      "source": "ギムレイ「<FE00>が\n最も大切と言ったが…」",
+      "text": [
+        "吉姆雷「你说<FE00>",
+        "最为重要，可是…」"
+      ]
+    },
+    {
+      "offset": "0x8246",
+      "show": "window",
+      "source": "ギムレイ「<FE00>は\nお前をそれほどおもっては\nいなかったようだな」",
+      "text": [
+        "吉姆雷「看来<FE00>",
+        "并没有把你",
+        "看得那么重」"
+      ]
+    },
+    {
+      "offset": "0x828A",
+      "show": "window",
+      "source": "ギムレイ「それなのに、命を落とすとは\nなかなか愉快ではないか」",
+      "text": [
+        "吉姆雷「即便如此，竟把命送掉，",
+        "岂不相当有趣？」"
+      ]
+    },
+    {
+      "offset": "0x82CC",
+      "show": "window",
+      "source": "ギムレイ「さあ、うけとるが良い」",
+      "text": [
+        "吉姆雷「来，收下便是」"
+      ]
+    },
+    {
+      "offset": "0x82EE",
+      "show": "window",
+      "source": "ギムレイ「これが<FE00>の\nお前に対する重みだ」",
+      "text": [
+        "吉姆雷「这就是<FE00>",
+        "对你的分量」"
+      ]
+    },
+    {
+      "offset": "0x831C",
+      "show": "screen",
+      "source": "<PAGE>は\n<FB01>メイス<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<PAGE>得到了",
+        "<FB01>钉锤<FB00>！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x833E",
+      "show": "screen",
+      "source": "<FE00>の顔が\n<PAGE>の脳裏をよぎる。<BREAK>",
+      "text": [
+        "<FE00>的脸",
+        "掠过<PAGE>的脑海。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x835E",
+      "show": "screen",
+      "source": "背後からの仲間の視線が\n突き刺さるかのようだ。<BREAK>",
+      "text": [
+        "身后同伴的目光",
+        "仿佛刺了过来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8390",
+      "show": "window",
+      "source": "ギムレイ「さあ、行くが良い」",
+      "text": [
+        "吉姆雷「来，去便是」"
+      ]
+    },
+    {
+      "offset": "0x83AE",
+      "show": "window",
+      "source": "ギムレイ「お前は仲間とひきかえに\n死の国の炎から逃れる事が\n出来たのだ」",
+      "text": [
+        "吉姆雷「你以同伴为代价",
+        "从死之国的火焰中",
+        "逃了出来」"
+      ]
+    },
+    {
+      "offset": "0x83FC",
+      "show": "window",
+      "source": "ギムレイ「誇っても良いのだぞ。\n賢い判断だったとな！」",
+      "text": [
+        "吉姆雷「大可为此骄傲。",
+        "真是明智的判断！」"
+      ]
+    },
+    {
+      "offset": "0x8436",
+      "show": "screen",
+      "source": "<PAGE>は、ギムレイの\n笑い声を聞きながら\n逃げるようにその場から立ち去った。<BREAK>",
+      "text": [
+        "<PAGE>听着吉姆雷的",
+        "笑声，",
+        "像逃走一样离开了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8482",
+      "show": "screen",
+      "source": "<PAGE>は\nギムレイの言葉をはねのけた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "甩开了吉姆雷的话。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x84A8",
+      "show": "window",
+      "source": "ギムレイ「仲間想いなのか\n愚かなのか………」",
+      "text": [
+        "吉姆雷「是珍惜同伴，",
+        "还是愚蠢………」"
+      ]
+    },
+    {
+      "offset": "0x84D8",
+      "show": "window",
+      "source": "ギムレイ「だが、その答え。\n気に入ったぞ」",
+      "text": [
+        "吉姆雷「不过，这个回答。",
+        "我很中意」"
+      ]
+    },
+    {
+      "offset": "0x8506",
+      "show": "window",
+      "source": "ギムレイ「クク、しかし\nこのままでは炎が\nおさまりそうもないわ」",
+      "text": [
+        "吉姆雷「呵呵，不过",
+        "这样下去，这火",
+        "怕是静不下来」"
+      ]
+    },
+    {
+      "offset": "0x854C",
+      "show": "screen",
+      "source": "炎の中で巨大な影がゆらめいた。<BREAK>",
+      "text": [
+        "火焰中，巨大的影子摇曳。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x856E",
+      "show": "window",
+      "source": "ギムレイ「ほう、怒り狂う炎は\nこの地ではあの様な\n形をとるか」",
+      "text": [
+        "吉姆雷「嗬，暴怒的火焰",
+        "在此地，竟成了",
+        "那种模样吗」"
+      ]
+    },
+    {
+      "offset": "0x85B2",
+      "show": "screen",
+      "source": "炎の中から\nファイアドラゴンが現われた！<BREAK>",
+      "text": [
+        "火焰之中，",
+        "火龙出现了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x85DE",
+      "show": "screen",
+      "source": "ファイアドラゴンを倒すと\n死の国の炎はどうやら\nおとなしくなったようだ。<BREAK>",
+      "text": [
+        "打倒火龙之后，",
+        "死之国的火焰",
+        "似乎老实下来了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x862A",
+      "show": "screen",
+      "source": "戦いを見守っていたギムレイは\n黙って一行を回復させた。<BREAK>",
+      "text": [
+        "旁观战斗的吉姆雷",
+        "默默把一行恢复了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8664",
+      "show": "window",
+      "source": "ギムレイ「フ………\n死の国の炎を御するとは\nなかなかやる」",
+      "text": [
+        "吉姆雷「呵………",
+        "竟能驾驭死之国的火焰",
+        "倒也了得」"
+      ]
+    },
+    {
+      "offset": "0x86A4",
+      "show": "window",
+      "source": "ギムレイ「ほうびだ。\n受け取るが良い」",
+      "text": [
+        "吉姆雷「这是奖赏。",
+        "收下便是」"
+      ]
+    },
+    {
+      "offset": "0x86CE",
+      "show": "screen",
+      "source": "<FB01><PAGE>達の最大HPが\n20ポイントアップした！<BREAK>",
+      "text": [
+        "<FB01><PAGE>一行的最大HP",
+        "上升了20点！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x86FE",
+      "show": "window",
+      "source": "ギムレイ「さて、次元のゆがみが\n我らを招いたのなら\nしばらくは帰れまい」",
+      "text": [
+        "吉姆雷「那么，若次元扭曲",
+        "将我们召来，",
+        "一时怕是回不去了」"
+      ]
+    },
+    {
+      "offset": "0x874C",
+      "show": "window",
+      "source": "ギムレイ「私はここで帰還の時まで\n訪れる者に尋ねよう」",
+      "text": [
+        "吉姆雷「我留在此，直到归去之时",
+        "向来访者发问」"
+      ]
+    },
+    {
+      "offset": "0x8786",
+      "show": "window",
+      "source": "ギムレイ「一人の犠牲により\n活路を見出すか\n共に、死に挑むかをな…」",
+      "text": [
+        "吉姆雷「是靠一人的牺牲",
+        "寻得生路，",
+        "还是一同向死挑战…」"
+      ]
+    },
+    {
+      "offset": "0x87D0",
+      "show": "screen",
+      "source": "耳にしみつく様な笑い声を残し\nギムレイと炎は消え去った。<BREAK>",
+      "text": [
+        "留下渗入耳中的笑声，",
+        "吉姆雷与火焰消失了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x880C",
+      "show": "screen",
+      "source": "アンマリー達とはちあわせした。<BREAK>",
+      "text": [
+        "撞见了安玛丽一行。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x882E",
+      "show": "window",
+      "source": "アンマリー「あら、<PAGE>。\nまた会ったわね」",
+      "text": [
+        "安玛丽「哎呀，<PAGE>。",
+        "又见面了呀」"
+      ]
+    },
+    {
+      "offset": "0x885A",
+      "show": "window",
+      "source": "アンマリー「あら、また会ったわね」",
+      "text": [
+        "安玛丽「哎呀，又见面了」"
+      ]
+    },
+    {
+      "offset": "0x887E",
+      "show": "screen",
+      "source": "<PAGE>が片手をあげて\nそれに答えると、アンマリーは\n可愛らしく微笑んだ。<BREAK>",
+      "text": [
+        "<PAGE>举起一只手",
+        "作为回应，安玛丽",
+        "便可爱地笑了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x88C6",
+      "show": "window",
+      "source": "アンマリー「こんなによく会うなんて\nわたし達って、相性が\n良いのかもしれないわね」",
+      "text": [
+        "安玛丽「这么频繁地遇见，",
+        "说不定我们",
+        "很投缘呢」"
+      ]
+    },
+    {
+      "offset": "0x891E",
+      "show": "screen",
+      "source": "オスカーの眉が、勢いよく\nはね上がる。<BREAK>",
+      "text": [
+        "奥斯卡的眉毛",
+        "猛地扬了起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8948",
+      "show": "window",
+      "source": "オスカー「てめえ！\nアンになれなれしく\nするんじゃねえっ！！！」",
+      "text": [
+        "奥斯卡「你小子！",
+        "不许跟安",
+        "那么亲昵！！！」"
+      ]
+    },
+    {
+      "offset": "0x898E",
+      "show": "screen",
+      "source": "オスカーは、勢いよく叫んだ。<BREAK>",
+      "text": [
+        "奥斯卡猛地大喊。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x89AE",
+      "show": "window",
+      "source": "オスカー「俺でさえ、アンに笑いかけて\nもらうのに三か月かかったって\nいうのに……！」",
+      "text": [
+        "奥斯卡「就算是我，也花了三个月",
+        "才让安肯对我笑，",
+        "你倒……！」"
+      ]
+    },
+    {
+      "offset": "0x8A08",
+      "show": "window",
+      "source": "オスカー「今日という、今日はガマン\nならん！」",
+      "text": [
+        "奥斯卡「今天，就今天",
+        "忍不了了！」"
+      ]
+    },
+    {
+      "offset": "0x8A3A",
+      "show": "window",
+      "source": "オスカー「俺と勝負だ！！！」",
+      "text": [
+        "奥斯卡「跟我比！！！」"
+      ]
+    },
+    {
+      "offset": "0x8A58",
+      "show": "screen",
+      "source": "あまりに突然な言葉に\n目を瞬かせていると\nオスカーが得意げに笑う。<BREAK>",
+      "text": [
+        "这话来得太突然，",
+        "正眨着眼，",
+        "奥斯卡得意地笑了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8A9E",
+      "show": "window",
+      "source": "オスカー「フフン、さては俺に\n恐れをなしたか？」",
+      "text": [
+        "奥斯卡「哼哼，看来",
+        "是怕了我？」"
+      ]
+    },
+    {
+      "offset": "0x8AD2",
+      "show": "screen",
+      "source": "アンマリーが小さく溜め息をついた。<BREAK>",
+      "text": [
+        "安玛丽轻轻叹了口气。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8AF8",
+      "show": "window",
+      "source": "アンマリー「オスカーってやっぱり\nオバカさんなのね」",
+      "text": [
+        "安玛丽「奥斯卡果然",
+        "是个小傻瓜呢」"
+      ]
+    },
+    {
+      "offset": "0x8B30",
+      "show": "screen",
+      "source": "しかし、今日のオスカーは\nアンマリーの言葉にも\nめげなかった。<BREAK>",
+      "text": [
+        "然而今天的奥斯卡，",
+        "对安玛丽的话",
+        "也不气馁。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8B72",
+      "show": "window",
+      "source": "オスカー「アン、見ててくれよ。\n俺があいつよりスゴイって\nところを！！」",
+      "text": [
+        "奥斯卡「安，你看着。",
+        "我比那家伙",
+        "强的地方！！」"
+      ]
+    },
+    {
+      "offset": "0x8BC0",
+      "show": "window",
+      "source": "アンマリー「別に良いけれど…」",
+      "text": [
+        "安玛丽「也不是不行…」"
+      ]
+    },
+    {
+      "offset": "0x8BE0",
+      "show": "screen",
+      "source": "アンマリーはつれない返事をする。<BREAK>",
+      "text": [
+        "安玛丽冷淡地应了一句。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8C04",
+      "show": "screen",
+      "source": "それさえも<PAGE>のせいと\n言わんばかりに、オスカーは\nキッ、とこちらをにらみつけた。<BREAK>",
+      "text": [
+        "简直像要怪到<PAGE>头上，",
+        "奥斯卡",
+        "狠狠瞪了过来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8C58",
+      "show": "window",
+      "source": "オスカー「良いか、俺と\nトラップ勝負だ！」",
+      "text": [
+        "奥斯卡「听好，跟我来场",
+        "陷阱对决！」"
+      ]
+    },
+    {
+      "offset": "0x8C86",
+      "show": "window",
+      "source": "オスカー「俺が、この階に仕掛けた\nトラップを見つけ出し、全て\n解除出来ればお前の勝ち」",
+      "text": [
+        "奥斯卡「我在这层设的陷阱，",
+        "你要是全都找到",
+        "并解除，就算你赢」"
+      ]
+    },
+    {
+      "offset": "0x8CE2",
+      "show": "window",
+      "source": "オスカー「ひとつでも見つけそこなったり\n解除しそこなえば俺の勝ちだ。\nわかったか？」",
+      "text": [
+        "奥斯卡「哪怕漏掉一个，",
+        "或没解除掉，就算我赢。",
+        "明白了吗？」"
+      ]
+    },
+    {
+      "offset": "0x8D3C",
+      "show": "screen",
+      "source": "<PAGE>は………\n\nわかったと答える\n勝負する気はないと答える\n",
+      "text": [
+        "<PAGE>………",
+        "",
+        "回答知道了",
+        "回答不想比",
+        ""
+      ]
+    },
+    {
+      "offset": "0x8D84",
+      "show": "window",
+      "source": "オスカー「何だとォ！？\nお前に断る権利はない！！」",
+      "text": [
+        "奥斯卡「你说什么啊！？",
+        "你没资格拒绝！！」"
+      ]
+    },
+    {
+      "offset": "0x8DBA",
+      "show": "window",
+      "source": "オスカー「第一、プライドがあったら\n断れないはずだぜ！」",
+      "text": [
+        "奥斯卡「首先，有自尊",
+        "就没法拒绝！」"
+      ]
+    },
+    {
+      "offset": "0x8DF6",
+      "show": "screen",
+      "source": "<PAGE>は………\n\nわかったと答える\nプライドはないと答える\n",
+      "text": [
+        "<PAGE>………",
+        "",
+        "回答知道了",
+        "回答没有自尊",
+        ""
+      ]
+    },
+    {
+      "offset": "0x8E3A",
+      "show": "window",
+      "source": "オスカー「プライドがないだと？」",
+      "text": [
+        "奥斯卡「你说没自尊？」"
+      ]
+    },
+    {
+      "offset": "0x8E5C",
+      "show": "window",
+      "source": "オスカー「クッ、何でこんな奴が\nアンのお気に入りなんだ」",
+      "text": [
+        "奥斯卡「啧，这种家伙",
+        "凭啥讨安喜欢」"
+      ]
+    },
+    {
+      "offset": "0x8E98",
+      "show": "window",
+      "source": "オスカー「だがな、断る事は\n許さねぇぜ！」",
+      "text": [
+        "奥斯卡「不过，拒绝",
+        "我可不答应！」"
+      ]
+    },
+    {
+      "offset": "0x8EC6",
+      "show": "window",
+      "source": "オスカー「もし断ったら、お前は\n冒険者じゃない！\nただの弱虫だ！！」",
+      "text": [
+        "奥斯卡「要是拒绝，你就",
+        "不是冒险者！",
+        "只是个懦夫！！」"
+      ]
+    },
+    {
+      "offset": "0x8F10",
+      "show": "screen",
+      "source": "<PAGE>は………\n\nわかったと答える\n弱虫で良いと答える\n",
+      "text": [
+        "<PAGE>………",
+        "",
+        "回答知道了",
+        "回答当懦夫也行",
+        ""
+      ]
+    },
+    {
+      "offset": "0x8F4C",
+      "show": "window",
+      "source": "オスカー「なッ………！\n弱虫で良いってのか？」",
+      "text": [
+        "奥斯卡「什………！",
+        "当懦夫也行吗？」"
+      ]
+    },
+    {
+      "offset": "0x8F7E",
+      "show": "window",
+      "source": "オスカー「お前、最低な奴だな。\nだけど、断る事は\n絶対許さねぇぜ！」",
+      "text": [
+        "奥斯卡「你这人差劲透了。",
+        "不过，拒绝这事",
+        "我绝不答应！」"
+      ]
+    },
+    {
+      "offset": "0x8FC8",
+      "show": "window",
+      "source": "オスカー「これで、断ったら\nお前は、ヒトじゃねー！」",
+      "text": [
+        "奥斯卡「这还拒绝的话，",
+        "你就不是人了！」"
+      ]
+    },
+    {
+      "offset": "0x9000",
+      "show": "window",
+      "source": "オスカー「ちなみに、エルフでも\nドワーフでも、ノームでも\nホビットでもねー！！」",
+      "text": [
+        "奥斯卡「顺便一提，精灵也不是，",
+        "矮人也不是，侏儒也不是，",
+        "霍比特也不是！！」"
+      ]
+    },
+    {
+      "offset": "0x9056",
+      "show": "screen",
+      "source": "<PAGE>は………\n\n勝負すると答える\n別に構わないと答える\n",
+      "text": [
+        "<PAGE>………",
+        "",
+        "回答比一场",
+        "回答无所谓",
+        ""
+      ]
+    },
+    {
+      "offset": "0x9096",
+      "show": "window",
+      "source": "オスカー「おいおい、冗談は\nよしてくれよ」",
+      "text": [
+        "奥斯卡「喂喂，别开",
+        "这种玩笑了」"
+      ]
+    },
+    {
+      "offset": "0x90C4",
+      "show": "window",
+      "source": "オスカー「そんな根性でよく今まで\n生き残って来たもんだぜ」",
+      "text": [
+        "奥斯卡「就这点骨气，居然",
+        "活到了现在」"
+      ]
+    },
+    {
+      "offset": "0x9102",
+      "show": "window",
+      "source": "オスカー「だけど、断れないって\n言ってるだろ？」",
+      "text": [
+        "奥斯卡「都说了不能拒绝，",
+        "听见没有？」"
+      ]
+    },
+    {
+      "offset": "0x9136",
+      "show": "window",
+      "source": "オスカー「ここで断ったらお前は\n<FB01>バブリースライム<FB00>だ！」",
+      "text": [
+        "奥斯卡「在这拒绝的话，你就是",
+        "<FB01>泡沫史莱姆<FB00>！」"
+      ]
+    },
+    {
+      "offset": "0x9174",
+      "show": "screen",
+      "source": "<PAGE>は………\n\n勝負すると答える\nバブリースライムでも良いと答える\n",
+      "text": [
+        "<PAGE>………",
+        "",
+        "回答比一场",
+        "回答当泡沫史莱姆也行",
+        ""
+      ]
+    },
+    {
+      "offset": "0x91CC",
+      "show": "window",
+      "source": "オスカー「本気で言ってるのかぁ！？\n<FB01>バブリー<FB00>だぞ、<FB01>バブリー<FB00>！」",
+      "text": [
+        "奥斯卡「你是认真的吗！？",
+        "<FB01>泡沫史莱姆<FB00>啊，<FB01>泡沫史莱姆<FB00>！」"
+      ]
+    },
+    {
+      "offset": "0x9216",
+      "show": "window",
+      "source": "オスカー「ここまで言われて\n自分の意思を通すってのも\nある意味スゴイが……」",
+      "text": [
+        "奥斯卡「被说到这份上",
+        "还要坚持己见，",
+        "某种意义上也厉害……」"
+      ]
+    },
+    {
+      "offset": "0x9268",
+      "show": "window",
+      "source": "オスカー「絶対断らせねえからな！」",
+      "text": [
+        "奥斯卡「绝对不让你拒绝！」"
+      ]
+    },
+    {
+      "offset": "0x928C",
+      "show": "screen",
+      "source": "<PAGE>は………\n\n勝負すると答える\nそれでも断る\n",
+      "text": [
+        "<PAGE>………",
+        "",
+        "回答比一场",
+        "仍然拒绝",
+        ""
+      ]
+    },
+    {
+      "offset": "0x92C4",
+      "show": "window",
+      "source": "オスカー「くそぉっ、ここまでバカに\nされて後にひけるかぁっ！」",
+      "text": [
+        "奥斯卡「可恶啊，被损成这样",
+        "还退得下去吗！」"
+      ]
+    },
+    {
+      "offset": "0x9306",
+      "show": "window",
+      "source": "オスカー「意地でも、勝負だっ！！」",
+      "text": [
+        "奥斯卡「说什么也要比！！」"
+      ]
+    },
+    {
+      "offset": "0x932A",
+      "show": "screen",
+      "source": "どうやら、ねばれるのも\nここまでらしい。<BREAK>",
+      "text": [
+        "看来能拖的，",
+        "也就到此了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9356",
+      "show": "screen",
+      "source": "<PAGE>はしぶしぶ\n勝負を引き受ける事にした。<BREAK>",
+      "text": [
+        "<PAGE>不情愿地",
+        "决定接下这场比试。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9382",
+      "show": "window",
+      "source": "オスカー「よーし、やってやるぜ！」",
+      "text": [
+        "奥斯卡「好，比就比！」"
+      ]
+    },
+    {
+      "offset": "0x93A6",
+      "show": "window",
+      "source": "オスカー「勝負の方法はさっき\n言ったとおりだ」",
+      "text": [
+        "奥斯卡「比试的方法",
+        "刚才说过了」"
+      ]
+    },
+    {
+      "offset": "0x93D8",
+      "show": "window",
+      "source": "オスカー「俺が、この階に仕掛けた\nトラップを見つけ出し、全て\n解除出来ればお前の勝ち」",
+      "text": [
+        "奥斯卡「我在这层设的陷阱，",
+        "你要是全都找到",
+        "并解除，就算你赢」"
+      ]
+    },
+    {
+      "offset": "0x9434",
+      "show": "window",
+      "source": "オスカー「ひとつでも見つけそこなったり\n解除しそこなえば俺の勝ち」",
+      "text": [
+        "奥斯卡「哪怕漏掉一个，",
+        "或没解除掉，就算我赢」"
+      ]
+    },
+    {
+      "offset": "0x947A",
+      "show": "window",
+      "source": "オスカー「ヘヘヘ、覚悟しろよォ。\n俺の仕掛けるトラップは\nひとつやふたつじゃないぜ」",
+      "text": [
+        "奥斯卡「嘿嘿嘿，做好准备。",
+        "我设的陷阱",
+        "可不止一两个」"
+      ]
+    },
+    {
+      "offset": "0x94D4",
+      "show": "screen",
+      "source": "<PAGE>は………\n\n勝負を始めようと言う\nトラップの数が知りたいと言う\n",
+      "text": [
+        "<PAGE>………",
+        "",
+        "说开始比试",
+        "说想知道陷阱数量",
+        ""
+      ]
+    },
+    {
+      "offset": "0x9524",
+      "show": "window",
+      "source": "オスカー「ハ？ ねぼけてんじゃねえよ。\n教えるわけないだろうが」",
+      "text": [
+        "奥斯卡「哈？别说梦话。",
+        "我才不告诉你」"
+      ]
+    },
+    {
+      "offset": "0x9568",
+      "show": "screen",
+      "source": "オスカーはそう言ったが\n次の瞬間、ニヤリと笑った。<BREAK>",
+      "text": [
+        "奥斯卡虽这么说，",
+        "转眼却露出坏笑。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x959E",
+      "show": "window",
+      "source": "オスカー「そうだな………」",
+      "text": [
+        "奥斯卡「让我想想………」"
+      ]
+    },
+    {
+      "offset": "0x95BA",
+      "show": "window",
+      "source": "オスカー「そんなに知りたきゃ、俺達を\n倒して聞き出してみろ！！」",
+      "text": [
+        "奥斯卡「那么想知道，",
+        "就打倒我们再问！！」"
+      ]
+    },
+    {
+      "offset": "0x95FE",
+      "show": "window",
+      "source": "リューン「達って………\n俺もやるのか！？」",
+      "text": [
+        "琉恩「我们………",
+        "我也要上吗！？」"
+      ]
+    },
+    {
+      "offset": "0x962C",
+      "show": "window",
+      "source": "オスカー「あたりまえだろ！」",
+      "text": [
+        "奥斯卡「那还用说！」"
+      ]
+    },
+    {
+      "offset": "0x964A",
+      "show": "window",
+      "source": "オスカー「俺とお前は、<FB01>アンマリー\n好き好き同盟<FB00>だ！」",
+      "text": [
+        "奥斯卡「我跟你是<FB01>安玛丽",
+        "喜欢喜欢同盟<FB00>！」"
+      ]
+    },
+    {
+      "offset": "0x9686",
+      "show": "window",
+      "source": "リューン「お、おう！」",
+      "text": [
+        "琉恩「哦、噢！」"
+      ]
+    },
+    {
+      "offset": "0x969E",
+      "show": "screen",
+      "source": "オスカーとリューンが\n襲いかかって来た！！<BREAK>",
+      "text": [
+        "奥斯卡和琉恩",
+        "扑了上来！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x96CC",
+      "show": "window",
+      "source": "オスカー「くっそう、乱暴な奴だぜ！」",
+      "text": [
+        "奥斯卡「可恶，太粗暴了！」"
+      ]
+    },
+    {
+      "offset": "0x96F2",
+      "show": "window",
+      "source": "オスカー「俺様のデリケートな\n指が傷ついたら\nどうしてくれるんだ！！」",
+      "text": [
+        "奥斯卡「本大爷娇贵的",
+        "手指要是伤了",
+        "你怎么办！！」"
+      ]
+    },
+    {
+      "offset": "0x973E",
+      "show": "window",
+      "source": "リューン「くぅっ、また剣に\n刃こぼれがっ！！」",
+      "text": [
+        "琉恩「唔啊，剑又",
+        "崩了个口！！」"
+      ]
+    },
+    {
+      "offset": "0x9770",
+      "show": "window",
+      "source": "アンマリー「なんだか、未来を暗示する\n様な戦いだったわね」",
+      "text": [
+        "安玛丽「总觉得这场战斗",
+        "像在预示未来呢」"
+      ]
+    },
+    {
+      "offset": "0x97AE",
+      "show": "screen",
+      "source": "今まで離れた所で見ていた\nアンマリーがやって来た。<BREAK>",
+      "text": [
+        "一直在远处看着的",
+        "安玛丽走了过来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x97E4",
+      "show": "window",
+      "source": "アンマリー「オスカー、約束は守らないと\nダメよ」",
+      "text": [
+        "安玛丽「奥斯卡，不守约",
+        "可不行哦」"
+      ]
+    },
+    {
+      "offset": "0x9818",
+      "show": "window",
+      "source": "オスカー「チッ、仕方がねえ」",
+      "text": [
+        "奥斯卡「啧，没办法」"
+      ]
+    },
+    {
+      "offset": "0x9836",
+      "show": "window",
+      "source": "オスカー「俺が仕掛けるトラップの数は\n<FB01>10<FB00>だ！」",
+      "text": [
+        "奥斯卡「我设的陷阱数量是",
+        "<FB01>10<FB00>个！」"
+      ]
+    },
+    {
+      "offset": "0x986E",
+      "show": "window",
+      "source": "オスカー「良いか、<FB01>10<FB00>だぞ！」",
+      "text": [
+        "奥斯卡「听好，是<FB01>10<FB00>！」"
+      ]
+    },
+    {
+      "offset": "0x9892",
+      "show": "window",
+      "source": "オスカー「これを解除出来なきゃ\nお前の負けだ」",
+      "text": [
+        "奥斯卡「这些解除不了，",
+        "就是你输」"
+      ]
+    },
+    {
+      "offset": "0x98C4",
+      "show": "window",
+      "source": "オスカー「戦闘に勝ったからって\n良い気になるなよな」",
+      "text": [
+        "奥斯卡「别因为打赢了",
+        "就得意忘形」"
+      ]
+    },
+    {
+      "offset": "0x98FC",
+      "show": "window",
+      "source": "オスカー「じゃあ、俺達が先行するぜ」",
+      "text": [
+        "奥斯卡「那，我们先走一步」"
+      ]
+    },
+    {
+      "offset": "0x9922",
+      "show": "window",
+      "source": "オスカー「しばらくたってから\n追ってこいよ」",
+      "text": [
+        "奥斯卡「过一会儿",
+        "再追上来」"
+      ]
+    },
+    {
+      "offset": "0x9952",
+      "show": "window",
+      "source": "オスカー「下り階段の前で\n待ってるからな」",
+      "text": [
+        "奥斯卡「我在向下的楼梯前",
+        "等着你」"
+      ]
+    },
+    {
+      "offset": "0x9980",
+      "show": "window",
+      "source": "アンマリー「悪いけれど、オスカーに\nつきあってあげてね」",
+      "text": [
+        "安玛丽「抱歉哦，就请",
+        "陪陪奥斯卡吧」"
+      ]
+    },
+    {
+      "offset": "0x99BC",
+      "show": "window",
+      "source": "アンマリー「負けると、オスカーも\nよぉくわかると思うから」",
+      "text": [
+        "安玛丽「要是输了，奥斯卡",
+        "也会彻底明白的」"
+      ]
+    },
+    {
+      "offset": "0x99FA",
+      "show": "screen",
+      "source": "アンマリーは、一人でさっさと\n歩き出した。<BREAK>",
+      "text": [
+        "安玛丽一个人",
+        "快步走掉了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9A28",
+      "show": "window",
+      "source": "オスカー＆リューン\n「アン！！\n待ってくれよぉ！！」",
+      "text": [
+        "奥斯卡＆琉恩",
+        "「安！！",
+        "等等我们啊！！」"
+      ]
+    },
+    {
+      "offset": "0x9A62",
+      "show": "screen",
+      "source": "オスカー達は、いつもの様に\nアンマリーを追いかけて行く。<BREAK>",
+      "text": [
+        "奥斯卡他们照旧",
+        "追着安玛丽去了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9A9E",
+      "show": "screen",
+      "source": "<PAGE>「<FD14>・<FD14>・<FD14>・<FD14>・<FD14>・<FD14>・」",
+      "text": [
+        "<PAGE>「<FD14>・<FD14>・<FD14>・<FD14>・<FD14>・<FD14>・」"
+      ]
+    },
+    {
+      "offset": "0x9ABE",
+      "show": "screen",
+      "source": "<PAGE>「<FD14>・<FD14>・<FD14>・<FD14>・<FD14>・<FD14>・」",
+      "text": [
+        "<PAGE>「<FD14>・<FD14>・<FD14>・<FD14>・<FD14>・<FD14>・」"
+      ]
+    },
+    {
+      "offset": "0x9ADE",
+      "show": "screen",
+      "source": "<PAGE>「<FD14>・<FD14>・<FD14>・<FD14>・<FD14>・<FD14>・」",
+      "text": [
+        "<PAGE>「<FD14>・<FD14>・<FD14>・<FD14>・<FD14>・<FD14>・」"
+      ]
+    },
+    {
+      "offset": "0x9AFE",
+      "show": "screen",
+      "source": "そろそろこちらも\nスタートして良いだろう。<BREAK>",
+      "text": [
+        "也该轮到这边",
+        "出发了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9B2C",
+      "show": "screen",
+      "source": "オスカーが仕掛けた\nトラップが発動した！<BREAK>",
+      "text": [
+        "奥斯卡设下的",
+        "陷阱发动了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9B58",
+      "show": "screen",
+      "source": "オスカートラップNO．1\n解除失敗！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱NO．1",
+        "解除失败！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9B82",
+      "show": "screen",
+      "source": "オスカートラップNO．1\n解除成功！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱NO．1",
+        "解除成功！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9BAC",
+      "show": "screen",
+      "source": "オスカーが仕掛けた\nトラップが発動した！<BREAK>",
+      "text": [
+        "奥斯卡设下的",
+        "陷阱发动了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9BD8",
+      "show": "screen",
+      "source": "オスカートラップNO．2\n解除失敗！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱NO．2",
+        "解除失败！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9C02",
+      "show": "screen",
+      "source": "オスカートラップNO．2\n解除成功！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱NO．2",
+        "解除成功！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9C2C",
+      "show": "screen",
+      "source": "オスカーが仕掛けた\nトラップが発動した！<BREAK>",
+      "text": [
+        "奥斯卡设下的",
+        "陷阱发动了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9C58",
+      "show": "screen",
+      "source": "オスカートラップNO．3\n解除失敗！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱NO．3",
+        "解除失败！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9C82",
+      "show": "screen",
+      "source": "オスカートラップNO．3\n解除成功！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱NO．3",
+        "解除成功！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9CAC",
+      "show": "screen",
+      "source": "オスカーが仕掛けた\nトラップが発動した！<BREAK>",
+      "text": [
+        "奥斯卡设下的",
+        "陷阱发动了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9CD8",
+      "show": "screen",
+      "source": "オスカートラップNO．4\n解除失敗！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱NO．4",
+        "解除失败！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9D02",
+      "show": "screen",
+      "source": "オスカートラップNO．4\n解除成功！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱NO．4",
+        "解除成功！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9D2C",
+      "show": "screen",
+      "source": "オスカーが仕掛けた\nトラップが発動した！<BREAK>",
+      "text": [
+        "奥斯卡设下的",
+        "陷阱发动了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9D58",
+      "show": "screen",
+      "source": "オスカートラップNO．5\n解除失敗！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱NO．5",
+        "解除失败！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9D82",
+      "show": "screen",
+      "source": "オスカートラップNO．5\n解除成功！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱NO．5",
+        "解除成功！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9DAC",
+      "show": "screen",
+      "source": "オスカーが仕掛けた\nトラップが発動した！<BREAK>",
+      "text": [
+        "奥斯卡设下的",
+        "陷阱发动了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9DD8",
+      "show": "screen",
+      "source": "オスカートラップNO．6\n解除失敗！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱NO．6",
+        "解除失败！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9E02",
+      "show": "screen",
+      "source": "オスカートラップNO．6\n解除成功！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱NO．6",
+        "解除成功！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9E2C",
+      "show": "screen",
+      "source": "オスカーが仕掛けた\nトラップが発動した！<BREAK>",
+      "text": [
+        "奥斯卡设下的",
+        "陷阱发动了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9E58",
+      "show": "screen",
+      "source": "オスカートラップNO．7\n解除失敗！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱7号",
+        "解除失败！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9E82",
+      "show": "screen",
+      "source": "オスカートラップNO．7\n解除成功！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱7号",
+        "解除成功！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9EAC",
+      "show": "screen",
+      "source": "オスカーが仕掛けた\nトラップが発動した！<BREAK>",
+      "text": [
+        "奥斯卡设下的",
+        "陷阱发动了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9ED8",
+      "show": "screen",
+      "source": "オスカートラップNO．8\n解除失敗！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱8号",
+        "解除失败！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9F02",
+      "show": "screen",
+      "source": "オスカートラップNO．8\n解除成功！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱8号",
+        "解除成功！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9F2C",
+      "show": "screen",
+      "source": "オスカーが仕掛けた\nトラップが発動した！<BREAK>",
+      "text": [
+        "奥斯卡设下的",
+        "陷阱发动了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9F58",
+      "show": "screen",
+      "source": "オスカートラップNO．9\n解除失敗！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱9号",
+        "解除失败！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9F82",
+      "show": "screen",
+      "source": "なんと、連続トラップ！！<BREAK>",
+      "text": [
+        "居然是连环陷阱！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9F9E",
+      "show": "screen",
+      "source": "オスカートラップNO．9\n解除失敗！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱9号",
+        "解除失败！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9FC8",
+      "show": "screen",
+      "source": "オスカートラップNO．9\n解除成功！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱9号",
+        "解除成功！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9FF2",
+      "show": "screen",
+      "source": "オスカーが仕掛けた\nトラップが発動した！<BREAK>",
+      "text": [
+        "奥斯卡设下的",
+        "陷阱发动了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA01E",
+      "show": "screen",
+      "source": "オスカートラップNO．10\n解除失敗！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱10号",
+        "解除失败！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA04A",
+      "show": "screen",
+      "source": "なんと、連続トラップ！！<BREAK>",
+      "text": [
+        "居然是连环陷阱！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA066",
+      "show": "screen",
+      "source": "オスカートラップNO．10\n解除失敗！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱10号",
+        "解除失败！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA092",
+      "show": "screen",
+      "source": "オスカートラップNO．10\n解除成功！！<BREAK>",
+      "text": [
+        "奥斯卡陷阱10号",
+        "解除成功！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA0BE",
+      "show": "screen",
+      "source": "下り階段の前では\nオスカー達が待ち構えていた。<BREAK>",
+      "text": [
+        "下行楼梯前，",
+        "奥斯卡等人早已守候在此。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA0F0",
+      "show": "window",
+      "source": "アンマリー「<PAGE>。\nお疲れさま」",
+      "text": [
+        "安玛丽「<PAGE>。",
+        "辛苦了」"
+      ]
+    },
+    {
+      "offset": "0xA112",
+      "show": "window",
+      "source": "アンマリー「お疲れさま」",
+      "text": [
+        "安玛丽「辛苦了」"
+      ]
+    },
+    {
+      "offset": "0xA12C",
+      "show": "screen",
+      "source": "アンマリーが、にこやかに\n<PAGE>の労をねぎらうと\nオスカーとリューンは、思い切り\n顔をしかめてみせた。<BREAK>",
+      "text": [
+        "安玛丽笑吟吟地",
+        "慰劳<PAGE>的辛劳时，",
+        "奥斯卡和琉恩便",
+        "使劲皱起了脸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA192",
+      "show": "screen",
+      "source": "アンマリーが、にこやかに\n一行の労をねぎらうと\nオスカーとリューンは、思い切り\n顔をしかめてみせた。<BREAK>",
+      "text": [
+        "安玛丽笑吟吟地",
+        "慰劳一行人的辛劳时，",
+        "奥斯卡和琉恩便",
+        "使劲皱起了脸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA1FA",
+      "show": "window",
+      "source": "オスカー「フン、良い気でいられるのも\nこれまでだ！」",
+      "text": [
+        "奥斯卡「哼，得意也",
+        "到此为止了！」"
+      ]
+    },
+    {
+      "offset": "0xA232",
+      "show": "window",
+      "source": "オスカー「てめえ、トラップの解除に\n失敗しただろう？」",
+      "text": [
+        "奥斯卡「你这家伙，解除陷阱",
+        "失败了吧？」"
+      ]
+    },
+    {
+      "offset": "0xA26C",
+      "show": "window",
+      "source": "オスカー「トラップの解除に\n失敗しただろう？」",
+      "text": [
+        "奥斯卡「解除陷阱，",
+        "失败了吧？」"
+      ]
+    },
+    {
+      "offset": "0xA29E",
+      "show": "window",
+      "source": "オスカー「それとも、全部見つけられ\nなかったか？」",
+      "text": [
+        "奥斯卡「还是说，陷阱",
+        "你没全部找到？」"
+      ]
+    },
+    {
+      "offset": "0xA2D4",
+      "show": "window",
+      "source": "オスカー「ま、どっちでも良いや。\n失敗したのはわかってんだ」",
+      "text": [
+        "奥斯卡「算了，怎样都一样。",
+        "你失败了，我清楚得很」"
+      ]
+    },
+    {
+      "offset": "0xA314",
+      "show": "window",
+      "source": "オスカー「成功したらアラームが鳴る\nようになってたのに、その数が\n10回じゃなかったからな」",
+      "text": [
+        "奥斯卡「要是成功，警报会响。",
+        "可响的次数不是十次，",
+        "所以我才知道」"
+      ]
+    },
+    {
+      "offset": "0xA376",
+      "show": "screen",
+      "source": "オスカーは、そう言うと\n満面の笑みを浮かべた。<BREAK>",
+      "text": [
+        "奥斯卡说完这话，",
+        "露出满面笑容。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA3A8",
+      "show": "window",
+      "source": "オスカー「アン、これでわかっただろ？\n俺の方がスゴイって！！」",
+      "text": [
+        "奥斯卡「安，这下明白了吧？",
+        "还是我更厉害！！」"
+      ]
+    },
+    {
+      "offset": "0xA3EA",
+      "show": "screen",
+      "source": "しかし、アンマリーは\n小さく溜め息をついた。<BREAK>",
+      "text": [
+        "但是，安玛丽",
+        "轻轻叹了口气。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA41A",
+      "show": "window",
+      "source": "アンマリー「あぁ、オスカー。\n惜しかったわね」",
+      "text": [
+        "安玛丽「啊，奥斯卡。",
+        "真可惜呀」"
+      ]
+    },
+    {
+      "offset": "0xA44C",
+      "show": "window",
+      "source": "アンマリー「そんなに勝ち誇らなければ\n素敵だったのに………」",
+      "text": [
+        "安玛丽「你若没那么得意，",
+        "本会很出色的………」"
+      ]
+    },
+    {
+      "offset": "0xA48C",
+      "show": "window",
+      "source": "アンマリー「やっぱり、紳士はひかえめで\nなくちゃいけないと、わたし\n思うの」",
+      "text": [
+        "安玛丽「果然，绅士",
+        "必须谦逊才行，",
+        "我是这么想的」"
+      ]
+    },
+    {
+      "offset": "0xA4DE",
+      "show": "screen",
+      "source": "オスカーの顔色が青ざめる。<BREAK>",
+      "text": [
+        "奥斯卡脸色煞白。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA4FC",
+      "show": "window",
+      "source": "オスカー「えっ！？」",
+      "text": [
+        "奥斯卡「诶！？」"
+      ]
+    },
+    {
+      "offset": "0xA512",
+      "show": "window",
+      "source": "アンマリー「せっかくの勝利がだいなし\nだわ」",
+      "text": [
+        "安玛丽「难得的胜利，",
+        "全白费了」"
+      ]
+    },
+    {
+      "offset": "0xA542",
+      "show": "window",
+      "source": "アンマリー「いくら、オスカーでも\nそんな事はしないだろうな\nって思っていたのに…」",
+      "text": [
+        "安玛丽「就算是奥斯卡，",
+        "也不会做那种事吧，",
+        "我本是这么想的…」"
+      ]
+    },
+    {
+      "offset": "0xA59A",
+      "show": "window",
+      "source": "アンマリー「勝ち誇ってしまったせいで\nせっかくの勝利がけむりの\nように消えてしまったの」",
+      "text": [
+        "安玛丽「因为你得意忘形，",
+        "难得的胜利",
+        "像烟一样消散了」"
+      ]
+    },
+    {
+      "offset": "0xA5F8",
+      "show": "window",
+      "source": "オスカー「そ、そんなぁぁぁ………」",
+      "text": [
+        "奥斯卡「怎、怎么会啊啊啊………」"
+      ]
+    },
+    {
+      "offset": "0xA61C",
+      "show": "window",
+      "source": "アンマリー「やっぱり、騎士のギィや\n忍者のラコクとパーティを\n組んだ方が良いかしら」",
+      "text": [
+        "安玛丽「果然，还是和骑士盖伊、",
+        "忍者拉科克一起",
+        "组队更好呢」"
+      ]
+    },
+    {
+      "offset": "0xA676",
+      "show": "screen",
+      "source": "慌てて、リューンが口を開いた。<BREAK>",
+      "text": [
+        "琉恩慌忙开了口。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA698",
+      "show": "window",
+      "source": "オスカー「認めねえ、絶対認めねえぞ！\nこの俺が、トラップ勝負に\n負けたなんて…」",
+      "text": [
+        "奥斯卡「不承认，绝对不承认！",
+        "我这种人会输掉",
+        "陷阱对决…」"
+      ]
+    },
+    {
+      "offset": "0xA6EE",
+      "show": "window",
+      "source": "オスカー「俺が仕掛けたとっておきの\nトラップだぞ！？」",
+      "text": [
+        "奥斯卡「那可是我压箱底的",
+        "陷阱啊！？」"
+      ]
+    },
+    {
+      "offset": "0xA728",
+      "show": "window",
+      "source": "オスカー「なんで、てめえなんかに\n解除出来んだよッ！」",
+      "text": [
+        "奥斯卡「凭什么你这种人",
+        "也能解开啊！！」"
+      ]
+    },
+    {
+      "offset": "0xA762",
+      "show": "window",
+      "source": "オスカー「なんで、そんなに簡単に\n解除出来るんだよ！」",
+      "text": [
+        "奥斯卡「为什么这么轻易",
+        "就能解开啊！」"
+      ]
+    },
+    {
+      "offset": "0xA79C",
+      "show": "screen",
+      "source": "オスカーは、くやしそうに\n唇をかみしめた。<BREAK>",
+      "text": [
+        "奥斯卡不甘地",
+        "咬紧了嘴唇。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA7CA",
+      "show": "screen",
+      "source": "アンマリーが小さく溜め息をつく。<BREAK>",
+      "text": [
+        "安玛丽轻轻叹了口气。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA7EE",
+      "show": "window",
+      "source": "アンマリー「勝負に負けた事で\nオスカーを責めはしないけど\n今の態度はどうかしら」",
+      "text": [
+        "安玛丽「输了比试这事，",
+        "我并不怪奥斯卡，",
+        "可刚才的态度呢」"
+      ]
+    },
+    {
+      "offset": "0xA844",
+      "show": "window",
+      "source": "アンマリー「やっぱり、紳士はいさぎよく\nなくちゃいけないと、わたし\n思うの」",
+      "text": [
+        "安玛丽「果然，绅士",
+        "必须干脆才行，",
+        "我是这么想的」"
+      ]
+    },
+    {
+      "offset": "0xA896",
+      "show": "window",
+      "source": "アンマリー「あんな事さえ言わなければ\nわたし、あなたの事好きな\nままでいられたのに」",
+      "text": [
+        "安玛丽「你若没做那种事，",
+        "我本可以一直",
+        "喜欢着你」"
+      ]
+    },
+    {
+      "offset": "0xA8F0",
+      "show": "screen",
+      "source": "オスカーの顔色が青ざめる。<BREAK>",
+      "text": [
+        "奥斯卡脸色煞白。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA90E",
+      "show": "window",
+      "source": "オスカー「えっ！？」",
+      "text": [
+        "奥斯卡「诶！？」"
+      ]
+    },
+    {
+      "offset": "0xA924",
+      "show": "window",
+      "source": "アンマリー「オスカーは、いさぎよく\n負けを認めるべきだった\nのよ」",
+      "text": [
+        "安玛丽「奥斯卡本该",
+        "干脆地承认",
+        "自己输了才对」"
+      ]
+    },
+    {
+      "offset": "0xA96C",
+      "show": "window",
+      "source": "アンマリー「あなたがした事は、卑怯な\n事だわ」",
+      "text": [
+        "安玛丽「你做的事，",
+        "是卑鄙的事」"
+      ]
+    },
+    {
+      "offset": "0xA99E",
+      "show": "window",
+      "source": "アンマリー「わたし、卑怯な人って\nキライよ」",
+      "text": [
+        "安玛丽「我啊，",
+        "最讨厌卑鄙的人」"
+      ]
+    },
+    {
+      "offset": "0xA9CE",
+      "show": "window",
+      "source": "オスカー「そ、そんなぁぁぁ………」",
+      "text": [
+        "奥斯卡「怎、怎么会啊啊啊………」"
+      ]
+    },
+    {
+      "offset": "0xA9F2",
+      "show": "window",
+      "source": "アンマリー「やっぱり、騎士のギィや\n忍者のラコクとパーティを\n組んだ方が良いかしら」",
+      "text": [
+        "安玛丽「果然，还是和骑士盖伊、",
+        "忍者拉科克一起",
+        "组队更好呢」"
+      ]
+    },
+    {
+      "offset": "0xAA4C",
+      "show": "screen",
+      "source": "慌てて、リューンが口を開いた。<BREAK>",
+      "text": [
+        "琉恩慌忙开了口。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAA6E",
+      "show": "window",
+      "source": "リューン「ア、アン、ちょっと待って！\n相棒の不始末は俺がケリを\nつけるぜ！！」",
+      "text": [
+        "琉恩「安、安，等一下！",
+        "搭档惹的祸，我来",
+        "收拾！！」"
+      ]
+    },
+    {
+      "offset": "0xAAC2",
+      "show": "screen",
+      "source": "何かを言いかけるオスカーを\nリューンは、必死に黙らせる。<BREAK>",
+      "text": [
+        "奥斯卡正要开口，",
+        "琉恩拼命让他住口。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAAFE",
+      "show": "window",
+      "source": "リューン「良いか、次は俺と勝負だ！」",
+      "text": [
+        "琉恩「听好了，下次跟我比！」"
+      ]
+    },
+    {
+      "offset": "0xAB24",
+      "show": "window",
+      "source": "リューン「勝負の方法は、そうだな…」",
+      "text": [
+        "琉恩「怎么比呢，这个嘛…」"
+      ]
+    },
+    {
+      "offset": "0xAB4A",
+      "show": "screen",
+      "source": "リューンは、思案するかの様に\n何事かを、ブツブツと呟いた。<BREAK>",
+      "text": [
+        "琉恩像是在盘算，",
+        "嘀咕了些什么。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAB88",
+      "show": "window",
+      "source": "リューン「よーし、決めた！\nドラゴン退治だ！」",
+      "text": [
+        "琉恩「好嘞，定了！",
+        "就是讨伐龙！」"
+      ]
+    },
+    {
+      "offset": "0xABBA",
+      "show": "window",
+      "source": "リューン「だけど、一度街へ戻って\nからにするか」",
+      "text": [
+        "琉恩「不过，先回一趟",
+        "城里再说吧」"
+      ]
+    },
+    {
+      "offset": "0xABEE",
+      "show": "window",
+      "source": "リューン「アンも疲れてる様だし\nドラゴンを退治するのは、\n大変だしな」",
+      "text": [
+        "琉恩「安看着也累，",
+        "讨伐龙这事",
+        "可不轻松啊」"
+      ]
+    },
+    {
+      "offset": "0xAC3A",
+      "show": "screen",
+      "source": "リューンの言葉に、アンマリーが\nにっこりと微笑む。<BREAK>",
+      "text": [
+        "听了琉恩的话，",
+        "安玛丽露出了笑容。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAC70",
+      "show": "window",
+      "source": "アンマリー「あら、リューン。\n気づかってくれるの？\nうれしい、ありがとう」",
+      "text": [
+        "安玛丽「啊呀，琉恩。",
+        "你在体贴我吗？",
+        "真高兴，谢谢」"
+      ]
+    },
+    {
+      "offset": "0xACC0",
+      "show": "screen",
+      "source": "アンマリーの機嫌が少し\nよくなったようだ。<BREAK>",
+      "text": [
+        "安玛丽的心情",
+        "似乎好了些。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xACEE",
+      "show": "screen",
+      "source": "ダメおしとばかりに\nオスカーが叫ぶ。<BREAK>",
+      "text": [
+        "像要再补上一句，",
+        "奥斯卡喊道。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAD16",
+      "show": "window",
+      "source": "オスカー「俺達は、いつだって\nアンの事を一番気にかけて\nるのさ！」",
+      "text": [
+        "奥斯卡「我们呀，向来",
+        "最把安的事",
+        "放在心上！」"
+      ]
+    },
+    {
+      "offset": "0xAD5E",
+      "show": "window",
+      "source": "アンマリー「そう？\nなら、許してあげる」",
+      "text": [
+        "安玛丽「是吗？",
+        "那我就原谅你」"
+      ]
+    },
+    {
+      "offset": "0xAD8A",
+      "show": "window",
+      "source": "アンマリー「女性に対する気づかいは\n紳士の基本ですものね」",
+      "text": [
+        "安玛丽「对女性的体贴，",
+        "才是绅士的基本嘛」"
+      ]
+    },
+    {
+      "offset": "0xADC8",
+      "show": "screen",
+      "source": "リューンは、やれやれと\n胸をなでおろした。<BREAK>",
+      "text": [
+        "琉恩长出一口气，",
+        "这才放下心来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xADF6",
+      "show": "window",
+      "source": "リューン「それじゃ、一度街に戻って\n休んでから、<FB01>一階の入り口<FB00>で\n会おうぜ」",
+      "text": [
+        "琉恩「那就先回城里歇歇，",
+        "再在<FB01>一楼入口<FB00>",
+        "碰面啊」"
+      ]
+    },
+    {
+      "offset": "0xAE4A",
+      "show": "window",
+      "source": "アンマリー「うふふ、なんだか楽しく\nなりそうだわ」",
+      "text": [
+        "安玛丽「呵呵，总觉得",
+        "会很开心呀」"
+      ]
+    },
+    {
+      "offset": "0xAE80",
+      "show": "window",
+      "source": "アンマリー「<PAGE>。\nまた後で会いましょうね」",
+      "text": [
+        "安玛丽「<PAGE>。",
+        "回头再见呢」"
+      ]
+    },
+    {
+      "offset": "0xAEAE",
+      "show": "window",
+      "source": "アンマリー「また後で会いましょうね」",
+      "text": [
+        "安玛丽「回头再见呢」"
+      ]
+    },
+    {
+      "offset": "0xAED4",
+      "show": "screen",
+      "source": "勝手な約束をして\nアンマリー達は、立ち去った………<BREAK>",
+      "text": [
+        "擅自约定之后，",
+        "安玛丽一行离去了………<BREAK>"
+      ]
+    }
+  ]
+}

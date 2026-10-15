@@ -1,0 +1,7377 @@
+{
+  "chunk": 302,
+  "base": "0x40CC000",
+  "align": "left",
+  "messages": [
+    {
+      "offset": "0x5600",
+      "show": "screen",
+      "source": "闇の中に、異形の僧侶が立っていた。<BREAK>",
+      "text": [
+        "黑暗中，立着一名异形的僧侣。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5626",
+      "show": "screen",
+      "source": "彼の唇が、笑みの形に持ち上がる。<BREAK>",
+      "text": [
+        "他的嘴唇，弯成了笑容。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x564A",
+      "show": "window",
+      "source": "僧侶「月光の導きの下\n私とそなたは出会った」",
+      "text": [
+        "僧侣「在月光的引导下",
+        "我与你相遇了」"
+      ]
+    },
+    {
+      "offset": "0x567A",
+      "show": "window",
+      "source": "僧侶「私の占いは\nそなたに祝福と\n不運をもたらすだろう」",
+      "text": [
+        "僧侣「我的占卜",
+        "会给你祝福",
+        "也会给你厄运」"
+      ]
+    },
+    {
+      "offset": "0x56B8",
+      "show": "screen",
+      "source": "占いをたのみますか？\n\nは い\nいいえ\n",
+      "text": [
+        "要请他占卜吗？",
+        "",
+        "是",
+        "否",
+        ""
+      ]
+    },
+    {
+      "offset": "0x56E6",
+      "show": "window",
+      "source": "僧侶「では、月光が次の機会を\n導くのを待つとしよう」",
+      "text": [
+        "僧侣「那么，就等着月光",
+        "指引下一次机会吧」"
+      ]
+    },
+    {
+      "offset": "0x571E",
+      "show": "window",
+      "source": "僧侶「よかろう」",
+      "text": [
+        "僧侣「也好」"
+      ]
+    },
+    {
+      "offset": "0x5730",
+      "show": "window",
+      "source": "僧侶「では、月光にさらした\nこのカードの山から\nこれはと思うものを選ぶのだ」",
+      "text": [
+        "僧侣「那么，从晒过月光的",
+        "这些牌堆里",
+        "选出你看中的那一堆」"
+      ]
+    },
+    {
+      "offset": "0x5782",
+      "show": "screen",
+      "source": "どの山を選びますか？\n\n右の山\n真中の山\n左の山\n",
+      "text": [
+        "要选哪一堆？",
+        "",
+        "右边那堆",
+        "中间那堆",
+        "左边那堆",
+        ""
+      ]
+    },
+    {
+      "offset": "0x57C0",
+      "show": "window",
+      "source": "僧侶「このカードの山に\n運命がひそんでいる」",
+      "text": [
+        "僧侣「这一堆牌里",
+        "潜藏着命运」"
+      ]
+    },
+    {
+      "offset": "0x57F0",
+      "show": "window",
+      "source": "僧侶「月の導きの下\nそなたの運命を引き当てよう」",
+      "text": [
+        "僧侣「在月亮的引导下",
+        "我来抽出你的命运」"
+      ]
+    },
+    {
+      "offset": "0x5824",
+      "show": "screen",
+      "source": "僧侶は一枚のカードを引き当てた。\nそれは………<BREAK>",
+      "text": [
+        "僧侣抽出了一张牌。",
+        "那是………<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5856",
+      "show": "window",
+      "source": "僧侶「なかなか良いカードだ」",
+      "text": [
+        "僧侣「是张相当好的牌」"
+      ]
+    },
+    {
+      "offset": "0x5874",
+      "show": "window",
+      "source": "僧侶「これは<FB01>妖精のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>妖精的牌<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x5894",
+      "show": "screen",
+      "source": "カードには、愛らしく微笑む\n妖精の乙女が描いてあった。<BREAK>",
+      "text": [
+        "牌上，画着一位可爱地",
+        "微笑着的妖精少女。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x58CE",
+      "show": "window",
+      "source": "僧侶「そなたは近く\n<FB01>妖精の祝福<FB00>をうける」",
+      "text": [
+        "僧侣「你不久将会",
+        "受到<FB01>妖精的祝福<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x58FE",
+      "show": "window",
+      "source": "僧侶「ただ、ぼんやりしていると\n妖精の祝福はすり抜けて\nいくだろうがな」",
+      "text": [
+        "僧侣「不过，发呆的话",
+        "妖精的祝福",
+        "可就会从身边溜走」"
+      ]
+    },
+    {
+      "offset": "0x594C",
+      "show": "screen",
+      "source": "僧侶はそう言うと\n目を三日月のように細めて笑った。<BREAK>",
+      "text": [
+        "僧侣说完这话，",
+        "他把眼睛眯得像新月，笑了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5982",
+      "show": "window",
+      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "text": [
+        "僧侣「哦，你",
+        "运气倒是不错」"
+      ]
+    },
+    {
+      "offset": "0x59B0",
+      "show": "window",
+      "source": "僧侶「これは<FB01>魔法石のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>魔法石的牌<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x59D2",
+      "show": "screen",
+      "source": "カードには、光り輝く魔法石が\n描いてあった。<BREAK>",
+      "text": [
+        "牌上画着闪闪发光的",
+        "魔法石。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5A02",
+      "show": "window",
+      "source": "僧侶「そなたは近く\n魔法石を得るだろう」",
+      "text": [
+        "僧侣「你不久将会",
+        "得到魔法石」"
+      ]
+    },
+    {
+      "offset": "0x5A2E",
+      "show": "window",
+      "source": "僧侶「ただ、ぼんやりしていると\nその機会は失われるがな」",
+      "text": [
+        "僧侣「不过，发呆的话",
+        "这机会可就没了」"
+      ]
+    },
+    {
+      "offset": "0x5A6A",
+      "show": "screen",
+      "source": "僧侶はそう言うと\n目を三日月のように細めて笑った。<BREAK>",
+      "text": [
+        "僧侣说完这话，",
+        "他把眼睛眯得像新月，笑了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5AA0",
+      "show": "window",
+      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "text": [
+        "僧侣「哦，你",
+        "运气倒是不错」"
+      ]
+    },
+    {
+      "offset": "0x5ACE",
+      "show": "window",
+      "source": "僧侶「これは<FB01>ドワーフのカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>矮人的牌<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x5AF2",
+      "show": "screen",
+      "source": "カードには、戦斧を構えた\nたくましいドワーフが描いてあった。<BREAK>",
+      "text": [
+        "牌上画着握着战斧、",
+        "体格强壮的矮人。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5B32",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>力の祝福<FB00>を導く事に\nなっておる」",
+      "text": [
+        "僧侣「抽到这张牌的人",
+        "就由我引来<FB01>力量的祝福<FB00>",
+        "向来如此」"
+      ]
+    },
+    {
+      "offset": "0x5B80",
+      "show": "screen",
+      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受祝福？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x5BC0",
+      "show": "screen",
+      "source": "<FFF0>は\n力の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了力量的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5BDC",
+      "show": "screen",
+      "source": "<FB01>力が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5BF2",
+      "show": "screen",
+      "source": "<FFF1>は\n力の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了力量的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5C0E",
+      "show": "screen",
+      "source": "<FB01>力が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5C24",
+      "show": "screen",
+      "source": "<FFF2>は\n力の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了力量的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5C40",
+      "show": "screen",
+      "source": "<FB01>力が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5C56",
+      "show": "screen",
+      "source": "<FFF3>は\n力の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了力量的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5C72",
+      "show": "screen",
+      "source": "<FB01>力が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5C88",
+      "show": "screen",
+      "source": "<FFF4>は\n力の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了力量的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5CA4",
+      "show": "screen",
+      "source": "<FB01>力が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5CBA",
+      "show": "screen",
+      "source": "<FFF5>は\n力の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了力量的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5CD6",
+      "show": "screen",
+      "source": "<FB01>力が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5CEC",
+      "show": "screen",
+      "source": "<PAGE>は\n力の祝福を受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了力量的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5D08",
+      "show": "screen",
+      "source": "<FB01>力が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5D1E",
+      "show": "window",
+      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "text": [
+        "僧侣「哦，你",
+        "运气倒是不错」"
+      ]
+    },
+    {
+      "offset": "0x5D4C",
+      "show": "window",
+      "source": "僧侶「これは<FB01>エルフのカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>精灵的牌<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x5D6E",
+      "show": "screen",
+      "source": "カードには、杖を手にした\n細身のエルフが描いてあった。<BREAK>",
+      "text": [
+        "牌上画着手持一根杖、",
+        "身形纤细的精灵。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5DA8",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>知恵の祝福<FB00>を導く事に\nなっておる」",
+      "text": [
+        "僧侣「抽到这张牌的人",
+        "就由我引来<FB01>智力的祝福<FB00>",
+        "向来如此」"
+      ]
+    },
+    {
+      "offset": "0x5DF8",
+      "show": "screen",
+      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受祝福？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x5E38",
+      "show": "screen",
+      "source": "<FFF0>は\n知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5E56",
+      "show": "screen",
+      "source": "<FB01>知恵が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5E6E",
+      "show": "screen",
+      "source": "<FFF1>は\n知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5E8C",
+      "show": "screen",
+      "source": "<FB01>知恵が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5EA4",
+      "show": "screen",
+      "source": "<FFF2>は\n知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5EC2",
+      "show": "screen",
+      "source": "<FB01>知恵が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5EDA",
+      "show": "screen",
+      "source": "<FFF3>は\n知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5EF8",
+      "show": "screen",
+      "source": "<FB01>知恵が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5F10",
+      "show": "screen",
+      "source": "<FFF4>は\n知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5F2E",
+      "show": "screen",
+      "source": "<FB01>知恵が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5F46",
+      "show": "screen",
+      "source": "<FFF5>は\n知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5F64",
+      "show": "screen",
+      "source": "<FB01>知恵が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5F7C",
+      "show": "screen",
+      "source": "<PAGE>は\n知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5F9A",
+      "show": "screen",
+      "source": "<FB01>知恵が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x5FB2",
+      "show": "window",
+      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "text": [
+        "僧侣「哦，你",
+        "运气倒是不错」"
+      ]
+    },
+    {
+      "offset": "0x5FE0",
+      "show": "window",
+      "source": "僧侶「これは<FB01>ノームのカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>侏儒的牌<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x6002",
+      "show": "screen",
+      "source": "カードには、祈りを捧げる\nノームの姿が描いてあった。<BREAK>",
+      "text": [
+        "牌上画着正在祈祷的",
+        "侏儒身影。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x603A",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>信仰の祝福<FB00>を導く事に\nなっておる」",
+      "text": [
+        "僧侣「抽到这张牌的人",
+        "就由我引来<FB01>信仰的祝福<FB00>",
+        "向来如此」"
+      ]
+    },
+    {
+      "offset": "0x608A",
+      "show": "screen",
+      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受祝福？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x60CA",
+      "show": "screen",
+      "source": "<FFF0>は\n信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x60E8",
+      "show": "screen",
+      "source": "<FB01>信仰心が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6102",
+      "show": "screen",
+      "source": "<FFF1>は\n信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6120",
+      "show": "screen",
+      "source": "<FB01>信仰心が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x613A",
+      "show": "screen",
+      "source": "<FFF2>は\n信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6158",
+      "show": "screen",
+      "source": "<FB01>信仰心が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6172",
+      "show": "screen",
+      "source": "<FFF3>は\n信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6190",
+      "show": "screen",
+      "source": "<FB01>信仰心が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x61AA",
+      "show": "screen",
+      "source": "<FFF4>は\n信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x61C8",
+      "show": "screen",
+      "source": "<FB01>信仰心が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x61E2",
+      "show": "screen",
+      "source": "<FFF5>は\n信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6200",
+      "show": "screen",
+      "source": "<FB01>信仰心が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x621A",
+      "show": "screen",
+      "source": "<PAGE>は\n信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6238",
+      "show": "screen",
+      "source": "<FB01>信仰心が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6252",
+      "show": "window",
+      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "text": [
+        "僧侣「哦，你",
+        "运气倒是不错」"
+      ]
+    },
+    {
+      "offset": "0x6280",
+      "show": "window",
+      "source": "僧侶「これは<FB01>人間のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>人类的牌<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x62A0",
+      "show": "screen",
+      "source": "カードには、人間の親子の姿が\n描いてあった。<BREAK>",
+      "text": [
+        "牌上画着人类亲子的",
+        "身影。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x62D0",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>生命の祝福<FB00>を導く事に\nなっておる」",
+      "text": [
+        "僧侣「抽到这张牌的人",
+        "就由我引来<FB01>生命的祝福<FB00>",
+        "向来如此」"
+      ]
+    },
+    {
+      "offset": "0x6320",
+      "show": "screen",
+      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受祝福？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x6360",
+      "show": "screen",
+      "source": "<FFF0>は\n生命の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了生命的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x637E",
+      "show": "screen",
+      "source": "<FB01>生命力が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>生命力增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6398",
+      "show": "screen",
+      "source": "<FFF1>は\n生命の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了生命的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x63B6",
+      "show": "screen",
+      "source": "<FB01>生命力が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>生命力增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x63D0",
+      "show": "screen",
+      "source": "<FFF2>は\n生命の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了生命的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x63EE",
+      "show": "screen",
+      "source": "<FB01>生命力が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>生命力增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6408",
+      "show": "screen",
+      "source": "<FFF3>は\n生命の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了生命的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6426",
+      "show": "screen",
+      "source": "<FB01>生命力が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>生命力增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6440",
+      "show": "screen",
+      "source": "<FFF4>は\n生命の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了生命的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x645E",
+      "show": "screen",
+      "source": "<FB01>生命力が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>生命力增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6478",
+      "show": "screen",
+      "source": "<FFF5>は\n生命の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了生命的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6496",
+      "show": "screen",
+      "source": "<FB01>生命力が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>生命力增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x64B0",
+      "show": "screen",
+      "source": "<PAGE>は\n生命の祝福を受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了生命的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x64CE",
+      "show": "screen",
+      "source": "<FB01>生命力が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>生命力增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x64E8",
+      "show": "window",
+      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "text": [
+        "僧侣「哦，你",
+        "运气倒是不错」"
+      ]
+    },
+    {
+      "offset": "0x6516",
+      "show": "window",
+      "source": "僧侶「これは<FB01>ホビットのカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>霍比特的牌<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x653A",
+      "show": "screen",
+      "source": "カードには、草原を駆ける\nホビットの姿が描いてあった。<BREAK>",
+      "text": [
+        "牌上画着在草原上奔跑的",
+        "霍比特身影。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6574",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>敏捷の祝福<FB00>を導く事に\nなっておる」",
+      "text": [
+        "僧侣「抽到这张牌的人",
+        "就由我引来<FB01>敏捷的祝福<FB00>",
+        "向来如此」"
+      ]
+    },
+    {
+      "offset": "0x65C4",
+      "show": "screen",
+      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受祝福？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x6604",
+      "show": "screen",
+      "source": "<FFF0>は\n敏捷の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了敏捷的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6622",
+      "show": "screen",
+      "source": "<FB01>敏捷度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x663C",
+      "show": "screen",
+      "source": "<FFF1>は\n敏捷の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了敏捷的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x665A",
+      "show": "screen",
+      "source": "<FB01>敏捷度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6674",
+      "show": "screen",
+      "source": "<FFF2>は\n敏捷の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了敏捷的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6692",
+      "show": "screen",
+      "source": "<FB01>敏捷度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x66AC",
+      "show": "screen",
+      "source": "<FFF3>は\n敏捷の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了敏捷的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x66CA",
+      "show": "screen",
+      "source": "<FB01>敏捷度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x66E4",
+      "show": "screen",
+      "source": "<FFF4>は\n敏捷の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了敏捷的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6702",
+      "show": "screen",
+      "source": "<FB01>敏捷度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x671C",
+      "show": "screen",
+      "source": "<FFF5>は\n敏捷の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了敏捷的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x673A",
+      "show": "screen",
+      "source": "<FB01>敏捷度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6754",
+      "show": "screen",
+      "source": "<PAGE>は\n敏捷の祝福を受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了敏捷的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6772",
+      "show": "screen",
+      "source": "<FB01>敏捷度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x678C",
+      "show": "window",
+      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "text": [
+        "僧侣「哦，你",
+        "运气倒是不错」"
+      ]
+    },
+    {
+      "offset": "0x67BA",
+      "show": "window",
+      "source": "僧侶「これは<FB01>五種族のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>五种族的牌<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x67DC",
+      "show": "screen",
+      "source": "カードには、手を取り合う\n人間、エルフ、ドワーフ\nノーム、ホビットの姿が\n描いてあった。<BREAK>",
+      "text": [
+        "牌上画着手拉着手的",
+        "人类、精灵、矮人、",
+        "侏儒、霍比特的",
+        "身影。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6838",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>幸運の祝福<FB00>を導く事に\nなっておる」",
+      "text": [
+        "僧侣「抽到这张牌的人",
+        "就由我引来<FB01>幸运的祝福<FB00>",
+        "向来如此」"
+      ]
+    },
+    {
+      "offset": "0x6888",
+      "show": "screen",
+      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受祝福？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x68C8",
+      "show": "screen",
+      "source": "<FFF0>は\n幸運の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了幸运的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x68E6",
+      "show": "screen",
+      "source": "<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>幸运度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6900",
+      "show": "screen",
+      "source": "<FFF1>は\n幸運の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了幸运的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x691E",
+      "show": "screen",
+      "source": "<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>幸运度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6938",
+      "show": "screen",
+      "source": "<FFF2>は\n幸運の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了幸运的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6956",
+      "show": "screen",
+      "source": "<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>幸运度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6970",
+      "show": "screen",
+      "source": "<FFF3>は\n幸運の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了幸运的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x698E",
+      "show": "screen",
+      "source": "<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>幸运度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x69A8",
+      "show": "screen",
+      "source": "<FFF4>は\n幸運の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了幸运的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x69C6",
+      "show": "screen",
+      "source": "<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>幸运度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x69E0",
+      "show": "screen",
+      "source": "<FFF5>は\n幸運の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了幸运的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x69FE",
+      "show": "screen",
+      "source": "<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>幸运度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6A18",
+      "show": "screen",
+      "source": "<PAGE>は\n幸運の祝福を受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了幸运的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6A36",
+      "show": "screen",
+      "source": "<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>幸运度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6A50",
+      "show": "window",
+      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "text": [
+        "僧侣「哦，你",
+        "运气倒是不错」"
+      ]
+    },
+    {
+      "offset": "0x6A7E",
+      "show": "window",
+      "source": "僧侶「これは<FB01>戦士のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>战士的牌<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x6A9E",
+      "show": "screen",
+      "source": "カードには、鎧に身を固めた\n戦士の姿が描いてあった。<BREAK>",
+      "text": [
+        "牌上画着全身铠甲的",
+        "战士身影。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6AD6",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる力の祝福<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张牌的人",
+        "就由我引来<FB01>伟大力量的祝福<FB00>",
+        "向来如此」"
+      ]
+    },
+    {
+      "offset": "0x6B2C",
+      "show": "screen",
+      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受祝福？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x6B6C",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる力の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了伟大力量的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6B90",
+      "show": "screen",
+      "source": "<FB01>力が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6BA6",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる力の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了伟大力量的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6BCA",
+      "show": "screen",
+      "source": "<FB01>力が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6BE0",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる力の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了伟大力量的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6C04",
+      "show": "screen",
+      "source": "<FB01>力が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6C1A",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる力の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了伟大力量的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6C3E",
+      "show": "screen",
+      "source": "<FB01>力が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6C54",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる力の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了伟大力量的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6C78",
+      "show": "screen",
+      "source": "<FB01>力が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6C8E",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる力の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了伟大力量的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6CB2",
+      "show": "screen",
+      "source": "<FB01>力が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6CC8",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる力の祝福を受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了伟大力量的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6CEC",
+      "show": "screen",
+      "source": "<FB01>力が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6D02",
+      "show": "window",
+      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "text": [
+        "僧侣「哦，你",
+        "运气倒是不错」"
+      ]
+    },
+    {
+      "offset": "0x6D30",
+      "show": "window",
+      "source": "僧侶「これは<FB01>魔術師のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>魔法师的牌<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x6D52",
+      "show": "screen",
+      "source": "カードには、ローブをまとった\n老魔術師が魔法を唱える姿が\n描いてあった。<BREAK>",
+      "text": [
+        "牌上画着身披长袍、",
+        "咏唱魔法的老魔法师的",
+        "身影。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6D9E",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる知恵の祝福<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张牌的人",
+        "就由我引来<FB01>伟大智力的祝福<FB00>",
+        "向来如此」"
+      ]
+    },
+    {
+      "offset": "0x6DF6",
+      "show": "screen",
+      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受祝福？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x6E36",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了伟大智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6E5C",
+      "show": "screen",
+      "source": "<FB01>知恵が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6E74",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了伟大智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6E9A",
+      "show": "screen",
+      "source": "<FB01>知恵が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6EB2",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了伟大智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6ED8",
+      "show": "screen",
+      "source": "<FB01>知恵が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6EF0",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了伟大智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6F16",
+      "show": "screen",
+      "source": "<FB01>知恵が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6F2E",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了伟大智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6F54",
+      "show": "screen",
+      "source": "<FB01>知恵が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6F6C",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了伟大智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6F92",
+      "show": "screen",
+      "source": "<FB01>知恵が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6FAA",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了伟大智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6FD0",
+      "show": "screen",
+      "source": "<FB01>知恵が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x6FE8",
+      "show": "window",
+      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "text": [
+        "僧侣「哦，你",
+        "运气倒是不错」"
+      ]
+    },
+    {
+      "offset": "0x7016",
+      "show": "window",
+      "source": "僧侶「これは<FB01>僧侶のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>僧侣的牌<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x7036",
+      "show": "screen",
+      "source": "カードには、死者を復活させる\n僧侶が描いてあった。<BREAK>",
+      "text": [
+        "牌上画着复活死者的",
+        "僧侣。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x706C",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる信仰の祝福<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张牌的人",
+        "就由我引来<FB01>伟大信仰的祝福<FB00>",
+        "向来如此」"
+      ]
+    },
+    {
+      "offset": "0x70C4",
+      "show": "screen",
+      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受祝福？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x7104",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了伟大信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x712A",
+      "show": "screen",
+      "source": "<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7144",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了伟大信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x716A",
+      "show": "screen",
+      "source": "<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7184",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了伟大信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x71AA",
+      "show": "screen",
+      "source": "<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x71C4",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了伟大信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x71EA",
+      "show": "screen",
+      "source": "<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7204",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了伟大信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x722A",
+      "show": "screen",
+      "source": "<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7244",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了伟大信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x726A",
+      "show": "screen",
+      "source": "<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7284",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了伟大信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x72AA",
+      "show": "screen",
+      "source": "<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x72C4",
+      "show": "window",
+      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "text": [
+        "僧侣「哦，你",
+        "运气倒是不错」"
+      ]
+    },
+    {
+      "offset": "0x72F2",
+      "show": "window",
+      "source": "僧侶「これは<FB01>盗賊のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>盗贼的牌<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x7312",
+      "show": "screen",
+      "source": "カードには、トラップを避ける\n盗賊が描いてあった。<BREAK>",
+      "text": [
+        "牌上画着避开陷阱的",
+        "盗贼。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7348",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる敏捷の祝福<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张牌的人",
+        "就由我引来<FB01>伟大敏捷的祝福<FB00>",
+        "向来如此」"
+      ]
+    },
+    {
+      "offset": "0x73A0",
+      "show": "screen",
+      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受祝福？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x73E0",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる敏捷の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了巨大的敏捷祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7406",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7420",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる敏捷の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了巨大的敏捷祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7446",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7460",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる敏捷の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了巨大的敏捷祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7486",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x74A0",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる敏捷の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了巨大的敏捷祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x74C6",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x74E0",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる敏捷の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了巨大的敏捷祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7506",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7520",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる敏捷の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了巨大的敏捷祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7546",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7560",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる敏捷の祝福を受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了巨大的敏捷祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7586",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x75A0",
+      "show": "window",
+      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "text": [
+        "僧侣「呵，你",
+        "还真走运」"
+      ]
+    },
+    {
+      "offset": "0x75CE",
+      "show": "window",
+      "source": "僧侶「これは<FB01>司教のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>主教的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x75EE",
+      "show": "screen",
+      "source": "カードには、様々なアイテムを\n鑑定する司教の娘が描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着主教的女儿，",
+        "她能鉴定各种物品。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7630",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる知恵と信仰の祝福<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>巨大的智力与信仰的祝福<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x768E",
+      "show": "screen",
+      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受祝福？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x76CE",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる知恵と信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了巨大的智力与信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x76FA",
+      "show": "screen",
+      "source": "<FB01>知 恵が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x772E",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる知恵と信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了巨大的智力与信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x775A",
+      "show": "screen",
+      "source": "<FB01>知 恵が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x778E",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる知恵と信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了巨大的智力与信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x77BA",
+      "show": "screen",
+      "source": "<FB01>知 恵が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x77EE",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる知恵と信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了巨大的智力与信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x781A",
+      "show": "screen",
+      "source": "<FB01>知 恵が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x784E",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる知恵と信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了巨大的智力与信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x787A",
+      "show": "screen",
+      "source": "<FB01>知 恵が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x78AE",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる知恵と信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了巨大的智力与信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x78DA",
+      "show": "screen",
+      "source": "<FB01>知 恵が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x790E",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる知恵と信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了巨大的智力与信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x793A",
+      "show": "screen",
+      "source": "<FB01>知 恵が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>智力增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x796E",
+      "show": "window",
+      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "text": [
+        "僧侣「呵，你",
+        "还真走运」"
+      ]
+    },
+    {
+      "offset": "0x799C",
+      "show": "window",
+      "source": "僧侶「これは<FB01>侍のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>武士的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x79BA",
+      "show": "screen",
+      "source": "カードには、刀を正眼に構える\n黒髪の侍が描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着黑发武士，",
+        "正眼架刀而立。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x79F4",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる力と知恵の祝福<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>巨大的力量与智力的祝福<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x7A50",
+      "show": "screen",
+      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受祝福？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x7A90",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる力と知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了巨大的力量与智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7ABA",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>知 恵が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>智力增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7AEE",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる力と知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了巨大的力量与智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7B18",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>知 恵が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>智力增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7B4C",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる力と知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了巨大的力量与智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7B76",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>知 恵が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>智力增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7BAA",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる力と知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了巨大的力量与智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7BD4",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>知 恵が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>智力增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7C08",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる力と知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了巨大的力量与智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7C32",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>知 恵が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>智力增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7C66",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる力と知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了巨大的力量与智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7C90",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>知 恵が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>智力增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7CC4",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる力と知恵の祝福を受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了巨大的力量与智力的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7CEE",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>知 恵が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>智力增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7D22",
+      "show": "window",
+      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "text": [
+        "僧侣「呵，你",
+        "还真走运」"
+      ]
+    },
+    {
+      "offset": "0x7D50",
+      "show": "window",
+      "source": "僧侶「これは<FB01>騎士のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>骑士的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x7D70",
+      "show": "screen",
+      "source": "カードには、白銀の盾をかざす\n騎士の姿が描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着一名骑士，",
+        "举起白银盾。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7DAA",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる力と信仰の祝福<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>巨大的力量与信仰的祝福<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x7E06",
+      "show": "screen",
+      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受祝福？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x7E46",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる力と信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了巨大的力量与信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7E70",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7EA4",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる力と信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了巨大的力量与信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7ECE",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7F02",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる力と信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了巨大的力量与信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7F2C",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7F60",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる力と信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了巨大的力量与信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7F8A",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7FBE",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる力と信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了巨大的力量与信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x7FE8",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x801C",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる力と信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了巨大的力量与信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8046",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x807A",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる力と信仰の祝福を受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了巨大的力量与信仰的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x80A4",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x80D8",
+      "show": "window",
+      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "text": [
+        "僧侣「呵，你",
+        "还真走运」"
+      ]
+    },
+    {
+      "offset": "0x8106",
+      "show": "window",
+      "source": "僧侶「これは<FB01>忍者のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>忍者的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x8126",
+      "show": "screen",
+      "source": "カードには、闇にひそみ\n獲物を狙う忍者が描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着暗中潜伏、",
+        "瞄准猎物的忍者。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8160",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる敏捷と幸運の祝福<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>巨大的敏捷与幸运的祝福<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x81BE",
+      "show": "screen",
+      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受祝福？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x81FE",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる敏捷と幸運の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了巨大的敏捷与幸运的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x822A",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2増えた！<FB00><BREAK>\n<FB01>幸運度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了2！<FB00><BREAK>",
+        "<FB01>幸运度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x825E",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる敏捷と幸運の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了巨大的敏捷与幸运的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x828A",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2増えた！<FB00><BREAK>\n<FB01>幸運度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了2！<FB00><BREAK>",
+        "<FB01>幸运度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x82BE",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる敏捷と幸運の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了巨大的敏捷与幸运的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x82EA",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2増えた！<FB00><BREAK>\n<FB01>幸運度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了2！<FB00><BREAK>",
+        "<FB01>幸运度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x831E",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる敏捷と幸運の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了巨大的敏捷与幸运的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x834A",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2増えた！<FB00><BREAK>\n<FB01>幸運度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了2！<FB00><BREAK>",
+        "<FB01>幸运度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x837E",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる敏捷と幸運の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了巨大的敏捷与幸运的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x83AA",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2増えた！<FB00><BREAK>\n<FB01>幸運度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了2！<FB00><BREAK>",
+        "<FB01>幸运度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x83DE",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる敏捷と幸運の祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了巨大的敏捷与幸运的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x840A",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2増えた！<FB00><BREAK>\n<FB01>幸運度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了2！<FB00><BREAK>",
+        "<FB01>幸运度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x843E",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる敏捷と幸運の祝福を受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了巨大的敏捷与幸运的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x846A",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2増えた！<FB00><BREAK>\n<FB01>幸運度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度增加了2！<FB00><BREAK>",
+        "<FB01>幸运度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x849E",
+      "show": "window",
+      "source": "僧侶「ほう、このカードが\n出てくるとは………」",
+      "text": [
+        "僧侣「呵，这张卡",
+        "竟会出现………」"
+      ]
+    },
+    {
+      "offset": "0x84D0",
+      "show": "window",
+      "source": "僧侶「これは\n<FB01>クイーンガードのカード<FB00>」",
+      "text": [
+        "僧侣「这是",
+        "<FB01>女王近卫的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x84FE",
+      "show": "screen",
+      "source": "カードには、くれなずむ城を背に\n美しく、そして長大な剣を\n手にした騎士の姿が描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着一名骑士，",
+        "背对暮色中的城堡，",
+        "手持美丽而极长的剑。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x855C",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>全ての祝福<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>全部的祝福<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x85AC",
+      "show": "screen",
+      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受祝福？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x85EC",
+      "show": "screen",
+      "source": "<FFF0>は\n全ての祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了全部的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x860A",
+      "show": "screen",
+      "source": "<FB01>力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了1！<FB00><BREAK>",
+        "<FB01>智力增加了1！<FB00><BREAK>",
+        "<FB01>信仰心增加了1！<FB00><BREAK>",
+        "<FB01>生命力增加了1！<FB00><BREAK>",
+        "<FB01>敏捷度增加了1！<FB00><BREAK>",
+        "<FB01>幸运度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x86A6",
+      "show": "screen",
+      "source": "<FFF1>は\n全ての祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了全部的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x86C4",
+      "show": "screen",
+      "source": "<FB01>力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了1！<FB00><BREAK>",
+        "<FB01>智力增加了1！<FB00><BREAK>",
+        "<FB01>信仰心增加了1！<FB00><BREAK>",
+        "<FB01>生命力增加了1！<FB00><BREAK>",
+        "<FB01>敏捷度增加了1！<FB00><BREAK>",
+        "<FB01>幸运度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8760",
+      "show": "screen",
+      "source": "<FFF2>は\n全ての祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了全部的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x877E",
+      "show": "screen",
+      "source": "<FB01>力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了1！<FB00><BREAK>",
+        "<FB01>智力增加了1！<FB00><BREAK>",
+        "<FB01>信仰心增加了1！<FB00><BREAK>",
+        "<FB01>生命力增加了1！<FB00><BREAK>",
+        "<FB01>敏捷度增加了1！<FB00><BREAK>",
+        "<FB01>幸运度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x881A",
+      "show": "screen",
+      "source": "<FFF3>は\n全ての祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了全部的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8838",
+      "show": "screen",
+      "source": "<FB01>力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了1！<FB00><BREAK>",
+        "<FB01>智力增加了1！<FB00><BREAK>",
+        "<FB01>信仰心增加了1！<FB00><BREAK>",
+        "<FB01>生命力增加了1！<FB00><BREAK>",
+        "<FB01>敏捷度增加了1！<FB00><BREAK>",
+        "<FB01>幸运度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x88D4",
+      "show": "screen",
+      "source": "<FFF4>は\n全ての祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了全部的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x88F2",
+      "show": "screen",
+      "source": "<FB01>力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了1！<FB00><BREAK>",
+        "<FB01>智力增加了1！<FB00><BREAK>",
+        "<FB01>信仰心增加了1！<FB00><BREAK>",
+        "<FB01>生命力增加了1！<FB00><BREAK>",
+        "<FB01>敏捷度增加了1！<FB00><BREAK>",
+        "<FB01>幸运度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x898E",
+      "show": "screen",
+      "source": "<FFF5>は\n全ての祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了全部的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x89AC",
+      "show": "screen",
+      "source": "<FB01>力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了1！<FB00><BREAK>",
+        "<FB01>智力增加了1！<FB00><BREAK>",
+        "<FB01>信仰心增加了1！<FB00><BREAK>",
+        "<FB01>生命力增加了1！<FB00><BREAK>",
+        "<FB01>敏捷度增加了1！<FB00><BREAK>",
+        "<FB01>幸运度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8A48",
+      "show": "screen",
+      "source": "<PAGE>は\n全ての祝福を受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了全部的祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8A66",
+      "show": "screen",
+      "source": "<FB01>力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了1！<FB00><BREAK>",
+        "<FB01>智力增加了1！<FB00><BREAK>",
+        "<FB01>信仰心增加了1！<FB00><BREAK>",
+        "<FB01>生命力增加了1！<FB00><BREAK>",
+        "<FB01>敏捷度增加了1！<FB00><BREAK>",
+        "<FB01>幸运度增加了1！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8B02",
+      "show": "window",
+      "source": "僧侶「何と珍しい！」",
+      "text": [
+        "僧侣「这可真稀奇！」"
+      ]
+    },
+    {
+      "offset": "0x8B18",
+      "show": "window",
+      "source": "僧侶「これは\n<FB01>女王のカード<FB00>」",
+      "text": [
+        "僧侣「这是",
+        "<FB01>女王的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x8B3C",
+      "show": "screen",
+      "source": "カードには、黄金の冠をかぶり\n微かな笑みを浮かべる\n美しい女性が描かれていた。<BREAK>",
+      "text": [
+        "卡片上画着头戴黄金冠、",
+        "浮着淡淡微笑的",
+        "美丽女性。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8B8E",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる全ての祝福<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>巨大的全部祝福<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x8BE6",
+      "show": "screen",
+      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受祝福？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x8C26",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる全ての祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了巨大的全部祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8C4C",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>知 恵が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>\n<FB01>生命力が2増えた！<FB00><BREAK>\n<FB01>敏捷度が2増えた！<FB00><BREAK>\n<FB01>幸運度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>智力增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>",
+        "<FB01>生命力增加了2！<FB00><BREAK>",
+        "<FB01>敏捷度增加了2！<FB00><BREAK>",
+        "<FB01>幸运度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8CE8",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる全ての祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了巨大的全部祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8D0E",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>知 恵が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>\n<FB01>生命力が2増えた！<FB00><BREAK>\n<FB01>敏捷度が2増えた！<FB00><BREAK>\n<FB01>幸運度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>智力增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>",
+        "<FB01>生命力增加了2！<FB00><BREAK>",
+        "<FB01>敏捷度增加了2！<FB00><BREAK>",
+        "<FB01>幸运度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8DAA",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる全ての祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了巨大的全部祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8DD0",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>知 恵が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>\n<FB01>生命力が2増えた！<FB00><BREAK>\n<FB01>敏捷度が2増えた！<FB00><BREAK>\n<FB01>幸運度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>智力增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>",
+        "<FB01>生命力增加了2！<FB00><BREAK>",
+        "<FB01>敏捷度增加了2！<FB00><BREAK>",
+        "<FB01>幸运度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8E6C",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる全ての祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了巨大的全部祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8E92",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>知 恵が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>\n<FB01>生命力が2増えた！<FB00><BREAK>\n<FB01>敏捷度が2増えた！<FB00><BREAK>\n<FB01>幸運度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>智力增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>",
+        "<FB01>生命力增加了2！<FB00><BREAK>",
+        "<FB01>敏捷度增加了2！<FB00><BREAK>",
+        "<FB01>幸运度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8F2E",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる全ての祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了巨大的全部祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8F54",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>知 恵が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>\n<FB01>生命力が2増えた！<FB00><BREAK>\n<FB01>敏捷度が2増えた！<FB00><BREAK>\n<FB01>幸運度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>智力增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>",
+        "<FB01>生命力增加了2！<FB00><BREAK>",
+        "<FB01>敏捷度增加了2！<FB00><BREAK>",
+        "<FB01>幸运度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x8FF0",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる全ての祝福を受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了巨大的全部祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9016",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>知 恵が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>\n<FB01>生命力が2増えた！<FB00><BREAK>\n<FB01>敏捷度が2増えた！<FB00><BREAK>\n<FB01>幸運度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>智力增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>",
+        "<FB01>生命力增加了2！<FB00><BREAK>",
+        "<FB01>敏捷度增加了2！<FB00><BREAK>",
+        "<FB01>幸运度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x90B2",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる全ての祝福を受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了巨大的全部祝福。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x90D8",
+      "show": "screen",
+      "source": "<FB01>力 が2増えた！<FB00><BREAK>\n<FB01>知 恵が2増えた！<FB00><BREAK>\n<FB01>信仰心が2増えた！<FB00><BREAK>\n<FB01>生命力が2増えた！<FB00><BREAK>\n<FB01>敏捷度が2増えた！<FB00><BREAK>\n<FB01>幸運度が2増えた！<FB00><BREAK>",
+      "text": [
+        "<FB01>力量增加了2！<FB00><BREAK>",
+        "<FB01>智力增加了2！<FB00><BREAK>",
+        "<FB01>信仰心增加了2！<FB00><BREAK>",
+        "<FB01>生命力增加了2！<FB00><BREAK>",
+        "<FB01>敏捷度增加了2！<FB00><BREAK>",
+        "<FB01>幸运度增加了2！<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9174",
+      "show": "window",
+      "source": "僧侶「このカードの山に\n運命がひそんでいる」",
+      "text": [
+        "僧侣「这堆卡片里",
+        "潜藏着命运」"
+      ]
+    },
+    {
+      "offset": "0x91A4",
+      "show": "window",
+      "source": "僧侶「月の導きの下\nそなたの運命を引き当てよう」",
+      "text": [
+        "僧侣「月的引导之下",
+        "我来抽出你的命运」"
+      ]
+    },
+    {
+      "offset": "0x91D8",
+      "show": "screen",
+      "source": "僧侶は一枚のカードを引き当てた。\nそれは………<BREAK>",
+      "text": [
+        "僧侣抽出了一张卡片。",
+        "那是………<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x920A",
+      "show": "window",
+      "source": "僧侶「おや、おや\n物騒な………」",
+      "text": [
+        "僧侣「哎呀，哎呀",
+        "凶险………」"
+      ]
+    },
+    {
+      "offset": "0x922E",
+      "show": "window",
+      "source": "僧侶「これは<FB01>魔剣のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>魔剑的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x924E",
+      "show": "screen",
+      "source": "カードには、凶悪なフォルムの\n禍々しい剣が描かれていた。<BREAK>",
+      "text": [
+        "卡片上画着一柄剑，",
+        "外形凶恶，充满不祥。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x928A",
+      "show": "window",
+      "source": "僧侶「そなたは近く\n魔剣のうなりを聞くだろう」",
+      "text": [
+        "僧侣「你不久便会",
+        "听见魔剑的嗡鸣」"
+      ]
+    },
+    {
+      "offset": "0x92BC",
+      "show": "window",
+      "source": "僧侶「ただ、注意していれば\n逃れられるやもしれんがな」",
+      "text": [
+        "僧侣「不过，你若留心，",
+        "或许还能逃开」"
+      ]
+    },
+    {
+      "offset": "0x92F6",
+      "show": "screen",
+      "source": "僧侶はそう言うと\n目を三日月のように細めて笑った。<BREAK>",
+      "text": [
+        "僧侣说完，",
+        "便把眼睛眯成月牙，笑了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x932C",
+      "show": "window",
+      "source": "僧侶「おや、おや、ついていないな」",
+      "text": [
+        "僧侣「哎呀，哎呀，真不走运」"
+      ]
+    },
+    {
+      "offset": "0x9350",
+      "show": "window",
+      "source": "僧侶「これは<FB01>邪妖精のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>邪妖精的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x9372",
+      "show": "screen",
+      "source": "カードには、悩ましげな視線を\n投げかける、妖精の娘が描かれていた。<BREAK>",
+      "text": [
+        "卡片上画着一名妖精少女，",
+        "正投来惑人的目光。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x93B8",
+      "show": "window",
+      "source": "僧侶「そなたは近く\n邪妖精の唄を聞くだろう」",
+      "text": [
+        "僧侣「你不久便会",
+        "听见邪妖精的歌」"
+      ]
+    },
+    {
+      "offset": "0x93E8",
+      "show": "window",
+      "source": "僧侶「ただ、注意していれば\n逃れられるやもしれんがな」",
+      "text": [
+        "僧侣「不过，你若留心，",
+        "或许还能逃开」"
+      ]
+    },
+    {
+      "offset": "0x9422",
+      "show": "screen",
+      "source": "僧侶はそう言うと\n目を三日月のように細めて笑った。<BREAK>",
+      "text": [
+        "僧侣说完，",
+        "便把眼睛眯成月牙，笑了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9458",
+      "show": "window",
+      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "text": [
+        "僧侣「呵，这可",
+        "真是可怜………」"
+      ]
+    },
+    {
+      "offset": "0x9480",
+      "show": "window",
+      "source": "僧侶「これは<FB01>逆ドワーフのカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>逆位矮人的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x94A6",
+      "show": "screen",
+      "source": "カードには、おれた戦斧に寄りかかる\nドワーフの姿が逆さに描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着矮人倚着折断的战斧，",
+        "身影是倒着画的。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x94F0",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>力の災い<FB00>を導く事に\nなっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>力量的灾祸<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x953E",
+      "show": "screen",
+      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受灾祸？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x957E",
+      "show": "screen",
+      "source": "<FFF0>は\n力の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了力量的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x959A",
+      "show": "screen",
+      "source": "<FB01>力が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x95B0",
+      "show": "screen",
+      "source": "<FFF1>は\n力の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了力量的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x95CC",
+      "show": "screen",
+      "source": "<FB01>力が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x95E2",
+      "show": "screen",
+      "source": "<FFF2>は\n力の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了力量的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x95FE",
+      "show": "screen",
+      "source": "<FB01>力が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9614",
+      "show": "screen",
+      "source": "<FFF3>は\n力の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了力量的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9630",
+      "show": "screen",
+      "source": "<FB01>力が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9646",
+      "show": "screen",
+      "source": "<FFF4>は\n力の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了力量的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9662",
+      "show": "screen",
+      "source": "<FB01>力が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9678",
+      "show": "screen",
+      "source": "<FFF5>は\n力の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了力量的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9694",
+      "show": "screen",
+      "source": "<FB01>力が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x96AA",
+      "show": "screen",
+      "source": "<PAGE>は\n力の災いを受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了力量的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x96C6",
+      "show": "screen",
+      "source": "<FB01>力が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x96DC",
+      "show": "window",
+      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "text": [
+        "僧侣「呵，这可",
+        "真是可怜………」"
+      ]
+    },
+    {
+      "offset": "0x9704",
+      "show": "window",
+      "source": "僧侶「これは<FB01>逆エルフのカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>逆位精灵的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x9728",
+      "show": "screen",
+      "source": "カードには、髪を振り乱して\n絶叫するやつれたエルフが\n逆さに描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着披头散发、",
+        "枯瘦尖叫的精灵，",
+        "身影倒着画下。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9776",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>知恵の災い<FB00>を導く事に\nなっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>智力的灾祸<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x97C6",
+      "show": "screen",
+      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受灾祸？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x9806",
+      "show": "screen",
+      "source": "<FFF0>は\n知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9824",
+      "show": "screen",
+      "source": "<FB01>知恵が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x983C",
+      "show": "screen",
+      "source": "<FFF1>は\n知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x985A",
+      "show": "screen",
+      "source": "<FB01>知恵が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9872",
+      "show": "screen",
+      "source": "<FFF2>は\n知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9890",
+      "show": "screen",
+      "source": "<FB01>知恵が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x98A8",
+      "show": "screen",
+      "source": "<FFF3>は\n知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x98C6",
+      "show": "screen",
+      "source": "<FB01>知恵が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x98DE",
+      "show": "screen",
+      "source": "<FFF4>は\n知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x98FC",
+      "show": "screen",
+      "source": "<FB01>知恵が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9914",
+      "show": "screen",
+      "source": "<FFF5>は\n知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9932",
+      "show": "screen",
+      "source": "<FB01>知恵が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x994A",
+      "show": "screen",
+      "source": "<PAGE>は\n知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9968",
+      "show": "screen",
+      "source": "<FB01>知恵が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9980",
+      "show": "window",
+      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "text": [
+        "僧侣「呵，这可",
+        "真是可怜………」"
+      ]
+    },
+    {
+      "offset": "0x99A8",
+      "show": "window",
+      "source": "僧侶「これは<FB01>逆ノームのカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>逆位侏儒的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x99CC",
+      "show": "screen",
+      "source": "カードには、神像に刃を向ける\nノームの姿が逆さに描いてあった。<BREAK>",
+      "text": [
+        "卡片上，侏儒把刃指向神像，",
+        "身影倒着画下。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9A0E",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>信仰の災い<FB00>を導く事に\nなっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>信仰的灾祸<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x9A5E",
+      "show": "screen",
+      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受灾祸？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x9A9E",
+      "show": "screen",
+      "source": "<FFF0>は\n信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9ABC",
+      "show": "screen",
+      "source": "<FB01>信仰心が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9AD6",
+      "show": "screen",
+      "source": "<FFF1>は\n信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9AF4",
+      "show": "screen",
+      "source": "<FB01>信仰心が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9B0E",
+      "show": "screen",
+      "source": "<FFF2>は\n信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9B2C",
+      "show": "screen",
+      "source": "<FB01>信仰心が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9B46",
+      "show": "screen",
+      "source": "<FFF3>は\n信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9B64",
+      "show": "screen",
+      "source": "<FB01>信仰心が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9B7E",
+      "show": "screen",
+      "source": "<FFF4>は\n信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9B9C",
+      "show": "screen",
+      "source": "<FB01>信仰心が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9BB6",
+      "show": "screen",
+      "source": "<FFF5>は\n信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9BD4",
+      "show": "screen",
+      "source": "<FB01>信仰心が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9BEE",
+      "show": "screen",
+      "source": "<PAGE>は\n信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9C0C",
+      "show": "screen",
+      "source": "<FB01>信仰心が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9C26",
+      "show": "window",
+      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "text": [
+        "僧侣「呵，这可",
+        "真是可怜………」"
+      ]
+    },
+    {
+      "offset": "0x9C4E",
+      "show": "window",
+      "source": "僧侶「これは<FB01>逆人間のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>逆位人类的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x9C70",
+      "show": "screen",
+      "source": "カードには、病に苦しみもだえる\n人間の姿が逆さに描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着因病痛挣扎的",
+        "人类，身影倒着画下。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9CB2",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>生命の災い<FB00>を導く事に\nなっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>生命的灾祸<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x9D02",
+      "show": "screen",
+      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受灾祸？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x9D42",
+      "show": "screen",
+      "source": "<FFF0>は\n生命の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了生命的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9D60",
+      "show": "screen",
+      "source": "<FB01>生命力が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>生命力减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9D7A",
+      "show": "screen",
+      "source": "<FFF1>は\n生命の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了生命的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9D98",
+      "show": "screen",
+      "source": "<FB01>生命力が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>生命力减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9DB2",
+      "show": "screen",
+      "source": "<FFF2>は\n生命の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了生命的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9DD0",
+      "show": "screen",
+      "source": "<FB01>生命力が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>生命力减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9DEA",
+      "show": "screen",
+      "source": "<FFF3>は\n生命の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了生命的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9E08",
+      "show": "screen",
+      "source": "<FB01>生命力が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>生命力减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9E22",
+      "show": "screen",
+      "source": "<FFF4>は\n生命の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了生命的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9E40",
+      "show": "screen",
+      "source": "<FB01>生命力が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>生命力减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9E5A",
+      "show": "screen",
+      "source": "<FFF5>は\n生命の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了生命的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9E78",
+      "show": "screen",
+      "source": "<FB01>生命力が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>生命力减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9E92",
+      "show": "screen",
+      "source": "<PAGE>は\n生命の災いを受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了生命的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9EB0",
+      "show": "screen",
+      "source": "<FB01>生命力が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>生命力减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9ECA",
+      "show": "window",
+      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "text": [
+        "僧侣「呵，这可",
+        "真是可怜………」"
+      ]
+    },
+    {
+      "offset": "0x9EF2",
+      "show": "window",
+      "source": "僧侶「これは<FB01>逆ホビットのカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>逆位霍比特的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x9F18",
+      "show": "screen",
+      "source": "カードには、クサリに捕われ涙する\nホビットが逆さに描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着被锁链缚住、",
+        "流泪的霍比特，身影倒着画下。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0x9F5C",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>敏捷の災い<FB00>を導く事に\nなっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>敏捷的灾祸<FB00>」"
+      ]
+    },
+    {
+      "offset": "0x9FAC",
+      "show": "screen",
+      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受灾祸？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0x9FEC",
+      "show": "screen",
+      "source": "<FFF0>は\n敏捷の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了敏捷的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA00A",
+      "show": "screen",
+      "source": "<FB01>敏捷度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA024",
+      "show": "screen",
+      "source": "<FFF1>は\n敏捷の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了敏捷的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA042",
+      "show": "screen",
+      "source": "<FB01>敏捷度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA05C",
+      "show": "screen",
+      "source": "<FFF2>は\n敏捷の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了敏捷的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA07A",
+      "show": "screen",
+      "source": "<FB01>敏捷度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA094",
+      "show": "screen",
+      "source": "<FFF3>は\n敏捷の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了敏捷的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA0B2",
+      "show": "screen",
+      "source": "<FB01>敏捷度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA0CC",
+      "show": "screen",
+      "source": "<FFF4>は\n敏捷の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了敏捷的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA0EA",
+      "show": "screen",
+      "source": "<FB01>敏捷度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA104",
+      "show": "screen",
+      "source": "<FFF5>は\n敏捷の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了敏捷的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA122",
+      "show": "screen",
+      "source": "<FB01>敏捷度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA13C",
+      "show": "screen",
+      "source": "<PAGE>は\n敏捷の災いを受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了敏捷的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA15A",
+      "show": "screen",
+      "source": "<FB01>敏捷度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA174",
+      "show": "window",
+      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "text": [
+        "僧侣「呵，这可",
+        "真是可怜………」"
+      ]
+    },
+    {
+      "offset": "0xA19C",
+      "show": "window",
+      "source": "僧侶「これは<FB01>逆五種族のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>逆位五种族的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xA1C0",
+      "show": "screen",
+      "source": "カードには、いがみ合う\n人間、エルフ、ドワーフ\nノーム、ホビットの姿が\n描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着互相争吵的",
+        "人类、精灵、矮人、",
+        "侏儒与霍比特的身影",
+        "都画在上面。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA21A",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>不吉なる災い<FB00>を導く事に\nなっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>不祥的灾祸<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xA26C",
+      "show": "screen",
+      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受灾祸？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0xA2AC",
+      "show": "screen",
+      "source": "<FFF0>は\n不吉なる災いを受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了不祥的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA2CC",
+      "show": "screen",
+      "source": "<FB01>幸運度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>幸运度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA2E6",
+      "show": "screen",
+      "source": "<FFF1>は\n不吉なる災いを受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了不祥的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA306",
+      "show": "screen",
+      "source": "<FB01>幸運度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>幸运度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA320",
+      "show": "screen",
+      "source": "<FFF2>は\n不吉なる災いを受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了不祥的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA340",
+      "show": "screen",
+      "source": "<FB01>幸運度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>幸运度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA35A",
+      "show": "screen",
+      "source": "<FFF3>は\n不吉なる災いを受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了不祥的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA37A",
+      "show": "screen",
+      "source": "<FB01>幸運度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>幸运度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA394",
+      "show": "screen",
+      "source": "<FFF4>は\n不吉なる災いを受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了不祥的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA3B4",
+      "show": "screen",
+      "source": "<FB01>幸運度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>幸运度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA3CE",
+      "show": "screen",
+      "source": "<FFF5>は\n不吉なる災いを受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了不祥的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA3EE",
+      "show": "screen",
+      "source": "<FB01>幸運度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>幸运度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA408",
+      "show": "screen",
+      "source": "<PAGE>は\n不吉なる災いを受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了不祥的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA428",
+      "show": "screen",
+      "source": "<FB01>幸運度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>幸运度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA442",
+      "show": "window",
+      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "text": [
+        "僧侣「呵，这可",
+        "真是可怜………」"
+      ]
+    },
+    {
+      "offset": "0xA46A",
+      "show": "window",
+      "source": "僧侶「これは<FB01>逆戦士のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>逆位战士的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xA48C",
+      "show": "screen",
+      "source": "カードには、傷つき崩れ落ちる\n戦士の姿が逆さに描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着伤重瘫倒的",
+        "战士，身影倒着画下。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA4CC",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる力の災い<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>伟大力量的灾祸<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xA522",
+      "show": "screen",
+      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受灾祸？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0xA562",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる力の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了伟大力量的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA586",
+      "show": "screen",
+      "source": "<FB01>力が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA59C",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる力の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了伟大力量的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA5C0",
+      "show": "screen",
+      "source": "<FB01>力が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA5D6",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる力の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了伟大力量的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA5FA",
+      "show": "screen",
+      "source": "<FB01>力が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA610",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる力の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了伟大力量的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA634",
+      "show": "screen",
+      "source": "<FB01>力が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA64A",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる力の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了伟大力量的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA66E",
+      "show": "screen",
+      "source": "<FB01>力が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA684",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる力の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了伟大力量的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA6A8",
+      "show": "screen",
+      "source": "<FB01>力が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA6BE",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる力の災いを受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了伟大力量的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA6E2",
+      "show": "screen",
+      "source": "<FB01>力が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA6F8",
+      "show": "window",
+      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "text": [
+        "僧侣「呵，这可",
+        "真是可怜………」"
+      ]
+    },
+    {
+      "offset": "0xA720",
+      "show": "window",
+      "source": "僧侶「これは<FB01>逆魔術師のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>逆位魔法师的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xA744",
+      "show": "screen",
+      "source": "カードには、魔法を封じられた\n魔術師の姿が逆さに描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着魔法被封的",
+        "魔法师，身影倒着画下。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA786",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる知恵の災い<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>伟大智力的灾祸<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xA7DE",
+      "show": "screen",
+      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受灾祸？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0xA81E",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了伟大智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA844",
+      "show": "screen",
+      "source": "<FB01>知恵が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA85C",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了伟大智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA882",
+      "show": "screen",
+      "source": "<FB01>知恵が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA89A",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了伟大智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA8C0",
+      "show": "screen",
+      "source": "<FB01>知恵が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA8D8",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了伟大智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA8FE",
+      "show": "screen",
+      "source": "<FB01>知恵が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA916",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了伟大智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA93C",
+      "show": "screen",
+      "source": "<FB01>知恵が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA954",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了伟大智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA97A",
+      "show": "screen",
+      "source": "<FB01>知恵が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA992",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了伟大智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA9B8",
+      "show": "screen",
+      "source": "<FB01>知恵が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xA9D0",
+      "show": "window",
+      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "text": [
+        "僧侣「呵，这可",
+        "真是可怜………」"
+      ]
+    },
+    {
+      "offset": "0xA9F8",
+      "show": "window",
+      "source": "僧侶「これは<FB01>逆僧侶のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>逆位僧侣的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xAA1A",
+      "show": "screen",
+      "source": "カードには、死者を灰と化す\n僧侶の姿が逆さに描いてあった。<BREAK>",
+      "text": [
+        "卡片上，僧侣把死者",
+        "化为灰烬，倒着画下。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAA58",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる信仰の災い<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>伟大信仰的灾祸<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xAAB0",
+      "show": "screen",
+      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受灾祸？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0xAAF0",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了伟大信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAB16",
+      "show": "screen",
+      "source": "<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAB30",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了伟大信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAB56",
+      "show": "screen",
+      "source": "<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAB70",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了伟大信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAB96",
+      "show": "screen",
+      "source": "<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xABB0",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了伟大信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xABD6",
+      "show": "screen",
+      "source": "<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xABF0",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了伟大信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAC16",
+      "show": "screen",
+      "source": "<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAC30",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了伟大信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAC56",
+      "show": "screen",
+      "source": "<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAC70",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了伟大信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAC96",
+      "show": "screen",
+      "source": "<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xACB0",
+      "show": "window",
+      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "text": [
+        "僧侣「呵，这可",
+        "真是可怜………」"
+      ]
+    },
+    {
+      "offset": "0xACD8",
+      "show": "window",
+      "source": "僧侶「これは<FB01>逆盗賊のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>逆位盗贼的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xACFA",
+      "show": "screen",
+      "source": "カードには、宝箱の罠を発動させる\n盗賊の姿が、逆さに描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着触发宝箱",
+        "陷阱的盗贼，身影倒着画下。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAD40",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる敏捷の災い<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>伟大敏捷的灾祸<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xAD98",
+      "show": "screen",
+      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受灾祸？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0xADD8",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる敏捷の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了伟大敏捷的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xADFE",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAE18",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる敏捷の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了伟大敏捷的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAE3E",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAE58",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる敏捷の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了伟大敏捷的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAE7E",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAE98",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる敏捷の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了伟大敏捷的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAEBE",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAED8",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる敏捷の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了伟大敏捷的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAEFE",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAF18",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる敏捷の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了伟大敏捷的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAF3E",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAF58",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる敏捷の災いを受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了伟大敏捷的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAF7E",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xAF98",
+      "show": "window",
+      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "text": [
+        "僧侣「呵，这可",
+        "真是可怜………」"
+      ]
+    },
+    {
+      "offset": "0xAFC0",
+      "show": "window",
+      "source": "僧侶「これは<FB01>逆司教のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>逆位主教的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xAFE2",
+      "show": "screen",
+      "source": "カードには、呪いのアイテムに\n苦しめられる司教の姿が\n逆さに描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着主教，",
+        "被诅咒的物品折磨，",
+        "身影倒着画下。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB030",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる知恵と信仰の災い<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>伟大智力与信仰的灾祸<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xB08E",
+      "show": "screen",
+      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受灾祸？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0xB0CE",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる知恵と信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了伟大智力与信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB0FA",
+      "show": "screen",
+      "source": "<FB01>知 恵が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB12E",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる知恵と信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了伟大智力与信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB15A",
+      "show": "screen",
+      "source": "<FB01>知 恵が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB18E",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる知恵と信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了伟大智力与信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB1BA",
+      "show": "screen",
+      "source": "<FB01>知 恵が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB1EE",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる知恵と信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了伟大智力与信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB21A",
+      "show": "screen",
+      "source": "<FB01>知 恵が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB24E",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる知恵と信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了伟大智力与信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB27A",
+      "show": "screen",
+      "source": "<FB01>知 恵が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB2AE",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる知恵と信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了伟大智力与信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB2DA",
+      "show": "screen",
+      "source": "<FB01>知 恵が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB30E",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる知恵と信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了伟大智力与信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB33A",
+      "show": "screen",
+      "source": "<FB01>知 恵が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>智力减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB36E",
+      "show": "window",
+      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "text": [
+        "僧侣「呵，这可",
+        "真是可怜………」"
+      ]
+    },
+    {
+      "offset": "0xB396",
+      "show": "window",
+      "source": "僧侶「これは<FB01>逆侍のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>逆位武士的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xB3B6",
+      "show": "screen",
+      "source": "カードには、人斬りと化した\n鬼のような形相の侍が\n逆さに描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着化作杀人者，",
+        "面容如鬼的武士，",
+        "身影倒着画下。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB400",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる力と知恵の災い<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>伟大力量与智力的灾祸<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xB45C",
+      "show": "screen",
+      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受灾祸？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0xB49C",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる力と知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了伟大力量与智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB4C6",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>知 恵が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>智力减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB4FA",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる力と知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了伟大力量与智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB524",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>知 恵が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>智力减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB558",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる力と知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了伟大力量与智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB582",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>知 恵が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>智力减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB5B6",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる力と知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了伟大力量与智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB5E0",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>知 恵が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>智力减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB614",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる力と知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了伟大力量与智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB63E",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>知 恵が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>智力减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB672",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる力と知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了伟大力量与智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB69C",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>知 恵が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>智力减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB6D0",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる力と知恵の災いを受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了伟大力量与智力的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB6FA",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>知 恵が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>智力减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB72E",
+      "show": "window",
+      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "text": [
+        "僧侣「呵，这可",
+        "真是可怜………」"
+      ]
+    },
+    {
+      "offset": "0xB756",
+      "show": "window",
+      "source": "僧侶「これは<FB01>逆騎士のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>逆位骑士的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xB778",
+      "show": "screen",
+      "source": "カードには、悪魔にひれ伏す\n騎士が逆さに描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着向恶魔跪伏",
+        "的骑士，身影倒着画下。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB7B2",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる力と信仰の災い<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>伟大力量与信仰的灾祸<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xB80E",
+      "show": "screen",
+      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受灾祸？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0xB84E",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる力と信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了伟大力量与信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB878",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB8AC",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる力と信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了伟大力量与信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB8D6",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB90A",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる力と信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了伟大力量与信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB934",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB968",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる力と信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了伟大力量与信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB992",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB9C6",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる力と信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了伟大力量与信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xB9F0",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBA24",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる力と信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了伟大力量与信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBA4E",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBA82",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる力と信仰の災いを受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了伟大力量与信仰的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBAAC",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBAE0",
+      "show": "window",
+      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "text": [
+        "僧侣「呵，这可",
+        "真是可怜………」"
+      ]
+    },
+    {
+      "offset": "0xBB08",
+      "show": "window",
+      "source": "僧侶「これは<FB01>逆忍者のカード<FB00>」",
+      "text": [
+        "僧侣「这是<FB01>逆位忍者的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xBB2A",
+      "show": "screen",
+      "source": "カードには、日の光の下に\nさらされた忍者の姿が\n逆さに描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着忍者，",
+        "暴露在日光之下，",
+        "身影倒着画下。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBB72",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる敏捷と不運の災い<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>伟大敏捷与厄运的灾祸<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xBBD0",
+      "show": "screen",
+      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受灾祸？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0xBC10",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる敏捷と不運の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了伟大敏捷与厄运的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBC3C",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2減った…<FB00><BREAK>\n<FB01>幸運度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了2…<FB00><BREAK>",
+        "<FB01>幸运度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBC70",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる敏捷と不運の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了伟大敏捷与厄运的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBC9C",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2減った…<FB00><BREAK>\n<FB01>幸運度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了2…<FB00><BREAK>",
+        "<FB01>幸运度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBCD0",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる敏捷と不運の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了伟大敏捷与厄运的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBCFC",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2減った…<FB00><BREAK>\n<FB01>幸運度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了2…<FB00><BREAK>",
+        "<FB01>幸运度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBD30",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる敏捷と不運の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了伟大敏捷与厄运的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBD5C",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2減った…<FB00><BREAK>\n<FB01>幸運度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了2…<FB00><BREAK>",
+        "<FB01>幸运度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBD90",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる敏捷と不運の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了伟大敏捷与厄运的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBDBC",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2減った…<FB00><BREAK>\n<FB01>幸運度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了2…<FB00><BREAK>",
+        "<FB01>幸运度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBDF0",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる敏捷と不運の災いを受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了伟大敏捷与厄运的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBE1C",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2減った…<FB00><BREAK>\n<FB01>幸運度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了2…<FB00><BREAK>",
+        "<FB01>幸运度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBE50",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる敏捷と不運の災いを受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了伟大敏捷与厄运的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBE7C",
+      "show": "screen",
+      "source": "<FB01>敏捷度が2減った…<FB00><BREAK>\n<FB01>幸運度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>敏捷度减少了2…<FB00><BREAK>",
+        "<FB01>幸运度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBEB0",
+      "show": "window",
+      "source": "僧侶「ほう、このカードが\n出てくるとは運のない」",
+      "text": [
+        "僧侣「呵，这张牌",
+        "竟会抽到，真不走运」"
+      ]
+    },
+    {
+      "offset": "0xBEE4",
+      "show": "window",
+      "source": "僧侶「これは\n<FB01>夢魔のカード<FB00>」",
+      "text": [
+        "僧侣「这是",
+        "<FB01>梦魔的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xBF08",
+      "show": "screen",
+      "source": "カードには、もやの向こうで\n無気味な笑みを浮かべる\n夢魔の姿が描いてあった。<BREAK>",
+      "text": [
+        "卡片上画着梦魔，",
+        "在雾的那头",
+        "浮起阴森的笑。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xBF58",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>全ての災い<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>全部的灾祸<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xBFA8",
+      "show": "screen",
+      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受灾祸？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0xBFE8",
+      "show": "screen",
+      "source": "<FFF0>は\n全ての災いを受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了全部的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC006",
+      "show": "screen",
+      "source": "<FB01>力 が1減った…<FB00><BREAK>\n<FB01>知 恵が1減った…<FB00><BREAK>\n<FB01>信仰心が1減った…<FB00><BREAK>\n<FB01>生命力が1減った…<FB00><BREAK>\n<FB01>敏捷度が1減った…<FB00><BREAK>\n<FB01>幸運度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了1…<FB00><BREAK>",
+        "<FB01>智力减少了1…<FB00><BREAK>",
+        "<FB01>信仰心减少了1…<FB00><BREAK>",
+        "<FB01>生命力减少了1…<FB00><BREAK>",
+        "<FB01>敏捷度减少了1…<FB00><BREAK>",
+        "<FB01>幸运度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC0A2",
+      "show": "screen",
+      "source": "<FFF1>は\n全ての災いを受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了全部的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC0C0",
+      "show": "screen",
+      "source": "<FB01>力 が1減った…<FB00><BREAK>\n<FB01>知 恵が1減った…<FB00><BREAK>\n<FB01>信仰心が1減った…<FB00><BREAK>\n<FB01>生命力が1減った…<FB00><BREAK>\n<FB01>敏捷度が1減った…<FB00><BREAK>\n<FB01>幸運度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了1…<FB00><BREAK>",
+        "<FB01>智力减少了1…<FB00><BREAK>",
+        "<FB01>信仰心减少了1…<FB00><BREAK>",
+        "<FB01>生命力减少了1…<FB00><BREAK>",
+        "<FB01>敏捷度减少了1…<FB00><BREAK>",
+        "<FB01>幸运度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC15C",
+      "show": "screen",
+      "source": "<FFF2>は\n全ての災いを受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了全部的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC17A",
+      "show": "screen",
+      "source": "<FB01>力 が1減った…<FB00><BREAK>\n<FB01>知 恵が1減った…<FB00><BREAK>\n<FB01>信仰心が1減った…<FB00><BREAK>\n<FB01>生命力が1減った…<FB00><BREAK>\n<FB01>敏捷度が1減った…<FB00><BREAK>\n<FB01>幸運度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了1…<FB00><BREAK>",
+        "<FB01>智力减少了1…<FB00><BREAK>",
+        "<FB01>信仰心减少了1…<FB00><BREAK>",
+        "<FB01>生命力减少了1…<FB00><BREAK>",
+        "<FB01>敏捷度减少了1…<FB00><BREAK>",
+        "<FB01>幸运度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC216",
+      "show": "screen",
+      "source": "<FFF3>は\n全ての災いを受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了全部的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC234",
+      "show": "screen",
+      "source": "<FB01>力 が1減った…<FB00><BREAK>\n<FB01>知 恵が1減った…<FB00><BREAK>\n<FB01>信仰心が1減った…<FB00><BREAK>\n<FB01>生命力が1減った…<FB00><BREAK>\n<FB01>敏捷度が1減った…<FB00><BREAK>\n<FB01>幸運度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了1…<FB00><BREAK>",
+        "<FB01>智力减少了1…<FB00><BREAK>",
+        "<FB01>信仰心减少了1…<FB00><BREAK>",
+        "<FB01>生命力减少了1…<FB00><BREAK>",
+        "<FB01>敏捷度减少了1…<FB00><BREAK>",
+        "<FB01>幸运度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC2D0",
+      "show": "screen",
+      "source": "<FFF4>は\n全ての災いを受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了全部的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC2EE",
+      "show": "screen",
+      "source": "<FB01>力 が1減った…<FB00><BREAK>\n<FB01>知 恵が1減った…<FB00><BREAK>\n<FB01>信仰心が1減った…<FB00><BREAK>\n<FB01>生命力が1減った…<FB00><BREAK>\n<FB01>敏捷度が1減った…<FB00><BREAK>\n<FB01>幸運度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了1…<FB00><BREAK>",
+        "<FB01>智力减少了1…<FB00><BREAK>",
+        "<FB01>信仰心减少了1…<FB00><BREAK>",
+        "<FB01>生命力减少了1…<FB00><BREAK>",
+        "<FB01>敏捷度减少了1…<FB00><BREAK>",
+        "<FB01>幸运度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC38A",
+      "show": "screen",
+      "source": "<FFF5>は\n全ての災いを受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了全部的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC3A8",
+      "show": "screen",
+      "source": "<FB01>力 が1減った…<FB00><BREAK>\n<FB01>知 恵が1減った…<FB00><BREAK>\n<FB01>信仰心が1減った…<FB00><BREAK>\n<FB01>生命力が1減った…<FB00><BREAK>\n<FB01>敏捷度が1減った…<FB00><BREAK>\n<FB01>幸運度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了1…<FB00><BREAK>",
+        "<FB01>智力减少了1…<FB00><BREAK>",
+        "<FB01>信仰心减少了1…<FB00><BREAK>",
+        "<FB01>生命力减少了1…<FB00><BREAK>",
+        "<FB01>敏捷度减少了1…<FB00><BREAK>",
+        "<FB01>幸运度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC444",
+      "show": "screen",
+      "source": "<PAGE>は\n全ての災いを受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了全部的灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC462",
+      "show": "screen",
+      "source": "<FB01>力 が1減った…<FB00><BREAK>\n<FB01>知 恵が1減った…<FB00><BREAK>\n<FB01>信仰心が1減った…<FB00><BREAK>\n<FB01>生命力が1減った…<FB00><BREAK>\n<FB01>敏捷度が1減った…<FB00><BREAK>\n<FB01>幸運度が1減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了1…<FB00><BREAK>",
+        "<FB01>智力减少了1…<FB00><BREAK>",
+        "<FB01>信仰心减少了1…<FB00><BREAK>",
+        "<FB01>生命力减少了1…<FB00><BREAK>",
+        "<FB01>敏捷度减少了1…<FB00><BREAK>",
+        "<FB01>幸运度减少了1…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC4FE",
+      "show": "window",
+      "source": "僧侶「何と不吉な！」",
+      "text": [
+        "僧侣「真是不祥！」"
+      ]
+    },
+    {
+      "offset": "0xC514",
+      "show": "window",
+      "source": "僧侶「これは\n<FB01>死神のカード<FB00>」",
+      "text": [
+        "僧侣「这是",
+        "<FB01>死神的卡片<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xC538",
+      "show": "screen",
+      "source": "カードには、禍々しい剣を\n振りかざし、人の魂を刈り集める\n死神の姿が描かれていた。<BREAK>",
+      "text": [
+        "卡片上画着死神，",
+        "高举不祥之剑，",
+        "收割人的灵魂。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC58E",
+      "show": "window",
+      "source": "僧侶「このカードを引いた者には\n私が<FB01>大いなる全ての災い<FB00>を\n導く事になっておる」",
+      "text": [
+        "僧侣「抽到这张卡片的人，",
+        "便由我引来",
+        "<FB01>巨大的全部灾祸<FB00>」"
+      ]
+    },
+    {
+      "offset": "0xC5E6",
+      "show": "screen",
+      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "text": [
+        "谁来接受灾祸？",
+        "",
+        "<FFF0>",
+        "<FFF1>",
+        "<FFF2>",
+        "<FFF3>",
+        "<FFF4>",
+        "<FFF5>",
+        ""
+      ]
+    },
+    {
+      "offset": "0xC626",
+      "show": "screen",
+      "source": "<FFF0>は\n大いなる全ての災いを受けた。<BREAK>",
+      "text": [
+        "<FFF0>",
+        "受到了巨大的全部灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC64C",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>知 恵が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>\n<FB01>生命力が2減った…<FB00><BREAK>\n<FB01>敏捷度が2減った…<FB00><BREAK>\n<FB01>幸運度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>智力减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>",
+        "<FB01>生命力减少了2…<FB00><BREAK>",
+        "<FB01>敏捷度减少了2…<FB00><BREAK>",
+        "<FB01>幸运度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC6E8",
+      "show": "screen",
+      "source": "<FFF1>は\n大いなる全ての災いを受けた。<BREAK>",
+      "text": [
+        "<FFF1>",
+        "受到了巨大的全部灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC70E",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>知 恵が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>\n<FB01>生命力が2減った…<FB00><BREAK>\n<FB01>敏捷度が2減った…<FB00><BREAK>\n<FB01>幸運度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>智力减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>",
+        "<FB01>生命力减少了2…<FB00><BREAK>",
+        "<FB01>敏捷度减少了2…<FB00><BREAK>",
+        "<FB01>幸运度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC7AA",
+      "show": "screen",
+      "source": "<FFF2>は\n大いなる全ての災いを受けた。<BREAK>",
+      "text": [
+        "<FFF2>",
+        "受到了巨大的全部灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC7D0",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>知 恵が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>\n<FB01>生命力が2減った…<FB00><BREAK>\n<FB01>敏捷度が2減った…<FB00><BREAK>\n<FB01>幸運度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>智力减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>",
+        "<FB01>生命力减少了2…<FB00><BREAK>",
+        "<FB01>敏捷度减少了2…<FB00><BREAK>",
+        "<FB01>幸运度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC86C",
+      "show": "screen",
+      "source": "<FFF3>は\n大いなる全ての災いを受けた。<BREAK>",
+      "text": [
+        "<FFF3>",
+        "受到了巨大的全部灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC892",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>知 恵が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>\n<FB01>生命力が2減った…<FB00><BREAK>\n<FB01>敏捷度が2減った…<FB00><BREAK>\n<FB01>幸運度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>智力减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>",
+        "<FB01>生命力减少了2…<FB00><BREAK>",
+        "<FB01>敏捷度减少了2…<FB00><BREAK>",
+        "<FB01>幸运度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC92E",
+      "show": "screen",
+      "source": "<FFF4>は\n大いなる全ての災いを受けた。<BREAK>",
+      "text": [
+        "<FFF4>",
+        "受到了巨大的全部灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC954",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>知 恵が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>\n<FB01>生命力が2減った…<FB00><BREAK>\n<FB01>敏捷度が2減った…<FB00><BREAK>\n<FB01>幸運度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>智力减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>",
+        "<FB01>生命力减少了2…<FB00><BREAK>",
+        "<FB01>敏捷度减少了2…<FB00><BREAK>",
+        "<FB01>幸运度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xC9F0",
+      "show": "screen",
+      "source": "<FFF5>は\n大いなる全ての災いを受けた。<BREAK>",
+      "text": [
+        "<FFF5>",
+        "受到了巨大的全部灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xCA16",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>知 恵が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>\n<FB01>生命力が2減った…<FB00><BREAK>\n<FB01>敏捷度が2減った…<FB00><BREAK>\n<FB01>幸運度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>智力减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>",
+        "<FB01>生命力减少了2…<FB00><BREAK>",
+        "<FB01>敏捷度减少了2…<FB00><BREAK>",
+        "<FB01>幸运度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xCAB2",
+      "show": "screen",
+      "source": "<PAGE>は\n大いなる全ての災いを受けた。<BREAK>",
+      "text": [
+        "<PAGE>",
+        "受到了巨大的全部灾祸。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xCAD8",
+      "show": "screen",
+      "source": "<FB01>力 が2減った…<FB00><BREAK>\n<FB01>知 恵が2減った…<FB00><BREAK>\n<FB01>信仰心が2減った…<FB00><BREAK>\n<FB01>生命力が2減った…<FB00><BREAK>\n<FB01>敏捷度が2減った…<FB00><BREAK>\n<FB01>幸運度が2減った…<FB00><BREAK>",
+      "text": [
+        "<FB01>力量减少了2…<FB00><BREAK>",
+        "<FB01>智力减少了2…<FB00><BREAK>",
+        "<FB01>信仰心减少了2…<FB00><BREAK>",
+        "<FB01>生命力减少了2…<FB00><BREAK>",
+        "<FB01>敏捷度减少了2…<FB00><BREAK>",
+        "<FB01>幸运度减少了2…<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xCB74",
+      "show": "screen",
+      "source": "闇の中に、異形の僧侶が立っていた。<BREAK>",
+      "text": [
+        "黑暗中，立着一名异形的僧侣。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xCB9A",
+      "show": "screen",
+      "source": "彼の唇が、笑みの形に持ち上がる。<BREAK>",
+      "text": [
+        "他的嘴唇，弯成了笑容。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xCBBE",
+      "show": "window",
+      "source": "僧侶「月光の導きの下\n私とそなたは出会った」",
+      "text": [
+        "僧侣「在月光的引导下",
+        "我与你相遇了」"
+      ]
+    },
+    {
+      "offset": "0xCBEE",
+      "show": "window",
+      "source": "僧侶「私の占いは\nそなたに祝福と\n不運をもたらすだろう」",
+      "text": [
+        "僧侣「我的占卜",
+        "会给你祝福",
+        "也会给你厄运」"
+      ]
+    },
+    {
+      "offset": "0xCC2C",
+      "show": "screen",
+      "source": "占いを頼みますか？\n\nは い\nいいえ\n",
+      "text": [
+        "要请他占卜吗？",
+        "",
+        "是",
+        "否",
+        ""
+      ]
+    },
+    {
+      "offset": "0xCC58",
+      "show": "window",
+      "source": "僧侶「では、月光が次の機会を\n導くのを待つとしよう」",
+      "text": [
+        "僧侣「那么，就等着月光",
+        "指引下一次机会吧」"
+      ]
+    },
+    {
+      "offset": "0xCC90",
+      "show": "window",
+      "source": "僧侶「よかろう」",
+      "text": [
+        "僧侣「也好」"
+      ]
+    },
+    {
+      "offset": "0xCCA2",
+      "show": "window",
+      "source": "僧侶「では、月光にさらした\nこのカードの山から\nこれはと思うものを選ぶのだ」",
+      "text": [
+        "僧侣「那么，从晒过月光的",
+        "这些牌堆里",
+        "选出你看中的那一堆」"
+      ]
+    },
+    {
+      "offset": "0xCCF4",
+      "show": "screen",
+      "source": "どの山を選びますか？\n\n右の山\n真中の山\n左の山\n",
+      "text": [
+        "要选哪一堆？",
+        "",
+        "右边那堆",
+        "中间那堆",
+        "左边那堆",
+        ""
+      ]
+    },
+    {
+      "offset": "0xCD32",
+      "show": "window",
+      "source": "僧侶「このカードの山に\n運命がひそんでいる」",
+      "text": [
+        "僧侣「这一堆牌里",
+        "潜藏着命运」"
+      ]
+    },
+    {
+      "offset": "0xCD62",
+      "show": "window",
+      "source": "僧侶「月の導きの下\nそなたの運命を引き当てよう」",
+      "text": [
+        "僧侣「在月亮的引导下",
+        "我来抽出你的命运」"
+      ]
+    },
+    {
+      "offset": "0xCD96",
+      "show": "screen",
+      "source": "僧侶は一枚のカードを引き当てた。\nそれは………<BREAK>",
+      "text": [
+        "僧侣抽出了一张牌。",
+        "那是………<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xCDC8",
+      "show": "screen",
+      "source": "クスクスクス",
+      "text": [
+        "嘻嘻嘻"
+      ]
+    },
+    {
+      "offset": "0xCDD8",
+      "show": "screen",
+      "source": "小さな笑い声が\n聞こえたような気がする。<BREAK>",
+      "text": [
+        "细小的笑声，",
+        "仿佛听见了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xCE04",
+      "show": "screen",
+      "source": "アハハハハ！",
+      "text": [
+        "啊哈哈哈！"
+      ]
+    },
+    {
+      "offset": "0xCE14",
+      "show": "screen",
+      "source": "はっきりと、悪意のこもった\n笑い声がした。<BREAK>",
+      "text": [
+        "听得很清楚，带着恶意的",
+        "笑声响了起来。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xCE42",
+      "show": "screen",
+      "source": "しかし、どこにも姿は見えない。<BREAK>",
+      "text": [
+        "可是，哪儿也看不见身影。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xCE64",
+      "show": "screen",
+      "source": "見つけた、見つけた。\n月光の刻印！\n邪妖精へのみつぎ物……",
+      "text": [
+        "找到了，找到了。",
+        "月光刻印！",
+        "献给邪妖精的供品……"
+      ]
+    },
+    {
+      "offset": "0xCEA6",
+      "show": "screen",
+      "source": "りんごのジャムをに詰めたような\n甘ったるい香りが広がった。<BREAK>",
+      "text": [
+        "像苹果果酱那样甜腻的",
+        "香气散开了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xCEE4",
+      "show": "screen",
+      "source": "それは、ゆるゆるとうっとうしく\n身体にまとわりついてくる。<BREAK>",
+      "text": [
+        "那气味缓缓地、腻人地",
+        "缠上了身体。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xCF22",
+      "show": "screen",
+      "source": "同時に、歌がつむがれた。<BREAK>",
+      "text": [
+        "同时，编出了一首歌。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xCF3E",
+      "show": "screen",
+      "source": "ねむれ、ねむれ、ゆるやかに\nまぶたをとざし、夢の中へ……\n\nねむれ、ねむれ、今すぐに\n母の胸を思い出せ……",
+      "text": [
+        "睡吧，睡吧，缓缓地",
+        "合上眼帘，进入梦里……",
+        "",
+        "睡吧，睡吧，就现在",
+        "想起母亲的怀抱……"
+      ]
+    },
+    {
+      "offset": "0xCFB2",
+      "show": "screen",
+      "source": "だんだん、眠りの世界へと\n誘われていく………<BREAK>",
+      "text": [
+        "渐渐，被诱入",
+        "沉睡的世界………<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xCFE2",
+      "show": "screen",
+      "source": "クスクスクス\nフフフフフ……\nアハハハハ！",
+      "text": [
+        "嘻嘻嘻",
+        "呵呵呵呵呵……",
+        "啊哈哈哈！"
+      ]
+    },
+    {
+      "offset": "0xD014",
+      "show": "screen",
+      "source": "笑い声に、ハッと目を開く。<BREAK>",
+      "text": [
+        "被笑声一惊，睁开了眼。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD032",
+      "show": "screen",
+      "source": "瞬間的に眠ってしまったようだ。<BREAK>",
+      "text": [
+        "似乎一瞬间就睡着了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD054",
+      "show": "screen",
+      "source": "幸い、どこにも異変はないらしい。<BREAK>",
+      "text": [
+        "幸好，似乎哪儿都没事。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD078",
+      "show": "screen",
+      "source": "安心して胸をなでおろすが\nやけにサイフが軽い事に気がつく。<BREAK>",
+      "text": [
+        "安下心来拍拍胸口，",
+        "却发觉钱包异常地轻。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD0B6",
+      "show": "screen",
+      "source": "所持金が、半分ほどに減っていた………<BREAK>",
+      "text": [
+        "所持金少了大约一半………<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD0DE",
+      "show": "screen",
+      "source": "ウフフ",
+      "text": [
+        "唔呵呵"
+      ]
+    },
+    {
+      "offset": "0xD0E8",
+      "show": "screen",
+      "source": "小さな笑い声が\n聞こえたような気がする。<BREAK>",
+      "text": [
+        "细小的笑声，",
+        "仿佛听见了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD114",
+      "show": "screen",
+      "source": "ウフフフフ",
+      "text": [
+        "唔呵呵呵呵"
+      ]
+    },
+    {
+      "offset": "0xD122",
+      "show": "screen",
+      "source": "愛らしい、澄んだ笑い声がした。<BREAK>",
+      "text": [
+        "可爱、清澈的笑声响了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD144",
+      "show": "screen",
+      "source": "しかし、どこにも姿は見えない。<BREAK>",
+      "text": [
+        "可是，哪儿也看不见身影。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD166",
+      "show": "screen",
+      "source": "ここよ！",
+      "text": [
+        "在这儿！"
+      ]
+    },
+    {
+      "offset": "0xD172",
+      "show": "window",
+      "source": "妖精「月光の刻印を持つあなたに\n妖精の祝福を………」",
+      "text": [
+        "妖精「对持有月光刻印的你",
+        "妖精的祝福………」"
+      ]
+    },
+    {
+      "offset": "0xD1AA",
+      "show": "screen",
+      "source": "HPが全快した！<BREAK>",
+      "text": [
+        "HP完全恢复了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD1BE",
+      "show": "screen",
+      "source": "ステータスが全快した！<BREAK>",
+      "text": [
+        "状态完全恢复了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD1D8",
+      "show": "screen",
+      "source": "MPが全快した！<BREAK>",
+      "text": [
+        "MP完全恢复了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD1EC",
+      "show": "window",
+      "source": "妖精「またね」",
+      "text": [
+        "妖精「下次见」"
+      ]
+    },
+    {
+      "offset": "0xD1FC",
+      "show": "screen",
+      "source": "妖精は、額に愛らしく口づけすると\nゆっくりと消えて行った。<BREAK>",
+      "text": [
+        "妖精在额上可爱地一吻，",
+        "便慢慢消失了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD23A",
+      "show": "screen",
+      "source": "奇妙な音がきこえ、足を止めた。<BREAK>",
+      "text": [
+        "听见怪声，停下了脚步。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD25C",
+      "show": "screen",
+      "source": "剣が空を裂く音だろうか？<BREAK>",
+      "text": [
+        "是剑划破天空的声音吗？<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD278",
+      "show": "screen",
+      "source": "僧侶「そなたは近く\n魔剣のうなりを聞くだろう」",
+      "text": [
+        "僧侣「你不久便会",
+        "听见魔剑的鸣响」"
+      ]
+    },
+    {
+      "offset": "0xD2C0",
+      "show": "screen",
+      "source": "占いをした異形の僧侶の\n言葉がよぎる。<BREAK>",
+      "text": [
+        "异形僧侣占卜时的话",
+        "闪过了心头。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD2EA",
+      "show": "screen",
+      "source": "音はだんだんと近づいて来るようだ。<BREAK>",
+      "text": [
+        "声音似乎渐渐逼近了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD310",
+      "show": "screen",
+      "source": "姿無き魔剣が\n何かをつらぬく音がした。<BREAK>",
+      "text": [
+        "无形的魔剑",
+        "传来刺穿什么的声音。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD33A",
+      "show": "screen",
+      "source": "その音に引き寄せられるように\n魔物が現われた！！<BREAK>",
+      "text": [
+        "像被那声音牵引着，",
+        "魔物出现了！！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD36E",
+      "show": "screen",
+      "source": "<FB07><FB01>汝、求めるは何か？<FB00><BREAK>",
+      "text": [
+        "<FB07><FB01>你在寻求什么？<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD38A",
+      "show": "screen",
+      "source": "どこからともなく\n不思議な声が聞こえてくる。<BREAK>",
+      "text": [
+        "不知从何处，",
+        "传来不可思议的声音。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD3BA",
+      "show": "screen",
+      "source": "<FB07><FB01>月光の刻印を受けし者よ。<FB00><BREAK>",
+      "text": [
+        "<FB07><FB01>受过月光刻印的人啊。<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD3DC",
+      "show": "screen",
+      "source": "<FB07><FB01>汝、求めるは何か？<FB00><BREAK>",
+      "text": [
+        "<FB07><FB01>你在寻求什么？<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD3F8",
+      "show": "screen",
+      "source": "<FB07><FB01>自由に空を駆ける白き翼か？<FB00><BREAK>",
+      "text": [
+        "<FB07><FB01>自由飞过天空的白翼吗？<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD41C",
+      "show": "screen",
+      "source": "<FB07><FB01>姿無き者のなす奇蹟か？<FB00><BREAK>",
+      "text": [
+        "<FB07><FB01>无形者施展的奇迹吗？<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD43C",
+      "show": "screen",
+      "source": "<FB07><FB01>海さえも凍える女神の吐息か？<FB00><BREAK>",
+      "text": [
+        "<FB07><FB01>连海也会冻结的女神吐息吗？<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD462",
+      "show": "screen",
+      "source": "<FB07><FB01>天から下される裁きの一撃か？<FB00><BREAK>",
+      "text": [
+        "<FB07><FB01>自天上降下的裁决一击吗？<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD488",
+      "show": "screen",
+      "source": "<FB07><FB01>全身に刻まれる聖なる印か？<FB00><BREAK>",
+      "text": [
+        "<FB07><FB01>刻满全身的神圣印记吗？<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD4AC",
+      "show": "screen",
+      "source": "<FB07><FB01>答えるがよい。<FB00><BREAK>",
+      "text": [
+        "<FB07><FB01>你来回答。<FB00><BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD4C4",
+      "show": "screen",
+      "source": "求める物は………\n\n自由に空を駆ける白き翼\n姿無き者のなす奇蹟\n海さえも凍える女神の吐息\n天から下される裁きの一撃\n全身に刻まれる聖なる印\n",
+      "text": [
+        "要寻求的是………",
+        "",
+        "自由飞过天空的白翼",
+        "无形者施展的奇迹",
+        "连海也会冻结的女神吐息",
+        "自天上降下的裁决一击",
+        "刻满全身的神圣印记",
+        ""
+      ]
+    },
+    {
+      "offset": "0xD566",
+      "show": "screen",
+      "source": "輝きと共に、手の中に\n魔法石が現われた。<BREAK>",
+      "text": [
+        "随光芒一起，手中",
+        "出现了魔法石。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD592",
+      "show": "screen",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "text": [
+        "携带物品已经满了。",
+        "要丢弃什么吗？",
+        "",
+        "是",
+        "否",
+        ""
+      ]
+    },
+    {
+      "offset": "0xD5D4",
+      "show": "screen",
+      "source": "<FB01>リープの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<FB01>飞跃石<FB00>得到了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD5F4",
+      "show": "screen",
+      "source": "<FB01>リープの石<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "<FB01>飞跃石<FB00>放弃了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD614",
+      "show": "screen",
+      "source": "魔法石はかき消えた。<BREAK>",
+      "text": [
+        "魔法石消失了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD62C",
+      "show": "screen",
+      "source": "<FB01>リープの石<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "<FB01>飞跃石<FB00>放弃了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD64C",
+      "show": "screen",
+      "source": "魔法石はかき消えた。<BREAK>",
+      "text": [
+        "魔法石消失了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD664",
+      "show": "screen",
+      "source": "<FB01>リープの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<FB01>飞跃石<FB00>得到了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD684",
+      "show": "screen",
+      "source": "輝きと共に、手の中に\n魔法石が現われた。<BREAK>",
+      "text": [
+        "随光芒一起，手中",
+        "出现了魔法石。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD6B0",
+      "show": "screen",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "text": [
+        "携带物品已经满了。",
+        "要丢弃什么吗？",
+        "",
+        "是",
+        "否",
+        ""
+      ]
+    },
+    {
+      "offset": "0xD6F2",
+      "show": "screen",
+      "source": "<FB01>ヴァルハラの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<FB01>英灵殿石<FB00>得到了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD716",
+      "show": "screen",
+      "source": "<FB01>ヴァルハラの石<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "<FB01>英灵殿石<FB00>放弃了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD73A",
+      "show": "screen",
+      "source": "魔法石はかき消えた。<BREAK>",
+      "text": [
+        "魔法石消失了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD752",
+      "show": "screen",
+      "source": "<FB01>ヴァルハラの石<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "<FB01>英灵殿石<FB00>放弃了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD776",
+      "show": "screen",
+      "source": "魔法石はかき消えた。<BREAK>",
+      "text": [
+        "魔法石消失了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD78E",
+      "show": "screen",
+      "source": "<FB01>ヴァルハラの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<FB01>英灵殿石<FB00>得到了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD7B2",
+      "show": "screen",
+      "source": "輝きと共に、手の中に\n魔法石が現われた。<BREAK>",
+      "text": [
+        "随光芒一起，手中",
+        "出现了魔法石。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD7DE",
+      "show": "screen",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "text": [
+        "携带物品已经满了。",
+        "要丢弃什么吗？",
+        "",
+        "是",
+        "否",
+        ""
+      ]
+    },
+    {
+      "offset": "0xD820",
+      "show": "screen",
+      "source": "<FB01>ジャクルドの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<FB01>贾库鲁多石<FB00>得到了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD844",
+      "show": "screen",
+      "source": "<FB01>ジャクルドの石<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "<FB01>贾库鲁多石<FB00>放弃了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD868",
+      "show": "screen",
+      "source": "魔法石はかき消えた。<BREAK>",
+      "text": [
+        "魔法石消失了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD880",
+      "show": "screen",
+      "source": "<FB01>ジャクルドの石<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "<FB01>贾库鲁多石<FB00>放弃了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD8A4",
+      "show": "screen",
+      "source": "魔法石はかき消えた。<BREAK>",
+      "text": [
+        "魔法石消失了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD8BC",
+      "show": "screen",
+      "source": "<FB01>ジャクルドの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<FB01>贾库鲁多石<FB00>得到了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD8E0",
+      "show": "screen",
+      "source": "輝きと共に、手の中に\n魔法石が現われた。<BREAK>",
+      "text": [
+        "随光芒一起，手中",
+        "出现了魔法石。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD90C",
+      "show": "screen",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "text": [
+        "携带物品已经满了。",
+        "要丢弃什么吗？",
+        "",
+        "是",
+        "否",
+        ""
+      ]
+    },
+    {
+      "offset": "0xD94E",
+      "show": "screen",
+      "source": "<FB01>マーシフルの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<FB01>慈悲石<FB00>得到了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD972",
+      "show": "screen",
+      "source": "<FB01>マーシフルの石<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "<FB01>慈悲石<FB00>放弃了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD996",
+      "show": "screen",
+      "source": "魔法石はかき消えた。<BREAK>",
+      "text": [
+        "魔法石消失了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD9AE",
+      "show": "screen",
+      "source": "<FB01>マーシフルの石<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "<FB01>慈悲石<FB00>放弃了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD9D2",
+      "show": "screen",
+      "source": "魔法石はかき消えた。<BREAK>",
+      "text": [
+        "魔法石消失了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xD9EA",
+      "show": "screen",
+      "source": "<FB01>マーシフルの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<FB01>慈悲石<FB00>得到了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xDA0E",
+      "show": "screen",
+      "source": "輝きと共に、手の中に\n魔法石が現われた。<BREAK>",
+      "text": [
+        "随光芒一起，手中",
+        "出现了魔法石。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xDA3A",
+      "show": "screen",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "text": [
+        "携带物品已经满了。",
+        "要丢弃什么吗？",
+        "",
+        "是",
+        "否",
+        ""
+      ]
+    },
+    {
+      "offset": "0xDA7C",
+      "show": "screen",
+      "source": "<FB01>スティグマの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<FB01>圣痕石<FB00>得到了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xDAA0",
+      "show": "screen",
+      "source": "<FB01>スティグマの石<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "<FB01>圣痕石<FB00>放弃了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xDAC4",
+      "show": "screen",
+      "source": "魔法石はかき消えた。<BREAK>",
+      "text": [
+        "魔法石消失了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xDADC",
+      "show": "screen",
+      "source": "<FB01>スティグマの石<FB00>をあきらめた。<BREAK>",
+      "text": [
+        "<FB01>圣痕石<FB00>放弃了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xDB00",
+      "show": "screen",
+      "source": "魔法石はかき消えた。<BREAK>",
+      "text": [
+        "魔法石消失了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xDB18",
+      "show": "screen",
+      "source": "<FB01>スティグマの石<FB00>を手に入れた！<BREAK>",
+      "text": [
+        "<FB01>圣痕石<FB00>得到了！<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xDB3C",
+      "show": "screen",
+      "source": "迷宮の四層で出会った\n侍のマツリが、まるで\n亡霊のように立っていた。<BREAK>",
+      "text": [
+        "在迷宫第四层遇见的",
+        "武士茉莉，",
+        "像亡灵一样站在那里。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xDB84",
+      "show": "window",
+      "source": "マツリ「見なければよかった…」",
+      "text": [
+        "茉莉「要是没看见就好了…」"
+      ]
+    },
+    {
+      "offset": "0xDBA4",
+      "show": "window",
+      "source": "マツリ「あんな水晶、見なければ…」",
+      "text": [
+        "茉莉「那块水晶，不看就好了…」"
+      ]
+    },
+    {
+      "offset": "0xDBC8",
+      "show": "window",
+      "source": "マツリ「いや、俺は信じない！\n信じたくない！\n信じるものか！！」",
+      "text": [
+        "茉莉「不，我才不信！",
+        "不想信！",
+        "才不会信！！」"
+      ]
+    },
+    {
+      "offset": "0xDC0E",
+      "show": "window",
+      "source": "マツリ「何故だ、いったいどうして…」",
+      "text": [
+        "茉莉「为什么，到底为什么…」"
+      ]
+    },
+    {
+      "offset": "0xDC34",
+      "show": "window",
+      "source": "マツリ「清らかなる魂ほど\n死の王の元に召されるのが\n早いというのか！？」",
+      "text": [
+        "茉莉「灵魂越洁净",
+        "就越早被召到",
+        "死之王身边吗！？」"
+      ]
+    },
+    {
+      "offset": "0xDC82",
+      "show": "screen",
+      "source": "とても、声をかけられるような\n雰囲気ではない。<BREAK>",
+      "text": [
+        "这气氛实在没法",
+        "出声搭话。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xDCB4",
+      "show": "screen",
+      "source": "マツリは、血を吐くかのように\n叫び続けた。<BREAK>",
+      "text": [
+        "茉莉像要吐血似的",
+        "不停喊着。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xDCE2",
+      "show": "window",
+      "source": "マツリ「いや………\n本当はわかっていた\nのかもしれない」",
+      "text": [
+        "茉莉「不………",
+        "其实早就知道",
+        "也许是这样」"
+      ]
+    },
+    {
+      "offset": "0xDD20",
+      "show": "window",
+      "source": "マツリ「答えは俺の中にずっとあった」",
+      "text": [
+        "茉莉「答案一直就在我心里」"
+      ]
+    },
+    {
+      "offset": "0xDD46",
+      "show": "window",
+      "source": "マツリ「ただ、見るのが怖かったんだ。\n認めてしまうのが怖かった」",
+      "text": [
+        "茉莉「只是，我怕看见。",
+        "怕承认那件事」"
+      ]
+    },
+    {
+      "offset": "0xDD8A",
+      "show": "window",
+      "source": "マツリ「それは、彼女だけでなく\n俺の、俺の………」",
+      "text": [
+        "茉莉「不只是她的，",
+        "我的，我的………」"
+      ]
+    },
+    {
+      "offset": "0xDDC0",
+      "show": "screen",
+      "source": "このまま、マツリが消えてしまいそうな\n気がして、思わず彼の名を呼ぶ。<BREAK>",
+      "text": [
+        "生怕茉莉就此消失，",
+        "忍不住喊出他的名字。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xDE08",
+      "show": "screen",
+      "source": "しかし、マツリは振り向かない。<BREAK>",
+      "text": [
+        "可是，茉莉没有回头。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xDE2A",
+      "show": "window",
+      "source": "マツリ「俺は………」",
+      "text": [
+        "茉莉「我………」"
+      ]
+    },
+    {
+      "offset": "0xDE40",
+      "show": "window",
+      "source": "マツリ「俺は………」",
+      "text": [
+        "茉莉「我………」"
+      ]
+    },
+    {
+      "offset": "0xDE56",
+      "show": "window",
+      "source": "マツリ「俺は<FD02>…<FD14>…<FD14>…」",
+      "text": [
+        "茉莉「我<FD02>…<FD14>…<FD14>…」"
+      ]
+    },
+    {
+      "offset": "0xDE72",
+      "show": "screen",
+      "source": "マツリは、空気にとけるように\n消えて行った。<BREAK>",
+      "text": [
+        "茉莉像溶进空气，",
+        "消失了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xDEA2",
+      "show": "screen",
+      "source": "アレイドを教えてくれた\nかの剣士のように。<BREAK>",
+      "text": [
+        "像那位传授连携的",
+        "剑士一样。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xDED0",
+      "show": "window",
+      "source": "フランソワ\n<FB03>バ…バイバーぢゃん…",
+      "text": [
+        "弗朗索瓦",
+        "<FB03>拜…伯酱…"
+      ]
+    },
+    {
+      "offset": "0xDEFC",
+      "show": "window",
+      "source": "バイドパイパー\nアラランッ？！\nオークの小僧が何の用ザマス？",
+      "text": [
+        "花衣笛手",
+        "呀啦啦啦？！",
+        "兽人小鬼来干什么呀？"
+      ]
+    },
+    {
+      "offset": "0xDF58",
+      "show": "window",
+      "source": "フランソワ\n<FB03>そ…その、バイバーぢゃんのふえ…\nわげてほぢいんだな…",
+      "text": [
+        "弗朗索瓦",
+        "<FB03>那…那个，拜伯酱的笛子…",
+        "分给俺一点的说…"
+      ]
+    },
+    {
+      "offset": "0xDFAA",
+      "show": "window",
+      "source": "バイドパイパー\nイ、ヤ、ザ、マ、ス！",
+      "text": [
+        "花衣笛手",
+        "不、行、啦、哟、呀！"
+      ]
+    },
+    {
+      "offset": "0xDFD8",
+      "show": "window",
+      "source": "バイドパイパー\nなんでアンタみたいなチンチクリンに\n大事な笛をあげなきゃダメなのっ？！",
+      "text": [
+        "花衣笛手",
+        "为什么非要把珍贵的笛子",
+        "交给像你这样的小矮子啊？！"
+      ]
+    },
+    {
+      "offset": "0xE036",
+      "show": "window",
+      "source": "バイドパイパー\nおかしいワッ！ 納得いかないワッ！\n断固反対ヨッ！ 却下却下ッ！",
+      "text": [
+        "花衣笛手",
+        "荒唐啦！无法接受啦！",
+        "坚决反对哟！不行不行！"
+      ]
+    },
+    {
+      "offset": "0xE090",
+      "show": "window",
+      "source": "フランソワ\n<FB03>むぐぐ…おだ…ほぢいのだ…\nバイバーぢゃん…ゲヂなのだ…",
+      "text": [
+        "弗朗索瓦",
+        "<FB03>唔咕咕…俺…想要的说…",
+        "拜伯酱…小气的说…"
+      ]
+    },
+    {
+      "offset": "0xE0EA",
+      "show": "screen",
+      "source": "「何やってんのさ…」",
+      "text": [
+        "「你在干什么啊…」"
+      ]
+    },
+    {
+      "offset": "0xE102",
+      "show": "window",
+      "source": "バイドパイパー\nアラララランッ？！\nネッ…姉様ンッッ？！",
+      "text": [
+        "花衣笛手",
+        "呀啦啦啦啦？！",
+        "诶…姐姐？！"
+      ]
+    },
+    {
+      "offset": "0xE158",
+      "show": "window",
+      "source": "ヴァーゴ「ブタ相手に、何エラそうな事\n言ってんのさ！\nったく、情けないねえ！」",
+      "text": [
+        "瓦戈「你对猪摆什么架子",
+        "说什么呢！",
+        "真是，太丢人了！」"
+      ]
+    },
+    {
+      "offset": "0xE1AC",
+      "show": "window",
+      "source": "バイドパイパー\nだってェー、姉様ンッ！\nこのチンチクリンったら生意気ナノヨ！",
+      "text": [
+        "花衣笛手",
+        "可是嘛，姐姐！",
+        "这小矮子也太没大没小啦！"
+      ]
+    },
+    {
+      "offset": "0xE20A",
+      "show": "window",
+      "source": "バイドパイパー\nアタシの大事な笛を\nよこせって言ってるのヨッ？！",
+      "text": [
+        "花衣笛手",
+        "人家珍贵的笛子",
+        "他居然叫我交出来哟？！"
+      ]
+    },
+    {
+      "offset": "0xE264",
+      "show": "window",
+      "source": "バイドパイパー\nどう思うっ？！\n姉様、どう思うっ？！",
+      "text": [
+        "花衣笛手",
+        "你怎么想？！",
+        "姐姐，你怎么想？！"
+      ]
+    },
+    {
+      "offset": "0xE2BA",
+      "show": "window",
+      "source": "ヴァーゴ「いいじゃないのさ、\n笛の一つや二つ。\nどうせ下手なクセに」",
+      "text": [
+        "瓦戈「给就给了嘛，",
+        "一支笛子而已。",
+        "反正你吹得差」"
+      ]
+    },
+    {
+      "offset": "0xE304",
+      "show": "screen",
+      "source": "ヴァーゴはそのまま\n何処かへ消え去った。<BREAK>",
+      "text": [
+        "瓦戈就那样",
+        "消失到别处去了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xE330",
+      "show": "window",
+      "source": "バイドパイパー\nイヤン、姉様ったら\nひどいワ！ つれないワ！",
+      "text": [
+        "花衣笛手",
+        "讨厌，姐姐真是的",
+        "好过分啦！好冷淡啦！"
+      ]
+    },
+    {
+      "offset": "0xE388",
+      "show": "window",
+      "source": "フランソワ\n<FB03>（そうなのだ…ひどいのだ…\nおだ…ブダじゃないのだな…）",
+      "text": [
+        "弗朗索瓦",
+        "<FB03>（就是这样…好过分的说…",
+        "俺…才不是猪的说…）"
+      ]
+    },
+    {
+      "offset": "0xE3E2",
+      "show": "window",
+      "source": "フランソワ\n<FB03>おだ…バイバーぢゃんのふえ……\nわけてほぢいんだな…",
+      "text": [
+        "弗朗索瓦",
+        "<FB03>俺…拜伯酱的笛子……",
+        "分给俺一点的说…"
+      ]
+    },
+    {
+      "offset": "0xE436",
+      "show": "window",
+      "source": "バイドパイパー\nアンタ、間違えないでよネ！\nアタシはバイバーじゃなくてパイパー！",
+      "text": [
+        "花衣笛手",
+        "你可别搞错了哦！",
+        "人家不是拜伯，是笛手！"
+      ]
+    },
+    {
+      "offset": "0xE494",
+      "show": "window",
+      "source": "フランソワ\n<FB03>バ…バイバァー…ぢゃん…",
+      "text": [
+        "弗朗索瓦",
+        "<FB03>拜…啊…酱…"
+      ]
+    },
+    {
+      "offset": "0xE4C2",
+      "show": "window",
+      "source": "バイドパイパー\nキィィィィッ！\nいいっ！ もういいわヨ！",
+      "text": [
+        "花衣笛手",
+        "叽咿咿咿咿！",
+        "行了！已经够了哟！"
+      ]
+    },
+    {
+      "offset": "0xE51A",
+      "show": "screen",
+      "source": "バイドパイパーは、しまいこんでいた\n予備の笛を取り出した。<BREAK>",
+      "text": [
+        "花衣笛手取出了",
+        "收着的备用笛子。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xE558",
+      "show": "window",
+      "source": "バイドパイパー\nホラッ！ 持って行けばいいでショッ！\n姉様に感謝することネッ！",
+      "text": [
+        "花衣笛手",
+        "拿去！带走不就行了嘛！",
+        "可要感谢姐姐哦！"
+      ]
+    },
+    {
+      "offset": "0xE5AE",
+      "show": "screen",
+      "source": "そして、フランソワ目掛けて\n力一杯投げつけた。<BREAK>",
+      "text": [
+        "然后对准弗朗索瓦",
+        "使足劲扔了过去。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xE5E0",
+      "show": "screen",
+      "source": "バイドパイパーの笛は、\nフランソワの腹に直撃した。<BREAK>",
+      "text": [
+        "花衣笛手的笛子",
+        "砸中弗朗索瓦的肚子。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xE616",
+      "show": "window",
+      "source": "フランソワ\n<FB03>い…いだいのだな…\nバイバーぢゃん…ひどいのだな",
+      "text": [
+        "弗朗索瓦",
+        "<FB03>好…好痛的说…",
+        "拜伯酱…好过分的说"
+      ]
+    },
+    {
+      "offset": "0xE66E",
+      "show": "window",
+      "source": "バイドパイパー\nプンプンッ！！\n当たり前でショッ、天罰ヨッ！",
+      "text": [
+        "花衣笛手",
+        "气鼓鼓的！！",
+        "当然的嘛，天罚哟！"
+      ]
+    },
+    {
+      "offset": "0xE6C8",
+      "show": "screen",
+      "source": "バイドパイパーは怒りながら\n早足で去って行った。<BREAK>",
+      "text": [
+        "花衣笛手生着气",
+        "快步离开了。<BREAK>"
+      ]
+    },
+    {
+      "offset": "0xE6FC",
+      "show": "window",
+      "source": "フランソワ\n<FB03>ゔゔゔ…おだ、いじめられっこだな…\nいじめ…はんたいなんだな……",
+      "text": [
+        "弗朗索瓦",
+        "<FB03>呜呜呜…俺，是被欺负的人的说…",
+        "欺负…俺反对的说……"
+      ]
+    },
+    {
+      "offset": "0xE754",
+      "show": "window",
+      "source": "フランソワ\n<FB03>げど、バイバーぢゃんのぶえ\nもらっだがら、がまんするだ…",
+      "text": [
+        "弗朗索瓦",
+        "<FB03>可是，拜伯酱的笛子",
+        "拿到了，就忍一忍的说…"
+      ]
+    },
+    {
+      "offset": "0xE7AC",
+      "show": "screen",
+      "source": "フランソワは痛そうに腹を押さえながら、\nトボトボと歩いて行った。<BREAK>",
+      "text": [
+        "弗朗索瓦痛得按着肚子，",
+        "拖着步子走了。<BREAK>"
+      ]
+    }
+  ]
+}
