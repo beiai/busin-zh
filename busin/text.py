@@ -1024,8 +1024,9 @@ def script_self_test() -> None:
         for record, (at, _end, words) in zip(doc["messages"], messages):
             prose = "\n".join(message_prose(words, doc["align"]))
             translated = record["text"] is not None
+            done = chunk in (265, 267, 269)
             if (record["show"] != "subtitle" or int(record["offset"], 0) != at or record["source"] != prose
-                    or (chunk != 269 and translated) or (chunk == 269 and not translated)):
+                    or translated != done):
                 raise AssertionError(f"chunk {chunk} message {at:#x} does not match the disc")
             if translated:
                 check_lines(words, record["text"], doc["align"], record["show"])

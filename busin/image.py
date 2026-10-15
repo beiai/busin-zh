@@ -52,14 +52,15 @@ def elf_word(handle, va, lba=ELF_LBA):
 
 
 def read_terminated(handle, at: int) -> list[int]:
-    raw = read_pack(handle, at, 512)
+    # Chunk 265's prologue is 363 words.
+    raw = read_pack(handle, at, 768)
     words = []
     for index in range(0, len(raw), 2):
         word = int.from_bytes(raw[index:index + 2], "big")
         if word == 0xFFFF:
             return words
         words.append(word)
-    raise ValueError(f"message at {at:#x} has no terminator within 256 words")
+    raise ValueError(f"message at {at:#x} has no terminator within {len(raw) // 2} words")
 
 
 def load_texts():
