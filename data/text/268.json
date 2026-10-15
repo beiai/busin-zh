@@ -5,19 +5,19 @@
   "messages": [
     {
       "offset": "0x0002",
-      "show": "screen",
+      "show": "subtitle",
       "source": "かけだしの冒険者であるあなたは\n聖剣を手に入れるためにドゥーハンへ\nやってきた。\n",
       "text": null
     },
     {
       "offset": "0x0056",
-      "show": "screen",
+      "show": "subtitle",
       "source": "その目は、まだ見ぬ聖剣と冒険を想い\n希望の光にいろどられている。\n",
       "text": null
     },
     {
       "offset": "0x009A",
-      "show": "screen",
+      "show": "subtitle",
       "source": "しかし、あなたはまだ、ドゥーハンの\n地下迷宮のおそろしさを知らない・・・\n",
       "text": null
     }

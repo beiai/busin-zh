@@ -5,73 +5,73 @@
   "messages": [
     {
       "offset": "0x0002",
-      "show": "screen",
+      "show": "subtitle",
       "source": "美しい女王の下",
       "text": ["在美丽女王治下"]
     },
     {
       "offset": "0x0012",
-      "show": "screen",
+      "show": "subtitle",
       "source": "平和の時をまどろんでいた",
       "text": ["在和平时光里昏睡着的"]
     },
     {
       "offset": "0x002C",
-      "show": "screen",
+      "show": "subtitle",
       "source": "聖都ドゥーハン",
       "text": ["圣都杜汉"]
     },
     {
       "offset": "0x003C",
-      "show": "screen",
+      "show": "subtitle",
       "source": "しかし",
       "text": ["然而"]
     },
     {
       "offset": "0x0044",
-      "show": "screen",
+      "show": "subtitle",
       "source": "ある日、天から\nふりそそいだ閃光により\n全てが焼きつくされた",
       "text": ["一日，闪光自天倾泻而下", "将一切烧尽"]
     },
     {
       "offset": "0x0082",
-      "show": "screen",
+      "show": "subtitle",
       "source": "舞散る雪に閉ざされている",
       "text": ["被漫天飞雪封住"]
     },
     {
       "offset": "0x009C",
-      "show": "screen",
+      "show": "subtitle",
       "source": "物語の幕が……\n静かにあがろうとしていた",
       "text": ["故事的帷幕……", "正要悄然拉开"]
     },
     {
       "offset": "0x00C6",
-      "show": "screen",
+      "show": "subtitle",
       "source": "その美しさを\nたたえられた城も……",
       "text": ["曾因美丽受人称颂的城也……"]
     },
     {
       "offset": "0x00EA",
-      "show": "screen",
+      "show": "subtitle",
       "source": "人々でにぎわっていた\n城下街も……",
       "text": ["曾经熙熙攘攘的城下街道也……"]
     },
     {
       "offset": "0x010E",
-      "show": "screen",
+      "show": "subtitle",
       "source": "ある日、一人の冒険者が\nこの地に足を踏み入れた",
       "text": ["某一天，一名冒险者", "踏入了这片土地"]
     },
     {
       "offset": "0x013E",
-      "show": "screen",
+      "show": "subtitle",
       "source": "ドゥーハンの街をみわたす\n冒険者のそのまなざしは\nどこかうつろで\nふしぎな哀しみに満ちている",
       "text": ["眺望着杜汉的街道", "冒险者的目光", "有些空洞", "充满莫名的哀伤"]
     },
     {
       "offset": "0x019C",
-      "show": "screen",
+      "show": "subtitle",
       "source": "冒険者は、たよりなげな足取りで\n街中をゆっくりと歩きはじめた",
       "text": ["冒险者迈着虚浮无力的步伐", "在街中缓缓走起来"]
     }

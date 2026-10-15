@@ -5,19 +5,19 @@
   "messages": [
     {
       "offset": "0x0002",
-      "show": "screen",
+      "show": "subtitle",
       "source": "この時、聖剣が街にもち帰られる事は\nなかった。\n",
       "text": null
     },
     {
       "offset": "0x0034",
-      "show": "screen",
+      "show": "subtitle",
       "source": "聖剣の探索は、ひきつづきおこなわれたが\n迷宮には「死神」と呼ばれる災いが\n現れるようになる。\n",
       "text": null
     },
     {
       "offset": "0x0094",
-      "show": "screen",
+      "show": "subtitle",
       "source": "そして、半年の時が流れた。\n",
       "text": null
     }

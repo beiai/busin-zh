@@ -31,8 +31,8 @@ CONTROL_NAMES = {
 TAGS = {name[1:-1]: code for code, name in CONTROL_NAMES.items()}
 # Line-leading choice marks, indents and styles. Kept on the same line index.
 LAYOUT = range(0xFFC0, 0xFFE8)
-SCREEN_LINE = 18  # centered text, show == "screen"
-NARRATION_LINE = 21  # counted narration, 24px cells, half-width 252
+SCREEN_LINE = 18  # script centered text, show == "screen"
+NARRATION_LINE = 21  # subtitles, show == "subtitle"
 WINDOW_LINE = 19  # window text keeps the 20th cell for the trailing icon
 # Chunk 272's last 40 messages are one glyph each. Chunk 281 plays them by index.
 BEAT_CHUNK = 272
@@ -667,13 +667,13 @@ def _guard_operands(ins: dict, cursor: int, text_end: int, starts: set[int]) -> 
             raise ValueError(f"jump at {pc:#x} points into the text")
 
 
-def check_lines(original: list[int], text: list[str], align: str, show: str, narration: bool = False) -> None:
-    if show == "screen":
-        limit = NARRATION_LINE if narration else SCREEN_LINE
+def check_lines(original: list[int], text: list[str], align: str, show: str) -> None:
+    if show in ("screen", "subtitle"):
+        limit = NARRATION_LINE if show == "subtitle" else SCREEN_LINE
         for line in text:
             width = line_cells(line)
             if width > limit:
-                raise ValueError(f"screen line is {width} characters, limit {limit}: {line}")
+                raise ValueError(f"{show} line is {width} characters, limit {limit}: {line}")
     elif show == "window":
         for line, limit in zip(text, window_limits(original, align, len(text))):
             width = line_cells(line)
@@ -1008,8 +1008,13 @@ def script_self_test() -> None:
         if sectors != 1 or len(messages) != count:
             raise AssertionError(f"chunk {chunk} is not {count} counted messages")
         if chunk == 266:
+            opening = json.loads((DATA / "text" / f"{chunk}.json").read_text(encoding="utf-8"))
+            if any(item.get("show") != "subtitle" for item in opening["messages"]):
+                raise AssertionError("chunk 266 is not subtitles")
             continue
         doc = json.loads((DATA / "text" / f"{chunk}.json").read_text(encoding="utf-8"))
+        if any(item.get("show") != "subtitle" for item in doc["messages"]):
+            raise AssertionError(f"chunk {chunk} is not subtitles")
         if chunk == 272:
             _assert_beats(doc, messages, _load_chunk(start, sectors))
             continue
@@ -1019,11 +1024,11 @@ def script_self_test() -> None:
         for record, (at, _end, words) in zip(doc["messages"], messages):
             prose = "\n".join(message_prose(words, doc["align"]))
             translated = record["text"] is not None
-            if (record["show"] != "screen" or int(record["offset"], 0) != at or record["source"] != prose
+            if (record["show"] != "subtitle" or int(record["offset"], 0) != at or record["source"] != prose
                     or (chunk != 269 and translated) or (chunk == 269 and not translated)):
                 raise AssertionError(f"chunk {chunk} message {at:#x} does not match the disc")
             if translated:
-                check_lines(words, record["text"], doc["align"], record["show"], True)
+                check_lines(words, record["text"], doc["align"], record["show"])
                 encode_message(words, record["text"], doc["align"], lambda _char: 0x4001)
     prologue = counted_messages(_load_chunk(*next((item[1], item[2]) for item in _script_chunks() if item[0] == 265)))
     if message_prose(prologue[0][2], "center")[0] != "かつて、禍々しき「武神」を倒し":
@@ -1116,10 +1121,10 @@ def self_test() -> None:
     assert message_prose(spaced) == ["あ い", "う"]
     assert message_prose(spaced, "center") == ["あ い", "  う"]
     assert message_prose([0, 0, 0], "center") == [""]
-    check_lines([0x003F], ["甲" * 21], "center", "screen", True)
-    for bad in (("甲" * 22, True), ("甲" * 19, False)):
+    check_lines([0x003F], ["甲" * 21], "center", "subtitle")
+    for bad in (("甲" * 22, "subtitle"), ("甲" * 19, "screen")):
         try:
-            check_lines([0x003F], [bad[0]], "center", "screen", bad[1])
+            check_lines([0x003F], [bad[0]], "center", bad[1])
         except ValueError:
             pass
         else:

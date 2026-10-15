@@ -65,7 +65,7 @@ def init_text(chunk: int, align: str | None = None, root: Path | None = None) ->
         for at, _end, words in counted_messages(data):
             source = message_prose(words, align)
             if any(source):
-                messages.append(_entry(chunk, at, "screen", source))
+                messages.append(_entry(chunk, at, "subtitle", source))
         skipped = []
     else:
         align = align or "left"
@@ -137,7 +137,6 @@ def check_text(chunk: int, offsets: list[str] | None = None, root: Path | None =
     disc = _disc_words(chunk)
     want = None if not offsets else {int(item, 16) for item in offsets}
     errors = []
-    narration = chunk in counted_chunks()
     if chunk in PACKED_CHUNKS:
         pairs = list(disc.items())
         if len(pairs) != len(doc["messages"]):
@@ -158,7 +157,7 @@ def check_text(chunk: int, offsets: list[str] | None = None, root: Path | None =
             errors.append(f"{label}: source does not match the disc")
             continue
         try:
-            check_lines(original, item["text"], doc["align"], item["show"], narration)
+            check_lines(original, item["text"], doc["align"], item["show"])
             encode_message(original, item["text"], doc["align"], lambda char: 0x4001)
         except ValueError as error:
             errors.append(f"{label}: {error}")
