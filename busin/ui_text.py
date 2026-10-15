@@ -539,15 +539,16 @@ _RACE_X = {
     0x14D808: (0x00163400, 0x26460010),
     0x14D818: (0x00063403, 0x00000000),
 }
-# Status sheet centers a stat name in the three-cell column.
-# One glyph sat at x+16, two at x+8, three at x+0. Chinese names are two glyphs.
-# 知恵 is already at x+8. 力 was one glyph; the other four were three.
+# Status sheet fills a three-cell column. 姓名 is glyph, blank, glyph at x+0.
+# Stat names were centered by the Japanese length: one glyph at x+16, two at x+8, three at x+0.
+# Chinese names are two glyphs with the same blank, so they start at x+0 too.
 _STAT_X = {
-    0x582A20: (0x0010000B, 0x0008000B),
-    0x582A28: (0x0000000D, 0x0008000D),
-    0x582A2C: (0x0000000E, 0x0008000E),
-    0x582A30: (0x0000000F, 0x0008000F),
-    0x582A34: (0x00000010, 0x00080010),
+    0x582A20: (0x0010000B, 0x0000000B),
+    0x582A24: (0x0008000C, 0x0000000C),
+    0x582A28: (0x0000000D, 0x0000000D),
+    0x582A2C: (0x0000000E, 0x0000000E),
+    0x582A30: (0x0000000F, 0x0000000F),
+    0x582A34: (0x00000010, 0x00000010),
 }
 
 
@@ -923,8 +924,6 @@ def ui_patches(elf):
         if struct.unpack_from("<I", elf, off)[0] != old or off in writes:
             raise AssertionError(f"race list x at {va:#x}")
         writes[off] = struct.pack("<I", new)
-    if _word(elf, 0x582A24) != 0x0008000C:
-        raise AssertionError("stat name x")
     for va, (old, new) in _STAT_X.items():
         off = va - FILE_BASE
         if struct.unpack_from("<I", elf, off)[0] != old or off in writes:
@@ -1088,11 +1087,17 @@ def disc_self_test():
     for va, (_old, new) in _RACE_X.items():
         if writes.get(va - FILE_BASE) != struct.pack("<I", new):
             raise AssertionError(f"race list x at {va:#x}")
-    if _word(elf, 0x582A24) != 0x0008000C:
-        raise AssertionError("stat name x")
     for va, (_old, new) in _STAT_X.items():
         if writes.get(va - FILE_BASE) != struct.pack("<I", new):
             raise AssertionError(f"stat name x at {va:#x}")
+    for va in range(0x43DDC0, 0x43DDF0, 8):
+        codes = struct.unpack_from("<4H", _span(writes, va))
+        if codes[1] != 0 or codes[3] != 0xFFFF or not codes[0] or not codes[2]:
+            raise AssertionError(f"stat name gap at {va:#x}")
+    for va in range(0x589F60, 0x589F84, 6):
+        codes = struct.unpack_from("<3H", _span(writes, va))
+        if codes[1] != 0 or not codes[0] or not codes[2]:
+            raise AssertionError(f"stat cell gap at {va:#x}")
     human = struct.unpack_from("<3H", _span(writes, 0x43DE20), 0)
     back = struct.unpack_from("<3H", _span(writes, 0x43DDF0), 0)
     if human[1] == 0 or human[2] != 0 or back[1] == 0 or back[2] != 0:
