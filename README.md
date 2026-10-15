@@ -1,4 +1,4 @@
-# BUSIN ~Wizardry Alternative~
+# BUSIN \~Wizardry Alternative\~
 
 日版 PlayStation 2 游戏的中文翻译，产品编号 SLPM-62098。
 
