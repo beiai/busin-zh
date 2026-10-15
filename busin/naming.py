@@ -1,4 +1,9 @@
-"""Read-only name-entry resource survey.
+"""Name-entry survey, name-entry patches, and the Chinese UI font pages.
+
+survey_name_entry writes name-entry resources under build/ and leaves the disc
+alone. name_entry_patches writes the name-entry strings and the cock texture.
+ui_font_pages paints the UI font pages from the same cells and the common-04
+template.
 
 Do not retarget character names to 0x2A3CE8. The slots hold small-font
 codes, the pitch is 16, and the message-font object is often 0 on this screen.
