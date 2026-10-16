@@ -5,7 +5,7 @@ import tempfile
 from pathlib import Path
 
 from busin import text as decode_msg
-from busin.disc import BIN, children, chunk_row, entry, read_pack, read_user
+from busin.disc import BIN, ELF_LBA, FILE_BASE, children, chunk_row, entry, read_pack, read_user
 from busin.paths import DATA, BUILD
 from busin.tmx import PSMCT16, PSMT4, TMX_TAG, read_tmx, repack, save_png
 
@@ -511,8 +511,8 @@ def self_test() -> None:
     listed = load_images(DATA / "picture" / "images.json")
     assert {item["dir"] for item in listed["whole"]} == {"title"}
     assert {item["dir"] for item in listed["part"]} == {"town"}
-    assert [item["name"] for item in listed["part"]] == ["Tw_map02"]
-    assert {rect["palette"] for rect in listed["part"][0]["rects"]} == {1}
+    assert [item["name"] for item in listed["part"]] == ["Tw_map02", "Tw_map01"]
+    assert {rect["palette"] for item in listed["part"] for rect in item["rects"]} == {1}
     assert all(PICTURE_KEYS <= set(item) for item in [*listed["whole"], *listed["part"]])
     assert scene_output(DATA / "picture" / "images.json") / "title" == BUILD / "picture" / "title"
     if BIN.exists():
@@ -526,6 +526,32 @@ def self_test() -> None:
                 assert comment in (stem + b".tga", stem + b".tim")
                 assert struct.unpack_from("<HH", header, 0x12) == (item["width"], item["height"])
                 assert relative + struct.unpack_from("<I", header, 4)[0] <= count * 2048
+            at = 0x442810 - FILE_BASE
+            table = read_user(src, ELF_LBA + at // 2048, 1)[at % 2048:at % 2048 + 7 * 28]
+
+            def line(row):
+                palette = struct.unpack_from("<h", row, 4)[0]
+                x, y = row[6], row[7]
+                width, height = struct.unpack_from("<hh", row, 8)
+                return (x, y, width, height, palette)
+
+            by_name = {item["name"]: item for item in listed["part"]}
+            expect = set()
+            for index in range(6):
+                row = table[index * 28:(index + 1) * 28]
+                assert struct.unpack_from("<h", row, 2)[0] == by_name["Tw_map01"]["slot"]
+                expect.add(line(row))
+            got = {
+                (rect["x"], rect["y"], rect["width"], rect["height"], rect["palette"])
+                for rect in by_name["Tw_map01"]["rects"]
+            }
+            assert got == expect
+            row = table[6 * 28:7 * 28]
+            assert struct.unpack_from("<h", row, 2)[0] == by_name["Tw_map02"]["slot"]
+            assert {
+                (rect["x"], rect["y"], rect["width"], rect["height"], rect["palette"])
+                for rect in by_name["Tw_map02"]["rects"]
+            } == {line(row)}
 
 
 def load_manifest_conflict() -> None:

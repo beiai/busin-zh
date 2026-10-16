@@ -22,7 +22,24 @@
       "width": 256,
       "height": 256,
       "rects": [
-        {"name": "bottom", "x": 0, "y": 232, "width": 104, "height": 16, "palette": 1}
+        {"name": "maze_bottom", "x": 0, "y": 232, "width": 104, "height": 16, "palette": 1}
+      ]
+    },
+    {
+      "name": "Tw_map01",
+      "dir": "town",
+      "chunk": 8,
+      "offset": "0x8240",
+      "slot": 1,
+      "width": 256,
+      "height": 256,
+      "rects": [
+        {"name": "bar_bottom", "x": 0, "y": 192, "width": 40, "height": 16, "palette": 1},
+        {"name": "guild_bottom", "x": 72, "y": 208, "width": 80, "height": 16, "palette": 1},
+        {"name": "save_bottom", "x": 192, "y": 192, "width": 48, "height": 16, "palette": 1},
+        {"name": "temple_bottom", "x": 120, "y": 192, "width": 72, "height": 16, "palette": 1},
+        {"name": "inn_bottom", "x": 0, "y": 208, "width": 72, "height": 16, "palette": 1},
+        {"name": "shop_bottom", "x": 40, "y": 192, "width": 80, "height": 16, "palette": 1}
       ]
     }
   ]
