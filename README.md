@@ -123,7 +123,7 @@ python -m busin build
 python -m pytest tests -q
 ```
 
-成品是 `build/image/busin-zh.cue`。用它从头开机。同样的译文，每次构建得到的光盘字节相同。
+成品是 `build/image/busin-zh.cue`。用它从头开机。同样的译文，每次构建得到的光盘字节相同。开机能看出来的差别记在 `CHANGELOG.md`。
 
 ## 目录
 
