@@ -8,8 +8,9 @@ from pathlib import Path
 
 from busin.paths import DATA
 from busin.text import (
-    PACKED_CHUNKS, _load_chunk, _script_chunks, check_lines, counted_chunks, counted_messages,
-    encode_message, message_prose, script_messages, script_shows, text_cursors,
+    DIALOG_LINE, PACKED_CHUNKS, _load_chunk, _script_chunks, check_lines, counted_chunks,
+    counted_messages, dialog_limits, encode_message, line_cells, message_prose, script_messages,
+    script_shows, text_cursors,
 )
 
 
@@ -128,15 +129,38 @@ def apply_text(chunk: int, files: list[str], root: Path | None = None) -> None:
     _save(chunk, doc, root)
 
 
-def check_text(chunk: int, offsets: list[str] | None = None, root: Path | None = None) -> None:
+def _dialog_budget(label: str, original: list[int], item: dict, align: str) -> str:
+    """Used cells and the limit for each dialog line. Untranslated lines show only the limit."""
+    text = item.get("text") or []
+    count = max(len(item["source"].split("\n")), len(text), 1)
+    limits = dialog_limits(original, align, count)
+    shown = []
+    for index, limit in enumerate(limits):
+        if index >= len(text):
+            shown.append(str(limit))
+            continue
+        bits = text[index].split("<BREAK>")
+        if bits[-1] == "":
+            bits.pop()
+        parts = []
+        for bit_index, bit in enumerate(bits or [""]):
+            cap = limit if bit_index == 0 else DIALOG_LINE
+            parts.append(f"{line_cells(bit)}/{cap}")
+        shown.append("+".join(parts))
+    return label + " " + " ".join(shown)
+
+
+def check_text(chunk: int, offsets: list[str] | None = None, root: Path | None = None) -> list[str]:
     """Check translated lines against the disc. Untranslated lines are skipped.
 
     Packed chunks are aligned in order. An offset argument is the disc address.
+    Returns one dialog budget per message: used/limit, or just the limit when untranslated.
     """
     doc = _load(chunk, root)
     disc = _disc_words(chunk)
     want = None if not offsets else {int(item, 16) for item in offsets}
     errors = []
+    reports = []
     if chunk in PACKED_CHUNKS:
         pairs = list(disc.items())
         if len(pairs) != len(doc["messages"]):
@@ -145,13 +169,16 @@ def check_text(chunk: int, offsets: list[str] | None = None, root: Path | None =
     else:
         rows = [(int(item["offset"], 16), disc.get(int(item["offset"], 16)), item) for item in doc["messages"]]
     for at, original, item in rows:
-        if item["text"] is None:
-            continue
         label = f"0x{at:04X}"
         if want is not None and at not in want:
             continue
         if original is None:
-            errors.append(f"{label}: is not on the disc")
+            if item["text"] is not None:
+                errors.append(f"{label}: is not on the disc")
+            continue
+        if item["type"] == "dialog":
+            reports.append(_dialog_budget(label, original, item, doc["align"]))
+        if item["text"] is None:
             continue
         if message_prose(original, doc["align"]) != item["source"].split("\n"):
             errors.append(f"{label}: source does not match the disc")
@@ -163,6 +190,7 @@ def check_text(chunk: int, offsets: list[str] | None = None, root: Path | None =
             errors.append(f"{label}: {error}")
     if errors:
         raise ValueError("\n".join(errors))
+    return reports
 
 
 def copy_text(source: int, targets: list[int], root: Path | None = None) -> None:
@@ -247,6 +275,16 @@ def self_test() -> None:
         _expect_error(lambda: copy_text(1, [2], root), "does not match")
         (root / "9.json").write_text("{}\n", encoding="utf-8")
         _expect_error(lambda: init_text(9, root=root), "exists")
+        words = [0x003F, 0xFFFE, 0xFFD2, 0x0042]
+        filled = {"type": "dialog", "source": "あ\nい", "text": ["甲乙", "丙<BREAK>"]}
+        if _dialog_budget("0x0010", words, filled, "left") != "0x0010 2/19 1/16":
+            raise AssertionError("dialog budget")
+        blank_line = {"type": "dialog", "source": "あ\nい", "text": None}
+        if _dialog_budget("0x0010", words, blank_line, "left") != "0x0010 19 16":
+            raise AssertionError("untranslated dialog budget")
+        broken = {"type": "dialog", "source": "あ", "text": ["甲<BREAK>乙"]}
+        if _dialog_budget("0x0010", [0x003F], broken, "left") != "0x0010 1/19+1/19":
+            raise AssertionError("break budget")
 
 
 def disc_self_test() -> None:

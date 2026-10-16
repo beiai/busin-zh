@@ -20,7 +20,7 @@ def main(argv=None):
     apply = commands.add_parser("apply-text", help="merge translation fragments into a chunk")
     apply.add_argument("chunk", type=int)
     apply.add_argument("files", nargs="+")
-    check = commands.add_parser("check-text", help="check translated lines against the disc")
+    check = commands.add_parser("check-text", help="check translated lines and print dialog budgets")
     check.add_argument("chunk", type=int)
     check.add_argument("offsets", nargs="*")
     copy = commands.add_parser("copy-text", help="copy translations onto chunks with the same source")
@@ -66,7 +66,9 @@ def main(argv=None):
             elif args.command == "apply-text":
                 apply_text(args.chunk, args.files)
             elif args.command == "check-text":
-                check_text(args.chunk, args.offsets)
+                reports = check_text(args.chunk, args.offsets)
+                if reports:
+                    print("\n".join(reports))
             else:
                 copy_text(args.source, args.targets)
         except ValueError as error:

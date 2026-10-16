@@ -69,7 +69,9 @@ def test_terms():
     assert len(terms) == len(set(terms))
     values = set()
     for item in terms.values():
-        assert set(item) <= {"zh", "ui"} and item["zh"]
+        assert set(item) <= {"zh", "ui", "note"} and item["zh"]
+        if "note" in item:
+            assert item["note"]
         values.add(item["zh"])
         if "ui" in item:
             values.add(item["ui"])
