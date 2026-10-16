@@ -20,7 +20,7 @@
 | `data/interface/` | 界面句子 |
 | `data/terms.json` | 术语 |
 | `data/font/` | 字库 |
-| `data/screen/` | 改过的图 |
+| `data/picture/` | 改过的图 |
 
 这些文件由人修改。构建只读取它们，不把结果写回这里。
 

@@ -42,8 +42,8 @@ def text_files():
 
 
 def ui_files():
-    root = DATA / "screen"
-    return sorted([*root.rglob("manifest.json"), *root.rglob("*.png")])
+    root = DATA / "picture"
+    return sorted([root / "images.json", *root.rglob("*.png")])
 
 
 def elf_word(handle, va, lba=ELF_LBA):
@@ -378,7 +378,8 @@ def splice_pack(src, user_patches, spans) -> None:
 def apply_ui(src, user_patches, messages, reserved=()) -> None:
     message_bytes = {index for off in messages for index in (off, off + 1)}
     spans = []
-    for offset, data in replacement_spans(lambda off, size: read_pack(src, off, size), DATA / "screen"):
+    for offset, data in replacement_spans(
+            lambda off, size: read_pack(src, off, size), DATA / "picture", lambda chunk: chunk_row(src, chunk)):
         end = offset + len(data)
         if any(index in message_bytes for index in range(offset, end)):
             raise ValueError(f"ui png at {offset:#x} overlaps a message")
@@ -617,6 +618,8 @@ def main():
         check_source(src, labels)
         messages, packs = load_messages(src, texts, ids)
         ending = ending_spans(src, texts, ids)
+        from busin.plaque import spans as plaque_spans
+        plaque = plaque_spans(src)
         chunk = read_user(src, PACK_LBA + CHUNK_SECTOR, CHUNK_BYTES // 2048)
     page = make_page(chunk, plan, page_cells)
     rendered = {}
@@ -653,7 +656,7 @@ def main():
     covered = sorted((off, off + len(data)) for off, data in merged.items())
     if any(end > nxt for (_, end), (nxt, _) in zip(covered, covered[1:])):
         raise ValueError("ELF patch writes overlap")
-    spans = [*spans, *(span for item in packs for span in item["spans"]), *ending]
+    spans = [*spans, *(span for item in packs for span in item["spans"]), *ending, *plaque]
     message_bytes = {index for off in messages for index in (off, off + 1)}
     pack_ranges = sorted((off, off + len(data)) for off, data in spans)
     if any(end > nxt for (_, end), (nxt, _) in zip(pack_ranges, pack_ranges[1:])):

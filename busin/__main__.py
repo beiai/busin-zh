@@ -10,8 +10,9 @@ def main(argv=None):
     commands = parser.add_subparsers(dest="command", required=True)
 
     commands.add_parser("build", help="build the translated disc image")
-    unpack = commands.add_parser("unpack", help="unpack a scene manifest into build/")
+    unpack = commands.add_parser("unpack", help="unpack whole images from an images json into build/")
     unpack.add_argument("manifest")
+    commands.add_parser("export-pictures", help="export data/picture originals; add .zh.png only when missing")
     commands.add_parser("dump-text", help="write dialogue and small-font text to build/text/")
     init = commands.add_parser("init-text", help="write data/text/<chunk>.json with text left null")
     init.add_argument("chunk", type=int)
@@ -44,6 +45,10 @@ def main(argv=None):
         from busin.ui import unpack_manifest
         from pathlib import Path
         unpack_manifest(Path(args.manifest))
+        return 0
+    if args.command == "export-pictures":
+        from busin.ui import export_manifest
+        export_manifest()
         return 0
     if args.command == "dump-text":
         from busin.text import dump_dialogue

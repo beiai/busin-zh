@@ -1,0 +1,30 @@
+{
+  "container": "PACKDATA.CIG",
+  "whole": [
+    {"name": "title_1", "dir": "title", "chunk": 4, "offset": "0x60880", "width": 512, "height": 256, "palette": 0},
+    {"name": "title_2", "dir": "title", "chunk": 4, "offset": "0x80cc0", "width": 512, "height": 512, "palette": 0},
+    {"name": "title_1a", "dir": "title", "chunk": 4, "offset": "0xc1100", "width": 512, "height": 256, "palette": 0},
+    {"name": "sub_0", "dir": "title", "chunk": 4, "offset": "0xe1540", "width": 512, "height": 64, "palette": 0},
+    {"name": "sub_1", "dir": "title", "chunk": 4, "offset": "0xe9980", "width": 512, "height": 64, "palette": 0},
+    {"name": "menu_0", "dir": "title", "chunk": 4, "offset": "0xf1dc0", "width": 256, "height": 128, "palette": 0},
+    {"name": "menu_1", "dir": "title", "chunk": 4, "offset": "0xfa200", "width": 256, "height": 128, "palette": 0},
+    {"name": "menu_2", "dir": "title", "chunk": 4, "offset": "0x102640", "width": 256, "height": 128, "palette": 0},
+    {"name": "start_0", "dir": "title", "chunk": 4, "offset": "0x10aa80", "width": 512, "height": 64, "palette": 0},
+    {"name": "start_1", "dir": "title", "chunk": 4, "offset": "0x112ec0", "width": 512, "height": 64, "palette": 0}
+  ],
+  "part": [
+    {
+      "name": "Tw_map02",
+      "dir": "town",
+      "chunk": 8,
+      "offset": "0x10480",
+      "slot": 2,
+      "width": 256,
+      "height": 256,
+      "rects": [
+        {"name": "top", "x": 104, "y": 232, "width": 112, "height": 16, "palette": 1},
+        {"name": "bottom", "x": 0, "y": 232, "width": 104, "height": 16, "palette": 1}
+      ]
+    }
+  ]
+}

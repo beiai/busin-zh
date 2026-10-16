@@ -83,7 +83,7 @@ HINTS = ((9, "confirm", (112, 152, 32, 16)),
          (14, "page-switch", (64, 184, 88, 16)),
          (20, "switch-shared", (100, 184, 48, 16)))
 assert KEYBOARD + 110 * 2 == 0x582C94
-LABELS = DATA / "screen" / "name" / "labels.json"
+LABELS = DATA / "picture" / "name" / "labels.json"
 # Page 4 cells 1..23. Cell 0 stays blank. Sorted by Unicode scalar.
 PAGE4 = tuple(range(0x401, 0x418))
 INK = 15
@@ -97,7 +97,7 @@ PAGE_NARROW_PNG = LABELS.parent / "page_toggle_narrow.png"
 
 
 def survey_name_entry():
-    out = BUILD / "screen" / "name"
+    out = BUILD / "picture" / "name"
     out.mkdir(parents=True, exist_ok=True)
     elf = load_elf()
     report = {"textures": [], "strings": [], "operations": [],
