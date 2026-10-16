@@ -22,7 +22,6 @@
       "width": 256,
       "height": 256,
       "rects": [
-        {"name": "top", "x": 104, "y": 232, "width": 112, "height": 16, "palette": 1},
         {"name": "bottom", "x": 0, "y": 232, "width": 104, "height": 16, "palette": 1}
       ]
     }

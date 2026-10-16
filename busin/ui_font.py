@@ -5,6 +5,7 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
+from busin.font import seat_baseline
 from busin.paths import BUILD
 
 CELL = 16
@@ -40,33 +41,8 @@ def _primary():
     return font
 
 
-def _canvas(font, char, x, baseline):
-    image = Image.new("L", (CELL + 16, CELL + 16))
-    ImageDraw.Draw(image).text((8 + x, 8 + baseline), char, font=font, anchor="ls", fill=255)
-    return image
-
-
 def _placed(font, char):
-    advance = font.getlength(char)
-    rounded = round(advance)
-    if abs(advance - rounded) > 0.01 or not 0 < rounded <= CELL:
-        raise ValueError(f"glyph {char!r} has unsupported advance {advance}")
-    x = (CELL - rounded) // 2
-    image = _canvas(font, char, x, BASELINE)
-    solid = image.point(lambda value: 255 if value >= SOLID else 0).getbbox()
-    if solid is None:
-        raise ValueError(f"glyph {char!r} is empty")
-    # Keep solid ink inside the cell. One pixel of lighter fringe may hang outside.
-    shift = max(0, solid[3] - (8 + CELL))
-    if shift:
-        image = _canvas(font, char, x, BASELINE - shift)
-        solid = image.point(lambda value: 255 if value >= SOLID else 0).getbbox()
-    ink = image.getbbox()
-    if solid is None or solid[0] < 8 or solid[1] < 8 or solid[2] > 8 + CELL or solid[3] > 8 + CELL:
-        raise ValueError(f"glyph {char!r} solid ink does not fit 16x16")
-    if ink[0] < 7 or ink[1] < 7 or ink[2] > 9 + CELL or ink[3] > 9 + CELL:
-        raise ValueError(f"glyph {char!r} fringe exceeds 1 pixel")
-    return image.crop((8, 8, 8 + CELL, 8 + CELL)), shift
+    return seat_baseline(font, char, CELL)
 
 
 def load_ui_glyphs(wanted):

@@ -15,6 +15,8 @@ EXTENSION_LIMIT = 0x7FFF
 PIXEL_OFFSET = 0x240
 PIXEL_SIZE = 524288
 FONT_DIR = Path("C:/Windows/Fonts")
+SOLID = 128
+_PAD = 8
 
 
 def load_plan(path: Path) -> dict:
@@ -131,6 +133,59 @@ def copy_cell(data: bytearray, source: bytes, source_cell: int, cell: int) -> No
         data[to:to + CELL // 2] = source[at:at + CELL // 2]
 
 
+def fit_cell(cell, paint, label="glyph"):
+    """Seat a glyph in a fixed cell. Solid ink that hangs below the cell is raised until it sits inside. Lighter fringe may hang one pixel outside."""
+    image = paint(0)
+    solid = image.point(lambda value: 255 if value >= SOLID else 0).getbbox()
+    if solid is None:
+        raise ValueError(f"{label} is empty")
+    shift = max(0, solid[3] - (_PAD + cell))
+    if shift:
+        image = paint(shift)
+        solid = image.point(lambda value: 255 if value >= SOLID else 0).getbbox()
+    ink = image.getbbox()
+    if solid is None or solid[0] < _PAD or solid[1] < _PAD or solid[2] > _PAD + cell or solid[3] > _PAD + cell:
+        raise ValueError(f"{label} solid ink does not fit {cell}x{cell}")
+    if ink[0] < _PAD - 1 or ink[1] < _PAD - 1 or ink[2] > _PAD + cell + 1 or ink[3] > _PAD + cell + 1:
+        raise ValueError(f"{label} fringe exceeds 1 pixel")
+    return image.crop((_PAD, _PAD, _PAD + cell, _PAD + cell)), shift
+
+
+def seat_baseline(font, char, cell):
+    advance = font.getlength(char)
+    rounded = round(advance)
+    if abs(advance - rounded) > 0.01 or not 0 < rounded <= cell:
+        raise ValueError(f"glyph {char!r} has unsupported advance {advance}")
+    x = (cell - rounded) // 2
+
+    def paint(shift):
+        image = Image.new("L", (cell + 16, cell + 16))
+        ImageDraw.Draw(image).text((8 + x, 8 + cell - 1 - shift), char, font=font, anchor="ls", fill=255)
+        return image
+
+    return fit_cell(cell, paint, f"glyph {char!r}")
+
+
+def message_cell(font, char, cell=CELL):
+    cjk = unicodedata.name(char, "").startswith("CJK UNIFIED")
+
+    def paint(shift):
+        image = Image.new("L", (cell + 16, cell + 16), 0)
+        draw = ImageDraw.Draw(image)
+        if cjk:
+            left, top, right, bottom = draw.textbbox((0, 0), char, font=font)
+            draw.text((
+                8 + (cell - (right - left)) // 2 - left,
+                8 + (cell - (bottom - top)) // 2 - top - shift,
+            ), char, font=font, fill=255)
+        else:
+            # Punctuation keeps its place in the em square (「，」 sits low left), so centre the em box, not the ink.
+            draw.text((8 + cell // 2, 8 + cell // 2 - shift), char, font=font, fill=255, anchor="mm")
+        return image
+
+    return fit_cell(cell, paint, f"font glyph {char!r}")
+
+
 def render_font(source: Path, output: Path, char_map: dict[str, int], generated: list[str], font_name: str, size: int = 22, variation: str = "Black", alpha: list[int] | None = None) -> None:
     data = bytearray(source.read_bytes())
     image = read_tmx(source)
@@ -156,21 +211,7 @@ def render_font(source: Path, output: Path, char_map: dict[str, int], generated:
             raise ValueError(f"replacement cell {glyph:#x} is not unused")
         if bytes(font.getmask(char)) == bytes(font.getmask(chr(0x10FFFF))):
             raise ValueError(f"font has no glyph for {char!r}")
-        mask = Image.new("L", (CELL, CELL), 0)
-        draw = ImageDraw.Draw(mask)
-        if unicodedata.name(char, "").startswith("CJK UNIFIED"):
-            left, top, right, bottom = draw.textbbox((0, 0), char, font=font)
-            if right - left > CELL or bottom - top > CELL:
-                raise ValueError(f"font glyph {char!r} does not fit 24x24")
-            draw.text(((CELL - (right - left)) // 2 - left, (CELL - (bottom - top)) // 2 - top), char, font=font, fill=255)
-        else:
-            # Punctuation keeps its place in the em square (「，」 sits low left), so centre the em box, not the ink.
-            left, top, right, bottom = draw.textbbox((CELL // 2, CELL // 2), char, font=font, anchor="mm")
-            if left < 0 or top < 0 or right > CELL or bottom > CELL:
-                raise ValueError(f"font glyph {char!r} does not fit 24x24")
-            draw.text((CELL // 2, CELL // 2), char, font=font, fill=255, anchor="mm")
-        if not mask.getbbox():
-            raise ValueError(f"font glyph {char!r} is empty")
+        mask, _shift = message_cell(font, char)
         for row in range(CELL):
             for col in range(CELL):
                 index = (y + row) * 1024 + x + col
@@ -242,3 +283,24 @@ def self_test() -> None:
         pass
     else:
         raise AssertionError("pinned cell 0 was accepted")
+
+    def hanging(shift):
+        image = Image.new("L", (16 + 16, 16 + 16))
+        ImageDraw.Draw(image).rectangle((10, 20 - shift, 14, 26 - shift), fill=255)
+        return image
+
+    mask, shift = fit_cell(16, hanging, "block")
+    assert shift == 3 and mask.getpixel((2, 15)) == 255 and mask.getpixel((2, 0)) == 0
+
+    def fringe(shift):
+        image = Image.new("L", (32, 32))
+        ImageDraw.Draw(image).rectangle((10, 10 - shift, 14, 20 - shift), fill=255)
+        image.putpixel((12, 6 - shift), 40)
+        return image
+
+    try:
+        fit_cell(16, fringe, "block")
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("fringe past one pixel was accepted")

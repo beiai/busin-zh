@@ -1,8 +1,9 @@
-"""Paint town-plaque rectangles from their .zh.png files back into Tw_map02.
+"""Paint the town-plaque line from bottom.zh.png back into Tw_map02.
 
-The frame uses the first palette. These two rectangles use the second.
-Only their color indexes are replaced. A missing .zh.png leaves that
-rectangle alone.
+The frame uses the first palette. This rectangle uses the second.
+Only its color indexes are replaced. A missing .zh.png leaves the
+rectangle alone. The English line above it is the same name, so it
+stays as on the disc.
 """
 import struct
 import tempfile
@@ -28,11 +29,18 @@ GRAY = (
     0x0000, 0x0842, 0x1084, 0x18C6, 0x2108, 0x2D6B, 0x39CE, 0x4210,
     0x4631, 0x4E73, 0x56B5, 0x5EF7, 0x6739, 0x6F7B, 0x77BD, 0x7FFF,
 )
-# The wider line is drawn above the picture. The narrower line is drawn below it.
+# Japanese line under the picture. The English line above it is the same name.
 BOXES = {
-    "top": (104, 232, 112, 16),
     "bottom": (0, 232, 104, 16),
 }
+# ドゥーハンの迷宮. Read left to right, aligned to the right edge.
+CAPTIONS = {
+    "bottom": "杜汉的迷宫",
+}
+GLYPH = 14
+# The original line stops on this palette step. The brighter entries read as white.
+INK = 11
+STEPS = tuple((value & 0x1F) << 3 for value in GRAY[:INK + 1])
 
 
 def load_rects() -> list[dict]:
@@ -139,6 +147,59 @@ def spans(handle) -> list[tuple[int, bytes]]:
     return [(offset, updated)]
 
 
+def _serif_font():
+    from PIL import ImageFont
+
+    from busin.font import FONT_DIR
+
+    font = ImageFont.truetype(str(FONT_DIR / "NotoSerifSC-VF.ttf"), GLYPH)
+    font.set_variation_by_name("Black")
+    return font
+
+
+def _serif_cell(font, char):
+    from busin.font import seat_baseline
+
+    if bytes(font.getmask(char)) == bytes(font.getmask(chr(0x10FFFF))):
+        raise ValueError(f"font has no glyph for {char!r}")
+    return seat_baseline(font, char, GLYPH)[0]
+
+
+def _ink(coverage: int) -> int:
+    if not coverage:
+        return 0
+    return STEPS[round(coverage * INK / 255)]
+
+
+def render_caption(name: str):
+    from PIL import Image
+
+    text = CAPTIONS[name]
+    _x, _y, width, height = BOXES[name]
+    if GLYPH > height or len(text) * GLYPH > width:
+        raise ValueError(f"plaque {name} does not fit")
+    font = _serif_font()
+    image = Image.new("RGB", (width, height), (0, 0, 0))
+    x0 = width - len(text) * GLYPH
+    y0 = (height - GLYPH) // 2
+    for index, char in enumerate(text):
+        cell = _serif_cell(font, char)
+        origin = x0 + index * GLYPH
+        for y in range(GLYPH):
+            for x in range(GLYPH):
+                value = _ink(cell.getpixel((x, y)))
+                image.putpixel((origin + x, y0 + y), (value, value, value))
+    return image
+
+
+def write_captions(folder: Path | None = None) -> Path:
+    folder = folder or (DATA / "picture" / DIR)
+    folder.mkdir(parents=True, exist_ok=True)
+    for name in CAPTIONS:
+        render_caption(name).save(folder / f"{name}.zh.png")
+    return folder
+
+
 def _sample() -> bytearray:
     blob = bytearray(b"\xAB" * SIZE)
     blob[:2] = b"\x02\x00"
@@ -166,9 +227,9 @@ def self_test() -> None:
     paint(blob, *BOXES["bottom"], narrow)
     row = PIXEL_AT + (232 * WIDTH) // 2
     assert blob[row] == 0x0F and blob[row + 1] == 0x00 and blob[row + 52] == 0xAB
-    wide = [4] * (112 * 16)
+    wide = (104, 232, 112, 16)
     before = bytes(blob)
-    paint(blob, *BOXES["top"], wide)
+    paint(blob, *wide, [4] * (112 * 16))
     assert blob[row] == 0x0F and blob[row + 52] == 0x44 and blob[row + 108] == 0xAB
     assert blob[PIXEL_AT:row] == before[PIXEL_AT:row]
     assert blob[PIXEL_AT + ((232 + 16) * WIDTH) // 2:] == before[PIXEL_AT + ((232 + 16) * WIDTH) // 2:]
@@ -191,6 +252,32 @@ def self_test() -> None:
             pass
         else:
             raise AssertionError("wrong-sized plaque png was accepted")
+    from busin.font import FONT_DIR
+    if (FONT_DIR / "NotoSerifSC-VF.ttf").is_file():
+        font = _serif_font()
+        glyphs = {char: _serif_cell(font, char) for char in set("".join(CAPTIONS.values()))}
+        bottom = render_caption("bottom")
+        assert bottom.size == (104, 16)
+        black = (0, 0, 0)
+
+        def bright(cell):
+            for y in range(GLYPH):
+                for x in range(GLYPH):
+                    if cell.getpixel((x, y)) >= 200:
+                        return x, y
+            raise AssertionError("glyph has no bright pixel")
+
+        dx, dy = bright(glyphs["杜"])
+        gx, gy = bright(glyphs["宫"])
+        x0 = 104 - len(CAPTIONS["bottom"]) * GLYPH
+        y0 = (16 - GLYPH) // 2
+        assert bottom.getpixel((x0 + dx, y0 + dy)) != black
+        assert bottom.getpixel((x0 + 4 * GLYPH + gx, y0 + gy)) != black
+        assert all(bottom.getpixel((x, y)) == black for x in range(x0) for y in range(16))
+        assert STEPS[-1] == 184
+        values = {bottom.getpixel((x, y))[0] for y in range(16) for x in range(104)}
+        assert values <= set(STEPS) and STEPS[-1] in values
+        assert any(0 < value < STEPS[-1] for value in values)
     print("plaque self-test: OK")
 
 
@@ -207,7 +294,7 @@ def disc_self_test() -> None:
             assert len(got) == 1 and got[0][0] == offset and len(got[0][1]) == SIZE
             assert got[0][1][:PIXEL_AT] == blob[:PIXEL_AT]
     painted = bytearray(blob)
-    paint(painted, *BOXES["top"], [15] * (BOXES["top"][2] * BOXES["top"][3]))
+    paint(painted, 104, 232, 112, 16, [15] * (112 * 16))
     assert bytes(painted[:PIXEL_AT]) == blob[:PIXEL_AT] and len(painted) == SIZE
     row = PIXEL_AT + (232 * WIDTH) // 2
     assert painted[row:row + 52] == blob[row:row + 52]
