@@ -102,6 +102,12 @@ def read_tmx(path: Path) -> TmxImage:
         raise ValueError("mipmapped TMX textures are not supported")
     if width <= 0 or height <= 0:
         raise ValueError(f"invalid dimensions {width}x{height}")
+    # A 4-bit image with a 32-bit palette is 64 palette bytes, then the pixels.
+    # Bytes after the pixels are not drawn. The 512×256 poem keeps 960 of them.
+    # Treating that tail as palette and starting at byte 1024 drops the first
+    # three rows and 384 columns, so the last 128 pixels of each row sit on the
+    # left. The game draws the texture from its top-left. The gray is flat;
+    # the letters are only in the alpha.
     padding = 0
     if pixel_format == PSMT4 and palette_format == PSMCT16:
         if width % 2:
@@ -116,7 +122,7 @@ def read_tmx(path: Path) -> TmxImage:
         decode_palette = decode_ct32
         decode_pixels = decode_psmt8
     elif pixel_format == PSMT4 and palette_format == PSMCT32 and palette_count == 8 and width == 1024 and height == 1024:
-        # Opening GS upload confirms palette-first data followed by 960 padding bytes.
+        # Message glyphs only: eight palettes, the pixels, then 960 zero bytes.
         padding = 960
         palette_size = 64
         pixel_size = width * height // 2
