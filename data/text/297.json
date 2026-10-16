@@ -5,7 +5,7 @@
   "messages": [
     {
       "offset": "0x0380",
-      "show": "screen",
+      "type": "center",
       "source": "古びた本の間に、一枚の羊皮紙が\nはさんである。\nそこにはヘタな字でこうかいてあった。<BREAK>",
       "text": [
         "陈旧的书之间，夹着",
@@ -15,7 +15,7 @@
     },
     {
       "offset": "0x03D8",
-      "show": "screen",
+      "type": "center",
       "source": "不死なる者に、生命をすいとられた\n何てこった、体がギクシャクする！\n\n<FB01>いだいなる戦士<FFD0>オトム<BREAK>",
       "text": [
         "被不死者吸走了生命，",
@@ -26,7 +26,7 @@
     },
     {
       "offset": "0x043A",
-      "show": "screen",
+      "type": "center",
       "source": "カンバンには、ヘタな字で\nこうかいてあった。<BREAK>",
       "text": [
         "告示牌上，用拙劣的字",
@@ -35,7 +35,7 @@
     },
     {
       "offset": "0x046A",
-      "show": "screen",
+      "type": "center",
       "source": "この魔法陣はクセ物だ\n進みたい奴、入るべからず\n戻る時には、楽だけど………\n\n<FB01>いだいなる戦士<FFD0>オトム<BREAK>",
       "text": [
         "这魔法阵不老实",
@@ -47,7 +47,7 @@
     },
     {
       "offset": "0x04D4",
-      "show": "screen",
+      "type": "center",
       "source": "袋を調べてみると、\n中には鍵が入っていた。<BREAK>",
       "text": [
         "查看袋子之后，",
@@ -56,7 +56,7 @@
     },
     {
       "offset": "0x0502",
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>B4のカギ<FB00>を手に入れた！<BREAK>",
       "text": [
         "<FB01>B4的钥匙<FB00>得到了！<BREAK>"
@@ -64,7 +64,7 @@
     },
     {
       "offset": "0x0522",
-      "show": "screen",
+      "type": "center",
       "source": "袋の中には祝福の鎖かたびらが\nしまわれていた。<BREAK>",
       "text": [
         "袋子里收着",
@@ -73,7 +73,7 @@
     },
     {
       "offset": "0x0554",
-      "show": "screen",
+      "type": "center",
       "source": "祝福の鎖かたびらを拾いますか？\n\nは い\nいいえ\n",
       "text": [
         "要捡起祝福锁子甲吗？",
@@ -85,7 +85,7 @@
     },
     {
       "offset": "0x058C",
-      "show": "screen",
+      "type": "center",
       "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "携带物品已经满了。",
@@ -98,7 +98,7 @@
     },
     {
       "offset": "0x05CE",
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>祝福の鎖かたびら<FB00>を手に入れた！<BREAK>",
       "text": [
         "<FB01>祝福锁子甲<FB00>得到了！<BREAK>"
@@ -106,7 +106,7 @@
     },
     {
       "offset": "0x05F4",
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>祝福の鎖かたびら<FB00>をあきらめた。<BREAK>",
       "text": [
         "<FB01>祝福锁子甲<FB00>放弃了。<BREAK>"
@@ -114,7 +114,7 @@
     },
     {
       "offset": "0x061A",
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>祝福の鎖かたびら<FB00>を手に入れた！<BREAK>",
       "text": [
         "<FB01>祝福锁子甲<FB00>得到了！<BREAK>"
@@ -122,7 +122,7 @@
     },
     {
       "offset": "0x0640",
-      "show": "screen",
+      "type": "center",
       "source": "袋の中には名工の鎧が\nしまわれていた。<BREAK>",
       "text": [
         "袋子里收着",
@@ -131,7 +131,7 @@
     },
     {
       "offset": "0x066A",
-      "show": "screen",
+      "type": "center",
       "source": "名工の鎧を拾いますか？\n\nは い\nいいえ\n",
       "text": [
         "要捡起名匠铠吗？",
@@ -143,7 +143,7 @@
     },
     {
       "offset": "0x069A",
-      "show": "screen",
+      "type": "center",
       "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "携带物品已经满了。",
@@ -156,7 +156,7 @@
     },
     {
       "offset": "0x06DC",
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>名工の鎧<FB00>を手に入れた！<BREAK>",
       "text": [
         "<FB01>名匠铠<FB00>得到了！<BREAK>"
@@ -164,7 +164,7 @@
     },
     {
       "offset": "0x06FA",
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>名工の鎧<FB00>をあきらめた。<BREAK>",
       "text": [
         "<FB01>名匠铠<FB00>放弃了。<BREAK>"
@@ -172,7 +172,7 @@
     },
     {
       "offset": "0x0718",
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>名工の鎧<FB00>を手に入れた！<BREAK>",
       "text": [
         "<FB01>名匠铠<FB00>得到了！<BREAK>"

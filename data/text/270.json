@@ -5,37 +5,37 @@
   "messages": [
     {
       "offset": "0x0002",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "何も思い出さぬまま",
       "text": null
     },
     {
       "offset": "0x0016",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "何もなさぬままに",
       "text": null
     },
     {
       "offset": "0x0028",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "かの魂は冥府の門をくぐる",
       "text": null
     },
     {
       "offset": "0x0042",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "後にはただ",
       "text": null
     },
     {
       "offset": "0x004E",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "永遠の夜だけが",
       "text": null
     },
     {
       "offset": "0x005E",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "静かにドゥーハンをおおった……",
       "text": null
     }

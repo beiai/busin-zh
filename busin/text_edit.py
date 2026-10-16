@@ -85,9 +85,9 @@ def init_text(chunk: int, align: str | None = None, root: Path | None = None) ->
     return path, len(messages), skipped
 
 
-def _entry(chunk: int, at: int, show: str, source: list[str]) -> dict:
+def _entry(chunk: int, at: int, kind: str, source: list[str]) -> dict:
     """One message. Packed chunks omit the disc address; packing computes the position."""
-    item = {"show": show, "source": "\n".join(source), "text": None}
+    item = {"type": kind, "source": "\n".join(source), "text": None}
     if chunk not in PACKED_CHUNKS:
         item = {"offset": f"0x{at:04X}", **item}
     return item
@@ -157,7 +157,7 @@ def check_text(chunk: int, offsets: list[str] | None = None, root: Path | None =
             errors.append(f"{label}: source does not match the disc")
             continue
         try:
-            check_lines(original, item["text"], doc["align"], item["show"])
+            check_lines(original, item["text"], doc["align"], item["type"])
             encode_message(original, item["text"], doc["align"], lambda char: 0x4001)
         except ValueError as error:
             errors.append(f"{label}: {error}")
@@ -197,15 +197,15 @@ def self_test() -> None:
         blank = {
             "chunk": 1, "base": "0x0", "align": "left",
             "messages": [
-                {"offset": "0x0010", "show": "screen", "source": "あ", "text": None},
-                {"offset": "0x0020", "show": "window", "source": "い", "text": None},
+                {"offset": "0x0010", "type": "center", "source": "あ", "text": None},
+                {"offset": "0x0020", "type": "dialog", "source": "い", "text": None},
             ],
         }
         other = {
             "chunk": 2, "base": "0x0", "align": "left",
             "messages": [
-                {"offset": "0x0010", "show": "screen", "source": "あ", "text": None},
-                {"offset": "0x0020", "show": "window", "source": "い", "text": None},
+                {"offset": "0x0010", "type": "center", "source": "あ", "text": None},
+                {"offset": "0x0020", "type": "dialog", "source": "い", "text": None},
             ],
         }
         _save(1, blank, root)
@@ -258,8 +258,8 @@ def disc_self_test() -> None:
             saved = json.loads((DATA / "text" / f"{chunk}.json").read_text(encoding="utf-8"))
             if fresh["align"] != saved["align"] or fresh["base"] != saved["base"]:
                 raise AssertionError(f"chunk {chunk} header does not match the saved file")
-            got = [(item["offset"], item["show"], item["source"]) for item in fresh["messages"]]
-            expect = [(item["offset"], item["show"], item["source"]) for item in saved["messages"]]
+            got = [(item["offset"], item["type"], item["source"]) for item in fresh["messages"]]
+            expect = [(item["offset"], item["type"], item["source"]) for item in saved["messages"]]
             if got != expect or count != len(fresh["messages"]) or any(item["text"] is not None for item in fresh["messages"]):
                 raise AssertionError(f"chunk {chunk} skeleton does not match the saved file")
         doc = _load(309, root)

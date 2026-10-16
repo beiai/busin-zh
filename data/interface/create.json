@@ -1,237 +1,331 @@
 [
   {
     "id": "589F60",
-    "source": "力",
-    "text": "力量"
+    "type": "line",
+    "width": "3",
+    "source": " 力 ",
+    "text": "力 量"
   },
   {
     "id": "589F66",
-    "source": "知恵",
-    "text": "智力"
+    "type": "line",
+    "width": "3",
+    "source": "知 恵",
+    "text": "智 力"
   },
   {
     "id": "589F6C",
+    "type": "line",
+    "width": "3",
     "source": "信仰心",
-    "text": "信仰"
+    "text": "信 仰"
   },
   {
     "id": "589F72",
+    "type": "line",
+    "width": "3",
     "source": "生命力",
-    "text": "体力"
+    "text": "体 力"
   },
   {
     "id": "589F78",
+    "type": "line",
+    "width": "3",
     "source": "敏捷度",
-    "text": "敏捷"
+    "text": "敏 捷"
   },
   {
     "id": "589F7E",
+    "type": "line",
+    "width": "3",
     "source": "幸運度",
-    "text": "幸运"
+    "text": "幸 运"
   },
   {
     "id": "589F88",
-    "source": "HUM",
+    "type": "line",
+    "width": "4",
+    "source": "HUM ",
     "text": "HUM"
   },
   {
     "id": "589F90",
-    "source": "ELF",
+    "type": "line",
+    "width": "4",
+    "source": "ELF ",
     "text": "ELF"
   },
   {
     "id": "589F98",
-    "source": "DWA",
+    "type": "line",
+    "width": "4",
+    "source": "DWA ",
     "text": "DWA"
   },
   {
     "id": "589FA0",
-    "source": "GNO",
+    "type": "line",
+    "width": "4",
+    "source": "GNO ",
     "text": "GNO"
   },
   {
     "id": "589FA8",
-    "source": "HOB",
+    "type": "line",
+    "width": "4",
+    "source": "HOB ",
     "text": "HOB"
   },
   {
     "id": "589FB0",
-    "source": "人間",
-    "text": "人类"
+    "type": "line",
+    "width": "4",
+    "source": "人間{2}",
+    "text": "人 类"
   },
   {
     "id": "589FB8",
-    "source": "エルフ",
-    "text": "精灵"
+    "type": "line",
+    "width": "4",
+    "source": "エルフ ",
+    "text": "精 灵"
   },
   {
     "id": "589FC0",
+    "type": "line",
+    "width": "4",
     "source": "ドワーフ",
-    "text": "矮人"
+    "text": "矮 人"
   },
   {
     "id": "589FC8",
-    "source": "ノーム",
-    "text": "侏儒"
+    "type": "line",
+    "width": "4",
+    "source": "ノーム ",
+    "text": "侏 儒"
   },
   {
     "id": "589FD0",
+    "type": "line",
+    "width": "4",
     "source": "ホビット",
     "text": "霍比特"
   },
   {
     "id": "589FD8",
-    "source": "戦士",
-    "text": "战士"
+    "type": "line",
+    "width": "3",
+    "source": "戦 士",
+    "text": "战 士"
   },
   {
     "id": "589FDE",
-    "source": "盗賊",
-    "text": "盗贼"
+    "type": "line",
+    "width": "3",
+    "source": "盗 賊",
+    "text": "盗 贼"
   },
   {
     "id": "589FE4",
-    "source": "侍",
-    "text": "武士"
+    "type": "line",
+    "width": "3",
+    "source": " 侍 ",
+    "text": "武 士"
   },
   {
     "id": "589FEA",
-    "source": "忍者",
-    "text": "忍者"
+    "type": "line",
+    "width": "3",
+    "source": "忍 者",
+    "text": "忍 者"
   },
   {
     "id": "589FF0",
+    "type": "line",
+    "width": "3",
     "source": "魔術師",
     "text": "魔法师"
   },
   {
     "id": "589FF6",
-    "source": "僧侶",
-    "text": "僧侣"
+    "type": "line",
+    "width": "3",
+    "source": "僧 侶",
+    "text": "僧 侣"
   },
   {
     "id": "589FFC",
-    "source": "騎士",
-    "text": "骑士"
+    "type": "line",
+    "width": "3",
+    "source": "騎 士",
+    "text": "骑 士"
   },
   {
     "id": "58A002",
-    "source": "司教",
-    "text": "主教"
+    "type": "line",
+    "width": "3",
+    "source": "司 教",
+    "text": "主 教"
   },
   {
     "id": "58A008",
+    "type": "line",
+    "width": "3",
     "source": "FIG",
     "text": "FIG"
   },
   {
     "id": "58A00E",
+    "type": "line",
+    "width": "3",
     "source": "THI",
     "text": "THI"
   },
   {
     "id": "58A014",
+    "type": "line",
+    "width": "3",
     "source": "SAM",
     "text": "SAM"
   },
   {
     "id": "58A01A",
+    "type": "line",
+    "width": "3",
     "source": "NIN",
     "text": "NIN"
   },
   {
     "id": "58A020",
+    "type": "line",
+    "width": "3",
     "source": "MAG",
     "text": "MAG"
   },
   {
     "id": "58A026",
+    "type": "line",
+    "width": "3",
     "source": "PRI",
     "text": "PRI"
   },
   {
     "id": "58A02C",
+    "type": "line",
+    "width": "3",
     "source": "PAL",
     "text": "PAL"
   },
   {
     "id": "58A032",
+    "type": "line",
+    "width": "3",
     "source": "BIS",
     "text": "BIS"
   },
   {
     "id": "58A038",
-    "source": "好戦的",
+    "type": "line",
+    "width": "5",
+    "source": "好戦的{2}",
     "text": "好战"
   },
   {
     "id": "58A042",
-    "source": "弱虫",
+    "type": "line",
+    "width": "5",
+    "source": "弱虫{3}",
     "text": "懦弱"
   },
   {
     "id": "58A04C",
-    "source": "優しい",
+    "type": "line",
+    "width": "5",
+    "source": "優しい{2}",
     "text": "温柔"
   },
   {
     "id": "58A056",
-    "source": "友情的",
+    "type": "line",
+    "width": "5",
+    "source": "友情的{2}",
     "text": "重友情"
   },
   {
     "id": "58A060",
-    "source": "孤独的",
-    "text": "孤僻"
+    "type": "line",
+    "width": "5",
+    "source": "孤独的{2}",
+    "text": "孤独"
   },
   {
     "id": "58A06A",
-    "source": "恐がり",
+    "type": "line",
+    "width": "5",
+    "source": "恐がり{2}",
     "text": "胆小"
   },
   {
     "id": "58A074",
-    "source": "感動家",
+    "type": "line",
+    "width": "5",
+    "source": "感動家{2}",
     "text": "易感动"
   },
   {
     "id": "58A07E",
-    "source": "知的",
+    "type": "line",
+    "width": "5",
+    "source": "知的{3}",
     "text": "知性"
   },
   {
     "id": "58A088",
-    "source": "飽き性",
+    "type": "line",
+    "width": "5",
+    "source": "飽き性{2}",
     "text": "易厌倦"
   },
   {
     "id": "58A092",
-    "source": "欲張り",
+    "type": "line",
+    "width": "5",
+    "source": "欲張り{2}",
     "text": "贪心"
   },
   {
     "id": "58A09C",
-    "source": "収集家",
+    "type": "line",
+    "width": "5",
+    "source": "収集家{2}",
     "text": "收藏家"
   },
   {
     "id": "58A0A6",
-    "source": "虫嫌い",
+    "type": "line",
+    "width": "5",
+    "source": "虫嫌い{2}",
     "text": "讨厌虫子"
   },
   {
     "id": "58A0B0",
-    "source": "犬嫌い",
+    "type": "line",
+    "width": "5",
+    "source": "犬嫌い{2}",
     "text": "讨厌狗"
   },
   {
     "id": "58A0BA",
-    "source": "竜嫌い",
+    "type": "line",
+    "width": "5",
+    "source": "竜嫌い{2}",
     "text": "讨厌龙"
   },
   {
     "id": "58A0C4",
-    "source": "正義感",
+    "type": "line",
+    "width": "5",
+    "source": "正義感{2}",
     "text": "正义感"
   }
 ]

@@ -161,7 +161,7 @@ def load_messages(handle, texts, cells):
                 prose = message_prose(original, doc["align"])
                 if prose != message["source"].split("\n"):
                     raise ValueError(f"disc is {prose}")
-                check_lines(original, message["text"], doc["align"], message.get("show"))
+                check_lines(original, message["text"], doc["align"], message.get("type"))
                 encoded = encode_message(original, message["text"], doc["align"], lambda char: PAD + cells[char])
             except ValueError as error:
                 errors.append(f"{name} {message['offset']}: {error}")
@@ -198,7 +198,7 @@ def ending_spans(handle, texts, cells):
             raise ValueError(f"chunk 272 message {at:#x} source does not match the disc")
         if record.get("text") is None:
             continue
-        check_lines(words, record["text"], doc["align"], record["show"])
+        check_lines(words, record["text"], doc["align"], record["type"])
         encoded = encode_message(words, record["text"], doc["align"], token_of)
         cursor = at
         for word in encoded:
@@ -212,7 +212,7 @@ def ending_spans(handle, texts, cells):
         text = record.get("text")
         if text is None or len(text) != 1 or len(text[0]) != 1:
             raise ValueError(f"chunk 272 beat {at:#x} is not one character")
-        check_lines(words, text, doc["align"], record["show"])
+        check_lines(words, text, doc["align"], record["type"])
         encoded = encode_message(words, text, doc["align"], token_of)
         if len(encoded) != 1:
             raise ValueError(f"chunk 272 beat {at:#x} did not stay one word")

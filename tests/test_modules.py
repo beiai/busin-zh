@@ -76,7 +76,7 @@ def test_terms():
     assert terms["ドゥーハン"]["zh"] == "杜汉" and terms["アレイド"]["zh"] == "连携"
     assert terms["ヴィガー"]["zh"] == "维加" and terms["ヘルガ"]["zh"] == "赫尔加"
     assert terms["デス"]["zh"] == "德斯" and terms["リゲル"]["zh"] == "莉格尔"
-    assert terms["プレイステーション 2"]["zh"] == "PlayStation 2"
+    assert terms["プレイステーション 2"]["zh"] == "PS2"
     assert terms["剣士"]["zh"] == "剑士" and terms["戦士"]["zh"] == "战士"
     assert terms["人間"]["zh"] == "人类" and terms["ドワーフ"]["zh"] == "矮人"
     assert terms["ノーム"]["zh"] == "侏儒" and terms["侍"]["zh"] == "武士"

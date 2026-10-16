@@ -1,37 +1,51 @@
 [
   {
     "id": "584308",
+    "type": "line",
+    "width": "6",
     "source": "0使 う{2}",
-    "text": "使用{2}"
+    "text": "使 用"
   },
   {
     "id": "584314",
+    "type": "line",
+    "width": "6",
     "source": "0装 備{2}",
-    "text": "装备{2}"
+    "text": "装 备"
   },
   {
     "id": "584320",
+    "type": "line",
+    "width": "6",
     "source": "0渡 す{2}",
-    "text": "交给{2}"
+    "text": "交 给"
   },
   {
     "id": "58432C",
+    "type": "line",
+    "width": "6",
     "source": "0鑑 定{2}",
-    "text": "鉴定{2}"
+    "text": "鉴 定"
   },
   {
     "id": "584338",
-    "source": "SPの解放",
-    "text": "解放SP"
+    "type": "line",
+    "width": "6",
+    "source": " SPの解放",
+    "text": " 解放SP"
   },
   {
     "id": "584344",
+    "type": "line",
+    "width": "6",
     "source": "0捨てる{2}",
-    "text": "丢弃{2}"
+    "text": "丢 弃"
   },
   {
     "id": "584350",
+    "type": "line",
+    "width": "6",
     "source": "0戻 る{2}",
-    "text": "返回{2}"
+    "text": "返 回"
   }
 ]

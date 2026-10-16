@@ -31,9 +31,9 @@ CONTROL_NAMES = {
 TAGS = {name[1:-1]: code for code, name in CONTROL_NAMES.items()}
 # Line-leading choice marks, indents and styles. Kept on the same line index.
 LAYOUT = range(0xFFC0, 0xFFE8)
-SCREEN_LINE = 18  # script centered text, show == "screen"
-NARRATION_LINE = 21  # subtitles, show == "subtitle"
-WINDOW_LINE = 19  # window text keeps the 20th cell for the trailing icon
+CENTER_LINE = 19  # centered scene text; a full line on the disc is 19 cells
+NARRATION_LINE = 21  # subtitles, type == "subtitle"
+DIALOG_LINE = 19  # dialog keeps the 20th cell for the trailing icon
 # Chunk 272's last 40 messages are one glyph each. Chunk 281 plays them by index.
 BEAT_CHUNK = 272
 BEAT_SCRIPT = 281
@@ -181,15 +181,15 @@ def indent_cells(prefix: list[int]) -> int:
     return cells
 
 
-def window_line_limit(prefix: list[int]) -> int:
+def dialog_line_limit(prefix: list[int]) -> int:
     """Glyphs that fit once the icon cell and this line's indent are reserved."""
-    return WINDOW_LINE - indent_cells(prefix)
+    return DIALOG_LINE - indent_cells(prefix)
 
 
-def window_limits(original: list[int], align: str, count: int) -> list[int]:
+def dialog_limits(original: list[int], align: str, count: int) -> list[int]:
     """Per translated line. A line keeps the indent of the original line at that index."""
     parts = _line_parts(original, align)
-    return [window_line_limit(parts[index][0] if index < len(parts) else []) for index in range(count)]
+    return [dialog_line_limit(parts[index][0] if index < len(parts) else []) for index in range(count)]
 
 
 def parse_line(text: str, token_of) -> list[int]:
@@ -474,11 +474,11 @@ def _script_map(data: bytes, cursor: int) -> tuple[dict, set]:
 
 
 def script_shows(data: bytes, cursor: int) -> dict[int, str]:
-    """Message offset -> screen or window, from the display flag at each 0004.
+    """Message offset -> center or dialog, from the display flag at each 0004.
 
     0003 registers a procedure offset. 0004's two u32s are a word index past the
     text cursor and a word count; every message in that span shares the flag.
-    Bit 0 and bit 2 both center. Anything else is the left window.
+    Bit 0 and bit 2 both center. Anything else is the dialog box.
     """
     messages, skipped = script_messages(data, cursor)
     if skipped:
@@ -487,7 +487,7 @@ def script_shows(data: bytes, cursor: int) -> dict[int, str]:
 
 
 def classify_shows(data: bytes, cursor: int, offsets: list[int]) -> dict[int, str]:
-    """Message offset -> screen or window. offsets are the messages 0004 must cover."""
+    """Message offset -> center or dialog. offsets are the messages 0004 must cover."""
     ins, entered = _script_map(data, cursor)
     known = set(offsets)
     ordered = sorted(offsets)
@@ -512,7 +512,7 @@ def classify_shows(data: bytes, cursor: int, offsets: list[int]) -> dict[int, st
                 else:
                     for at in offsets:
                         if start <= at < end:
-                            shown.setdefault(at, set()).add("screen" if mode & 5 else "window")
+                            shown.setdefault(at, set()).add("center" if mode & 5 else "dialog")
             queue.extend((target, mode) for target in nxt)
     kinds = {}
     missing = []
@@ -566,7 +566,7 @@ _READERS = {0x28B3F8: ("s16", 2), 0x28B428: ("u16", 2), 0x28B450: ("u32", 4), 0x
 # 293, 297, 301 and 309 fit, but packing them frees no sector, so they stay at the disc address.
 # Narration chunks 265–272 keep their counted header, so they stay padded.
 PACKED_CHUNKS = (282, 285, 291, 292, 296, 298, 299, 302, 306, 308, 310, 312, 313, 314, 315, 316)
-# Packed length, sector count, and screen lines.
+# Packed length, sector count, and center lines.
 PACKED_LAYOUT = {
     282: (0x3E26, 8, 80),
     285: (0x1014E, 33, 337),
@@ -667,20 +667,28 @@ def _guard_operands(ins: dict, cursor: int, text_end: int, starts: set[int]) -> 
             raise ValueError(f"jump at {pc:#x} points into the text")
 
 
-def check_lines(original: list[int], text: list[str], align: str, show: str) -> None:
-    if show in ("screen", "subtitle"):
-        limit = NARRATION_LINE if show == "subtitle" else SCREEN_LINE
+def _wait_parts(line: str) -> list[str]:
+    """A wait in the middle starts the next line. A wait at the end only pauses."""
+    return line.split("<BREAK>")
+
+
+def check_lines(original: list[int], text: list[str], align: str, kind: str) -> None:
+    if kind in ("center", "subtitle"):
+        limit = NARRATION_LINE if kind == "subtitle" else CENTER_LINE
         for line in text:
-            width = line_cells(line)
-            if width > limit:
-                raise ValueError(f"{show} line is {width} characters, limit {limit}: {line}")
-    elif show == "window":
-        for line, limit in zip(text, window_limits(original, align, len(text))):
-            width = line_cells(line)
-            if width > limit:
-                raise ValueError(f"window line is {width} characters, limit {limit}: {line}")
+            for part in _wait_parts(line):
+                width = line_cells(part)
+                if width > limit:
+                    raise ValueError(f"{kind} line is {width} characters, limit {limit}: {part}")
+    elif kind == "dialog":
+        for line, limit in zip(text, dialog_limits(original, align, len(text))):
+            for index, part in enumerate(_wait_parts(line)):
+                cap = limit if index == 0 else DIALOG_LINE
+                width = line_cells(part)
+                if width > cap:
+                    raise ValueError(f"dialog line is {width} characters, limit {cap}: {part}")
     else:
-        raise ValueError("missing show")
+        raise ValueError("missing type")
 
 
 def compact_chunk(data: bytes, cursor: int, records: list[dict], align: str, token_of) -> tuple[bytes, list[int]]:
@@ -706,7 +714,7 @@ def compact_chunk(data: bytes, cursor: int, records: list[dict], align: str, tok
             raise ValueError(f"disc at {at:#x} does not match source")
         if not record.get("text"):
             raise ValueError(f"message {at:#x} is not translated")
-        check_lines(body, record["text"], align, record.get("show"))
+        check_lines(body, record["text"], align, record.get("type"))
         encoded.append(encode_message(body, record["text"], align, token_of, pad=False))
     blob = bytearray()
     offsets = []
@@ -733,8 +741,8 @@ def compact_chunk(data: bytes, cursor: int, records: list[dict], align: str, tok
     packed = bytes(prefix) + bytes(blob)
     shows = classify_shows(packed, cursor, offsets)
     for record, offset in zip(records, offsets):
-        if shows.get(offset) != record.get("show"):
-            raise ValueError(f"message {offset:#x} show is {shows.get(offset)}")
+        if shows.get(offset) != record.get("type"):
+            raise ValueError(f"message {offset:#x} type is {shows.get(offset)}")
     return packed, offsets
 
 
@@ -956,9 +964,9 @@ def script_self_test() -> None:
     if cursors[282] != 0x1180 or cursors[285] != 0x6000 or messages[0][0] != 0x1180 or len(messages) != 232 or skipped:
         raise AssertionError("chunk 282 messages do not follow the descriptor cursor")
     shows = script_shows(data, cursors[282])
-    if shows[0x1238] != "screen" or shows[0x13B8] != "screen" or shows[0x127C] != "window":
-        raise AssertionError("chunk 282 display kind does not match the centered and window lines")
-    if set(shows) != {at for at, _words in messages} or sum(kind == "screen" for kind in shows.values()) != 80:
+    if shows[0x1238] != "center" or shows[0x13B8] != "center" or shows[0x127C] != "dialog":
+        raise AssertionError("chunk 282 display kind does not match the center and dialog lines")
+    if set(shows) != {at for at, _words in messages} or sum(kind == "center" for kind in shows.values()) != 80:
         raise AssertionError("chunk 282 messages are not all classified")
     maze_start, maze_count = next((item[1], item[2]) for item in _script_chunks() if item[0] == 285)
     maze_messages, maze_skipped = script_messages(_load_chunk(maze_start, maze_count), cursors[285])
@@ -968,7 +976,7 @@ def script_self_test() -> None:
             or 0xE0DB not in diary or any(at == 0xE8E6 for at, _words in maze_messages)):
         raise AssertionError("chunk 285 messages do not follow the descriptor cursor")
     maze_shows = script_shows(_load_chunk(maze_start, maze_count), cursors[285])
-    if set(maze_shows) != {at for at, _words in maze_messages} or sum(kind == "screen" for kind in maze_shows.values()) != 337:
+    if set(maze_shows) != {at for at, _words in maze_messages} or sum(kind == "center" for kind in maze_shows.values()) != 337:
         raise AssertionError("chunk 285 messages are not all classified")
     tavern = next(words for at, _end, words in found if at <= 0x15A2 < _end)
     if render_dialogue(tavern).split("\n")[0].count("よ") < 1 or "「" not in render_dialogue(tavern):
@@ -1009,11 +1017,11 @@ def script_self_test() -> None:
             raise AssertionError(f"chunk {chunk} is not {count} counted messages")
         if chunk == 266:
             opening = json.loads((DATA / "text" / f"{chunk}.json").read_text(encoding="utf-8"))
-            if any(item.get("show") != "subtitle" for item in opening["messages"]):
+            if any(item.get("type") != "subtitle" for item in opening["messages"]):
                 raise AssertionError("chunk 266 is not subtitles")
             continue
         doc = json.loads((DATA / "text" / f"{chunk}.json").read_text(encoding="utf-8"))
-        if any(item.get("show") != "subtitle" for item in doc["messages"]):
+        if any(item.get("type") != "subtitle" for item in doc["messages"]):
             raise AssertionError(f"chunk {chunk} is not subtitles")
         if chunk == 272:
             _assert_beats(doc, messages, _load_chunk(start, sectors))
@@ -1025,11 +1033,11 @@ def script_self_test() -> None:
             prose = "\n".join(message_prose(words, doc["align"]))
             translated = record["text"] is not None
             done = chunk in (265, 267, 269)
-            if (record["show"] != "subtitle" or int(record["offset"], 0) != at or record["source"] != prose
+            if (record["type"] != "subtitle" or int(record["offset"], 0) != at or record["source"] != prose
                     or translated != done):
                 raise AssertionError(f"chunk {chunk} message {at:#x} does not match the disc")
             if translated:
-                check_lines(words, record["text"], doc["align"], record["show"])
+                check_lines(words, record["text"], doc["align"], record["type"])
                 encode_message(words, record["text"], doc["align"], lambda _char: 0x4001)
     prologue = counted_messages(_load_chunk(*next((item[1], item[2]) for item in _script_chunks() if item[0] == 265)))
     if message_prose(prologue[0][2], "center")[0] != "かつて、禍々しき「武神」を倒し":
@@ -1088,8 +1096,8 @@ def _assert_packed(chunk: int, cursor: int, end: int, sectors: int, screens: int
         raise AssertionError(f"chunk {chunk} packs to {len(packed):#x}")
     if any("offset" in item for item in doc["messages"]):
         raise AssertionError(f"chunk {chunk} stores a packed position")
-    if sum(item["show"] == "screen" for item in doc["messages"]) != screens:
-        raise AssertionError(f"chunk {chunk} screen count is not {screens}")
+    if sum(item["type"] == "center" for item in doc["messages"]) != screens:
+        raise AssertionError(f"chunk {chunk} center count is not {screens}")
     if [nxt for _index, nxt, _size in _script_chunks() if nxt == start + count] != [start + count]:
         raise AssertionError(f"chunk {chunk} does not leave a hole before the next chunk")
 
@@ -1122,23 +1130,26 @@ def self_test() -> None:
     assert message_prose(spaced) == ["あ い", "う"]
     assert message_prose(spaced, "center") == ["あ い", "  う"]
     assert message_prose([0, 0, 0], "center") == [""]
+    check_lines([0x003F], ["甲" * 19], "center", "center")
+    check_lines([0x003F], ["甲" * 19 + "<BREAK>" + "甲" * 19], "center", "center")
+    check_lines([0xFFD2, 0x003F], ["甲" * 16 + "<BREAK>" + "甲" * 19], "left", "dialog")
     check_lines([0x003F], ["甲" * 21], "center", "subtitle")
-    for bad in (("甲" * 22, "subtitle"), ("甲" * 19, "screen")):
+    for bad in (("甲" * 22, "subtitle"), ("甲" * 20, "center"), ("甲" * 19 + "<BREAK>" + "甲" * 20, "center")):
         try:
             check_lines([0x003F], [bad[0]], "center", bad[1])
         except ValueError:
             pass
         else:
-            raise AssertionError("screen line limit accepted an overlong line")
+            raise AssertionError("center line limit accepted an overlong line")
     assert line_cells("近乎疯狂的笑声在杜汉城中回荡开来。<BREAK>") == 17
     assert line_cells("男人像是受了伤，死死攥着剑，撑住衰弱的身体。") == 22
     assert indent_cells([0xFFD2, 0x003F]) == 3
     assert indent_cells([0xFFD4]) == 5
     assert indent_cells([0, 0, 0xFFE2]) == 2
-    assert window_line_limit([]) == 19
-    assert window_line_limit([0xFFD2]) == 16
-    assert window_line_limit([0xFFD4]) == 14
-    assert window_limits([0x003F, 0xFFFE, 0xFFD2, 0x0042, 0xFFFE, 0xFFD4, 0x0043], "left", 3) == [19, 16, 14]
+    assert dialog_line_limit([]) == 19
+    assert dialog_line_limit([0xFFD2]) == 16
+    assert dialog_line_limit([0xFFD4]) == 14
+    assert dialog_limits([0x003F, 0xFFFE, 0xFFD2, 0x0042, 0xFFFE, 0xFFD4, 0x0043], "left", 3) == [19, 16, 14]
     tokens = {"甲": 0x4001, "乙": 0x4002}.__getitem__
     for align in ("center", "left"):
         assert encode_message(source, ["甲", "乙"], align, tokens) == [0xFFD2, 0x4001, FILL, FILL, 0xFFFE, 0x4002, FILL]

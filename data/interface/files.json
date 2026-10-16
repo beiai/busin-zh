@@ -1,201 +1,281 @@
 [
   {
     "id": "499438",
+    "type": "line",
+    "width": "9",
     "source": "FILE00(W)",
     "text": "FILE00(W)"
   },
   {
     "id": "49944C",
+    "type": "line",
+    "width": "9",
     "source": "FILE01(W)",
     "text": "FILE01(W)"
   },
   {
     "id": "499460",
+    "type": "line",
+    "width": "9",
     "source": "FILE02(W)",
     "text": "FILE02(W)"
   },
   {
     "id": "499474",
+    "type": "line",
+    "width": "9",
     "source": "FILE03(W)",
     "text": "FILE03(W)"
   },
   {
     "id": "499488",
+    "type": "line",
+    "width": "9",
     "source": "FILE04(W)",
     "text": "FILE04(W)"
   },
   {
     "id": "4994A0",
+    "type": "line",
+    "width": "9",
     "source": "FILE00(P)",
     "text": "FILE00(P)"
   },
   {
     "id": "4994B4",
+    "type": "line",
+    "width": "9",
     "source": "FILE01(P)",
     "text": "FILE01(P)"
   },
   {
     "id": "4994C8",
+    "type": "line",
+    "width": "9",
     "source": "FILE02(P)",
     "text": "FILE02(P)"
   },
   {
     "id": "4994DC",
+    "type": "line",
+    "width": "9",
     "source": "FILE03(P)",
     "text": "FILE03(P)"
   },
   {
     "id": "4994F0",
+    "type": "line",
+    "width": "9",
     "source": "FILE04(P)",
     "text": "FILE04(P)"
   },
   {
     "id": "499508",
+    "type": "line",
+    "width": "9",
     "source": "FILE00(T)",
     "text": "FILE00(T)"
   },
   {
     "id": "49951C",
+    "type": "line",
+    "width": "9",
     "source": "FILE01(T)",
     "text": "FILE01(T)"
   },
   {
     "id": "499530",
+    "type": "line",
+    "width": "9",
     "source": "FILE02(T)",
     "text": "FILE02(T)"
   },
   {
     "id": "499544",
+    "type": "line",
+    "width": "9",
     "source": "FILE03(T)",
     "text": "FILE03(T)"
   },
   {
     "id": "499558",
+    "type": "line",
+    "width": "9",
     "source": "FILE04(T)",
     "text": "FILE04(T)"
   },
   {
     "id": "499570",
+    "type": "line",
+    "width": "9",
     "source": "FILE00(A)",
     "text": "FILE00(A)"
   },
   {
     "id": "499584",
+    "type": "line",
+    "width": "9",
     "source": "FILE01(A)",
     "text": "FILE01(A)"
   },
   {
     "id": "499598",
+    "type": "line",
+    "width": "9",
     "source": "FILE02(A)",
     "text": "FILE02(A)"
   },
   {
     "id": "4995AC",
+    "type": "line",
+    "width": "9",
     "source": "FILE03(A)",
     "text": "FILE03(A)"
   },
   {
     "id": "4995C0",
+    "type": "line",
+    "width": "9",
     "source": "FILE04(A)",
     "text": "FILE04(A)"
   },
   {
     "id": "4995D8",
+    "type": "line",
+    "width": "9",
     "source": "FILE00(M)",
     "text": "FILE00(M)"
   },
   {
     "id": "4995EC",
+    "type": "line",
+    "width": "9",
     "source": "FILE01(M)",
     "text": "FILE01(M)"
   },
   {
     "id": "499600",
+    "type": "line",
+    "width": "9",
     "source": "FILE02(M)",
     "text": "FILE02(M)"
   },
   {
     "id": "499614",
+    "type": "line",
+    "width": "9",
     "source": "FILE03(M)",
     "text": "FILE03(M)"
   },
   {
     "id": "499628",
+    "type": "line",
+    "width": "9",
     "source": "FILE04(M)",
     "text": "FILE04(M)"
   },
   {
     "id": "499640",
+    "type": "line",
+    "width": "9",
     "source": "FILE00(M)",
     "text": "FILE00(M)"
   },
   {
     "id": "499654",
+    "type": "line",
+    "width": "9",
     "source": "FILE01(M)",
     "text": "FILE01(M)"
   },
   {
     "id": "499668",
+    "type": "line",
+    "width": "9",
     "source": "FILE02(M)",
     "text": "FILE02(M)"
   },
   {
     "id": "49967C",
+    "type": "line",
+    "width": "9",
     "source": "FILE03(M)",
     "text": "FILE03(M)"
   },
   {
     "id": "499690",
+    "type": "line",
+    "width": "9",
     "source": "FILE04(M)",
     "text": "FILE04(M)"
   },
   {
     "id": "4996A8",
+    "type": "line",
+    "width": "9",
     "source": "FILE00(S)",
     "text": "FILE00(S)"
   },
   {
     "id": "4996BC",
+    "type": "line",
+    "width": "9",
     "source": "FILE01(S)",
     "text": "FILE01(S)"
   },
   {
     "id": "4996D0",
+    "type": "line",
+    "width": "9",
     "source": "FILE02(S)",
     "text": "FILE02(S)"
   },
   {
     "id": "4996E4",
+    "type": "line",
+    "width": "9",
     "source": "FILE03(S)",
     "text": "FILE03(S)"
   },
   {
     "id": "4996F8",
+    "type": "line",
+    "width": "9",
     "source": "FILE04(S)",
     "text": "FILE04(S)"
   },
   {
     "id": "499710",
+    "type": "line",
+    "width": "9",
     "source": "FILE00(D)",
     "text": "FILE00(D)"
   },
   {
     "id": "499724",
+    "type": "line",
+    "width": "9",
     "source": "FILE01(D)",
     "text": "FILE01(D)"
   },
   {
     "id": "499738",
+    "type": "line",
+    "width": "9",
     "source": "FILE02(D)",
     "text": "FILE02(D)"
   },
   {
     "id": "49974C",
+    "type": "line",
+    "width": "9",
     "source": "FILE03(D)",
     "text": "FILE03(D)"
   },
   {
     "id": "499760",
+    "type": "line",
+    "width": "9",
     "source": "FILE04(D)",
     "text": "FILE04(D)"
   }

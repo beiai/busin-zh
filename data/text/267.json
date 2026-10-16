@@ -5,7 +5,7 @@
   "messages": [
     {
       "offset": "0x0002",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "この時、聖剣が街にもち帰られる事は\nなかった。\n",
       "text": [
         "圣剑此时并未被",
@@ -15,7 +15,7 @@
     },
     {
       "offset": "0x0034",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "聖剣の探索は、ひきつづきおこなわれたが\n迷宮には「死神」と呼ばれる災いが\n現れるようになる。\n",
       "text": [
         "圣剑的探索仍在继续，但",
@@ -26,7 +26,7 @@
     },
     {
       "offset": "0x0094",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "そして、半年の時が流れた。\n",
       "text": [
         "其后，半年时光流过。",

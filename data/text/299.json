@@ -4,7 +4,7 @@
   "align": "left",
   "messages": [
     {
-      "show": "screen",
+      "type": "center",
       "source": "カンバンには、ヘタな字で\nこうかいてあった。<BREAK>",
       "text": [
         "看板上用拙劣的字，",
@@ -12,7 +12,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "クリムゾンとは紅\n紅は命のみなもとたる血を表わす\nマナとは魔力\nマナが満ち、魔法はつむがれる\n水晶は引き合い、奇蹟がおこるだろう\nえらい魔術師言っていた\n？？？ いったいどういう事だろう？\n\n<FB01>いだいなる戦士<FFD0>オトム<BREAK>",
       "text": [
         "赤红就是红",
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nまいど！！\n<FB01><FB09>キャスタ商店<FB00>にようこそ！！",
       "text": [
         "店员",
@@ -36,7 +36,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nさあドンドン買ってくれよ！",
       "text": [
         "店员",
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何を買いますか？<STYLE:0>\n\nアイテム\n宝玉\n何も買わない\n",
       "text": [
         "要买什么？<STYLE:0>",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何を買いますか？<STYLE:0>\n\n転移の薬    500ゴールド\n封傷の薬    250ゴールド\n解毒の薬    250ゴールド\n快癒の薬  20000ゴールド\n還魂の薬 100000ゴールド\n戻る\n何も買わない\n",
       "text": [
         "要买什么？<STYLE:0>",
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、転移の薬だ！\nまいどありー！",
       "text": [
         "店员",
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
         "店员",
@@ -90,7 +90,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、転移の薬だ！\nまいどありー！",
       "text": [
         "店员",
@@ -110,7 +110,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -119,7 +119,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
         "店员",
@@ -137,7 +137,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、封傷の薬だ！\nまいどありー！",
       "text": [
         "店员",
@@ -146,7 +146,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
         "店员",
@@ -155,7 +155,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -166,7 +166,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、封傷の薬だ！\nまいどありー！",
       "text": [
         "店员",
@@ -175,7 +175,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -184,7 +184,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
         "店员",
@@ -202,7 +202,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、解毒の薬だ！\nまいどありー！",
       "text": [
         "店员",
@@ -211,7 +211,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
         "店员",
@@ -220,7 +220,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -231,7 +231,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、解毒の薬だ！\nまいどありー！",
       "text": [
         "店员",
@@ -240,7 +240,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -249,7 +249,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -258,7 +258,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
         "店员",
@@ -267,7 +267,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、快癒の薬だ！\nまいどありー！",
       "text": [
         "店员",
@@ -276,7 +276,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
         "店员",
@@ -285,7 +285,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -296,7 +296,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、快癒の薬だ！\nまいどありー！",
       "text": [
         "店员",
@@ -305,7 +305,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -314,7 +314,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -323,7 +323,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
         "店员",
@@ -332,7 +332,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、還魂の薬だ！\nまいどありー！",
       "text": [
         "店员",
@@ -341,7 +341,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
         "店员",
@@ -350,7 +350,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -361,7 +361,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、還魂の薬だ！\nまいどありー！",
       "text": [
         "店员",
@@ -370,7 +370,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -379,7 +379,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -388,7 +388,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
         "店员",
@@ -397,7 +397,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何を買いますか？<STYLE:0>\n\n戦士の宝玉  50000ゴールド\n魔術師の宝玉 50000ゴールド\n僧侶の宝玉  50000ゴールド\n盗賊の宝玉  50000ゴールド\n次のページへ\n戻る\n何も買わない\n",
       "text": [
         "要买什么？<STYLE:0>",
@@ -413,7 +413,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、戦士の宝玉！\nまいどありー！",
       "text": [
         "店员",
@@ -422,7 +422,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
         "店员",
@@ -431,7 +431,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -442,7 +442,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、戦士の宝玉！\nまいどありー！",
       "text": [
         "店员",
@@ -451,7 +451,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -460,7 +460,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -469,7 +469,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
         "店员",
@@ -478,7 +478,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよ、魔術師の宝玉！\nまいどありー！",
       "text": [
         "店员",
@@ -487,7 +487,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
         "店员",
@@ -496,7 +496,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -507,7 +507,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよ、魔術師の宝玉！\nまいどありー！",
       "text": [
         "店员",
@@ -516,7 +516,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -525,7 +525,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -534,7 +534,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
         "店员",
@@ -543,7 +543,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、僧侶の宝玉！\nまいどありー！",
       "text": [
         "店员",
@@ -552,7 +552,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
         "店员",
@@ -561,7 +561,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -572,7 +572,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、僧侶の宝玉！\nまいどありー！",
       "text": [
         "店员",
@@ -581,7 +581,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -590,7 +590,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -599,7 +599,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
         "店员",
@@ -608,7 +608,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、盗賊の宝玉！\nまいどありー！",
       "text": [
         "店员",
@@ -617,7 +617,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
         "店员",
@@ -626,7 +626,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -637,7 +637,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、盗賊の宝玉！\nまいどありー！",
       "text": [
         "店员",
@@ -646,7 +646,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -655,7 +655,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -664,7 +664,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
         "店员",
@@ -673,7 +673,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何を買いますか？<STYLE:0>\n\n侍の宝玉   70000ゴールド\n忍者の宝玉  70000ゴールド\n騎士の宝玉  70000ゴールド\n司教の宝玉  70000ゴールド\n前のページへ\n戻る\n何も買わない\n",
       "text": [
         "要买什么？<STYLE:0>",
@@ -689,7 +689,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、侍の宝玉だ！\nまいどありー！",
       "text": [
         "店员",
@@ -698,7 +698,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
         "店员",
@@ -707,7 +707,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -718,7 +718,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、侍の宝玉だ！\nまいどありー！",
       "text": [
         "店员",
@@ -727,7 +727,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -736,7 +736,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -745,7 +745,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
         "店员",
@@ -754,7 +754,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、忍者の宝玉！\nまいどありー！",
       "text": [
         "店员",
@@ -763,7 +763,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
         "店员",
@@ -772,7 +772,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -783,7 +783,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、忍者の宝玉！\nまいどありー！",
       "text": [
         "店员",
@@ -792,7 +792,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -801,7 +801,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -810,7 +810,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
         "店员",
@@ -819,7 +819,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、騎士の宝玉！\nまいどありー！",
       "text": [
         "店员",
@@ -828,7 +828,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
         "店员",
@@ -837,7 +837,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -848,7 +848,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、騎士の宝玉！\nまいどありー！",
       "text": [
         "店员",
@@ -857,7 +857,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -866,7 +866,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -875,7 +875,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
         "店员",
@@ -884,7 +884,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、司教の宝玉！\nまいどありー！",
       "text": [
         "店员",
@@ -893,7 +893,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、荷物がいっぱいだぜ。\n何か荷物を捨てていくかい？",
       "text": [
         "店员",
@@ -902,7 +902,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -913,7 +913,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nほらよっ、司教の宝玉！\nまいどありー！",
       "text": [
         "店员",
@@ -922,7 +922,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -931,7 +931,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nなんだよ、そんなら\nあきらめるこった！",
       "text": [
         "店员",
@@ -940,7 +940,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nおいおい、金が\n足りねえじゃねえかよ！",
       "text": [
         "店员",
@@ -949,7 +949,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "店員\nまた来てくれよな！",
       "text": [
         "店员",
@@ -957,7 +957,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>おお～っ、もうきてくれただか！",
       "text": [
         "卡斯塔",
@@ -965,7 +965,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>オダ、いろんなもの\nあつめてきたどー！",
       "text": [
         "卡斯塔",
@@ -974,7 +974,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>さあ、何がほしいだか？！",
       "text": [
         "卡斯塔",
@@ -982,7 +982,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何を買いますか？<STYLE:0>\n\nアイテム\n宝玉\n何も買わない\n",
       "text": [
         "要买什么？<STYLE:0>",
@@ -994,7 +994,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何を買いますか？<STYLE:0>\n\n転移の薬    500ゴールド\n封傷の薬    250ゴールド\n解毒の薬    250ゴールド\n快癒の薬  20000ゴールド\n還魂の薬 100000ゴールド\n戻る\n何も買わない\n",
       "text": [
         "要买什么？<STYLE:0>",
@@ -1010,7 +1010,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだっ、転移の薬だっ！",
       "text": [
         "卡斯塔",
@@ -1018,7 +1018,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
         "卡斯塔",
@@ -1027,7 +1027,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -1038,7 +1038,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだっ、転移の薬だっ！",
       "text": [
         "卡斯塔",
@@ -1046,7 +1046,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1055,7 +1055,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1064,7 +1064,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
         "卡斯塔",
@@ -1072,7 +1072,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだっ、封傷の薬だっ！",
       "text": [
         "卡斯塔",
@@ -1080,7 +1080,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
         "卡斯塔",
@@ -1089,7 +1089,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -1100,7 +1100,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだっ、封傷の薬だっ！",
       "text": [
         "卡斯塔",
@@ -1108,7 +1108,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1117,7 +1117,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1126,7 +1126,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
         "卡斯塔",
@@ -1134,7 +1134,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだっ、解毒の薬だっ！",
       "text": [
         "卡斯塔",
@@ -1142,7 +1142,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
         "卡斯塔",
@@ -1151,7 +1151,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -1162,7 +1162,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだっ、解毒の薬だっ！",
       "text": [
         "卡斯塔",
@@ -1170,7 +1170,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1179,7 +1179,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1188,7 +1188,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
         "卡斯塔",
@@ -1196,7 +1196,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだっ、快癒の薬だっ！",
       "text": [
         "卡斯塔",
@@ -1204,7 +1204,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
         "卡斯塔",
@@ -1213,7 +1213,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -1224,7 +1224,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだっ、封傷の薬だっ！",
       "text": [
         "卡斯塔",
@@ -1232,7 +1232,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1241,7 +1241,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1250,7 +1250,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
         "卡斯塔",
@@ -1258,7 +1258,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだっ、還魂の薬だっ！",
       "text": [
         "卡斯塔",
@@ -1266,7 +1266,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
         "卡斯塔",
@@ -1275,7 +1275,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -1286,7 +1286,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだっ、還魂の薬だっ！",
       "text": [
         "卡斯塔",
@@ -1294,7 +1294,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1303,7 +1303,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1312,7 +1312,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
         "卡斯塔",
@@ -1320,7 +1320,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何を買いますか？<STYLE:0>\n\n戦士の宝玉  50000ゴールド\n魔術師の宝玉 50000ゴールド\n僧侶の宝玉  50000ゴールド\n盗賊の宝玉  50000ゴールド\n次のページへ\n戻る\n何も買わない\n",
       "text": [
         "要买什么？<STYLE:0>",
@@ -1336,7 +1336,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだ、戦士の宝玉だどーっ！",
       "text": [
         "卡斯塔",
@@ -1344,7 +1344,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
         "卡斯塔",
@@ -1353,7 +1353,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -1364,7 +1364,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだ、戦士の宝玉だどーっ！",
       "text": [
         "卡斯塔",
@@ -1372,7 +1372,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1381,7 +1381,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1390,7 +1390,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
         "卡斯塔",
@@ -1398,7 +1398,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだ、魔術師の宝玉だどー！",
       "text": [
         "卡斯塔",
@@ -1406,7 +1406,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
         "卡斯塔",
@@ -1415,7 +1415,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -1426,7 +1426,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだ、魔術師の宝玉だどー！",
       "text": [
         "卡斯塔",
@@ -1434,7 +1434,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1443,7 +1443,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1452,7 +1452,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
         "卡斯塔",
@@ -1460,7 +1460,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだ、僧侶の宝玉だどーっ！",
       "text": [
         "卡斯塔",
@@ -1468,7 +1468,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
         "卡斯塔",
@@ -1477,7 +1477,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -1488,7 +1488,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだ、僧侶の宝玉だどーっ！",
       "text": [
         "卡斯塔",
@@ -1496,7 +1496,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1505,7 +1505,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1514,7 +1514,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
         "卡斯塔",
@@ -1522,7 +1522,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだ、盗賊の宝玉だどーっ！",
       "text": [
         "卡斯塔",
@@ -1530,7 +1530,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
         "卡斯塔",
@@ -1539,7 +1539,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -1550,7 +1550,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだ、盗賊の宝玉だどーっ！",
       "text": [
         "卡斯塔",
@@ -1558,7 +1558,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1567,7 +1567,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1576,7 +1576,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
         "卡斯塔",
@@ -1584,7 +1584,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何を買いますか？<STYLE:0>\n\n侍の宝玉   70000ゴールド\n忍者の宝玉  70000ゴールド\n騎士の宝玉  70000ゴールド\n司教の宝玉  70000ゴールド\n前のページへ\n戻る\n何も買わない\n",
       "text": [
         "要买什么？<STYLE:0>",
@@ -1600,7 +1600,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだ、侍の宝玉だどー！",
       "text": [
         "卡斯塔",
@@ -1608,7 +1608,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
         "卡斯塔",
@@ -1617,7 +1617,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -1628,7 +1628,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだ、侍の宝玉だどー！",
       "text": [
         "卡斯塔",
@@ -1636,7 +1636,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1645,7 +1645,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1654,7 +1654,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
         "卡斯塔",
@@ -1662,7 +1662,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだ、忍者の宝玉だどーっ！",
       "text": [
         "卡斯塔",
@@ -1670,7 +1670,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
         "卡斯塔",
@@ -1679,7 +1679,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -1690,7 +1690,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだ、忍者の宝玉だどーっ！",
       "text": [
         "卡斯塔",
@@ -1698,7 +1698,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1707,7 +1707,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1716,7 +1716,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
         "卡斯塔",
@@ -1724,7 +1724,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだ、騎士の宝玉だどーっ！",
       "text": [
         "卡斯塔",
@@ -1732,7 +1732,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
         "卡斯塔",
@@ -1741,7 +1741,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -1752,7 +1752,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだ、騎士の宝玉だどーっ！",
       "text": [
         "卡斯塔",
@@ -1760,7 +1760,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1769,7 +1769,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1778,7 +1778,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
         "卡斯塔",
@@ -1786,7 +1786,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだ、司教の宝玉だどーっ！",
       "text": [
         "卡斯塔",
@@ -1794,7 +1794,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>荷物がいっぱいだど……\nこのままだったら持っていけねえど！",
       "text": [
         "卡斯塔",
@@ -1803,7 +1803,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -1814,7 +1814,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>ほだ、司教の宝玉だどーっ！",
       "text": [
         "卡斯塔",
@@ -1822,7 +1822,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1831,7 +1831,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>じゃあ、さいしょっから\n買うって言うんじゃないだよー！",
       "text": [
         "卡斯塔",
@@ -1840,7 +1840,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>…おまえ、金足りないだよ…",
       "text": [
         "卡斯塔",
@@ -1848,7 +1848,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>また、きてくで～！",
       "text": [
         "卡斯塔",
@@ -1856,7 +1856,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "キャスタ\n<FB03>オダ、とうぶんここにいるだよ！",
       "text": [
         "卡斯塔",
@@ -1864,7 +1864,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "バケツの中に、魔物の卵が\n産み付けられている。<BREAK>",
       "text": [
         "水桶里，",
@@ -1872,7 +1872,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "魔物の卵を拾いますか？\n\nは い\nいいえ\n",
       "text": [
         "要拾起魔物之卵吗？",
@@ -1883,7 +1883,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "携带物品已经满了。",
@@ -1895,28 +1895,28 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>魔物の卵<FB00>を手に入れた！<BREAK>",
       "text": [
         "得到了<FB01>魔物之卵<FB00>！<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>魔物の卵<FB00>をあきらめた。<BREAK>",
       "text": [
         "放弃了<FB01>魔物之卵<FB00>。<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>魔物の卵<FB00>を手に入れた！<BREAK>",
       "text": [
         "得到了<FB01>魔物之卵<FB00>！<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "よく見ると、木箱の上に\n黒光りしている髪束が\n置かれている。<BREAK>",
       "text": [
         "仔细一看，",
@@ -1925,7 +1925,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "魔力のような不思議な力を\n感じ取る事が出来るこの髪束は\nおそらく僧侶の髪であろう。<BREAK>",
       "text": [
         "从这束头发中",
@@ -1934,7 +1934,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "僧侶の髪を拾いますか？\n\nは い\nいいえ\n",
       "text": [
         "要拾起僧侣头发吗？",
@@ -1945,7 +1945,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "携带物品已经满了。",
@@ -1957,28 +1957,28 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>僧侶の髪<FB00>を手に入れた！<BREAK>",
       "text": [
         "得到了<FB01>僧侣头发<FB00>！<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>僧侶の髪<FB00>をあきらめた。<BREAK>",
       "text": [
         "放弃了<FB01>僧侣头发<FB00>。<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>僧侶の髪<FB00>を手に入れた！<BREAK>",
       "text": [
         "得到了<FB01>僧侣头发<FB00>！<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "よく見ると、木箱の上に\n忍者の頭巾が放りっぱなしに\nされている。<BREAK>",
       "text": [
         "仔细一看，木箱上",
@@ -1987,7 +1987,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "忍者の頭巾を拾いますか？\n\nは い\nいいえ\n",
       "text": [
         "要拾起忍者头巾吗？",
@@ -1998,7 +1998,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "携带物品已经满了。",
@@ -2010,28 +2010,28 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>忍者の頭巾<FB00>を手に入れた！<BREAK>",
       "text": [
         "得到了<FB01>忍者头巾<FB00>！<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>忍者の頭巾<FB00>をあきらめた。<BREAK>",
       "text": [
         "放弃了<FB01>忍者头巾<FB00>。<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>忍者の頭巾<FB00>を手に入れた！<BREAK>",
       "text": [
         "得到了<FB01>忍者头巾<FB00>！<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "土の山の頂上に、マユが\n転がっているのを見つけた。<BREAK>",
       "text": [
         "土山顶上，",
@@ -2039,7 +2039,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "マユを拾いますか？\n\nは い\nいいえ\n",
       "text": [
         "要拾起茧吗？",
@@ -2050,7 +2050,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "携带物品已经满了。",
@@ -2062,35 +2062,35 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>マユ<FB00>を手に入れた！<BREAK>",
       "text": [
         "得到了<FB01>茧<FB00>！<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>マユ<FB00>をあきらめた。<BREAK>",
       "text": [
         "放弃了<FB01>茧<FB00>。<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>マユ<FB00>を手に入れた！<BREAK>",
       "text": [
         "得到了<FB01>茧<FB00>！<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "泉がある………<BREAK>",
       "text": [
         "有一眼泉………<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "賢者の石を投げこみますか？\n\nは い\nいいえ\n",
       "text": [
         "要扔进贤者之石吗？",
@@ -2101,14 +2101,14 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "泉の中に賢者の石を放りこんだ。<BREAK>",
       "text": [
         "把贤者之石扔进了泉中。<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "どこからともなく聞こえてきた\n美しい音色とともに、\n泉全体がまばゆい光に包まれた。<BREAK>",
       "text": [
         "随着不知何处传来的",
@@ -2117,7 +2117,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "まばゆい光が泉から立ち上り、\n香しいにおいが\n辺りにたちこめた。<BREAK>",
       "text": [
         "耀眼的光从泉中升起，",
@@ -2126,7 +2126,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "体全体が浄化された様な\n気分になった。<BREAK>",
       "text": [
         "有一种全身",
@@ -2134,28 +2134,28 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>HPが回復した！<BREAK>",
       "text": [
         "<FB01>HP恢复了！<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>MPが回復した！<BREAK>",
       "text": [
         "<FB01>MP恢复了！<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>ステータス異常が回復した！<BREAK>",
       "text": [
         "<FB01>状态异常恢复了！<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "香しいにおいが\n辺りにたちこめた。<BREAK>",
       "text": [
         "芬芳的气味",
@@ -2163,7 +2163,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "体全体が浄化された様な\n気分になった。<BREAK>",
       "text": [
         "有一种全身",
@@ -2171,21 +2171,21 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>HPが回復した！<BREAK>",
       "text": [
         "<FB01>HP恢复了！<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>MPが回復した！<BREAK>",
       "text": [
         "<FB01>MP恢复了！<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>ステータス異常が回復した！<BREAK>",
       "text": [
         "<FB01>状态异常恢复了！<BREAK>"

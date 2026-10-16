@@ -5,109 +5,109 @@
   "messages": [
     {
       "offset": "0x0002",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "神が消滅した瞬間\n異空に異変が生じた",
       "text": null
     },
     {
       "offset": "0x0028",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "目をさますとそこは\nドゥーハンを見下ろす\n小高い丘の上だった",
       "text": null
     },
     {
       "offset": "0x0066",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "街を白く閉ざしていた\n雪がやんでいる",
       "text": null
     },
     {
       "offset": "0x008C",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "ドゥーハンは神の束縛から\n解き放たれたのだ",
       "text": null
     },
     {
       "offset": "0x00B8",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "しかし、むなしさが\n心身をうちのめす……",
       "text": null
     },
     {
       "offset": "0x00E2",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "そんな自分を\nあざ笑うかのように\n美しい光がまたたいた",
       "text": null
     },
     {
       "offset": "0x011A",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "それは魂の回帰",
       "text": null
     },
     {
       "offset": "0x012A",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "輝きの中に、求める魂が\nあるかもしれないと\nそっと指をのばす",
       "text": null
     },
     {
       "offset": "0x0168",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "その指先に、奇蹟のように\n尊い姿が現われた",
       "text": null
     },
     {
       "offset": "0x0194",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "命をかけて護ろうと思い\n結果、殺めてしまった人",
       "text": null
     },
     {
       "offset": "0x01C4",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "女王「感謝しています。\n   わたくしのガードよ」",
       "text": null
     },
     {
       "offset": "0x01F8",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "女王「あなたはわたくしを\n   かの神から解き放ってくれた」",
       "text": null
     },
     {
       "offset": "0x0236",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "女王「わたくしの尊厳を\n   護ってくれたのです」",
       "text": null
     },
     {
       "offset": "0x026A",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "女王「だから………\n   涙を流さないで」",
       "text": null
     },
     {
       "offset": "0x0296",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "青空が広がり\n優しいこもれびが\n大地をあたため始めた",
       "text": null
     },
     {
       "offset": "0x02CC",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "引きよせられるように\n空に目をやる",
       "text": null
     },
     {
       "offset": "0x02F0",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "わたしといっしょに\nこの美しいドゥーハンの空を\nうつしましょう",
       "text": null
     },
     {
       "offset": "0x0330",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "ソ",
       "text": [
         "仿"
@@ -115,7 +115,7 @@
     },
     {
       "offset": "0x0334",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "フ",
       "text": [
         "佛"
@@ -123,7 +123,7 @@
     },
     {
       "offset": "0x0338",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "ィ",
       "text": [
         "听"
@@ -131,7 +131,7 @@
     },
     {
       "offset": "0x033C",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "ア",
       "text": [
         "见"
@@ -139,7 +139,7 @@
     },
     {
       "offset": "0x0340",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "と",
       "text": [
         "她"
@@ -147,7 +147,7 @@
     },
     {
       "offset": "0x0344",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "見",
       "text": [
         "的"
@@ -155,7 +155,7 @@
     },
     {
       "offset": "0x0348",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "る",
       "text": [
         "歌"
@@ -163,7 +163,7 @@
     },
     {
       "offset": "0x034C",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "は",
       "text": [
         "声"
@@ -171,7 +171,7 @@
     },
     {
       "offset": "0x0350",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "ず",
       "text": [
         "从"
@@ -179,7 +179,7 @@
     },
     {
       "offset": "0x0354",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "だ",
       "text": [
         "天"
@@ -187,7 +187,7 @@
     },
     {
       "offset": "0x0358",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "っ",
       "text": [
         "的"
@@ -195,7 +195,7 @@
     },
     {
       "offset": "0x035C",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "た",
       "text": [
         "彼"
@@ -203,7 +203,7 @@
     },
     {
       "offset": "0x0360",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "美",
       "text": [
         "方"
@@ -211,7 +211,7 @@
     },
     {
       "offset": "0x0364",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "し",
       "text": [
         "传"
@@ -219,7 +219,7 @@
     },
     {
       "offset": "0x0368",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "い",
       "text": [
         "来"
@@ -227,7 +227,7 @@
     },
     {
       "offset": "0x036C",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "青",
       "text": [
         "，"
@@ -235,7 +235,7 @@
     },
     {
       "offset": "0x0370",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "空",
       "text": [
         "那"
@@ -243,7 +243,7 @@
     },
     {
       "offset": "0x0374",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "彼",
       "text": [
         "是"
@@ -251,7 +251,7 @@
     },
     {
       "offset": "0x0378",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "女",
       "text": [
         "本"
@@ -259,7 +259,7 @@
     },
     {
       "offset": "0x037C",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "の",
       "text": [
         "该"
@@ -267,7 +267,7 @@
     },
     {
       "offset": "0x0380",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "歌",
       "text": [
         "和"
@@ -275,7 +275,7 @@
     },
     {
       "offset": "0x0384",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "声",
       "text": [
         "索"
@@ -283,7 +283,7 @@
     },
     {
       "offset": "0x0388",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "が",
       "text": [
         "菲"
@@ -291,7 +291,7 @@
     },
     {
       "offset": "0x038C",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "空",
       "text": [
         "亚"
@@ -299,7 +299,7 @@
     },
     {
       "offset": "0x0390",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "の",
       "text": [
         "同"
@@ -307,7 +307,7 @@
     },
     {
       "offset": "0x0394",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "彼",
       "text": [
         "看"
@@ -315,7 +315,7 @@
     },
     {
       "offset": "0x0398",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "方",
       "text": [
         "的"
@@ -323,7 +323,7 @@
     },
     {
       "offset": "0x039C",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "か",
       "text": [
         "美"
@@ -331,7 +331,7 @@
     },
     {
       "offset": "0x03A0",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "ら",
       "text": [
         "丽"
@@ -339,7 +339,7 @@
     },
     {
       "offset": "0x03A4",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "聞",
       "text": [
         "蓝"
@@ -347,7 +347,7 @@
     },
     {
       "offset": "0x03A8",
-      "show": "subtitle",
+      "type": "subtitle",
       "source": "こ",
       "text": [
         "天"

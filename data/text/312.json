@@ -4,7 +4,7 @@
   "align": "left",
   "messages": [
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>モ…モシ…モシモシ……？<FB02>",
       "text": [
         "僵尸",
@@ -12,14 +12,14 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "ゾンビが話し掛けて来た<BREAK>",
       "text": [
         "僵尸向你搭话了。<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "応対しますか？\n\n用件を聞く\n無視する\n",
       "text": [
         "要回应吗？",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>ク…クスリ…クスリヤ…\nゾンビング…ファーマシー……<FB02>",
       "text": [
         "僵尸",
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>クスリ……ウル…ウリマス…\nウラセテ…イタダキマス…<FB02>",
       "text": [
         "僵尸",
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>クスリ…カエ…カッテ…\nカッテ…イタダケマセンカ…？<FB02>",
       "text": [
         "僵尸",
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "薬を買いますか？\n\nは い\nいいえ\n",
       "text": [
         "要买药吗？",
@@ -68,7 +68,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>ク…クスリ…クスリヤ…\nゾンビング…ファーマシー……<FB02>",
       "text": [
         "僵尸",
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>クスリ……ウル…ウリマス…\nウラセテ…イタダキマス…<FB02>",
       "text": [
         "僵尸",
@@ -86,7 +86,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>クスリ…カエ…カッテ…\nカッテ…イタダケマセンカ…？<FB02>",
       "text": [
         "僵尸",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "薬を買いますか？\n\nは い\nいいえ\n",
       "text": [
         "要买药吗？",
@@ -106,7 +106,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "無視して通り過ぎる\nことにした。<BREAK>",
       "text": [
         "决定不予理睬，",
@@ -114,7 +114,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>・・・・・・・・・・・・・・・\n・・・・・・・ヴァァ・・・・・<FB02>",
       "text": [
         "僵尸",
@@ -123,7 +123,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "ゾンビング ファーマシー<STYLE:0>\n\n転移の薬    500ゴールド\n封傷の薬    250ゴールド\n解毒の薬    250ゴールド\n快癒の薬  20000ゴールド\n還魂の薬 100000ゴールド\nやめる\n",
       "text": [
         "丧宾药房<STYLE:0>",
@@ -138,7 +138,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>マタ…コイ…キテ…クダサイ…<FB02>",
       "text": [
         "僵尸",
@@ -146,21 +146,21 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "ゾンビに<FB01>500ゴールド<FB00>支払った。<BREAK>",
       "text": [
         "向僵尸<FB01>500金币<FB00>支付了。<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>転移の薬<FB00>を手に入れた！<BREAK>",
       "text": [
         "<FB01>转移药<FB00>得到了！<BREAK>"
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>ハイ…コレ…転移ノ薬…\n街帰レル…トッテモウレシイ…<FB02>",
       "text": [
         "僵尸",
@@ -169,7 +169,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>オカネ…タリナイ…ビンボーメ…\nアッチイケ…オトトイ…キヤガレ…<FB02>",
       "text": [
         "僵尸",
@@ -178,21 +178,21 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "ゾンビに<FB01>250ゴールド<FB00>支払った。<BREAK>",
       "text": [
         "向僵尸<FB01>250金币<FB00>支付了。<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>封傷の薬<FB00>を手に入れた！<BREAK>",
       "text": [
         "<FB01>封伤药<FB00>得到了！<BREAK>"
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>ハイ…コレ…封傷ノ薬…\n元気ニナル…モリモリモリ……<FB02>",
       "text": [
         "僵尸",
@@ -201,7 +201,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>オカネ…タリナイ…ビンボーメ…\nアッチイケ…オトトイ…キヤガレ…<FB02>",
       "text": [
         "僵尸",
@@ -210,21 +210,21 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "ゾンビに<FB01>250ゴールド<FB00>支払った。<BREAK>",
       "text": [
         "向僵尸<FB01>250金币<FB00>支付了。<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>解毒の薬<FB00>を手に入れた！<BREAK>",
       "text": [
         "<FB01>解毒药<FB00>得到了！<BREAK>"
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>ハイ…コレ…解毒ノ薬…\n毒ガ消エル…アースッキリ……<FB02>",
       "text": [
         "僵尸",
@@ -233,7 +233,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>オカネ…タリナイ…ビンボーメ…\nアッチイケ…オトトイ…キヤガレ…<FB02>",
       "text": [
         "僵尸",
@@ -242,21 +242,21 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "ゾンビに<FB01>20000ゴールド<FB00>支払った。<BREAK>",
       "text": [
         "向僵尸<FB01>20000金币<FB00>支付了。<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>快癒の薬<FB00>を手に入れた！<BREAK>",
       "text": [
         "<FB01>痊愈药<FB00>得到了！<BREAK>"
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>ハイ…コレ…快癒ノ薬…\n健康ニナル…スコヤカー…<FB02>",
       "text": [
         "僵尸",
@@ -265,7 +265,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>オカネ…タリナイ…ビンボーメ…\nアッチイケ…オトトイ…キヤガレ…<FB02>",
       "text": [
         "僵尸",
@@ -274,7 +274,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "ゾンビに<FB01>100000ゴールド<FB00>\n支払った。<BREAK>",
       "text": [
         "向僵尸<FB01>100000金币<FB00>",
@@ -282,14 +282,14 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>還魂の薬<FB00>を手に入れた！<BREAK>",
       "text": [
         "<FB01>还魂药<FB00>得到了！<BREAK>"
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>ハイ…コレ…還魂ノ薬…\n生キカエル…フッカツー",
       "text": [
         "僵尸",
@@ -298,7 +298,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>オカネ…タリナイ…ビンボーメ…\nアッチイケ…オトトイ…キヤガレ…<FB02>",
       "text": [
         "僵尸",
@@ -307,7 +307,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>アナタ…ニモツ…イッパイ…イッパイ\nナニカ…ポイ…シテ…<FB02>",
       "text": [
         "僵尸",
@@ -316,7 +316,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -327,21 +327,21 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "ゾンビに<FB01>500ゴールド<FB00>支払った。<BREAK>",
       "text": [
         "向僵尸<FB01>500金币<FB00>支付了。<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>転移の薬<FB00>を手に入れた！<BREAK>",
       "text": [
         "<FB01>转移药<FB00>得到了！<BREAK>"
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>ハイ…コレ…転移ノ薬…\n街帰レル…トッテモウレシイ…<FB02>",
       "text": [
         "僵尸",
@@ -350,7 +350,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>アナタ…ニモツ…イッパイ…イッパイ\nナニカ…ポイ…シテ…<FB02>",
       "text": [
         "僵尸",
@@ -359,7 +359,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -370,21 +370,21 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "ゾンビに<FB01>250ゴールド<FB00>支払った。<BREAK>",
       "text": [
         "向僵尸<FB01>250金币<FB00>支付了。<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>封傷の薬<FB00>を手に入れた！<BREAK>",
       "text": [
         "<FB01>封伤药<FB00>得到了！<BREAK>"
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>ハイ…コレ…封傷ノ薬…\n元気ニナル…モリモリモリ……<FB02>",
       "text": [
         "僵尸",
@@ -393,7 +393,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>アナタ…ニモツ…イッパイ…イッパイ\nナニカ…ポイ…シテ…<FB02>",
       "text": [
         "僵尸",
@@ -402,7 +402,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -413,21 +413,21 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "ゾンビに<FB01>250ゴールド<FB00>支払った。<BREAK>",
       "text": [
         "向僵尸<FB01>250金币<FB00>支付了。<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>解毒の薬<FB00>を手に入れた！<BREAK>",
       "text": [
         "<FB01>解毒药<FB00>得到了！<BREAK>"
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>ハイ…コレ…解毒ノ薬…\n毒ガ消エル…アースッキリ……<FB02>",
       "text": [
         "僵尸",
@@ -436,7 +436,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>アナタ…ニモツ…イッパイ…イッパイ\nナニカ…ポイ…シテ…<FB02>",
       "text": [
         "僵尸",
@@ -445,7 +445,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -456,21 +456,21 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "ゾンビに<FB01>20000ゴールド<FB00>支払った。<BREAK>",
       "text": [
         "向僵尸<FB01>20000金币<FB00>支付了。<BREAK>"
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>快癒の薬<FB00>を手に入れた！<BREAK>",
       "text": [
         "<FB01>痊愈药<FB00>得到了！<BREAK>"
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>ハイ…コレ…快癒ノ薬…\n健康ニナル…スコヤカー…<FB02>",
       "text": [
         "僵尸",
@@ -479,7 +479,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>アナタ…ニモツ…イッパイ…イッパイ\nナニカ…ポイ…シテ…<FB02>",
       "text": [
         "僵尸",
@@ -488,7 +488,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "何か捨てますか？\n\nは い\nいいえ\n",
       "text": [
         "要丢弃什么吗？",
@@ -499,7 +499,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "ゾンビに<FB01>100000ゴールド<FB00>\n支払った。<BREAK>",
       "text": [
         "向僵尸<FB01>100000金币<FB00>",
@@ -507,14 +507,14 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "<FB01>還魂の薬<FB00>を手に入れた！<BREAK>",
       "text": [
         "<FB01>还魂药<FB00>得到了！<BREAK>"
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>ハイ…コレ…還魂ノ薬…\n生キカエル…フッカツー",
       "text": [
         "僵尸",
@@ -523,7 +523,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ゾンビ\n<FB03>ニモツ…オオスギ…ダメ…ダメヨ…<FB02>",
       "text": [
         "僵尸",
@@ -531,7 +531,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "他にも何か買いますか？\n\nは い\nいいえ\n",
       "text": [
         "还要买别的吗？",
@@ -542,7 +542,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "露天商「おぉっ！\n久しぶりだねぇ！」",
       "text": [
         "露天商「哦哦！",
@@ -550,7 +550,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "露天商「まさか、こんな所で会うとは\n思ってもみなかったよ」",
       "text": [
         "露天商「竟在这种地方遇见你，",
@@ -558,7 +558,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "露天商「俺は最近ちょくちょく、\nこの辺まで商売しに\n来てるんだ」",
       "text": [
         "露天商「我最近常常",
@@ -567,7 +567,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "露天商「どうだい、\n何か見ていくかい？」",
       "text": [
         "露天商「怎么样，",
@@ -575,7 +575,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "買い物をしますか？\n\nは い\nいいえ\n",
       "text": [
         "要买东西吗？",
@@ -586,7 +586,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "露天商「んじゃ、まあ\nまた見かけたらよろしくな！」",
       "text": [
         "露天商「那就这样，",
@@ -594,7 +594,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "露天商「んじゃ、まあ\nまた見かけたらよろしくな！」",
       "text": [
         "露天商「那就这样，",
@@ -602,7 +602,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "露天商「おっ！\nまた会ったな！」",
       "text": [
         "露天商「哦！",
@@ -610,7 +610,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "露天商「どうだい、\n何か見ていくかい？」",
       "text": [
         "露天商「怎么样，",
@@ -618,7 +618,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "買い物をしますか？\n\nは い\nいいえ\n",
       "text": [
         "要买东西吗？",
@@ -629,7 +629,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "露天商「んじゃ、まあ\nまた見かけたらよろしくな！」",
       "text": [
         "露天商「那就这样，",
@@ -637,7 +637,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "露天商「んじゃ、まあ\nまた見かけたらよろしくな！」",
       "text": [
         "露天商「那就这样，",
@@ -645,7 +645,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>イラッシャイマシ…\nホテル・ラヴ<STYLE:1>♥<STYLE:3>コープス<STYLE:0>へヨウコソ…",
       "text": [
         "腐尸",
@@ -654,7 +654,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>休憩ハ、二時間3000ゴールド\n宿泊ハ、ヤッテナイ",
       "text": [
         "腐尸",
@@ -663,7 +663,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>宿泊ナイカラ、レベルアップ無理\nダケド、ピンピンヨ",
       "text": [
         "腐尸",
@@ -672,7 +672,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "休憩していきますか？\n\nは い\nいいえ\n",
       "text": [
         "要在这里休息吗？",
@@ -683,7 +683,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>ソ…添イ寝…シテホシイ…？",
       "text": [
         "腐尸",
@@ -691,7 +691,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "添い寝して欲しいですか？\n\nは い\nいいえ\n",
       "text": [
         "想要陪睡吗？",
@@ -702,7 +702,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>マ…マタ今度…待ッテルワ…",
       "text": [
         "腐尸",
@@ -710,7 +710,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>ソンナ…ダ…ダメヨ……",
       "text": [
         "腐尸",
@@ -718,7 +718,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>エ…エッチ…",
       "text": [
         "腐尸",
@@ -726,7 +726,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>3000ゴールド…\nモラットイタカラ…",
       "text": [
         "腐尸",
@@ -735,7 +735,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>マタ…キテネ…",
       "text": [
         "腐尸",
@@ -743,7 +743,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>ホッ…",
       "text": [
         "腐尸",
@@ -751,7 +751,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>3000ゴールド…\nモラットイタカラ…",
       "text": [
         "腐尸",
@@ -760,7 +760,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>マタ…キテネ…",
       "text": [
         "腐尸",
@@ -768,7 +768,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>イラッシャイマシ…\nホテル・ラヴ<STYLE:1>♥<STYLE:3>コープス<STYLE:0>へヨウコソ…",
       "text": [
         "腐尸",
@@ -777,7 +777,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>休憩ハ、二時間3000ゴールド\n宿泊ハ、ヤッテナイ",
       "text": [
         "腐尸",
@@ -786,7 +786,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>宿泊ナイカラ、レベルアップ無理\nダケド、ピンピンヨ",
       "text": [
         "腐尸",
@@ -795,7 +795,7 @@
       ]
     },
     {
-      "show": "screen",
+      "type": "center",
       "source": "休憩していきますか？\n\nは い\nいいえ\n",
       "text": [
         "要在这里休息吗？",
@@ -806,7 +806,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>ゴユックリ……",
       "text": [
         "腐尸",
@@ -814,7 +814,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>3000ゴールド…\nモラットイタカラ…",
       "text": [
         "腐尸",
@@ -823,7 +823,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>マタ…キテネ…",
       "text": [
         "腐尸",
@@ -831,7 +831,7 @@
       ]
     },
     {
-      "show": "window",
+      "type": "dialog",
       "source": "ロッティングコープス\n<FB03>マ…マタ今度…待ッテルワ…",
       "text": [
         "腐尸",

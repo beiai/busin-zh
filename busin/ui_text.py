@@ -22,6 +22,8 @@ PAPER_PITCH_NEW = 0x26750014  # addiu $s5, $s3, 0x14
 PAPER_PAGES = (0x445810, 0x4458F8, 0x4459E0)
 PAPER_ROWS = 6
 PAPER_WIDTH = 19
+# Item-command rows whose first cell is the +16 nudge. The SP row is the one left out.
+_GEAR_NUDGE = {0x584308 + index * 12 for index in range(7) if index != 4}
 
 
 def ui_char(code: int) -> str | None:
@@ -64,10 +66,11 @@ def _runs(codes):
 
 
 def unwrap(codes, flow=False) -> str:
-    """Drop layout spaces. A run of two or more stays as {n} unless flow joins the lines."""
+    """Keep spaces the translation can edit. A run of two or more stays as {n} unless flow joins the lines.
+
+    One cell at either end is kept too. Joined lines drop a trailing empty cell; that one pads the window.
+    """
     runs = _runs(codes)
-    glyphs = [item for kind, item in runs if kind == "g"]
-    short = bool(glyphs) and sum(len(item) for item in glyphs) <= 4 and all(len(item) == 1 for item in glyphs)
     parts = []
     for index, (kind, item) in enumerate(runs):
         if kind == "nl":
@@ -79,12 +82,26 @@ def unwrap(codes, flow=False) -> str:
             continue
         left = index > 0 and runs[index - 1][0] == "g"
         right = index + 1 < len(runs) and runs[index + 1][0] == "g"
-        stretch = short and left and right
-        if item == 1 and left and right and not stretch:
+        trailing = left and not right
+        if item == 1 and (left or right) and not (flow and trailing):
             parts.append(" ")
-        elif item >= 2 and not flow and not stretch:
+        elif item >= 2 and not flow:
             parts.append(f"{{{item}}}")
     return "".join(parts)
+
+
+def _row_text(chunk) -> str:
+    """One fixed row. A blank row stays blank. Any other row keeps spaces at both ends."""
+    if not any(chunk):
+        return ""
+    return unwrap(chunk, flow=False)
+
+
+def _grid_source(codes, width) -> str:
+    if width <= 0 or len(codes) % width:
+        raise AssertionError(f"{len(codes)} cells do not fit width {width}")
+    rows = [codes[index:index + width] for index in range(0, len(codes), width)]
+    return "/".join(_row_text(row) for row in rows)
 
 
 def _half(elf, va):
@@ -159,24 +176,9 @@ def _pointers(elf, table, lo, hi, limit=400):
     return rows
 
 
-def _block(elf, va, width, rows):
-    # Fixed cells. 0 inside a row is a space; trailing 0s are unused cells.
-    parts = []
-    for row in range(rows):
-        chunk = [_half(elf, va + (row * width + col) * 2) for col in range(width)]
-        while chunk and chunk[-1] == 0:
-            chunk.pop()
-        if not chunk:
-            continue
-        if parts:
-            parts.append(0xFFFE)
-        parts.extend(chunk)
-    return parts
-
-
 def _fixed(elf, va, width, count):
     step = width * 2
-    return [(f"{va + index * step:06X}", _block(elf, va + index * step, width, 1)) for index in range(count)]
+    return [(f"{va + index * step:06X}", _grid(elf, va + index * step, width, 1)) for index in range(count)]
 
 
 def _grid_rows(elf, base, stride, count, width, rows, skip=0):
@@ -318,7 +320,7 @@ def collect(elf):
         ("controller", "手柄", _pointers(elf, 0x43AED8, 0x43AE40, 0x43AEE0)),
         ("operations", "输入法", [((f"op {value}"), list(codes)) for value, _reading, codes, _sites in OPERATIONS]),
         ("save", "存档提示", [
-            (f"{index:02X} {ptr:06X}", _block(elf, ptr, 28, 4))
+            (f"{index:02X} {ptr:06X}", _grid(elf, ptr, 28, 4))
             for index in range(32)
             for ptr in (_word(elf, 0x440970 + index * 4),)
         ]),
@@ -334,12 +336,12 @@ def collect(elf):
             + _fixed(elf, 0x58A008, 3, 8) + _fixed(elf, 0x58A038, 5, 15)
         )),
         ("personality", "性格", [
-            (f"{0x582608 + index * 66:06X}", _block(elf, 0x582608 + index * 66, 11, 3))
+            (f"{0x582608 + index * 66:06X}", _grid(elf, 0x582608 + index * 66, 11, 3))
             for index in range(15)
         ]),
         ("quest", "委托确认", _fixed(elf, 0x583028, 28, 3)),
         ("town", "城镇说明", [
-            (f"{0x4428E8 + index * 114 + 6:06X}", _block(elf, 0x4428E8 + index * 114 + 6, 54, 1))
+            (f"{0x4428E8 + index * 114 + 6:06X}", _grid(elf, 0x4428E8 + index * 114 + 6, 54, 1))
             for index in range(7)
         ]),
         ("shop", "商店", _pointers(elf, 0x444940, 0x443000, 0x445000)),
@@ -370,16 +372,17 @@ def collect(elf):
 # then the fifteen personality names. The descriptions are a separate table, same order.
 _CREATE_WIDTH = (3,) * 6 + (4,) * 5 + (4,) * 5 + (3,) * 8 + (3,) * 8 + (5,) * 15
 _JOB_WIDTH = (6, 11, 17)
-_FLOW = {
-    "save": "28x4", "personality": "11x3", "race": "12x7", "align": "12x7",
-    "class": "11x3", "stat": "12x3", "link": "15x3",
+_GRID = {
+    "save": (28, 4), "personality": (11, 3), "race": (12, 7), "align": (12, 7),
+    "class": (11, 3), "stat": (12, 3), "link": (15, 3),
 }
+_LINE = {"town", "quest", "files", "rank", "gear", "create", "job", "bark"}
 _FIXED = {"town": "54", "quest": "28", "files": "9", "rank": "19", "gear": "6"}
 _POINTERS = ("menu", "controller", "shop", "debug", "inn", "room", "ask")
 # Name slot scans 10 cells. The two shouts keep their leading spaces and replace the glyph run.
 _BARK = ((0x4977E8, 10), (0x497810, 12), (0x497838, 16), (0x497880, 16))
 _BARK_WIDTH = tuple(width for _va, width in _BARK)
-_NOTE = "{n} 是要留出的格子。w 是原格子数，x 后是行数，+ 是这条后面还能多占的格子。"
+_NOTE = "{n} 是要留出的格子。width 是原格子数，x 后是行数，+ 是这条后面还能多占的格子。格子说明的译文用 / 断行，不写就按行宽往下排。"
 
 
 def _label(label) -> str:
@@ -407,7 +410,7 @@ def _slacks(rows):
 
 def _entry(label, text, width, slack=None) -> str:
     extra = "" if slack is None else f" +{slack}"
-    return f"{_label(label)}  {text}  w={width}{extra}"
+    return f"{_label(label)}  {text}  width={width}{extra}"
 
 
 def _paper_groups(rows):
@@ -426,14 +429,24 @@ def _paper_groups(rows):
 def _paper_lines(rows):
     lines = []
     for group in _paper_groups(rows):
-        text = unwrap([code for _va, codes in group for code in codes], flow=True)
-        lines.append(_entry(f"{group[0][0]:06X}", text, f"19x{len(group)}"))
+        if len(group) != PAPER_ROWS or any(len(codes) != PAPER_WIDTH for _va, codes in group):
+            raise AssertionError("paper page is not 19x6")
+        codes = [code for _va, row in group for code in row]
+        lines.append(_entry(f"{group[0][0]:06X}", _grid_source(codes, PAPER_WIDTH), f"{PAPER_WIDTH}x{PAPER_ROWS}"))
     return lines
 
 
 def manuscript_lines(name, rows):
     if name == "paper":
         return _paper_lines(rows)
+    if name in _GRID:
+        width, nrows = _GRID[name]
+        lines = []
+        for label, codes in rows:
+            if len(codes) != width * nrows:
+                raise AssertionError(f"{name} {_label(label)} has {len(codes)} cells")
+            lines.append(_entry(label, _grid_source(codes, width), f"{width}x{nrows}"))
+        return lines
     slack = _slacks(rows) if name in _POINTERS else None
     if name == "create":
         widths = _CREATE_WIDTH
@@ -449,12 +462,13 @@ def manuscript_lines(name, rows):
     for index, (label, codes) in enumerate(rows):
         if widths is not None:
             budget = widths[index]
-        elif name in _FLOW or name in _FIXED:
-            budget = _FLOW.get(name) or _FIXED[name]
+        elif name in _FIXED:
+            budget = _FIXED[name]
         else:
             budget = len(codes)
         extra = None if slack is None else slack.get(_address(label))
-        lines.append(_entry(label, unwrap(codes, flow=name in _FLOW), budget, extra))
+        source = _row_text(codes) if name in _LINE else unwrap(codes)
+        lines.append(_entry(label, source, budget, extra))
     return lines
 
 
@@ -506,41 +520,22 @@ def _glyphs(text, slash):
     return [item for kind, item in _tokens(text, slash) if kind == "g"]
 
 
-def _stretched(codes):
-    runs = _runs(codes)
-    glyphs = [item for kind, item in runs if kind == "g"]
-    short = bool(glyphs) and sum(len(item) for item in glyphs) <= 4 and all(len(item) == 1 for item in glyphs)
-    for index, (kind, _item) in enumerate(runs):
-        if kind != "sp" or not short:
-            continue
-        left = index > 0 and runs[index - 1][0] == "g"
-        right = index + 1 < len(runs) and runs[index + 1][0] == "g"
-        if left and right:
-            return True
-    return False
-
-
 def _centered(codes):
     return bool(codes) and codes[0] == 0 and codes[-1] == 0 and any(code not in (0, 0xFFFE) for code in codes)
 
 
-# 人間, 戻る, and 知恵 were stretched with a gap. Chinese keeps the two glyphs together.
-_PLAIN = {"11 43DDF0", "15 43DE20", "589F66"}
-# The race list centers a name in the four-cell column: two glyphs at x+16, three at x+8.
-# 0x14D638 was addiu s6, s2, 8. 0x14D650 was sltiu s1, 2. Index 4 stays at x+8.
-# 0x14D808 was the alignment list's 戻る. Its names keep their x; only 返回 moves to x+16.
+# Race names are three cells. Two-kana rows started at x+8, four-kana rows at x+0.
+# The short-name branch now always runs, so every row starts at x+8.
 _RACE_X = {
-    0x14D638: (0x26560008, 0x26560010),
-    0x14D650: (0x2E220002, 0x2E220004),
-    0x14D658: (0x0240302D, 0x26460008),
-    0x14D65C: (0x24020003, 0x24020080),
-    0x14D660: (0x16220003, 0x10000003),
-    0x14D664: (0x24020080, 0x00000000),
-    0x14D808: (0x00163400, 0x26460010),
-    0x14D818: (0x00063403, 0x00000000),
+    0x14D654: (0x14400004, 0x10000004),
+}
+_RACE_LABELS = {
+    ("menu", "15"), ("menu", "16"), ("menu", "17"), ("menu", "18"), ("menu", "19"),
+    ("create", "589FB0"), ("create", "589FB8"), ("create", "589FC0"),
+    ("create", "589FC8"), ("create", "589FD0"),
 }
 # Status sheet centers a stat name by its Japanese length: one glyph at x+16, two at x+8, three at x+0.
-# Chinese names are two glyphs with no blank, and share the left edge of 姓名 at x+0.
+# Chinese names are three cells with a middle blank, and share the three-kanji rows at x+0.
 _STAT_X = {
     0x582A20: (0x0010000B, 0x0000000B),
     0x582A24: (0x0008000C, 0x0000000C),
@@ -550,19 +545,26 @@ _STAT_X = {
     0x582A34: (0x00000010, 0x00000010),
 }
 # Creation screen places the first stat at x+16 and the second at x+8.
-# Chinese names are two glyphs, so those two rows use the same x as the other four.
+# Chinese names are three cells, so those two rows use the same x as the other four.
 _CREATE_STAT_X = {
     0x14D174: (0x27C20010, 0x27C20000),
     0x14D188: (0x27C30008, 0x27C30000),
 }
+# Ability points place the first name at x+16 and the second at x+8. The value column stays put.
+# Chinese names are three cells, so the two short rows use x+0 with the others.
+# The later list uses the same two offsets, and its number is drawn from that x.
+_POINT_STAT_X = {
+    0x14DAE0: (0x26A20010, 0x26A20000),
+    0x14DAF0: (0x26A20008, 0x26A20000),
+    0x152DA4: (0x26020010, 0x26020000),
+    0x152DB4: (0x26020008, 0x26020000),
+}
 
 
-def _layout_line(text, raw, width, slack, table, slash, stretch=True):
+def _layout_line(text, raw, width, slack, table, slash, center=True):
     body = _encode(text, table, slash)
-    if stretch and _stretched(raw) and len(body) == 2 and all(code not in (0, 0xFFFE) for code in body):
-        body = [body[0], 0, body[1]]
     limit = width + (slack or 0)
-    if _centered(raw) and len(body) <= width:
+    if center and _centered(raw) and len(body) <= width:
         pad = width - len(body)
         left = pad // 2
         body = [0] * left + body + [0] * (pad - left)
@@ -571,6 +573,23 @@ def _layout_line(text, raw, width, slack, table, slash, stretch=True):
     if len(body) > limit:
         raise ValueError(f"{len(body)} cells, budget {limit}")
     return body
+
+
+def _fit_grid(text, slot, table):
+    width, rows = slot["width"], slot["rows"]
+    if "/" not in text:
+        return _wrap(_encode(text, table, False), width, rows)
+    parts = text.split("/")
+    if len(parts) > rows:
+        raise ValueError(f"{len(parts)} lines, budget {rows}")
+    parts.extend([""] * (rows - len(parts)))
+    out = []
+    for part in parts:
+        body = _encode(part, table, False)
+        if len(body) > width:
+            raise ValueError(f"{len(body)} cells, budget {width}")
+        out.extend(body + [0] * (width - len(body)))
+    return out
 
 
 def _wrap(codes, width, rows):
@@ -584,25 +603,16 @@ def _wrap(codes, width, rows):
 
 
 def _layout_ok(encoded, written):
-    """Written text is the encoding plus centering, right pad, and one restored gap."""
+    """Written text is the encoding plus centering and right pad. A gap counts only if the translation wrote it."""
     index = got = 0
-    inserted = False
     while index < len(encoded) and got < len(written):
         if encoded[index] == written[got]:
             index += 1
             got += 1
             continue
-        if written[got] != 0:
+        if written[got] != 0 or index != 0:
             return False
-        if index == 0:
-            got += 1
-            continue
-        if (not inserted and encoded[index - 1] not in (0, 0xFFFE)
-                and encoded[index] not in (0, 0xFFFE)):
-            inserted = True
-            got += 1
-            continue
-        return False
+        got += 1
     while got < len(written) and written[got] == 0:
         got += 1
     return index == len(encoded) and got == len(written)
@@ -629,9 +639,9 @@ def _grid(elf, va, width, rows):
     return [_half(elf, va + index * 2) for index in range(width * rows)]
 
 
-def _slot(ident, va, mode, raw, width, slack=None, rows=1, room=None, slash=False, ffff=False):
+def _slot(ident, va, mode, raw, width, slack=None, rows=1, room=None, slash=False, ffff=False, kind=None):
     return {"id": ident, "va": va, "mode": mode, "raw": raw, "width": width, "slack": slack,
-            "rows": rows, "room": room, "slash": slash, "ffff": ffff}
+            "rows": rows, "room": room, "slash": slash, "ffff": ffff, "type": kind}
 
 
 def _spec(slot):
@@ -642,7 +652,13 @@ def _spec(slot):
     return str(slot["width"])
 
 
+def _visible(text, slot):
+    return text.replace("/", "") if slot.get("type") == "grid" else text
+
+
 def _fit(text, slot, table):
+    if slot.get("type") == "grid":
+        return _fit_grid(text, slot, table)
     if slot["mode"] == "flow":
         return _wrap(_encode(text, table, False), slot["width"], slot["rows"])
     if slot["mode"] == "span":
@@ -650,8 +666,15 @@ def _fit(text, slot, table):
         if len(body) > slot["room"]:
             raise ValueError(f"{len(body)} cells, room {slot['room']}")
         return body + [0] * (slot["room"] - len(body))
-    plain = slot["id"] in _PLAIN
-    return _layout_line(text, slot["raw"], slot["width"], slot["slack"], table, slot["slash"], not plain)
+    if slot.get("keep"):
+        # The first cell is an x offset. The label uses the cells after it.
+        drawn = _encode(text, table, False)
+        room = slot["width"] - 1
+        if len(drawn) > room:
+            raise ValueError(f"{len(drawn)} cells, budget {room}")
+        return [slot["raw"][0], *drawn, *([0] * (room - len(drawn)))]
+    return _layout_line(text, slot["raw"], slot["width"], slot["slack"], table, slot["slash"],
+                        center=slot.get("type") != "line")
 
 
 def _ptr_slots(rows, slash):
@@ -668,12 +691,13 @@ def _line_slots(elf, rows, widths):
     for index, (label, _codes) in enumerate(rows):
         va = _address(label)
         width = widths[index] if not isinstance(widths, int) else widths
-        slots.append(_slot(_label(label), va, "line", _grid(elf, va, width, 1), width))
+        slots.append(_slot(_label(label), va, "line", _grid(elf, va, width, 1), width, kind="line"))
     return slots
 
 
 def _flow_slots(rows, width, nrows):
-    return [_slot(_label(label), _address(label), "flow", [], width, rows=nrows) for label, _codes in rows]
+    return [_slot(_label(label), _address(label), "flow", [], width, rows=nrows, kind="grid")
+            for label, _codes in rows]
 
 
 def _kept_spans(elf, va, limit=3):
@@ -774,7 +798,7 @@ def _paper_slots(rows):
         for index, (row_va, _codes) in enumerate(group):
             if row_va != va + index * 0x26:
                 raise AssertionError(f"paper row {row_va:#x} is not contiguous")
-        slots.append(_slot(f"{va:06X}", va, "flow", [], 19, rows=len(group)))
+        slots.append(_slot(f"{va:06X}", va, "flow", [], 19, rows=len(group), kind="grid"))
     return slots
 
 
@@ -810,7 +834,11 @@ def _section_slots(elf, name, rows):
     if name == "rank":
         return _line_slots(elf, rows, 19)
     if name == "gear":
-        return _line_slots(elf, rows, 6)
+        # 0x10 in the first cell moves the label one cell right. The SP row stays at 0.
+        slots = _line_slots(elf, rows, 6)
+        for slot in slots:
+            slot["keep"] = True
+        return slots
     if name == "bark":
         return _line_slots(elf, rows, _BARK_WIDTH)
     if name == "lift":
@@ -834,7 +862,7 @@ def _section_slots(elf, name, rows):
 
 
 def _line_parts(line):
-    left, spec = line.rsplit("  w=", 1)
+    left, spec = line.rsplit("  width=", 1)
     ident, source = left.split("  ", 1)
     return ident, source, spec
 
@@ -863,11 +891,17 @@ def ui_patches(elf):
             slot = slots[index]
             if slot["id"] != ident or _spec(slot) != spec:
                 raise AssertionError(f"{name} {ident} slot {slot['id']} spec {_spec(slot)} != {spec}")
+            if slot.get("type"):
+                if row.get("type") != slot["type"] or row.get("width") != spec:
+                    raise ValueError(
+                        f"{name} {ident} type {row.get('type')} {row.get('width')} != {slot['type']} {spec}")
+            elif row.get("type") or row.get("width"):
+                raise ValueError(f"{name} {ident} has type {row.get('type')} {row.get('width')}")
             menu_index = int(ident.split()[0], 16) if name == "menu" else None
             if menu_index in _NAME_ENTRY:
                 continue
             pending.append((name, ident, row["text"], slot))
-            chars.extend(_glyphs(row["text"], slot["slash"]))
+            chars.extend(_glyphs(_visible(row["text"], slot), slot["slash"]))
     from busin.naming import label_chars, load_labels, page_labels
     label_strings, label_ops, confirm, back = load_labels()
     _wide, narrow = page_labels()
@@ -885,11 +919,19 @@ def ui_patches(elf):
             codes = _fit(text, slot, table)
         except ValueError as exc:
             raise ValueError(f"{name} {ident}: {exc}") from exc
-        if _glyphs(text, slot["slash"]) != [rev[code] for code in codes if code not in (0, 0xFFFE, 0xFFFD)]:
+        if (name, ident.split()[0]) in _RACE_LABELS:
+            width = len(codes)
+            while width and codes[width - 1] == 0:
+                width -= 1
+            if width != 3:
+                raise ValueError(f"{name} {ident} is {width} cells")
+        shown = _visible(text, slot)
+        written = codes[1:] if slot.get("keep") else codes
+        if _glyphs(shown, slot["slash"]) != [rev[code] for code in written if code not in (0, 0xFFFE, 0xFFFD)]:
             raise ValueError(f"{name} {ident} glyphs do not match")
-        if codes.count(0xFFFE) != sum(1 for kind, _item in _tokens(text, slot["slash"]) if kind == "nl"):
+        if written.count(0xFFFE) != sum(1 for kind, _item in _tokens(shown, slot["slash"]) if kind == "nl"):
             raise ValueError(f"{name} {ident} slashes do not match")
-        if slot["mode"] != "flow" and not _layout_ok(_encode(text, table, slot["slash"]), codes):
+        if slot["mode"] != "flow" and not _layout_ok(_encode(shown, table, slot["slash"]), written):
             raise ValueError(f"{name} {ident} layout does not match")
         packed = ([*codes, 0xFFFF] if slot["ffff"] else codes)
         for index, code in enumerate(packed):
@@ -939,6 +981,11 @@ def ui_patches(elf):
         if struct.unpack_from("<I", elf, off)[0] != old or off in writes:
             raise AssertionError(f"create stat x at {va:#x}")
         writes[off] = struct.pack("<I", new)
+    for va, (old, new) in _POINT_STAT_X.items():
+        off = va - FILE_BASE
+        if struct.unpack_from("<I", elf, off)[0] != old or off in writes:
+            raise AssertionError(f"point stat x at {va:#x}")
+        writes[off] = struct.pack("<I", new)
     info = {"strings": len(pending), "glyphs": len(extra)}
     return writes, extra, info
 
@@ -982,23 +1029,43 @@ def self_test():
     assert ui_char(0x3CE) == "犠" and ui_char(0x3CF) == "牲" and ui_char(0x3D0) == "実"
     assert ui_char(0x3EE) == "類"
     assert render([0x223, 0x13E, 0x89, 0x1F]) == "名前は?"
-    assert unwrap([0, 0x223, 0x13E]) == "名前"
-    assert unwrap([0x223, 0, 0x13E]) == "名前"
-    assert unwrap([0x112, 0, 0, 0, 0x112]) == "戦戦"
+    assert unwrap([0, 0x223, 0x13E]) == " 名前"
+    assert unwrap([0x223, 0]) == "名 "
+    assert unwrap([0x223, 0], flow=True) == "名"
+    assert unwrap([0x223, 0, 0x13E]) == "名 前"
+    assert unwrap([0x112, 0, 0, 0, 0x112]) == "戦{3}戦"
     assert unwrap([0] * 10 + [0x112]) == "{10}戦"
     assert unwrap([0x112, 0x112, 0, 0x112, 0x112]) == "戦戦 戦戦"
-    assert unwrap([0x112, 0xFFFE, 0, 0x112], flow=True) == "戦戦"
-    assert unwrap([0x112, 0xFFFE, 0, 0x112]) == "戦/戦"
+    assert unwrap([0x112, 0xFFFE, 0, 0x112], flow=True) == "戦 戦"
+    assert unwrap([0x112, 0xFFFE, 0, 0x112]) == "戦/ 戦"
+    assert _row_text([0, 0x223, 0]) == " 名 "
+    assert _row_text([0, 0, 0]) == ""
+    assert _grid_source([0x112, 0, 0, 0, 0, 0, 0, 0, 0], 3) == "戦{2}//"
     table = {"甲": 5, "乙": 6, "丙": 7, "/": 9}
     assert _encode("甲/乙", table, True) == [5, 0xFFFE, 6]
     assert _encode("{2}甲", table, False) == [0, 0, 5]
-    assert _layout_line("甲乙", [1, 0, 2], 3, 0, table, False) == [5, 0, 6]
+    assert _layout_line("甲 乙", [1, 0, 2], 3, 0, table, False) == [5, 0, 6]
+    assert _layout_line("甲乙", [1, 0, 2], 3, 0, table, False) == [5, 6, 0]
+    assert _layout_line("甲", [0, 1, 0], 3, 0, table, False, center=False) == [5, 0, 0]
+    assert _layout_line("甲", [0, 1, 0], 3, 0, table, False) == [0, 5, 0]
+    grid = _slot("x", 0, "flow", [], 3, rows=2, kind="grid")
+    assert _fit("甲/乙", grid, table) == [5, 0, 0, 6, 0, 0]
+    assert _fit("甲乙", grid, table) == [5, 6, 0, 0, 0, 0]
+    try:
+        _fit("甲乙丙甲/乙", grid, table)
+        raise AssertionError("a grid line can be longer than its width")
+    except ValueError:
+        pass
     assert _layout_line("甲乙", [0, 1, 0], 4, 0, table, False) == [0, 5, 6, 0]
     assert _layout_line("甲乙", [1, 2], 4, 0, table, False) == [5, 6, 0, 0]
     assert _layout_line("甲乙丙", [1], 1, 2, table, False) == [5, 6, 7]
     assert _wrap([5, 6, 7], 2, 2) == [5, 6, 7, 0]
-    assert _layout_ok([5, 6], [5, 0, 6, 0]) and _layout_ok([0, 0, 5], [0, 0, 5])
+    assert _layout_ok([5, 0, 6], [5, 0, 6, 0]) and _layout_ok([0, 0, 5], [0, 0, 5])
+    assert not _layout_ok([5, 6], [5, 0, 6, 0])
     assert not _layout_ok([5, 0, 0, 6], [5, 6])
+    gear = _slot("g", 0x584308, "line", [0x10, 1, 0, 2, 0, 0], 6, kind="line")
+    gear["keep"] = True
+    assert _fit("甲 乙", gear, {"甲": 5, "乙": 6}) == [0x10, 5, 0, 6, 0, 0]
     assert _known_codes() == {}
     table, extra = _assign(["名", "姓"], {})
     assert table == extra == {"名": 0x0418, "姓": 0x0419}
@@ -1046,31 +1113,44 @@ def disc_self_test():
     sheets = {name: manuscript_lines(name, rows) for name, rows in sections.items()}
 
     def column(line):
-        return line.split("  ", 1)[1].rsplit("  w=", 1)[0]
+        return line.split("  ", 1)[1].rsplit("  width=", 1)[0]
 
     menu = [column(line) for line in sheets["menu"]]
-    budgets = [line.rsplit("  w=", 1)[1] for line in sheets["menu"]]
-    assert "転職" in menu and "名前の変更" in menu and "人間" in menu and "人 間" not in menu
-    assert budgets[menu.index("転職")] == "6 +1"
+    budgets = [line.rsplit("  width=", 1)[1] for line in sheets["menu"]]
+    assert " 転{3}職" in menu and " 名前の変更" in menu and "人 間" in menu and "人間" not in menu
+    assert budgets[menu.index(" 転{3}職")] == "6 +1"
     slacks = [int(item.split("+", 1)[1]) for item in budgets if "+" in item]
     assert slacks.count(0) == 54 and max(slacks) == 3 and budgets.count("6 +1") >= 1
     assert sum("+" not in item for item in budgets) == 1
     assert "  " not in "\n".join(menu)
     create = [column(line) for line in sheets["create"]]
-    assert "戦士" in create and "知恵" in create and "力" in create
-    assert sheets["create"][create.index("戦士")].endswith("w=3")
-    assert "{" not in "\n".join(create)
+    assert "戦 士" in create and "知 恵" in create and " 力 " in create
+    assert sheets["create"][create.index("戦 士")].endswith("width=3")
+    assert "好戦的{2}" in create
     shop = "\n".join(column(line) for line in sheets["shop"])
-    assert "{10}の魔法を習得した!" in shop and "短刀" in shop and "  " not in shop
+    assert "{10}の魔法を習得した!" in shop and "短 刀" in shop and "  " not in shop
     save = "\n".join(column(line) for line in sheets["save"])
     assert "BUSINのセーブデータをロードしますか?" in save
-    assert "プレイステーション 2" in save and "専用メモリーカード" in save and "/" not in save and "{" not in save
+    assert "プレイステーション 2" in save and "専用メモリーカード" in save
+    assert all(column(line).count("/") == 3 for line in sheets["save"])
     paper = [column(line) for line in sheets["paper"]]
-    assert paper[0] == "種族とはこの世界には、五つの種族が存在します。力にひいでたドワーフや魔法にひいでたエルフなど各種族により得意な事が異なります。"
-    assert paper[1] == "属性とはこの世界に生きる者達の行動理念です。主に三つの属性に分けられ相反する属性の者とは仲が悪いと言われています。"
-    assert paper[2] == "冒険者達の職業冒険者達は、ひめられた能力をひきだし、各職業につきます。剣をにぎる者、魔法をあやつる者など職種は様々で、選んだ職業により戦法が異なります。"
+    assert paper[0] == (
+        "{6}種族とは{9}/この世界には、五つの種族が存在します。/"
+        "{3}力にひいでたドワーフや{5}/{3}魔法にひいでたエルフなど{4}/"
+        " 各種族により得意な事が異なります。 /"
+    )
+    assert paper[1] == (
+        "{6}属性とは{9}/この世界に生きる者達の行動理念です。 /"
+        "{3}主に三つの属性に分けられ{4}/ 相反する属性の者とは仲が悪いと{3}/"
+        "{5}言われています。{6}/"
+    )
+    assert paper[2] == (
+        "{5}冒険者達の職業{7}/{2}冒険者達は、ひめられた能力を{3}/"
+        "{2}ひきだし、各職業につきます。{3}/ 剣をにぎる者、魔法をあやつる者など /"
+        "{2}職種は様々で、選んだ職業により{2}/{4}戦法が異なります。{6}"
+    )
     assert [line.split("  ", 1)[0] for line in sheets["paper"]] == ["445810", "4458F8", "4459E0"]
-    assert [line.rsplit("w=", 1)[1] for line in sheets["paper"]] == ["19x6", "19x6", "19x6"]
+    assert [line.rsplit("width=", 1)[1] for line in sheets["paper"]] == ["19x6", "19x6", "19x6"]
     elf = load_elf()
     assert _word(elf, 0x14E780) == 0x24425810 and _word(elf, 0x14E820) == 0x244258F8
     assert _word(elf, 0x14E8C0) == 0x244259E0
@@ -1079,10 +1159,10 @@ def disc_self_test():
     if PAPER_PAGES[2] + PAPER_ROWS * 0x26 > 0x445AC8:
         raise AssertionError("paper job page overlaps the class-change labels")
     person = column(sheets["personality"][0])
-    assert person == "強いモンスターと戦うのが大好き。弱いやつと戦うの大嫌い。"
-    assert all("/" not in column(line) for line in sheets["personality"])
+    assert person == "強いモンスターと戦うの/が大好き。弱いやつと戦/うの大嫌い。{5}"
+    assert all(column(line).count("/") == 2 for line in sheets["personality"])
     town = column(sheets["town"][0])
-    assert "酒場" in town and "。 " in town and sheets["town"][0].endswith("w=54")
+    assert "酒場" in town and "。 " in town and sheets["town"][0].endswith("width=54")
     debug = "\n".join(column(line) for line in sheets["debug"])
     assert "あれいど({9})" in debug and "PARTY ALL" in debug
     assert all("[" not in column(line) for lines in sheets.values() for line in lines)
@@ -1093,6 +1173,7 @@ def disc_self_test():
     race_x = {va - FILE_BASE for va in _RACE_X}
     stat_x = {va - FILE_BASE for va in _STAT_X}
     create_stat_x = {va - FILE_BASE for va in _CREATE_STAT_X}
+    point_stat_x = {va - FILE_BASE for va in _POINT_STAT_X}
     if any(writes.get(off) != struct.pack("<I", PAPER_PITCH_NEW) for off in pitch):
         raise AssertionError("paper line pitch was not written")
     for va, (_old, new) in _RACE_X.items():
@@ -1104,18 +1185,20 @@ def disc_self_test():
     for va, (_old, new) in _CREATE_STAT_X.items():
         if writes.get(va - FILE_BASE) != struct.pack("<I", new):
             raise AssertionError(f"create stat x at {va:#x}")
-    for va in range(0x43DDC0, 0x43DDF0, 8):
-        codes = struct.unpack_from("<2H", _span(writes, va))
-        if not codes[0] or not codes[1]:
+    for va, (_old, new) in _POINT_STAT_X.items():
+        if writes.get(va - FILE_BASE) != struct.pack("<I", new):
+            raise AssertionError(f"point stat x at {va:#x}")
+    stat_names = (
+        list(range(0x43DDC0, 0x43DDF0, 8))
+        + list(range(0x589F60, 0x589F84, 6))
+        + list(range(0x4448D0, 0x444900, 8))
+        + list(range(0x486F48, 0x486F70, 8))
+        + [0x486F90]
+    )
+    for va in stat_names:
+        codes = struct.unpack_from("<3H", _span(writes, va))
+        if codes[1] or not codes[0] or not codes[2]:
             raise AssertionError(f"stat name gap at {va:#x}")
-    for va in range(0x589F60, 0x589F84, 6):
-        codes = struct.unpack_from("<2H", _span(writes, va))
-        if not codes[0] or not codes[1]:
-            raise AssertionError(f"stat cell gap at {va:#x}")
-    human = struct.unpack_from("<3H", _span(writes, 0x43DE20), 0)
-    back = struct.unpack_from("<3H", _span(writes, 0x43DDF0), 0)
-    if human[1] == 0 or human[2] != 0 or back[1] == 0 or back[2] != 0:
-        raise AssertionError((human, back))
     banned = {address - FILE_BASE for _index, address, _source, _codes in STRINGS}
     # Parchment rows are grouped into three pages before they are written.
     written = sum(expect.values()) - len(_NAME_ENTRY) - (expect["paper"] - 3)
@@ -1130,8 +1213,18 @@ def disc_self_test():
         if char not in extra or extra[char] < 0x0418:
             raise AssertionError(f"{char} is not on the Chinese pages")
     for off, data in writes.items():
-        if off in pitch or off in race_x or off in stat_x or off in create_stat_x:
+        if off in pitch or off in race_x or off in stat_x or off in create_stat_x or off in point_stat_x:
             continue
         codes = struct.unpack(f"<{len(data) // 2}H", data)
-        if any(code not in (0, 0xFFFE, 0xFFFD) and code < 0x0418 for code in codes):
+        for index, code in enumerate(codes):
+            if code in (0, 0xFFFE, 0xFFFD) or code >= 0x0418:
+                continue
+            va = off + FILE_BASE + index * 2
+            if code == 0x0010 and va in _GEAR_NUDGE:
+                continue
             raise AssertionError("ui text uses a common or name-entry cell")
+    for index in range(7):
+        va = 0x584308 + index * 12
+        nudge = struct.unpack_from("<H", _span(writes, va))[0]
+        if nudge != (0 if index == 4 else 0x0010):
+            raise AssertionError(f"gear nudge at {va:#x}")
