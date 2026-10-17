@@ -7,6 +7,7 @@ from pathlib import Path
 from busin import text as decode_msg
 from busin.disc import BIN, ELF_LBA, FILE_BASE, children, chunk_row, entry, read_pack, read_user
 from busin.paths import DATA, BUILD
+from busin.text_image import generated_spans as render_generated, parse_generated
 from busin.tmx import PSMCT16, PSMT4, TMX_TAG, read_tmx, repack, save_png
 
 try:
@@ -74,16 +75,19 @@ def _claim(seen: dict, chunk: int, relative: int, name: str) -> None:
 
 def load_images(path: Path) -> dict:
     data = json.loads(path.read_text(encoding="utf-8"))
-    if set(data) != {"container", "whole", "part"}:
-        raise ValueError("image list needs container, whole, and part")
+    if set(data) != {"container", "whole", "part", "generated"}:
+        raise ValueError("image list needs container, whole, part, and generated")
     if data["container"] != "PACKDATA.CIG":
         raise ValueError("image container must be PACKDATA.CIG")
     whole = data["whole"]
     part = data["part"]
+    generated = data["generated"]
     if not isinstance(whole, list) or not whole:
         raise ValueError("whole images must be a non-empty list")
     if not isinstance(part, list):
         raise ValueError("part must be a list")
+    if not isinstance(generated, list):
+        raise ValueError("generated must be a list")
     seen = {}
     names = set()
     files = set()
@@ -137,6 +141,11 @@ def load_images(path: Path) -> dict:
             if not isinstance(rect, dict) or set(rect) != RECT_KEYS:
                 raise ValueError(f"{name} rect")
             claim_file(item["dir"], _rect(rect, name, item["width"], item["height"]))
+    for item in generated:
+        parsed = parse_generated(item)
+        if parsed.name in names:
+            raise ValueError(f"duplicate texture name {parsed.name}")
+        names.add(parsed.name)
     return data
 
 
@@ -308,6 +317,40 @@ def replacement_spans(read, root: Path, row) -> list[tuple[int, bytes]]:
     return spans
 
 
+def preview_generated(name: str | None = None, output: Path | None = None) -> list[Path]:
+    from busin.text_image import preview_generated as render_preview
+
+    manifest = load_images(DATA / "picture" / "images.json")
+    items = manifest["generated"]
+    if name is not None:
+        items = [item for item in items if item["name"] == name]
+        if len(items) != 1:
+            raise ValueError(f"generated picture {name!r} appears {len(items)} times")
+    output = output or BUILD / "picture"
+    with BIN.open("rb") as source:
+        read = lambda offset, size: read_pack(source, offset, size)
+        row = lambda chunk: chunk_row(source, chunk)
+        return [render_preview(item, read, row, output) for item in items]
+
+
+def generated_spans(read, root: Path, row) -> list[tuple[int, bytes]]:
+    """Picture bytes generated from text in images.json."""
+    path = root / "images.json"
+    if not path.is_file():
+        return []
+    spans = []
+    locations = []
+    for item in load_images(path)["generated"]:
+        found = render_generated(item, read, row)
+        if not found:
+            raise ValueError(f"{item['name']} generated no picture bytes")
+        locations.extend((f"{item['name']} copy {copy}", offset, len(data))
+                         for copy, (offset, data) in enumerate(found))
+        spans.extend(found)
+    ranges_overlap(locations)
+    return spans
+
+
 def container_extent(source, name: str) -> tuple[int, int]:
     pvd = read_user(source, 16, 1)
     if pvd[:7] != b"\x01CD001\x01":
@@ -428,6 +471,7 @@ def self_test() -> None:
             {"name": "note", "chunk": 0, "offset": hex(len(first) + len(second)), "size": len(raw), "word_count_header": True},
         ],
         "part": [],
+        "generated": [],
     }
     try:
         load_manifest_conflict()
@@ -513,6 +557,7 @@ def self_test() -> None:
     assert {item["dir"] for item in listed["part"]} == {"town"}
     assert [item["name"] for item in listed["part"]] == ["Tw_map02", "Tw_map01"]
     assert {rect["palette"] for item in listed["part"] for rect in item["rects"]} == {1}
+    assert [item["name"] for item in listed["generated"]] == ["bar_00"]
     assert all(PICTURE_KEYS <= set(item) for item in [*listed["whole"], *listed["part"]])
     assert scene_output(DATA / "picture" / "images.json") / "title" == BUILD / "picture" / "title"
     if BIN.exists():
@@ -564,6 +609,7 @@ def load_manifest_conflict() -> None:
                 {"name": "b", "chunk": 0, "offset": "0x0", "width": 2, "height": 2, "palette": 0},
             ],
             "part": [],
+            "generated": [],
         }), encoding="utf-8")
         load_images(path)
 
@@ -581,6 +627,7 @@ def load_stem_clash() -> None:
                 "width": 2, "height": 2,
                 "rects": [{"name": "top", "x": 0, "y": 0, "width": 2, "height": 2, "palette": 0}],
             }],
+            "generated": [],
         }), encoding="utf-8")
         load_images(path)
 

@@ -1,6 +1,7 @@
 """python -m busin <command>."""
 import argparse
 import sys
+from pathlib import Path
 
 from busin.paths import BUILD
 
@@ -13,6 +14,10 @@ def main(argv=None):
     unpack = commands.add_parser("unpack", help="unpack whole images from an images json into build/")
     unpack.add_argument("manifest")
     commands.add_parser("export-pictures", help="export data/picture originals; add .zh.png only when missing")
+    export_textures = commands.add_parser(
+        "export-textures", help="export every distinct PACKDATA texture and palette into build/textures"
+    )
+    export_textures.add_argument("--output", type=Path, help="output folder; default build/textures")
     commands.add_parser("dump-text", help="write dialogue and small-font text to build/text/")
     init = commands.add_parser("init-text", help="write data/text/<chunk>.json with text left null")
     init.add_argument("chunk", type=int)
@@ -28,6 +33,11 @@ def main(argv=None):
     copy.add_argument("targets", type=int, nargs="+")
     commands.add_parser("name-entry", help="survey name-entry text and textures into build/")
     commands.add_parser("ui-glyphs", help="render 16x16 UI glyphs with Noto Sans SC Medium")
+    picture_preview = commands.add_parser(
+        "picture-preview", help="render generated text pictures from images.json"
+    )
+    picture_preview.add_argument("name", nargs="?", help="generated picture name")
+    picture_preview.add_argument("--all", action="store_true", help="render every generated picture")
     disasm = commands.add_parser("disasm", help="disassemble an ELF address range")
     disasm.add_argument("start")
     disasm.add_argument("end")
@@ -43,12 +53,21 @@ def main(argv=None):
         return build_main()
     if args.command == "unpack":
         from busin.ui import unpack_manifest
-        from pathlib import Path
         unpack_manifest(Path(args.manifest))
         return 0
     if args.command == "export-pictures":
         from busin.ui import export_manifest
         export_manifest()
+        return 0
+    if args.command == "export-textures":
+        from busin.textures import export_textures
+        report = export_textures(args.output)
+        print(
+            f"{report.output}: {report.textures} textures, {report.pngs} PNGs, "
+            f"{report.duplicates} duplicates, {sum(report.failures.values())} failed"
+        )
+        for message, count in sorted(report.failures.items(), key=lambda item: (-item[1], item[0])):
+            print(f"  {count} {message}")
         return 0
     if args.command == "dump-text":
         from busin.text import dump_dialogue
@@ -77,6 +96,13 @@ def main(argv=None):
     if args.command == "name-entry":
         from busin.naming import survey_name_entry
         print(survey_name_entry())
+        return 0
+    if args.command == "picture-preview":
+        from busin.ui import preview_generated
+        if args.all == bool(args.name):
+            raise SystemExit("picture-preview needs one name or --all")
+        for output in preview_generated(None if args.all else args.name):
+            print(output)
         return 0
     if args.command == "ui-glyphs":
         from busin.ui_font import render_ui_glyphs

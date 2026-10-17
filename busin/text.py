@@ -234,7 +234,7 @@ def _place_line(prefix: list[int], line: list[int], fill: int) -> list[int]:
     return prefix + line[:end] + [FILL] * fill + line[end:]
 
 
-def encode_message(original: list[int], text: list[str], align: str, token_of, *, pad: bool = True) -> list[int]:
+def encode_message(original: list[int], text: list[str], align: str, token_of, *, pad: bool = True, fit: bool = True) -> list[int]:
     """Encode one message. pad keeps the disc word count with 0xFFFC; otherwise the slack is omitted."""
     if align not in ("left", "center"):
         raise ValueError(f"unknown align {align}")
@@ -264,7 +264,7 @@ def encode_message(original: list[int], text: list[str], align: str, token_of, *
     original_len = len(original)
     budget = original_len - sum(len(prefix) for prefix, _body in parts[:len(encoded)])
     need = sum(len(line) for line in encoded) + len(encoded) - 1
-    if need > budget:
+    if fit and need > budget:
         raise ValueError(f"message needs {need} words, the disc message has {budget}")
     slack = (budget - need) if pad else 0
     words = []
@@ -277,7 +277,7 @@ def encode_message(original: list[int], text: list[str], align: str, token_of, *
         words.extend(_place_line(prefix, line, fill))
     if pad and len(words) != original_len:
         raise ValueError("translation moved a control code")
-    if not pad and (FILL in words or len(words) > original_len):
+    if not pad and (FILL in words or (fit and len(words) > original_len)):
         raise ValueError("compact translation contains padding")
     return words
 
@@ -566,24 +566,24 @@ _READERS = {0x28B3F8: ("s16", 2), 0x28B428: ("u16", 2), 0x28B450: ("u32", 4), 0x
 # 293, 297, 301 and 309 fit, but packing them frees no sector, so they stay at the disc address.
 # Narration chunks 265–272 keep their counted header, so they stay padded.
 PACKED_CHUNKS = (282, 285, 291, 292, 296, 298, 299, 302, 306, 308, 310, 312, 313, 314, 315, 316)
-# Packed length, sector count, and center lines.
-PACKED_LAYOUT = {
-    282: (0x3E26, 8, 80),
-    285: (0x1014E, 33, 337),
-    291: (0x124C2, 37, 600),
-    292: (0x96F6, 19, 174),
-    296: (0x11044, 35, 401),
-    298: (0x14E36, 42, 393),
-    299: (0x5924, 12, 75),
-    302: (0xCE6E, 26, 630),
-    306: (0x9810, 20, 245),
-    308: (0x769E, 15, 234),
-    310: (0x6BAC, 14, 90),
-    312: (0x1DD4, 4, 37),
-    313: (0x1DD4, 4, 37),
-    314: (0x1DD4, 4, 37),
-    315: (0x1DD4, 4, 37),
-    316: (0x1DD4, 4, 37),
+# Source center-line counts.
+PACKED_SCREENS = {
+    282: 80,
+    285: 337,
+    291: 600,
+    292: 174,
+    296: 401,
+    298: 393,
+    299: 75,
+    302: 630,
+    306: 245,
+    308: 234,
+    310: 90,
+    312: 37,
+    313: 37,
+    314: 37,
+    315: 37,
+    316: 37,
 }
 # Once every line has text, pack the chunk and drop the disc address from the file.
 AWAITING_PACK = (283, 286, 287, 288, 289, 290, 300, 304, 305)
@@ -896,6 +896,38 @@ def counted_messages(data: bytes) -> list[tuple[int, int, list[int]]]:
     return [(at, end + 2, words) for at, end, words in segments(data, True)]
 
 
+def compact_counted(data: bytes, records: list[dict], align: str, token_of) -> bytes:
+    """Repack a counted narration block, keeping its header and zero padding.
+
+    Unlike fixed script messages, a counted message may grow past its source
+    length. The block only has to stay within its original sector allocation.
+    """
+    disc = counted_messages(data)
+    if len(records) != len(disc):
+        raise ValueError(f"{len(records)} translations for {len(disc)} messages")
+    encoded = []
+    for record, (at, _end, words) in zip(records, disc):
+        if message_prose(words, align) != record["source"].split("\n"):
+            raise ValueError(f"disc at {at:#x} does not match source")
+        if not record.get("text"):
+            encoded.append(words)
+            continue
+        check_lines(words, record["text"], align, record.get("type"))
+        encoded.append(encode_message(words, record["text"], align, token_of, pad=False, fit=False))
+    payload = bytearray()
+    for words in encoded:
+        payload.extend(b"".join(word.to_bytes(2, "big") for word in words))
+        payload.extend(b"\xff\xff")
+    count = len(payload) // 2
+    stop = 2 + len(payload)
+    if not count or count > 0xFFFF or stop > len(data):
+        raise ValueError(f"counted block needs {stop:#x} bytes, chunk has {len(data):#x}")
+    out = bytearray(len(data))
+    struct.pack_into(">H", out, 0, count)
+    out[2:stop] = payload
+    return bytes(out)
+
+
 # The narration player at 0x3B2AB4 indexes this table with gp-0x44FE, then 0x3B4AA8 parses the block.
 COUNTED_TABLE = 0x554CC0
 
@@ -985,12 +1017,12 @@ def script_self_test() -> None:
         raise AssertionError("tavern pointer 0x15A2 is missing")
     if _unclassified(data, found, refs) != 0:
         raise AssertionError("chunk 282 has a text pointer outside opcodes 4 and 11")
-    if tuple(PACKED_LAYOUT) != PACKED_CHUNKS:
+    if tuple(PACKED_SCREENS) != PACKED_CHUNKS:
         raise AssertionError("packed layout is not the packed chunk list")
     if set(AWAITING_PACK) & set(PACKED_CHUNKS) or set(UNMOVABLE_PACK) & set(PACKED_CHUNKS):
         raise AssertionError("a chunk is both packed and waiting")
-    for chunk, (end, sectors, screens) in PACKED_LAYOUT.items():
-        _assert_packed(chunk, cursors[chunk], end, sectors, screens)
+    for chunk, screens in PACKED_SCREENS.items():
+        _assert_packed(chunk, cursors[chunk], screens)
     for chunk in AWAITING_PACK:
         waiting = json.loads((DATA / "text" / f"{chunk}.json").read_text(encoding="utf-8"))
         if waiting["messages"] and all(item.get("text") for item in waiting["messages"]):
@@ -1032,13 +1064,12 @@ def script_self_test() -> None:
         for record, (at, _end, words) in zip(doc["messages"], messages):
             prose = "\n".join(message_prose(words, doc["align"]))
             translated = record["text"] is not None
-            done = chunk in (265, 267, 269)
-            if (record["type"] != "subtitle" or int(record["offset"], 0) != at or record["source"] != prose
-                    or translated != done):
+            if (record["type"] != "subtitle" or int(record["offset"], 0) != at
+                    or record["source"] != prose):
                 raise AssertionError(f"chunk {chunk} message {at:#x} does not match the disc")
             if translated:
                 check_lines(words, record["text"], doc["align"], record["type"])
-                encode_message(words, record["text"], doc["align"], lambda _char: 0x4001)
+                encode_message(words, record["text"], doc["align"], lambda _char: 0x4001, pad=False, fit=False)
     prologue = counted_messages(_load_chunk(*next((item[1], item[2]) for item in _script_chunks() if item[0] == 265)))
     if message_prose(prologue[0][2], "center")[0] != "かつて、禍々しき「武神」を倒し":
         raise AssertionError("chunk 265 prologue was not decoded")
@@ -1057,14 +1088,17 @@ def script_self_test() -> None:
 def _assert_beats(doc: dict, messages, data: bytes) -> None:
     head = [item for item in doc["messages"] if int(item["offset"], 0) < BEAT_AT]
     beats = [item for item in doc["messages"] if int(item["offset"], 0) >= BEAT_AT]
-    sentence = "仿佛听见她的歌声从天的彼方传来，那是本该和索菲亚同看的美丽蓝天"
-    if (len(messages) != 57 or len(head) != BEAT_INDEX or len(beats) != len(sentence)
-            or "".join(item["text"][0] for item in beats) != sentence):
-        raise AssertionError("chunk 272 beats were not shortened to the translated sentence")
+    sentence = "".join(item["text"][0] for item in beats)
+    if (len(messages) != BEAT_INDEX + BEAT_COUNT or len(head) != BEAT_INDEX or not beats or len(beats) > BEAT_COUNT
+            or len(sentence) != len(beats) or any(len(item["text"]) != 1 or len(item["text"][0]) != 1 for item in beats)):
+        raise AssertionError("chunk 272 beats were not shortened to one translated character each")
     for record, (at, _end, words) in zip(head, messages[:BEAT_INDEX]):
-        if (record["text"] is not None or int(record["offset"], 0) != at
+        if (int(record["offset"], 0) != at
                 or record["source"] != "\n".join(message_prose(words, "center"))):
             raise AssertionError(f"chunk 272 message {at:#x} does not match the disc")
+        if record["text"] is not None:
+            check_lines(words, record["text"], "center", record["type"])
+            encode_message(words, record["text"], "center", lambda _char: 0x4001, pad=False, fit=False)
     for index, (record, (at, _end, words)) in enumerate(zip(beats, messages[BEAT_INDEX:])):
         if (int(record["offset"], 0) != at or at != BEAT_AT + index * 4 or len(words) != 1
                 or record["text"] != [sentence[index]]
@@ -1085,14 +1119,15 @@ def _assert_beats(doc: dict, messages, data: bytes) -> None:
         raise AssertionError("chunk 281 lost the last kept beat")
 
 
-def _assert_packed(chunk: int, cursor: int, end: int, sectors: int, screens: int) -> None:
+def _assert_packed(chunk: int, cursor: int, screens: int) -> None:
     start, count = next((item[1], item[2]) for item in _script_chunks() if item[0] == chunk)
     doc = json.loads((DATA / "text" / f"{chunk}.json").read_text(encoding="utf-8"))
     packed, _offsets = compact_chunk(_load_chunk(start, count), cursor, doc["messages"], doc["align"], lambda _char: 0x4001)
     body = packed[cursor:]
     # Word-aligned. The byte pair can straddle a terminator and the next glyph.
     padded = len(body) % 2 or any(int.from_bytes(body[i:i + 2], "big") == FILL for i in range(0, len(body), 2))
-    if padded or len(packed) != end or (len(packed) + 2047) // 2048 != sectors or sectors >= count:
+    sectors = (len(packed) + 2047) // 2048
+    if padded or sectors >= count:
         raise AssertionError(f"chunk {chunk} packs to {len(packed):#x}")
     if any("offset" in item for item in doc["messages"]):
         raise AssertionError(f"chunk {chunk} stores a packed position")

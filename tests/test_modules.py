@@ -32,6 +32,68 @@ def test_text():
     self_test()
 
 
+def test_counted_message_can_grow():
+    from busin.text import compact_counted, counted_messages
+
+    source = (7).to_bytes(2, "big") + b"".join(word.to_bytes(2, "big") for word in (
+        0x003F, 0x0040, 0xFFFF, 0x0041, 0x0042, 0x0043, 0xFFFF,
+    )) + bytes(32)
+    records = [
+        {"source": "あい", "type": "subtitle", "text": ["甲乙丙"]},
+        {"source": "うえお", "type": "subtitle", "text": ["丁戊己庚"]},
+    ]
+    tokens = {"甲": 0x003F, "乙": 0x0040, "丙": 0x0041, "丁": 0x0042,
+              "戊": 0x0043, "己": 0x0044, "庚": 0x0045}
+    packed = compact_counted(source, records, "center", tokens.__getitem__)
+    messages = counted_messages(packed)
+    assert [len(words) for _at, _end, words in messages] == [3, 4]
+    assert int.from_bytes(packed[:2], "big") == 9
+
+
+def test_texture_export():
+    import struct
+    import tempfile
+
+    from PIL import Image
+
+    from busin.textures import export_pack_bytes
+    from busin.tmx import PSMCT32, PSMT8
+
+    def tmx(comment, palette_count, palette_format, width, height, pixel_format, payload):
+        body = struct.pack(
+            "<BBHHBBHBBII28s", palette_count, palette_format, width, height, pixel_format,
+            0, 0, 0, 0, 0, 0, comment,
+        )
+        data = body + payload
+        return struct.pack("<HHI4s", 2, 0, 16 + len(data), b"TMX0") + bytes(4) + data
+
+    palette0 = bytes((10, 20, 30, 40)) * 256
+    palette1 = bytes((50, 60, 70, 80)) * 256
+    multi = tmx(b"multi.tga", 2, PSMCT32, 2, 2, PSMT8, palette0 + palette1 + bytes((0, 1, 2, 3)))
+    raw = tmx(b"raw.tga", 0, PSMCT32, 1, 2, 0x01, bytes((1, 2, 3, 4, 5, 6)))
+    pack = bytes(16) + multi + bytes(24) + multi + bytes(32) + raw
+
+    with tempfile.TemporaryDirectory() as tmp:
+        output = Path(tmp) / "textures"
+        output.mkdir()
+        kept = output / "keep.png"
+        kept.write_bytes(b"keep")
+        report = export_pack_bytes(pack, output)
+        assert kept.read_bytes() == b"keep"
+        assert report.textures == 2
+        assert report.pngs == 3
+        assert report.duplicates == 1
+        assert report.failures == {}
+        names = {path.name for path in output.glob("*.png")}
+        assert names == {"keep.png", "multi.pal00.png", "multi.pal01.png", "raw.png"}
+        with Image.open(output / "multi.pal00.png") as bitmap:
+            assert bitmap.getpixel((0, 0)) == (10, 20, 30, 40)
+        with Image.open(output / "multi.pal01.png") as bitmap:
+            assert bitmap.getpixel((0, 0)) == (50, 60, 70, 80)
+        with Image.open(output / "raw.png") as bitmap:
+            assert bitmap.getpixel((0, 0)) == (1, 2, 3, 255)
+
+
 def test_text_edit():
     from busin.text_edit import self_test
     self_test()
@@ -99,6 +161,17 @@ def test_ui_codes():
 @pytest.mark.skipif(not BIN.exists(), reason="没有原盘")
 def test_ui_strings():
     from busin.ui_text import disc_self_test
+    disc_self_test()
+
+
+def test_bar():
+    from busin.bar import self_test
+    self_test()
+
+
+@pytest.mark.skipif(not BIN.exists(), reason="没有原盘")
+def test_bar_disc():
+    from busin.bar import disc_self_test
     disc_self_test()
 
 

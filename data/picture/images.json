@@ -1,16 +1,96 @@
 {
   "container": "PACKDATA.CIG",
   "whole": [
-    {"name": "title_1", "dir": "title", "chunk": 4, "offset": "0x60880", "width": 512, "height": 256, "palette": 0},
-    {"name": "title_2", "dir": "title", "chunk": 4, "offset": "0x80cc0", "width": 512, "height": 512, "palette": 0},
-    {"name": "title_1a", "dir": "title", "chunk": 4, "offset": "0xc1100", "width": 512, "height": 256, "palette": 0},
-    {"name": "sub_0", "dir": "title", "chunk": 4, "offset": "0xe1540", "width": 512, "height": 64, "palette": 0},
-    {"name": "sub_1", "dir": "title", "chunk": 4, "offset": "0xe9980", "width": 512, "height": 64, "palette": 0},
-    {"name": "menu_0", "dir": "title", "chunk": 4, "offset": "0xf1dc0", "width": 256, "height": 128, "palette": 0},
-    {"name": "menu_1", "dir": "title", "chunk": 4, "offset": "0xfa200", "width": 256, "height": 128, "palette": 0},
-    {"name": "menu_2", "dir": "title", "chunk": 4, "offset": "0x102640", "width": 256, "height": 128, "palette": 0},
-    {"name": "start_0", "dir": "title", "chunk": 4, "offset": "0x10aa80", "width": 512, "height": 64, "palette": 0},
-    {"name": "start_1", "dir": "title", "chunk": 4, "offset": "0x112ec0", "width": 512, "height": 64, "palette": 0}
+    {
+      "name": "title_1",
+      "dir": "title",
+      "chunk": 4,
+      "offset": "0x60880",
+      "width": 512,
+      "height": 256,
+      "palette": 0
+    },
+    {
+      "name": "title_2",
+      "dir": "title",
+      "chunk": 4,
+      "offset": "0x80cc0",
+      "width": 512,
+      "height": 512,
+      "palette": 0
+    },
+    {
+      "name": "title_1a",
+      "dir": "title",
+      "chunk": 4,
+      "offset": "0xc1100",
+      "width": 512,
+      "height": 256,
+      "palette": 0
+    },
+    {
+      "name": "sub_0",
+      "dir": "title",
+      "chunk": 4,
+      "offset": "0xe1540",
+      "width": 512,
+      "height": 64,
+      "palette": 0
+    },
+    {
+      "name": "sub_1",
+      "dir": "title",
+      "chunk": 4,
+      "offset": "0xe9980",
+      "width": 512,
+      "height": 64,
+      "palette": 0
+    },
+    {
+      "name": "menu_0",
+      "dir": "title",
+      "chunk": 4,
+      "offset": "0xf1dc0",
+      "width": 256,
+      "height": 128,
+      "palette": 0
+    },
+    {
+      "name": "menu_1",
+      "dir": "title",
+      "chunk": 4,
+      "offset": "0xfa200",
+      "width": 256,
+      "height": 128,
+      "palette": 0
+    },
+    {
+      "name": "menu_2",
+      "dir": "title",
+      "chunk": 4,
+      "offset": "0x102640",
+      "width": 256,
+      "height": 128,
+      "palette": 0
+    },
+    {
+      "name": "start_0",
+      "dir": "title",
+      "chunk": 4,
+      "offset": "0x10aa80",
+      "width": 512,
+      "height": 64,
+      "palette": 0
+    },
+    {
+      "name": "start_1",
+      "dir": "title",
+      "chunk": 4,
+      "offset": "0x112ec0",
+      "width": 512,
+      "height": 64,
+      "palette": 0
+    }
   ],
   "part": [
     {
@@ -22,7 +102,14 @@
       "width": 256,
       "height": 256,
       "rects": [
-        {"name": "maze_bottom", "x": 0, "y": 232, "width": 104, "height": 16, "palette": 1}
+        {
+          "name": "maze_bottom",
+          "x": 0,
+          "y": 232,
+          "width": 104,
+          "height": 16,
+          "palette": 1
+        }
       ]
     },
     {
@@ -34,12 +121,131 @@
       "width": 256,
       "height": 256,
       "rects": [
-        {"name": "bar_bottom", "x": 0, "y": 192, "width": 40, "height": 16, "palette": 1},
-        {"name": "guild_bottom", "x": 72, "y": 208, "width": 80, "height": 16, "palette": 1},
-        {"name": "save_bottom", "x": 192, "y": 192, "width": 48, "height": 16, "palette": 1},
-        {"name": "temple_bottom", "x": 120, "y": 192, "width": 72, "height": 16, "palette": 1},
-        {"name": "inn_bottom", "x": 0, "y": 208, "width": 72, "height": 16, "palette": 1},
-        {"name": "shop_bottom", "x": 40, "y": 192, "width": 80, "height": 16, "palette": 1}
+        {
+          "name": "bar_bottom",
+          "x": 0,
+          "y": 192,
+          "width": 40,
+          "height": 16,
+          "palette": 1
+        },
+        {
+          "name": "guild_bottom",
+          "x": 72,
+          "y": 208,
+          "width": 80,
+          "height": 16,
+          "palette": 1
+        },
+        {
+          "name": "save_bottom",
+          "x": 192,
+          "y": 192,
+          "width": 48,
+          "height": 16,
+          "palette": 1
+        },
+        {
+          "name": "temple_bottom",
+          "x": 120,
+          "y": 192,
+          "width": 72,
+          "height": 16,
+          "palette": 1
+        },
+        {
+          "name": "inn_bottom",
+          "x": 0,
+          "y": 208,
+          "width": 72,
+          "height": 16,
+          "palette": 1
+        },
+        {
+          "name": "shop_bottom",
+          "x": 40,
+          "y": 192,
+          "width": 80,
+          "height": 16,
+          "palette": 1
+        }
+      ]
+    }
+  ],
+  "generated": [
+    {
+      "name": "bar_00",
+      "renderer": "bar_buttons",
+      "font": {
+        "file": "NotoSansSC-VF.ttf",
+        "variation": "Medium",
+        "size": 20
+      },
+      "labels": [
+        {
+          "source": "仲間に入る",
+          "text": "加入同伴"
+        },
+        {
+          "source": "仲間を外す",
+          "text": "移出同伴"
+        },
+        {
+          "source": "ステータス",
+          "text": "状态"
+        },
+        {
+          "source": "依頼リスト",
+          "text": "委托列表"
+        },
+        {
+          "source": "パーティー",
+          "text": "队伍"
+        },
+        {
+          "source": "外に出る",
+          "text": "离开"
+        },
+        {
+          "source": "魔法",
+          "text": "魔法"
+        },
+        {
+          "source": "アイテム",
+          "text": "道具"
+        },
+        {
+          "source": "装備",
+          "text": "装备"
+        },
+        {
+          "source": "AAの確認",
+          "text": "AA确认"
+        },
+        {
+          "source": "隊列の変更",
+          "text": "更改阵型"
+        },
+        {
+          "source": "ドロップ練習",
+          "text": "练习掉落"
+        },
+        {
+          "source": "戻る",
+          "text": "返回"
+        },
+        {
+          "source": "依頼の確認",
+          "text": "确认委托"
+        },
+        {
+          "source": "仲間からはなす",
+          "text": "同伴交谈"
+        },
+        {
+          "source": "",
+          "text": ""
+        }
       ]
     }
   ]

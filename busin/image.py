@@ -25,11 +25,11 @@ from busin.patch.font_paging import (
 from busin.paths import BUILD, DATA, ROOT
 from busin.text import (
     BEAT_AT, BEAT_CHUNK, BEAT_INDEX, BEAT_SCRIPT, PAD, PACKED_CHUNKS, PAGE0,
-    check_lines, compact_chunk, counted_messages, encode_message,
+    check_lines, compact_chunk, compact_counted, counted_chunks, counted_messages, encode_message,
     message_prose, repack_beats, split_tags, text_cursors, trim_beat_script,
 )
 from busin.tmx import read_tmx, save_png
-from busin.ui import replacement_spans
+from busin.ui import generated_spans, replacement_spans
 
 OUT_DIR = BUILD / "image"
 PAGE_PATH = BUILD / "font" / "message_glyphs.page01.tmx"
@@ -133,16 +133,24 @@ def chunk_table(handle):
 def load_messages(handle, texts, cells):
     """Pack offset -> (source token, translated token) for every word that changes.
 
-    Packed chunks are rewritten without 0xFFFC and returned separately.
+    Packed chunks and counted narration blocks are rewritten as whole spans and
+    returned separately.
     """
-    changed, starts, errors, packs = {}, set(), [], []
+    changed, starts, errors, packs, blocks = {}, set(), [], [], []
     cursors = text_cursors()
     rows = chunk_table(handle)
+    counted = set(counted_chunks())
     for name, doc in texts:
         chunk = doc.get("chunk")
         if chunk in PACKED_CHUNKS:
             try:
                 packs.append(pack_script(handle, doc, cells, cursors[chunk], rows))
+            except ValueError as error:
+                errors.append(f"{name}: {error}")
+            continue
+        if chunk in counted and chunk != BEAT_CHUNK:
+            try:
+                blocks.append(pack_counted(handle, doc, cells, rows))
             except ValueError as error:
                 errors.append(f"{name}: {error}")
             continue
@@ -171,7 +179,7 @@ def load_messages(handle, texts, cells):
                     changed[at + 2 * index] = (was, word)
     if errors:
         raise ValueError("\n".join(errors))
-    return changed, packs
+    return changed, packs, blocks
 
 
 def ending_spans(handle, texts, cells):
@@ -224,6 +232,18 @@ def ending_spans(handle, texts, cells):
         (start * 2048, sector),
         (script_start * 2048, trim_beat_script(script, len(tokens))),
     ]
+
+
+def pack_counted(handle, doc, cells, rows):
+    """Rewrite one counted narration block inside its existing sector allocation."""
+    chunk = doc["chunk"]
+    start, count = next((item[1], item[2]) for item in rows if item[0] == chunk)
+    base = start * 2048
+    if int(doc.get("base", "0"), 0) != base:
+        raise ValueError(f"base is not sector {start}")
+    data = read_user(handle, PACK_LBA + start, count)
+    body = compact_counted(data, doc["messages"], doc["align"], lambda char: PAD + cells[char])
+    return {"chunk": chunk, "spans": [(base, body)]}
 
 
 def pack_script(handle, doc, cells, cursor, rows):
@@ -616,10 +636,14 @@ def main():
     ending = []
     with BIN.open("rb") as src:
         check_source(src, labels)
-        messages, packs = load_messages(src, texts, ids)
+        messages, packs, blocks = load_messages(src, texts, ids)
         ending = ending_spans(src, texts, ids)
         from busin.plaque import spans as plaque_spans
         plaque = plaque_spans(src)
+        generated = generated_spans(
+            lambda off, size: read_pack(src, off, size), DATA / "picture",
+            lambda chunk: chunk_row(src, chunk),
+        )
         chunk = read_user(src, PACK_LBA + CHUNK_SECTOR, CHUNK_BYTES // 2048)
     page = make_page(chunk, plan, page_cells)
     rendered = {}
@@ -656,7 +680,8 @@ def main():
     covered = sorted((off, off + len(data)) for off, data in merged.items())
     if any(end > nxt for (_, end), (nxt, _) in zip(covered, covered[1:])):
         raise ValueError("ELF patch writes overlap")
-    spans = [*spans, *(span for item in packs for span in item["spans"]), *ending, *plaque]
+    spans = [*spans, *(span for item in packs for span in item["spans"]),
+             *(span for item in blocks for span in item["spans"]), *ending, *plaque, *generated]
     message_bytes = {index for off in messages for index in (off, off + 1)}
     pack_ranges = sorted((off, off + len(data)) for off, data in spans)
     if any(end > nxt for (_, end), (nxt, _) in zip(pack_ranges, pack_ranges[1:])):
