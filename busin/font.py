@@ -1,10 +1,13 @@
 """Validate the paged 24-pixel message font plan and draw page glyphs."""
+import hashlib
 import json
 import unicodedata
+from dataclasses import dataclass
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
+from busin.paths import DATA
 from busin.tmx import PSMCT32, PSMT4, read_tmx
 
 GRID = 42
@@ -14,15 +17,55 @@ EXTENSION_BASE = 0x4000
 EXTENSION_LIMIT = 0x7FFF
 PIXEL_OFFSET = 0x240
 PIXEL_SIZE = 524288
-FONT_DIR = Path("C:/Windows/Fonts")
+FONT_DIR = DATA / "font"
+
+
+@dataclass(frozen=True)
+class FontInput:
+    role: str
+    filename: str
+    family: str
+    style: str
+    version: str
+    sha256: str
+    license: str
+
+
+FONT_INPUTS = (
+    FontInput(
+        "message", "LXGWWenKai-Medium.ttf", "LXGW WenKai", "Medium", "1.522",
+        "d4bdeb38a39151d74d084cba5090f8cb7d20bf83eedb78c35939ae70b9f4e3f6",
+        "LICENSE-LXGWWenKai-Medium.txt",
+    ),
+    FontInput(
+        "ui", "NotoSansSC-VF.ttf", "Noto Sans SC", "Medium", "2.04",
+        "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "LICENSE-NotoSansSC-VF.txt",
+    ),
+)
+
+
+def font_input(name: str) -> FontInput:
+    found = next((item for item in FONT_INPUTS if item.filename == name), None)
+    if found is None:
+        raise ValueError(f"unknown font {name}")
+    return found
 
 
 def font_path(name: str) -> Path:
-    folders = (FONT_DIR, Path.home() / "AppData/Local/Microsoft/Windows/Fonts")
-    found = next((folder / name for folder in folders if (folder / name).is_file()), None)
-    if found is None:
-        raise FileNotFoundError(name)
-    return found
+    item = font_input(name)
+    path = FONT_DIR / item.filename
+    if not path.is_file():
+        raise FileNotFoundError(path)
+    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    if digest != item.sha256:
+        raise ValueError(f"{item.role} font SHA-256 does not match {item.version}: {item.filename}")
+    license_path = FONT_DIR / item.license
+    if not license_path.is_file():
+        raise FileNotFoundError(license_path)
+    return path
+
+
 SOLID = 128
 _PAD = 8
 
@@ -327,13 +370,9 @@ def self_test() -> None:
         pass
     else:
         raise AssertionError("fringe past one pixel was accepted")
-    try:
-        wenkai = font_path("LXGWWenKai-Medium.ttf")
-    except FileNotFoundError:
-        wenkai = None
-    if wenkai is not None:
-        font = ImageFont.truetype(str(wenkai), CELL)
-        if font.getname() != ("LXGW WenKai", "Medium"):
-            raise AssertionError(f"message font is {font.getname()}")
-        mask, shift = message_cell(font, "娘")
-        assert shift == 0 and mask.getbbox()[0] >= 0 and mask.getbbox()[2] <= CELL
+    wenkai = font_path("LXGWWenKai-Medium.ttf")
+    font = ImageFont.truetype(str(wenkai), CELL)
+    if font.getname() != ("LXGW WenKai", "Medium"):
+        raise AssertionError(f"message font is {font.getname()}")
+    mask, shift = message_cell(font, "娘")
+    assert shift == 0 and mask.getbbox()[0] >= 0 and mask.getbbox()[2] <= CELL

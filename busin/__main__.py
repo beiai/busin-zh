@@ -27,7 +27,7 @@ def main(argv=None):
     copy.add_argument("source", type=int)
     copy.add_argument("targets", type=int, nargs="+")
     commands.add_parser("name-entry", help="survey name-entry text and textures into build/")
-    commands.add_parser("ui-glyphs", help="render 16x16 UI glyphs with Source Han Sans Medium")
+    commands.add_parser("ui-glyphs", help="render 16x16 UI glyphs with Noto Sans SC Medium")
     disasm = commands.add_parser("disasm", help="disassemble an ELF address range")
     disasm.add_argument("start")
     disasm.add_argument("end")

@@ -114,9 +114,7 @@ def test_plaque_disc():
 
 
 def test_ui_font():
-    from busin.ui_font import FONTS, self_test
-    if any(not path.exists() for _role, path, _version, _sha256 in FONTS):
-        pytest.skip("UI font inputs are missing")
+    from busin.ui_font import self_test
     self_test()
 
 

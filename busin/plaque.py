@@ -172,22 +172,15 @@ def spans(handle) -> list[tuple[int, bytes]]:
 
 
 def _wenkai_path():
-    from busin.font import FONT_DIR
+    from busin.font import font_path
 
-    name = "LXGWWenKai-Medium.ttf"
-    for folder in (FONT_DIR, Path.home() / "AppData/Local/Microsoft/Windows/Fonts"):
-        path = folder / name
-        if path.is_file():
-            return path
-    return None
+    return font_path("LXGWWenKai-Medium.ttf")
 
 
 def _caption_font(size=GLYPH):
     from PIL import ImageFont
 
     path = _wenkai_path()
-    if path is None:
-        raise FileNotFoundError("LXGWWenKai-Medium.ttf")
     font = ImageFont.truetype(str(path), size)
     if font.getname() != ("LXGW WenKai", "Medium"):
         raise ValueError(f"caption font is {font.getname()}")

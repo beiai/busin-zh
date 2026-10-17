@@ -1,11 +1,10 @@
-"""Render Source Han Sans Medium into 16×16 UI cells."""
+"""Render Noto Sans SC Medium into 16×16 UI cells."""
 import hashlib
 import json
-from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
-from busin.font import seat_baseline
+from busin.font import FONT_INPUTS, FONT_DIR, font_path, seat_baseline
 from busin.paths import BUILD
 
 CELL = 16
@@ -14,15 +13,17 @@ BASELINE = CELL - 1
 SOLID = 128
 SAMPLES = ("姓名？", "姓 名", "种 族", "阵 营", "职 业", "等级", "性 格",
            "平假", "片假", "英数", "符号", "空格", "完成", "切换页面", "确定", "返回")
+FONT = next(item for item in FONT_INPUTS if item.role == "ui")
 FONTS = (
-    ("primary", Path("C:/Windows/Fonts/NotoSansSC-VF.ttf"), "Medium",
-     "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a"),
+    ("primary", FONT_DIR / FONT.filename, FONT.version, FONT.sha256),
 )
+VARIATION = "Medium"
 
 
 def _checked_fonts():
     fonts = []
     for role, path, version, expected in FONTS:
+        font_path(path.name)
         digest = hashlib.sha256(path.read_bytes()).hexdigest()
         if digest != expected:
             raise ValueError(f"{role} font SHA-256 does not match {version}: {path.name}")
@@ -32,9 +33,9 @@ def _checked_fonts():
 
 def _primary():
     font = ImageFont.truetype(str(FONTS[0][1]), EM)
-    font.set_variation_by_name("Medium")
-    if font.getname() != ("Noto Sans SC", "Medium"):
-        raise ValueError("primary font is not Source Han Sans Medium")
+    font.set_variation_by_name(VARIATION)
+    if font.getname() != (FONT.family, FONT.style):
+        raise ValueError(f"primary font is {font.getname()}")
     ascent, descent = font.getmetrics()
     if (ascent, descent) != (EM, 4):
         raise ValueError(f"primary em is {ascent}+{descent}, expected 16+4")
@@ -66,7 +67,7 @@ def render_ui_glyphs():
     out.mkdir(parents=True, exist_ok=True)
     columns = 16
     atlas = Image.new("RGBA", (columns * CELL, (len(wanted) + columns - 1) // columns * CELL))
-    report = {"fonts": fonts, "em_size": EM, "cell_size": CELL,
+    report = {"fonts": fonts, "variation": VARIATION, "em_size": EM, "cell_size": CELL,
               "font_ascent": EM, "font_descent": 4, "baseline": BASELINE,
               "samples": SAMPLES, "glyphs": []}
     packed = bytearray()
