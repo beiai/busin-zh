@@ -1,18 +1,20 @@
-"""Render Noto Sans SC Medium into 16×16 UI cells."""
+"""Render Noto Sans SC Medium into 16×16 UI cells and paint the Chinese pages."""
 import hashlib
 import json
+import struct
 
 from PIL import Image, ImageDraw, ImageFont
 
+from busin.disc import BIN, chunk_row, read_pack
 from busin.font import FONT_INPUTS, FONT_DIR, font_path, seat_baseline
+from busin.patch.ui_pages import FIRST_CODE, LAST_CODE, PAGE_BYTES, PAGE_COUNT
 from busin.paths import BUILD
 
 CELL = 16
 EM = 16
 BASELINE = CELL - 1
 SOLID = 128
-SAMPLES = ("姓名？", "姓 名", "种 族", "阵 营", "职 业", "等级", "性 格",
-           "平假", "片假", "英数", "符号", "空格", "完成", "切换页面", "确定", "返回")
+SAMPLES = ("菜单", "存档", "设置", "攻击", "防御", "道具", "状态", "装备")
 FONT = next(item for item in FONT_INPUTS if item.role == "ui")
 FONTS = (
     ("primary", FONT_DIR / FONT.filename, FONT.version, FONT.sha256),
@@ -116,13 +118,13 @@ def _solid_rows(mask):
 def self_test():
     wanted = set("".join(SAMPLES)) - {" "}
     glyphs, raised, _fonts = load_ui_glyphs(wanted | set("()pqyQ/{}"))
-    assert raised["姓"] == 0 and raised["名"] == 0
+    assert raised["菜"] == 0 and raised["单"] == 0
     assert raised["p"] == raised["q"] == raised["y"] == 3
     assert raised["("] == raised[")"] == raised["Q"] == raised["{"] == raised["}"] == 2
     assert raised["/"] == 1
     assert _solid_rows(glyphs["p"])[0] == 3 and _solid_rows(glyphs["p"])[-1] == CELL - 1
-    assert any(0 < value < 255 for value in glyphs["名"].get_flattened_data())
-    name = glyphs["姓"].getbbox()
+    assert any(0 < value < 255 for value in glyphs["单"].get_flattened_data())
+    name = glyphs["菜"].getbbox()
     assert name[0] == 0 and name[2] == CELL
     try:
         load_ui_glyphs({chr(0x10FFFF)})
@@ -130,3 +132,80 @@ def self_test():
         assert "font is missing" in str(error)
     else:
         raise AssertionError("missing glyph was silently accepted")
+
+
+INK = 15
+UI_TEMPLATE = 0x18540
+
+
+def set_nibble(blob, pix, width, x, y, index):
+    at = pix + (y * width + x) // 2
+    if x & 1:
+        blob[at] = (blob[at] & 0x0F) | ((index & 0xF) << 4)
+    else:
+        blob[at] = (blob[at] & 0xF0) | (index & 0xF)
+
+
+def coverage_index(level):
+    """Map 0–255 coverage onto the template's 16-step ramp."""
+    return (level * 15 + 127) // 255
+
+
+def paint_mask(blob, pix, width, x, y, mask, ink, ramp=False):
+    for row in range(16):
+        for col in range(16):
+            level = mask.getpixel((col, row))
+            if mask.mode == "1":
+                level = 255 if level else 0
+            index = coverage_index(level) if ramp else (ink if level >= 128 else 0)
+            set_nibble(blob, pix, width, x + col, y + row, index)
+
+
+def texture_blob(handle, relative):
+    pack = chunk_row(handle, 0)[0] * 2048 + relative
+    size = struct.unpack_from("<I", read_pack(handle, pack, 8), 4)[0]
+    blob = bytearray(read_pack(handle, pack, size))
+    if blob[8:12] != b"TMX0" or blob[0x16] != 0x14:
+        raise ValueError(f"texture at {relative:#x} is not PSMT4")
+    width, height = struct.unpack_from("<HH", blob, 0x12)
+    pix = 0x40 + blob[0x10] * 32
+    if (width, height) != (256, 256) or pix + width * height // 2 != len(blob):
+        raise ValueError(f"texture at {relative:#x} is not 256x256")
+    return pack, blob, pix
+
+
+def _cell_bytes(blob, pix, cell):
+    x = (cell % 16) * 16
+    y = (cell // 16) * 16
+    stride = 256 // 2
+    return b"".join(
+        blob[pix + (y + line) * stride + x // 2:pix + (y + line) * stride + x // 2 + 8]
+        for line in range(16))
+
+
+def ui_font_pages(extra=None):
+    """Paint the Chinese UI glyphs into six pages after the four source pages."""
+    extra = extra or {}
+    glyphs, _origins, _fonts = load_ui_glyphs(extra)
+    with BIN.open("rb") as handle:
+        _pack, blob, pix = texture_blob(handle, UI_TEMPLATE)
+    if len(blob) != PAGE_BYTES or blob[0x10] != 12:
+        raise ValueError("the UI page template has changed")
+    blank = bytearray(blob)
+    blank[pix:] = bytes(len(blank) - pix)
+    pages = [bytearray(blank) for _index in range(PAGE_COUNT)]
+
+    for char, code in extra.items():
+        if not FIRST_CODE <= code <= LAST_CODE:
+            raise ValueError(f"{char} is outside {FIRST_CODE:#x}-{LAST_CODE:#x}")
+        page = (code >> 8) - 4
+        cell = code & 0xFF
+        paint_mask(pages[page], pix, 256, (cell % 16) * 16, (cell // 16) * 16,
+                   glyphs[char], INK, ramp=True)
+        if _cell_bytes(pages[page], pix, cell) == bytes(128):
+            raise ValueError(f"{char} painted blank")
+
+    packed = b"".join(pages)
+    if len(packed) != PAGE_BYTES * PAGE_COUNT:
+        raise ValueError("ui font page bytes")
+    return packed

@@ -37,7 +37,7 @@
   {
     "id": "07 43DD80",
     "source": "名前は?",
-    "text": "姓名？"
+    "text": null
   },
   {
     "id": "08 43DD90",
@@ -212,32 +212,32 @@
   {
     "id": "2A 43DF30",
     "source": "名 前",
-    "text": "姓 名"
+    "text": null
   },
   {
     "id": "2B 43DF38",
     "source": "種 族",
-    "text": "种 族"
+    "text": null
   },
   {
     "id": "2C 43DF40",
     "source": "属 性",
-    "text": "阵 营"
+    "text": null
   },
   {
     "id": "2D 43DF48",
     "source": "職 業",
-    "text": "职 业"
+    "text": null
   },
   {
     "id": "2E 43DF50",
     "source": "レベル",
-    "text": "等 级"
+    "text": null
   },
   {
     "id": "2F 43DF58",
     "source": "性 格",
-    "text": "性 格"
+    "text": null
   },
   {
     "id": "30 43DF60",

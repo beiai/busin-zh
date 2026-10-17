@@ -15,6 +15,7 @@ from busin.patch.font_paging import BLOCK_FONT_LBA, BLOCK_FONT_SECTORS
 
 PAGE_BYTES = 0x81C0
 PAGE_COUNT = 6
+FIRST_CODE = 0x0401
 LAST_CODE = 0x400 + PAGE_COUNT * 0x100 - 1
 PAGE_LIMIT = 4 + PAGE_COUNT
 UI_BYTES = PAGE_BYTES * PAGE_COUNT
@@ -49,7 +50,6 @@ OLD = 0x43DC30
 GP_BASE = 0x5A9AF0
 CHUNK0 = -0x69E4
 CHUNK1 = -0x69B8
-STATE = -0x69E8
 READ_STATE = -0x4B94
 GP_DEST = -0x69DC
 assert (LOADER, PAGES, BUFFER, GP_BASE + CHUNK0, GP_BASE + GP_DEST) == (
@@ -166,11 +166,11 @@ def _loader():
     a.addiu(T2, ZR, PAGE_COUNT - 1)
     a.bne(S0, T2, "fill")
     a.addiu(S0, S0, 1)
-    # Sector tail holds the button drawer, so the buffer stays allocated.
+    # Keep the page buffer allocated while its parsed handles are in use.
     a.nop()
     a.nop()
-    a.addiu(V0, ZR, 5)
-    a.sb(V0, STATE, GP)
+    a.nop()
+    a.nop()
     a.label("leave")
     # 0x108810 reloads s0 only. ra still points at the last jal unless we reload it.
     a.ld(RA, 0x20, SP)

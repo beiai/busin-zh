@@ -31,7 +31,6 @@ def main(argv=None):
     copy = commands.add_parser("copy-text", help="copy translations onto chunks with the same source")
     copy.add_argument("source", type=int)
     copy.add_argument("targets", type=int, nargs="+")
-    commands.add_parser("name-entry", help="survey name-entry text and textures into build/")
     commands.add_parser("ui-glyphs", help="render 16x16 UI glyphs with Noto Sans SC Medium")
     picture_preview = commands.add_parser(
         "picture-preview", help="render generated text pictures from images.json"
@@ -92,10 +91,6 @@ def main(argv=None):
                 copy_text(args.source, args.targets)
         except ValueError as error:
             raise SystemExit(str(error)) from None
-        return 0
-    if args.command == "name-entry":
-        from busin.naming import survey_name_entry
-        print(survey_name_entry())
         return 0
     if args.command == "picture-preview":
         from busin.ui import preview_generated

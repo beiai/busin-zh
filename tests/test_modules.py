@@ -115,17 +115,6 @@ def test_ui_manifest():
     self_test()
 
 
-def test_name_labels():
-    from busin.naming import self_test
-    self_test()
-
-
-@pytest.mark.skipif(not BIN.exists(), reason="没有原盘")
-def test_name_label_codes():
-    from busin.naming import disc_self_test
-    disc_self_test()
-
-
 def test_terms():
     terms = json.loads((DATA / "terms.json").read_text(encoding="utf-8"))
     assert len(terms) == len(set(terms))
@@ -146,11 +135,6 @@ def test_terms():
     assert terms["ノーム"]["zh"] == "侏儒" and terms["侍"]["zh"] == "武士"
     assert terms["魔術師"]["zh"] == "魔法师"
     assert terms["ページ切り替え"]["ui"] == "切换"
-    labels = json.loads((DATA / "picture" / "name" / "labels.json").read_text(encoding="utf-8"))
-    texts = list(labels["strings"].values()) + list(labels["operations"].values())
-    texts += [labels["confirm"], labels["back"], labels["page_wide"], labels["page_narrow"]]
-    missing = [text for text in texts if text.replace(" ", "") not in values]
-    assert missing == []
 
 
 def test_ui_codes():

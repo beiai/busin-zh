@@ -5,7 +5,6 @@ import struct
 
 from busin.disc import FILE_BASE
 from busin.disasm import load_elf
-from busin.naming import OPERATIONS, STRING_TABLE
 from busin.paths import BUILD, DATA
 
 UI = {
@@ -24,6 +23,8 @@ PAPER_ROWS = 6
 PAPER_WIDTH = 19
 # Item-command rows whose first cell is the +16 nudge. The SP row is the one left out.
 _GEAR_NUDGE = {0x584308 + index * 12 for index in range(7) if index != 4}
+
+STRING_TABLE = 0x43E9C8
 
 
 def ui_char(code: int) -> str | None:
@@ -272,8 +273,8 @@ def collect(elf):
         if not 0x430000 <= pointer < 0x450000:
             break
         menu.append((f"{index:02X} {pointer:06X}", _read_ffff(elf, pointer)))
-    if tuple(menu[0x07][1][:4]) != (0x223, 0x13E, 0x89, 0x1F) or len(menu) != 0xA9:
-        raise AssertionError(f"menu {len(menu)} {menu[0x07]}")
+    if len(menu) != 0xA9:
+        raise AssertionError(f"menu {len(menu)}")
 
     paper = []
     for base in PAPER_PAGES:
@@ -318,7 +319,6 @@ def collect(elf):
     return (
         ("menu", "菜单", menu),
         ("controller", "手柄", _pointers(elf, 0x43AED8, 0x43AE40, 0x43AEE0)),
-        ("operations", "输入法", [((f"op {value}"), list(codes)) for value, _reading, codes, _sites in OPERATIONS]),
         ("save", "存档提示", [
             (f"{index:02X} {ptr:06X}", _grid(elf, ptr, 28, 4))
             for index in range(32)
@@ -472,10 +472,7 @@ def manuscript_lines(name, rows):
     return lines
 
 
-# Name-entry already writes these menu rows and the six input-method immediates.
-_NAME_ENTRY = {0x07, 0x2A, 0x2B, 0x2C, 0x2D, 0x2E, 0x2F}
 _SLASH = {"menu", "shop", "debug", "inn"}
-_NEW = 0x0418
 
 
 def _tokens(text, slash):
@@ -618,20 +615,15 @@ def _layout_ok(encoded, written):
     return index == len(encoded) and got == len(written)
 
 
-def _known_codes():
-    """UI text paints its own copy of the name-entry glyphs from 0x0418."""
-    return {}
-
-
 def _assign(chars, known):
-    from busin.patch.ui_pages import LAST_CODE
+    from busin.patch.ui_pages import FIRST_CODE, LAST_CODE
 
     fresh = sorted({char for char in chars if char not in known})
-    if fresh and _NEW + len(fresh) - 1 > LAST_CODE:
-        raise ValueError(f"{len(fresh)} new glyphs do not fit in {_NEW:#x}-{LAST_CODE:#x}")
+    if fresh and FIRST_CODE + len(fresh) - 1 > LAST_CODE:
+        raise ValueError(f"{len(fresh)} new glyphs do not fit in {FIRST_CODE:#x}-{LAST_CODE:#x}")
     table = dict(known)
     for index, char in enumerate(fresh):
-        table[char] = _NEW + index
+        table[char] = FIRST_CODE + index
     return table, {char: table[char] for char in fresh}
 
 
@@ -868,26 +860,25 @@ def _line_parts(line):
 
 
 def ui_patches(elf):
-    """ELF writes for data/interface, plus new glyphs at 0x0418 and up."""
+    """ELF writes for data/interface, plus glyphs on the new UI pages."""
     docs = {path.stem: json.loads(path.read_text(encoding="utf-8"))
             for path in sorted((DATA / "interface").glob("*.json"))}
-    known = _known_codes()
+    known = {}
     pending = []
     chars = []
+    skipped = 0
     for name, _title, rows in collect(elf):
         lines = manuscript_lines(name, rows)
         slots = _section_slots(elf, name, rows)
         doc = docs.get(name)
         if doc is None or len(doc) != len(lines):
             raise ValueError(f"{name} translations do not match the disc")
-        if name != "operations" and len(slots) != len(lines):
+        if len(slots) != len(lines):
             raise AssertionError(f"{name} has {len(slots)} slots, {len(lines)} lines")
         for index, (row, line) in enumerate(zip(doc, lines)):
             ident, source, spec = _line_parts(line)
             if row.get("id") != ident or row.get("source") != source:
                 raise ValueError(f"{name} {ident} does not match the disc")
-            if name == "operations":
-                continue
             slot = slots[index]
             if slot["id"] != ident or _spec(slot) != spec:
                 raise AssertionError(f"{name} {ident} slot {slot['id']} spec {_spec(slot)} != {spec}")
@@ -897,16 +888,11 @@ def ui_patches(elf):
                         f"{name} {ident} type {row.get('type')} {row.get('width')} != {slot['type']} {spec}")
             elif row.get("type") or row.get("width"):
                 raise ValueError(f"{name} {ident} has type {row.get('type')} {row.get('width')}")
-            menu_index = int(ident.split()[0], 16) if name == "menu" else None
-            if menu_index in _NAME_ENTRY:
+            if row.get("text") is None:
+                skipped += 1
                 continue
             pending.append((name, ident, row["text"], slot))
             chars.extend(_glyphs(_visible(row["text"], slot), slot["slash"]))
-    from busin.naming import label_chars, load_labels, page_labels
-    label_strings, label_ops, confirm, back = load_labels()
-    _wide, narrow = page_labels()
-    chars.extend(label_chars(label_strings, label_ops))
-    chars.extend((*confirm, *back, *narrow))
     table, extra = _assign(chars, known)
     rev = {}
     for char, code in table.items():
@@ -986,7 +972,7 @@ def ui_patches(elf):
         if struct.unpack_from("<I", elf, off)[0] != old or off in writes:
             raise AssertionError(f"point stat x at {va:#x}")
         writes[off] = struct.pack("<I", new)
-    info = {"strings": len(pending), "glyphs": len(extra)}
+    info = {"strings": len(pending), "skipped": skipped, "glyphs": len(extra)}
     return writes, extra, info
 
 
@@ -1066,9 +1052,8 @@ def self_test():
     gear = _slot("g", 0x584308, "line", [0x10, 1, 0, 2, 0, 0], 6, kind="line")
     gear["keep"] = True
     assert _fit("甲 乙", gear, {"甲": 5, "乙": 6}) == [0x10, 5, 0, 6, 0, 0]
-    assert _known_codes() == {}
-    table, extra = _assign(["名", "姓"], {})
-    assert table == extra == {"名": 0x0418, "姓": 0x0419}
+    table, extra = _assign(["菜", "单"], {})
+    assert table == extra == {"单": 0x0401, "菜": 0x0402}
 
 
 def _span(writes, va):
@@ -1081,7 +1066,6 @@ def _span(writes, va):
 
 def disc_self_test():
     sections = {name: rows for name, _title, rows in collect(load_elf())}
-    assert render(sections["menu"][0x07][1]) == "名前は?"
     expect = {
         "menu": 169, "controller": 4, "save": 32, "files": 40, "paper": 18, "job": 3,
         "create": 47, "personality": 15, "quest": 3, "town": 7, "shop": 158,
@@ -1107,9 +1091,6 @@ def disc_self_test():
     assert "前衛と後衛が一斉に入れ替わる" in text["link"]
     joined = "\n".join(text.values())
     assert "バブリースライム" in joined and "練習" in joined and "[" not in joined
-    for _value, reading, codes, _sites in OPERATIONS:
-        assert render(codes) == reading
-
     sheets = {name: manuscript_lines(name, rows) for name, rows in sections.items()}
 
     def column(line):
@@ -1166,8 +1147,8 @@ def disc_self_test():
     debug = "\n".join(column(line) for line in sheets["debug"])
     assert "あれいど({9})" in debug and "PARTY ALL" in debug
     assert all("[" not in column(line) for lines in sheets.values() for line in lines)
-    from busin.naming import STRINGS, label_chars, load_labels
-    from busin.patch.ui_pages import LAST_CODE
+    from busin.patch.ui_pages import FIRST_CODE, LAST_CODE
+    from busin.ui_font import ui_font_pages
     writes, extra, info = ui_patches(load_elf())
     pitch = {va - FILE_BASE for va in PAPER_PITCH}
     race_x = {va - FILE_BASE for va in _RACE_X}
@@ -1199,30 +1180,24 @@ def disc_self_test():
         codes = struct.unpack_from("<3H", _span(writes, va))
         if codes[1] or not codes[0] or not codes[2]:
             raise AssertionError(f"stat name gap at {va:#x}")
-    banned = {address - FILE_BASE for _index, address, _source, _codes in STRINGS}
     # Parchment rows are grouped into three pages before they are written.
-    written = sum(expect.values()) - len(_NAME_ENTRY) - (expect["paper"] - 3)
-    if banned & writes.keys() or info["strings"] != written:
+    written = sum(expect.values()) - info["skipped"] - (expect["paper"] - 3)
+    if info["strings"] != written:
         raise AssertionError(info)
-    if not extra or max(extra.values()) > LAST_CODE or min(extra.values()) < 0x0418:
+    if not extra or max(extra.values()) > LAST_CODE or min(extra.values()) < FIRST_CODE:
         raise AssertionError(info)
-    labels = label_chars(*load_labels()[:2])
-    if set(labels) - extra.keys() or any(extra[char] < 0x0418 for char in labels):
-        raise AssertionError("a name-entry glyph was not painted from 0x0418")
-    for char in "确定返回切换":
-        if char not in extra or extra[char] < 0x0418:
-            raise AssertionError(f"{char} is not on the Chinese pages")
+    ui_font_pages(extra)
     for off, data in writes.items():
         if off in pitch or off in race_x or off in stat_x or off in create_stat_x or off in point_stat_x:
             continue
         codes = struct.unpack(f"<{len(data) // 2}H", data)
         for index, code in enumerate(codes):
-            if code in (0, 0xFFFE, 0xFFFD) or code >= 0x0418:
+            if code in (0, 0xFFFE, 0xFFFD) or code >= FIRST_CODE:
                 continue
             va = off + FILE_BASE + index * 2
             if code == 0x0010 and va in _GEAR_NUDGE:
                 continue
-            raise AssertionError("ui text uses a common or name-entry cell")
+            raise AssertionError("ui text uses an original UI cell")
     for index in range(7):
         va = 0x584308 + index * 12
         nudge = struct.unpack_from("<H", _span(writes, va))[0]

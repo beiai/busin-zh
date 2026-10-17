@@ -409,16 +409,13 @@ def apply_ui(src, user_patches, messages, reserved=()) -> None:
     splice_pack(src, user_patches, spans)
 
 
-def _pad_ui(ui_pages, ui_tail):
+def _pad_ui(ui_pages):
     if len(ui_pages) != PAGE_BYTES * PAGE_COUNT:
         raise ValueError("ui font pages size")
-    room = UI_SECTORS * 2048 - len(ui_pages)
-    if len(ui_tail) > room or len(ui_tail) % 4:
-        raise ValueError("button drawer does not fit the ui font tail")
-    return ui_pages + ui_tail + bytes(room - len(ui_tail))
+    return ui_pages + bytes(UI_SECTORS * 2048 - len(ui_pages))
 
 
-def build_image(chunk, page, pad, writes, messages, spans=(), slots=None, ui_pages=b"", ui_tail=b""):
+def build_image(chunk, page, pad, writes, messages, spans=(), slots=None, ui_pages=b""):
     slots = slots or {}
     combined = bytearray(COMBINED)
     combined[:CHUNK_BYTES] = chunk
@@ -517,7 +514,7 @@ def build_image(chunk, page, pad, writes, messages, spans=(), slots=None, ui_pag
         for index in range(BLOCK_FONT_SECTORS):
             write_user(BLOCK_FONT_LBA + index, font_user[index * 2048:(index + 1) * 2048])
         print("appended block fonts", flush=True)
-        ui_user = _pad_ui(ui_pages, ui_tail)
+        ui_user = _pad_ui(ui_pages)
         for index in range(UI_SECTORS):
             write_user(UI_LBA + index, ui_user[index * 2048:(index + 1) * 2048])
         print("appended ui font pages", flush=True)
@@ -528,7 +525,7 @@ def build_image(chunk, page, pad, writes, messages, spans=(), slots=None, ui_pag
     return target, combined
 
 
-def check_image(path, combined, writes, messages, spans=(), slots=None, ui_pages=b"", ui_tail=b""):
+def check_image(path, combined, writes, messages, spans=(), slots=None, ui_pages=b""):
     slots = slots or {}
     with path.open("rb") as f, BIN.open("rb") as src:
         def root_files(handle):
@@ -548,7 +545,7 @@ def check_image(path, combined, writes, messages, spans=(), slots=None, ui_pages
         source_space = struct.unpack_from("<I", read_user(src, 16, 1), 80)[0]
         if struct.unpack_from("<I", read_user(f, 16, 1), 80)[0] != source_space + SHIFT + BLOCK_FONT_SECTORS + UI_SECTORS:
             raise ValueError("volume space")
-        if read_user(f, UI_LBA, UI_SECTORS) != _pad_ui(ui_pages, ui_tail):
+        if read_user(f, UI_LBA, UI_SECTORS) != _pad_ui(ui_pages):
             raise ValueError("ui font pages")
         common = chunk_row(src, 0)[0] * 2048
         for relative in (0x00000, 0x081C0, 0x10380, 0x18540):
@@ -657,30 +654,24 @@ def main():
     save_png(read_tmx(PAGE_PATH), 0, OUT_DIR / "page01.pal00.png")
     save_png(read_tmx(MAZE_PATH), 0, OUT_DIR / "page285.pal00.png")
     from busin.disasm import load_elf
-    from busin.naming import LABELS, name_entry_patches, ui_font_pages
-    from busin.patch.button_font import CHARS, build_blob, elf_writes as button_elf_writes
     from busin.patch.ui_pages import elf_writes as ui_elf_writes
-    from busin.ui_font import FONTS
+    from busin.ui_font import FONTS, ui_font_pages
     from busin.ui_text import ui_patches
 
     writes = elf_writes(words, labels)
-    label_writes, spans, ui_info = name_entry_patches()
     elf = load_elf()
     ui_writes, ui_extra, ui_text_info = ui_patches(elf)
     pages = ui_font_pages(ui_extra)
     ui_code = ui_elf_writes(elf)
-    button = button_elf_writes(elf)
-    button_tail = build_blob({char: ui_extra[char] for char in CHARS})
-    print("button", " ".join(f"U+{ord(char):04X}={ui_extra[char]:04X}" for char in CHARS))
     table_writes = {item["table"]: struct.pack("<Q", item["sectors"]) for item in packs}
-    merged = {**writes, **label_writes, **table_writes, **ui_code, **ui_writes, **button}
+    merged = {**writes, **table_writes, **ui_code, **ui_writes}
     if len(merged) != (
-            len(writes) + len(label_writes) + len(table_writes) + len(ui_code) + len(ui_writes) + len(button)):
+            len(writes) + len(table_writes) + len(ui_code) + len(ui_writes)):
         raise ValueError("ELF writes collide")
     covered = sorted((off, off + len(data)) for off, data in merged.items())
     if any(end > nxt for (_, end), (nxt, _) in zip(covered, covered[1:])):
         raise ValueError("ELF patch writes overlap")
-    spans = [*spans, *(span for item in packs for span in item["spans"]),
+    spans = [*(span for item in packs for span in item["spans"]),
              *(span for item in blocks for span in item["spans"]), *ending, *plaque, *generated]
     message_bytes = {index for off in messages for index in (off, off + 1)}
     pack_ranges = sorted((off, off + len(data)) for off, data in spans)
@@ -690,14 +681,14 @@ def main():
         if any(index in message_bytes for index in range(offset, offset + len(data))):
             raise ValueError(f"pack span at {offset:#x} overlaps a message")
     path, combined = build_image(
-        chunk, page, pad, merged, messages, spans, slots, pages, button_tail)
-    check_image(path, combined, merged, messages, spans, slots, pages, button_tail)
+        chunk, page, pad, merged, messages, spans, slots, pages)
+    check_image(path, combined, merged, messages, spans, slots, pages)
     try:
         revision = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
     except (OSError, subprocess.CalledProcessError):
         revision = ""
     inputs = [BIN, PLAN_PATH, DATA / "font" / "message-page0.json", font_path(plan["style"]["font"]),
-              LABELS, DATA / "font" / "small.json",
+              DATA / "font" / "small.json",
               *sorted((DATA / "interface").glob("*.json")),
               *(path for _role, path, _version, _sha in FONTS),
               *sorted((ROOT / "busin").rglob("*.py")), *text_files(), *ui_files()]
@@ -710,7 +701,6 @@ def main():
         "maze_page_sha256": hashlib.sha256(slots[2][0][PIXEL_OFFSET:PIXEL_OFFSET + PIXEL_SIZE]).hexdigest(),
         "maze_cells": len(grouped[2]),
         "font_slots": {str(slot): len(chars) for slot, chars in sorted(grouped.items())},
-        "name_entry": ui_info,
         "ui_text": ui_text_info,
         "inputs": {label(item): sha256(item) for item in inputs},
         "free_sectors": [item["free"] for item in packs],
