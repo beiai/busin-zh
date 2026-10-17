@@ -7,211 +7,325 @@
       "offset": "0x0002",
       "type": "subtitle",
       "source": "神が消滅した瞬間\n異空に異変が生じた",
-      "text": null
+      "text": [
+        "神消亡的瞬间",
+        "异空发生了异变"
+      ]
     },
     {
       "offset": "0x0028",
       "type": "subtitle",
       "source": "衝撃と共に\n異空からはじき飛ばされる",
-      "text": null
+      "text": [
+        "随着冲击",
+        "从异空被弹开"
+      ]
     },
     {
       "offset": "0x004E",
       "type": "subtitle",
       "source": "目の前が真っ白になり\n意識がだんだんとうすれていった",
-      "text": null
+      "text": [
+        "眼前变得一片纯白",
+        "意识渐渐淡去"
+      ]
     },
     {
       "offset": "0x0084",
       "type": "subtitle",
       "source": "目をさますとそこは\nドゥーハンを見下ろす\n小高い丘の上だった",
-      "text": null
+      "text": [
+        "醒来时那里是",
+        "俯瞰着杜汉的",
+        "一座小丘之上"
+      ]
     },
     {
       "offset": "0x00C2",
       "type": "subtitle",
       "source": "ドゥーハンをおおっていた\n雪はすでになく………",
-      "text": null
+      "text": [
+        "笼罩着杜汉的",
+        "雪已经不在了………"
+      ]
     },
     {
       "offset": "0x00F2",
       "type": "subtitle",
       "source": "優しいこもれびが\n大地をあたためている",
-      "text": null
+      "text": [
+        "柔和的斑驳阳光",
+        "温暖着大地"
+      ]
     },
     {
       "offset": "0x011A",
       "type": "subtitle",
       "source": "ひきよせられるように\n美しい青空に目をやった",
-      "text": null
+      "text": [
+        "像是被吸引着",
+        "望向美丽的蓝天"
+      ]
     },
     {
       "offset": "0x0148",
       "type": "subtitle",
       "source": "それは、ソフィアが\nいつか、二人で見ようと\n言っていた空だった",
-      "text": null
+      "text": [
+        "那是，索菲亚",
+        "说过有一天要两人同看的",
+        "天空"
+      ]
     },
     {
       "offset": "0x0188",
       "type": "subtitle",
       "source": "うれしくなり、ふりむくが\nそこに、彼女の姿はない",
-      "text": null
+      "text": [
+        "心里一喜，转过身",
+        "那里却没有她的身影"
+      ]
     },
     {
       "offset": "0x01BA",
       "type": "subtitle",
       "source": "かつて、心を満たしていた\nあたたかい物が、全て失われたという\nざんこくな事実が存在するだけだ",
-      "text": null
+      "text": [
+        "曾经填满内心的",
+        "那份温暖，尽数失去",
+        "只剩下这残酷的事实"
+      ]
     },
     {
       "offset": "0x0218",
       "type": "subtitle",
       "source": "護れなかったいくつもの約束が\n甘やかな想い出と共に\n身体をしばりあげる",
-      "text": null
+      "text": [
+        "没能守住的诸多约定",
+        "与甘美的回忆一同",
+        "捆住了身体"
+      ]
     },
     {
       "offset": "0x0260",
       "type": "subtitle",
       "source": "ただひとり、いまだ雪のドゥーハンに\nたたずんでいるような\nそんなさっかくにさえ捕われる",
-      "text": null
+      "text": [
+        "仿佛仍独自一人",
+        "伫立在积雪的杜汉",
+        "连这错觉也捉住了自己"
+      ]
     },
     {
       "offset": "0x02B8",
       "type": "subtitle",
       "source": "失ってしまった\nぬくもりの大きさが\n心と身体をうちのめした",
-      "text": null
+      "text": [
+        "失去了的",
+        "那份温暖何其大",
+        "击垮了心和身体"
+      ]
     },
     {
       "offset": "0x02F4",
       "type": "subtitle",
       "source": "武神は倒した",
-      "text": null
+      "text": [
+        "已经打倒了武神"
+      ]
     },
     {
       "offset": "0x0302",
       "type": "subtitle",
       "source": "そして、生き残りもした",
-      "text": null
+      "text": [
+        "而且，自己也活了下来"
+      ]
     },
     {
       "offset": "0x031A",
       "type": "subtitle",
       "source": "だが、それがいったい\n何になるというのだろう",
-      "text": null
+      "text": [
+        "可那究竟",
+        "算得了什么"
+      ]
     },
     {
       "offset": "0x0348",
       "type": "subtitle",
       "source": "そんな自分を\nあざ笑うかのように\n美しい光がまたたいた",
-      "text": null
+      "text": [
+        "像是在嘲笑",
+        "这样的自己",
+        "美丽的光闪了一下"
+      ]
     },
     {
       "offset": "0x0380",
       "type": "subtitle",
       "source": "それは魂の回帰",
-      "text": null
+      "text": [
+        "那是灵魂的回归"
+      ]
     },
     {
       "offset": "0x0390",
       "type": "subtitle",
       "source": "魂が、あるべき場所へと\n還っていくのだ",
-      "text": null
+      "text": [
+        "灵魂，回到",
+        "本该在的地方"
+      ]
     },
     {
       "offset": "0x03B8",
       "type": "subtitle",
       "source": "気がつけば、夢中で\n大切な名を次々と呼んだ",
-      "text": null
+      "text": [
+        "回过神时，已忘我地",
+        "一个个呼唤重要的名字"
+      ]
     },
     {
       "offset": "0x03E4",
       "type": "subtitle",
       "source": "輝きの中に求める魂が\nあるかもしれないと\nそっと指をのばす",
-      "text": null
+      "text": [
+        "光芒里也许有",
+        "寻觅的灵魂",
+        "轻轻伸出手指"
+      ]
     },
     {
       "offset": "0x0420",
       "type": "subtitle",
       "source": "しかし、応えはなく\n己の声が、むなしくこだまするだけだ",
-      "text": null
+      "text": [
+        "然而，没有回应",
+        "自己的声音，空空回响"
+      ]
     },
     {
       "offset": "0x0458",
       "type": "subtitle",
       "source": "せめて、飛び交う光を\nだきしめようと、そっと指をのばす",
-      "text": null
+      "text": [
+        "至少，想拥抱飞舞的光",
+        "便轻轻伸出手指"
+      ]
     },
     {
       "offset": "0x0490",
       "type": "subtitle",
       "source": "その指先に、奇蹟のように\n尊い姿が現われた",
-      "text": null
+      "text": [
+        "指尖上，奇迹般",
+        "出现了尊贵的身影"
+      ]
     },
     {
       "offset": "0x04BC",
       "type": "subtitle",
       "source": "伝えなければならない事が\nたくさんあるはずなのに\nうまく言葉にならない",
-      "text": null
+      "text": [
+        "必须传达的事",
+        "本该有许多",
+        "却说不成话"
+      ]
     },
     {
       "offset": "0x0504",
       "type": "subtitle",
       "source": "命をかけて護ろうと思い\n結果、殺めてしまった人",
-      "text": null
+      "text": [
+        "曾想拼上性命守护",
+        "结果，却亲手杀死的人"
+      ]
     },
     {
       "offset": "0x0534",
       "type": "subtitle",
       "source": "かつて、そうしたように\n全ての想いをこめて\n女王に忠誠の形をとる",
-      "text": null
+      "text": [
+        "像从前那样",
+        "倾注全部心意",
+        "向女王行忠诚之礼"
+      ]
     },
     {
       "offset": "0x0576",
       "type": "subtitle",
       "source": "やがて………",
-      "text": null
+      "text": [
+        "不久………"
+      ]
     },
     {
       "offset": "0x0584",
       "type": "subtitle",
       "source": "女王の姿は\nゆっくりと失われていった",
-      "text": null
+      "text": [
+        "女王的身影",
+        "慢慢消失了"
+      ]
     },
     {
       "offset": "0x05AA",
       "type": "subtitle",
       "source": "全ての人が、なすべき事をなし\n想いをとげて、今、神から\n解放されたのだ",
-      "text": null
+      "text": [
+        "所有人都做完了该做的事",
+        "心愿得偿，如今从神的束缚中",
+        "得到了解放"
+      ]
     },
     {
       "offset": "0x05F2",
       "type": "subtitle",
       "source": "レドゥアも……\nソフィアも……\nそして、女王も……",
-      "text": null
+      "text": [
+        "蕾杜阿也……",
+        "索菲亚也……",
+        "还有，女王也……"
+      ]
     },
     {
       "offset": "0x0626",
       "type": "subtitle",
       "source": "いずれ、回帰のはてに\n再びまみえる事は\n出来るのだろうか？",
-      "text": null
+      "text": [
+        "有朝一日，在回归的尽头",
+        "是否还能",
+        "再次相见？"
+      ]
     },
     {
       "offset": "0x0662",
       "type": "subtitle",
       "source": "答えは出ない",
-      "text": null
+      "text": [
+        "没有答案"
+      ]
     },
     {
       "offset": "0x0670",
       "type": "subtitle",
       "source": "ひっそりと出来上がった\n心の迷宮に\nゆっくりと意識を横たえる",
-      "text": null
+      "text": [
+        "在悄然筑成的",
+        "心之迷宫里",
+        "让意识慢慢躺下"
+      ]
     },
     {
       "offset": "0x06AE",
       "type": "subtitle",
       "source": "美しく哀しい魂の乱舞が\nいつまでも続いていた………",
-      "text": null
+      "text": [
+        "美丽哀伤的灵魂乱舞",
+        "一直持续着………"
+      ]
     }
   ]
 }

@@ -7,110 +7,165 @@
       "offset": "0x0002",
       "type": "subtitle",
       "source": "神が消滅した瞬間\n異空に異変が生じた",
-      "text": null
+      "text": [
+        "神消亡的瞬间",
+        "异空发生了异变"
+      ]
     },
     {
       "offset": "0x0028",
       "type": "subtitle",
       "source": "目をさますとそこは\nドゥーハンを見下ろす\n小高い丘の上だった",
-      "text": null
+      "text": [
+        "醒来时那里是",
+        "俯瞰着杜汉的",
+        "一座小丘之上"
+      ]
     },
     {
       "offset": "0x0066",
       "type": "subtitle",
       "source": "街を白く閉ざしていた\n雪がやんでいる",
-      "text": null
+      "text": [
+        "曾把街道封成白色的",
+        "雪停了"
+      ]
     },
     {
       "offset": "0x008C",
       "type": "subtitle",
       "source": "ドゥーハンは神の束縛から\n解き放たれたのだ",
-      "text": null
+      "text": [
+        "杜汉从神的束缚中",
+        "得到了解放"
+      ]
     },
     {
       "offset": "0x00B8",
       "type": "subtitle",
       "source": "しかし、むなしさが\n心身をうちのめす……",
-      "text": null
+      "text": [
+        "然而，空虚",
+        "击垮了身心……"
+      ]
     },
     {
       "offset": "0x00E2",
       "type": "subtitle",
       "source": "そんな自分を\nあざ笑うかのように\n美しい光がまたたいた",
-      "text": null
+      "text": [
+        "像是在嘲笑",
+        "这样的自己",
+        "美丽的光闪了一下"
+      ]
     },
     {
       "offset": "0x011A",
       "type": "subtitle",
       "source": "それは魂の回帰",
-      "text": null
+      "text": [
+        "那是灵魂的回归"
+      ]
     },
     {
       "offset": "0x012A",
       "type": "subtitle",
       "source": "輝きの中に、求める魂が\nあるかもしれないと\nそっと指をのばす",
-      "text": null
+      "text": [
+        "光芒里，也许有",
+        "寻觅的灵魂",
+        "轻轻伸出手指"
+      ]
     },
     {
       "offset": "0x0168",
       "type": "subtitle",
       "source": "その指先に、奇蹟のように\n尊い姿が現われた",
-      "text": null
+      "text": [
+        "指尖上，奇迹般",
+        "出现了尊贵的身影"
+      ]
     },
     {
       "offset": "0x0194",
       "type": "subtitle",
       "source": "命をかけて護ろうと思い\n結果、殺めてしまった人",
-      "text": null
+      "text": [
+        "曾想拼上性命守护",
+        "结果，却亲手杀死的人"
+      ]
     },
     {
       "offset": "0x01C4",
       "type": "subtitle",
       "source": "女王「感謝しています。\n   わたくしのガードよ」",
-      "text": null
+      "text": [
+        "女王「我很感激。",
+        "   我的近卫啊」"
+      ]
     },
     {
       "offset": "0x01F8",
       "type": "subtitle",
       "source": "女王「あなたはわたくしを\n   かの神から解き放ってくれた」",
-      "text": null
+      "text": [
+        "女王「是你把我",
+        "   从那位神那里解放出来的」"
+      ]
     },
     {
       "offset": "0x0236",
       "type": "subtitle",
       "source": "女王「わたくしの尊厳を\n   護ってくれたのです」",
-      "text": null
+      "text": [
+        "女王「你守护住了",
+        "   我的尊严」"
+      ]
     },
     {
       "offset": "0x026A",
       "type": "subtitle",
       "source": "女王「だから………\n   涙を流さないで」",
-      "text": null
+      "text": [
+        "女王「所以………",
+        "   请不要流泪」"
+      ]
     },
     {
       "offset": "0x0296",
       "type": "subtitle",
       "source": "青空が広がり\n優しいこもれびが\n大地をあたため始めた",
-      "text": null
+      "text": [
+        "蓝天铺展开来",
+        "柔和的斑驳阳光",
+        "开始温暖大地"
+      ]
     },
     {
       "offset": "0x02CC",
       "type": "subtitle",
       "source": "引きよせられるように\n空に目をやる",
-      "text": null
+      "text": [
+        "像是被吸引着",
+        "望向天空"
+      ]
     },
     {
       "offset": "0x02F0",
       "type": "subtitle",
       "source": "わたしといっしょに\nこの美しいドゥーハンの空を\nうつしましょう",
-      "text": null
+      "text": [
+        "和我一起",
+        "让杜汉这美丽的天空",
+        "映在眼里吧"
+      ]
     },
     {
       "offset": "0x0330",
       "type": "subtitle",
       "source": "ソ",
       "text": [
-        "仿"
+        "本"
       ]
     },
     {
@@ -118,7 +173,7 @@
       "type": "subtitle",
       "source": "フ",
       "text": [
-        "佛"
+        "该"
       ]
     },
     {
@@ -126,7 +181,7 @@
       "type": "subtitle",
       "source": "ィ",
       "text": [
-        "听"
+        "与"
       ]
     },
     {
@@ -134,7 +189,7 @@
       "type": "subtitle",
       "source": "ア",
       "text": [
-        "见"
+        "索"
       ]
     },
     {
@@ -142,7 +197,7 @@
       "type": "subtitle",
       "source": "と",
       "text": [
-        "她"
+        "菲"
       ]
     },
     {
@@ -150,7 +205,7 @@
       "type": "subtitle",
       "source": "見",
       "text": [
-        "的"
+        "亚"
       ]
     },
     {
@@ -158,7 +213,7 @@
       "type": "subtitle",
       "source": "る",
       "text": [
-        "歌"
+        "一"
       ]
     },
     {
@@ -166,7 +221,7 @@
       "type": "subtitle",
       "source": "は",
       "text": [
-        "声"
+        "起"
       ]
     },
     {
@@ -174,7 +229,7 @@
       "type": "subtitle",
       "source": "ず",
       "text": [
-        "从"
+        "看"
       ]
     },
     {
@@ -182,7 +237,7 @@
       "type": "subtitle",
       "source": "だ",
       "text": [
-        "天"
+        "的"
       ]
     },
     {
@@ -190,7 +245,7 @@
       "type": "subtitle",
       "source": "っ",
       "text": [
-        "的"
+        "那"
       ]
     },
     {
@@ -198,7 +253,7 @@
       "type": "subtitle",
       "source": "た",
       "text": [
-        "彼"
+        "一"
       ]
     },
     {
@@ -206,7 +261,7 @@
       "type": "subtitle",
       "source": "美",
       "text": [
-        "方"
+        "片"
       ]
     },
     {
@@ -214,7 +269,7 @@
       "type": "subtitle",
       "source": "し",
       "text": [
-        "传"
+        "美"
       ]
     },
     {
@@ -222,7 +277,7 @@
       "type": "subtitle",
       "source": "い",
       "text": [
-        "来"
+        "丽"
       ]
     },
     {
@@ -230,7 +285,7 @@
       "type": "subtitle",
       "source": "青",
       "text": [
-        "，"
+        "蓝"
       ]
     },
     {
@@ -238,7 +293,7 @@
       "type": "subtitle",
       "source": "空",
       "text": [
-        "那"
+        "天"
       ]
     },
     {
@@ -246,7 +301,7 @@
       "type": "subtitle",
       "source": "彼",
       "text": [
-        "是"
+        "她"
       ]
     },
     {
@@ -254,7 +309,7 @@
       "type": "subtitle",
       "source": "女",
       "text": [
-        "本"
+        "的"
       ]
     },
     {
@@ -262,7 +317,7 @@
       "type": "subtitle",
       "source": "の",
       "text": [
-        "该"
+        "歌"
       ]
     },
     {
@@ -270,7 +325,7 @@
       "type": "subtitle",
       "source": "歌",
       "text": [
-        "和"
+        "声"
       ]
     },
     {
@@ -278,7 +333,7 @@
       "type": "subtitle",
       "source": "声",
       "text": [
-        "索"
+        "正"
       ]
     },
     {
@@ -286,7 +341,7 @@
       "type": "subtitle",
       "source": "が",
       "text": [
-        "菲"
+        "从"
       ]
     },
     {
@@ -294,7 +349,7 @@
       "type": "subtitle",
       "source": "空",
       "text": [
-        "亚"
+        "天"
       ]
     },
     {
@@ -302,7 +357,7 @@
       "type": "subtitle",
       "source": "の",
       "text": [
-        "同"
+        "空"
       ]
     },
     {
@@ -310,7 +365,7 @@
       "type": "subtitle",
       "source": "彼",
       "text": [
-        "看"
+        "的"
       ]
     },
     {
@@ -318,7 +373,7 @@
       "type": "subtitle",
       "source": "方",
       "text": [
-        "的"
+        "彼"
       ]
     },
     {
@@ -326,7 +381,7 @@
       "type": "subtitle",
       "source": "か",
       "text": [
-        "美"
+        "方"
       ]
     },
     {
@@ -334,7 +389,7 @@
       "type": "subtitle",
       "source": "ら",
       "text": [
-        "丽"
+        "传"
       ]
     },
     {
@@ -342,7 +397,7 @@
       "type": "subtitle",
       "source": "聞",
       "text": [
-        "蓝"
+        "过"
       ]
     },
     {
@@ -350,7 +405,7 @@
       "type": "subtitle",
       "source": "こ",
       "text": [
-        "天"
+        "来"
       ]
     }
   ]

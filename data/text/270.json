@@ -7,37 +7,49 @@
       "offset": "0x0002",
       "type": "subtitle",
       "source": "何も思い出さぬまま",
-      "text": null
+      "text": [
+        "什么也不曾想起"
+      ]
     },
     {
       "offset": "0x0016",
       "type": "subtitle",
       "source": "何もなさぬままに",
-      "text": null
+      "text": [
+        "什么也不曾做到"
+      ]
     },
     {
       "offset": "0x0028",
       "type": "subtitle",
       "source": "かの魂は冥府の門をくぐる",
-      "text": null
+      "text": [
+        "那灵魂穿过冥府之门"
+      ]
     },
     {
       "offset": "0x0042",
       "type": "subtitle",
       "source": "後にはただ",
-      "text": null
+      "text": [
+        "其后唯有"
+      ]
     },
     {
       "offset": "0x004E",
       "type": "subtitle",
       "source": "永遠の夜だけが",
-      "text": null
+      "text": [
+        "永恒的夜"
+      ]
     },
     {
       "offset": "0x005E",
       "type": "subtitle",
       "source": "静かにドゥーハンをおおった……",
-      "text": null
+      "text": [
+        "静静笼罩了杜汉……"
+      ]
     }
   ]
 }
