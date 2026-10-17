@@ -10,7 +10,7 @@ from busin.disc import (
     children, chunk_row, entry, finish_sector, read_pack, read_user,
 )
 from busin.font import (
-    FONT_DIR, PIXEL_OFFSET, PIXEL_SIZE, assign_cells as place_cells, copy_cell,
+    PIXEL_OFFSET, PIXEL_SIZE, assign_cells as place_cells, copy_cell, font_path,
     hash_collision_stats, load_plan, render_font,
 )
 from busin.patch import emu
@@ -289,7 +289,7 @@ def make_page(chunk, plan, glyphs, dest=PAGE_PATH):
     style = plan["style"]
     render_font(
         blank, dest, glyphs, [char for char in glyphs if char not in copied], style["font"],
-        style["size"], style["variation"], style["alpha"],
+        style["size"], style.get("variation"), style["alpha"],
     )
     blank.unlink()
     data = bytearray(dest.read_bytes())
@@ -671,7 +671,7 @@ def main():
         revision = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
     except (OSError, subprocess.CalledProcessError):
         revision = ""
-    inputs = [BIN, PLAN_PATH, DATA / "font" / "message-page0.json", FONT_DIR / plan["style"]["font"],
+    inputs = [BIN, PLAN_PATH, DATA / "font" / "message-page0.json", font_path(plan["style"]["font"]),
               LABELS, DATA / "font" / "small.json",
               *sorted((DATA / "interface").glob("*.json")),
               *(path for _role, path, _version, _sha in FONTS),

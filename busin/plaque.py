@@ -3,7 +3,8 @@
 The picture frame uses the first palette. These lines use the second.
 Only those color indexes are replaced. A missing .zh.png leaves that
 line alone. English lines stay on the disc. Characters go left to
-right, aligned to the right edge.
+right. The bar line starts at the left edge. The others end at the
+right edge.
 """
 import struct
 import tempfile
@@ -35,7 +36,7 @@ SOURCES = {
 # name: file, x, y, width, height, caption. The two gray ramps share the
 # brighter steps; ink stops on the step the labyrinth line already uses.
 LINES = {
-    "bar_bottom": ("Tw_map01", 0, 192, 40, 16, "酒馆"),  # 酒場
+    "bar_bottom": ("Tw_map01", 0, 192, 40, 16, "酒馆"),  # 酒場, left edge
     "guild_bottom": ("Tw_map01", 72, 208, 80, 16, "冒险者公会"),  # 冒険者ギルド
     "save_bottom": ("Tw_map01", 192, 192, 48, 16, "存档"),  # セーブ
     "temple_bottom": ("Tw_map01", 120, 192, 72, 16, "塞勒姆寺院"),  # サルム寺院
@@ -47,6 +48,7 @@ GLYPH = 16
 # Five characters at 16px need 80. These two lines are 72 wide, so the
 # glyphs stay 16px and sit two pixels closer. Solid ink does not meet.
 COMPACT = {"temple_bottom", "inn_bottom"}
+LEFT = {"bar_bottom"}
 INK = 11
 
 
@@ -206,7 +208,8 @@ def _metrics(name: str) -> tuple[int, int, int, int]:
     span = (len(text) - 1) * step + glyph
     if not text or glyph > height or span > width:
         raise ValueError(f"plaque {name} does not fit")
-    return glyph, step, width - span, (height - glyph) // 2
+    x0 = 0 if name in LEFT else width - span
+    return glyph, step, x0, (height - glyph) // 2
 
 
 def _ink(scale: tuple[int, ...], coverage: int) -> int:
@@ -349,6 +352,9 @@ def self_test() -> None:
         bar = render_caption("bar_bottom")
         bar_values = {bar.getpixel((px, py))[0] for py in range(bar.height) for px in range(bar.width)}
         assert bar_values <= set(ramp("Tw_map01")) and ramp("Tw_map01")[-1] in bar_values
+        bx, by = bright(glyphs["酒"])
+        assert bar.getpixel((bx, by)) != black
+        assert all(bar.getpixel((px, py)) == black for px in range(32, 40) for py in range(16))
     print("plaque self-test: OK")
 
 

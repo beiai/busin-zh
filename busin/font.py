@@ -15,6 +15,14 @@ EXTENSION_LIMIT = 0x7FFF
 PIXEL_OFFSET = 0x240
 PIXEL_SIZE = 524288
 FONT_DIR = Path("C:/Windows/Fonts")
+
+
+def font_path(name: str) -> Path:
+    folders = (FONT_DIR, Path.home() / "AppData/Local/Microsoft/Windows/Fonts")
+    found = next((folder / name for folder in folders if (folder / name).is_file()), None)
+    if found is None:
+        raise FileNotFoundError(name)
+    return found
 SOLID = 128
 _PAD = 8
 
@@ -168,6 +176,21 @@ def seat_baseline(font, char, cell):
 
 def message_cell(font, char, cell=CELL):
     cjk = unicodedata.name(char, "").startswith("CJK UNIFIED")
+    # A 24px em can hang one pixel off the side. Slide it until the solid ink is inside.
+    nudge = 0
+    if cjk:
+        draw = ImageDraw.Draw(Image.new("L", (1, 1)))
+        left, top, right, bottom = draw.textbbox((0, 0), char, font=font)
+        probe = Image.new("L", (cell + 16, cell + 16), 0)
+        ImageDraw.Draw(probe).text((
+            8 + (cell - (right - left)) // 2 - left,
+            8 + (cell - (bottom - top)) // 2 - top,
+        ), char, font=font, fill=255)
+        solid = probe.point(lambda value: 255 if value >= SOLID else 0).getbbox()
+        if solid and solid[0] < _PAD:
+            nudge = _PAD - solid[0]
+        elif solid and solid[2] > _PAD + cell:
+            nudge = _PAD + cell - solid[2]
 
     def paint(shift):
         image = Image.new("L", (cell + 16, cell + 16), 0)
@@ -175,7 +198,7 @@ def message_cell(font, char, cell=CELL):
         if cjk:
             left, top, right, bottom = draw.textbbox((0, 0), char, font=font)
             draw.text((
-                8 + (cell - (right - left)) // 2 - left,
+                8 + (cell - (right - left)) // 2 - left + nudge,
                 8 + (cell - (bottom - top)) // 2 - top - shift,
             ), char, font=font, fill=255)
         else:
@@ -186,7 +209,7 @@ def message_cell(font, char, cell=CELL):
     return fit_cell(cell, paint, f"font glyph {char!r}")
 
 
-def render_font(source: Path, output: Path, char_map: dict[str, int], generated: list[str], font_name: str, size: int = 22, variation: str = "Black", alpha: list[int] | None = None) -> None:
+def render_font(source: Path, output: Path, char_map: dict[str, int], generated: list[str], font_name: str, size: int = 24, variation: str | None = None, alpha: list[int] | None = None) -> None:
     data = bytearray(source.read_bytes())
     image = read_tmx(source)
     if (image.width, image.height, image.pixel_format, image.palette_format, len(image.palettes)) != (1024, 1024, PSMT4, PSMCT32, 8):
@@ -200,9 +223,9 @@ def render_font(source: Path, output: Path, char_map: dict[str, int], generated:
         raise ValueError("CLUT alpha does not match the font plan")
     if coverage[15] != 0 or not all(coverage[index] > coverage[index + 1] for index in range(15)):
         raise ValueError("expected the verified descending coverage CLUT")
-    font = ImageFont.truetype(str(FONT_DIR / font_name), size)
-    # Noto Serif SC's variable font defaults to ExtraLight; the atlas uses the heavier stroke.
-    font.set_variation_by_name(variation)
+    font = ImageFont.truetype(str(font_path(font_name)), size)
+    if variation:
+        font.set_variation_by_name(variation)
     for char in generated:
         glyph = char_map[char]
         x = (glyph % GRID) * CELL
@@ -304,3 +327,13 @@ def self_test() -> None:
         pass
     else:
         raise AssertionError("fringe past one pixel was accepted")
+    try:
+        wenkai = font_path("LXGWWenKai-Medium.ttf")
+    except FileNotFoundError:
+        wenkai = None
+    if wenkai is not None:
+        font = ImageFont.truetype(str(wenkai), CELL)
+        if font.getname() != ("LXGW WenKai", "Medium"):
+            raise AssertionError(f"message font is {font.getname()}")
+        mask, shift = message_cell(font, "娘")
+        assert shift == 0 and mask.getbbox()[0] >= 0 and mask.getbbox()[2] <= CELL

@@ -281,9 +281,8 @@
     }
   },
   "style": {
-    "font": "NotoSerifSC-VF.ttf",
-    "variation": "Black",
-    "size": 22,
+    "font": "LXGWWenKai-Medium.ttf",
+    "size": 24,
     "alpha": [
       121,
       113,
