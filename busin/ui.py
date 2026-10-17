@@ -24,6 +24,7 @@ except ImportError:
 WHOLE_KEYS = {"name", "dir", "chunk", "offset", "width", "height", "palette", "size", "word_count_header"}
 PART_KEYS = {"name", "dir", "chunk", "offset", "slot", "width", "height", "rects"}
 RECT_KEYS = {"name", "x", "y", "width", "height", "palette"}
+RECT_TEXT_KEYS = RECT_KEYS | {"source", "text"}
 PICTURE_KEYS = {"name", "dir", "chunk", "offset", "width", "height"}
 
 
@@ -66,7 +67,7 @@ def _rect(rect: dict, name: str, width: int, height: int) -> str:
             or x < 0 or y < 0 or box_width <= 0 or box_height <= 0
             or x + box_width > width or y + box_height > height):
         raise ValueError(f"{name} rect {label}")
-    if type(palette) is not int or not 0 <= palette <= 15:
+    if type(palette) is not int or not 0 <= palette <= 255:
         raise ValueError(f"{name} rect {label} palette")
     return label
 
@@ -143,8 +144,12 @@ def load_images(path: Path) -> dict:
         if not isinstance(rects, list) or not rects:
             raise ValueError(f"{name} rects")
         for rect in rects:
-            if not isinstance(rect, dict) or set(rect) != RECT_KEYS:
+            if not isinstance(rect, dict) or set(rect) not in (RECT_KEYS, RECT_TEXT_KEYS):
                 raise ValueError(f"{name} rect")
+            if set(rect) == RECT_TEXT_KEYS and (
+                    not isinstance(rect["source"], str) or not isinstance(rect["text"], str)
+                    or "\n" in rect["text"]):
+                raise ValueError(f"{name} rect text")
             claim_file(item["dir"], _rect(rect, name, item["width"], item["height"]))
     for item in generated:
         parsed = parse_generated(item)
@@ -426,7 +431,13 @@ def export_pictures(read, manifest: dict, root: Path, row) -> None:
         for rect in item["rects"]:
             original = dest / f"{rect['name']}.png"
             save_crop(image, rect, original)
-            keep_zh(original)
+            translated = dest / zh_name(original.stem)
+            if set(rect) == RECT_TEXT_KEYS:
+                if not translated.is_file() or translated.read_bytes() == original.read_bytes():
+                    from busin.picture_text.cock import render_initial
+                    render_initial(image, rect, translated)
+            else:
+                keep_zh(original)
     for item in manifest.get("generated", []):
         export_generated_pair(item, read, row, generated_dir(root))
 
@@ -556,9 +567,11 @@ def self_test() -> None:
         assert translated.read_bytes() == original.read_bytes()
     listed = load_images(DATA / "picture" / "images.json")
     assert {item["dir"] for item in listed["whole"]} == {"title"}
-    assert {item["dir"] for item in listed["part"]} == {"town"}
-    assert [item["name"] for item in listed["part"]] == ["Tw_map02", "Tw_map01"]
-    assert {rect["palette"] for item in listed["part"] for rect in item["rects"]} == {1}
+    assert {item["dir"] for item in listed["part"]} == {"town", "menu"}
+    assert [item["name"] for item in listed["part"]] == [
+        "Tw_map02", "Tw_map01", "cock_00", "cock_01",
+    ]
+    assert {rect["palette"] for item in listed["part"] for rect in item["rects"]} == {1, 2, 10, 17}
     assert [item["name"] for item in listed["generated"]] == [
         "bar_00", "ali_00", "ali_01", "ali_02", "ali_03",
     ]
@@ -615,6 +628,53 @@ def self_test() -> None:
                 (rect["x"], rect["y"], rect["width"], rect["height"], rect["palette"])
                 for rect in by_name["Tw_map02"]["rects"]
             } == {line(row)}
+
+            # cock_00 uses shared sprite indexes 0 through 22. cock_01 has its
+            # own twenty-record table and also uses shared index 23.
+            def sprite_table(at, count):
+                at -= FILE_BASE
+                size = count * 12
+                sectors = (at % 2048 + size + 2047) // 2048
+                blob = read_user(
+                    src, ELF_LBA + at // 2048, sectors
+                )[at % 2048:at % 2048 + size]
+                return lambda index: struct.unpack_from("<6h", blob, index * 12)
+
+            shared = sprite_table(0x583EA0, 24)
+            cock01_sprites = sprite_table(0x583DAC, 20)
+            cock00 = {
+                "confirm": (shared, 9), "back": (shared, 10),
+                "event_item": (shared, 11), "item_data": (shared, 12),
+                "magic_list": (shared, 13), "page_switch": (shared, 14),
+                "weapon": (shared, 15), "armor": (shared, 16),
+                "accessory": (shared, 17), "status": (shared, 18),
+                "magic_stone_info": (shared, 19), "switch": (shared, 20),
+                "move": (shared, 22),
+            }
+            cock01 = {
+                "mage_magic": (cock01_sprites, 11),
+                "priest_magic": (cock01_sprites, 12),
+                "first_allied": (cock01_sprites, 17),
+                "second_allied": (cock01_sprites, 18),
+                "skill": (cock01_sprites, 19),
+                "front_back_change": (shared, 23),
+            }
+            for name, indexes in (("cock_00", cock00), ("cock_01", cock01)):
+                rects = {rect["name"]: rect for rect in by_name[name]["rects"]}
+                assert set(rects) == set(indexes)
+                for label, (table, index) in indexes.items():
+                    values = table(index)
+                    rect = rects[label]
+                    assert values == (
+                        rect["x"], rect["y"], rect["width"], rect["height"],
+                        rect["width"], rect["height"],
+                    )
+                    expected_palette = (
+                        2 if name == "cock_00"
+                        else 17 if label in {"mage_magic", "priest_magic"}
+                        else 10
+                    )
+                    assert rect["palette"] == expected_palette
 
 
 def load_manifest_conflict() -> None:

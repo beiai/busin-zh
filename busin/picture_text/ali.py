@@ -91,8 +91,8 @@ def load_spec(data: dict) -> Spec:
         raise ValueError(f"unknown ali picture {name!r}")
     if parsed.renderer != "ali_buttons":
         raise ValueError(f"{name} renderer is {parsed.renderer!r}")
-    if parsed.font != FontSpec("NotoSansSC-VF.ttf", "Medium", 20):
-        raise ValueError(f"{name} must use NotoSansSC-VF.ttf Medium 20")
+    if parsed.font != FontSpec("NotoSansSC-VF.ttf", "Medium", 18):
+        raise ValueError(f"{name} must use NotoSansSC-VF.ttf Medium 18")
     expected = SOURCE_TEXT[name]
     if len(parsed.labels) != len(expected):
         raise ValueError(f"{name} needs {len(expected)} labels")
@@ -286,7 +286,7 @@ def self_test() -> None:
     palette = struct.pack("<16H", *raw_palette)
     for name in SOURCES:
         spec = load_manifest_spec(name)
-        assert spec.name == name and spec.variation == "Medium" and spec.size == 20
+        assert spec.name == name and spec.variation == "Medium" and spec.size == 18
         cells = render_cells(spec, blank)
         assert len(cells) == BUTTON_ROWS[name] * COLS
         for index, cell in enumerate(cells):

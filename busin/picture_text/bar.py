@@ -215,6 +215,11 @@ def _source_blob(read, row) -> bytes:
     return blobs[0]
 
 
+def blank_cell(read, row) -> tuple[int, ...]:
+    """Return the clean 128x32 banner used as the generated text background."""
+    return _blank_cell(_validate_blob(_source_blob(read, row)))
+
+
 def source_spans(read, row) -> list[tuple[int, bytes]]:
     source = _source_blob(read, row)
     return [(offset, source) for offset in _source_offsets(row)]
@@ -260,7 +265,7 @@ def preview(read, row, spec: Spec | None = None, output: Path | None = None) -> 
 
 def self_test() -> None:
     spec = load_manifest_spec()
-    assert spec.size == 20 and spec.variation == "Medium"
+    assert spec.size == 18 and spec.variation == "Medium"
     assert len(spec.parts) == 16 and spec.parts[-1] == Part("", "")
 
     blank = tuple(10 + ((x + y) % 6) for y in range(CELL_HEIGHT) for x in range(CELL_WIDTH))
