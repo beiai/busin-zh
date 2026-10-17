@@ -176,6 +176,7 @@
     {
       "name": "bar_00",
       "renderer": "bar_buttons",
+      "palette": 1,
       "font": {
         "file": "NotoSansSC-VF.ttf",
         "variation": "Medium",
@@ -245,6 +246,262 @@
         {
           "source": "",
           "text": ""
+        }
+      ]
+    },
+    {
+      "name": "ali_00",
+      "renderer": "ali_buttons",
+      "palette": 1,
+      "font": {
+        "file": "NotoSansSC-VF.ttf",
+        "variation": "Medium",
+        "size": 20
+      },
+      "labels": [
+        {
+          "source": "一斉逃走",
+          "text": "全员逃跑"
+        },
+        {
+          "source": "前後列交代",
+          "text": "前后列换位"
+        },
+        {
+          "source": "集中攻撃",
+          "text": "集中攻击"
+        },
+        {
+          "source": "範囲攻撃",
+          "text": "范围攻击"
+        },
+        {
+          "source": "フロントガード",
+          "text": "前排防御"
+        },
+        {
+          "source": "後衛防御",
+          "text": "后卫防御"
+        },
+        {
+          "source": "援護射撃",
+          "text": "援护射击"
+        },
+        {
+          "source": "牽制射撃",
+          "text": "牵制射击"
+        },
+        {
+          "source": "魔法協力",
+          "text": "魔法协力"
+        },
+        {
+          "source": "ラッシュ",
+          "text": "突袭"
+        },
+        {
+          "source": "散開",
+          "text": "散开"
+        },
+        {
+          "source": "呪文集中陣",
+          "text": "魔法集中阵"
+        },
+        {
+          "source": "立体殺法",
+          "text": "立体杀法"
+        },
+        {
+          "source": "フレイクサイレンス",
+          "text": "碎雪静默"
+        },
+        {
+          "source": "Wラッシュ",
+          "text": "双重突袭"
+        },
+        {
+          "source": "マジックキャンセル",
+          "text": "魔法取消"
+        }
+      ]
+    },
+    {
+      "name": "ali_01",
+      "renderer": "ali_buttons",
+      "palette": 1,
+      "font": {
+        "file": "NotoSansSC-VF.ttf",
+        "variation": "Medium",
+        "size": 20
+      },
+      "labels": [
+        {
+          "source": "マジックキャンセル",
+          "text": "魔法取消"
+        },
+        {
+          "source": "スタンスマッシュ",
+          "text": "眩晕重击"
+        },
+        {
+          "source": "フェイクアタック",
+          "text": "佯攻"
+        },
+        {
+          "source": "ホールドアタック",
+          "text": "束缚攻击"
+        },
+        {
+          "source": "ジグザグフィンガーアタック",
+          "text": "曲折指击"
+        },
+        {
+          "source": "ワープアタック",
+          "text": "瞬移攻击"
+        },
+        {
+          "source": "バックアタック",
+          "text": "背后攻击"
+        },
+        {
+          "source": "セイクリッドクロス",
+          "text": "神圣十字"
+        },
+        {
+          "source": "スレイクラッシュ",
+          "text": "斩杀冲击"
+        },
+        {
+          "source": "マジックソード",
+          "text": "魔法剑"
+        },
+        {
+          "source": "ゲイルスラッシュ",
+          "text": "疾风斩"
+        },
+        {
+          "source": "アレイドアクション",
+          "text": "连携行动"
+        },
+        {
+          "source": "",
+          "text": ""
+        },
+        {
+          "source": "",
+          "text": ""
+        },
+        {
+          "source": "",
+          "text": ""
+        },
+        {
+          "source": "",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "ali_02",
+      "renderer": "ali_buttons",
+      "palette": 1,
+      "font": {
+        "file": "NotoSansSC-VF.ttf",
+        "variation": "Medium",
+        "size": 20
+      },
+      "labels": [
+        {
+          "source": "死神の刃",
+          "text": "死神之刃"
+        },
+        {
+          "source": "魂砕き",
+          "text": "碎魂"
+        },
+        {
+          "source": "邪魂治癒",
+          "text": "邪魂治愈"
+        },
+        {
+          "source": "封じの声",
+          "text": "封印之声"
+        },
+        {
+          "source": "詐欺の逃走",
+          "text": "欺诈逃脱"
+        },
+        {
+          "source": "各自行動",
+          "text": "各自行动"
+        },
+        {
+          "source": "",
+          "text": ""
+        },
+        {
+          "source": "",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "ali_03",
+      "renderer": "ali_buttons",
+      "palette": 1,
+      "font": {
+        "file": "NotoSansSC-VF.ttf",
+        "variation": "Medium",
+        "size": 20
+      },
+      "labels": [
+        {
+          "source": "防御系アレイド",
+          "text": "防御系连携"
+        },
+        {
+          "source": "攻撃系アレイド",
+          "text": "攻击系连携"
+        },
+        {
+          "source": "魔法系アレイド",
+          "text": "魔法系连携"
+        },
+        {
+          "source": "援護系アレイド",
+          "text": "援护系连携"
+        },
+        {
+          "source": "攻撃",
+          "text": "攻击"
+        },
+        {
+          "source": "魔法",
+          "text": "魔法"
+        },
+        {
+          "source": "アイテム",
+          "text": "道具"
+        },
+        {
+          "source": "ディスペル",
+          "text": "驱散"
+        },
+        {
+          "source": "逃げる",
+          "text": "逃跑"
+        },
+        {
+          "source": "位置交代",
+          "text": "换位"
+        },
+        {
+          "source": "身を守る",
+          "text": "防御"
+        },
+        {
+          "source": "各自行動",
+          "text": "各自行动"
         }
       ]
     }

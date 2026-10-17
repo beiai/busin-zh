@@ -12,10 +12,10 @@ OUTLINE_INDEX = 9
 TEXT_INDICES = (CORE_INDEX, OUTLINE_INDEX)
 MAX_EDGE_CROP = 2
 MIN_TRACKING = -8
-GENERATED_KEYS = {"name", "renderer", "font", "labels"}
+GENERATED_KEYS = {"name", "renderer", "palette", "font", "labels"}
 FONT_KEYS = {"file", "variation", "size"}
 LABEL_KEYS = {"source", "text"}
-RENDERERS = {"bar_buttons"}
+RENDERERS = {"bar_buttons", "ali_buttons"}
 
 
 @dataclass(frozen=True)
@@ -35,6 +35,7 @@ class Label:
 class TextImageSpec:
     name: str
     renderer: str
+    palette: int
     font: FontSpec
     labels: tuple[Label, ...]
 
@@ -47,11 +48,14 @@ def _name(value, label: str) -> str:
 
 def parse_generated(data: dict) -> TextImageSpec:
     if not isinstance(data, dict) or set(data) != GENERATED_KEYS:
-        raise ValueError("generated image needs name, renderer, font, and labels")
+        raise ValueError("generated image needs name, renderer, palette, font, and labels")
     name = _name(data["name"], "generated")
     renderer = data["renderer"]
     if renderer not in RENDERERS:
         raise ValueError(f"{name} renderer is {renderer!r}")
+    palette = data["palette"]
+    if type(palette) is not int or not 0 <= palette <= 15:
+        raise ValueError(f"{name} palette must be an integer from 0 to 15")
     raw_font = data["font"]
     if not isinstance(raw_font, dict) or set(raw_font) != FONT_KEYS:
         raise ValueError(f"{name} font")
@@ -75,7 +79,7 @@ def parse_generated(data: dict) -> TextImageSpec:
         if not isinstance(source, str) or not isinstance(text, str) or "\n" in text:
             raise ValueError(f"{name} label {index}")
         labels.append(Label(source, text))
-    return TextImageSpec(name, renderer, font, tuple(labels))
+    return TextImageSpec(name, renderer, palette, font, tuple(labels))
 
 
 def load_font(spec: FontSpec):
@@ -279,19 +283,3 @@ def replace_psmt4_pixels(
     if out[:pixel_offset] != blob[:pixel_offset]:
         raise ValueError(f"{label} header changed")
     return bytes(out)
-
-
-def generated_spans(item: dict, read, row) -> list[tuple[int, bytes]]:
-    spec = parse_generated(item)
-    if spec.renderer == "bar_buttons":
-        from busin.bar import load_spec, spans
-        return spans(read, row, load_spec(item))
-    raise ValueError(f"unknown generated renderer {spec.renderer!r}")
-
-
-def preview_generated(item: dict, read, row, output: Path) -> Path:
-    spec = parse_generated(item)
-    if spec.renderer == "bar_buttons":
-        from busin.bar import load_spec, preview
-        return preview(read, row, load_spec(item), output)
-    raise ValueError(f"unknown generated renderer {spec.renderer!r}")

@@ -7,8 +7,13 @@ from pathlib import Path
 from busin import text as decode_msg
 from busin.disc import BIN, ELF_LBA, FILE_BASE, children, chunk_row, entry, read_pack, read_user
 from busin.paths import DATA, BUILD
-from busin.text_image import generated_spans as render_generated, parse_generated
-from busin.tmx import PSMCT16, PSMT4, TMX_TAG, read_tmx, repack, save_png
+from busin.picture_text import (
+    export_generated_picture as export_generated_pair, parse_generated,
+    repack_generated_picture,
+)
+from busin.tmx import (
+    PSMCT16, PSMT4, TMX_TAG, read_tmx, read_tmx_bytes, repack_bytes, save_png,
+)
 
 try:
     from PIL import Image
@@ -156,6 +161,10 @@ def picture_dir(base: Path, item: dict) -> Path:
     return base / folder
 
 
+def generated_dir(root: Path) -> Path:
+    return root / "generated"
+
+
 def png_name(item: dict) -> str:
     return f"{item['name']}.pal{item['palette']:02d}.png"
 
@@ -242,19 +251,6 @@ def collect(read, manifest: dict, row) -> list[tuple[dict, bytes]]:
     return found
 
 
-def repack_bytes(template: bytes, png_path: Path, palette: int) -> bytes:
-    with tempfile.TemporaryDirectory() as tmp:
-        folder = Path(tmp)
-        source = folder / "template.tmx"
-        output = folder / "repacked.tmx"
-        source.write_bytes(template)
-        repack(source, png_path, output, palette)
-        data = output.read_bytes()
-    if len(data) != len(template):
-        raise ValueError(f"{png_path.name} repacked to {len(data)} bytes, template is {len(template)}")
-    return data
-
-
 def file_reader(path: Path, limit: int):
     def read(offset: int, size: int) -> bytes:
         if offset < 0 or size < 0 or offset + size > limit:
@@ -318,7 +314,7 @@ def replacement_spans(read, root: Path, row) -> list[tuple[int, bytes]]:
 
 
 def preview_generated(name: str | None = None, output: Path | None = None) -> list[Path]:
-    from busin.text_image import preview_generated as render_preview
+    from busin.picture_text.workflow import preview_generated as render_preview
 
     manifest = load_images(DATA / "picture" / "images.json")
     items = manifest["generated"]
@@ -334,18 +330,22 @@ def preview_generated(name: str | None = None, output: Path | None = None) -> li
 
 
 def generated_spans(read, root: Path, row) -> list[tuple[int, bytes]]:
-    """Picture bytes generated from text in images.json."""
+    """Repack each generated .zh.png into every original TMX source."""
     path = root / "images.json"
     if not path.is_file():
         return []
     spans = []
     locations = []
     for item in load_images(path)["generated"]:
-        found = render_generated(item, read, row)
-        if not found:
-            raise ValueError(f"{item['name']} generated no picture bytes")
-        locations.extend((f"{item['name']} copy {copy}", offset, len(data))
-                         for copy, (offset, data) in enumerate(found))
+        name = item["name"]
+        zh_path = generated_dir(root) / zh_name(name)
+        if not zh_path.is_file():
+            raise ValueError(f"{name} translated picture is missing: {zh_path}")
+        found = repack_generated_picture(item, read, row, zh_path)
+        locations.extend(
+            (f"{name} copy {copy}", offset, len(data))
+            for copy, (offset, data) in enumerate(found)
+        )
         spans.extend(found)
     ranges_overlap(locations)
     return spans
@@ -427,6 +427,8 @@ def export_pictures(read, manifest: dict, root: Path, row) -> None:
             original = dest / f"{rect['name']}.png"
             save_crop(image, rect, original)
             keep_zh(original)
+    for item in manifest.get("generated", []):
+        export_generated_pair(item, read, row, generated_dir(root))
 
 
 def export_manifest(path: Path | None = None) -> None:
@@ -557,9 +559,25 @@ def self_test() -> None:
     assert {item["dir"] for item in listed["part"]} == {"town"}
     assert [item["name"] for item in listed["part"]] == ["Tw_map02", "Tw_map01"]
     assert {rect["palette"] for item in listed["part"] for rect in item["rects"]} == {1}
-    assert [item["name"] for item in listed["generated"]] == ["bar_00"]
+    assert [item["name"] for item in listed["generated"]] == [
+        "bar_00", "ali_00", "ali_01", "ali_02", "ali_03",
+    ]
     assert all(PICTURE_KEYS <= set(item) for item in [*listed["whole"], *listed["part"]])
     assert scene_output(DATA / "picture" / "images.json") / "title" == BUILD / "picture" / "title"
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        missing_doc = dict(listed)
+        missing_doc["generated"] = [listed["generated"][0]]
+        (root / "images.json").write_text(json.dumps(missing_doc), encoding="utf-8")
+        try:
+            generated_spans(
+                lambda _offset, _size: (_ for _ in ()).throw(AssertionError("source was read")),
+                root, lambda _chunk: (_ for _ in ()).throw(AssertionError("chunk was read")),
+            )
+        except ValueError as error:
+            assert "bar_00" in str(error) and "bar_00.zh.png" in str(error)
+        else:
+            raise AssertionError("missing generated translated picture was accepted")
     if BIN.exists():
         with BIN.open("rb") as src:
             disc_row = lambda chunk: chunk_row(src, chunk)
@@ -630,10 +648,3 @@ def load_stem_clash() -> None:
             "generated": [],
         }), encoding="utf-8")
         load_images(path)
-
-
-def read_tmx_bytes(data: bytes):
-    with tempfile.TemporaryDirectory() as tmp:
-        path = Path(tmp) / "slice.tmx"
-        path.write_bytes(data)
-        return read_tmx(path)

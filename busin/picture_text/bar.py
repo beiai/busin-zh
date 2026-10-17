@@ -1,5 +1,7 @@
 """Render and patch the Chinese labels in the bar_00 menu texture."""
+import json
 import struct
+import tempfile
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -7,7 +9,7 @@ from PIL import Image
 
 from busin.disc import chunk_row, read_pack
 from busin.paths import BUILD, DATA
-from busin.text_image import (
+from busin.picture_text.render import (
     CORE_INDEX, FontSpec, Label, MAX_EDGE_CROP, OUTLINE_INDEX, TEXT_INDICES,
     load_font, outline_indices, render_line as render_text_line,
     replace_psmt4_pixels,
@@ -61,7 +63,7 @@ class Spec:
 
 
 def load_spec(data: dict) -> Spec:
-    from busin.text_image import parse_generated
+    from busin.picture_text.render import parse_generated
 
     parsed = parse_generated(data)
     if parsed.name != "bar_00" or parsed.renderer != "bar_buttons":
@@ -213,10 +215,22 @@ def _source_blob(read, row) -> bytes:
     return blobs[0]
 
 
+def source_spans(read, row) -> list[tuple[int, bytes]]:
+    source = _source_blob(read, row)
+    return [(offset, source) for offset in _source_offsets(row)]
+
+
 def spans(read, row, spec: Spec | None = None) -> list[tuple[int, bytes]]:
     spec = spec or load_manifest_spec()
     patched = patch_blob(_source_blob(read, row), spec)
     return [(offset, patched) for offset in _source_offsets(row)]
+
+
+def validate_repacked(source: bytes, packed: bytes) -> None:
+    if len(packed) != len(source):
+        raise ValueError("bar_00 repacked size changed")
+    if packed[:PIXEL_OFFSET] != source[:PIXEL_OFFSET]:
+        raise ValueError("bar_00 TMX header or palettes changed")
 
 
 def _render_png(blob: bytes, palette_index: int, output: Path) -> None:
@@ -294,6 +308,46 @@ def self_test() -> None:
             for x in range(CELL_WIDTH)
         ]
         assert any(value in TEXT_INDICES for value in values) == (index != 15)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        from busin.picture_text.workflow import export_generated_picture
+        from busin.ui import generated_spans, load_images
+
+        root = Path(tmp)
+        document = load_images(IMAGES)
+        item = next(entry for entry in document["generated"] if entry["name"] == "bar_00")
+        document["generated"] = [item]
+        (root / "images.json").write_text(json.dumps(document), encoding="utf-8")
+
+        def reader(payload):
+            def read(_offset, size):
+                if size != SIZE:
+                    raise ValueError(size)
+                return payload
+            return read
+
+        def row(chunk):
+            return chunk * 1000, 200
+
+        export_generated_picture(item, reader(blob), row, root / "generated")
+        original = root / "generated" / "bar_00.png"
+        translated = root / "generated" / "bar_00.zh.png"
+        initial_original = original.read_bytes()
+        initial_translated = translated.read_bytes()
+        assert initial_original and initial_translated and initial_original != initial_translated
+
+        changed = bytearray(blob)
+        changed[-1] ^= 1
+        translated.write_bytes(b"manual edit")
+        export_generated_picture(item, reader(bytes(changed)), row, root / "generated")
+        assert original.read_bytes() != initial_original
+        assert translated.read_bytes() == b"manual edit"
+
+        translated.write_bytes(initial_translated)
+        packed = generated_spans(reader(blob), root, row)
+        rendered = spans(reader(blob), row, spec)
+        assert packed == rendered
+        assert len({data for _offset, data in packed}) == 1
 
 
 def disc_self_test() -> None:

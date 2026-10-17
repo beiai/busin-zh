@@ -165,13 +165,25 @@ def test_ui_strings():
 
 
 def test_bar():
-    from busin.bar import self_test
+    from busin.picture_text.bar import self_test
     self_test()
 
 
 @pytest.mark.skipif(not BIN.exists(), reason="没有原盘")
 def test_bar_disc():
-    from busin.bar import disc_self_test
+    from busin.picture_text.bar import disc_self_test
+    disc_self_test()
+
+
+
+def test_ali():
+    from busin.picture_text.ali import self_test
+    self_test()
+
+
+@pytest.mark.skipif(not BIN.exists(), reason="没有原盘")
+def test_ali_disc():
+    from busin.picture_text.ali import disc_self_test
     disc_self_test()
 
 

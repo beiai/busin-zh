@@ -151,6 +151,13 @@ def read_tmx(path: Path) -> TmxImage:
     return TmxImage(path, user_id, comment, width, height, pixel_format, palette_format, palettes, pixels)
 
 
+def read_tmx_bytes(data: bytes) -> TmxImage:
+    with tempfile.TemporaryDirectory() as tmp:
+        path = Path(tmp) / "slice.tmx"
+        path.write_bytes(data)
+        return read_tmx(path)
+
+
 def save_png(image: TmxImage, palette_index: int, output: Path) -> None:
     if Image is None:
         raise RuntimeError("Pillow is required to export PNG files")
@@ -342,6 +349,19 @@ def repack(template_path: Path, png_path: Path, output_path: Path, palette_index
         f"palette={palette_index}, max_rgb_error={max_error}"
     )
     return max_error
+
+
+def repack_bytes(template: bytes, png_path: Path, palette_index: int) -> bytes:
+    with tempfile.TemporaryDirectory() as tmp:
+        folder = Path(tmp)
+        source = folder / "template.tmx"
+        output = folder / "repacked.tmx"
+        source.write_bytes(template)
+        repack(source, png_path, output, palette_index)
+        data = output.read_bytes()
+    if len(data) != len(template):
+        raise ValueError(f"{png_path.name} repacked to {len(data)} bytes, template is {len(template)}")
+    return data
 
 
 def repack_self_test() -> None:
