@@ -36,6 +36,7 @@ PARSE = 0x3FD8D0
 ALLOC = 0x101740
 READ = 0x403C78
 STATUS = 0x105CB0
+ADVANCE = 0x105E30
 FREE = 0x407A30
 LINK = 0x3F5B08
 RESUME = 0x1087A4
@@ -48,6 +49,7 @@ PAGES = HELPER + 12 * 4
 BUFFER = PAGES + PAGE_COUNT * 4
 OLD = 0x43DC30
 GP_BASE = 0x5A9AF0
+PARSE_STATE = -0x69E8
 CHUNK0 = -0x69E4
 CHUNK1 = -0x69B8
 READ_STATE = -0x4B94
@@ -138,18 +140,24 @@ def _loader():
     a.beq(V0, ZR, "leave")
     a.lui(A3, 0x5E)
     a.sw(V0, BUFFER - PAGES, S1)
-    a.sb(ZR, READ_STATE, GP)
     a.ori(A3, A3, 0xC578)
+    # Match the original read wrapper's request header: type 0, mode 0,
+    # timeout 128. The low-level queue call does not initialize these fields.
+    a.lui(T1, 0x80)
+    a.sw(T1, 0x10, A3)
     a.lui(A0, UI_LBA >> 16)
     a.addiu(A0, A0, 0x6B53)
     a.addiu(A1, ZR, UI_SECTORS)
     a.jal(READ)
     a.r(A2, V0, ZR, 0x2D)
     a.beq(ZR, ZR, "leave")
-    a.nop()
+    a.sb(ZR, READ_STATE, GP)
     a.label("wait")
-    a.jal(STATUS)
+    # The request queue can finish without this service tick having run yet.
+    # Drive the same 0 -> 1 -> 2 transition before reading the result.
+    a.jal(ADVANCE)
     a.addiu(S0, ZR, 0)
+    a.jal(STATUS)
     a.addiu(V1, ZR, 2)
     a.bne(V0, V1, "leave")
     a.ori(T1, ZR, PAGE_BYTES)
@@ -166,11 +174,11 @@ def _loader():
     a.addiu(T2, ZR, PAGE_COUNT - 1)
     a.bne(S0, T2, "fill")
     a.addiu(S0, S0, 1)
-    # Keep the page buffer allocated while its parsed handles are in use.
-    a.nop()
-    a.nop()
-    a.nop()
-    a.nop()
+    # The page buffer stays allocated while its parsed handles are in use.
+    # State 4 is the Chinese-page step in the shared UI startup sequence.
+    # Finish at 5 so the following resource-loading states can continue.
+    a.addiu(T0, ZR, 5)
+    a.sb(T0, PARSE_STATE, GP)
     a.label("leave")
     # 0x108810 reloads s0 only. ra still points at the last jal unless we reload it.
     a.ld(RA, 0x20, SP)
@@ -267,7 +275,7 @@ def self_test():
             dest = index + 1 + off
             if not 0 <= dest < len(code):
                 raise AssertionError(f"branch at {PARSER + index * 4:#x} leaves the hole")
-    want = {PARSE, LINK, RESUME, ALLOC, READ, STATUS, EPILOGUE}
+    want = {PARSE, LINK, RESUME, ALLOC, READ, STATUS, ADVANCE, EPILOGUE}
     if FREE != 0x407A30:
         raise AssertionError("page buffer free is not 0x407A30")
     if set(targets) != want or targets.count(PARSE) != 2:
@@ -277,6 +285,12 @@ def self_test():
     loader = code[32:]
     if 0x3C07005E not in loader or 0x34E7C578 not in loader or 0xDFBF0020 not in loader:
         raise AssertionError("loader dropped the request object or the return address")
+    if 0x3C090080 not in loader or 0xACE90010 not in loader:
+        raise AssertionError("loader dropped the read request header")
+    if loader.count(0x0C000000 | (ADVANCE >> 2)) != 1:
+        raise AssertionError("loader does not advance the read completion state")
+    if loader[-5:-3] != [0x24080005, 0xA3889618]:
+        raise AssertionError("loader does not mark the UI parser complete")
     if helper[-2] >> 26 != 0 or helper[-1] >> 26 != 35:
         raise AssertionError("helper does not return the loaded pointer")
     stride = loader.index(0x02094018)

@@ -7,8 +7,8 @@ from PIL import Image
 
 from busin.paths import BUILD, DATA
 from busin.picture_text.render import (
-    CORE_INDEX, FontSpec, OUTLINE_INDEX, TEXT_INDICES, load_font,
-    outline_indices, parse_generated, render_line, replace_psmt4_pixels,
+    CORE_INDEX, DEFAULT_TEXT_STYLE, FontSpec, OUTLINE_INDEX, TEXT_INDICES,
+    load_font, parse_generated, render_text_indices, replace_psmt4_pixels,
 )
 from busin.tmx import PSMCT16, PSMT4, decode_ct16, decode_psmt4, encode_psmt4
 
@@ -184,7 +184,7 @@ def _font(spec: Spec):
     return font
 
 
-def render_cells(spec: Spec, blank: tuple[int, ...]) -> tuple[tuple[int, ...], ...]:
+def render_cells(spec: Spec, blank: tuple[int, ...], text_style: str = DEFAULT_TEXT_STYLE) -> tuple[tuple[int, ...], ...]:
     if len(blank) != CELL_WIDTH * CELL_HEIGHT:
         raise ValueError(f"{spec.name} blank cell")
     font = _font(spec)
@@ -192,19 +192,20 @@ def render_cells(spec: Spec, blank: tuple[int, ...]) -> tuple[tuple[int, ...], .
     for index, part in enumerate(spec.parts):
         cell = list(blank)
         if part.text:
-            mask = render_line(
-                part.text, font, CELL_WIDTH, CELL_HEIGHT, f"{spec.name} part {index} {part.text}"
+            values = render_text_indices(
+                part.text, font, CELL_WIDTH, CELL_HEIGHT,
+                f"{spec.name} part {index} {part.text}", text_style,
             )
-            for position, value in enumerate(outline_indices(mask, CORE_INDEX, OUTLINE_INDEX)):
-                if value:
+            for position, value in enumerate(values):
+                if value is not None:
                     cell[position] = value
         cells.append(tuple(cell))
     return tuple(cells)
 
 
-def patch_blob(blob: bytes, spec: Spec, blank: tuple[int, ...]) -> bytes:
+def patch_blob(blob: bytes, spec: Spec, blank: tuple[int, ...], text_style: str = DEFAULT_TEXT_STYLE) -> bytes:
     pixels = _validate_blob(spec.name, blob)
-    cells = render_cells(spec, blank)
+    cells = render_cells(spec, blank, text_style)
     updated = list(pixels)
     for index, cell in enumerate(cells):
         x0 = (index % COLS) * CELL_WIDTH
@@ -233,10 +234,10 @@ def source_spans(read, name: str) -> list[tuple[int, bytes]]:
     return [(offset, _source_blob(read, name))]
 
 
-def spans(read, row, spec: Spec | None = None) -> list[tuple[int, bytes]]:
+def spans(read, row, spec: Spec | None = None, text_style: str = DEFAULT_TEXT_STYLE) -> list[tuple[int, bytes]]:
     del row
     spec = spec or load_manifest_spec("ali_00")
-    patched = patch_blob(_source_blob(read, spec.name), spec, _blank_cell(read))
+    patched = patch_blob(_source_blob(read, spec.name), spec, _blank_cell(read), text_style)
     return [(SOURCES[spec.name][0], patched)]
 
 
@@ -263,11 +264,11 @@ def _render_png(blob: bytes, palette_index: int, output: Path) -> None:
     image.save(output)
 
 
-def preview(read, row, spec: Spec | None = None, output: Path | None = None) -> Path:
+def preview(read, row, spec: Spec | None = None, output: Path | None = None, text_style: str = DEFAULT_TEXT_STYLE) -> Path:
     del row
     spec = spec or load_manifest_spec("ali_00")
     output = output or BUILD / "picture"
-    patched = patch_blob(_source_blob(read, spec.name), spec, _blank_cell(read))
+    patched = patch_blob(_source_blob(read, spec.name), spec, _blank_cell(read), text_style)
     output.mkdir(parents=True, exist_ok=True)
     for palette_index in PREVIEW_PALETTES:
         _render_png(patched, palette_index, output / f"{spec.name}.pal{palette_index:02d}.png")
@@ -287,13 +288,14 @@ def self_test() -> None:
     for name in SOURCES:
         spec = load_manifest_spec(name)
         assert spec.name == name and spec.variation == "Medium" and spec.size == 18
-        cells = render_cells(spec, blank)
-        assert len(cells) == BUTTON_ROWS[name] * COLS
-        for index, cell in enumerate(cells):
-            text = spec.parts[index].text
-            assert (CORE_INDEX in cell and OUTLINE_INDEX in cell) == bool(text)
-            if not text:
-                assert cell == blank
+        for text_style in ("stroke-aa", "outline-aa"):
+            cells = render_cells(spec, blank, text_style)
+            assert len(cells) == BUTTON_ROWS[name] * COLS
+            for index, cell in enumerate(cells):
+                text = spec.parts[index].text
+                assert (CORE_INDEX in cell and OUTLINE_INDEX in cell) == bool(text)
+                if not text:
+                    assert cell == blank
 
         source_pixels = [0] * (WIDTH * HEIGHTS[name])
         for index, part in enumerate(spec.parts):

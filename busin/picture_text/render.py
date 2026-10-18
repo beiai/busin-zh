@@ -2,14 +2,28 @@
 from dataclasses import dataclass
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 from busin.font import SOLID, font_path
 from busin.tmx import encode_psmt4
 
 CORE_INDEX = 8
 OUTLINE_INDEX = 9
-TEXT_INDICES = (CORE_INDEX, OUTLINE_INDEX)
+TEXT_INDICES = (2, 3, 4, 5, 6, 7, CORE_INDEX, OUTLINE_INDEX)
+TEXT_STYLES = ("stroke-aa", "outline-aa")
+DEFAULT_TEXT_STYLE = "stroke-aa"
+TEXT_AA_SCALE = 8
+TEXT_GRAY_RAMP = (CORE_INDEX, 7, 6, 5, 4, 3, 2, OUTLINE_INDEX)
+TEXT_PALETTE = (
+    (0x00, 0x00, 0x00, 0xFF), (0x70, 0x70, 0x70, 0xFF),
+    (0x60, 0x60, 0x60, 0xFF), (0x50, 0x50, 0x50, 0xFF),
+    (0x48, 0x48, 0x48, 0xFF), (0x38, 0x38, 0x38, 0xFF),
+    (0x30, 0x30, 0x30, 0xFF), (0x20, 0x20, 0x20, 0xFF),
+    (0x18, 0x18, 0x18, 0xFF), (0x90, 0x90, 0x90, 0xFF),
+    (0x70, 0x70, 0x70, 0xFF), (0x68, 0x68, 0x68, 0xFF),
+    (0x60, 0x60, 0x60, 0xFF), (0x58, 0x58, 0x58, 0xFF),
+    (0x50, 0x50, 0x50, 0xFF), (0x48, 0x48, 0x48, 0xFF),
+)
 MAX_EDGE_CROP = 2
 MIN_TRACKING = -8
 GENERATED_KEYS = {"name", "renderer", "palette", "font", "labels"}
@@ -257,6 +271,154 @@ def outline_indices(
             else:
                 result.append(0)
     return result
+
+
+def validate_text_style(style: str) -> str:
+    if style not in TEXT_STYLES:
+        raise ValueError(f"text style must be one of {', '.join(TEXT_STYLES)}")
+    return style
+
+
+def _scaled_font(font, size: int):
+    scaled = ImageFont.truetype(str(font.path), size)
+    variation = font.getname()[1]
+    scaled.set_variation_by_name(variation)
+    if scaled.getname()[1] != variation:
+        raise ValueError(f"{font.path} is {scaled.getname()}")
+    return scaled
+
+
+def _nearest_text_index(rgb: tuple[int, int, int], palette) -> int:
+    return min(
+        TEXT_GRAY_RAMP,
+        key=lambda index: sum(
+            (value - palette[index][channel]) ** 2
+            for channel, value in enumerate(rgb)
+        ),
+    )
+
+
+def _quantize_text_coverage(
+    core: list[int],
+    outline: list[int],
+    palette,
+) -> list[int | None]:
+    background = palette[10][:3]
+    core_rgb = palette[CORE_INDEX][:3]
+    outline_rgb = palette[OUTLINE_INDEX][:3]
+    result: list[int | None] = []
+    for core_value, outline_value in zip(core, outline):
+        if not core_value and not outline_value:
+            result.append(None)
+            continue
+        outline_alpha = outline_value / 255
+        core_alpha = core_value / 255
+        edge_rgb = tuple(
+            round(background[channel] + (outline_rgb[channel] - background[channel]) * outline_alpha)
+            for channel in range(3)
+        )
+        rgb = tuple(
+            round(edge_rgb[channel] + (core_rgb[channel] - edge_rgb[channel]) * core_alpha)
+            for channel in range(3)
+        )
+        result.append(_nearest_text_index(rgb, palette))
+    return result
+
+
+def _stroke_layer(text: str, font, width: int, height: int, stroke_width: int) -> Image.Image:
+    scale = TEXT_AA_SCALE
+    canvas = Image.new("L", (width * scale, height * scale), 0)
+    draw = ImageDraw.Draw(canvas)
+    box = draw.textbbox((0, 0), text, font=font, stroke_width=stroke_width)
+    x = (canvas.width - (box[2] - box[0])) / 2 - box[0]
+    y = (canvas.height - (box[3] - box[1])) / 2 - box[1]
+    draw.text(
+        (x, y),
+        text,
+        font=font,
+        fill=255,
+        stroke_width=stroke_width,
+        stroke_fill=255,
+    )
+    return canvas.resize((width, height), Image.Resampling.BOX)
+
+
+def render_text_alpha_left(
+    text: str,
+    font,
+    cell_width: int,
+    cell_height: int,
+    label: str | None = None,
+    tracking: int = 0,
+) -> list[int]:
+    """Render a left-aligned grayscale alpha mask with fixed-pixel glyph positions."""
+    label = label or repr(text)
+    missing = missing_glyphs(font, text)
+    if missing:
+        raise ValueError(f"{label} missing glyphs: {' '.join(missing)}")
+    scale = TEXT_AA_SCALE
+    scaled_font = _scaled_font(font, font.size * scale)
+    canvas = Image.new("L", (cell_width * scale, cell_height * scale), 0)
+    draw = ImageDraw.Draw(canvas)
+    for index, char in enumerate(text):
+        x = round((font.getlength(text[:index]) + index * tracking) * scale)
+        draw.text((x, 0), char, font=scaled_font, fill=255, anchor="lt")
+    ink = canvas.getbbox()
+    if ink is None:
+        raise ValueError(f"{label} is empty")
+    ink_width = ink[2] - ink[0]
+    ink_height = ink[3] - ink[1]
+    if ink_width > cell_width * scale:
+        raise ValueError(
+            f"{label} is {ink_width / scale:.1f}px wide; limit {cell_width}px"
+        )
+    if ink_height > cell_height * scale + 2 * scale:
+        raise ValueError(
+            f"{label} is {ink_height / scale:.1f}px tall; limit {cell_height}px"
+        )
+    seated = Image.new("L", canvas.size, 0)
+    seated.paste(
+        canvas.crop(ink),
+        (0, round((cell_height * scale - ink_height) / 2)),
+    )
+    return [
+        int(round(value * 15 / 255))
+        for value in seated.resize((cell_width, cell_height), Image.Resampling.BOX).get_flattened_data()
+    ]
+
+
+def render_text_indices(
+    text: str,
+    font,
+    cell_width: int,
+    cell_height: int,
+    label: str | None = None,
+    style: str = DEFAULT_TEXT_STYLE,
+    palette=TEXT_PALETTE,
+) -> list[int | None]:
+    """Render one fixed-pixel line with the selected offline anti-aliasing style."""
+    style = validate_text_style(style)
+    render_line(text, font, cell_width, cell_height, label)
+    scaled_font = _scaled_font(font, font.size * TEXT_AA_SCALE)
+    if style == "outline-aa":
+        mask = render_line(
+            text,
+            scaled_font,
+            cell_width * TEXT_AA_SCALE,
+            cell_height * TEXT_AA_SCALE,
+            label,
+        )
+        outer = mask.filter(ImageFilter.MaxFilter(2 * TEXT_AA_SCALE + 1))
+        core = list(mask.resize((cell_width, cell_height), Image.Resampling.BOX).get_flattened_data())
+        outline = list(outer.resize((cell_width, cell_height), Image.Resampling.BOX).get_flattened_data())
+    else:
+        outline = list(
+            _stroke_layer(text, scaled_font, cell_width, cell_height, TEXT_AA_SCALE).get_flattened_data()
+        )
+        core = list(
+            _stroke_layer(text, scaled_font, cell_width, cell_height, 0).get_flattened_data()
+        )
+    return _quantize_text_coverage(core, outline, palette)
 
 
 def replace_psmt4_pixels(

@@ -186,7 +186,9 @@
           "y": 152,
           "width": 32,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "決定",
+          "text": "确定"
         },
         {
           "name": "back",
@@ -194,7 +196,9 @@
           "y": 152,
           "width": 32,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "戻る",
+          "text": "返回"
         },
         {
           "name": "event_item",
@@ -202,7 +206,9 @@
           "y": 152,
           "width": 64,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "Event Item",
+          "text": "事件道具"
         },
         {
           "name": "item_data",
@@ -210,7 +216,9 @@
           "y": 168,
           "width": 64,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "Item Data",
+          "text": "道具数据"
         },
         {
           "name": "magic_list",
@@ -218,7 +226,9 @@
           "y": 184,
           "width": 64,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "魔法一覧",
+          "text": "魔法列表"
         },
         {
           "name": "page_switch",
@@ -234,7 +244,9 @@
           "y": 168,
           "width": 32,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "武器",
+          "text": "武器"
         },
         {
           "name": "armor",
@@ -242,7 +254,9 @@
           "y": 168,
           "width": 32,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "防具",
+          "text": "防具"
         },
         {
           "name": "accessory",
@@ -250,7 +264,9 @@
           "y": 168,
           "width": 48,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "装飾品",
+          "text": "饰品"
         },
         {
           "name": "status",
@@ -258,7 +274,9 @@
           "y": 168,
           "width": 56,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "ステータス",
+          "text": "状态"
         },
         {
           "name": "magic_stone_info",
@@ -266,7 +284,9 @@
           "y": 184,
           "width": 64,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "魔法石情報",
+          "text": "魔法石信息"
         },
         {
           "name": "switch",
@@ -282,7 +302,9 @@
           "y": 224,
           "width": 32,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "移動",
+          "text": "移动"
         }
       ]
     },

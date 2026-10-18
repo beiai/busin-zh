@@ -10,8 +10,8 @@ from PIL import Image
 from busin.disc import chunk_row, read_pack
 from busin.paths import BUILD, DATA
 from busin.picture_text.render import (
-    CORE_INDEX, FontSpec, Label, MAX_EDGE_CROP, OUTLINE_INDEX, TEXT_INDICES,
-    load_font, outline_indices, render_line as render_text_line,
+    CORE_INDEX, DEFAULT_TEXT_STYLE, FontSpec, Label, MAX_EDGE_CROP, OUTLINE_INDEX,
+    TEXT_INDICES, load_font, render_line as render_text_line, render_text_indices,
     replace_psmt4_pixels,
 )
 from busin.tmx import PSMCT16, PSMT4, decode_ct16, decode_psmt4, encode_psmt4
@@ -108,7 +108,7 @@ def render_line(text: str, spec: Spec, label: str | None = None) -> Image.Image:
     return render_text_line(text, _font(spec), CELL_WIDTH, CELL_HEIGHT, label)
 
 
-def render_cells(spec: Spec, blank: tuple[int, ...]) -> tuple[tuple[int, ...], ...]:
+def render_cells(spec: Spec, blank: tuple[int, ...], text_style: str = DEFAULT_TEXT_STYLE) -> tuple[tuple[int, ...], ...]:
     if len(blank) != CELL_WIDTH * CELL_HEIGHT:
         raise ValueError("bar_00 blank cell")
     font = _font(spec)
@@ -116,11 +116,12 @@ def render_cells(spec: Spec, blank: tuple[int, ...]) -> tuple[tuple[int, ...], .
     for index, part in enumerate(spec.parts):
         cell = list(blank)
         if part.text:
-            mask = render_text_line(
-                part.text, font, CELL_WIDTH, CELL_HEIGHT, f"part {index} {part.text}"
+            values = render_text_indices(
+                part.text, font, CELL_WIDTH, CELL_HEIGHT,
+                f"part {index} {part.text}", text_style,
             )
-            for position, value in enumerate(outline_indices(mask, CORE_INDEX, OUTLINE_INDEX)):
-                if value:
+            for position, value in enumerate(values):
+                if value is not None:
                     cell[position] = value
         cells.append(tuple(cell))
     return tuple(cells)
@@ -180,11 +181,11 @@ def _validate_blob(blob: bytes) -> tuple[int, ...]:
     return pixels
 
 
-def patch_blob(blob: bytes, spec: Spec | None = None) -> bytes:
+def patch_blob(blob: bytes, spec: Spec | None = None, text_style: str = DEFAULT_TEXT_STYLE) -> bytes:
     spec = spec or load_manifest_spec()
     pixels = _validate_blob(blob)
     blank = _blank_cell(pixels)
-    cells = render_cells(spec, blank)
+    cells = render_cells(spec, blank, text_style)
     updated = list(pixels)
     for index, cell in enumerate(cells):
         x0 = (index % COLS) * CELL_WIDTH
@@ -225,9 +226,9 @@ def source_spans(read, row) -> list[tuple[int, bytes]]:
     return [(offset, source) for offset in _source_offsets(row)]
 
 
-def spans(read, row, spec: Spec | None = None) -> list[tuple[int, bytes]]:
+def spans(read, row, spec: Spec | None = None, text_style: str = DEFAULT_TEXT_STYLE) -> list[tuple[int, bytes]]:
     spec = spec or load_manifest_spec()
-    patched = patch_blob(_source_blob(read, row), spec)
+    patched = patch_blob(_source_blob(read, row), spec, text_style)
     return [(offset, patched) for offset in _source_offsets(row)]
 
 
@@ -249,10 +250,10 @@ def _render_png(blob: bytes, palette_index: int, output: Path) -> None:
     image.save(output)
 
 
-def preview(read, row, spec: Spec | None = None, output: Path | None = None) -> Path:
+def preview(read, row, spec: Spec | None = None, output: Path | None = None, text_style: str = DEFAULT_TEXT_STYLE) -> Path:
     spec = spec or load_manifest_spec()
     output = output or BUILD / "picture"
-    patched = patch_blob(_source_blob(read, row), spec)
+    patched = patch_blob(_source_blob(read, row), spec, text_style)
     output.mkdir(parents=True, exist_ok=True)
     for palette_index in PREVIEW_PALETTES:
         _render_png(patched, palette_index, output / f"bar_00.pal{palette_index:02d}.png")
@@ -269,13 +270,14 @@ def self_test() -> None:
     assert len(spec.parts) == 16 and spec.parts[-1] == Part("", "")
 
     blank = tuple(10 + ((x + y) % 6) for y in range(CELL_HEIGHT) for x in range(CELL_WIDTH))
-    cells = render_cells(spec, blank)
-    assert len(cells) == 16
-    assert all(len(cell) == CELL_WIDTH * CELL_HEIGHT for cell in cells)
-    assert cells[-1] == blank
-    for cell in cells[:-1]:
-        assert CORE_INDEX in cell and OUTLINE_INDEX in cell
-        assert set(cell) - set(blank) <= set(TEXT_INDICES)
+    for text_style in ("stroke-aa", "outline-aa"):
+        cells = render_cells(spec, blank, text_style)
+        assert len(cells) == 16
+        assert all(len(cell) == CELL_WIDTH * CELL_HEIGHT for cell in cells)
+        assert cells[-1] == blank
+        for cell in cells[:-1]:
+            assert CORE_INDEX in cell and OUTLINE_INDEX in cell
+            assert set(cell) - set(blank) <= set(TEXT_INDICES)
 
     raw_palette = list(range(16))
     raw_palette[CORE_INDEX] = 0x0C63

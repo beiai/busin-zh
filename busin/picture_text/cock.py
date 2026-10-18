@@ -4,7 +4,10 @@ from pathlib import Path
 from PIL import Image
 
 from busin.paths import DATA
-from busin.picture_text.render import FontSpec, load_font, outline_indices, render_line
+from busin.picture_text.render import (
+    DEFAULT_TEXT_STYLE, FontSpec, TEXT_INDICES, load_font, render_line,
+    render_text_indices,
+)
 from busin.tmx import TmxImage
 
 FONT = FontSpec("NotoSansSC-VF.ttf", "Medium", 18)
@@ -45,7 +48,7 @@ def load_background() -> tuple[int, ...]:
         raise ValueError(f"{BACKGROUND.name} pixel count")
     if any(type(value) is not int or not 0 <= value <= 15 for value in pixels):
         raise ValueError(f"{BACKGROUND.name} pixel index")
-    if any(value in (CORE_INDEX, OUTLINE_INDEX) for value in pixels):
+    if any(value in TEXT_INDICES for value in pixels):
         raise ValueError(f"{BACKGROUND.name} contains text")
     return pixels
 
@@ -54,6 +57,7 @@ def render_initial(
     image: TmxImage,
     rect: dict,
     output: Path,
+    text_style: str = DEFAULT_TEXT_STYLE,
 ) -> None:
     """Draw one translated label directly onto the clean generated banner."""
     name = rect["name"]
@@ -73,10 +77,12 @@ def render_initial(
         raise ValueError(f"{name} palette {PALETTE} colors changed")
 
     font = load_font(FONT)
-    mask = render_line(text, font, width, height, name)
+    values = render_text_indices(
+        text, font, width, height, name, text_style, PALETTE_COLORS
+    )
     pixels = list(blank)
-    for index, value in enumerate(outline_indices(mask, CORE_INDEX, OUTLINE_INDEX)):
-        if value:
+    for index, value in enumerate(values):
+        if value is not None:
             pixels[index] = value
 
     bitmap = Image.new("RGBA", (width, height))
@@ -94,7 +100,9 @@ def self_test() -> None:
     assert not any(value in (CORE_INDEX, OUTLINE_INDEX) for value in blank)
     for name, (source, text) in TEXTS.items():
         assert source and text
-        mask = render_line(text, font, BASE_WIDTH, BASE_HEIGHT, name)
-        values = outline_indices(mask, CORE_INDEX, OUTLINE_INDEX)
-        assert set(values) <= {0, CORE_INDEX, OUTLINE_INDEX}
-        assert CORE_INDEX in values and OUTLINE_INDEX in values
+        for text_style in ("stroke-aa", "outline-aa"):
+            values = render_text_indices(
+                text, font, BASE_WIDTH, BASE_HEIGHT, name, text_style, PALETTE_COLORS
+            )
+            assert CORE_INDEX in values and OUTLINE_INDEX in values
+            assert set(value for value in values if value is not None) <= set(TEXT_INDICES)

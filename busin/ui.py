@@ -8,8 +8,8 @@ from busin import text as decode_msg
 from busin.disc import BIN, ELF_LBA, FILE_BASE, children, chunk_row, entry, read_pack, read_user
 from busin.paths import DATA, BUILD
 from busin.picture_text import (
-    export_generated_picture as export_generated_pair, parse_generated,
-    repack_generated_picture,
+    DEFAULT_TEXT_STYLE, export_generated_picture as export_generated_pair,
+    parse_generated, repack_generated_picture,
 )
 from busin.tmx import (
     PSMCT16, PSMT4, TMX_TAG, read_tmx, read_tmx_bytes, repack_bytes, save_png,
@@ -318,7 +318,7 @@ def replacement_spans(read, root: Path, row) -> list[tuple[int, bytes]]:
     return spans
 
 
-def preview_generated(name: str | None = None, output: Path | None = None) -> list[Path]:
+def preview_generated(name: str | None = None, output: Path | None = None, text_style: str = DEFAULT_TEXT_STYLE) -> list[Path]:
     from busin.picture_text.workflow import preview_generated as render_preview
 
     manifest = load_images(DATA / "picture" / "images.json")
@@ -331,7 +331,7 @@ def preview_generated(name: str | None = None, output: Path | None = None) -> li
     with BIN.open("rb") as source:
         read = lambda offset, size: read_pack(source, offset, size)
         row = lambda chunk: chunk_row(source, chunk)
-        return [render_preview(item, read, row, output) for item in items]
+        return [render_preview(item, read, row, output, text_style) for item in items]
 
 
 def generated_spans(read, root: Path, row) -> list[tuple[int, bytes]]:
@@ -409,7 +409,7 @@ def save_crop(image, rect: dict, output: Path) -> None:
     bitmap.save(output)
 
 
-def export_pictures(read, manifest: dict, root: Path, row) -> None:
+def export_pictures(read, manifest: dict, root: Path, row, text_style: str = DEFAULT_TEXT_STYLE, force_zh: bool = False) -> None:
     """Write comparison PNGs. The original is replaced; a .zh.png is added only when missing."""
     for item in manifest["whole"]:
         if "size" in item:
@@ -433,16 +433,21 @@ def export_pictures(read, manifest: dict, root: Path, row) -> None:
             save_crop(image, rect, original)
             translated = dest / zh_name(original.stem)
             if set(rect) == RECT_TEXT_KEYS:
-                if not translated.is_file() or translated.read_bytes() == original.read_bytes():
-                    from busin.picture_text.cock import render_initial
-                    render_initial(image, rect, translated)
+                if (force_zh or not translated.is_file()
+                        or translated.read_bytes() == original.read_bytes()):
+                    if rect["name"] in {"mage_magic", "priest_magic"}:
+                        from busin.picture_text.cock import render_initial
+                        render_initial(image, rect, translated, text_style)
+                    else:
+                        from busin.picture_text.menu_text import render_initial
+                        render_initial(image, rect, translated)
             else:
                 keep_zh(original)
     for item in manifest.get("generated", []):
-        export_generated_pair(item, read, row, generated_dir(root))
+        export_generated_pair(item, read, row, generated_dir(root), text_style, force_zh)
 
 
-def export_manifest(path: Path | None = None) -> None:
+def export_manifest(path: Path | None = None, text_style: str = DEFAULT_TEXT_STYLE, force_zh: bool = False) -> None:
     path = path or (DATA / "picture" / "images.json")
     manifest = load_images(path)
     with BIN.open("rb") as source:
@@ -452,6 +457,8 @@ def export_manifest(path: Path | None = None) -> None:
             manifest,
             path.parent,
             lambda chunk: chunk_row(source, chunk),
+            text_style,
+            force_zh,
         )
 
 

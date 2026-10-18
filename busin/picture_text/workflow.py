@@ -1,7 +1,7 @@
 """Coordinate generated picture rendering, export, and PNG repacking."""
 from pathlib import Path
 
-from busin.picture_text.render import parse_generated
+from busin.picture_text.render import DEFAULT_TEXT_STYLE, parse_generated
 from busin.tmx import read_tmx_bytes, repack_bytes, save_png
 
 
@@ -17,15 +17,15 @@ def source_spans(item: dict, read, row) -> list[tuple[int, bytes]]:
     raise ValueError(f"unknown generated renderer {spec.renderer!r}")
 
 
-def render_generated(item: dict, read, row) -> list[tuple[int, bytes]]:
+def render_generated(item: dict, read, row, text_style: str = DEFAULT_TEXT_STYLE) -> list[tuple[int, bytes]]:
     """Render translated TMX bytes from labels for initial export and previews."""
     spec = parse_generated(item)
     if spec.renderer == "bar_buttons":
         from busin.picture_text.bar import load_spec, spans
-        return spans(read, row, load_spec(item))
+        return spans(read, row, load_spec(item), text_style)
     if spec.renderer == "ali_buttons":
         from busin.picture_text.ali import load_spec, spans
-        return spans(read, row, load_spec(item))
+        return spans(read, row, load_spec(item), text_style)
     raise ValueError(f"unknown generated renderer {spec.renderer!r}")
 
 
@@ -43,18 +43,18 @@ def validate_repacked(item: dict, source: bytes, packed: bytes) -> None:
         raise ValueError(f"unknown generated renderer {spec.renderer!r}")
 
 
-def preview_generated(item: dict, read, row, output: Path) -> Path:
+def preview_generated(item: dict, read, row, output: Path, text_style: str = DEFAULT_TEXT_STYLE) -> Path:
     spec = parse_generated(item)
     if spec.renderer == "bar_buttons":
         from busin.picture_text.bar import load_spec, preview
-        return preview(read, row, load_spec(item), output)
+        return preview(read, row, load_spec(item), output, text_style)
     if spec.renderer == "ali_buttons":
         from busin.picture_text.ali import load_spec, preview
-        return preview(read, row, load_spec(item), output)
+        return preview(read, row, load_spec(item), output, text_style)
     raise ValueError(f"unknown generated renderer {spec.renderer!r}")
 
 
-def export_generated_picture(item: dict, read, row, output: Path) -> None:
+def export_generated_picture(item: dict, read, row, output: Path, text_style: str = DEFAULT_TEXT_STYLE, force: bool = False) -> None:
     """Export the original and initial translated PNG pair for one generated picture."""
     name = item["name"]
     output.mkdir(parents=True, exist_ok=True)
@@ -65,10 +65,10 @@ def export_generated_picture(item: dict, read, row, output: Path) -> None:
     original = output / f"{name}.png"
     save_png(read_tmx_bytes(source), item["palette"], original)
     translated = output / f"{name}.zh.png"
-    if translated.is_file():
+    if translated.is_file() and not force:
         return
 
-    rendered = render_generated(item, read, row)
+    rendered = render_generated(item, read, row, text_style)
     if not rendered:
         raise ValueError(f"{name} generated no translated picture bytes")
     if [offset for offset, _data in rendered] != [offset for offset, _data in sources]:

@@ -176,6 +176,11 @@ def test_cock_text():
     self_test()
 
 
+def test_menu_text():
+    from busin.picture_text.menu_text import self_test
+    self_test()
+
+
 def test_plaque():
     from busin.plaque import self_test
     self_test()

@@ -4,6 +4,7 @@ import sys
 from pathlib import Path
 
 from busin.paths import BUILD
+from busin.picture_text.render import DEFAULT_TEXT_STYLE, TEXT_STYLES
 
 
 def main(argv=None):
@@ -13,7 +14,17 @@ def main(argv=None):
     commands.add_parser("build", help="build the translated disc image")
     unpack = commands.add_parser("unpack", help="unpack whole images from an images json into build/")
     unpack.add_argument("manifest")
-    commands.add_parser("export-pictures", help="export data/picture originals; add .zh.png only when missing")
+    export_pictures = commands.add_parser(
+        "export-pictures", help="export data/picture originals; add .zh.png only when missing"
+    )
+    export_pictures.add_argument(
+        "--text-style", choices=TEXT_STYLES, default=DEFAULT_TEXT_STYLE,
+        help="offline text anti-aliasing style",
+    )
+    export_pictures.add_argument(
+        "--force-zh", action="store_true",
+        help="regenerate existing generated .zh.png files",
+    )
     export_textures = commands.add_parser(
         "export-textures", help="export every distinct PACKDATA texture and palette into build/textures"
     )
@@ -37,6 +48,10 @@ def main(argv=None):
     )
     picture_preview.add_argument("name", nargs="?", help="generated picture name")
     picture_preview.add_argument("--all", action="store_true", help="render every generated picture")
+    picture_preview.add_argument(
+        "--text-style", choices=TEXT_STYLES, default=DEFAULT_TEXT_STYLE,
+        help="offline text anti-aliasing style",
+    )
     disasm = commands.add_parser("disasm", help="disassemble an ELF address range")
     disasm.add_argument("start")
     disasm.add_argument("end")
@@ -56,7 +71,7 @@ def main(argv=None):
         return 0
     if args.command == "export-pictures":
         from busin.ui import export_manifest
-        export_manifest()
+        export_manifest(text_style=args.text_style, force_zh=args.force_zh)
         return 0
     if args.command == "export-textures":
         from busin.textures import export_textures
@@ -96,7 +111,7 @@ def main(argv=None):
         from busin.ui import preview_generated
         if args.all == bool(args.name):
             raise SystemExit("picture-preview needs one name or --all")
-        for output in preview_generated(None if args.all else args.name):
+        for output in preview_generated(None if args.all else args.name, text_style=args.text_style):
             print(output)
         return 0
     if args.command == "ui-glyphs":
