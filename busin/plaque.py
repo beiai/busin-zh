@@ -174,7 +174,7 @@ def spans(handle) -> list[tuple[int, bytes]]:
 def _wenkai_path():
     from busin.font import font_path
 
-    return font_path("LXGWWenKai-Medium.ttf")
+    return font_path("LXGWWenKai-Regular.ttf")
 
 
 def _caption_font(size=GLYPH):
@@ -182,7 +182,7 @@ def _caption_font(size=GLYPH):
 
     path = _wenkai_path()
     font = ImageFont.truetype(str(path), size)
-    if font.getname() != ("LXGW WenKai", "Medium"):
+    if font.getname() != ("LXGW WenKai", "Regular"):
         raise ValueError(f"caption font is {font.getname()}")
     return font
 

@@ -33,12 +33,12 @@ class FontInput:
 
 FONT_INPUTS = (
     FontInput(
-        "message", "LXGWWenKai-Medium.ttf", "LXGW WenKai", "Medium", "1.522",
-        "d4bdeb38a39151d74d084cba5090f8cb7d20bf83eedb78c35939ae70b9f4e3f6",
-        "LICENSE-LXGWWenKai-Medium.txt",
+        "message", "LXGWWenKai-Regular.ttf", "LXGW WenKai", "Regular", "1.530",
+        "2d73eea94ad808999d90c0000c239a84a33b09d4bc6ab6c5b8bbf1eda8a7fc8b",
+        "LICENSE-LXGWWenKai-Regular.txt",
     ),
     FontInput(
-        "ui", "NotoSansSC-VF.ttf", "Noto Sans SC", "Medium", "2.04",
+        "ui", "NotoSansSC-VF.ttf", "Noto Sans SC", "Regular", "2.04",
         "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
         "LICENSE-NotoSansSC-VF.txt",
     ),
@@ -433,9 +433,9 @@ def self_test() -> None:
         pass
     else:
         raise AssertionError("fringe past one pixel was accepted")
-    wenkai = font_path("LXGWWenKai-Medium.ttf")
+    wenkai = font_path("LXGWWenKai-Regular.ttf")
     font = ImageFont.truetype(str(wenkai), CELL)
-    if font.getname() != ("LXGW WenKai", "Medium"):
+    if font.getname() != ("LXGW WenKai", "Regular"):
         raise AssertionError(f"message font is {font.getname()}")
     mask, shift = message_cell(font, "娘")
     assert shift == 0 and mask.getbbox()[0] >= 0 and mask.getbbox()[2] <= CELL
