@@ -1,4 +1,4 @@
-"""Render Noto Sans SC DemiLight into 16×16 UI cells and paint the Chinese pages."""
+"""Render Noto Sans SC Regular into 16×16 UI cells and paint the Chinese pages."""
 import hashlib
 import json
 import struct
@@ -19,7 +19,7 @@ FONT = next(item for item in FONT_INPUTS if item.role == "ui")
 FONTS = (
     ("primary", FONT_DIR / FONT.filename, FONT.version, FONT.sha256),
 )
-VARIATION = "DemiLight"
+VARIATION = "Regular"
 
 
 def _checked_fonts():
@@ -116,6 +116,8 @@ def _solid_rows(mask):
 
 
 def self_test():
+    assert coverage_index(0) == 0 and coverage_index(255) == 15
+    assert coverage_index(128) == 5 and coverage_index(192) == 10
     wanted = set("".join(SAMPLES)) - {" "}
     glyphs, raised, _fonts = load_ui_glyphs(wanted | set("()pqyQ/{}"))
     assert raised["菜"] == raised["单"] == 1
@@ -147,9 +149,13 @@ def set_nibble(blob, pix, width, x, y, index):
         blob[at] = (blob[at] & 0xF0) | (index & 0xF)
 
 
+UI_PALETTE_GRAY = (0, 40, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168)
+
+
 def coverage_index(level):
-    """Map 0–255 coverage onto the template's 16-step ramp."""
-    return (level * 15 + 127) // 255
+    """Map coverage to the nearest actual gray in the source 16-color ramp."""
+    target = level * UI_PALETTE_GRAY[-1] / 255
+    return min(range(len(UI_PALETTE_GRAY)), key=lambda index: abs(UI_PALETTE_GRAY[index] - target))
 
 
 def paint_mask(blob, pix, width, x, y, mask, ink, ramp=False):
@@ -192,6 +198,10 @@ def ui_font_pages(extra=None):
         _pack, blob, pix = texture_blob(handle, UI_TEMPLATE)
     if len(blob) != PAGE_BYTES or blob[0x10] != 12:
         raise ValueError("the UI page template has changed")
+    palette = tuple(blob[0x40 + index * 2] | (blob[0x41 + index * 2] << 8) for index in range(16))
+    gray = tuple((value & 0x1F) << 3 for value in palette)
+    if gray != UI_PALETTE_GRAY:
+        raise ValueError(f"the UI font palette has changed: {gray}")
     blank = bytearray(blob)
     blank[pix:] = bytes(len(blank) - pix)
     pages = [bytearray(blank) for _index in range(PAGE_COUNT)]

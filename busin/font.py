@@ -38,7 +38,7 @@ FONT_INPUTS = (
         "LICENSE-LXGWWenKai-Regular.txt",
     ),
     FontInput(
-        "ui", "NotoSansSC-VF.ttf", "Noto Sans SC", "DemiLight", "2.04",
+        "ui", "NotoSansSC-VF.ttf", "Noto Sans SC", "Regular", "2.04",
         "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
         "LICENSE-NotoSansSC-VF.txt",
     ),
