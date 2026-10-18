@@ -13,6 +13,9 @@ PALETTE_COLORS = tuple(
     for value in (0, 16, 32, 48, 64, 80, 96, 112, 136, 152, 168, 184, 200, 216, 232, 248)
 )
 CORE_INDEX = 15
+# The Japanese labels skip the three darkest non-black steps. Keeping partial
+# edge pixels out of them avoids a green cast after console/video filtering.
+MINIMUM_INK_INDEX = 4
 WIDTHS = {
     "accessory": 48,
     "armor": 32,
@@ -75,6 +78,10 @@ def _scale_rgba_to_indices(values: list[int], source_width: int, height: int, ou
     ]
 
 
+def _drop_low_indices(values: list[int]) -> list[int]:
+    return [value if value >= MINIMUM_INK_INDEX else 0 for value in values]
+
+
 def _render_values(
     name: str,
     text: str,
@@ -83,14 +90,14 @@ def _render_values(
     height: int,
 ) -> list[int]:
     if name not in SPECIAL_LAYOUTS:
-        return render_text_alpha_left(
+        return _drop_low_indices(render_text_alpha_left(
             text,
             font,
             width,
             height,
             name,
             TRACKING.get(name, 0),
-        )
+        ))
 
     layout = SPECIAL_LAYOUTS[name]
     if width != layout["output_width"] or height != layout["cell_height"]:
@@ -109,7 +116,8 @@ def _render_values(
         name,
         layout["tracking"],
     )
-    return _scale_rgba_to_indices(values, source_width, height, width)
+    return _drop_low_indices(
+        _scale_rgba_to_indices(values, source_width, height, width))
 
 
 def render_initial(image: TmxImage, rect: dict, output: Path) -> None:
@@ -159,6 +167,7 @@ def self_test() -> None:
         assert source and text
         values = _render_values(name, text, font, WIDTHS[name], 16)
         assert set(values) <= set(range(16))
+        assert not set(values) & set(range(1, MINIMUM_INK_INDEX))
         assert max(values) == CORE_INDEX
     special = SPECIAL_LAYOUTS["magic_stone_info"]
     assert special == {
