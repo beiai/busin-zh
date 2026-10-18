@@ -119,11 +119,11 @@ def self_test():
     wanted = set("".join(SAMPLES)) - {" "}
     glyphs, raised, _fonts = load_ui_glyphs(wanted | set("()pqyQ/{}"))
     assert raised["菜"] == raised["单"] == 1
-    assert raised["p"] == raised["q"] == raised["y"] == 4
+    assert raised["p"] == raised["q"] == 3 and raised["y"] == 4
     assert raised["("] == raised[")"] == raised["{"] == raised["}"] == 2
     assert raised["Q"] == 3
     assert raised["/"] == 2
-    assert _solid_rows(glyphs["p"])[0] == 1 and _solid_rows(glyphs["p"])[-1] == CELL - 1
+    assert _solid_rows(glyphs["p"])[0] == 3 and _solid_rows(glyphs["p"])[-1] == CELL - 1
     assert any(0 < value < 255 for value in glyphs["单"].get_flattened_data())
     name = glyphs["菜"].getbbox()
     assert name[0] == 0 and name[2] == CELL

@@ -69,6 +69,7 @@ def font_path(name: str) -> Path:
 SOLID = 128
 _PAD = 8
 STROKE_AA_SCALE = 8
+STROKE_AA_WIDTH = 4
 MAX_GLYPH_CROP = 2
 
 
@@ -264,7 +265,7 @@ def seat_stroke_baseline(font, char, cell):
         ImageDraw.Draw(image).text(
             ((8 + x) * STROKE_AA_SCALE, (8 + cell - 1) * STROKE_AA_SCALE),
             char, font=scaled, anchor="ls", fill=255,
-            stroke_width=STROKE_AA_SCALE, stroke_fill=255,
+            stroke_width=STROKE_AA_WIDTH, stroke_fill=255,
         )
         return image.resize((cell + 16, cell + 16), Image.Resampling.BOX)
 
@@ -301,13 +302,13 @@ def message_cell(font, char, cell=CELL):
             y = (size - bottom + top) / 2 - top
             draw.text(
                 (x, y), char, font=scaled, fill=255,
-                stroke_width=STROKE_AA_SCALE, stroke_fill=255,
+                stroke_width=STROKE_AA_WIDTH, stroke_fill=255,
             )
         else:
             # Punctuation keeps its place in the em square (「，」 sits low left), so centre the em box, not the ink.
             draw.text(
                 (size / 2, size / 2), char, font=scaled, fill=255, anchor="mm",
-                stroke_width=STROKE_AA_SCALE, stroke_fill=255,
+                stroke_width=STROKE_AA_WIDTH, stroke_fill=255,
             )
         return image.resize((cell + 16, cell + 16), Image.Resampling.BOX)
 
