@@ -3,7 +3,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from busin.picture_text.render import FontSpec, load_font, render_text_alpha_left
+from busin.picture_text.render import FontSpec, load_font, render_line, render_text_alpha_left
 from busin.tmx import TmxImage
 
 FONT = FontSpec("NotoSansSC-VF.ttf", "Medium", 16)
@@ -28,6 +28,11 @@ WIDTHS = {
     "move": 32,
     "status": 56,
     "weapon": 32,
+    "first_allied": 72,
+    "second_allied": 72,
+    "skill": 56,
+    "front_back_change": 64,
+    "page_switch": 88,
 }
 TRACKING = {
     "magic_stone_info": -1,
@@ -54,7 +59,20 @@ TEXTS = {
     "move": ("移動", "移动"),
     "status": ("ステータス", "状态"),
     "weapon": ("武器", "武器"),
+    "first_allied": ("1st アレイド", "第1连携"),
+    "second_allied": ("2nd アレイド", "第2连携"),
+    "skill": ("スキル", "技能"),
+    "front_back_change": ("前後列交代", "前后切换"),
+    "page_switch": ("ページ切り替え", "页签切换"),
 }
+TEMPLATES = {
+    "first_allied": ("menu_title_tab1.png", (72, 16)),
+    "second_allied": ("menu_title_tab1.png", (72, 16)),
+    "skill": ("menu_title_tab2.png", (56, 16)),
+}
+TEMPLATE_DIR = Path(__file__).resolve().parents[2] / "data" / "picture" / "templates"
+PALETTE_10_COLORS = tuple((value, value, value, 0xFF) for value in
+                          (0, 24, 40, 56, 72, 88, 104, 120, 136, 152, 168, 184, 200, 216, 232, 248))
 
 
 def _nearest_palette_index(rgb) -> int:
@@ -121,25 +139,47 @@ def _render_values(
 
 
 def render_initial(image: TmxImage, rect: dict, output: Path) -> None:
-    """Write one translated text-only crop using palette 2."""
+    """Write one translated menu crop, optionally over its clean title-tab template."""
     name = rect["name"]
     if name not in TEXTS:
         raise ValueError(f"{name} has no menu text")
     source, text = TEXTS[name]
     if rect.get("source") != source or rect.get("text") != text:
         raise ValueError(f"{name} source or translation changed")
-    if rect["palette"] != PALETTE:
-        raise ValueError(f"{name} must use palette {PALETTE}")
     x, y, width, height = rect["x"], rect["y"], rect["width"], rect["height"]
-    if image.palettes[PALETTE] != PALETTE_COLORS:
-        raise ValueError(f"{name} palette {PALETTE} colors changed")
-
     font = load_font(FONT)
-    values = _render_values(name, text, font, width, height)
-    if any(type(value) is not int or not 0 <= value <= 15 for value in values):
-        raise ValueError(f"{name} pixel index")
-    bitmap = Image.new("RGBA", (width, height))
-    bitmap.putdata([PALETTE_COLORS[value] for value in values])
+    if name in TEMPLATES:
+        template_name, size = TEMPLATES[name]
+        if (width, height) != size or rect["palette"] != 10:
+            raise ValueError(f"{name} must use palette 10 in a {size[0]}x{size[1]} rect")
+        template_path = TEMPLATE_DIR / template_name
+        with Image.open(template_path) as source_image:
+            if source_image.size != size or source_image.mode not in ("RGB", "RGBA"):
+                raise ValueError(f"{template_name} must be an RGB/RGBA {size[0]}x{size[1]} template")
+            background = source_image.convert("RGB")
+        coverage = render_text_alpha_left(text, font, width, height, name)
+        mask = Image.new("L", size)
+        mask.putdata(coverage)
+        left, top, right, bottom = mask.getbbox()
+        centered = Image.new("L", size)
+        centered.paste(mask.crop((left, top, right, bottom)),
+                       ((width - (right - left)) // 2, top))
+        coverage = list(centered.get_flattened_data())
+        pixels = [
+            tuple(round(channel + (255 - channel) * alpha / 15) for channel in background.getpixel((px, py)))
+            for py in range(height) for px, alpha in enumerate(coverage[py * width:(py + 1) * width])
+        ]
+        bitmap = Image.new("RGB", size)
+        bitmap.putdata(pixels)
+    else:
+        if rect["palette"] not in (PALETTE, 10):
+            raise ValueError(f"{name} must use palette {PALETTE} or 10")
+        palette_colors = PALETTE_COLORS if rect["palette"] == PALETTE else PALETTE_10_COLORS
+        if image.palettes[rect["palette"]] != palette_colors:
+            raise ValueError(f"{name} palette {rect['palette']} colors changed")
+        values = _render_values(name, text, font, width, height)
+        bitmap = Image.new("RGBA", (width, height))
+        bitmap.putdata([palette_colors[value] for value in values])
     output.parent.mkdir(parents=True, exist_ok=True)
     bitmap.save(output)
 
@@ -169,6 +209,17 @@ def self_test() -> None:
         assert set(values) <= set(range(16))
         assert not set(values) & set(range(1, MINIMUM_INK_INDEX))
         assert max(values) == CORE_INDEX
+    for name in TEMPLATES.keys() | {"front_back_change", "page_switch"}:
+        render_line(TEXTS[name][1], font, WIDTHS[name], 16, name)
+    for filename, size in set(TEMPLATES.values()):
+        with Image.open(TEMPLATE_DIR / filename) as template:
+            assert template.size == size and template.mode in ("RGB", "RGBA")
+    assert TEMPLATES == {
+        "first_allied": ("menu_title_tab1.png", (72, 16)),
+        "second_allied": ("menu_title_tab1.png", (72, 16)),
+        "skill": ("menu_title_tab2.png", (56, 16)),
+    }
+    assert WIDTHS["front_back_change"] == 64 and "front_back_change" not in TEMPLATES
     special = SPECIAL_LAYOUTS["magic_stone_info"]
     assert special == {
         "cell_width": 16,

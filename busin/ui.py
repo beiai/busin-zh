@@ -80,6 +80,29 @@ def _claim(seen: dict, chunk: int, relative: int, name: str) -> None:
     seen[(chunk, relative)] = name
 
 
+def translated_rect(item: dict, rect: dict) -> dict:
+    """Keep original-disc crops intact; resolve reused translated crop positions."""
+    if "reuse" not in rect:
+        return rect
+    reuse = rect["reuse"]
+    name = f"{item['name']}/{rect['name']}"
+    if (not isinstance(reuse, dict) or set(reuse) != {"name", "x", "y"}
+            or not isinstance(reuse["name"], str)
+            or any(type(reuse[axis]) is not int or reuse[axis] < 0 for axis in ("x", "y"))):
+        raise ValueError(f"{name} invalid reuse")
+    source = next((r for r in item["rects"] if r["name"] == reuse["name"]), None)
+    if source is None:
+        raise ValueError(f"{name} reuse source {reuse['name']} is missing from this texture")
+    if "reuse" in source:
+        raise ValueError(f"{name} reuse source must not itself reuse another crop")
+    if source["palette"] != rect["palette"]:
+        raise ValueError(f"{name} reuse palette differs from {source['name']}")
+    if (reuse["x"] + rect["width"] > source["width"]
+            or reuse["y"] + rect["height"] > source["height"]):
+        raise ValueError(f"{name} reuse is outside {source['name']}")
+    return {**rect, "x": source["x"] + reuse["x"], "y": source["y"] + reuse["y"]}
+
+
 def load_images(path: Path) -> dict:
     data = json.loads(path.read_text(encoding="utf-8"))
     if set(data) != {"container", "whole", "part", "generated"}:
@@ -145,13 +168,15 @@ def load_images(path: Path) -> dict:
         if not isinstance(rects, list) or not rects:
             raise ValueError(f"{name} rects")
         for rect in rects:
-            if not isinstance(rect, dict) or set(rect) not in (RECT_KEYS, RECT_TEXT_KEYS):
+            if not isinstance(rect, dict) or set(rect) - {"reuse"} not in (RECT_KEYS, RECT_TEXT_KEYS):
                 raise ValueError(f"{name} rect")
-            if set(rect) == RECT_TEXT_KEYS and (
+            if "text" in rect and (
                     not isinstance(rect["source"], str) or not isinstance(rect["text"], str)
                     or "\n" in rect["text"]):
                 raise ValueError(f"{name} rect text")
             claim_file(item["dir"], _rect(rect, name, item["width"], item["height"]))
+        for rect in rects:
+            translated_rect(item, rect)
     for item in generated:
         parsed = parse_generated(item)
         if parsed.name in names:
@@ -361,15 +386,29 @@ def _part_span(read, item: dict, root: Path, row) -> tuple[int, bytes] | None:
     offset, blob = entry_slices(read, item, row)
     image = read_tmx_bytes(blob)
     folder = picture_dir(root, item)
+    # Derived PNGs are previews of the same pixels, not independent edits.
+    # Reject a stale child before palette mapping could hide a disagreement.
+    for rect in item["rects"]:
+        if "reuse" in rect:
+            expected = _reused_bitmap(item, rect, folder)
+            path = folder / zh_name(rect["name"])
+            if not path.is_file():
+                raise ValueError(f"{item['name']} translated crop is missing: {path}")
+            with Image.open(path) as bitmap:
+                if bitmap.size != expected.size or bitmap.convert("RGBA").tobytes() != expected.tobytes():
+                    raise ValueError(
+                        f"{item['name']} reused crop {rect['name']} disagrees with "
+                        f"{rect['reuse']['name']}; run export-pictures to regenerate it")
     replacements = {}
     changed = False
     for rect in item["rects"]:
         zh = folder / zh_name(rect["name"])
         if not zh.is_file():
-            if set(rect) == RECT_TEXT_KEYS:
+            if "text" in rect:
                 raise ValueError(f"{item['name']} translated crop is missing: {zh}")
             continue
-        x, y, width, height = rect["x"], rect["y"], rect["width"], rect["height"]
+        target = translated_rect(item, rect)
+        x, y, width, height = target["x"], target["y"], target["width"], target["height"]
         original = image.pixels
         values = tuple(
             original[(y + row_at) * image.width + x + col]
@@ -495,6 +534,20 @@ def save_crop(image, rect: dict, output: Path) -> None:
     bitmap.save(output)
 
 
+def _reused_bitmap(item: dict, rect: dict, folder: Path):
+    translated_rect(item, rect)
+    reuse = rect["reuse"]
+    source = next(r for r in item["rects"] if r["name"] == reuse["name"])
+    path = folder / zh_name(source["name"])
+    if not path.is_file():
+        raise ValueError(f"{item['name']} reuse source translated crop is missing: {path}")
+    with Image.open(path) as bitmap:
+        if bitmap.size != (source["width"], source["height"]):
+            raise ValueError(f"{item['name']} reuse source {source['name']} size changed")
+        x, y = reuse["x"], reuse["y"]
+        return bitmap.convert("RGBA").crop((x, y, x + rect["width"], y + rect["height"]))
+
+
 def export_pictures(read, manifest: dict, root: Path, row, text_style: str = DEFAULT_TEXT_STYLE, force_zh: bool = False) -> None:
     """Write comparison PNGs. The original is replaced; a .zh.png is added only when missing."""
     for item in manifest["whole"]:
@@ -518,7 +571,9 @@ def export_pictures(read, manifest: dict, root: Path, row, text_style: str = DEF
             original = dest / f"{rect['name']}.png"
             save_crop(image, rect, original)
             translated = dest / zh_name(original.stem)
-            if set(rect) == RECT_TEXT_KEYS:
+            if "reuse" in rect:
+                continue
+            if "text" in rect:
                 if (force_zh or not translated.is_file()
                         or translated.read_bytes() == original.read_bytes()):
                     if rect["name"] in {"mage_magic", "priest_magic"}:
@@ -529,6 +584,10 @@ def export_pictures(read, manifest: dict, root: Path, row, text_style: str = DEF
                         render_initial(image, rect, translated)
             else:
                 keep_zh(original)
+        # Render all sources first so manifest order cannot affect derived crops.
+        for rect in item["rects"]:
+            if "reuse" in rect:
+                _reused_bitmap(item, rect, dest).save(dest / zh_name(rect["name"]))
     for item in manifest.get("generated", []):
         export_generated_pair(item, read, row, generated_dir(root), text_style, force_zh)
 
@@ -725,6 +784,17 @@ def self_test() -> None:
         "Tw_map02", "Tw_map01", "cock_00", "cock_01",
     ]
     assert {rect["palette"] for item in listed["part"] for rect in item["rects"]} == {1, 2, 10, 17}
+    cock01_rects = {
+        rect["name"]: rect for item in listed["part"] if item["name"] == "cock_01"
+        for rect in item["rects"]
+    }
+    assert {name: (cock01_rects[name]["source"], cock01_rects[name]["text"])
+            for name in ("first_allied", "second_allied", "skill", "front_back_change")} == {
+        "first_allied": ("1st アレイド", "第1连携"),
+        "second_allied": ("2nd アレイド", "第2连携"),
+        "skill": ("スキル", "技能"),
+        "front_back_change": ("前後列交代", "前后切换"),
+    }
     assert [item["name"] for item in listed["generated"]] == [
         "bar_00", "ali_00", "ali_01", "ali_02", "ali_03",
     ]

@@ -236,7 +236,9 @@
           "y": 184,
           "width": 88,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "ページ切り替え",
+          "text": "页签切换"
         },
         {
           "name": "weapon",
@@ -294,7 +296,12 @@
           "y": 184,
           "width": 48,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "reuse": {
+            "name": "page_switch",
+            "x": 32,
+            "y": 0
+          }
         },
         {
           "name": "move",
@@ -343,7 +350,9 @@
           "y": 0,
           "width": 72,
           "height": 16,
-          "palette": 10
+          "palette": 10,
+          "source": "1st アレイド",
+          "text": "第1连携"
         },
         {
           "name": "second_allied",
@@ -351,7 +360,9 @@
           "y": 0,
           "width": 72,
           "height": 16,
-          "palette": 10
+          "palette": 10,
+          "source": "2nd アレイド",
+          "text": "第2连携"
         },
         {
           "name": "skill",
@@ -359,7 +370,9 @@
           "y": 0,
           "width": 56,
           "height": 16,
-          "palette": 10
+          "palette": 10,
+          "source": "スキル",
+          "text": "技能"
         },
         {
           "name": "front_back_change",
@@ -367,7 +380,9 @@
           "y": 56,
           "width": 64,
           "height": 16,
-          "palette": 10
+          "palette": 10,
+          "source": "前後列交代",
+          "text": "前后切换"
         }
       ]
     }

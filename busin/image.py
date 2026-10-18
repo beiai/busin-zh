@@ -429,6 +429,8 @@ def main():
     save_png(read_tmx(MAZE_PATH), 0, OUT_DIR / "page285.pal00.png")
     from busin.disasm import load_elf
     from busin.patch.ui_pages import elf_writes as ui_elf_writes
+    from busin.patch.picture_rects import elf_writes as picture_elf_writes
+    from busin.ui import load_images
     from busin.ui_font import FONTS, ui_font_pages
     from busin.ui_text import check_ui_text_report, ui_patches
 
@@ -443,6 +445,8 @@ def main():
         patches.add_elf("elf.ui_page_loader", offset, data)
     for offset, data in ui_writes.items():
         patches.add_elf("elf.ui_text_and_layout", offset, data)
+    for offset, data in picture_elf_writes(elf, load_images(DATA / "picture" / "images.json")).items():
+        patches.add_elf("elf.picture_rects", offset, data, "switch reuses the translated page_switch suffix")
     for item in packs:
         patches.add_elf(
             "dialogue.chunk_table", item["table"], struct.pack("<Q", item["sectors"]))

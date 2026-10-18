@@ -114,6 +114,36 @@ python -m busin copy-text 来源块 目标块
 
 没有 `type` 的是菜单、商店、房间这类，长短不固定。菜单、商店、调试菜单、旅馆里的 `/` 是另一处换行，写到哪儿算哪儿，不按上面的行宽检查。
 
+委托标题在 `data/interface/places.json`，其中的 `/` 也表示换行。装备效果说明在 `data/interface/blurbs.json`，固定说明按每行 17 格、共 3 行处理；一整条说明保存在同一项里，中间的空格不是另一条说明的起点。
+
+## 修改图片
+
+图片清单是 `data/picture/images.json`。不带 `.zh` 的 PNG 用来对照原图，构建读取对应的 `.zh.png`。`menu/` 放菜单小图，`town/` 放城镇招牌，`title/` 放标题画面，`generated/` 放清单中由程序生成的图片。干净底图统一放在 `data/picture/templates/`，原来的 `backgrounds/` 已改名。
+
+菜单文字由 `busin/picture_text/menu_text.py` 和 `busin/picture_text/cock.py` 绘制，字体和排版以代码为准。改译文时，也要同步清单里的 `text`。
+
+| 菜单图片 | 译文 | 干净底图 | 排版 |
+|---|---|---|---|
+| `first_allied` | 第1连携 | `menu_title_tab1.png` | 水平居中 |
+| `second_allied` | 第2连携 | `menu_title_tab1.png` | 水平居中 |
+| `skill` | 技能 | `menu_title_tab2.png` | 水平居中 |
+| `front_back_change` | 前后切换 | 不使用底图 | 字距 0 像素 |
+| `page_switch` | 页签切换 | 不使用底图 | 左对齐，字距 0 像素 |
+| `switch` | 切换 | 从 `page_switch.zh.png` 裁出 | 48×16，右侧保留空白 |
+
+`switch` 与 `page_switch` 共用纹理中的文字。清单里的原始 rect 用来导出原盘对照图；`reuse` 的 `name` 指定同一纹理中的来源，`x`、`y` 是相对来源译图的像素偏移。`switch` 从 `(32, 0)` 起裁出 48×16 的译图，构建时同步修改游戏取样位置，绘制尺寸和屏幕起点保持原样。复用来源不能再复用其他小图。
+
+只编辑或生成 `page_switch.zh.png`，随后运行 `export-pictures`，就会自动更新 `switch.zh.png`，已有的派生图也会覆盖。构建会检查派生图与来源对应区域完全一致；有差异时会停下来提示重新导出。
+
+改了文字、底图或绘制代码后，要先重新生成 `.zh.png`，再构建光盘。单独运行 `build` 不会重画这些菜单图片。
+
+```powershell
+python -m busin export-pictures
+python -m busin export-pictures --force-zh
+```
+
+第一条导出原图，补齐缺少的译图；有绘制规则的菜单小图若译图仍与原图相同，也会生成译图。第二条会重新生成所有由程序绘制的译图，覆盖这些已有的 `.zh.png`。执行后先检查图片差异，再构建。
+
 ## 做出光盘
 
 把日版原盘的路径写进仓库根目录的 `config.toml`，例如 `disc = "games/game.bin"`。相对路径从仓库根目录算。这个文件不提交。没有它时构建会停，读盘测试会跳过。
@@ -129,7 +159,9 @@ python -m pytest tests -q
 
 构建后再运行 `python -m busin audit-image`。它会核对报告里的输入和成品，再把原盘与成品按扇区对齐，确认除了报告声明过的改动没有别的改动，并写出 `build/image/change-audit.json`。
 
-成品是 `build/image/busin-zh.cue`。用它从头开机。同样的译文，每次构建得到的光盘字节相同。开机能看出来的差别记在 `CHANGELOG.md`。
+`build/image/report.json` 记录构建时的提交号、输入文件和成品的校验值。工作区有未提交改动时，提交号只表示基于哪次提交构建，不能单靠它还原成品。镜像改动的类别、范围和排除项见 [光盘镜像改动分类](docs/disc-image-changes.md)，其中的数字对应文首注明的构建快照。
+
+成品是 `build/image/busin-zh.cue`。用它从头开机。同样的输入，每次构建得到的光盘字节相同。从头开机确认后，再给对应提交打 tag，并在 `CHANGELOG.md` 记录这一版的差别。
 
 ## 目录
 

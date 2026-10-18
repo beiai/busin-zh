@@ -26,7 +26,7 @@ PALETTE_COLORS = (
 )
 BASE_WIDTH = 128
 BASE_HEIGHT = 32
-BACKGROUND = DATA / "picture" / "backgrounds" / "menu.png"
+BACKGROUND = DATA / "picture" / "templates" / "menu.png"
 TEXTS = {
     "mage_magic": ("魔術師魔法", "魔法师魔法"),
     "priest_magic": ("僧侶魔法", "僧侣魔法"),
