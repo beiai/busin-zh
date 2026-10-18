@@ -656,11 +656,12 @@ def main():
     from busin.disasm import load_elf
     from busin.patch.ui_pages import elf_writes as ui_elf_writes
     from busin.ui_font import FONTS, ui_font_pages
-    from busin.ui_text import ui_patches
+    from busin.ui_text import check_ui_text_report, ui_patches
 
     writes = elf_writes(words, labels)
     elf = load_elf()
     ui_writes, ui_extra, ui_text_info = ui_patches(elf)
+    check_ui_text_report(ui_text_info)
     pages = ui_font_pages(ui_extra)
     ui_code = ui_elf_writes(elf)
     table_writes = {item["table"]: struct.pack("<Q", item["sectors"]) for item in packs}
@@ -708,6 +709,7 @@ def main():
         "cave": hex(CAVE),
         "code_offset": hex(CODE_OFF),
     }
+    check_ui_text_report(report["ui_text"])
     (OUT_DIR / "report.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
     font_report = PAGE_PATH.parent / "report.json"
     font_report.parent.mkdir(parents=True, exist_ok=True)

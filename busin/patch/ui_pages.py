@@ -299,9 +299,23 @@ def self_test():
     if (4 << 16) + 0x6B53 != UI_LBA or (ALLOC_HI << 16) + ALLOC_LO - (
             0x10000 if ALLOC_LO & 0x8000 else 0) != ALLOC_BYTES:
         raise AssertionError("read immediates do not match the appended LBA")
-    got = [_run_helper(page) for page in (0, 3, 4, 9)]
-    if got != [0xA0, 0xA3, 0xB0, 0xB5]:
+    got = [_run_helper(page) for page in range(PAGE_LIMIT)]
+    if got != [0xA0, 0xA1, 0xA2, 0xA3, *range(0xB0, 0xB0 + PAGE_COUNT)]:
         raise AssertionError(f"helper pages resolve to {got}")
+    boundaries = [0x03FF, 0x0400, FIRST_CODE]
+    boundaries.extend(
+        value
+        for page in range(4, PAGE_LIMIT - 1)
+        for value in ((page << 8) | 0xFF, (page + 1) << 8)
+    )
+    boundaries.append(LAST_CODE)
+    pages = [code >> 8 for code in boundaries]
+    if pages != [3, 4, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9]:
+        raise AssertionError(f"code page boundaries resolve to {pages}")
+    if [_run_helper(page) for page in pages[1:]] != [
+        0xB0 + page - 4 for page in pages[1:]
+    ]:
+        raise AssertionError("a Chinese code page boundary falls back to a Japanese page")
     print("ui page self-test: OK")
 
 

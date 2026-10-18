@@ -859,6 +859,23 @@ def _line_parts(line):
     return ident, source, spec
 
 
+def _translation(row, name, ident):
+    """Return the translation, or None only when Japanese is intentionally kept."""
+    keep = row.get("keep_original", False)
+    if not isinstance(keep, bool):
+        raise ValueError(f"{name} {ident} keep_original is {keep!r}, expected true or false")
+    text = row.get("text")
+    if keep:
+        if text not in (None, ""):
+            raise ValueError(f"{name} {ident} keeps Japanese but also has text {text!r}")
+        return None
+    if text is None or text == "":
+        raise ValueError(f"{name} {ident} has no translation; use keep_original true to keep Japanese")
+    if not isinstance(text, str):
+        raise ValueError(f"{name} {ident} text is {text!r}, expected a string")
+    return text
+
+
 def ui_patches(elf):
     """ELF writes for data/interface, plus glyphs on the new UI pages."""
     docs = {path.stem: json.loads(path.read_text(encoding="utf-8"))
@@ -866,7 +883,7 @@ def ui_patches(elf):
     known = {}
     pending = []
     chars = []
-    skipped = 0
+    kept_original = 0
     for name, _title, rows in collect(elf):
         lines = manuscript_lines(name, rows)
         slots = _section_slots(elf, name, rows)
@@ -888,11 +905,12 @@ def ui_patches(elf):
                         f"{name} {ident} type {row.get('type')} {row.get('width')} != {slot['type']} {spec}")
             elif row.get("type") or row.get("width"):
                 raise ValueError(f"{name} {ident} has type {row.get('type')} {row.get('width')}")
-            if row.get("text") is None:
-                skipped += 1
+            text = _translation(row, name, ident)
+            if text is None:
+                kept_original += 1
                 continue
-            pending.append((name, ident, row["text"], slot))
-            chars.extend(_glyphs(_visible(row["text"], slot), slot["slash"]))
+            pending.append((name, ident, text, slot))
+            chars.extend(_glyphs(_visible(text, slot), slot["slash"]))
     table, extra = _assign(chars, known)
     rev = {}
     for char, code in table.items():
@@ -972,8 +990,27 @@ def ui_patches(elf):
         if struct.unpack_from("<I", elf, off)[0] != old or off in writes:
             raise AssertionError(f"point stat x at {va:#x}")
         writes[off] = struct.pack("<I", new)
-    info = {"strings": len(pending), "skipped": skipped, "glyphs": len(extra)}
+    info = {
+        "strings": len(pending),
+        "skipped": 0,
+        "kept_original": kept_original,
+        "glyphs": len(extra),
+    }
     return writes, extra, info
+
+
+def check_ui_text_report(info):
+    """The report may list intentional keeps, but never an implicit skipped string."""
+    try:
+        strings, skipped, kept, glyphs = (
+            info["strings"], info["skipped"], info["kept_original"], info["glyphs"])
+    except (KeyError, TypeError) as exc:
+        raise ValueError(f"ui text report is incomplete: {info!r}") from exc
+    if not all(isinstance(value, int) and value >= 0
+               for value in (strings, skipped, kept, glyphs)):
+        raise ValueError(f"ui text report has invalid counts: {info!r}")
+    if skipped:
+        raise ValueError(f"ui text report skipped {skipped} strings")
 
 
 def dump_ui(out_dir=None):
@@ -1054,6 +1091,23 @@ def self_test():
     assert _fit("甲 乙", gear, {"甲": 5, "乙": 6}) == [0x10, 5, 0, 6, 0, 0]
     table, extra = _assign(["菜", "单"], {})
     assert table == extra == {"单": 0x0401, "菜": 0x0402}
+    assert _translation({"text": "姓名"}, "menu", "00") == "姓名"
+    assert _translation({"text": None, "keep_original": True}, "menu", "00") is None
+    for row in ({"text": None}, {"text": ""}, {"text": None, "keep_original": False},
+                {"text": "姓名", "keep_original": True}):
+        try:
+            _translation(row, "menu", "00")
+        except ValueError:
+            pass
+        else:
+            raise AssertionError(f"bad translation row was accepted: {row!r}")
+    check_ui_text_report({"strings": 1, "skipped": 0, "kept_original": 0, "glyphs": 1})
+    try:
+        check_ui_text_report({"strings": 1, "skipped": 1, "kept_original": 0, "glyphs": 1})
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("a skipped ui string was accepted")
 
 
 def _span(writes, va):
@@ -1133,6 +1187,31 @@ def disc_self_test():
     assert [line.split("  ", 1)[0] for line in sheets["paper"]] == ["445810", "4458F8", "4459E0"]
     assert [line.rsplit("width=", 1)[1] for line in sheets["paper"]] == ["19x6", "19x6", "19x6"]
     elf = load_elf()
+    shared_labels = {
+        "名前は?": "姓名？",
+        "名 前": "姓 名",
+        "種 族": "种 族",
+        "属 性": "阵 营",
+        "職 業": "职 业",
+        "レベル": "等 级",
+        "性 格": "性 格",
+    }
+    menu_doc = json.loads((DATA / "interface" / "menu.json").read_text(encoding="utf-8"))
+    menu_slots = {
+        slot["id"]: slot
+        for slot in _section_slots(elf, "menu", sections["menu"])
+    }
+    shared_ids = {"07", "2A", "2B", "2C", "2D", "2E", "2F"}
+    shared = [
+        (row, menu_slots[row["id"]])
+        for row in menu_doc
+        if row["source"] in shared_labels and row["id"].split()[0] in shared_ids
+    ]
+    if len(shared) != len(shared_labels):
+        raise AssertionError(f"shared labels: {[(row['id'], row['source']) for row, _slot in shared]}")
+    for row, _slot in shared:
+        if row["text"] != shared_labels[row["source"]]:
+            raise AssertionError(f"shared label {row['id']} is {row['text']!r}")
     assert _word(elf, 0x14E780) == 0x24425810 and _word(elf, 0x14E820) == 0x244258F8
     assert _word(elf, 0x14E8C0) == 0x244259E0
     if any(_word(elf, va) != 0x28820006 for va in (0x14E7EC, 0x14E88C, 0x14E928)):
@@ -1181,9 +1260,18 @@ def disc_self_test():
         if codes[1] or not codes[0] or not codes[2]:
             raise AssertionError(f"stat name gap at {va:#x}")
     # Parchment rows are grouped into three pages before they are written.
-    written = sum(expect.values()) - info["skipped"] - (expect["paper"] - 3)
+    check_ui_text_report(info)
+    written = sum(expect.values()) - info["kept_original"] - (expect["paper"] - 3)
     if info["strings"] != written:
         raise AssertionError(info)
+    for row, slot in shared:
+        count = len(slot["raw"]) + (1 if slot["ffff"] else 0)
+        codes = struct.unpack_from(f"<{count}H", _span(writes, slot["va"]))
+        if len(codes) != count or codes[-1] != 0xFFFF or 0xFFFE in codes:
+            raise AssertionError(f"shared label {row['id']} changed width, wrapping, or terminator")
+        if any(code not in (0, 0xFFFD) and not FIRST_CODE <= code <= LAST_CODE
+               for code in codes[:-1]):
+            raise AssertionError(f"shared label {row['id']} uses an original UI cell")
     if not extra or max(extra.values()) > LAST_CODE or min(extra.values()) < FIRST_CODE:
         raise AssertionError(info)
     ui_font_pages(extra)

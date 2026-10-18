@@ -192,6 +192,11 @@ def test_plaque_disc():
     disc_self_test()
 
 
+def test_ui_page_boundaries():
+    from busin.patch.ui_pages import self_test
+    self_test()
+
+
 def test_ui_font():
     from busin.ui_font import self_test
     self_test()
