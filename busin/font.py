@@ -69,7 +69,7 @@ def font_path(name: str) -> Path:
 SOLID = 128
 _PAD = 8
 STROKE_AA_SCALE = 8
-STROKE_AA_WIDTH = 4
+STROKE_AA_WIDTH = 2
 MAX_GLYPH_CROP = 2
 
 
