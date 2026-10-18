@@ -1,4 +1,4 @@
-"""Unpack whole images from the picture list and repack edited PNGs for the build."""
+"""Unpack picture-list images and repack edited whole images or crops."""
 import json
 import struct
 import tempfile
@@ -12,7 +12,8 @@ from busin.picture_text import (
     parse_generated, repack_generated_picture,
 )
 from busin.tmx import (
-    PSMCT16, PSMT4, TMX_TAG, read_tmx, read_tmx_bytes, repack_bytes, save_png,
+    PSMCT16, PSMCT32, PSMT4, PSMT8, TMX_TAG, encode_psmt4, map_png_to_indices,
+    TmxImage, read_tmx, read_tmx_bytes, repack_bytes, save_png,
 )
 
 try:
@@ -334,6 +335,91 @@ def preview_generated(name: str | None = None, output: Path | None = None, text_
         return [render_preview(item, read, row, output, text_style) for item in items]
 
 
+def _part_palette(image, rect: dict) -> tuple[list[tuple[int, ...]], bool]:
+    if rect["palette"] >= len(image.palettes):
+        raise ValueError(f"{rect['name']} has no palette {rect['palette']}")
+    palette = image.palettes[rect["palette"]]
+    if image.pixel_format == PSMT4:
+        return [color[:3] for color in palette], False
+    if image.pixel_format == PSMT8:
+        return palette, True
+    raise ValueError(f"{rect['name']} uses unsupported pixel format 0x{image.pixel_format:02X}")
+
+
+def _encode_part_pixels(image: TmxImage, pixels: list[int]) -> bytes:
+    if image.pixel_format == PSMT4:
+        if image.palette_format != PSMCT16 or image.width % 2:
+            raise ValueError(f"{image.comment} has an unsupported 4-bit layout")
+        return encode_psmt4(pixels)
+    if image.pixel_format == PSMT8 and image.palette_format == PSMCT32:
+        return bytes(pixels)
+    raise ValueError(f"{image.comment} has an unsupported pixel layout")
+
+
+def _part_span(read, item: dict, root: Path, row) -> tuple[int, bytes] | None:
+    """Paint all translated crops into one copy of their parent texture."""
+    offset, blob = entry_slices(read, item, row)
+    image = read_tmx_bytes(blob)
+    folder = picture_dir(root, item)
+    replacements = {}
+    changed = False
+    for rect in item["rects"]:
+        zh = folder / zh_name(rect["name"])
+        if not zh.is_file():
+            if set(rect) == RECT_TEXT_KEYS:
+                raise ValueError(f"{item['name']} translated crop is missing: {zh}")
+            continue
+        x, y, width, height = rect["x"], rect["y"], rect["width"], rect["height"]
+        original = image.pixels
+        values = tuple(
+            original[(y + row_at) * image.width + x + col]
+            for row_at in range(height)
+            for col in range(width)
+        )
+        palette, alpha = _part_palette(image, rect)
+        indices, _error = map_png_to_indices(
+            zh, palette, width, height, alpha=alpha, original=values)
+        for index, (value, old) in enumerate(zip(indices, values)):
+            at = (y + index // width) * image.width + x + index % width
+            owner = replacements.get(at)
+            if owner is not None and owner[0] != value:
+                raise ValueError(
+                    f"{item['name']} rects {owner[1]} and {rect['name']} disagree at pixel {at}")
+            replacements[at] = (value, rect["name"])
+            changed = changed or value != old
+    if not changed:
+        return None
+    pixels = list(image.pixels)
+    for at, (value, _name) in replacements.items():
+        pixels[at] = value
+    palette_size = 32 if image.pixel_format == PSMT4 else 1024
+    pixel_size = len(image.pixels) // 2 if image.pixel_format == PSMT4 else len(image.pixels)
+    pixel_at = 0x40 + len(image.palettes) * palette_size
+    out = bytearray(blob)
+    out[pixel_at:pixel_at + pixel_size] = _encode_part_pixels(image, pixels)
+    if len(out) != len(blob) or out[:pixel_at] != blob[:pixel_at]:
+        raise ValueError(f"{item['name']} part repack changed its header")
+    return offset, bytes(out)
+
+
+def part_spans(read, root: Path, row) -> list[tuple[int, bytes]]:
+    """Repack translated part crops once per parent TMX."""
+    path = root / "images.json"
+    if not path.is_file():
+        return []
+    spans = []
+    locations = []
+    for item in load_images(path)["part"]:
+        found = _part_span(read, item, root, row)
+        if found is None:
+            continue
+        offset, data = found
+        spans.append(found)
+        locations.append((item["name"], offset, len(data)))
+    ranges_overlap(locations)
+    return spans
+
+
 def generated_spans(read, root: Path, row) -> list[tuple[int, bytes]]:
     """Repack each generated .zh.png into every original TMX source."""
     path = root / "images.json"
@@ -538,6 +624,65 @@ def self_test() -> None:
         png = changed.convert("RGBA")
         assert [decoded.palettes[0][pixel] for pixel in decoded.pixels] == list(png.get_flattened_data())
 
+        part_root = folder / "parts"
+        part_doc = {
+            "container": "PACKDATA.CIG",
+            "whole": [
+                {"name": "a", "dir": "title", "chunk": 0, "offset": "0x0", "width": 2, "height": 2, "palette": 0},
+            ],
+            "part": [{
+                "name": "tile", "dir": "town", "chunk": 0, "offset": hex(len(first)), "slot": 0,
+                "width": 2, "height": 2,
+                "rects": [
+                    {"name": "left", "x": 0, "y": 0, "width": 1, "height": 1, "palette": 0},
+                    {"name": "right", "x": 1, "y": 0, "width": 1, "height": 1, "palette": 0},
+                ],
+            }],
+            "generated": [],
+        }
+        part_root.mkdir()
+        (part_root / "town").mkdir()
+        (part_root / "images.json").write_text(json.dumps(part_doc), encoding="utf-8")
+        assert part_spans(read, part_root, row) == []
+        part_palette = image.palettes[0]
+        Image.new("RGB", (1, 1), part_palette[3][:3]).save(part_root / "town" / "left.zh.png")
+        Image.new("RGB", (1, 1), part_palette[4][:3]).save(part_root / "town" / "right.zh.png")
+        part_found = part_spans(read, part_root, row)
+        assert [(offset, len(data)) for offset, data in part_found] == [(len(first), len(second))]
+        part_image = read_tmx_bytes(part_found[0][1])
+        assert part_image.pixels == (3, 4, 3, 4)
+        assert part_found[0][1][:0x50] == second[:0x50]
+        missing_doc = json.loads(json.dumps(part_doc))
+        missing_doc["part"][0]["rects"][0]["source"] = "原文"
+        missing_doc["part"][0]["rects"][0]["text"] = "译文"
+        missing_root = folder / "missing-part"
+        missing_root.mkdir()
+        (missing_root / "images.json").write_text(json.dumps(missing_doc), encoding="utf-8")
+        try:
+            part_spans(read, missing_root, row)
+        except ValueError as error:
+            assert "translated crop is missing" in str(error)
+        else:
+            raise AssertionError("a missing translated part crop was accepted")
+
+        overlap_doc = json.loads(json.dumps(part_doc))
+        overlap_doc["part"][0]["rects"][0]["width"] = 2
+        overlap_doc["part"][0]["rects"][1] = {
+            "name": "other", "x": 1, "y": 0, "width": 1, "height": 1, "palette": 0,
+        }
+        overlap_root = folder / "overlap"
+        overlap_root.mkdir()
+        (overlap_root / "images.json").write_text(json.dumps(overlap_doc), encoding="utf-8")
+        (overlap_root / "town").mkdir()
+        Image.new("RGB", (2, 1), part_palette[3][:3]).save(overlap_root / "town" / "left.zh.png")
+        Image.new("RGB", (1, 1), part_palette[5][:3]).save(overlap_root / "town" / "other.zh.png")
+        try:
+            part_spans(read, overlap_root, row)
+        except ValueError as error:
+            assert "disagree" in str(error)
+        else:
+            raise AssertionError("overlapping part crops with different indices were accepted")
+
         export_root = folder / "out"
         export_doc = {
             "container": "PACKDATA.CIG",
@@ -549,6 +694,7 @@ def self_test() -> None:
                 "width": 2, "height": 2,
                 "rects": [{"name": "top", "x": 0, "y": 0, "width": 2, "height": 2, "palette": 0}],
             }],
+            "generated": [],
         }
         export_pictures(read, export_doc, export_root, row)
         original = export_root / "title" / "a.png"
@@ -601,6 +747,25 @@ def self_test() -> None:
     if BIN.exists():
         with BIN.open("rb") as src:
             disc_row = lambda chunk: chunk_row(src, chunk)
+            part_found = part_spans(
+                lambda offset, size: read_pack(src, offset, size),
+                DATA / "picture", disc_row,
+            )
+            part_offsets = {offset for offset, _data in part_found}
+            menu_offsets = {
+                locate_pack(item, disc_row)[0]
+                for item in listed["part"] if item["dir"] == "menu"
+            }
+            if not menu_offsets <= part_offsets:
+                raise AssertionError("translated menu parent pictures were not repacked")
+            for offset, data in part_found:
+                _offset, source = entry_slices(
+                    lambda at, size: read_pack(src, at, size),
+                    next(item for item in listed["part"] if locate_pack(item, disc_row)[0] == offset),
+                    disc_row,
+                )
+                if data == source or len(data) != len(source):
+                    raise AssertionError("part parent repack is empty or changed size")
             for item in [*listed["whole"], *listed["part"]]:
                 offset, relative, count = locate_pack(item, disc_row)
                 header = read_pack(src, offset, 0x40)

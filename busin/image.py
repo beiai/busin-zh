@@ -29,7 +29,7 @@ from busin.text import (
     message_prose, repack_beats, split_tags, text_cursors, trim_beat_script,
 )
 from busin.tmx import read_tmx, save_png
-from busin.ui import generated_spans, replacement_spans
+from busin.ui import generated_spans, part_spans, replacement_spans
 
 OUT_DIR = BUILD / "image"
 PAGE_PATH = BUILD / "font" / "message_glyphs.page01.tmx"
@@ -635,8 +635,10 @@ def main():
         check_source(src, labels)
         messages, packs, blocks = load_messages(src, texts, ids)
         ending = ending_spans(src, texts, ids)
-        from busin.plaque import spans as plaque_spans
-        plaque = plaque_spans(src)
+        part = part_spans(
+            lambda off, size: read_pack(src, off, size), DATA / "picture",
+            lambda chunk: chunk_row(src, chunk),
+        )
         generated = generated_spans(
             lambda off, size: read_pack(src, off, size), DATA / "picture",
             lambda chunk: chunk_row(src, chunk),
@@ -673,7 +675,7 @@ def main():
     if any(end > nxt for (_, end), (nxt, _) in zip(covered, covered[1:])):
         raise ValueError("ELF patch writes overlap")
     spans = [*(span for item in packs for span in item["spans"]),
-             *(span for item in blocks for span in item["spans"]), *ending, *plaque, *generated]
+             *(span for item in blocks for span in item["spans"]), *ending, *part, *generated]
     message_bytes = {index for off in messages for index in (off, off + 1)}
     pack_ranges = sorted((off, off + len(data)) for off, data in spans)
     if any(end > nxt for (_, end), (nxt, _) in zip(pack_ranges, pack_ranges[1:])):
