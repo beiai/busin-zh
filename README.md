@@ -120,16 +120,7 @@ python -m busin copy-text 来源块 目标块
 
 图片清单是 `data/picture/images.json`。不带 `.zh` 的 PNG 用来对照原图，构建读取对应的 `.zh.png`。`menu/` 放菜单小图，`town/` 放城镇招牌，`title/` 放标题画面，`generated/` 放清单中由程序生成的图片。干净底图统一放在 `data/picture/templates/`，原来的 `backgrounds/` 已改名。
 
-菜单文字由 `busin/picture_text/menu_text.py` 和 `busin/picture_text/cock.py` 绘制，字体和排版以代码为准。改译文时，也要同步清单里的 `text`。
-
-| 菜单图片 | 译文 | 干净底图 | 排版 |
-|---|---|---|---|
-| `first_allied` | 第1连携 | `menu_title_tab1.png` | 水平居中 |
-| `second_allied` | 第2连携 | `menu_title_tab1.png` | 水平居中 |
-| `skill` | 技能 | `menu_title_tab2.png` | 水平居中 |
-| `front_back_change` | 前后切换 | 不使用底图 | 字距 0 像素 |
-| `page_switch` | 页签切换 | 不使用底图 | 左对齐，字距 0 像素 |
-| `switch` | 切换 | 从 `page_switch.zh.png` 裁出 | 48×16，右侧保留空白 |
+菜单文字的原文、译文、尺寸、调色板和排版写在 `busin/picture_text/menu_text.py` 的 `LABELS` 里；带横幅背景的两张由 `busin/picture_text/cock.py` 绘制。`busin/picture_text/registry.py` 记录每个清单条目用哪个渲染器，缺少记录会在导出或构建时停下。改译文时，也要同步清单里的 `text`。
 
 `switch` 与 `page_switch` 共用纹理中的文字。清单里的原始 rect 用来导出原盘对照图；`reuse` 的 `name` 指定同一纹理中的来源，`x`、`y` 是相对来源译图的像素偏移。`switch` 从 `(32, 0)` 起裁出 48×16 的译图，构建时同步修改游戏取样位置，绘制尺寸和屏幕起点保持原样。复用来源不能再复用其他小图。
 

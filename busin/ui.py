@@ -103,6 +103,125 @@ def translated_rect(item: dict, rect: dict) -> dict:
     return {**rect, "x": source["x"] + reuse["x"], "y": source["y"] + reuse["y"]}
 
 
+def _validate_whole_item(item, names: set, files: set, seen: dict) -> None:
+    if not isinstance(item, dict) or not set(item) <= WHOLE_KEYS:
+        raise ValueError("whole image")
+    name = _picture_name(item.get("name"))
+    if name in names:
+        raise ValueError(f"duplicate texture name {name}")
+    names.add(name)
+    if "dir" in item:
+        _folder_name(name, item["dir"])
+    if ("palette" in item) == ("size" in item):
+        raise ValueError(f"{name} needs exactly one of palette or size")
+    if "size" in item:
+        size = item["size"]
+        if type(size) is not int or size <= 0 or "width" in item or "height" in item:
+            raise ValueError(f"{name} size must be a positive integer")
+    else:
+        palette = item.get("palette")
+        if type(palette) is not int or not 0 <= palette <= 15:
+            raise ValueError(f"{name} palette must be an integer from 0 to 15")
+        _pixels(item, name)
+        _claim_file(files, item.get("dir"), name)
+    if "word_count_header" in item and (
+        "size" not in item or type(item["word_count_header"]) is not bool
+    ):
+        raise ValueError(
+            f"{name} word_count_header needs a raw block and boolean value"
+        )
+    _claim(seen, *_place(item, name), name)
+
+
+def _claim_file(files: set, folder: str | None, stem: str) -> None:
+    key = (folder or "", stem)
+    if key in files:
+        raise ValueError(f"{key[0]}/{stem} is used twice")
+    files.add(key)
+
+
+def _validate_part_item(item, names: set, files: set, seen: dict) -> None:
+    if not isinstance(item, dict) or set(item) != PART_KEYS:
+        raise ValueError("partial image")
+    name = _picture_name(item.get("name"))
+    if name in names:
+        raise ValueError(f"duplicate texture name {name}")
+    names.add(name)
+    _folder_name(name, item.get("dir"))
+    slot = item["slot"]
+    if type(slot) is not int or slot < 0:
+        raise ValueError(f"{name} slot")
+    _pixels(item, name)
+    _claim(seen, *_place(item, name), name)
+    rects = item["rects"]
+    if not isinstance(rects, list) or not rects:
+        raise ValueError(f"{name} rects")
+    for rect in rects:
+        if not isinstance(rect, dict) or set(rect) - {"reuse"} not in (
+            RECT_KEYS,
+            RECT_TEXT_KEYS,
+        ):
+            raise ValueError(f"{name} rect")
+        if "text" in rect and (
+            not isinstance(rect["source"], str)
+            or not isinstance(rect["text"], str)
+            or "\n" in rect["text"]
+        ):
+            raise ValueError(f"{name} rect text")
+        _claim_file(
+            files, item["dir"], _rect(rect, name, item["width"], item["height"])
+        )
+    for rect in rects:
+        translated_rect(item, rect)
+    _validate_translated_overlaps(item)
+
+
+def _box(rect: dict) -> tuple[int, int, int, int]:
+    return (rect["x"], rect["y"], rect["x"] + rect["width"], rect["y"] + rect["height"])
+
+
+def _boxes_overlap(
+    left: tuple[int, int, int, int], right: tuple[int, int, int, int]
+) -> bool:
+    return (
+        left[0] < right[2]
+        and right[0] < left[2]
+        and left[1] < right[3]
+        and right[1] < left[3]
+    )
+
+
+def _box_contains(
+    outer: tuple[int, int, int, int], inner: tuple[int, int, int, int]
+) -> bool:
+    return (
+        outer[0] <= inner[0]
+        and outer[1] <= inner[1]
+        and inner[2] <= outer[2]
+        and inner[3] <= outer[3]
+    )
+
+
+def _validate_translated_overlaps(item: dict) -> None:
+    by_name = {rect["name"]: rect for rect in item["rects"]}
+    targets = [(rect, translated_rect(item, rect)) for rect in item["rects"]]
+    for index, (left, left_target) in enumerate(targets):
+        for right, right_target in targets[index + 1 :]:
+            if not _boxes_overlap(_box(left_target), _box(right_target)):
+                continue
+            source = by_name.get(left.get("reuse", {}).get("name"))
+            allowed = (
+                source is right and _box_contains(_box(right), _box(left_target))
+            ) or (
+                by_name.get(right.get("reuse", {}).get("name")) is left
+                and _box_contains(_box(left), _box(right_target))
+            )
+            if not allowed:
+                raise ValueError(
+                    f"{item['name']} translated rects {left['name']} and {right['name']} overlap"
+                )
+
+
 def load_images(path: Path) -> dict:
     data = json.loads(path.read_text(encoding="utf-8"))
     if set(data) != {"container", "whole", "part", "generated"}:
@@ -118,65 +237,11 @@ def load_images(path: Path) -> dict:
         raise ValueError("part must be a list")
     if not isinstance(generated, list):
         raise ValueError("generated must be a list")
-    seen = {}
-    names = set()
-    files = set()
-
-    def claim_file(folder, stem: str) -> None:
-        key = (folder or "", stem)
-        if key in files:
-            raise ValueError(f"{key[0]}/{stem} is used twice")
-        files.add(key)
+    names, files, seen = set(), set(), {}
     for item in whole:
-        if not isinstance(item, dict) or not set(item) <= WHOLE_KEYS:
-            raise ValueError("whole image")
-        name = _picture_name(item.get("name"))
-        if name in names:
-            raise ValueError(f"duplicate texture name {name}")
-        names.add(name)
-        if "dir" in item:
-            _folder_name(name, item["dir"])
-        if ("palette" in item) == ("size" in item):
-            raise ValueError(f"{name} needs exactly one of palette or size")
-        if "size" in item:
-            size = item["size"]
-            if type(size) is not int or size <= 0 or "width" in item or "height" in item:
-                raise ValueError(f"{name} size must be a positive integer")
-        else:
-            palette = item.get("palette")
-            if type(palette) is not int or not 0 <= palette <= 15:
-                raise ValueError(f"{name} palette must be an integer from 0 to 15")
-            _pixels(item, name)
-            claim_file(item.get("dir"), name)
-        if "word_count_header" in item and ("size" not in item or type(item["word_count_header"]) is not bool):
-            raise ValueError(f"{name} word_count_header needs a raw block and boolean value")
-        _claim(seen, *_place(item, name), name)
+        _validate_whole_item(item, names, files, seen)
     for item in part:
-        if not isinstance(item, dict) or set(item) != PART_KEYS:
-            raise ValueError("partial image")
-        name = _picture_name(item.get("name"))
-        if name in names:
-            raise ValueError(f"duplicate texture name {name}")
-        names.add(name)
-        _folder_name(name, item.get("dir"))
-        slot = item["slot"]
-        if type(slot) is not int or slot < 0:
-            raise ValueError(f"{name} slot")
-        _pixels(item, name)
-        _claim(seen, *_place(item, name), name)
-        rects = item["rects"]
-        if not isinstance(rects, list) or not rects:
-            raise ValueError(f"{name} rects")
-        for rect in rects:
-            if not isinstance(rect, dict) or set(rect) - {"reuse"} not in (RECT_KEYS, RECT_TEXT_KEYS):
-                raise ValueError(f"{name} rect")
-            if "text" in rect and (
-                    not isinstance(rect["source"], str) or not isinstance(rect["text"], str)
-                    or "\n" in rect["text"]):
-                raise ValueError(f"{name} rect text")
-            claim_file(item["dir"], _rect(rect, name, item["width"], item["height"]))
-        for rect in rects:
-            translated_rect(item, rect)
+        _validate_part_item(item, names, files, seen)
     for item in generated:
         parsed = parse_generated(item)
         if parsed.name in names:
@@ -576,12 +641,8 @@ def export_pictures(read, manifest: dict, root: Path, row, text_style: str = DEF
             if "text" in rect:
                 if (force_zh or not translated.is_file()
                         or translated.read_bytes() == original.read_bytes()):
-                    if rect["name"] in {"mage_magic", "priest_magic"}:
-                        from busin.picture_text.cock import render_initial
-                        render_initial(image, rect, translated, text_style)
-                    else:
-                        from busin.picture_text.menu_text import render_initial
-                        render_initial(image, rect, translated)
+                    from busin.picture_text.registry import render_initial
+                    render_initial(item, rect, image, translated, text_style)
             else:
                 keep_zh(original)
         # Render all sources first so manifest order cannot affect derived crops.
@@ -738,7 +799,7 @@ def self_test() -> None:
         try:
             part_spans(read, overlap_root, row)
         except ValueError as error:
-            assert "disagree" in str(error)
+            assert "translated rects" in str(error) and "overlap" in str(error)
         else:
             raise AssertionError("overlapping part crops with different indices were accepted")
 
@@ -871,53 +932,56 @@ def self_test() -> None:
                 for rect in by_name["Tw_map02"]["rects"]
             } == {line(row)}
 
-            # cock_00 uses shared sprite indexes 0 through 22. cock_01 has its
-            # own twenty-record table and also uses shared index 23.
+            # Record indexes live with the one module that patches them.
+            from busin.patch.picture_rects import (
+                COCK01_MENU_RECORDS,
+                SHARED_MENU_RECORDS,
+            )
+
             def sprite_table(at, count):
                 at -= FILE_BASE
                 size = count * 12
                 sectors = (at % 2048 + size + 2047) // 2048
-                blob = read_user(
-                    src, ELF_LBA + at // 2048, sectors
-                )[at % 2048:at % 2048 + size]
+                blob = read_user(src, ELF_LBA + at // 2048, sectors)[
+                    at % 2048 : at % 2048 + size
+                ]
                 return lambda index: struct.unpack_from("<6h", blob, index * 12)
 
-            shared = sprite_table(0x583EA0, 24)
-            cock01_sprites = sprite_table(0x583DAC, 20)
-            cock00 = {
-                "confirm": (shared, 9), "back": (shared, 10),
-                "event_item": (shared, 11), "item_data": (shared, 12),
-                "magic_list": (shared, 13), "page_switch": (shared, 14),
-                "weapon": (shared, 15), "armor": (shared, 16),
-                "accessory": (shared, 17), "status": (shared, 18),
-                "magic_stone_info": (shared, 19), "switch": (shared, 20),
-                "move": (shared, 22),
+            tables = {
+                0x583EA0: sprite_table(0x583EA0, 24),
+                0x583DAC: sprite_table(0x583DAC, 20),
             }
-            cock01 = {
-                "mage_magic": (cock01_sprites, 11),
-                "priest_magic": (cock01_sprites, 12),
-                "first_allied": (cock01_sprites, 17),
-                "second_allied": (cock01_sprites, 18),
-                "skill": (cock01_sprites, 19),
-                "front_back_change": (shared, 23),
+            indexes_by_texture = {
+                "cock_00": {
+                    name: record
+                    for name, record in SHARED_MENU_RECORDS.items()
+                    if name != "front_back_change"
+                },
+                "cock_01": {
+                    **COCK01_MENU_RECORDS,
+                    "front_back_change": SHARED_MENU_RECORDS["front_back_change"],
+                },
             }
-            for name, indexes in (("cock_00", cock00), ("cock_01", cock01)):
+            for name, indexes in indexes_by_texture.items():
                 rects = {rect["name"]: rect for rect in by_name[name]["rects"]}
                 assert set(rects) == set(indexes)
-                for label, (table, index) in indexes.items():
-                    values = table(index)
+                for label, record in indexes.items():
+                    values = tables[record.table](record.index)
                     rect = rects[label]
                     assert values == (
-                        rect["x"], rect["y"], rect["width"], rect["height"],
-                        rect["width"], rect["height"],
+                        rect["x"],
+                        rect["y"],
+                        rect["width"],
+                        rect["height"],
+                        rect["width"],
+                        rect["height"],
                     )
                     expected_palette = (
-                        2 if name == "cock_00"
-                        else 17 if label in {"mage_magic", "priest_magic"}
-                        else 10
+                        2
+                        if name == "cock_00"
+                        else 17 if label in {"mage_magic", "priest_magic"} else 10
                     )
                     assert rect["palette"] == expected_palette
-
 
 def load_manifest_conflict() -> None:
     with tempfile.TemporaryDirectory() as tmp:

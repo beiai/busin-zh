@@ -1,11 +1,25 @@
 """Small-font readings and a text dump of the static 16×16 strings."""
 import json
-import re
 import struct
+from dataclasses import dataclass
 
 from busin.disc import FILE_BASE
 from busin.disasm import load_elf
 from busin.paths import BUILD, DATA
+from busin.ui_layout import (
+    _RACE_LABELS, _RACE_X, _STAT_X, _CREATE_STAT_X, _POINT_STAT_X, _address,
+    _assign, _encode, _fit, _fit_grid, _glyphs, _label, _layout_line,
+    _layout_ok, _slacks, _tokens, _visible, _wrap,
+)
+from busin.ui_records import (
+    BLURB_ROWS as _BLURB_ROWS, BLURB_WIDTH as _BLURB_WIDTH,
+    PLACE_POINTER_RANGES as _PLACE_POINTER_RANGES, blurb_record as _blurb_record,
+    blurb_slots as _blurb_slots, grid as _grid, half as _half,
+    monster_slots as _monster_slots, name_slots as _name_slots,
+    packed_slots as _packed_slots, place_slots as _place_slots,
+    read_ffff as _read_ffff, slot as _slot, strip_pad as _strip_pad,
+    text_run as _text_run, word as _word,
+)
 
 UI = {
     int(code, 16): char
@@ -25,28 +39,6 @@ PAPER_WIDTH = 19
 _GEAR_NUDGE = {0x584308 + index * 12 for index in range(7) if index != 4}
 
 STRING_TABLE = 0x43E9C8
-
-_QUEST_TITLE_TABLE = 0x569EE8
-_QUEST_TITLE_COUNT = 24
-_QUEST_TITLE_START = 0x569C30
-_PLACE_POINTER_RANGES = (
-    (0x569BD0, _QUEST_TITLE_START),
-    (_QUEST_TITLE_TABLE, _QUEST_TITLE_TABLE + _QUEST_TITLE_COUNT * 4),
-)
-
-# 0x12F368..0x12F458 index these tables by 102 bytes. 0x12F2A0 copies
-# three rows of 17 cells; zero cells are padding, not record delimiters.
-_BLURB_WIDTH = 17
-_BLURB_ROWS = 3
-_BLURB_STRIDE = _BLURB_WIDTH * _BLURB_ROWS * 2
-_BLURB_TABLES = (
-    (0x4B0CC6, 120, 0x12F368),
-    (0x4B3CC6, 100, 0x12F398),
-    (0x4B64C6, 100, 0x12F3F8),
-    (0x4B8CC6, 100, 0x12F3C8),
-    (0x4BB4C6, 100, 0x12F428),
-    (0x4BDCC6, 100, 0x12F458),
-)
 
 
 def ui_char(code: int) -> str | None:
@@ -125,40 +117,6 @@ def _grid_source(codes, width) -> str:
         raise AssertionError(f"{len(codes)} cells do not fit width {width}")
     rows = [codes[index:index + width] for index in range(0, len(codes), width)]
     return "/".join(_row_text(row) for row in rows)
-
-
-def _half(elf, va):
-    return struct.unpack_from("<H", elf, va - FILE_BASE)[0]
-
-
-def _word(elf, va):
-    return struct.unpack_from("<I", elf, va - FILE_BASE)[0]
-
-
-def _read_ffff(elf, va, limit=96, extra=()):
-    out = []
-    for index in range(limit):
-        value = _half(elf, va + index * 2)
-        if value == 0xFFFF:
-            return out
-        if value != 0xFFFE and value not in extra and value >= 0x400:
-            return out
-        out.append(value)
-    return out
-
-
-def _text_run(run):
-    body = [code for code in run if code not in (0x6E, 0xFFFE, 0)]
-    return len(body) >= 2 and any(code >= 0x70 for code in body)
-
-
-def _strip_pad(run):
-    # 0x1D (=) and 0x6E (_) pad item records. They are real glyphs elsewhere.
-    while run and run[0] in (0x1D, 0x6E):
-        run = run[1:]
-    while run and run[-1] == 0x6E:
-        run = run[:-1]
-    return run
 
 
 def _record_runs(elf, va, limit=3):
@@ -473,198 +431,12 @@ def manuscript_lines(name, rows):
 _SLASH = {"menu", "shop", "debug", "inn"}
 
 
-def _tokens(text, slash):
-    index = 0
-    while index < len(text):
-        if text.startswith("{d}", index):
-            yield ("dd", None)
-            index += 3
-            continue
-        hole = re.match(r"\{(\d+)\}", text[index:])
-        if hole:
-            yield ("sp", int(hole.group(1)))
-            index += len(hole.group(0))
-            continue
-        char = text[index]
-        index += 1
-        if char == " ":
-            yield ("sp", 1)
-        elif char == "/" and slash:
-            yield ("nl", None)
-        else:
-            yield ("g", char)
-
-
-def _encode(text, table, slash):
-    out = []
-    for kind, item in _tokens(text, slash):
-        if kind == "sp":
-            out.extend([0] * item)
-        elif kind == "nl":
-            out.append(0xFFFE)
-        elif kind == "dd":
-            out.append(0xFFFD)
-        elif item not in table:
-            raise ValueError(f"no cell for {item}")
-        else:
-            out.append(table[item])
-    return out
-
-
-def _glyphs(text, slash):
-    return [item for kind, item in _tokens(text, slash) if kind == "g"]
-
-
-def _centered(codes):
-    return bool(codes) and codes[0] == 0 and codes[-1] == 0 and any(code not in (0, 0xFFFE) for code in codes)
-
-
-# Race names are three cells. Two-kana rows started at x+8, four-kana rows at x+0.
-# The short-name branch now always runs, so every row starts at x+8.
-_RACE_X = {
-    0x14D654: (0x14400004, 0x10000004),
-}
-_RACE_LABELS = {
-    ("menu", "15"), ("menu", "16"), ("menu", "17"), ("menu", "18"), ("menu", "19"),
-    ("create", "589FB0"), ("create", "589FB8"), ("create", "589FC0"),
-    ("create", "589FC8"), ("create", "589FD0"),
-}
-# Status sheet centers a stat name by its Japanese length: one glyph at x+16, two at x+8, three at x+0.
-# Chinese names are three cells with a middle blank, and share the three-kanji rows at x+0.
-_STAT_X = {
-    0x582A20: (0x0010000B, 0x0000000B),
-    0x582A24: (0x0008000C, 0x0000000C),
-    0x582A28: (0x0000000D, 0x0000000D),
-    0x582A2C: (0x0000000E, 0x0000000E),
-    0x582A30: (0x0000000F, 0x0000000F),
-    0x582A34: (0x00000010, 0x00000010),
-}
-# Creation screen places the first stat at x+16 and the second at x+8.
-# Chinese names are three cells, so those two rows use the same x as the other four.
-_CREATE_STAT_X = {
-    0x14D174: (0x27C20010, 0x27C20000),
-    0x14D188: (0x27C30008, 0x27C30000),
-}
-# Ability points place the first name at x+16 and the second at x+8. The value column stays put.
-# Chinese names are three cells, so the two short rows use x+0 with the others.
-# The later list uses the same two offsets, and its number is drawn from that x.
-_POINT_STAT_X = {
-    0x14DAE0: (0x26A20010, 0x26A20000),
-    0x14DAF0: (0x26A20008, 0x26A20000),
-    0x152DA4: (0x26020010, 0x26020000),
-    0x152DB4: (0x26020008, 0x26020000),
-}
-
-
-def _layout_line(text, raw, width, slack, table, slash, center=True):
-    body = _encode(text, table, slash)
-    limit = width + (slack or 0)
-    if center and _centered(raw) and len(body) <= width:
-        pad = width - len(body)
-        left = pad // 2
-        body = [0] * left + body + [0] * (pad - left)
-    elif len(body) < width:
-        body = body + [0] * (width - len(body))
-    if len(body) > limit:
-        raise ValueError(f"{len(body)} cells, budget {limit}")
-    return body
-
-
-def _fit_grid(text, slot, table):
-    width, rows = slot["width"], slot["rows"]
-    if "/" not in text:
-        return _wrap(_encode(text, table, False), width, rows)
-    parts = text.split("/")
-    if len(parts) > rows:
-        raise ValueError(f"{len(parts)} lines, budget {rows}")
-    parts.extend([""] * (rows - len(parts)))
-    out = []
-    for part in parts:
-        body = _encode(part, table, False)
-        if len(body) > width:
-            raise ValueError(f"{len(body)} cells, budget {width}")
-        out.extend(body + [0] * (width - len(body)))
-    return out
-
-
-def _wrap(codes, width, rows):
-    if len(codes) > width * rows:
-        raise ValueError(f"{len(codes)} cells, budget {width * rows}")
-    out = []
-    for index in range(rows):
-        chunk = codes[index * width:(index + 1) * width]
-        out.extend(chunk + [0] * (width - len(chunk)))
-    return out
-
-
-def _layout_ok(encoded, written):
-    """Written text is the encoding plus centering and right pad. A gap counts only if the translation wrote it."""
-    index = got = 0
-    while index < len(encoded) and got < len(written):
-        if encoded[index] == written[got]:
-            index += 1
-            got += 1
-            continue
-        if written[got] != 0 or index != 0:
-            return False
-        got += 1
-    while got < len(written) and written[got] == 0:
-        got += 1
-    return index == len(encoded) and got == len(written)
-
-
-def _assign(chars, known):
-    from busin.patch.ui_pages import FIRST_CODE, LAST_CODE
-
-    fresh = sorted({char for char in chars if char not in known})
-    if fresh and FIRST_CODE + len(fresh) - 1 > LAST_CODE:
-        raise ValueError(f"{len(fresh)} new glyphs do not fit in {FIRST_CODE:#x}-{LAST_CODE:#x}")
-    table = dict(known)
-    for index, char in enumerate(fresh):
-        table[char] = FIRST_CODE + index
-    return table, {char: table[char] for char in fresh}
-
-
-def _grid(elf, va, width, rows):
-    return [_half(elf, va + index * 2) for index in range(width * rows)]
-
-
-def _slot(ident, va, mode, raw, width, slack=None, rows=1, room=None, slash=False, ffff=False, kind=None):
-    return {"id": ident, "va": va, "mode": mode, "raw": raw, "width": width, "slack": slack,
-            "rows": rows, "room": room, "slash": slash, "ffff": ffff, "type": kind}
-
-
 def _spec(slot):
     if slot["mode"] == "flow":
         return f"{slot['width']}x{slot['rows']}"
     if slot["mode"] == "ptr" and slot["slack"] is not None:
         return f"{slot['width']} +{slot['slack']}"
     return str(slot["width"])
-
-
-def _visible(text, slot):
-    return text.replace("/", "") if slot.get("type") == "grid" else text
-
-
-def _fit(text, slot, table):
-    if slot.get("type") == "grid":
-        return _fit_grid(text, slot, table)
-    if slot["mode"] == "flow":
-        return _wrap(_encode(text, table, False), slot["width"], slot["rows"])
-    if slot["mode"] == "span":
-        body = _layout_line(text, slot["raw"], slot["width"], 0, table, slot["slash"])
-        if len(body) > slot["room"]:
-            raise ValueError(f"{len(body)} cells, room {slot['room']}")
-        return body + [0] * (slot["room"] - len(body))
-    if slot.get("keep"):
-        # The first cell is an x offset. The label uses the cells after it.
-        drawn = _encode(text, table, False)
-        room = slot["width"] - 1
-        if len(drawn) > room:
-            raise ValueError(f"{len(drawn)} cells, budget {room}")
-        return [slot["raw"][0], *drawn, *([0] * (room - len(drawn)))]
-    return _layout_line(text, slot["raw"], slot["width"], slot["slack"], table, slot["slash"],
-                        center=slot.get("type") != "line")
 
 
 def _ptr_slots(rows, slash):
@@ -688,189 +460,6 @@ def _line_slots(elf, rows, widths):
 def _flow_slots(rows, width, nrows):
     return [_slot(_label(label), _address(label), "flow", [], width, rows=nrows, kind="grid")
             for label, _codes in rows]
-
-
-def _kept_spans(elf, va, limit=3):
-    found, current, start = [], [], None
-    for index in range(32):
-        value = _half(elf, va + index * 2)
-        at = va + index * 2
-        if value in (0, 0xFFFF):
-            if current:
-                found.append((start, current, at))
-                current, start = [], None
-        elif value == 0xFFFE or value < 0x400:
-            if start is None:
-                start = at
-            current.append(value)
-        elif current:
-            found.append((start, current, at))
-            current, start = [], None
-    if current:
-        found.append((start, current, va + 64))
-    kept = []
-    for start, raw, term in found:
-        # The name getters start after the record marker. Stripping it from the
-        # source must also advance the write address, or the first letter is lost.
-        while raw and raw[0] in (0x1D, 0x6E):
-            start += 2
-            raw = raw[1:]
-        stripped = _strip_pad(list(raw))
-        if _text_run(stripped):
-            kept.append((start, stripped, raw, term))
-        if len(kept) == limit:
-            break
-    return kept
-
-
-def _name_slots(elf):
-    # The normal-name getters advance past the '=' marker, then index 64-byte records.
-    for getter, base in ((0x12EEB0, 0x4A4E06), (0x12EF10, 0x4A7386), (0x12EF70, 0x4A9886)):
-        expected = {
-            getter + 20: 0x3C030000 | ((base + 0x8000) >> 16),
-            getter + 28: 0x24630000 | (base & 0xFFFF),
-            getter + 32: 0x00021180,
-        }
-        for va, word in expected.items():
-            if _word(elf, va) != word:
-                raise AssertionError(f"name reader at {va:#x}")
-    slots = []
-    for va in range(0x4A4000, 0x4B0140, 0x40):
-        for index, (start, stripped, raw, term) in enumerate(_kept_spans(elf, va)):
-            ident = f"{va:06X}" if index == 0 else f"{va:06X}.{index + 1}"
-            slots.append(_slot(ident, start, "span", stripped, len(stripped), room=(term - start) // 2))
-            if slots[-1]["room"] != len(raw):
-                raise AssertionError(f"{ident} room")
-    return slots
-
-
-def _monster_slots(elf):
-    slots = []
-    for va in range(0x4F3400, 0x4F5400, 0x40):
-        if _half(elf, va) == 0:
-            continue
-        raw, term, bad = [], None, False
-        for index in range(20):
-            code = _half(elf, va + index * 2)
-            if code == 0:
-                term = va + index * 2
-                break
-            if code >= 0x400:
-                bad = True
-                break
-            raw.append(code)
-        else:
-            term = va + 40
-        stripped = _strip_pad(list(raw))
-        if bad or term is None or not _text_run(stripped):
-            continue
-        slots.append(_slot(f"{va:06X}", va, "span", stripped, len(stripped), room=(term - va) // 2))
-    return slots
-
-
-def _packed_slots(elf, start, end):
-    slots = []
-    va = start
-    while va < end:
-        value = _half(elf, va)
-        if value in (0, 0xFFFF) or value >= 0x400:
-            va += 2
-            continue
-        raw, at, ok = [], va, True
-        while at < end:
-            code = _half(elf, at)
-            if code in (0, 0xFFFF):
-                break
-            if code == 0xFFFE or code < 0x400:
-                raw.append(code)
-                at += 2
-                continue
-            ok = False
-            break
-        stripped = _strip_pad(list(raw))
-        if ok and _text_run(stripped) and _half(elf, at) in (0, 0xFFFF):
-            slots.append(_slot(f"{va:06X}", va, "span", stripped, len(stripped), room=len(raw)))
-            va = at + 2
-        else:
-            va += 2
-    return slots
-
-
-def _quest_title_slots(elf):
-    # The title painter indexes this pointer table and treats FFFE as a line break.
-    # Read through the pointers: the preceding name pointer's high half looks like 'v'.
-    for va, word in (
-        (0x3DD24C, 0x2C620000 | _QUEST_TITLE_COUNT),
-        (0x3DD264, 0x3C020000 | ((_QUEST_TITLE_TABLE + 0x8000) >> 16)),
-        (0x3DD268, 0x00031880),
-        (0x3DD26C, 0x24420000 | (_QUEST_TITLE_TABLE & 0xFFFF)),
-        (0x3DD274, 0x2404FFFF),
-        (0x3DD278, 0x8C700000),
-        (0x3DD290, 0x2404FFFE),
-    ):
-        if _word(elf, va) != word:
-            raise AssertionError(f"quest title reader at {va:#x}")
-    pointers = [_word(elf, _QUEST_TITLE_TABLE + index * 4) for index in range(_QUEST_TITLE_COUNT)]
-    if pointers[0] != _QUEST_TITLE_START:
-        raise AssertionError(f"quest title pointer {pointers[0]:#x}")
-    slots = []
-    for va, end in zip(pointers, [*pointers[1:], _QUEST_TITLE_TABLE]):
-        if va % 2 or not _QUEST_TITLE_START <= va < end <= _QUEST_TITLE_TABLE:
-            raise AssertionError(f"quest title pointer {va:#x}..{end:#x}")
-        codes = _read_ffff(elf, va, limit=(end - va) // 2)
-        if not codes or va + len(codes) * 2 >= end or _half(elf, va + len(codes) * 2) != 0xFFFF:
-            raise AssertionError(f"quest title terminator at {va:#x}")
-        slots.append(_slot(f"{va:06X}", va, "span", codes, len(codes), room=len(codes), slash=True))
-    return slots
-
-
-def _place_slots(elf):
-    slots = []
-    for start, end in (
-        (0x526C00, 0x527400), (0x529C20, 0x52A000),
-        (0x567F90, 0x568400), (0x569940, _PLACE_POINTER_RANGES[0][0]),
-    ):
-        slots.extend(_packed_slots(elf, start, end))
-    slots.extend(_quest_title_slots(elf))
-    for start, end in ((_PLACE_POINTER_RANGES[1][1], 0x56AF00), (0x4C1200, 0x4C2400)):
-        slots.extend(_packed_slots(elf, start, end))
-    return slots
-
-
-def _blurb_record(va):
-    return any(base <= va < base + count * _BLURB_STRIDE and (va - base) % _BLURB_STRIDE == 0
-               for base, count, _getter in _BLURB_TABLES)
-
-
-def _blurb_slots(elf):
-    # The copy routine advances 34 bytes per source row and stops after three rows.
-    for va, word in ((0x12F34C, 0x28420003), (0x12F350, 0x24840022)):
-        if _word(elf, va) != word:
-            raise AssertionError(f"blurb row copy at {va:#x}")
-    slots = _packed_slots(elf, 0x4B0140, 0x4B0CC0)
-    for base, count, getter in _BLURB_TABLES:
-        # Check the actual reader's stride and signed lui/addiu address pair.
-        high = (base + 0x8000) >> 16
-        expected = {
-            getter + 20: 0x24050000 | _BLURB_STRIDE,
-            getter + 28: 0x3C020000 | high,
-            getter + 32: 0x24420000 | (base & 0xFFFF),
-        }
-        for va, word in expected.items():
-            if _word(elf, va) != word:
-                raise AssertionError(f"blurb reader at {va:#x}")
-        if [_half(elf, base - 6 + index * 2) for index in range(3)] != [0, 0, 0x1D]:
-            raise AssertionError(f"blurb table header at {base - 6:#x}")
-        for index in range(count):
-            va = base + index * _BLURB_STRIDE
-            codes = _grid(elf, va, _BLURB_WIDTH, _BLURB_ROWS)
-            if any(code >= 0x400 for code in codes):
-                raise AssertionError(f"blurb grid cell at {va:#x}")
-            if any(code not in (0, 0x6E) for code in codes):
-                slots.append(_slot(f"{va:06X}", va, "flow", codes, _BLURB_WIDTH,
-                                   rows=_BLURB_ROWS, kind="grid"))
-    slots.extend(_packed_slots(elf, 0x4C04C0, 0x4C0500))
-    return slots
 
 
 def _blurb_readings(elf):
@@ -963,13 +552,20 @@ def _translation(row, name, ident):
     return text
 
 
-def ui_patches(elf):
-    """ELF writes for data/interface, plus glyphs on the new UI pages."""
-    docs = {path.stem: json.loads(path.read_text(encoding="utf-8"))
-            for path in sorted((DATA / "interface").glob("*.json"))}
-    known = {}
-    pending = []
-    chars = []
+@dataclass(frozen=True)
+class PendingText:
+    name: str
+    ident: str
+    text: str
+    slot: dict
+
+
+def _load_translations(elf):
+    docs = {
+        path.stem: json.loads(path.read_text(encoding="utf-8"))
+        for path in sorted((DATA / "interface").glob("*.json"))
+    }
+    pending, chars = [], []
     kept_original = 0
     for name, _title, rows in collect(elf):
         lines = manuscript_lines(name, rows)
@@ -985,27 +581,41 @@ def ui_patches(elf):
                 raise ValueError(f"{name} {ident} does not match the disc")
             slot = slots[index]
             if slot["id"] != ident or _spec(slot) != spec:
-                raise AssertionError(f"{name} {ident} slot {slot['id']} spec {_spec(slot)} != {spec}")
+                raise AssertionError(
+                    f"{name} {ident} slot {slot['id']} spec {_spec(slot)} != {spec}"
+                )
             if slot.get("type"):
                 if row.get("type") != slot["type"] or row.get("width") != spec:
                     raise ValueError(
-                        f"{name} {ident} type {row.get('type')} {row.get('width')} != {slot['type']} {spec}")
+                        f"{name} {ident} type {row.get('type')} {row.get('width')} "
+                        f"!= {slot['type']} {spec}"
+                    )
             elif row.get("type") or row.get("width"):
-                raise ValueError(f"{name} {ident} has type {row.get('type')} {row.get('width')}")
+                raise ValueError(
+                    f"{name} {ident} has type {row.get('type')} {row.get('width')}"
+                )
             text = _translation(row, name, ident)
             if text is None:
                 kept_original += 1
                 continue
-            pending.append((name, ident, text, slot))
+            pending.append(PendingText(name, ident, text, slot))
             chars.extend(_glyphs(_visible(text, slot), slot["slash"]))
-    table, extra = _assign(chars, known)
-    rev = {}
+    return pending, chars, kept_original
+
+
+def _reverse_table(table):
+    reverse = {}
     for char, code in table.items():
-        if code in rev and rev[code] != char:
-            raise ValueError(f"{char} and {rev[code]} share cell {code:#x}")
-        rev[code] = char
+        if code in reverse and reverse[code] != char:
+            raise ValueError(f"{char} and {reverse[code]} share cell {code:#x}")
+        reverse[code] = char
+    return reverse
+
+
+def _record_cells(pending, table, reverse):
     cells = {}
-    for name, ident, text, slot in pending:
+    for item in pending:
+        name, ident, text, slot = item.name, item.ident, item.text, item.slot
         try:
             codes = _fit(text, slot, table)
         except ValueError as exc:
@@ -1018,17 +628,25 @@ def ui_patches(elf):
                 raise ValueError(f"{name} {ident} is {width} cells")
         shown = _visible(text, slot)
         written = codes[1:] if slot.get("keep") else codes
-        if _glyphs(shown, slot["slash"]) != [rev[code] for code in written if code not in (0, 0xFFFE, 0xFFFD)]:
+        expected = [
+            reverse[code] for code in written if code not in (0, 0xFFFE, 0xFFFD)
+        ]
+        if _glyphs(shown, slot["slash"]) != expected:
             raise ValueError(f"{name} {ident} glyphs do not match")
-        if written.count(0xFFFE) != sum(1 for kind, _item in _tokens(shown, slot["slash"]) if kind == "nl"):
+        newlines = sum(kind == "nl" for kind, _item in _tokens(shown, slot["slash"]))
+        if written.count(0xFFFE) != newlines:
             raise ValueError(f"{name} {ident} slashes do not match")
-        if slot["mode"] != "flow" and not _layout_ok(_encode(shown, table, slot["slash"]), written):
+        if slot["mode"] != "flow" and not _layout_ok(
+            _encode(shown, table, slot["slash"]), written
+        ):
             raise ValueError(f"{name} {ident} layout does not match")
-        packed = ([*codes, 0xFFFF] if slot["ffff"] else codes)
+        packed = [*codes, 0xFFFF] if slot["ffff"] else codes
         for index, code in enumerate(packed):
             va = slot["va"] + index * 2
             if any(start <= va < end for start, end in _PLACE_POINTER_RANGES):
-                raise ValueError(f"{name} {ident} overwrites a place pointer at {va:#x}")
+                raise ValueError(
+                    f"{name} {ident} overwrites a place pointer at {va:#x}"
+                )
             old = cells.get(va)
             if old is None or old == code:
                 cells[va] = code
@@ -1036,9 +654,15 @@ def ui_patches(elf):
                 # Padding yields. The job labels start after the third parchment page.
                 cells[va] = old or code
             else:
-                raise ValueError(f"{name} {ident} overlaps a different glyph at {va:#x}")
+                raise ValueError(
+                    f"{name} {ident} overlaps a different glyph at {va:#x}"
+                )
             if code not in (0, 0xFFFE) and cells[va] != code:
                 raise ValueError(f"{name} {ident} lost a glyph at {va:#x}")
+    return cells
+
+
+def _serialize_cells(cells):
     writes = {}
     ordered = sorted(cells)
     start = prev = None
@@ -1054,31 +678,37 @@ def ui_patches(elf):
         prev = va
     if buf:
         writes[start - FILE_BASE] = struct.pack(f"<{len(buf)}H", *buf)
+    return writes
+
+
+def _replace_word(elf, writes, va, old, new, label):
+    offset = va - FILE_BASE
+    if struct.unpack_from("<I", elf, offset)[0] != old or offset in writes:
+        raise AssertionError(f"{label} at {va:#x}")
+    writes[offset] = struct.pack("<I", new)
+
+
+def _layout_patches(elf, writes):
     for va in PAPER_PITCH:
-        off = va - FILE_BASE
-        if struct.unpack_from("<I", elf, off)[0] != PAPER_PITCH_OLD or off in writes:
-            raise AssertionError(f"paper pitch at {va:#x}")
-        writes[off] = struct.pack("<I", PAPER_PITCH_NEW)
-    for va, (old, new) in _RACE_X.items():
-        off = va - FILE_BASE
-        if struct.unpack_from("<I", elf, off)[0] != old or off in writes:
-            raise AssertionError(f"race list x at {va:#x}")
-        writes[off] = struct.pack("<I", new)
-    for va, (old, new) in _STAT_X.items():
-        off = va - FILE_BASE
-        if struct.unpack_from("<I", elf, off)[0] != old or off in writes:
-            raise AssertionError(f"stat name x at {va:#x}")
-        writes[off] = struct.pack("<I", new)
-    for va, (old, new) in _CREATE_STAT_X.items():
-        off = va - FILE_BASE
-        if struct.unpack_from("<I", elf, off)[0] != old or off in writes:
-            raise AssertionError(f"create stat x at {va:#x}")
-        writes[off] = struct.pack("<I", new)
-    for va, (old, new) in _POINT_STAT_X.items():
-        off = va - FILE_BASE
-        if struct.unpack_from("<I", elf, off)[0] != old or off in writes:
-            raise AssertionError(f"point stat x at {va:#x}")
-        writes[off] = struct.pack("<I", new)
+        _replace_word(elf, writes, va, PAPER_PITCH_OLD, PAPER_PITCH_NEW, "paper pitch")
+    for patches, label in (
+        (_RACE_X, "race list x"),
+        (_STAT_X, "stat name x"),
+        (_CREATE_STAT_X, "create stat x"),
+        (_POINT_STAT_X, "point stat x"),
+    ):
+        for va, (old, new) in patches.items():
+            _replace_word(elf, writes, va, old, new, label)
+
+
+def ui_patches(elf):
+    """ELF writes for data/interface, plus glyphs on the new UI pages."""
+    pending, chars, kept_original = _load_translations(elf)
+    table, extra = _assign(chars, {})
+    reverse = _reverse_table(table)
+    cells = _record_cells(pending, table, reverse)
+    writes = _serialize_cells(cells)
+    _layout_patches(elf, writes)
     info = {
         "strings": len(pending),
         "skipped": 0,
@@ -1086,7 +716,6 @@ def ui_patches(elf):
         "glyphs": len(extra),
     }
     return writes, extra, info
-
 
 def check_ui_text_report(info):
     """The report may list intentional keeps, but never an implicit skipped string."""

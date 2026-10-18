@@ -160,20 +160,30 @@ def _seat(box, cell):
     return (cell - (right - left)) // 2 - left
 
 
-def seat_line(
+def _seat_line(
     mask: Image.Image,
     label: str,
     cell_width: int,
     cell_height: int,
-    max_edge_crop: int = MAX_EDGE_CROP,
-) -> Image.Image:
-    """Move the complete line into the cell, then permit at most two cropped edge pixels."""
+    max_edge_crop: int,
+    horizontal: str,
+):
+    """Move a complete line into its cell and return the image plus its offset."""
+    if horizontal not in ("left", "center"):
+        raise ValueError(f"{label} horizontal alignment is {horizontal!r}")
     solid = solid_box(mask)
     ink = mask.getbbox()
     if solid is None or ink is None:
         raise ValueError(f"{label} is empty")
 
-    ink_x = _seat(ink, cell_width) if ink[2] - ink[0] <= cell_width else _seat(solid, cell_width)
+    if horizontal == "center":
+        ink_x = (
+            _seat(ink, cell_width)
+            if ink[2] - ink[0] <= cell_width
+            else _seat(solid, cell_width)
+        )
+    else:
+        ink_x = -ink[0] if ink[2] - ink[0] <= cell_width else -solid[0]
     ink_y = (
         (cell_height - (ink[3] - ink[1])) // 2 - ink[1]
         if ink[3] - ink[1] <= cell_height
@@ -184,8 +194,12 @@ def seat_line(
         return (box[0] + dx, box[1] + dy, box[2] + dx, box[3] + dy)
 
     solid_box_placed = placed(solid, ink_x, ink_y)
-    if (solid_box_placed[0] < 0 or solid_box_placed[1] < 0
-            or solid_box_placed[2] > cell_width or solid_box_placed[3] > cell_height):
+    if (
+        solid_box_placed[0] < 0
+        or solid_box_placed[1] < 0
+        or solid_box_placed[2] > cell_width
+        or solid_box_placed[3] > cell_height
+    ):
         raise ValueError(
             f"{label} solid ink is "
             f"{max(0, solid_box_placed[2] - solid_box_placed[0] - cell_width)}x"
@@ -194,8 +208,10 @@ def seat_line(
 
     ink_box = placed(ink, ink_x, ink_y)
     overflow = (
-        max(0, -ink_box[0]), max(0, -ink_box[1]),
-        max(0, ink_box[2] - cell_width), max(0, ink_box[3] - cell_height),
+        max(0, -ink_box[0]),
+        max(0, -ink_box[1]),
+        max(0, ink_box[2] - cell_width),
+        max(0, ink_box[3] - cell_height),
     )
     if max(overflow) > max_edge_crop:
         raise ValueError(
@@ -205,7 +221,55 @@ def seat_line(
 
     out = Image.new("L", (cell_width, cell_height), 0)
     out.paste(mask, (ink_x, ink_y))
-    return out
+    return out, (ink_x, ink_y)
+
+
+def seat_line(
+    mask: Image.Image,
+    label: str,
+    cell_width: int,
+    cell_height: int,
+    max_edge_crop: int = MAX_EDGE_CROP,
+    horizontal: str = "center",
+) -> Image.Image:
+    """Move the complete line into the cell, then permit at most two cropped edge pixels."""
+    return _seat_line(mask, label, cell_width, cell_height, max_edge_crop, horizontal)[
+        0
+    ]
+
+
+def line_layout(
+    text: str,
+    font,
+    cell_width: int,
+    cell_height: int,
+    label: str | None = None,
+    tracking: int = 0,
+    horizontal: str = "center",
+):
+    """Return the normal-resolution mask, chosen tracking, and seat offset."""
+    label = label or repr(text)
+    missing = missing_glyphs(font, text)
+    if missing:
+        raise ValueError(f"{label} missing glyphs: {' '.join(missing)}")
+    while True:
+        mask, boxes = draw_parts(text, font, cell_width, cell_height, tracking)
+        solid = solid_box(mask)
+        overlap = solid_overlap(boxes)
+        if solid[2] - solid[0] <= cell_width:
+            if overlap:
+                raise ValueError(f"{label} solid strokes overlap")
+            seated, offset = _seat_line(
+                mask, label, cell_width, cell_height, MAX_EDGE_CROP, horizontal
+            )
+            return seated, tracking, offset
+        if overlap:
+            raise ValueError(
+                f"{label} cannot tighten without overlapping solid strokes"
+            )
+        tracking -= 1
+        if tracking < MIN_TRACKING:
+            raise ValueError(f"{label} cannot fit after tightening letter spacing")
 
 
 def render_line(
@@ -214,25 +278,12 @@ def render_line(
     cell_width: int,
     cell_height: int,
     label: str | None = None,
+    tracking: int = 0,
+    horizontal: str = "center",
 ) -> Image.Image:
-    label = label or repr(text)
-    missing = missing_glyphs(font, text)
-    if missing:
-        raise ValueError(f"{label} missing glyphs: {' '.join(missing)}")
-    tracking = 0
-    while True:
-        mask, boxes = draw_parts(text, font, cell_width, cell_height, tracking)
-        solid = solid_box(mask)
-        overlap = solid_overlap(boxes)
-        if solid[2] - solid[0] <= cell_width:
-            if overlap:
-                raise ValueError(f"{label} solid strokes overlap")
-            return seat_line(mask, label, cell_width, cell_height)
-        if overlap:
-            raise ValueError(f"{label} cannot tighten without overlapping solid strokes")
-        tracking -= 1
-        if tracking < MIN_TRACKING:
-            raise ValueError(f"{label} cannot fit after tightening letter spacing")
+    return line_layout(
+        text, font, cell_width, cell_height, label, tracking, horizontal
+    )[0]
 
 
 def outline_indices(
@@ -343,6 +394,35 @@ def _stroke_layer(text: str, font, width: int, height: int, stroke_width: int) -
     return canvas.resize((width, height), Image.Resampling.BOX)
 
 
+def render_text_alpha(
+    text: str,
+    font,
+    cell_width: int,
+    cell_height: int,
+    label: str | None = None,
+    tracking: int = 0,
+    horizontal: str = "left",
+    output_width: int | None = None,
+) -> list[int]:
+    """Render an anti-aliased mask with exactly the same seat and tracking as render_line."""
+    label = label or repr(text)
+    _mask, tracking, (dx, dy) = line_layout(
+        text, font, cell_width, cell_height, label, tracking, horizontal
+    )
+    scale = TEXT_AA_SCALE
+    scaled_font = _scaled_font(font, font.size * scale)
+    scaled_mask, _boxes = draw_parts(
+        text, scaled_font, cell_width * scale, cell_height * scale, tracking * scale
+    )
+    seated = Image.new("L", (cell_width * scale, cell_height * scale), 0)
+    seated.paste(scaled_mask, (dx * scale, dy * scale))
+    width = cell_width if output_width is None else output_width
+    if width <= 0:
+        raise ValueError(f"{label} output width is {width}")
+    resized = seated.resize((width, cell_height), Image.Resampling.BOX)
+    return [int(round(value * 15 / 255)) for value in resized.get_flattened_data()]
+
+
 def render_text_alpha_left(
     text: str,
     font,
@@ -351,40 +431,10 @@ def render_text_alpha_left(
     label: str | None = None,
     tracking: int = 0,
 ) -> list[int]:
-    """Render a left-aligned grayscale alpha mask with fixed-pixel glyph positions."""
-    label = label or repr(text)
-    missing = missing_glyphs(font, text)
-    if missing:
-        raise ValueError(f"{label} missing glyphs: {' '.join(missing)}")
-    scale = TEXT_AA_SCALE
-    scaled_font = _scaled_font(font, font.size * scale)
-    canvas = Image.new("L", (cell_width * scale, cell_height * scale), 0)
-    draw = ImageDraw.Draw(canvas)
-    for index, char in enumerate(text):
-        x = round((font.getlength(text[:index]) + index * tracking) * scale)
-        draw.text((x, 0), char, font=scaled_font, fill=255, anchor="lt")
-    ink = canvas.getbbox()
-    if ink is None:
-        raise ValueError(f"{label} is empty")
-    ink_width = ink[2] - ink[0]
-    ink_height = ink[3] - ink[1]
-    if ink_width > cell_width * scale:
-        raise ValueError(
-            f"{label} is {ink_width / scale:.1f}px wide; limit {cell_width}px"
-        )
-    if ink_height > cell_height * scale + 2 * scale:
-        raise ValueError(
-            f"{label} is {ink_height / scale:.1f}px tall; limit {cell_height}px"
-        )
-    seated = Image.new("L", canvas.size, 0)
-    seated.paste(
-        canvas.crop(ink),
-        (0, round((cell_height * scale - ink_height) / 2)),
+    """Compatibility wrapper for callers that explicitly want left alignment."""
+    return render_text_alpha(
+        text, font, cell_width, cell_height, label, tracking, "left"
     )
-    return [
-        int(round(value * 15 / 255))
-        for value in seated.resize((cell_width, cell_height), Image.Resampling.BOX).get_flattened_data()
-    ]
 
 
 def render_text_indices(

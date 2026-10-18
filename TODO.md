@@ -61,7 +61,3 @@
 - trap_00
 - trap_01
 - yado3
-
-## 构建规划
-
-- `python -m busin plan --json` 当前缺少 `json` 导入，会报 `NameError`；修复后需核对 JSON 输出。普通 `python -m busin plan` 的规划逻辑可正常运行。

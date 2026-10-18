@@ -123,13 +123,13 @@ def test_quest_and_requester_pointers_are_preserved(translated_elf):
     (0x569EE4, 0, "quest title terminator"),
 ])
 def test_quest_title_structure_changes_stop_packing(translated_elf, va, value, error):
-    from busin.ui_text import _quest_title_slots
+    from busin.ui_records import quest_title_slots
 
     source, _translated, _reverse = translated_elf
     changed = bytearray(source)
     struct.pack_into("<I", changed, va - FILE_BASE, value)
     with pytest.raises(AssertionError, match=error):
-        _quest_title_slots(changed)
+        quest_title_slots(changed)
 
 
 @pytest.mark.parametrize("va,reader,error", [
@@ -138,10 +138,10 @@ def test_quest_title_structure_changes_stop_packing(translated_elf, va, value, e
     (0x12F350, "blurbs", "blurb row copy"),
 ])
 def test_record_layout_changes_stop_packing(translated_elf, va, reader, error):
-    from busin.ui_text import _blurb_slots, _name_slots
+    from busin.ui_records import blurb_slots, name_slots
 
     source, _translated, _reverse = translated_elf
     changed = bytearray(source)
     changed[va - FILE_BASE] ^= 1
     with pytest.raises(AssertionError, match=error):
-        (_name_slots if reader == "names" else _blurb_slots)(changed)
+        (name_slots if reader == "names" else blurb_slots)(changed)
