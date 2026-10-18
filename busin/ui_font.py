@@ -6,7 +6,7 @@ import struct
 from PIL import Image, ImageDraw, ImageFont
 
 from busin.disc import BIN, chunk_row, read_pack
-from busin.font import FONT_INPUTS, FONT_DIR, font_path, seat_baseline
+from busin.font import FONT_INPUTS, FONT_DIR, font_path, seat_stroke_baseline
 from busin.patch.ui_pages import FIRST_CODE, LAST_CODE, PAGE_BYTES, PAGE_COUNT
 from busin.paths import BUILD
 
@@ -45,7 +45,7 @@ def _primary():
 
 
 def _placed(font, char):
-    return seat_baseline(font, char, CELL)
+    return seat_stroke_baseline(font, char, CELL)
 
 
 def load_ui_glyphs(wanted):
@@ -118,11 +118,12 @@ def _solid_rows(mask):
 def self_test():
     wanted = set("".join(SAMPLES)) - {" "}
     glyphs, raised, _fonts = load_ui_glyphs(wanted | set("()pqyQ/{}"))
-    assert raised["菜"] == 0 and raised["单"] == 0
-    assert raised["p"] == raised["q"] == raised["y"] == 3
-    assert raised["("] == raised[")"] == raised["Q"] == raised["{"] == raised["}"] == 2
-    assert raised["/"] == 1
-    assert _solid_rows(glyphs["p"])[0] == 3 and _solid_rows(glyphs["p"])[-1] == CELL - 1
+    assert raised["菜"] == raised["单"] == 1
+    assert raised["p"] == raised["q"] == raised["y"] == 4
+    assert raised["("] == raised[")"] == raised["{"] == raised["}"] == 2
+    assert raised["Q"] == 3
+    assert raised["/"] == 2
+    assert _solid_rows(glyphs["p"])[0] == 1 and _solid_rows(glyphs["p"])[-1] == CELL - 1
     assert any(0 < value < 255 for value in glyphs["单"].get_flattened_data())
     name = glyphs["菜"].getbbox()
     assert name[0] == 0 and name[2] == CELL

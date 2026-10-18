@@ -68,6 +68,8 @@ def font_path(name: str) -> Path:
 
 SOLID = 128
 _PAD = 8
+STROKE_AA_SCALE = 8
+MAX_GLYPH_CROP = 2
 
 
 def load_plan(path: Path) -> dict:
@@ -202,6 +204,73 @@ def fit_cell(cell, paint, label="glyph"):
     return image.crop((_PAD, _PAD, _PAD + cell, _PAD + cell)), shift
 
 
+def font_at_scale(font, scale):
+    scaled = ImageFont.truetype(str(font.path), font.size * scale)
+    try:
+        names = scaled.get_variation_names()
+    except OSError:
+        names = []
+    if names:
+        scaled.set_variation_by_name(font.getname()[1])
+    return scaled
+
+
+def fit_stroke_cell(cell, paint, label="glyph"):
+    """Move a whole stroked glyph into the cell; only then crop at most two pixels per edge."""
+    from PIL import ImageChops
+
+    image = paint()
+    ink = image.getbbox()
+    if ink is None:
+        raise ValueError(f"{label} is empty")
+    left, top, right, bottom = ink
+    width, height = right - left, bottom - top
+    if width > cell + 2 * MAX_GLYPH_CROP or height > cell + 2 * MAX_GLYPH_CROP:
+        raise ValueError(f"{label} stroked ink is {width}x{height}, limit {cell + 2 * MAX_GLYPH_CROP}px")
+
+    if width <= cell:
+        dx = _PAD - left if left < _PAD else _PAD + cell - right if right > _PAD + cell else 0
+    else:
+        dx = _PAD + (cell - width) // 2 - left
+    if height <= cell:
+        dy = _PAD - top if top < _PAD else _PAD + cell - bottom if bottom > _PAD + cell else 0
+    else:
+        dy = _PAD + (cell - height) // 2 - top
+    image = ImageChops.offset(image, dx, dy)
+
+    ink = image.getbbox()
+    left, top, right, bottom = ink
+    crops = (
+        max(0, _PAD - left), max(0, _PAD - top),
+        max(0, right - _PAD - cell), max(0, bottom - _PAD - cell),
+    )
+    if any(crop > MAX_GLYPH_CROP for crop in crops):
+        raise ValueError(f"{label} needs edge crops {crops}, limit {MAX_GLYPH_CROP}px")
+    return image.crop((_PAD, _PAD, _PAD + cell, _PAD + cell)), max(0, -dy)
+
+
+def seat_stroke_baseline(font, char, cell):
+    """Render one UI glyph with the stroke-aa rule and seat it by baseline."""
+    advance = font.getlength(char)
+    rounded = round(advance)
+    if abs(advance - rounded) > 0.01 or not 0 < rounded <= cell:
+        raise ValueError(f"glyph {char!r} has unsupported advance {advance}")
+    x = (cell - rounded) // 2
+    scaled = font_at_scale(font, STROKE_AA_SCALE)
+
+    def paint():
+        size = (cell + 16) * STROKE_AA_SCALE
+        image = Image.new("L", (size, size))
+        ImageDraw.Draw(image).text(
+            ((8 + x) * STROKE_AA_SCALE, (8 + cell - 1) * STROKE_AA_SCALE),
+            char, font=scaled, anchor="ls", fill=255,
+            stroke_width=STROKE_AA_SCALE, stroke_fill=255,
+        )
+        return image.resize((cell + 16, cell + 16), Image.Resampling.BOX)
+
+    return fit_stroke_cell(cell, paint, f"stroked glyph {char!r}")
+
+
 def seat_baseline(font, char, cell):
     advance = font.getlength(char)
     rounded = round(advance)
@@ -218,38 +287,31 @@ def seat_baseline(font, char, cell):
 
 
 def message_cell(font, char, cell=CELL):
+    """Render one message glyph with the stroke-aa rule."""
     cjk = unicodedata.name(char, "").startswith("CJK UNIFIED")
-    # A 24px em can hang one pixel off the side. Slide it until the solid ink is inside.
-    nudge = 0
-    if cjk:
-        draw = ImageDraw.Draw(Image.new("L", (1, 1)))
-        left, top, right, bottom = draw.textbbox((0, 0), char, font=font)
-        probe = Image.new("L", (cell + 16, cell + 16), 0)
-        ImageDraw.Draw(probe).text((
-            8 + (cell - (right - left)) // 2 - left,
-            8 + (cell - (bottom - top)) // 2 - top,
-        ), char, font=font, fill=255)
-        solid = probe.point(lambda value: 255 if value >= SOLID else 0).getbbox()
-        if solid and solid[0] < _PAD:
-            nudge = _PAD - solid[0]
-        elif solid and solid[2] > _PAD + cell:
-            nudge = _PAD + cell - solid[2]
+    scaled = font_at_scale(font, STROKE_AA_SCALE)
 
-    def paint(shift):
-        image = Image.new("L", (cell + 16, cell + 16), 0)
+    def paint():
+        size = (cell + 16) * STROKE_AA_SCALE
+        image = Image.new("L", (size, size))
         draw = ImageDraw.Draw(image)
         if cjk:
-            left, top, right, bottom = draw.textbbox((0, 0), char, font=font)
-            draw.text((
-                8 + (cell - (right - left)) // 2 - left + nudge,
-                8 + (cell - (bottom - top)) // 2 - top - shift,
-            ), char, font=font, fill=255)
+            left, top, right, bottom = draw.textbbox((0, 0), char, font=scaled)
+            x = (size - right + left) / 2 - left
+            y = (size - bottom + top) / 2 - top
+            draw.text(
+                (x, y), char, font=scaled, fill=255,
+                stroke_width=STROKE_AA_SCALE, stroke_fill=255,
+            )
         else:
             # Punctuation keeps its place in the em square (「，」 sits low left), so centre the em box, not the ink.
-            draw.text((8 + cell // 2, 8 + cell // 2 - shift), char, font=font, fill=255, anchor="mm")
-        return image
+            draw.text(
+                (size / 2, size / 2), char, font=scaled, fill=255, anchor="mm",
+                stroke_width=STROKE_AA_SCALE, stroke_fill=255,
+            )
+        return image.resize((cell + 16, cell + 16), Image.Resampling.BOX)
 
-    return fit_cell(cell, paint, f"font glyph {char!r}")
+    return fit_stroke_cell(cell, paint, f"font glyph {char!r}")
 
 
 def render_font(source: Path, output: Path, char_map: dict[str, int], generated: list[str], font_name: str, size: int = 24, variation: str | None = None, alpha: list[int] | None = None) -> None:
