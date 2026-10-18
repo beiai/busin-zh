@@ -26,6 +26,28 @@ _GEAR_NUDGE = {0x584308 + index * 12 for index in range(7) if index != 4}
 
 STRING_TABLE = 0x43E9C8
 
+_QUEST_TITLE_TABLE = 0x569EE8
+_QUEST_TITLE_COUNT = 24
+_QUEST_TITLE_START = 0x569C30
+_PLACE_POINTER_RANGES = (
+    (0x569BD0, _QUEST_TITLE_START),
+    (_QUEST_TITLE_TABLE, _QUEST_TITLE_TABLE + _QUEST_TITLE_COUNT * 4),
+)
+
+# 0x12F368..0x12F458 index these tables by 102 bytes. 0x12F2A0 copies
+# three rows of 17 cells; zero cells are padding, not record delimiters.
+_BLURB_WIDTH = 17
+_BLURB_ROWS = 3
+_BLURB_STRIDE = _BLURB_WIDTH * _BLURB_ROWS * 2
+_BLURB_TABLES = (
+    (0x4B0CC6, 120, 0x12F368),
+    (0x4B3CC6, 100, 0x12F398),
+    (0x4B64C6, 100, 0x12F3F8),
+    (0x4B8CC6, 100, 0x12F3C8),
+    (0x4BB4C6, 100, 0x12F428),
+    (0x4BDCC6, 100, 0x12F458),
+)
+
 
 def ui_char(code: int) -> str | None:
     return UI.get(code)
@@ -239,31 +261,7 @@ def _file_labels(elf):
 
 
 def _packed(elf, start, end):
-    found = []
-    va = start
-    while va < end:
-        value = _half(elf, va)
-        if value in (0, 0xFFFF) or value >= 0x400:
-            va += 2
-            continue
-        run, at, ok = [], va, True
-        while at < end:
-            code = _half(elf, at)
-            if code in (0, 0xFFFF):
-                break
-            if code == 0xFFFE or code < 0x400:
-                run.append(code)
-                at += 2
-                continue
-            ok = False
-            break
-        run = _strip_pad(run)
-        if ok and _text_run(run) and _half(elf, at) in (0, 0xFFFF):
-            found.append((va, run))
-            va = at + 2
-        else:
-            va += 2
-    return found
+    return [(slot["id"], slot["raw"]) for slot in _packed_slots(elf, start, end)]
 
 
 def collect(elf):
@@ -308,13 +306,7 @@ def collect(elf):
         if _text_run(run):
             monsters.append((f"{va:06X}", run))
 
-    places = []
-    for start, end in (
-        (0x526C00, 0x527400), (0x529C20, 0x52A000),
-        (0x567F90, 0x568400), (0x569940, 0x56AF00),
-        (0x4C1200, 0x4C2400),
-    ):
-        places.extend(_packed(elf, start, end))
+    places = [(slot["id"], slot["raw"]) for slot in _place_slots(elf)]
 
     return (
         ("menu", "菜单", menu),
@@ -347,7 +339,7 @@ def collect(elf):
         ("shop", "商店", _pointers(elf, 0x444940, 0x443000, 0x445000)),
         ("names", "物品、魔法、吐息", names),
         ("monsters", "怪物", monsters),
-        ("blurbs", "效果说明", _packed(elf, 0x4B0140, 0x4C0500)),
+        ("blurbs", "效果说明", _blurb_readings(elf)),
         ("places", "迷宫、城镇、委托", places),
         ("debug", "调试菜单", _pointers(elf, 0x487198, 0x486000, 0x488000)),
         ("race", "种族说明", _grid_rows(elf, 0x581AC0, 0xAA, 5, 12, 7, skip=1)),
@@ -439,6 +431,12 @@ def _paper_lines(rows):
 def manuscript_lines(name, rows):
     if name == "paper":
         return _paper_lines(rows)
+    if name == "blurbs":
+        return [
+            _entry(label, _grid_source(codes, _BLURB_WIDTH), f"{_BLURB_WIDTH}x{_BLURB_ROWS}")
+            if _blurb_record(_address(label)) else _entry(label, unwrap(codes), len(codes))
+            for label, codes in rows
+        ]
     if name in _GRID:
         width, nrows = _GRID[name]
         lines = []
@@ -654,7 +652,7 @@ def _fit(text, slot, table):
     if slot["mode"] == "flow":
         return _wrap(_encode(text, table, False), slot["width"], slot["rows"])
     if slot["mode"] == "span":
-        body = _layout_line(text, slot["raw"], slot["width"], 0, table, False)
+        body = _layout_line(text, slot["raw"], slot["width"], 0, table, slot["slash"])
         if len(body) > slot["room"]:
             raise ValueError(f"{len(body)} cells, room {slot['room']}")
         return body + [0] * (slot["room"] - len(body))
@@ -712,6 +710,11 @@ def _kept_spans(elf, va, limit=3):
         found.append((start, current, va + 64))
     kept = []
     for start, raw, term in found:
+        # The name getters start after the record marker. Stripping it from the
+        # source must also advance the write address, or the first letter is lost.
+        while raw and raw[0] in (0x1D, 0x6E):
+            start += 2
+            raw = raw[1:]
         stripped = _strip_pad(list(raw))
         if _text_run(stripped):
             kept.append((start, stripped, raw, term))
@@ -721,6 +724,16 @@ def _kept_spans(elf, va, limit=3):
 
 
 def _name_slots(elf):
+    # The normal-name getters advance past the '=' marker, then index 64-byte records.
+    for getter, base in ((0x12EEB0, 0x4A4E06), (0x12EF10, 0x4A7386), (0x12EF70, 0x4A9886)):
+        expected = {
+            getter + 20: 0x3C030000 | ((base + 0x8000) >> 16),
+            getter + 28: 0x24630000 | (base & 0xFFFF),
+            getter + 32: 0x00021180,
+        }
+        for va, word in expected.items():
+            if _word(elf, va) != word:
+                raise AssertionError(f"name reader at {va:#x}")
     slots = []
     for va in range(0x4A4000, 0x4B0140, 0x40):
         for index, (start, stripped, raw, term) in enumerate(_kept_spans(elf, va)):
@@ -783,6 +796,87 @@ def _packed_slots(elf, start, end):
     return slots
 
 
+def _quest_title_slots(elf):
+    # The title painter indexes this pointer table and treats FFFE as a line break.
+    # Read through the pointers: the preceding name pointer's high half looks like 'v'.
+    for va, word in (
+        (0x3DD24C, 0x2C620000 | _QUEST_TITLE_COUNT),
+        (0x3DD264, 0x3C020000 | ((_QUEST_TITLE_TABLE + 0x8000) >> 16)),
+        (0x3DD268, 0x00031880),
+        (0x3DD26C, 0x24420000 | (_QUEST_TITLE_TABLE & 0xFFFF)),
+        (0x3DD274, 0x2404FFFF),
+        (0x3DD278, 0x8C700000),
+        (0x3DD290, 0x2404FFFE),
+    ):
+        if _word(elf, va) != word:
+            raise AssertionError(f"quest title reader at {va:#x}")
+    pointers = [_word(elf, _QUEST_TITLE_TABLE + index * 4) for index in range(_QUEST_TITLE_COUNT)]
+    if pointers[0] != _QUEST_TITLE_START:
+        raise AssertionError(f"quest title pointer {pointers[0]:#x}")
+    slots = []
+    for va, end in zip(pointers, [*pointers[1:], _QUEST_TITLE_TABLE]):
+        if va % 2 or not _QUEST_TITLE_START <= va < end <= _QUEST_TITLE_TABLE:
+            raise AssertionError(f"quest title pointer {va:#x}..{end:#x}")
+        codes = _read_ffff(elf, va, limit=(end - va) // 2)
+        if not codes or va + len(codes) * 2 >= end or _half(elf, va + len(codes) * 2) != 0xFFFF:
+            raise AssertionError(f"quest title terminator at {va:#x}")
+        slots.append(_slot(f"{va:06X}", va, "span", codes, len(codes), room=len(codes), slash=True))
+    return slots
+
+
+def _place_slots(elf):
+    slots = []
+    for start, end in (
+        (0x526C00, 0x527400), (0x529C20, 0x52A000),
+        (0x567F90, 0x568400), (0x569940, _PLACE_POINTER_RANGES[0][0]),
+    ):
+        slots.extend(_packed_slots(elf, start, end))
+    slots.extend(_quest_title_slots(elf))
+    for start, end in ((_PLACE_POINTER_RANGES[1][1], 0x56AF00), (0x4C1200, 0x4C2400)):
+        slots.extend(_packed_slots(elf, start, end))
+    return slots
+
+
+def _blurb_record(va):
+    return any(base <= va < base + count * _BLURB_STRIDE and (va - base) % _BLURB_STRIDE == 0
+               for base, count, _getter in _BLURB_TABLES)
+
+
+def _blurb_slots(elf):
+    # The copy routine advances 34 bytes per source row and stops after three rows.
+    for va, word in ((0x12F34C, 0x28420003), (0x12F350, 0x24840022)):
+        if _word(elf, va) != word:
+            raise AssertionError(f"blurb row copy at {va:#x}")
+    slots = _packed_slots(elf, 0x4B0140, 0x4B0CC0)
+    for base, count, getter in _BLURB_TABLES:
+        # Check the actual reader's stride and signed lui/addiu address pair.
+        high = (base + 0x8000) >> 16
+        expected = {
+            getter + 20: 0x24050000 | _BLURB_STRIDE,
+            getter + 28: 0x3C020000 | high,
+            getter + 32: 0x24420000 | (base & 0xFFFF),
+        }
+        for va, word in expected.items():
+            if _word(elf, va) != word:
+                raise AssertionError(f"blurb reader at {va:#x}")
+        if [_half(elf, base - 6 + index * 2) for index in range(3)] != [0, 0, 0x1D]:
+            raise AssertionError(f"blurb table header at {base - 6:#x}")
+        for index in range(count):
+            va = base + index * _BLURB_STRIDE
+            codes = _grid(elf, va, _BLURB_WIDTH, _BLURB_ROWS)
+            if any(code >= 0x400 for code in codes):
+                raise AssertionError(f"blurb grid cell at {va:#x}")
+            if any(code not in (0, 0x6E) for code in codes):
+                slots.append(_slot(f"{va:06X}", va, "flow", codes, _BLURB_WIDTH,
+                                   rows=_BLURB_ROWS, kind="grid"))
+    slots.extend(_packed_slots(elf, 0x4C04C0, 0x4C0500))
+    return slots
+
+
+def _blurb_readings(elf):
+    return [(slot["id"], slot["raw"]) for slot in _blurb_slots(elf)]
+
+
 def _paper_slots(rows):
     slots = []
     for group in _paper_groups(rows):
@@ -840,16 +934,9 @@ def _section_slots(elf, name, rows):
     if name == "monsters":
         return _monster_slots(elf)
     if name == "blurbs":
-        return _packed_slots(elf, 0x4B0140, 0x4C0500)
+        return _blurb_slots(elf)
     if name == "places":
-        slots = []
-        for start, end in (
-            (0x526C00, 0x527400), (0x529C20, 0x52A000),
-            (0x567F90, 0x568400), (0x569940, 0x56AF00),
-            (0x4C1200, 0x4C2400),
-        ):
-            slots.extend(_packed_slots(elf, start, end))
-        return slots
+        return _place_slots(elf)
     raise AssertionError(name)
 
 
@@ -940,6 +1027,8 @@ def ui_patches(elf):
         packed = ([*codes, 0xFFFF] if slot["ffff"] else codes)
         for index, code in enumerate(packed):
             va = slot["va"] + index * 2
+            if any(start <= va < end for start, end in _PLACE_POINTER_RANGES):
+                raise ValueError(f"{name} {ident} overwrites a place pointer at {va:#x}")
             old = cells.get(va)
             if old is None or old == code:
                 cells[va] = code
@@ -1123,7 +1212,7 @@ def disc_self_test():
     expect = {
         "menu": 169, "controller": 4, "save": 32, "files": 40, "paper": 18, "job": 3,
         "create": 47, "personality": 15, "quest": 3, "town": 7, "shop": 158,
-        "names": 734, "monsters": 127, "blurbs": 684, "places": 301, "debug": 132,
+        "names": 734, "monsters": 127, "blurbs": 380, "places": 301, "debug": 132,
         "race": 5, "align": 3, "class": 8, "stat": 6, "rank": 5, "gear": 7,
         "inn": 41, "room": 24, "ask": 34, "lift": 6, "bark": 4, "link": 30,
     }
