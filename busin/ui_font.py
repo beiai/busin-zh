@@ -1,4 +1,4 @@
-"""Render Noto Sans SC Regular into 16×16 UI cells and paint the Chinese pages."""
+"""Render Noto Sans SC DemiLight into 16×16 UI cells and paint the Chinese pages."""
 import hashlib
 import json
 import struct
@@ -19,7 +19,7 @@ FONT = next(item for item in FONT_INPUTS if item.role == "ui")
 FONTS = (
     ("primary", FONT_DIR / FONT.filename, FONT.version, FONT.sha256),
 )
-VARIATION = "Regular"
+VARIATION = "DemiLight"
 
 
 def _checked_fonts():
