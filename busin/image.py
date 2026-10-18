@@ -6,7 +6,7 @@ import subprocess
 import unicodedata
 
 from busin.disc import (
-    BIN, CHUNK_TABLE, ELF_LBA, ELF_SIZE, FILE_BASE, PACK_LBA, SYNC,
+    BIN, ELF_LBA, ELF_SIZE, FILE_BASE, PACK_LBA, SYNC,
     children, chunk_row, entry, finish_sector, read_pack, read_user,
 )
 from busin.font import (
@@ -14,6 +14,7 @@ from busin.font import (
     hash_collision_stats, load_plan, render_font,
 )
 from busin.patch import emu
+from busin.patch.ledger import PatchLedger
 from busin.patch.ui_pages import PAGE_BYTES, PAGE_COUNT, UI_LBA, UI_SECTORS
 from busin.patch.font_paging import (
     BLOCK_FONT_LBA, BLOCK_FONT_SECTORS, BLOCK_SLOTS, CAVE, CHUNK_BYTES, CHUNK_SECTOR, CHUNK_SLOTS,
@@ -23,22 +24,16 @@ from busin.patch.font_paging import (
     build_cave, build_pad, elf_writes, hooks, token_map,
 )
 from busin.paths import BUILD, DATA, ROOT
-from busin.text import (
-    BEAT_AT, BEAT_CHUNK, BEAT_INDEX, BEAT_SCRIPT, PAD, PACKED_CHUNKS, PAGE0,
-    check_lines, compact_chunk, compact_counted, counted_chunks, counted_messages, encode_message,
-    message_prose, repack_beats, split_tags, text_cursors, trim_beat_script,
+from busin.message_pack import (
+    PLAN_PATH, assign_ids, character_map, ending_spans, load_messages, load_texts, text_files,
 )
+from busin.text import PAD, PAGE0
 from busin.tmx import read_tmx, save_png
 from busin.ui import generated_spans, part_spans, replacement_spans
 
 OUT_DIR = BUILD / "image"
 PAGE_PATH = BUILD / "font" / "message_glyphs.page01.tmx"
 MAZE_PATH = BUILD / "font" / "message_glyphs.page285.tmx"
-PLAN_PATH = DATA / "font" / "message-plan.json"
-
-
-def text_files():
-    return sorted((DATA / "text").glob("*.json"))
 
 
 def ui_files():
@@ -49,231 +44,6 @@ def ui_files():
 def elf_word(handle, va, lba=ELF_LBA):
     off = va - FILE_BASE
     return struct.unpack_from("<I", read_user(handle, lba + off // 2048, 1), off % 2048)[0]
-
-
-def read_terminated(handle, at: int) -> list[int]:
-    # Chunk 265's prologue is 363 words.
-    raw = read_pack(handle, at, 768)
-    words = []
-    for index in range(0, len(raw), 2):
-        word = int.from_bytes(raw[index:index + 2], "big")
-        if word == 0xFFFF:
-            return words
-        words.append(word)
-    raise ValueError(f"message at {at:#x} has no terminator within {len(raw) // 2} words")
-
-
-def load_texts():
-    return [(path.name, json.loads(path.read_text(encoding="utf-8"))) for path in text_files()]
-
-
-def text_chars(doc):
-    """Visible characters in one text file. Spaces stay the blank cell."""
-    return {char for message in doc["messages"] for line in message.get("text") or []
-            for _tag, char in split_tags(line) if char and char not in " \u3000"}
-
-
-# Narration blocks 265–272 and chunk 282 stay on the shared page. Their character numbers are the page-1 cells.
-SHARED_CHUNKS = {265, 266, 267, 268, 269, 270, 271, 272, 282}
-
-
-def character_map(ids, local, mark):
-    """Character number to this page's cell. The last word is the slot mark."""
-    table = [0] * TOKMAP_COUNT
-    for char, cell in local.items():
-        index = ids[char]
-        if not 0 < index < TOKMAP_COUNT - 1 or table[index]:
-            raise ValueError(f"{char} has character number {index}")
-        table[index] = cell
-    if not 0 < mark < BLOCK_SLOTS:
-        raise ValueError(f"slot mark {mark}")
-    table[TOKMAP_COUNT - 1] = mark
-    return struct.pack(f"<{TOKMAP_COUNT}I", *table)
-
-
-def assign_ids(plan, texts):
-    """Page-1 cells for the shared page. Other characters get numbers from 1764 up."""
-    pinned = {char: int(item["cell"], 0) for char, item in plan["characters"].items() if item["page"] == 1}
-    by_chunk = {}
-    for _name, doc in texts:
-        by_chunk.setdefault(doc.get("chunk"), set()).update(text_chars(doc))
-    shared = set(pinned)
-    for chunk in SHARED_CHUNKS:
-        shared |= by_chunk.get(chunk, set())
-    page = place_cells(shared, pinned)
-    assert page == place_cells(shared, pinned)
-    ids = dict(page)
-    rest = sorted(set().union(*by_chunk.values()) - set(ids))
-    number = PAGE_CELLS
-    for char in rest:
-        if number >= TOKMAP_COUNT - 1:
-            raise ValueError(f"character number {number} does not fit the token table")
-        ids[char] = number
-        number += 1
-    for chunk, chars in by_chunk.items():
-        if chars - shared and chunk not in CHUNK_SLOTS:
-            raise ValueError(f"chunk {chunk} has no font slot")
-    stats = hash_collision_stats(shared, pinned)
-    if stats["max_probe_length"] > 10:
-        print(f"warning: hash probe length {stats['max_probe_length']}", flush=True)
-    return ids, page, stats, by_chunk
-
-
-def chunk_table(handle):
-    data = read_user(handle, ELF_LBA + CHUNK_TABLE // 2048, 8)
-    blob = data[CHUNK_TABLE % 2048:]
-    rows = []
-    for index in range(512):
-        start, count = struct.unpack_from("<QQ", blob, index * 16)
-        if count:
-            rows.append((index, int(start), int(count)))
-    return rows
-
-
-def load_messages(handle, texts, cells):
-    """Pack offset -> (source token, translated token) for every word that changes.
-
-    Packed chunks and counted narration blocks are rewritten as whole spans and
-    returned separately.
-    """
-    changed, starts, errors, packs, blocks = {}, set(), [], [], []
-    cursors = text_cursors()
-    rows = chunk_table(handle)
-    counted = set(counted_chunks())
-    for name, doc in texts:
-        chunk = doc.get("chunk")
-        if chunk in PACKED_CHUNKS:
-            try:
-                packs.append(pack_script(handle, doc, cells, cursors[chunk], rows))
-            except ValueError as error:
-                errors.append(f"{name}: {error}")
-            continue
-        if chunk in counted and chunk != BEAT_CHUNK:
-            try:
-                blocks.append(pack_counted(handle, doc, cells, rows))
-            except ValueError as error:
-                errors.append(f"{name}: {error}")
-            continue
-        if chunk == BEAT_CHUNK and any(message.get("text") is not None for message in doc["messages"]):
-            continue
-        base = int(doc.get("base", "0"), 0)
-        for message in doc["messages"]:
-            if message.get("text") is None:
-                continue
-            at = base + int(message["offset"], 0)
-            try:
-                if at in starts:
-                    raise ValueError("offset is translated twice")
-                starts.add(at)
-                original = read_terminated(handle, at)
-                prose = message_prose(original, doc["align"])
-                if prose != message["source"].split("\n"):
-                    raise ValueError(f"disc is {prose}")
-                check_lines(original, message["text"], doc["align"], message.get("type"))
-                encoded = encode_message(original, message["text"], doc["align"], lambda char: PAD + cells[char])
-            except ValueError as error:
-                errors.append(f"{name} {message['offset']}: {error}")
-                continue
-            for index, (was, word) in enumerate(zip(original, encoded)):
-                if word != was:
-                    changed[at + 2 * index] = (was, word)
-    if errors:
-        raise ValueError("\n".join(errors))
-    return changed, packs, blocks
-
-
-def ending_spans(handle, texts, cells):
-    """Rewrite chunk 272's one-glyph tail and drop the unused chunk 281 commands."""
-    doc = next((item for _name, item in texts if item.get("chunk") == BEAT_CHUNK), None)
-    if doc is None or all(message.get("text") is None for message in doc["messages"]):
-        return []
-    rows = chunk_table(handle)
-    start, count = next((item[1], item[2]) for item in rows if item[0] == BEAT_CHUNK)
-    data = read_user(handle, PACK_LBA + start, count)
-    disc = counted_messages(data)
-    head = [item for item in doc["messages"] if int(item["offset"], 0) < BEAT_AT]
-    beats = [item for item in doc["messages"] if int(item["offset"], 0) >= BEAT_AT]
-    if len(head) != BEAT_INDEX or len(beats) > 40 or len(disc) != BEAT_INDEX + 40:
-        raise ValueError("chunk 272 beat layout does not match the disc")
-    have = [int(item["offset"], 0) for item in beats]
-    want = [at for at, _end, _words in disc[BEAT_INDEX:BEAT_INDEX + len(beats)]]
-    if have != want:
-        raise ValueError("chunk 272 beat offsets are not the first slots")
-    sector = bytearray(data)
-    token_of = lambda char: PAD + cells[char]
-    for record, (at, _end, words) in zip(head, disc[:BEAT_INDEX]):
-        if record["source"].split("\n") != message_prose(words, doc["align"]):
-            raise ValueError(f"chunk 272 message {at:#x} source does not match the disc")
-        if record.get("text") is None:
-            continue
-        check_lines(words, record["text"], doc["align"], record["type"])
-        encoded = encode_message(words, record["text"], doc["align"], token_of)
-        cursor = at
-        for word in encoded:
-            sector[cursor:cursor + 2] = word.to_bytes(2, "big")
-            cursor += 2
-        sector[cursor:cursor + 2] = b"\xff\xff"
-    tokens = []
-    for record, (at, _end, words) in zip(beats, disc[BEAT_INDEX:]):
-        if record["source"] != "\n".join(message_prose(words, doc["align"])):
-            raise ValueError(f"chunk 272 beat {at:#x} source does not match the disc")
-        text = record.get("text")
-        if text is None or len(text) != 1 or len(text[0]) != 1:
-            raise ValueError(f"chunk 272 beat {at:#x} is not one character")
-        check_lines(words, text, doc["align"], record["type"])
-        encoded = encode_message(words, text, doc["align"], token_of)
-        if len(encoded) != 1:
-            raise ValueError(f"chunk 272 beat {at:#x} did not stay one word")
-        tokens.append(encoded[0])
-    sector = repack_beats(bytes(sector), tokens)
-    script_start, script_count = next((item[1], item[2]) for item in rows if item[0] == BEAT_SCRIPT)
-    script = read_user(handle, PACK_LBA + script_start, script_count)
-    return [
-        (start * 2048, sector),
-        (script_start * 2048, trim_beat_script(script, len(tokens))),
-    ]
-
-
-def pack_counted(handle, doc, cells, rows):
-    """Rewrite one counted narration block inside its existing sector allocation."""
-    chunk = doc["chunk"]
-    start, count = next((item[1], item[2]) for item in rows if item[0] == chunk)
-    base = start * 2048
-    if int(doc.get("base", "0"), 0) != base:
-        raise ValueError(f"base is not sector {start}")
-    data = read_user(handle, PACK_LBA + start, count)
-    body = compact_counted(data, doc["messages"], doc["align"], lambda char: PAD + cells[char])
-    return {"chunk": chunk, "spans": [(base, body)]}
-
-
-def pack_script(handle, doc, cells, cursor, rows):
-    """Rewrite one script chunk and describe the sectors it no longer claims.
-
-    Each line is placed in order. The translation file does not store that position.
-    """
-    chunk = doc["chunk"]
-    start, count = next((item[1], item[2]) for item in rows if item[0] == chunk)
-    base = start * 2048
-    if int(doc.get("base", "0"), 0) != base:
-        raise ValueError(f"base is not sector {start}")
-    data = read_user(handle, PACK_LBA + start, count)
-    packed, _offsets = compact_chunk(data, cursor, doc["messages"], doc["align"], lambda char: PAD + cells[char])
-    sectors = (len(packed) + 2047) // 2048
-    if sectors >= count:
-        raise ValueError(f"sector count did not shrink ({count} -> {sectors})")
-    if [item[1] for item in rows if item[1] == start + count] != [start + count]:
-        raise ValueError("the next chunk does not start at the old end")
-    hole = start + sectors
-    if any(item[0] != chunk and item[1] < start + count and item[1] + item[2] > hole for item in rows):
-        raise ValueError("freed sectors overlap another chunk")
-    body = packed + bytes(sectors * 2048 - len(packed))
-    return {
-        "chunk": chunk,
-        "spans": [(base, body), (hole * 2048, bytes((count - sectors) * 2048))],
-        "table": CHUNK_TABLE + chunk * 16 + 8,
-        "sectors": sectors,
-        "free": {"chunk": chunk, "relative": hole, "sectors": count - sectors, "lba": PACK_LBA + hole},
-    }
 
 
 def check_source(handle, labels):
@@ -395,27 +165,13 @@ def splice_pack(src, user_patches, spans) -> None:
             pos += step
 
 
-def apply_ui(src, user_patches, messages, reserved=()) -> None:
-    message_bytes = {index for off in messages for index in (off, off + 1)}
-    spans = []
-    for offset, data in replacement_spans(
-            lambda off, size: read_pack(src, off, size), DATA / "picture", lambda chunk: chunk_row(src, chunk)):
-        end = offset + len(data)
-        if any(index in message_bytes for index in range(offset, end)):
-            raise ValueError(f"ui png at {offset:#x} overlaps a message")
-        if any(end > start and offset < stop for start, stop in reserved):
-            raise ValueError(f"ui png at {offset:#x} overlaps a packed chunk")
-        spans.append((offset, data))
-    splice_pack(src, user_patches, spans)
-
-
 def _pad_ui(ui_pages):
     if len(ui_pages) != PAGE_BYTES * PAGE_COUNT:
         raise ValueError("ui font pages size")
     return ui_pages + bytes(UI_SECTORS * 2048 - len(ui_pages))
 
 
-def build_image(chunk, page, pad, writes, messages, spans=(), slots=None, ui_pages=b""):
+def build_image(chunk, page, pad, writes, messages, spans=(), slots=None, ui_pages=b"", changes=None):
     slots = slots or {}
     combined = bytearray(COMBINED)
     combined[:CHUNK_BYTES] = chunk
@@ -434,6 +190,8 @@ def build_image(chunk, page, pad, writes, messages, spans=(), slots=None, ui_pag
     target = OUT_DIR / "busin-zh.bin"
     with BIN.open("rb") as src, target.open("wb") as dst:
         dir_patches, pvd, svd = directory_patches(src)
+        if changes is not None:
+            changes.declare_user_sectors("prefix", "iso.directory", dir_patches)
         volume = struct.unpack_from("<I", pvd, 80)[0]
         old_sectors = src.seek(0, 2) // 2352
         if (volume, old_sectors + SHIFT) != (283703, BLOCK_FONT_LBA):
@@ -442,6 +200,9 @@ def build_image(chunk, page, pad, writes, messages, spans=(), slots=None, ui_pag
         sectors = {}
         for off, pair in messages.items():
             sectors.setdefault(off // 2048, {})[off] = pair
+        if changes is not None:
+            changes.declare_user_sectors(
+                "prefix", "dialogue.inline", (PACK_LBA + rel for rel in sectors))
         for rel, items in sectors.items():
             msg = bytearray(read_user(src, PACK_LBA + rel, 1))
             for off, (was, token) in items.items():
@@ -450,7 +211,6 @@ def build_image(chunk, page, pad, writes, messages, spans=(), slots=None, ui_pag
                     raise ValueError(f"message at {off:#x} is {have:#x}")
                 struct.pack_into(">H", msg, off % 2048, token)
             user_patches[PACK_LBA + rel] = bytes(msg)
-        apply_ui(src, user_patches, messages, [(offset, offset + len(data)) for offset, data in spans])
         splice_pack(src, user_patches, spans)
 
         def patch_volume(user):
@@ -460,8 +220,12 @@ def build_image(chunk, page, pad, writes, messages, spans=(), slots=None, ui_pag
             return bytes(buf)
 
         user_patches[16] = patch_volume(user_patches.get(16, pvd))
+        volume_sectors = [16]
         if svd[:7] == b"\x02CD001\x01":
             user_patches[17] = patch_volume(user_patches.get(17, svd))
+            volume_sectors.append(17)
+        if changes is not None:
+            changes.declare_user_sectors("prefix", "iso.volume", volume_sectors)
         if max(user_patches) >= SHIFT_FROM:
             raise ValueError(f"sector {max(user_patches)} is past the copied prefix")
         src.seek(PACK_LBA * 2352)
@@ -513,10 +277,15 @@ def build_image(chunk, page, pad, writes, messages, spans=(), slots=None, ui_pag
             font_user[at + CHUNK_BYTES:at + CHUNK_BYTES + len(table)] = table
         for index in range(BLOCK_FONT_SECTORS):
             write_user(BLOCK_FONT_LBA + index, font_user[index * 2048:(index + 1) * 2048])
+        if changes is not None:
+            changes.declare_append("append.combined_block", SHIFT_FROM, SHIFT)
+            changes.declare_append("append.block_font", BLOCK_FONT_LBA, BLOCK_FONT_SECTORS)
         print("appended block fonts", flush=True)
         ui_user = _pad_ui(ui_pages)
         for index in range(UI_SECTORS):
             write_user(UI_LBA + index, ui_user[index * 2048:(index + 1) * 2048])
+        if changes is not None:
+            changes.declare_append("append.ui_font", UI_LBA, UI_SECTORS)
         print("appended ui font pages", flush=True)
     target.with_suffix(".cue").write_text(
         f'FILE "{target.name}" BINARY\n  TRACK 01 MODE2/2352\n    INDEX 01 00:00:00\n',
@@ -630,7 +399,6 @@ def main():
             raise ValueError(f"font slot {slot} mixes different character sets")
         local = place_cells(chars, {})
         slots[slot] = (None, local, character_map(ids, local, slot))
-    ending = []
     with BIN.open("rb") as src:
         check_source(src, labels)
         messages, packs, blocks = load_messages(src, texts, ids)
@@ -640,6 +408,10 @@ def main():
             lambda chunk: chunk_row(src, chunk),
         )
         generated = generated_spans(
+            lambda off, size: read_pack(src, off, size), DATA / "picture",
+            lambda chunk: chunk_row(src, chunk),
+        )
+        whole = replacement_spans(
             lambda off, size: read_pack(src, off, size), DATA / "picture",
             lambda chunk: chunk_row(src, chunk),
         )
@@ -660,31 +432,43 @@ def main():
     from busin.ui_font import FONTS, ui_font_pages
     from busin.ui_text import check_ui_text_report, ui_patches
 
-    writes = elf_writes(words, labels)
+    patches = PatchLedger()
+    for offset, data in elf_writes(words, labels).items():
+        patches.add_elf("elf.font_paging", offset, data)
     elf = load_elf()
     ui_writes, ui_extra, ui_text_info = ui_patches(elf)
     check_ui_text_report(ui_text_info)
     pages = ui_font_pages(ui_extra)
-    ui_code = ui_elf_writes(elf)
-    table_writes = {item["table"]: struct.pack("<Q", item["sectors"]) for item in packs}
-    merged = {**writes, **table_writes, **ui_code, **ui_writes}
-    if len(merged) != (
-            len(writes) + len(table_writes) + len(ui_code) + len(ui_writes)):
-        raise ValueError("ELF writes collide")
-    covered = sorted((off, off + len(data)) for off, data in merged.items())
-    if any(end > nxt for (_, end), (nxt, _) in zip(covered, covered[1:])):
-        raise ValueError("ELF patch writes overlap")
-    spans = [*(span for item in packs for span in item["spans"]),
-             *(span for item in blocks for span in item["spans"]), *ending, *part, *generated]
+    for offset, data in ui_elf_writes(elf).items():
+        patches.add_elf("elf.ui_page_loader", offset, data)
+    for offset, data in ui_writes.items():
+        patches.add_elf("elf.ui_text_and_layout", offset, data)
+    for item in packs:
+        patches.add_elf(
+            "dialogue.chunk_table", item["table"], struct.pack("<Q", item["sectors"]))
+    for item in packs:
+        for offset, data in item["spans"]:
+            patches.add_pack("dialogue.packed", offset, data)
+    for item in blocks:
+        for offset, data in item["spans"]:
+            patches.add_pack("dialogue.counted", offset, data)
+    for offset, data in ending:
+        patches.add_pack("dialogue.ending", offset, data)
+    for offset, data in whole:
+        patches.add_pack("picture.whole", offset, data)
+    for offset, data in part:
+        patches.add_pack("picture.part", offset, data)
+    for offset, data in generated:
+        patches.add_pack("picture.generated", offset, data)
+
+    merged = patches.writes("elf")
+    spans = patches.spans("pack")
     message_bytes = {index for off in messages for index in (off, off + 1)}
-    pack_ranges = sorted((off, off + len(data)) for off, data in spans)
-    if any(end > nxt for (_, end), (nxt, _) in zip(pack_ranges, pack_ranges[1:])):
-        raise ValueError("pack spans overlap")
     for offset, data in spans:
         if any(index in message_bytes for index in range(offset, offset + len(data))):
             raise ValueError(f"pack span at {offset:#x} overlaps a message")
     path, combined = build_image(
-        chunk, page, pad, merged, messages, spans, slots, pages)
+        chunk, page, pad, merged, messages, spans, slots, pages, patches)
     check_image(path, combined, merged, messages, spans, slots, pages)
     try:
         revision = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
@@ -710,9 +494,17 @@ def main():
         "message_tokens": {hex(off): hex(token) for off, (_was, token) in sorted(messages.items())},
         "cave": hex(CAVE),
         "code_offset": hex(CODE_OFF),
+        "change_plan": patches.report(),
     }
     check_ui_text_report(report["ui_text"])
     (OUT_DIR / "report.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
+    from busin.image_audit import audit_image
+    change_audit = audit_image(OUT_DIR / "report.json", path)
+    print(
+        f"image audit: OK; {change_audit['sectors']['prefix_changed']} prefix sectors,"
+        f" {change_audit['sectors']['moved_tail_changed']} moved-tail sectors,"
+        f" {change_audit['sectors']['appended']} appended sectors"
+    )
     font_report = PAGE_PATH.parent / "report.json"
     font_report.parent.mkdir(parents=True, exist_ok=True)
     font_report.write_text(json.dumps({"hash_collision_stats": collision_stats}, indent=2) + "\n", encoding="utf-8")

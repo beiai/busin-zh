@@ -12,6 +12,9 @@ def main(argv=None):
     commands = parser.add_subparsers(dest="command", required=True)
 
     commands.add_parser("build", help="build the translated disc image")
+    plan = commands.add_parser("plan", help="show dialogue, font-slot, and sector budgets")
+    plan.add_argument("--json", action="store_true", help="write JSON instead of text")
+    commands.add_parser("audit-image", help="compare source and built image against report.json")
     unpack = commands.add_parser("unpack", help="unpack whole images from an images json into build/")
     unpack.add_argument("manifest")
     export_pictures = commands.add_parser(
@@ -65,6 +68,23 @@ def main(argv=None):
     if args.command == "build":
         from busin.image import main as build_main
         return build_main()
+    if args.command == "plan":
+        from busin.build_plan import build_disc_plan, write_text_plan
+        report = build_disc_plan()
+        if args.json:
+            print(json.dumps(report, indent=2))
+        else:
+            sys.stdout.write(write_text_plan(report))
+        return 0
+    if args.command == "audit-image":
+        from busin.image_audit import audit_image
+        report = audit_image()
+        print(
+            f"image audit: OK; {report['sectors']['prefix_changed']} prefix sectors,"
+            f" {report['sectors']['moved_tail_changed']} moved-tail sectors,"
+            f" {report['sectors']['appended']} appended sectors"
+        )
+        return 0
     if args.command == "unpack":
         from busin.ui import unpack_manifest
         unpack_manifest(Path(args.manifest))

@@ -125,6 +125,10 @@ python -m busin build
 python -m pytest tests -q
 ```
 
+构建前想看余量，运行 `python -m busin plan`。它会列出台词进度、每个字库槽的剩余格数、每个块的扇区预算，以及还没翻译的块之后要改成整段打包。
+
+构建后再运行 `python -m busin audit-image`。它会核对报告里的输入和成品，再把原盘与成品按扇区对齐，确认除了报告声明过的改动没有别的改动，并写出 `build/image/change-audit.json`。
+
 成品是 `build/image/busin-zh.cue`。用它从头开机。同样的译文，每次构建得到的光盘字节相同。开机能看出来的差别记在 `CHANGELOG.md`。
 
 ## 目录
