@@ -12,7 +12,7 @@ from busin.ui_layout import (
     _layout_ok, _slacks, _tokens, _visible, _wrap,
 )
 from busin.ui_records import (
-    BLURB_ROWS as _BLURB_ROWS, BLURB_WIDTH as _BLURB_WIDTH,
+    BLURB_ROWS as _BLURB_ROWS, BLURB_WIDTH as _BLURB_WIDTH, NAME_END,
     PLACE_POINTER_RANGES as _PLACE_POINTER_RANGES, blurb_record as _blurb_record,
     blurb_slots as _blurb_slots, grid as _grid, half as _half,
     monster_slots as _monster_slots, name_slots as _name_slots,
@@ -242,7 +242,7 @@ def collect(elf):
             paper.append((f"{va:06X}", codes))
 
     names = []
-    for va in range(0x4A4000, 0x4B0140, 0x40):
+    for va in range(0x4A4000, NAME_END, 0x40):
         for slot, run in enumerate(_record_runs(elf, va)):
             label = f"{va:06X}" if slot == 0 else f"{va:06X}.{slot + 1}"
             names.append((label, run))
@@ -841,7 +841,7 @@ def disc_self_test():
     expect = {
         "menu": 169, "controller": 4, "save": 32, "files": 40, "paper": 18, "job": 3,
         "create": 47, "personality": 15, "quest": 3, "town": 7, "shop": 158,
-        "names": 734, "monsters": 127, "blurbs": 380, "places": 301, "debug": 132,
+        "names": 732, "monsters": 127, "blurbs": 382, "places": 314, "debug": 132,
         "race": 5, "align": 3, "class": 8, "stat": 6, "rank": 7, "gear": 8,
         "inn": 41, "room": 24, "ask": 34, "lift": 6, "bark": 4, "link": 30,
     }
@@ -858,6 +858,10 @@ def disc_self_test():
     assert "武具のエキスパート" in text["class"] and "ダメージに影響" in text["stat"]
     assert "パーティランク" in text["rank"] and "SPの解放" in text["gear"]
     assert "冒険者の宿" in text["inn"] and text["inn"].count("{d}") == 5 + 11 + 11 + 11
+    assert "回復系:味方1体の毒、麻痺、気絶、石化、HPを全快\n攻撃系:敵1体を瀬死状態にさせる" in text["blurbs"]
+    assert "術者の魔法の効果範囲を拡大する。回復や攻撃魔法に使用可能\nPR:絆" in text["places"]
+    assert "仲間のHPを少し消費し、確実に逃走を成功させる(一部の敵は除く)" in text["places"]
+    assert "vぉ" not in text["places"] and "書緊急時切" not in text["places"]
     assert "ヘルガの部屋" in text["room"] and "開けてみますか?" in text["ask"]
     assert "地下牢第1層" in text["lift"] and "オスカー" in text["bark"]
     assert "前衛と後衛が一斉に入れ替わる" in text["link"]
@@ -1009,3 +1013,4 @@ def disc_self_test():
         nudge = struct.unpack_from("<H", _span(writes, va))[0]
         if nudge != (0 if index == 4 else 0x0010):
             raise AssertionError(f"gear nudge at {va:#x}")
+

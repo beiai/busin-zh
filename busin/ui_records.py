@@ -17,6 +17,17 @@ BLURB_WIDTH = 17
 BLURB_ROWS = 3
 BLURB_STRIDE = BLURB_WIDTH * BLURB_ROWS * 2
 
+# 0x1FDD50 indexes these 60 25-cell magic-effect rows. A full row has no terminator.
+MAGIC_BASE = 0x4B0106
+MAGIC_COUNT = 60
+MAGIC_CELLS = 25
+NAME_END = MAGIC_BASE - 6
+
+# 0x148D1C..0x148D2C scales an alliance-detail index by 0x8C from 0x4C1306.
+ALLIANCE_BASE = 0x4C1306
+ALLIANCE_STRIDE = 0x8C
+ALLIANCE_COUNT = 40
+
 
 @dataclass(frozen=True)
 class BlurbTable:
@@ -166,7 +177,7 @@ def name_slots(elf):
             "name reader",
         )
     slots = []
-    for va in range(0x4A4000, 0x4B0140, 0x40):
+    for va in range(0x4A4000, NAME_END, 0x40):
         for index, (start, stripped, raw, term) in enumerate(kept_spans(elf, va)):
             ident = f"{va:06X}" if index == 0 else f"{va:06X}.{index + 1}"
             slots.append(
@@ -285,15 +296,54 @@ def quest_title_slots(elf):
 def place_slots(elf):
     slots = []
     for start, end in (
-        (0x526C00, 0x527400),
+        (0x526CF0, 0x527400),
         (0x529C20, 0x52A000),
-        (0x567F90, 0x568400),
+        (0x567F90, 0x5682D0),
         (0x569940, PLACE_POINTER_RANGES[0][0]),
     ):
         slots.extend(packed_slots(elf, start, end))
     slots.extend(quest_title_slots(elf))
-    for start, end in ((PLACE_POINTER_RANGES[1][1], 0x56AF00), (0x4C1200, 0x4C2400)):
-        slots.extend(packed_slots(elf, start, end))
+    slots.extend(packed_slots(elf, PLACE_POINTER_RANGES[1][1], 0x56AF00))
+    slots.extend(alliance_slots(elf))
+    return slots
+
+
+
+def alliance_slots(elf):
+    expect_words(
+        elf,
+        (
+            (0x148D1C, 0x2404008C),
+            (0x148D20, 0x3C05004C),
+            (0x148D2C, 0x24A51306),
+        ),
+        "alliance detail reader",
+    )
+    slots = []
+    for row in range(ALLIANCE_COUNT):
+        start = ALLIANCE_BASE + row * ALLIANCE_STRIDE
+        end = start + ALLIANCE_STRIDE
+        va = start
+        while va < end:
+            value = half(elf, va)
+            if value in (0, 0xFFFF) or value >= 0x400:
+                va += 2
+                continue
+            raw, at, ok = [], va, True
+            while at < end:
+                code = half(elf, at)
+                if code in (0, 0xFFFF):
+                    break
+                if code == 0xFFFE or code < 0x400:
+                    raw.append(code)
+                    at += 2
+                    continue
+                ok = False
+                break
+            stripped = strip_pad(list(raw))
+            if ok and text_run(stripped):
+                slots.append(slot(f"{va:06X}", va, "span", stripped, len(stripped), room=len(raw)))
+            va = (at if at > va else va + 2) + 2
     return slots
 
 
@@ -301,12 +351,25 @@ def blurb_record(va: int) -> bool:
     return any(table.contains(va) for table in BLURB_TABLES)
 
 
+def magic_slots(elf):
+    slots = []
+    for index in range(MAGIC_COUNT):
+        va = MAGIC_BASE + index * MAGIC_CELLS * 2
+        codes = grid(elf, va, MAGIC_CELLS, 1)
+        stripped = strip_pad(list(codes))
+        if text_run(stripped):
+            slots.append(
+                slot(f"{va:06X}", va, "span", stripped, len(stripped), room=MAGIC_CELLS)
+            )
+    return slots
+
+
 def blurb_slots(elf):
     # The copy routine advances 34 bytes per source row and stops after three rows.
     expect_words(
         elf, ((0x12F34C, 0x28420003), (0x12F350, 0x24840022)), "blurb row copy"
     )
-    slots = packed_slots(elf, 0x4B0140, 0x4B0CC0)
+    slots = magic_slots(elf)
     for table in BLURB_TABLES:
         # Check the actual reader's stride and signed lui/addiu address pair.
         high = (table.base + 0x8000) >> 16
@@ -342,5 +405,11 @@ def blurb_slots(elf):
                         kind="grid",
                     )
                 )
-    slots.extend(packed_slots(elf, 0x4C04C0, 0x4C0500))
+    # 0x2854E4 starts at 0x4C04C6; the marker at 0x4C04C4 is structural.
+    first_link = read_ffff(elf, 0x4C04C6, limit=13)
+    if len(first_link) != 12 or half(elf, 0x4C04C6 + len(first_link) * 2) != 0:
+        raise AssertionError("first link record")
+    slots.append(
+        slot("4C04C6", 0x4C04C6, "span", first_link, len(first_link), room=len(first_link))
+    )
     return slots
