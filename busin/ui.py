@@ -840,11 +840,11 @@ def self_test() -> None:
         assert translated.read_bytes() == original.read_bytes()
     listed = load_images(DATA / "picture" / "images.json")
     assert {item["dir"] for item in listed["whole"]} == {"title"}
-    assert {item["dir"] for item in listed["part"]} == {"town", "menu"}
+    assert {item["dir"] for item in listed["part"]} == {"town", "menu", "status"}
     assert [item["name"] for item in listed["part"]] == [
-        "Tw_map02", "Tw_map01", "cock_00", "cock_01",
+        "Tw_map02", "Tw_map01", "cock_00", "cock_01", "status00",
     ]
-    assert {rect["palette"] for item in listed["part"] for rect in item["rects"]} == {1, 2, 10, 17}
+    assert {rect["palette"] for item in listed["part"] for rect in item["rects"]} == {1, 2, 7, 10, 12, 17}
     cock01_rects = {
         rect["name"]: rect for item in listed["part"] if item["name"] == "cock_01"
         for rect in item["rects"]
