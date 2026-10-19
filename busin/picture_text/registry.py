@@ -2,6 +2,7 @@
 
 from busin.picture_text.cock import render_initial as render_cock
 from busin.picture_text.menu_text import LABELS, render_initial as render_menu
+from busin.picture_text.status import render_initial as render_status
 
 COCK00_TEXT_NAMES = (
     "accessory",
@@ -18,6 +19,8 @@ COCK00_TEXT_NAMES = (
     "page_switch",
 )
 RENDERERS = {("cock_00", name): render_menu for name in COCK00_TEXT_NAMES}
+STATUS_TEXT_NAMES = ("01", "05", "06", "07", "08", "09", "10", "11", "12", "13")
+RENDERERS.update({("status00", name): render_status for name in STATUS_TEXT_NAMES})
 RENDERERS.update(
     {
         ("cock_01", "mage_magic"): render_cock,

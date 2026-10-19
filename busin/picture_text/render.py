@@ -98,7 +98,12 @@ def parse_generated(data: dict) -> TextImageSpec:
 
 def load_font(spec: FontSpec):
     font = ImageFont.truetype(str(font_path(spec.file)), spec.size)
-    font.set_variation_by_name(spec.variation)
+    try:
+        variations = font.get_variation_names()
+    except OSError:
+        variations = ()
+    if variations:
+        font.set_variation_by_name(spec.variation)
     if font.getname()[1] != spec.variation:
         raise ValueError(f"{spec.file} is {font.getname()}")
     return font
@@ -333,7 +338,12 @@ def validate_text_style(style: str) -> str:
 def _scaled_font(font, size: int):
     scaled = ImageFont.truetype(str(font.path), size)
     variation = font.getname()[1]
-    scaled.set_variation_by_name(variation)
+    try:
+        variations = scaled.get_variation_names()
+    except OSError:
+        variations = ()
+    if variations:
+        scaled.set_variation_by_name(variation)
     if scaled.getname()[1] != variation:
         raise ValueError(f"{font.path} is {scaled.getname()}")
     return scaled

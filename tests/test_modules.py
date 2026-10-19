@@ -135,6 +135,47 @@ def test_terms():
     assert terms["ノーム"]["zh"] == "侏儒" and terms["侍"]["zh"] == "武士"
     assert terms["魔術師"]["zh"] == "魔法师"
     assert terms["ページ切り替え"]["ui"] == "切换"
+    assert terms["攻撃力"]["zh"] == "攻击"
+    assert terms["防御力"]["zh"] == "防御"
+    assert terms["回避力"]["zh"] == "闪避"
+
+
+def test_parameter_terms_are_used_in_translations():
+    old_terms = ("攻击力", "防御力", "回避力", "回避率")
+    rate_count = 0
+    attack_capability_found = False
+    for path in DATA.rglob("*.json"):
+        doc = json.loads(path.read_text(encoding="utf-8"))
+
+        def walk(item):
+            nonlocal rate_count, attack_capability_found
+            if isinstance(item, dict):
+                source = item.get("source")
+                text = item.get("text")
+                if isinstance(source, str) and "text" in item:
+                    parts = text if isinstance(text, list) else [text]
+                    translated = "\n".join(
+                        part for part in parts if isinstance(part, str)
+                    )
+                    assert not any(term in translated for term in old_terms), (
+                        path,
+                        item.get("id"),
+                        translated,
+                    )
+                    normalized = source.replace("\n", "").replace("/", "")
+                    if "攻撃能力" in normalized:
+                        attack_capability_found = True
+                        assert "攻击能力" in translated
+                    rate_count += translated.count("闪避率")
+                for value in item.values():
+                    walk(value)
+            elif isinstance(item, list):
+                for value in item:
+                    walk(value)
+
+        walk(doc)
+    assert attack_capability_found
+    assert rate_count == 3
 
 
 def test_ui_codes():

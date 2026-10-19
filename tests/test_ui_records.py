@@ -47,8 +47,8 @@ def test_shield_description_stays_in_its_own_record(translated_elf):
     source, translated, reverse = translated_elf
     previous = _text(translated, reverse, 0x4B5514, 51).replace(" ", "")
     current = _text(translated, reverse, 0x4B557A, 51).replace(" ", "")
-    assert previous == "蕴含魔神诅咒的盾。其诅咒以很高的防御力与回避力为代价夺走装备者大量体力。"
-    assert current == "大盾。虽重，回避力高。"
+    assert previous == "蕴含魔神诅咒的盾。其诅咒以很高的防御与闪避为代价夺走装备者大量体力。"
+    assert current == "大盾。虽重，闪避高。"
     # The unused record and table marker are structural bytes, not translation space.
     assert translated[0x4B3CC0 - FILE_BASE:0x4B3D2C - FILE_BASE] == source[
         0x4B3CC0 - FILE_BASE:0x4B3D2C - FILE_BASE]

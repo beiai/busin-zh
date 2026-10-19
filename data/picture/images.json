@@ -401,7 +401,9 @@
           "y": 32,
           "width": 32,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "レベル",
+          "text": "等级"
         },
         {
           "name": "05",
@@ -409,7 +411,9 @@
           "y": 96,
           "width": 48,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "攻撃力",
+          "text": "攻击"
         },
         {
           "name": "06",
@@ -417,7 +421,9 @@
           "y": 128,
           "width": 40,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "回避力",
+          "text": "闪避"
         },
         {
           "name": "07",
@@ -425,7 +431,9 @@
           "y": 112,
           "width": 48,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "防御力",
+          "text": "防御"
         },
         {
           "name": "08",
@@ -433,7 +441,9 @@
           "y": 32,
           "width": 40,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "力",
+          "text": "力量"
         },
         {
           "name": "09",
@@ -441,7 +451,9 @@
           "y": 48,
           "width": 40,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "知恵",
+          "text": "智力"
         },
         {
           "name": "10",
@@ -449,7 +461,9 @@
           "y": 64,
           "width": 40,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "信仰心",
+          "text": "信仰"
         },
         {
           "name": "11",
@@ -457,7 +471,9 @@
           "y": 80,
           "width": 40,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "生命力",
+          "text": "体力"
         },
         {
           "name": "12",
@@ -465,7 +481,9 @@
           "y": 96,
           "width": 40,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "敏捷度",
+          "text": "敏捷"
         },
         {
           "name": "13",
@@ -473,7 +491,9 @@
           "y": 112,
           "width": 40,
           "height": 16,
-          "palette": 2
+          "palette": 2,
+          "source": "幸運度",
+          "text": "幸运"
         },
         {
           "name": "23",

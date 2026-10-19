@@ -8,6 +8,7 @@ import pytest
 from busin.disc import BIN, FILE_BASE, chunk_row, read_pack
 from busin.patch.picture_rects import MENU_TABLE, SWITCH_INDEX, elf_writes
 from busin.paths import DATA
+from busin.picture_text import status
 from busin.picture_text.registry import RENDERERS
 from busin.ui import (
     _part_span,
@@ -16,7 +17,7 @@ from busin.ui import (
     load_images,
     translated_rect,
 )
-from busin.tmx import read_tmx_bytes
+from busin.tmx import PSMCT16, PSMT4, TmxImage, read_tmx_bytes
 
 
 def manifest():
@@ -34,6 +35,59 @@ def rect(item, name):
 def pixels(path):
     with Image.open(path) as bitmap:
         return bitmap.convert("RGBA").tobytes()
+
+
+def test_status_labels_use_terms_and_declared_grayscale_palette(tmp_path):
+    status.self_test()
+    doc = manifest()
+    item = next(item for item in doc["part"] if item["name"] == "status00")
+    expected = status.translations()
+    labels = [r for r in item["rects"] if r["name"] in status.SOURCES]
+    assert {r["name"]: r["text"] for r in labels} == expected
+    assert {r["name"]: r["source"] for r in labels} == status.SOURCES
+    image = TmxImage(
+        tmp_path / "status00.tmx",
+        0,
+        "status00.tim",
+        256,
+        256,
+        PSMT4,
+        PSMCT16,
+        [status.PALETTE_COLORS for _index in range(16)],
+        (0,) * (256 * 256),
+    )
+    allowed = set(status.PALETTE_COLORS)
+    for label in labels:
+        output = tmp_path / f"{label['name']}.zh.png"
+        status.render_initial(image, label, output)
+        with Image.open(output) as bitmap:
+            assert bitmap.size == (label["width"], label["height"])
+            colors = set(bitmap.convert("RGBA").get_flattened_data())
+        assert colors <= allowed
+        assert status.PALETTE_COLORS[status.CORE_INDEX] in colors
+        assert status.PALETTE_COLORS[15] not in colors
+
+    bad = dict(labels[0])
+    bad["text"] = "智力"
+    with pytest.raises(ValueError, match="source or translation changed"):
+        status.render_initial(image, bad, tmp_path / "bad.zh.png")
+    palettes = [status.PALETTE_COLORS for _index in range(16)]
+    palettes[status.PALETTE] = tuple(
+        (0, 0, 0, 0xFF) for _index in range(16)
+    )
+    changed = TmxImage(
+        image.path,
+        image.user_id,
+        image.comment,
+        image.width,
+        image.height,
+        image.pixel_format,
+        image.palette_format,
+        palettes,
+        image.pixels,
+    )
+    with pytest.raises(ValueError, match="palette 2 colors changed"):
+        status.render_initial(changed, labels[0], tmp_path / "changed.zh.png")
 
 
 def test_every_declared_picture_text_has_a_registered_renderer():
