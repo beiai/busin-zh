@@ -406,7 +406,7 @@ def blurb_slots(elf):
                     )
                 )
     # 0x2854E4 starts at 0x4C04C6; the marker at 0x4C04C4 is structural.
-    first_link = read_ffff(elf, 0x4C04C6, limit=13)
+    first_link = read_ffff(elf, 0x4C04C6, limit=12)
     if len(first_link) != 12 or half(elf, 0x4C04C6 + len(first_link) * 2) != 0:
         raise AssertionError("first link record")
     slots.append(
