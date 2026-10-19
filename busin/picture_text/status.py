@@ -10,7 +10,7 @@ from busin.picture_text.render import FontSpec, load_font, render_text_alpha
 from busin.tmx import PSMCT16, PSMT4, TmxImage
 
 
-FONT = FontSpec("LXGWWenKai-Regular.ttf", "Regular", 16)
+FONT = FontSpec("LXGWWenKai-Medium.ttf", "Medium", 16)
 PALETTE = 2
 PALETTE_COLORS = tuple(
     (value, value, value, 0xFF)

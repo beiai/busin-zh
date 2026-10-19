@@ -1,11 +1,11 @@
 # 当前光盘镜像改动分类
 
 - 日期：2026-10-20
-- 基于提交：`6e69d14ac6b9e2b14a2d75a4f5beb53138d31525`，包含尚未提交的状态小图翻译、绘制规则、术语、译文及检查改动
+- 基于提交：`6e69d14ac6b9e2b14a2d75a4f5beb53138d31525`，包含尚未提交的状态小图 Medium 字体改动
 - 输入原盘：`private/games/Busin - Wizardry Alternative [NTSC-J] [SLPM-62098].bin`
 - 输入 SHA-256：`735c9de6b9661e1ba696bdf5c31699c5bfe43733bf6c4cdc9274940fe53c9b6b`
 - 成品：`build/image/busin-zh.bin`
-- 成品 SHA-256：`18f2a5790a3263f703dac6262f6ee977687a0c4b655cab6b87457ec7e25fb4b1`
+- 成品 SHA-256：`398f693f5daf15f718a1529f12dae07d259cb66a68d6ad334a37404c50795614`
 
 这是按本次构建结果更新的快照说明，不作为构建输入。提交号只表示构建的基础，未提交输入的校验值见 `build/image/report.json`。实际扇区差异见 `build/image/change-audit.json`。本次构建与镜像检查通过，94 项测试通过；尚未从头开机确认。
 

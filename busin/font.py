@@ -38,6 +38,11 @@ FONT_INPUTS = (
         "LICENSE-LXGWWenKai-Regular.txt",
     ),
     FontInput(
+        "status", "LXGWWenKai-Medium.ttf", "LXGW WenKai", "Medium", "1.530",
+        "d4bdeb38a39151d74d084cba5090f8cb7d20bf83eedb78c35939ae70b9f4e3f6",
+        "LICENSE-LXGWWenKai-Medium.txt",
+    ),
+    FontInput(
         "ui", "NotoSansSC-VF.ttf", "Noto Sans SC", "Regular", "2.04",
         "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
         "LICENSE-NotoSansSC-VF.txt",
