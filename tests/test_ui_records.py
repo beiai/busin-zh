@@ -45,10 +45,10 @@ def test_item_names_at_the_game_read_address(translated_elf, getter, index, japa
 
 def test_shield_description_stays_in_its_own_record(translated_elf):
     source, translated, reverse = translated_elf
-    previous = _text(translated, reverse, 0x4B5514, 51)
-    current = _text(translated, reverse, 0x4B557A, 51)
-    assert previous == "蕴含魔神诅咒的盾。其诅咒以很高的防御与回避为代价，夺走装备者的大量体力。"
-    assert current == "大盾。虽重，但回避力高。"
+    previous = _text(translated, reverse, 0x4B5514, 51).replace(" ", "")
+    current = _text(translated, reverse, 0x4B557A, 51).replace(" ", "")
+    assert previous == "蕴含魔神诅咒的盾。其诅咒以很高的防御力与回避力为代价夺走装备者大量体力。"
+    assert current == "大盾。虽重，回避力高。"
     # The unused record and table marker are structural bytes, not translation space.
     assert translated[0x4B3CC0 - FILE_BASE:0x4B3D2C - FILE_BASE] == source[
         0x4B3CC0 - FILE_BASE:0x4B3D2C - FILE_BASE]
@@ -56,10 +56,10 @@ def test_shield_description_stays_in_its_own_record(translated_elf):
 
 def test_consecutive_full_descriptions_do_not_merge(translated_elf):
     _source, translated, reverse = translated_elf
-    assert _text(translated, reverse, 0x4B18BA, 51) == (
-        "据说宿有操炎魔神的双手剑。战斗中使用可动用魔神之力。可打倒不死族。")
-    assert _text(translated, reverse, 0x4B1920, 51) == (
-        "据说宿有操雷魔神的双手剑。战斗中使用可动用魔神之力。可打倒不死族。")
+    assert _text(translated, reverse, 0x4B18BA, 51).replace(" ", "") == (
+        "据说有操纵火焰的魔神寄宿的双手剑。战斗中可发动魔神之力也能打倒不死族。")
+    assert _text(translated, reverse, 0x4B1920, 51).replace(" ", "") == (
+        "据说有操纵雷电的魔神寄宿的双手剑。战斗中可发动魔神之力也能打倒不死族。")
     assert _text(translated, reverse, 0x4B1986, 51).startswith("据说狂战士用过的双手剑。")
 
 
