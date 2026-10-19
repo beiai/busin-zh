@@ -5,6 +5,7 @@
 /external/
 /local/
 /.cursor/
+/.codex/
 
 # Disc images, savestates and original GS captures, wherever stored
 *.[bB][iI][nN]
