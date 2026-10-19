@@ -36,7 +36,7 @@ PAPER_PAGES = (0x445810, 0x4458F8, 0x4459E0)
 PAPER_ROWS = 6
 PAPER_WIDTH = 19
 # Item-command rows whose first cell is the +16 nudge. The SP row is the one left out.
-_GEAR_NUDGE = {0x584308 + index * 12 for index in range(7) if index != 4}
+_GEAR_NUDGE = {0x584308 + index * 12 for index in range(8) if index != 4}
 
 STRING_TABLE = 0x43E9C8
 
@@ -304,8 +304,8 @@ def collect(elf):
         ("align", "阵营说明", _grid_rows(elf, 0x581E18, 0xAA, 3, 12, 7, skip=1)),
         ("class", "职业说明", _grid_rows(elf, 0x582018, 0x44, 8, 11, 3, skip=1)),
         ("stat", "能力说明", _grid_rows(elf, 0x582238, 0x48, 6, 12, 3)),
-        ("rank", "队伍阶级", _grid_rows(elf, 0x583BC0, 0x26, 5, 19, 1)),
-        ("gear", "物品操作", _grid_rows(elf, 0x584308, 12, 7, 6, 1)),
+        ("rank", "队伍阶级", _grid_rows(elf, 0x583BC0, 0x26, 7, 19, 1)),
+        ("gear", "物品操作", _grid_rows(elf, 0x584308, 12, 8, 6, 1)),
         ("inn", "旅馆", _ptr_until(elf, 0x442C40, 0x580000, 0x582000, extra=(0xFFFD,))),
         ("room", "房间", _ptr_until(elf, 0x48367C, 0x483000, 0x484000)),
         ("ask", "迷宫确认", _ptr_until(elf, 0x55282C, 0x59CF00, 0x59E000)),
@@ -842,7 +842,7 @@ def disc_self_test():
         "menu": 169, "controller": 4, "save": 32, "files": 40, "paper": 18, "job": 3,
         "create": 47, "personality": 15, "quest": 3, "town": 7, "shop": 158,
         "names": 734, "monsters": 127, "blurbs": 380, "places": 301, "debug": 132,
-        "race": 5, "align": 3, "class": 8, "stat": 6, "rank": 5, "gear": 7,
+        "race": 5, "align": 3, "class": 8, "stat": 6, "rank": 7, "gear": 8,
         "inn": 41, "room": 24, "ask": 34, "lift": 6, "bark": 4, "link": 30,
     }
     got = {name: len(rows) for name, rows in sections.items() if name in expect}
@@ -1004,7 +1004,7 @@ def disc_self_test():
             if code == 0x0010 and va in _GEAR_NUDGE:
                 continue
             raise AssertionError("ui text uses an original UI cell")
-    for index in range(7):
+    for index in range(8):
         va = 0x584308 + index * 12
         nudge = struct.unpack_from("<H", _span(writes, va))[0]
         if nudge != (0 if index == 4 else 0x0010):
