@@ -14,8 +14,7 @@ def test_current_image_has_no_undeclared_changes(tmp_path):
     assert result["sectors"]["moved_tail_changed"] == 116
     assert result["sectors"]["appended"] == 6014
     assert result["classified"]["moved_tail"]["elf.picture_rects"] == 1
-    assert result["classified"]["prefix"]["picture.part"] == 83
-    assert result["classified"]["prefix"]["picture.generated"] == 96
+    assert result["classified"]["prefix"]["picture.part"] == 177
     assert result["unexpected"] == {
         "prefix": [], "moved_tail": [], "append_missing": [], "append_extra": []
     }

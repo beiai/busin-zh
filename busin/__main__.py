@@ -27,7 +27,7 @@ def main(argv=None):
     )
     export_pictures.add_argument(
         "--force-zh", action="store_true",
-        help="regenerate existing generated .zh.png files",
+        help="regenerate existing .zh.png files",
     )
     export_textures = commands.add_parser(
         "export-textures", help="export every distinct PACKDATA texture and palette into build/textures"
@@ -47,15 +47,6 @@ def main(argv=None):
     copy.add_argument("source", type=int)
     copy.add_argument("targets", type=int, nargs="+")
     commands.add_parser("ui-glyphs", help="render 16x16 UI glyphs with Noto Sans SC Medium")
-    picture_preview = commands.add_parser(
-        "picture-preview", help="render generated text pictures from images.json"
-    )
-    picture_preview.add_argument("name", nargs="?", help="generated picture name")
-    picture_preview.add_argument("--all", action="store_true", help="render every generated picture")
-    picture_preview.add_argument(
-        "--text-style", choices=TEXT_STYLES, default=DEFAULT_TEXT_STYLE,
-        help="offline text anti-aliasing style",
-    )
     disasm = commands.add_parser("disasm", help="disassemble an ELF address range")
     disasm.add_argument("start")
     disasm.add_argument("end")
@@ -127,13 +118,6 @@ def main(argv=None):
                 copy_text(args.source, args.targets)
         except ValueError as error:
             raise SystemExit(str(error)) from None
-        return 0
-    if args.command == "picture-preview":
-        from busin.ui import preview_generated
-        if args.all == bool(args.name):
-            raise SystemExit("picture-preview needs one name or --all")
-        for output in preview_generated(None if args.all else args.name, text_style=args.text_style):
-            print(output)
         return 0
     if args.command == "ui-glyphs":
         from busin.ui_font import render_ui_glyphs

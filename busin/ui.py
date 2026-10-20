@@ -7,10 +7,7 @@ from pathlib import Path
 from busin import text as decode_msg
 from busin.disc import BIN, ELF_LBA, FILE_BASE, children, chunk_row, entry, read_pack, read_user
 from busin.paths import DATA, BUILD
-from busin.picture_text import (
-    DEFAULT_TEXT_STYLE, export_generated_picture as export_generated_pair,
-    parse_generated, repack_generated_picture,
-)
+from busin.picture_text import DEFAULT_TEXT_STYLE
 from busin.tmx import (
     PSMCT16, PSMCT32, PSMT4, PSMT8, TMX_TAG, encode_psmt4, map_png_to_indices,
     TmxImage, read_tmx, read_tmx_bytes, repack_bytes, save_png,
@@ -24,10 +21,20 @@ except ImportError:
 
 WHOLE_KEYS = {"name", "dir", "chunk", "offset", "width", "height", "palette", "size", "word_count_header"}
 PART_KEYS = {"name", "dir", "chunk", "offset", "slot", "width", "height", "rects"}
-# PACKDATA keeps one translated parent texture in two identical chunks. Keep
-# the second disc location in code and check both copies before repacking.
+# PACKDATA keeps translated parent textures in duplicate chunks. Keep every
+# disc location in code and check all copies before repacking.
 PART_SOURCE_COPIES = {
+    "bar_00": ((0, "0x30cc0"), (12, "0x2ca40")),
     "guild_00": ((12, "0x24800"),),
+}
+# Each slot belongs to a separate texture-handle row. Keep the game addresses
+# here and check the manifest row index against the verified loader position.
+PART_HANDLES = {
+    "bar_00": (0x442650, 0),
+    "ali_00": (0x513D50, 0),
+    "ali_01": (0x513D50, 1),
+    "ali_02": (0x513D50, 2),
+    "ali_03": (0x513D50, 3),
 }
 RECT_KEYS = {"name", "x", "y", "width", "height", "palette"}
 RECT_TEXT_KEYS = RECT_KEYS | {"source", "text"}
@@ -156,6 +163,11 @@ def _validate_part_item(item, names: set, files: set, seen: dict) -> None:
     slot = item["slot"]
     if type(slot) is not int or slot < 0:
         raise ValueError(f"{name} slot")
+    handle = PART_HANDLES.get(name)
+    if handle is not None and slot != handle[1]:
+        raise ValueError(
+            f"{name} slot {slot} is not handle table {handle[0]:#x} slot {handle[1]}"
+        )
     _pixels(item, name)
     _claim(seen, *_place(item, name), name)
     rects = item["rects"]
@@ -229,29 +241,21 @@ def _validate_translated_overlaps(item: dict) -> None:
 
 def load_images(path: Path) -> dict:
     data = json.loads(path.read_text(encoding="utf-8"))
-    if set(data) != {"container", "whole", "part", "generated"}:
-        raise ValueError("image list needs container, whole, part, and generated")
+    if set(data) != {"container", "whole", "part"}:
+        raise ValueError("image list needs container, whole, and part")
     if data["container"] != "PACKDATA.CIG":
         raise ValueError("image container must be PACKDATA.CIG")
     whole = data["whole"]
     part = data["part"]
-    generated = data["generated"]
     if not isinstance(whole, list) or not whole:
         raise ValueError("whole images must be a non-empty list")
     if not isinstance(part, list):
         raise ValueError("part must be a list")
-    if not isinstance(generated, list):
-        raise ValueError("generated must be a list")
     names, files, seen = set(), set(), {}
     for item in whole:
         _validate_whole_item(item, names, files, seen)
     for item in part:
         _validate_part_item(item, names, files, seen)
-    for item in generated:
-        parsed = parse_generated(item)
-        if parsed.name in names:
-            raise ValueError(f"duplicate texture name {parsed.name}")
-        names.add(parsed.name)
     return data
 
 
@@ -260,10 +264,6 @@ def picture_dir(base: Path, item: dict) -> Path:
     if not folder:
         return base
     return base / folder
-
-
-def generated_dir(root: Path) -> Path:
-    return root / "generated"
 
 
 def part_source_items(item: dict) -> list[dict]:
@@ -423,22 +423,6 @@ def replacement_spans(read, root: Path, row) -> list[tuple[int, bytes]]:
     return spans
 
 
-def preview_generated(name: str | None = None, output: Path | None = None, text_style: str = DEFAULT_TEXT_STYLE) -> list[Path]:
-    from busin.picture_text.workflow import preview_generated as render_preview
-
-    manifest = load_images(DATA / "picture" / "images.json")
-    items = manifest["generated"]
-    if name is not None:
-        items = [item for item in items if item["name"] == name]
-        if len(items) != 1:
-            raise ValueError(f"generated picture {name!r} appears {len(items)} times")
-    output = output or BUILD / "picture"
-    with BIN.open("rb") as source:
-        read = lambda offset, size: read_pack(source, offset, size)
-        row = lambda chunk: chunk_row(source, chunk)
-        return [render_preview(item, read, row, output, text_style) for item in items]
-
-
 def _part_palette(image, rect: dict) -> tuple[list[tuple[int, ...]], bool]:
     if rect["palette"] >= len(image.palettes):
         raise ValueError(f"{rect['name']} has no palette {rect['palette']}")
@@ -546,28 +530,6 @@ def part_spans(read, root: Path, row) -> list[tuple[int, bytes]]:
     return spans
 
 
-def generated_spans(read, root: Path, row) -> list[tuple[int, bytes]]:
-    """Repack each generated .zh.png into every original TMX source."""
-    path = root / "images.json"
-    if not path.is_file():
-        return []
-    spans = []
-    locations = []
-    for item in load_images(path)["generated"]:
-        name = item["name"]
-        zh_path = generated_dir(root) / zh_name(name)
-        if not zh_path.is_file():
-            raise ValueError(f"{name} translated picture is missing: {zh_path}")
-        found = repack_generated_picture(item, read, row, zh_path)
-        locations.extend(
-            (f"{name} copy {copy}", offset, len(data))
-            for copy, (offset, data) in enumerate(found)
-        )
-        spans.extend(found)
-    ranges_overlap(locations)
-    return spans
-
-
 def container_extent(source, name: str) -> tuple[int, int]:
     pvd = read_user(source, 16, 1)
     if pvd[:7] != b"\x01CD001\x01":
@@ -671,8 +633,6 @@ def export_pictures(read, manifest: dict, root: Path, row, text_style: str = DEF
         for rect in item["rects"]:
             if "reuse" in rect:
                 _reused_bitmap(item, rect, dest).save(dest / zh_name(rect["name"]))
-    for item in manifest.get("generated", []):
-        export_generated_pair(item, read, row, generated_dir(root), text_style, force_zh)
 
 
 def export_manifest(path: Path | None = None, text_style: str = DEFAULT_TEXT_STYLE, force_zh: bool = False) -> None:
@@ -719,7 +679,6 @@ def self_test() -> None:
             {"name": "note", "chunk": 0, "offset": hex(len(first) + len(second)), "size": len(raw), "word_count_header": True},
         ],
         "part": [],
-        "generated": [],
     }
     try:
         load_manifest_conflict()
@@ -780,7 +739,6 @@ def self_test() -> None:
                     {"name": "right", "x": 1, "y": 0, "width": 1, "height": 1, "palette": 0},
                 ],
             }],
-            "generated": [],
         }
         part_root.mkdir()
         (part_root / "town").mkdir()
@@ -836,7 +794,6 @@ def self_test() -> None:
                 "width": 2, "height": 2,
                 "rects": [{"name": "top", "x": 0, "y": 0, "width": 2, "height": 2, "palette": 0}],
             }],
-            "generated": [],
         }
         export_pictures(read, export_doc, export_root, row)
         original = export_root / "title" / "a.png"
@@ -863,11 +820,12 @@ def self_test() -> None:
     listed = load_images(DATA / "picture" / "images.json")
     assert {item["dir"] for item in listed["whole"]} == {"title"}
     assert {item["dir"] for item in listed["part"]} == {
-        "town", "menu", "status", "guild", "shop", "temple",
+        "town", "menu", "status", "guild", "shop", "temple", "bar", "ali",
     }
     assert [item["name"] for item in listed["part"]] == [
         "Tw_map02", "Tw_map01", "cock_00", "cock_01", "status00",
         "guild_00", "guild_a0", "guild_a1", "shop_00", "temple00",
+        "bar_00", "ali_00", "ali_01", "ali_02", "ali_03",
     ]
     assert {rect["palette"] for item in listed["part"] for rect in item["rects"]} == {
         1, 2, 3, 6, 7, 10, 12, 17,
@@ -883,25 +841,8 @@ def self_test() -> None:
         "skill": ("スキル", "技能"),
         "front_back_change": ("前後列交代", "前后切换"),
     }
-    assert [item["name"] for item in listed["generated"]] == [
-        "bar_00", "ali_00", "ali_01", "ali_02", "ali_03",
-    ]
     assert all(PICTURE_KEYS <= set(item) for item in [*listed["whole"], *listed["part"]])
     assert scene_output(DATA / "picture" / "images.json") / "title" == BUILD / "picture" / "title"
-    with tempfile.TemporaryDirectory() as tmp:
-        root = Path(tmp)
-        missing_doc = dict(listed)
-        missing_doc["generated"] = [listed["generated"][0]]
-        (root / "images.json").write_text(json.dumps(missing_doc), encoding="utf-8")
-        try:
-            generated_spans(
-                lambda _offset, _size: (_ for _ in ()).throw(AssertionError("source was read")),
-                root, lambda _chunk: (_ for _ in ()).throw(AssertionError("chunk was read")),
-            )
-        except ValueError as error:
-            assert "bar_00" in str(error) and "bar_00.zh.png" in str(error)
-        else:
-            raise AssertionError("missing generated translated picture was accepted")
     if BIN.exists():
         with BIN.open("rb") as src:
             disc_row = lambda chunk: chunk_row(src, chunk)
@@ -1025,7 +966,6 @@ def load_manifest_conflict() -> None:
                 {"name": "b", "chunk": 0, "offset": "0x0", "width": 2, "height": 2, "palette": 0},
             ],
             "part": [],
-            "generated": [],
         }), encoding="utf-8")
         load_images(path)
 
@@ -1043,6 +983,5 @@ def load_stem_clash() -> None:
                 "width": 2, "height": 2,
                 "rects": [{"name": "top", "x": 0, "y": 0, "width": 2, "height": 2, "palette": 0}],
             }],
-            "generated": [],
         }), encoding="utf-8")
         load_images(path)

@@ -1,11 +1,9 @@
-"""Common fixed-pixel text rendering for generated picture translations."""
+"""Common fixed-pixel text rendering for picture translations."""
 from dataclasses import dataclass
-from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 from busin.font import SOLID, font_path
-from busin.tmx import encode_psmt4
 
 CORE_INDEX = 8
 OUTLINE_INDEX = 9
@@ -26,12 +24,6 @@ TEXT_PALETTE = (
 )
 MAX_EDGE_CROP = 2
 MIN_TRACKING = -8
-GENERATED_KEYS = {"name", "renderer", "palette", "font", "labels"}
-FONT_KEYS = {"file", "variation", "size"}
-LABEL_KEYS = {"source", "text"}
-RENDERERS = {"bar_buttons", "ali_buttons"}
-
-
 @dataclass(frozen=True)
 class FontSpec:
     file: str
@@ -52,48 +44,6 @@ class TextImageSpec:
     palette: int
     font: FontSpec
     labels: tuple[Label, ...]
-
-
-def _name(value, label: str) -> str:
-    if not isinstance(value, str) or not value or Path(value).name != value:
-        raise ValueError(f"{label} name")
-    return value
-
-
-def parse_generated(data: dict) -> TextImageSpec:
-    if not isinstance(data, dict) or set(data) != GENERATED_KEYS:
-        raise ValueError("generated image needs name, renderer, palette, font, and labels")
-    name = _name(data["name"], "generated")
-    renderer = data["renderer"]
-    if renderer not in RENDERERS:
-        raise ValueError(f"{name} renderer is {renderer!r}")
-    palette = data["palette"]
-    if type(palette) is not int or not 0 <= palette <= 15:
-        raise ValueError(f"{name} palette must be an integer from 0 to 15")
-    raw_font = data["font"]
-    if not isinstance(raw_font, dict) or set(raw_font) != FONT_KEYS:
-        raise ValueError(f"{name} font")
-    font = FontSpec(
-        _name(raw_font["file"], f"{name} font"),
-        raw_font["variation"],
-        raw_font["size"],
-    )
-    if not isinstance(font.variation, str) or not font.variation:
-        raise ValueError(f"{name} font variation")
-    if type(font.size) is not int or font.size <= 0:
-        raise ValueError(f"{name} font size")
-    raw_labels = data["labels"]
-    if not isinstance(raw_labels, list) or not raw_labels:
-        raise ValueError(f"{name} labels")
-    labels = []
-    for index, item in enumerate(raw_labels):
-        if not isinstance(item, dict) or set(item) != LABEL_KEYS:
-            raise ValueError(f"{name} label {index}")
-        source, text = item["source"], item["text"]
-        if not isinstance(source, str) or not isinstance(text, str) or "\n" in text:
-            raise ValueError(f"{name} label {index}")
-        labels.append(Label(source, text))
-    return TextImageSpec(name, renderer, palette, font, tuple(labels))
 
 
 def load_font(spec: FontSpec):
@@ -479,29 +429,3 @@ def render_text_indices(
             _stroke_layer(text, scaled_font, cell_width, cell_height, 0).get_flattened_data()
         )
     return _quantize_text_coverage(core, outline, palette)
-
-
-def replace_psmt4_pixels(
-    blob: bytes,
-    pixels,
-    width: int,
-    height: int,
-    palette_count: int,
-    palette_size: int,
-    label: str,
-) -> bytes:
-    """Replace only PSMT4 pixels and leave the TMX header and palettes unchanged."""
-    if width <= 0 or height <= 0 or width * height % 2:
-        raise ValueError(f"{label} PSMT4 dimensions")
-    pixel_offset = 0x40 + palette_count * palette_size
-    pixel_size = width * height // 2
-    if len(blob) != pixel_offset + pixel_size:
-        raise ValueError(f"{label} is {len(blob)} bytes, expected {pixel_offset + pixel_size}")
-    encoded = encode_psmt4(pixels)
-    if len(encoded) != pixel_size:
-        raise ValueError(f"{label} encoded pixels")
-    out = bytearray(blob)
-    out[pixel_offset:pixel_offset + pixel_size] = encoded
-    if out[:pixel_offset] != blob[:pixel_offset]:
-        raise ValueError(f"{label} header changed")
-    return bytes(out)

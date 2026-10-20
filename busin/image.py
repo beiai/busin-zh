@@ -29,7 +29,7 @@ from busin.message_pack import (
 )
 from busin.text import PAD, PAGE0
 from busin.tmx import read_tmx, save_png
-from busin.ui import generated_spans, part_spans, replacement_spans
+from busin.ui import part_spans, replacement_spans
 
 OUT_DIR = BUILD / "image"
 PAGE_PATH = BUILD / "font" / "message_glyphs.page01.tmx"
@@ -407,10 +407,6 @@ def main():
             lambda off, size: read_pack(src, off, size), DATA / "picture",
             lambda chunk: chunk_row(src, chunk),
         )
-        generated = generated_spans(
-            lambda off, size: read_pack(src, off, size), DATA / "picture",
-            lambda chunk: chunk_row(src, chunk),
-        )
         whole = replacement_spans(
             lambda off, size: read_pack(src, off, size), DATA / "picture",
             lambda chunk: chunk_row(src, chunk),
@@ -462,8 +458,6 @@ def main():
         patches.add_pack("picture.whole", offset, data)
     for offset, data in part:
         patches.add_pack("picture.part", offset, data)
-    for offset, data in generated:
-        patches.add_pack("picture.generated", offset, data)
 
     merged = patches.writes("elf")
     spans = patches.spans("pack")

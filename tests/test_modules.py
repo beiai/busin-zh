@@ -371,29 +371,6 @@ def test_ui_strings():
     disc_self_test()
 
 
-def test_bar():
-    from busin.picture_text.bar import self_test
-    self_test()
-
-
-@pytest.mark.skipif(not BIN.exists(), reason="没有原盘")
-def test_bar_disc():
-    from busin.picture_text.bar import disc_self_test
-    disc_self_test()
-
-
-
-def test_ali():
-    from busin.picture_text.ali import self_test
-    self_test()
-
-
-@pytest.mark.skipif(not BIN.exists(), reason="没有原盘")
-def test_ali_disc():
-    from busin.picture_text.ali import disc_self_test
-    disc_self_test()
-
-
 def test_menu_banner_text():
     from busin.picture_text.menu_banner import self_test
     self_test()

@@ -39,7 +39,14 @@ FACILITY_TEXT_NAMES = {
     "shop_00": tuple(f"{index:02d}" for index in range(15)),
     "temple00": tuple(f"{index:02d}" for index in range(8)),
 }
-for texture, names in FACILITY_TEXT_NAMES.items():
+MIGRATED_BANNER_TEXT_NAMES = {
+    "bar_00": tuple(f"{index:02d}" for index in range(15)),
+    "ali_00": tuple(f"{index:02d}" for index in range(16)),
+    "ali_01": tuple(f"{index:02d}" for index in range(16, 28)),
+    "ali_02": tuple(f"{index:02d}" for index in range(28, 34)),
+    "ali_03": tuple(f"{index:02d}" for index in range(34, 46)),
+}
+for texture, names in {**FACILITY_TEXT_NAMES, **MIGRATED_BANNER_TEXT_NAMES}.items():
     RENDERERS.update({(texture, name): render_banner for name in names})
 
 

@@ -11,6 +11,8 @@ from busin.paths import DATA
 from busin.picture_text import status
 from busin.picture_text.registry import RENDERERS
 from busin.ui import (
+    PART_HANDLES,
+    PART_SOURCE_COPIES,
     _part_span,
     entry_slices,
     export_pictures,
@@ -155,7 +157,7 @@ def original_menu(tmp_path):
     doc = manifest()
     item = menu(doc)
     item["rects"] = [r for r in item["rects"] if r["name"] in {"page_switch", "switch"}]
-    doc["whole"], doc["generated"], doc["part"] = [], [], [item]
+    doc["whole"], doc["part"] = [], [item]
     with BIN.open("rb") as source:
         read = lambda at, size: read_pack(source, at, size)
         row = lambda chunk: chunk_row(source, chunk)
@@ -338,6 +340,11 @@ def test_facility_rects_use_numeric_ids_and_registered_renderers():
         "guild_a1": (7, [f"{index:02d}" for index in range(19, 26)]),
         "shop_00": (15, [f"{index:02d}" for index in range(15)]),
         "temple00": (8, [f"{index:02d}" for index in range(8)]),
+        "bar_00": (15, [f"{index:02d}" for index in range(15)]),
+        "ali_00": (16, [f"{index:02d}" for index in range(16)]),
+        "ali_01": (12, [f"{index:02d}" for index in range(16, 28)]),
+        "ali_02": (6, [f"{index:02d}" for index in range(28, 34)]),
+        "ali_03": (12, [f"{index:02d}" for index in range(34, 46)]),
     }
     for name, (count, names) in expected.items():
         item = next(entry for entry in doc["part"] if entry["name"] == name)
@@ -349,12 +356,43 @@ def test_facility_rects_use_numeric_ids_and_registered_renderers():
             and (item["name"], entry["name"]) in RENDERERS
             for entry in item["rects"]
         )
+    assert sum(count for count, _names in expected.values()) == 110
+    assert {name: (entry["chunk"], entry["offset"], entry["slot"]) for name, entry in (
+        (item["name"], item) for item in doc["part"]
+        if item["name"] in {"bar_00", "ali_00", "ali_01", "ali_02", "ali_03"}
+    )} == {
+        "bar_00": (19, "0x0", 0),
+        "ali_00": (630, "0x0", 0),
+        "ali_01": (630, "0x8240", 1),
+        "ali_02": (630, "0x10480", 2),
+        "ali_03": (630, "0x146c0", 3),
+    }
+    assert PART_HANDLES == {
+        "bar_00": (0x442650, 0),
+        "ali_00": (0x513D50, 0),
+        "ali_01": (0x513D50, 1),
+        "ali_02": (0x513D50, 2),
+        "ali_03": (0x513D50, 3),
+    }
+    assert PART_SOURCE_COPIES["bar_00"] == ((0, "0x30cc0"), (12, "0x2ca40"))
     shop = next(entry for entry in doc["part"] if entry["name"] == "shop_00")
     assert [entry["text"] for entry in shop["rects"]] == [
         "购买武具", "出售", "鉴定", "解除诅咒", "魔法合成",
         "购买防具", "购买武器", "购买饰品", "羊皮纸合成", "分解魔法石",
         "合成魔法材料", "返回", "离开", "分解魔法石", "合成魔法材料",
     ]
+    bar = next(entry for entry in doc["part"] if entry["name"] == "bar_00")
+    assert [(entry["source"], entry["text"]) for entry in bar["rects"][:2]] == [
+        ("仲間に入る", "加入同伴"), ("仲間を外す", "移出同伴"),
+    ]
+    ali01 = next(entry for entry in doc["part"] if entry["name"] == "ali_01")
+    assert ali01["rects"][0]["source"] == "マジックキャンセル"
+    assert ali01["rects"][0]["text"] == "魔法取消"
+    ali03 = next(entry for entry in doc["part"] if entry["name"] == "ali_03")
+    assert ali03["rects"][-1] == {
+        "name": "45", "x": 128, "y": 160, "width": 128, "height": 32,
+        "palette": 1, "source": "各自行動", "text": "各自行动",
+    }
 
 
 def test_menu_banner_renderer_checks_text_size_and_palette(tmp_path):
@@ -392,6 +430,71 @@ def test_menu_banner_renderer_checks_text_size_and_palette(tmp_path):
     image.palettes[1] = PALETTE_COLORS
     image.palettes.extend([PALETTE_COLORS, PALETTE_COLORS])
     render_initial(image, {**label, "palette": 17}, tmp_path / "17.zh.png")
+
+
+def test_migrated_crop_files_are_complete():
+    for folder, count in (("bar", 15), ("ali", 46)):
+        root = DATA / "picture" / folder
+        expected = {f"{index:02d}.png" for index in range(count)}
+        expected |= {f"{index:02d}.zh.png" for index in range(count)}
+        assert {path.name for path in root.iterdir()} == expected
+        for index in range(count):
+            with Image.open(root / f"{index:02d}.png") as original:
+                assert original.size == (128, 32)
+            with Image.open(root / f"{index:02d}.zh.png") as translated:
+                assert translated.size == (128, 32)
+
+
+@pytest.mark.skipif(not BIN.exists(), reason="没有原盘")
+def test_bar_00_every_source_copy_is_identical():
+    from busin.ui import entry_slices, part_source_items
+
+    doc = manifest()
+    item = next(entry for entry in doc["part"] if entry["name"] == "bar_00")
+    sources = part_source_items(item)
+    assert [(entry["chunk"], entry["offset"]) for entry in sources] == [
+        (19, "0x0"), (0, "0x30cc0"), (12, "0x2ca40"),
+    ]
+    with BIN.open("rb") as source:
+        read = lambda at, size: read_pack(source, at, size)
+        row = lambda chunk: chunk_row(source, chunk)
+        blobs = [entry_slices(read, entry, row)[1] for entry in sources]
+        packed = [_part_span(read, entry, DATA / "picture", row)[1] for entry in sources]
+    assert blobs[0] == blobs[1] == blobs[2]
+    assert packed[0] == packed[1] == packed[2]
+
+
+@pytest.mark.skipif(not BIN.exists(), reason="没有原盘")
+def test_migrated_parents_change_only_declared_rect_pixels():
+    doc = manifest()
+    names = {"bar_00", "ali_00", "ali_01", "ali_02", "ali_03"}
+    with BIN.open("rb") as source:
+        read = lambda at, size: read_pack(source, at, size)
+        row = lambda chunk: chunk_row(source, chunk)
+        for item in (entry for entry in doc["part"] if entry["name"] in names):
+            _, original_blob = entry_slices(read, item, row)
+            _, packed_blob = _part_span(read, item, DATA / "picture", row)
+            original = read_tmx_bytes(original_blob)
+            packed = read_tmx_bytes(packed_blob)
+            pixel_at = 0x40 + len(original.palettes) * 32
+            assert len(original_blob) == len(packed_blob)
+            assert original_blob[:pixel_at] == packed_blob[:pixel_at]
+            assert original.palettes == packed.palettes
+            assert original.pixels != packed.pixels
+            allowed = {
+                y * item["width"] + x
+                for rect in item["rects"]
+                for y in range(rect["y"], rect["y"] + rect["height"])
+                for x in range(rect["x"], rect["x"] + rect["width"])
+            }
+            changed = {
+                index
+                for index, (before, after) in enumerate(
+                    zip(original.pixels, packed.pixels)
+                )
+                if before != after
+            }
+            assert changed <= allowed
 
 
 @pytest.mark.skipif(not BIN.exists(), reason="没有原盘")
