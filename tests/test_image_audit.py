@@ -10,11 +10,11 @@ def test_current_image_has_no_undeclared_changes(tmp_path):
     from busin.image_audit import audit_image
     result = audit_image(output_path=tmp_path / "audit.json")
     assert result["ok"]
-    assert result["sectors"]["prefix_changed"] == 543
+    assert result["sectors"]["prefix_changed"] == 545
     assert result["sectors"]["moved_tail_changed"] == 116
     assert result["sectors"]["appended"] == 6014
     assert result["classified"]["moved_tail"]["elf.picture_rects"] == 1
-    assert result["classified"]["prefix"]["picture.part"] == 177
+    assert result["classified"]["prefix"]["picture.part"] == 179
     assert result["unexpected"] == {
         "prefix": [], "moved_tail": [], "append_missing": [], "append_extra": []
     }

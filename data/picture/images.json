@@ -1786,6 +1786,37 @@
           "text": "各自行动"
         }
       ]
+    },
+    {
+      "name": "yado3",
+      "dir": "yado",
+      "chunk": 23,
+      "offset": "0x0",
+      "slot": 0,
+      "width": 256,
+      "height": 256,
+      "rects": [
+        {
+          "name": "00",
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 32,
+          "palette": 7,
+          "source": "泊まる",
+          "text": "住宿"
+        },
+        {
+          "name": "01",
+          "x": 128,
+          "y": 0,
+          "width": 128,
+          "height": 32,
+          "palette": 7,
+          "source": "外に出る",
+          "text": "离开"
+        }
+      ]
     }
   ]
 }

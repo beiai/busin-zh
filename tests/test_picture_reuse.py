@@ -345,6 +345,7 @@ def test_facility_rects_use_numeric_ids_and_registered_renderers():
         "ali_01": (12, [f"{index:02d}" for index in range(16, 28)]),
         "ali_02": (6, [f"{index:02d}" for index in range(28, 34)]),
         "ali_03": (12, [f"{index:02d}" for index in range(34, 46)]),
+        "yado3": (2, [f"{index:02d}" for index in range(2)]),
     }
     for name, (count, names) in expected.items():
         item = next(entry for entry in doc["part"] if entry["name"] == name)
@@ -356,16 +357,17 @@ def test_facility_rects_use_numeric_ids_and_registered_renderers():
             and (item["name"], entry["name"]) in RENDERERS
             for entry in item["rects"]
         )
-    assert sum(count for count, _names in expected.values()) == 110
+    assert sum(count for count, _names in expected.values()) == 112
     assert {name: (entry["chunk"], entry["offset"], entry["slot"]) for name, entry in (
         (item["name"], item) for item in doc["part"]
-        if item["name"] in {"bar_00", "ali_00", "ali_01", "ali_02", "ali_03"}
+        if item["name"] in {"bar_00", "ali_00", "ali_01", "ali_02", "ali_03", "yado3"}
     )} == {
         "bar_00": (19, "0x0", 0),
         "ali_00": (630, "0x0", 0),
         "ali_01": (630, "0x8240", 1),
         "ali_02": (630, "0x10480", 2),
         "ali_03": (630, "0x146c0", 3),
+        "yado3": (23, "0x0", 0),
     }
     assert PART_HANDLES == {
         "bar_00": (0x442650, 0),
@@ -373,6 +375,7 @@ def test_facility_rects_use_numeric_ids_and_registered_renderers():
         "ali_01": (0x513D50, 1),
         "ali_02": (0x513D50, 2),
         "ali_03": (0x513D50, 3),
+        "yado3": (0x442650, 0),
     }
     assert PART_SOURCE_COPIES["bar_00"] == ((0, "0x30cc0"), (12, "0x2ca40"))
     shop = next(entry for entry in doc["part"] if entry["name"] == "shop_00")
@@ -393,6 +396,13 @@ def test_facility_rects_use_numeric_ids_and_registered_renderers():
         "name": "45", "x": 128, "y": 160, "width": 128, "height": 32,
         "palette": 1, "source": "各自行動", "text": "各自行动",
     }
+    yado = next(entry for entry in doc["part"] if entry["name"] == "yado3")
+    assert [(entry["source"], entry["text"]) for entry in yado["rects"]] == [
+        ("泊まる", "住宿"), ("外に出る", "离开"),
+    ]
+    assert [(entry["x"], entry["y"], entry["palette"]) for entry in yado["rects"]] == [
+        (0, 0, 7), (128, 0, 7),
+    ]
 
 
 def test_menu_banner_renderer_checks_text_size_and_palette(tmp_path):
@@ -433,7 +443,7 @@ def test_menu_banner_renderer_checks_text_size_and_palette(tmp_path):
 
 
 def test_migrated_crop_files_are_complete():
-    for folder, count in (("bar", 15), ("ali", 46)):
+    for folder, count in (("bar", 15), ("ali", 46), ("yado", 2)):
         root = DATA / "picture" / folder
         expected = {f"{index:02d}.png" for index in range(count)}
         expected |= {f"{index:02d}.zh.png" for index in range(count)}
@@ -467,7 +477,7 @@ def test_bar_00_every_source_copy_is_identical():
 @pytest.mark.skipif(not BIN.exists(), reason="没有原盘")
 def test_migrated_parents_change_only_declared_rect_pixels():
     doc = manifest()
-    names = {"bar_00", "ali_00", "ali_01", "ali_02", "ali_03"}
+    names = {"bar_00", "ali_00", "ali_01", "ali_02", "ali_03", "yado3"}
     with BIN.open("rb") as source:
         read = lambda at, size: read_pack(source, at, size)
         row = lambda chunk: chunk_row(source, chunk)

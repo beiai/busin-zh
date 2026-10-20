@@ -35,6 +35,7 @@ PART_HANDLES = {
     "ali_01": (0x513D50, 1),
     "ali_02": (0x513D50, 2),
     "ali_03": (0x513D50, 3),
+    "yado3": (0x442650, 0),
 }
 RECT_KEYS = {"name", "x", "y", "width", "height", "palette"}
 RECT_TEXT_KEYS = RECT_KEYS | {"source", "text"}
@@ -820,12 +821,12 @@ def self_test() -> None:
     listed = load_images(DATA / "picture" / "images.json")
     assert {item["dir"] for item in listed["whole"]} == {"title"}
     assert {item["dir"] for item in listed["part"]} == {
-        "town", "menu", "status", "guild", "shop", "temple", "bar", "ali",
+        "town", "menu", "status", "guild", "shop", "temple", "bar", "ali", "yado",
     }
     assert [item["name"] for item in listed["part"]] == [
         "Tw_map02", "Tw_map01", "cock_00", "cock_01", "status00",
         "guild_00", "guild_a0", "guild_a1", "shop_00", "temple00",
-        "bar_00", "ali_00", "ali_01", "ali_02", "ali_03",
+        "bar_00", "ali_00", "ali_01", "ali_02", "ali_03", "yado3",
     ]
     assert {rect["palette"] for item in listed["part"] for rect in item["rects"]} == {
         1, 2, 3, 6, 7, 10, 12, 17,
