@@ -117,6 +117,8 @@ def _nearest_palette_index(rgb) -> int:
 def _scale_rgba_to_indices(
     values: list[int], source_width: int, height: int, output_width: int
 ) -> list[int]:
+    if len(values) != source_width * height:
+        raise ValueError("scaled text data has the wrong source dimensions")
     source = Image.new("RGBA", (source_width, height))
     source.putdata([PALETTE_COLORS[value] for value in values])
     scaled = source.resize((output_width, height), Image.Resampling.LANCZOS)
@@ -158,7 +160,6 @@ def _render_values(spec: MenuLabelSpec, font) -> list[int]:
         spec.height,
         spec.source,
         spec.tracking,
-        output_width=spec.width,
     )
     return _drop_low_indices(
         _scale_rgba_to_indices(values, source_width, spec.height, spec.width)
