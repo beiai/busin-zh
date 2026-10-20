@@ -140,6 +140,15 @@ def test_terms():
     assert terms["回避力"]["zh"] == "闪避"
     assert terms["信頼"]["zh"] == "信任" and terms["信頼度"]["zh"] == "信任度"
     assert terms["名品"]["zh"] == "精品"
+    assert terms["仲間"]["zh"] == "同伴" and terms["転移"]["zh"] == "传送"
+    assert terms["転移の薬"]["zh"] == "传送药"
+    assert terms["牽制射撃"]["zh"] == "牵制射击" and terms["フロントガード"]["zh"] == "前卫防御"
+    assert terms["Wスラッシュ"]["zh"] == "双斩" and terms["ラッシュ"]["zh"] == "突击"
+    assert terms["クイーンガード長"]["zh"] == "女王近卫长"
+    assert terms["通行証"]["zh"] == "通行证" and terms["魔法石"]["zh"] == "魔法石"
+    assert terms["合成"]["zh"] == "合成" and terms["分解"]["zh"] == "分解"
+    assert terms["リーダー"]["zh"] == "领袖" and terms["宿業"]["zh"] == "业障"
+    assert terms["冒険者"]["zh"] == "冒险者" and terms["魔神"]["zh"] == "魔神"
     assert terms["エルフ"]["zh"] == "精灵" and terms["精霊"]["zh"] == "灵"
     assert terms["妖精"]["zh"] == "妖精"
     assert terms["ピクシー"]["zh"] == "小妖精" and terms["フェアリー"]["zh"] == "妖精"
@@ -159,7 +168,7 @@ def test_terms():
     assert terms["回避率"]["zh"] == "闪避率" and terms["クリティカル率"]["zh"] == "暴击率"
     assert terms["戦意"]["zh"] == "斗志" and terms["耐性"]["zh"] == "抗性"
     assert terms["攻撃回数"]["zh"] == "攻击次数" and terms["エナジードレイン"]["zh"] == "能量吸取"
-    assert terms["ブレス"]["zh"] == "吐息" and terms["転移"]["zh"] == "转移"
+    assert terms["ブレス"]["zh"] == "吐息" and terms["転移"]["zh"] == "传送"
 
 
 def test_trust_terms_are_used_in_interface_translations():
