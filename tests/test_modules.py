@@ -146,6 +146,20 @@ def test_terms():
     assert terms["合成柔材"]["zh"] == "合成材料" and terms["合成素材"]["zh"] == "合成材料"
     assert terms["死者の頭蓋"]["zh"] == "死者头骨" and terms["竜の心臓"]["zh"] == "龙之心"
     assert terms["スライムゼリー"]["zh"] == "史莱姆凝胶"
+    assert terms["瀬死"]["zh"] == "濒死" and terms["即死"]["zh"] == "即死"
+    assert terms["胸あて"]["zh"] == "胸甲" and terms["小手"]["zh"] == "护手"
+    assert terms["鎖かたびら"]["zh"] == "锁子甲" and terms["皮鎧"]["zh"] == "皮甲"
+    assert terms["兜"]["zh"] == "头盔" and terms["ブーツ"]["zh"] == "长靴"
+    assert terms["ローブ"]["zh"] == "长袍" and terms["メイス"]["zh"] == "钉锤"
+    assert terms["フレイル"]["zh"] == "连枷" and terms["石弓"]["zh"] == "弩"
+    assert terms["短刀"]["zh"] == "短刀" and terms["小剣"]["zh"] == "细剑"
+    assert terms["長剣"]["zh"] == "长剑" and terms["両手剣"]["zh"] == "双手剑"
+    assert terms["ダガー"]["zh"] == "匕首" and terms["ナイフ"]["zh"] == "小刀" and terms["ショートソード"]["zh"] == "短剑"
+    assert terms["手斧"]["zh"] == "手斧" and terms["戦斧"]["zh"] == "战斧"
+    assert terms["回避率"]["zh"] == "闪避率" and terms["クリティカル率"]["zh"] == "暴击率"
+    assert terms["戦意"]["zh"] == "斗志" and terms["耐性"]["zh"] == "抗性"
+    assert terms["攻撃回数"]["zh"] == "攻击次数" and terms["エナジードレイン"]["zh"] == "能量吸取"
+    assert terms["ブレス"]["zh"] == "吐息" and terms["転移"]["zh"] == "转移"
 
 
 def test_trust_terms_are_used_in_interface_translations():
@@ -234,6 +248,43 @@ def test_material_terms_are_used_in_translations():
 
     for path in DATA.rglob("*.json"):
         walk(json.loads(path.read_text(encoding="utf-8")))
+
+
+def test_equipment_terms_are_used_in_translations():
+    mapping = {
+        "胸あて": "胸甲", "小手": "护手", "鎖かたびら": "锁子甲",
+        "皮鎧": "皮甲", "兜": "头盔", "ブーツ": "长靴", "ローブ": "长袍",
+        "メイス": "钉锤", "フレイル": "连枷", "石弓": "弩",
+        "短刀": "短刀", "小剣": "细剑", "長剣": "长剑",
+        "両手剣": "双手剑", "ダガー": "匕首", "ナイフ": "小刀",
+        "なげナイフ": "飞刀", "手斧": "手斧", "戦斧": "战斧",
+    }
+
+    def translated(item):
+        text = item.get("text")
+        if isinstance(text, list):
+            return "".join(part for part in text if isinstance(part, str))
+        return text if isinstance(text, str) else ""
+
+    def walk(item, path):
+        if isinstance(item, dict):
+            source = item.get("source")
+            text = translated(item)
+            if text and isinstance(source, str):
+                compact = "".join(text.split())
+                for term, wanted in mapping.items():
+                    if term == "ナイフ" and "なげナイフ" in source:
+                        continue
+                    if term in source:
+                        assert wanted in compact, (path, item.get("id"), source, text, wanted)
+            for value in item.values():
+                walk(value, path)
+        elif isinstance(item, list):
+            for value in item:
+                walk(value, path)
+
+    for path in DATA.rglob("*.json"):
+        walk(json.loads(path.read_text(encoding="utf-8")), path)
 
 
 def test_fairy_terms_are_used_in_translations():

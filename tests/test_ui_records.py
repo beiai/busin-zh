@@ -32,7 +32,7 @@ def test_item_name_uses_game_display_cells(translated_elf):
     _source, translated, reverse = translated_elf
     slot = next(item for item in name_slots(_source) if item["id"] == "4A5100")
     assert slot["width"] == 5 and slot["slack"] == 2 and slot["room"] >= 6
-    assert _text(translated, reverse, slot["va"], 7).rstrip() == "元素之灵短剑"
+    assert _text(translated, reverse, slot["va"], 7).rstrip() == "元素之灵细剑"
 
 
 @pytest.mark.parametrize("getter,index,japanese,expected", [
@@ -56,7 +56,7 @@ def test_shield_description_stays_in_its_own_record(translated_elf):
     source, translated, reverse = translated_elf
     previous = _text(translated, reverse, 0x4B5514, 51).replace(" ", "")
     current = _text(translated, reverse, 0x4B557A, 51).replace(" ", "")
-    assert previous == "蕴含魔神诅咒的盾。其诅咒以很高的防御与闪避为代价夺走装备者大量体力。"
+    assert previous == "蕴含魔神诅咒的盾。以高防御和高闪避为代价，夺走装备者大量体力。"
     assert current == "大盾。虽重，闪避高。"
     # The unused record and table marker are structural bytes, not translation space.
     assert translated[0x4B3CC0 - FILE_BASE:0x4B3D2C - FILE_BASE] == source[
