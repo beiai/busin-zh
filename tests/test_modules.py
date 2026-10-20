@@ -139,7 +139,13 @@ def test_terms():
     assert terms["防御力"]["zh"] == "防御"
     assert terms["回避力"]["zh"] == "闪避"
     assert terms["信頼"]["zh"] == "信任" and terms["信頼度"]["zh"] == "信任度"
+    assert terms["名品"]["zh"] == "精品"
     assert terms["エルフ"]["zh"] == "精灵" and terms["精霊"]["zh"] == "灵"
+    assert terms["妖精"]["zh"] == "妖精"
+    assert terms["ピクシー"]["zh"] == "小妖精" and terms["フェアリー"]["zh"] == "妖精"
+    assert terms["合成柔材"]["zh"] == "合成材料" and terms["合成素材"]["zh"] == "合成材料"
+    assert terms["死者の頭蓋"]["zh"] == "死者头骨" and terms["竜の心臓"]["zh"] == "龙之心"
+    assert terms["スライムゼリー"]["zh"] == "史莱姆凝胶"
 
 
 def test_trust_terms_are_used_in_interface_translations():
@@ -198,6 +204,62 @@ def test_elemental_spirit_term_is_used_in_interface_translations():
     for path in (DATA / "interface").glob("*.json"):
         walk(json.loads(path.read_text(encoding="utf-8")))
     assert found
+
+
+def test_material_terms_are_used_in_translations():
+    def translated(item):
+        text = item.get("text")
+        if isinstance(text, list):
+            return "\n".join(part for part in text if isinstance(part, str))
+        return text if isinstance(text, str) else ""
+
+    def walk(item):
+        if isinstance(item, dict):
+            source = item.get("source")
+            text = translated(item)
+            if text and isinstance(source, str):
+                if "合成柔材" in source or "合成素材" in source or "柔材" in source or "素材" in source:
+                    assert "材料" in text and "柔材" not in text and "素材" not in text, (item.get("id"), text)
+                if "死者の頭蓋" in source:
+                    assert "死者头骨" in text and "头盖骨" not in text, (item.get("id"), text)
+                if "竜の心臓" in source:
+                    assert "龙之心" in text and "龙的心脏" not in text, (item.get("id"), text)
+                if "スライムゼリー" in source:
+                    assert "史莱姆凝胶" in text and "软泥凝胶" not in text, (item.get("id"), text)
+            for value in item.values():
+                walk(value)
+        elif isinstance(item, list):
+            for value in item:
+                walk(value)
+
+    for path in DATA.rglob("*.json"):
+        walk(json.loads(path.read_text(encoding="utf-8")))
+
+
+def test_fairy_terms_are_used_in_translations():
+    def translated(item):
+        text = item.get("text")
+        if isinstance(text, list):
+            return "\n".join(part for part in text if isinstance(part, str))
+        return text if isinstance(text, str) else ""
+
+    def walk(item):
+        if isinstance(item, dict):
+            source = item.get("source")
+            text = translated(item)
+            if text:
+                if isinstance(source, str) and "ピクシー" in source:
+                    assert "小妖精" in text and "精灵" not in text, (item.get("id"), text)
+                if isinstance(source, str) and "フェアリー" in source:
+                    assert "妖精" in text and "精灵" not in text, (item.get("id"), text)
+            for value in item.values():
+                walk(value)
+        elif isinstance(item, list):
+            for value in item:
+                walk(value)
+
+    for path in DATA.rglob("*.json"):
+        walk(json.loads(path.read_text(encoding="utf-8")))
 
 
 def test_parameter_terms_are_used_in_translations():
