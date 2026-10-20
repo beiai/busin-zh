@@ -8,12 +8,18 @@ from busin.disc import FILE_BASE
 QUEST_TITLE_TABLE = 0x569EE8
 QUEST_TITLE_COUNT = 24
 QUEST_TITLE_START = 0x569C30
+QUEST_DETAIL_TABLE = 0x56AE70
+QUEST_DETAIL_COUNT = 24
+QUEST_DETAIL_START = 0x56A2B0
 PLACE_POINTER_RANGES = (
     (0x569BD0, QUEST_TITLE_START),
     (QUEST_TITLE_TABLE, QUEST_TITLE_TABLE + QUEST_TITLE_COUNT * 4),
+    (QUEST_DETAIL_TABLE, QUEST_DETAIL_TABLE + QUEST_DETAIL_COUNT * 8),
 )
 
 BLURB_WIDTH = 17
+# Item-name draw callers copy 7-9 cells; five source cells are not the display limit.
+NAME_DISPLAY_CELLS = 7
 BLURB_ROWS = 3
 BLURB_STRIDE = BLURB_WIDTH * BLURB_ROWS * 2
 
@@ -180,18 +186,25 @@ def name_slots(elf):
     for va in range(0x4A4000, NAME_END, 0x40):
         for index, (start, stripped, raw, term) in enumerate(kept_spans(elf, va)):
             ident = f"{va:06X}" if index == 0 else f"{va:06X}.{index + 1}"
+            source_room = (term - start) // 2
+            if source_room != len(raw):
+                raise AssertionError(f"{ident} room")
+            available = (va + 64 - start) // 2
+            width = len(stripped)
+            slack = min(NAME_DISPLAY_CELLS, available) - width
+            if slack < 0:
+                slack = 0
             slots.append(
                 slot(
                     ident,
                     start,
                     "span",
                     stripped,
-                    len(stripped),
-                    room=(term - start) // 2,
+                    width,
+                    slack=slack,
+                    room=min(max(len(raw), width + slack), available),
                 )
             )
-            if slots[-1]["room"] != len(raw):
-                raise AssertionError(f"{ident} room")
     return slots
 
 
@@ -293,6 +306,33 @@ def quest_title_slots(elf):
     return slots
 
 
+def quest_detail_targets(elf):
+    # The detail painter indexes two pointers per quest and treats FFFE as a line break.
+    expect_words(
+        elf,
+        (
+            (0x3DD6B4, 0x3C020057),
+            (0x3DD6C0, 0x2443AE70),
+            (0x3DD6C4, 0x00851021),
+            (0x3DD6C8, 0x00431021),
+            (0x3DD6E8, 0x2404FFFE),
+        ),
+        "quest detail reader",
+    )
+    targets = []
+    for index in range(QUEST_DETAIL_COUNT):
+        pair = [
+            word(elf, QUEST_DETAIL_TABLE + (index * 2 + side) * 4)
+            for side in range(2)
+        ]
+        if pair[0] != pair[1] or pair[0] % 2 or not QUEST_DETAIL_START <= pair[0] < QUEST_DETAIL_TABLE:
+            raise AssertionError(f"quest detail pointer {pair[0]:#x}, {pair[1]:#x}")
+        if pair[0] in targets:
+            raise AssertionError(f"duplicate quest detail pointer {pair[0]:#x}")
+        targets.append(pair[0])
+    return targets
+
+
 def place_slots(elf):
     slots = []
     for start, end in (
@@ -304,6 +344,11 @@ def place_slots(elf):
         slots.extend(packed_slots(elf, start, end))
     slots.extend(quest_title_slots(elf))
     slots.extend(packed_slots(elf, PLACE_POINTER_RANGES[1][1], 0x56AF00))
+    by_va = {item["va"]: item for item in slots}
+    for va in quest_detail_targets(elf):
+        if va not in by_va:
+            raise AssertionError(f"quest detail text at {va:#x}")
+        by_va[va]["slash"] = True
     slots.extend(alliance_slots(elf))
     return slots
 

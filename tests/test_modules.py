@@ -138,6 +138,66 @@ def test_terms():
     assert terms["攻撃力"]["zh"] == "攻击"
     assert terms["防御力"]["zh"] == "防御"
     assert terms["回避力"]["zh"] == "闪避"
+    assert terms["信頼"]["zh"] == "信任" and terms["信頼度"]["zh"] == "信任度"
+    assert terms["エルフ"]["zh"] == "精灵" and terms["精霊"]["zh"] == "灵"
+
+
+def test_trust_terms_are_used_in_interface_translations():
+    terms = json.loads((DATA / "terms.json").read_text(encoding="utf-8"))
+    assert terms["信頼"]["zh"] == "信任" and terms["信頼度"]["zh"] == "信任度"
+    found = False
+
+    def walk(item):
+        nonlocal found
+        if isinstance(item, dict):
+            source = item.get("source")
+            text = item.get("text")
+            if isinstance(source, str) and isinstance(text, (str, list)):
+                translated = "\n".join(
+                    part for part in (text if isinstance(text, list) else [text])
+                    if isinstance(part, str)
+                )
+                assert "信赖" not in translated, (item.get("id"), translated)
+                normalized = source.replace("\n", "").replace("/", "")
+                if "信頼度" in normalized:
+                    found = True
+                    assert "信任度" in translated, (item.get("id"), translated)
+            for value in item.values():
+                walk(value)
+        elif isinstance(item, list):
+            for value in item:
+                walk(value)
+
+    for path in DATA.rglob("*.json"):
+        walk(json.loads(path.read_text(encoding="utf-8")))
+    assert found
+
+
+def test_elemental_spirit_term_is_used_in_interface_translations():
+    found = False
+
+    def walk(item):
+        nonlocal found
+        if isinstance(item, dict):
+            source = item.get("source")
+            text = item.get("text")
+            if isinstance(source, str) and "精霊" in source and isinstance(text, (str, list)):
+                found = True
+                translated = "\n".join(
+                    part for part in (text if isinstance(text, list) else [text])
+                    if isinstance(part, str)
+                )
+                assert ("灵" in translated or "魂" in translated), (item.get("id"), translated)
+                assert "精灵" not in translated, (item.get("id"), translated)
+            for value in item.values():
+                walk(value)
+        elif isinstance(item, list):
+            for value in item:
+                walk(value)
+
+    for path in (DATA / "interface").glob("*.json"):
+        walk(json.loads(path.read_text(encoding="utf-8")))
+    assert found
 
 
 def test_parameter_terms_are_used_in_translations():

@@ -12,7 +12,7 @@ from busin.ui_layout import (
     _layout_ok, _slacks, _tokens, _visible, _wrap,
 )
 from busin.ui_records import (
-    BLURB_ROWS as _BLURB_ROWS, BLURB_WIDTH as _BLURB_WIDTH, NAME_END,
+    BLURB_ROWS as _BLURB_ROWS, BLURB_WIDTH as _BLURB_WIDTH, NAME_DISPLAY_CELLS as _NAME_DISPLAY_CELLS, NAME_END,
     PLACE_POINTER_RANGES as _PLACE_POINTER_RANGES, blurb_record as _blurb_record,
     blurb_slots as _blurb_slots, grid as _grid, half as _half,
     monster_slots as _monster_slots, name_slots as _name_slots,
@@ -422,7 +422,10 @@ def manuscript_lines(name, rows):
             budget = _FIXED[name]
         else:
             budget = len(codes)
-        extra = None if slack is None else slack.get(_address(label))
+        if name == "names":
+            extra = max(0, _NAME_DISPLAY_CELLS - budget)
+        else:
+            extra = None if slack is None else slack.get(_address(label))
         source = _row_text(codes) if name in _LINE else unwrap(codes)
         lines.append(_entry(label, source, budget, extra))
     return lines
@@ -434,7 +437,7 @@ _SLASH = {"menu", "shop", "debug", "inn"}
 def _spec(slot):
     if slot["mode"] == "flow":
         return f"{slot['width']}x{slot['rows']}"
-    if slot["mode"] == "ptr" and slot["slack"] is not None:
+    if slot["slack"] is not None:
         return f"{slot['width']} +{slot['slack']}"
     return str(slot["width"])
 

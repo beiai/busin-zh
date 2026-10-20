@@ -215,7 +215,7 @@ def _fit(text, slot, table):
     if slot["mode"] == "flow":
         return _wrap(_encode(text, table, False), slot["width"], slot["rows"])
     if slot["mode"] == "span":
-        body = _layout_line(text, slot["raw"], slot["width"], 0, table, slot["slash"])
+        body = _layout_line(text, slot["raw"], slot["width"], slot["slack"], table, slot["slash"])
         if len(body) > slot["room"]:
             raise ValueError(f"{len(body)} cells, room {slot['room']}")
         return body + [0] * (slot["room"] - len(body))

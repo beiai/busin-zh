@@ -26,6 +26,15 @@ def _text(elf, reverse, va, cells):
         f"<{cells}H", elf, va - FILE_BASE)).rstrip()
 
 
+def test_item_name_uses_game_display_cells(translated_elf):
+    from busin.ui_records import name_slots
+
+    _source, translated, reverse = translated_elf
+    slot = next(item for item in name_slots(_source) if item["id"] == "4A5100")
+    assert slot["width"] == 5 and slot["slack"] == 2 and slot["room"] >= 6
+    assert _text(translated, reverse, slot["va"], 7).rstrip() == "元素之灵短剑"
+
+
 @pytest.mark.parametrize("getter,index,japanese,expected", [
     (0x12EEB0, 18, "ロングソード", "长剑"),
     (0x12EF10, 17, "鎖かたびら", "锁子甲"),
@@ -65,7 +74,7 @@ def test_consecutive_full_descriptions_do_not_merge(translated_elf):
 
 @pytest.mark.parametrize("index,expected", [
     (0, "想克服\n恐惧"),
-    (1, "请告诉我\n何谓信赖"),
+    (1, "请告诉我\n何谓信任"),
     (2, "让恋情\n成真的咒语"),
     (3, "我的恋人\n请想想办法"),
     (4, "我的恋人\n请务必管管"),
@@ -105,6 +114,27 @@ def test_quest_titles_at_the_game_read_address(translated_elf, index, expected):
     else:
         pytest.fail("委托标题没有结束符")
     assert "".join(chars).rstrip() == expected
+
+
+def test_quest_detail_line_breaks_at_the_game_read_address(translated_elf):
+    source, translated, reverse = translated_elf
+    # Decode the same signed lui/addiu pair and paired pointers used by the detail painter.
+    high = struct.unpack_from("<H", source, 0x3DD6B4 - FILE_BASE)[0]
+    low = struct.unpack_from("<h", source, 0x3DD6C0 - FILE_BASE)[0]
+    table = (high << 16) + low
+    pointers = struct.unpack_from("<II", translated, table - FILE_BASE)
+    assert pointers == (0x56A2B0, 0x56A2B0)
+    chars = []
+    for at in range(pointers[0], 0x56AE70, 2):
+        code = struct.unpack_from("<H", translated, at - FILE_BASE)[0]
+        if code == 0xFFFF:
+            break
+        chars.append("\n" if code == 0xFFFE else reverse[code])
+    else:
+        pytest.fail("委托说明没有结束符")
+    assert "".join(chars).rstrip() == (
+        "自从在死亡面前胆怯以来，\n我当忍者的尊严也没了。\n能不能再让我\n站上一次战场？"
+    )
 
 
 def test_quest_and_requester_pointers_are_preserved(translated_elf):
