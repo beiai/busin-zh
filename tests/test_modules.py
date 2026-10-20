@@ -394,6 +394,11 @@ def test_ali_disc():
     disc_self_test()
 
 
+def test_menu_banner_text():
+    from busin.picture_text.menu_banner import self_test
+    self_test()
+
+
 def test_cock_text():
     from busin.picture_text.cock import self_test
     self_test()

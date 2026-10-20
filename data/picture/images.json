@@ -576,6 +576,551 @@
           "palette": 12
         }
       ]
+    },
+    {
+      "name": "guild_00",
+      "dir": "guild",
+      "chunk": 16,
+      "offset": "0x0",
+      "slot": 0,
+      "width": 256,
+      "height": 256,
+      "rects": [
+        {
+          "name": "00",
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 32,
+          "palette": 7,
+          "source": "冒険者台帳",
+          "text": "冒险者名册"
+        },
+        {
+          "name": "01",
+          "x": 128,
+          "y": 0,
+          "width": 128,
+          "height": 32,
+          "palette": 7,
+          "source": "AA習得",
+          "text": "AA习得"
+        },
+        {
+          "name": "02",
+          "x": 0,
+          "y": 32,
+          "width": 128,
+          "height": 32,
+          "palette": 7,
+          "source": "外に出る",
+          "text": "离开"
+        }
+      ]
+    },
+    {
+      "name": "guild_a0",
+      "dir": "guild",
+      "chunk": 16,
+      "offset": "0x18300",
+      "slot": 3,
+      "width": 256,
+      "height": 256,
+      "rects": [
+        {
+          "name": "03",
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "防御系",
+          "text": "防御系连携"
+        },
+        {
+          "name": "04",
+          "x": 128,
+          "y": 0,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "攻撃系",
+          "text": "攻击系连携"
+        },
+        {
+          "name": "05",
+          "x": 0,
+          "y": 32,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "魔法系",
+          "text": "魔法系连携"
+        },
+        {
+          "name": "06",
+          "x": 128,
+          "y": 32,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "援護系",
+          "text": "援护系连携"
+        },
+        {
+          "name": "07",
+          "x": 0,
+          "y": 64,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "Wラッシュ",
+          "text": "双重突袭"
+        },
+        {
+          "name": "08",
+          "x": 128,
+          "y": 64,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "ラッシュ",
+          "text": "突袭"
+        },
+        {
+          "name": "09",
+          "x": 0,
+          "y": 96,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "立体殺法",
+          "text": "立体杀法"
+        },
+        {
+          "name": "10",
+          "x": 128,
+          "y": 96,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "フェイクアタック",
+          "text": "佯攻"
+        },
+        {
+          "name": "11",
+          "x": 0,
+          "y": 128,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "ホールドアタック",
+          "text": "束缚攻击"
+        },
+        {
+          "name": "12",
+          "x": 128,
+          "y": 128,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "ジグザグフィンガーアタック",
+          "text": "曲折指击"
+        },
+        {
+          "name": "13",
+          "x": 0,
+          "y": 160,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "ワープアタック",
+          "text": "瞬移攻击"
+        },
+        {
+          "name": "14",
+          "x": 128,
+          "y": 160,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "バックアタック",
+          "text": "背后攻击"
+        },
+        {
+          "name": "15",
+          "x": 0,
+          "y": 192,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "セイクリッドクロス",
+          "text": "神圣十字"
+        },
+        {
+          "name": "16",
+          "x": 128,
+          "y": 192,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "スレイクラッシュ",
+          "text": "斩杀冲击"
+        },
+        {
+          "name": "17",
+          "x": 0,
+          "y": 224,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "ゲイルスラッシュ",
+          "text": "疾风斩"
+        },
+        {
+          "name": "18",
+          "x": 128,
+          "y": 224,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "スタンスマッシュ",
+          "text": "眩晕重击"
+        }
+      ]
+    },
+    {
+      "name": "guild_a1",
+      "dir": "guild",
+      "chunk": 16,
+      "offset": "0x20540",
+      "slot": 4,
+      "width": 256,
+      "height": 256,
+      "rects": [
+        {
+          "name": "19",
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 32,
+          "palette": 3,
+          "source": "散開",
+          "text": "散开"
+        },
+        {
+          "name": "20",
+          "x": 128,
+          "y": 0,
+          "width": 128,
+          "height": 32,
+          "palette": 3,
+          "source": "マジックシェル",
+          "text": "魔法护壳"
+        },
+        {
+          "name": "21",
+          "x": 0,
+          "y": 32,
+          "width": 128,
+          "height": 32,
+          "palette": 3,
+          "source": "呪文集中陣",
+          "text": "魔法集中阵"
+        },
+        {
+          "name": "22",
+          "x": 128,
+          "y": 32,
+          "width": 128,
+          "height": 32,
+          "palette": 3,
+          "source": "フレイクサイレンス",
+          "text": "碎雪静默"
+        },
+        {
+          "name": "23",
+          "x": 0,
+          "y": 64,
+          "width": 128,
+          "height": 32,
+          "palette": 3,
+          "source": "マジックソード",
+          "text": "魔法剑"
+        },
+        {
+          "name": "24",
+          "x": 128,
+          "y": 64,
+          "width": 128,
+          "height": 32,
+          "palette": 3,
+          "source": "マジックキャンセル",
+          "text": "魔法取消"
+        },
+        {
+          "name": "25",
+          "x": 0,
+          "y": 96,
+          "width": 128,
+          "height": 32,
+          "palette": 3,
+          "source": "援護射撃",
+          "text": "援护射击"
+        }
+      ]
+    },
+    {
+      "name": "shop_00",
+      "dir": "shop",
+      "chunk": 12,
+      "offset": "0x0",
+      "slot": 0,
+      "width": 256,
+      "height": 256,
+      "rects": [
+        {
+          "name": "00",
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "武具を買う",
+          "text": "购买武具"
+        },
+        {
+          "name": "01",
+          "x": 128,
+          "y": 0,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "売る",
+          "text": "出售"
+        },
+        {
+          "name": "02",
+          "x": 0,
+          "y": 32,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "鑑定",
+          "text": "鉴定"
+        },
+        {
+          "name": "03",
+          "x": 128,
+          "y": 32,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "呪いを解く",
+          "text": "解除诅咒"
+        },
+        {
+          "name": "04",
+          "x": 0,
+          "y": 64,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "魔法合成",
+          "text": "魔法合成"
+        },
+        {
+          "name": "05",
+          "x": 128,
+          "y": 64,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "防具を買う",
+          "text": "购买防具"
+        },
+        {
+          "name": "06",
+          "x": 0,
+          "y": 96,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "武器を買う",
+          "text": "购买武器"
+        },
+        {
+          "name": "07",
+          "x": 128,
+          "y": 96,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "装飾品を買う",
+          "text": "购买饰品"
+        },
+        {
+          "name": "08",
+          "x": 0,
+          "y": 128,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "羊皮紙合成",
+          "text": "羊皮纸合成"
+        },
+        {
+          "name": "09",
+          "x": 128,
+          "y": 128,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "魔法石分解",
+          "text": "分解魔法石"
+        },
+        {
+          "name": "10",
+          "x": 0,
+          "y": 160,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "魔法素材合成",
+          "text": "合成魔法材料"
+        },
+        {
+          "name": "11",
+          "x": 128,
+          "y": 160,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "戻る",
+          "text": "返回"
+        },
+        {
+          "name": "12",
+          "x": 0,
+          "y": 192,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "外に出る",
+          "text": "离开"
+        },
+        {
+          "name": "13",
+          "x": 128,
+          "y": 192,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "魔法石分解",
+          "text": "分解魔法石"
+        },
+        {
+          "name": "14",
+          "x": 128,
+          "y": 224,
+          "width": 128,
+          "height": 32,
+          "palette": 1,
+          "source": "魔法素材合成",
+          "text": "合成魔法材料"
+        }
+      ]
+    },
+    {
+      "name": "temple00",
+      "dir": "temple",
+      "chunk": 21,
+      "offset": "0x0",
+      "slot": 0,
+      "width": 256,
+      "height": 256,
+      "rects": [
+        {
+          "name": "00",
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 32,
+          "palette": 6,
+          "source": "毒の回復",
+          "text": "解毒"
+        },
+        {
+          "name": "01",
+          "x": 128,
+          "y": 0,
+          "width": 128,
+          "height": 32,
+          "palette": 6,
+          "source": "麻痺の回復",
+          "text": "解除麻痹"
+        },
+        {
+          "name": "02",
+          "x": 0,
+          "y": 32,
+          "width": 128,
+          "height": 32,
+          "palette": 6,
+          "source": "石化の回復",
+          "text": "解除石化"
+        },
+        {
+          "name": "03",
+          "x": 128,
+          "y": 32,
+          "width": 128,
+          "height": 32,
+          "palette": 6,
+          "source": "恐怖の回復",
+          "text": "解除恐惧"
+        },
+        {
+          "name": "04",
+          "x": 0,
+          "y": 64,
+          "width": 128,
+          "height": 32,
+          "palette": 6,
+          "source": "死者の蘇生",
+          "text": "复活死者"
+        },
+        {
+          "name": "05",
+          "x": 128,
+          "y": 64,
+          "width": 128,
+          "height": 32,
+          "palette": 6,
+          "source": "灰からの復活",
+          "text": "灰烬复活"
+        },
+        {
+          "name": "06",
+          "x": 0,
+          "y": 96,
+          "width": 128,
+          "height": 32,
+          "palette": 6,
+          "source": "死神を祓う",
+          "text": "驱除死神"
+        },
+        {
+          "name": "07",
+          "x": 128,
+          "y": 96,
+          "width": 128,
+          "height": 32,
+          "palette": 6,
+          "source": "外に出る",
+          "text": "离开"
+        }
+      ]
     }
   ],
   "generated": [

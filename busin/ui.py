@@ -24,6 +24,11 @@ except ImportError:
 
 WHOLE_KEYS = {"name", "dir", "chunk", "offset", "width", "height", "palette", "size", "word_count_header"}
 PART_KEYS = {"name", "dir", "chunk", "offset", "slot", "width", "height", "rects"}
+# PACKDATA keeps one translated parent texture in two identical chunks. Keep
+# the second disc location in code and check both copies before repacking.
+PART_SOURCE_COPIES = {
+    "guild_00": ((12, "0x24800"),),
+}
 RECT_KEYS = {"name", "x", "y", "width", "height", "palette"}
 RECT_TEXT_KEYS = RECT_KEYS | {"source", "text"}
 PICTURE_KEYS = {"name", "dir", "chunk", "offset", "width", "height"}
@@ -259,6 +264,15 @@ def picture_dir(base: Path, item: dict) -> Path:
 
 def generated_dir(root: Path) -> Path:
     return root / "generated"
+
+
+def part_source_items(item: dict) -> list[dict]:
+    """Return the manifest item at its primary and verified duplicate locations."""
+    copies = PART_SOURCE_COPIES.get(item["name"], ())
+    return [item, *(
+        {**item, "chunk": chunk, "offset": offset}
+        for chunk, offset in copies
+    )]
 
 
 def png_name(item: dict) -> str:
@@ -507,19 +521,27 @@ def _part_span(read, item: dict, root: Path, row) -> tuple[int, bytes] | None:
 
 
 def part_spans(read, root: Path, row) -> list[tuple[int, bytes]]:
-    """Repack translated part crops once per parent TMX."""
+    """Repack translated part crops into every verified parent TMX copy."""
     path = root / "images.json"
     if not path.is_file():
         return []
     spans = []
     locations = []
     for item in load_images(path)["part"]:
-        found = _part_span(read, item, root, row)
-        if found is None:
-            continue
-        offset, data = found
-        spans.append(found)
-        locations.append((item["name"], offset, len(data)))
+        sources = part_source_items(item)
+        primary_blob = entry_slices(read, sources[0], row)[1]
+        for copy_index, source_item in enumerate(sources[1:], 1):
+            copy_blob = entry_slices(read, source_item, row)[1]
+            if copy_blob != primary_blob:
+                raise ValueError(f"{item['name']} source copy {copy_index} differs")
+        for copy_index, source_item in enumerate(sources):
+            found = _part_span(read, source_item, root, row)
+            if found is None:
+                continue
+            offset, data = found
+            spans.append(found)
+            label = item["name"] if copy_index == 0 else f"{item['name']} copy {copy_index}"
+            locations.append((label, offset, len(data)))
     ranges_overlap(locations)
     return spans
 
@@ -840,11 +862,16 @@ def self_test() -> None:
         assert translated.read_bytes() == original.read_bytes()
     listed = load_images(DATA / "picture" / "images.json")
     assert {item["dir"] for item in listed["whole"]} == {"title"}
-    assert {item["dir"] for item in listed["part"]} == {"town", "menu", "status"}
+    assert {item["dir"] for item in listed["part"]} == {
+        "town", "menu", "status", "guild", "shop", "temple",
+    }
     assert [item["name"] for item in listed["part"]] == [
         "Tw_map02", "Tw_map01", "cock_00", "cock_01", "status00",
+        "guild_00", "guild_a0", "guild_a1", "shop_00", "temple00",
     ]
-    assert {rect["palette"] for item in listed["part"] for rect in item["rects"]} == {1, 2, 7, 10, 12, 17}
+    assert {rect["palette"] for item in listed["part"] for rect in item["rects"]} == {
+        1, 2, 3, 6, 7, 10, 12, 17,
+    }
     cock01_rects = {
         rect["name"]: rect for item in listed["part"] if item["name"] == "cock_01"
         for rect in item["rects"]
@@ -889,10 +916,15 @@ def self_test() -> None:
             }
             if not menu_offsets <= part_offsets:
                 raise AssertionError("translated menu parent pictures were not repacked")
+            source_items = {
+                locate_pack(source_item, disc_row)[0]: source_item
+                for item in listed["part"]
+                for source_item in part_source_items(item)
+            }
             for offset, data in part_found:
                 _offset, source = entry_slices(
                     lambda at, size: read_pack(src, at, size),
-                    next(item for item in listed["part"] if locate_pack(item, disc_row)[0] == offset),
+                    source_items[offset],
                     disc_row,
                 )
                 if data == source or len(data) != len(source):

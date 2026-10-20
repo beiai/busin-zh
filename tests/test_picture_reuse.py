@@ -328,3 +328,84 @@ def test_template_renderer_checks_the_game_palette(tmp_path):
     image.palettes[10] = tuple((0, 0, 0, 0xFF) for _index in range(16))
     with pytest.raises(ValueError, match="palette 10 colors changed"):
         render_initial(image, label, tmp_path / "label.zh.png")
+
+
+def test_facility_rects_use_numeric_ids_and_registered_renderers():
+    doc = manifest()
+    expected = {
+        "guild_00": (3, [f"{index:02d}" for index in range(3)]),
+        "guild_a0": (16, [f"{index:02d}" for index in range(3, 19)]),
+        "guild_a1": (7, [f"{index:02d}" for index in range(19, 26)]),
+        "shop_00": (15, [f"{index:02d}" for index in range(15)]),
+        "temple00": (8, [f"{index:02d}" for index in range(8)]),
+    }
+    for name, (count, names) in expected.items():
+        item = next(entry for entry in doc["part"] if entry["name"] == name)
+        assert len(item["rects"]) == count
+        assert [entry["name"] for entry in item["rects"]] == names
+        assert all(
+            (entry["width"], entry["height"]) == (128, 32)
+            and entry["source"] and entry["text"]
+            and (item["name"], entry["name"]) in RENDERERS
+            for entry in item["rects"]
+        )
+    shop = next(entry for entry in doc["part"] if entry["name"] == "shop_00")
+    assert [entry["text"] for entry in shop["rects"]] == [
+        "购买武具", "出售", "鉴定", "解除诅咒", "魔法合成",
+        "购买防具", "购买武器", "购买饰品", "羊皮纸合成", "分解魔法石",
+        "合成魔法材料", "返回", "离开", "分解魔法石", "合成魔法材料",
+    ]
+
+
+def test_menu_banner_renderer_checks_text_size_and_palette(tmp_path):
+    from busin.picture_text.menu_banner import PALETTE_COLORS, render_initial
+
+    image = TmxImage(
+        tmp_path / "facility.tmx",
+        0,
+        "facility.tim",
+        256,
+        256,
+        PSMT4,
+        PSMCT16,
+        [PALETTE_COLORS for _index in range(16)],
+        (0,) * (256 * 256),
+    )
+    label = {
+        "name": "00", "x": 0, "y": 0, "width": 128, "height": 32,
+        "palette": 1, "source": "外に出る", "text": "离开",
+    }
+    output = tmp_path / "00.zh.png"
+    render_initial(image, label, output)
+    with Image.open(output) as bitmap:
+        assert bitmap.size == (128, 32)
+
+    empty = {**label, "text": ""}
+    with pytest.raises(ValueError, match="00 text"):
+        render_initial(image, empty, tmp_path / "empty.zh.png")
+    wrong_size = {**label, "width": 127}
+    with pytest.raises(ValueError, match="00 is 127x32"):
+        render_initial(image, wrong_size, tmp_path / "wrong.zh.png")
+    image.palettes[1] = tuple((0, 0, 0, 0xFF) for _index in range(16))
+    with pytest.raises(ValueError, match="palette 1 colors changed"):
+        render_initial(image, label, tmp_path / "palette.zh.png")
+    image.palettes[1] = PALETTE_COLORS
+    image.palettes.extend([PALETTE_COLORS, PALETTE_COLORS])
+    render_initial(image, {**label, "palette": 17}, tmp_path / "17.zh.png")
+
+
+@pytest.mark.skipif(not BIN.exists(), reason="没有原盘")
+def test_guild_00_every_source_copy_is_identical():
+    from busin.ui import entry_slices, part_source_items
+
+    doc = manifest()
+    item = next(entry for entry in doc["part"] if entry["name"] == "guild_00")
+    sources = part_source_items(item)
+    assert [(entry["chunk"], entry["offset"]) for entry in sources] == [
+        (16, "0x0"), (12, "0x24800"),
+    ]
+    with BIN.open("rb") as source:
+        read = lambda at, size: read_pack(source, at, size)
+        row = lambda chunk: chunk_row(source, chunk)
+        blobs = [entry_slices(read, entry, row)[1] for entry in sources]
+    assert blobs[0] == blobs[1]
