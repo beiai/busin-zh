@@ -1,0 +1,23 @@
+[
+  {
+    "id": "gregg",
+    "source": "グレッグ",
+    "text": "格雷格",
+    "template": "00589BCA",
+    "display": "00485422"
+  },
+  {
+    "id": "ricardo",
+    "source": "リカルド",
+    "text": "里卡多",
+    "template": "00589AAA",
+    "display": "00485302"
+  },
+  {
+    "id": "sara",
+    "source": "サラ",
+    "text": "萨拉",
+    "template": "00589CEA",
+    "display": "00485542"
+  }
+]

@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from busin.disc import FILE_BASE
 from busin.disasm import load_elf
 from busin.paths import BUILD, DATA
+from busin.runtime_names import load_names
 from busin.ui_layout import (
     _RACE_LABELS, _RACE_X, _STAT_X, _CREATE_STAT_X, _POINT_STAT_X, _address,
     _assign, _encode, _fit, _fit_grid, _glyphs, _label, _layout_line,
@@ -707,16 +708,26 @@ def _layout_patches(elf, writes):
 def ui_patches(elf):
     """ELF writes for data/interface, plus glyphs on the new UI pages."""
     pending, chars, kept_original = _load_translations(elf)
+    party = load_names()
+    for name in party:
+        chars.extend(_glyphs(name.text, False))
     table, extra = _assign(chars, {})
     reverse = _reverse_table(table)
     cells = _record_cells(pending, table, reverse)
     writes = _serialize_cells(cells)
+    from busin.patch.ui_names import elf_writes as name_writes
+    for offset, data in name_writes(elf, table).items():
+        end = offset + len(data)
+        if any(offset < other + len(blob) and other < end for other, blob in writes.items()):
+            raise ValueError(f"party name write at {offset:#x} overlaps UI text")
+        writes[offset] = data
     _layout_patches(elf, writes)
     info = {
         "strings": len(pending),
         "skipped": 0,
         "kept_original": kept_original,
         "glyphs": len(extra),
+        "names": len(party),
     }
     return writes, extra, info
 

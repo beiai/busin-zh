@@ -26,6 +26,20 @@ def _text(elf, reverse, va, cells):
         f"<{cells}H", elf, va - FILE_BASE)).rstrip()
 
 
+def test_fixed_party_names_use_the_translated_ui_glyphs(translated_elf):
+    from busin.runtime_names import load_names
+
+    _source, translated, reverse = translated_elf
+    for name in load_names():
+        codes = struct.unpack_from("<8H", translated, name.template - FILE_BASE)
+        shown = []
+        for code in codes:
+            if code == 0xFFFF:
+                break
+            shown.append(reverse[code])
+        assert "".join(shown) == name.text
+
+
 def test_item_name_uses_game_display_cells(translated_elf):
     from busin.ui_records import name_slots
 

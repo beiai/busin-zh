@@ -55,6 +55,8 @@ def main(argv=None):
     extract.add_argument("resource")
     state = commands.add_parser("p2s", help="extract a savestate into build/p2s/")
     state.add_argument("state")
+    names = commands.add_parser("check-names", help="report fixed character names in a savestate")
+    names.add_argument("state", type=Path)
     args = parser.parse_args(argv)
 
     if args.command == "build":
@@ -136,6 +138,14 @@ def main(argv=None):
     if args.command == "p2s":
         from busin.evidence import extract_state
         print(extract_state(args.state))
+        return 0
+    if args.command == "check-names":
+        from busin.runtime_names import check_state
+        for row in check_state(args.state):
+            if row["status"] == "unknown":
+                print(f"未映射 {row['display']} -> 原样保留")
+            else:
+                print(f"{row['source']} -> {row['text']} ({row['status']})")
         return 0
     return 2
 
