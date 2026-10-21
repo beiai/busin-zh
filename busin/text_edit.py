@@ -9,8 +9,8 @@ from pathlib import Path
 from busin.paths import DATA
 from busin.text import (
     DIALOG_LINE, PACKED_CHUNKS, _load_chunk, _script_chunks, check_lines, counted_chunks,
-    counted_messages, dialog_limits, encode_message, line_cells, message_prose, script_messages,
-    script_shows, text_cursors,
+    body_cells, counted_messages, dialog_limits, encode_message, line_cells, message_prose, script_messages,
+    script_shows, text_cursors, translated_dialog_limits,
 )
 
 
@@ -133,7 +133,7 @@ def _dialog_budget(label: str, original: list[int], item: dict, align: str) -> s
     """Used cells and the limit for each dialog line. Untranslated lines show only the limit."""
     text = item.get("text") or []
     count = max(len(item["source"].split("\n")), len(text), 1)
-    limits = dialog_limits(original, align, count)
+    limits = translated_dialog_limits(text) if text else dialog_limits(original, align, count)
     shown = []
     for index, limit in enumerate(limits):
         if index >= len(text):
@@ -145,7 +145,7 @@ def _dialog_budget(label: str, original: list[int], item: dict, align: str) -> s
         parts = []
         for bit_index, bit in enumerate(bits or [""]):
             cap = limit if bit_index == 0 else DIALOG_LINE
-            parts.append(f"{line_cells(bit)}/{cap}")
+            parts.append(f"{body_cells(bit)}/{cap}")
         shown.append("+".join(parts))
     return label + " " + " ".join(shown)
 
@@ -185,7 +185,10 @@ def check_text(chunk: int, offsets: list[str] | None = None, root: Path | None =
             continue
         try:
             check_lines(original, item["text"], doc["align"], item["type"])
-            encode_message(original, item["text"], doc["align"], lambda char: 0x4001)
+            compact = chunk in PACKED_CHUNKS or chunk in counted_chunks()
+            grow = chunk in counted_chunks()
+            encode_message(original, item["text"], doc["align"], lambda char: 0x4001,
+                           pad=not compact, fit=not grow)
         except ValueError as error:
             errors.append(f"{label}: {error}")
     if errors:
@@ -277,7 +280,7 @@ def self_test() -> None:
         _expect_error(lambda: init_text(9, root=root), "exists")
         words = [0x003F, 0xFFFE, 0xFFD2, 0x0042]
         filled = {"type": "dialog", "source": "あ\nい", "text": ["甲乙", "丙<BREAK>"]}
-        if _dialog_budget("0x0010", words, filled, "left") != "0x0010 2/19 1/16":
+        if _dialog_budget("0x0010", words, filled, "left") != "0x0010 2/19 1/19":
             raise AssertionError("dialog budget")
         blank_line = {"type": "dialog", "source": "あ\nい", "text": None}
         if _dialog_budget("0x0010", words, blank_line, "left") != "0x0010 19 16":

@@ -48,13 +48,13 @@
     {
       "offset": "0x18584",
       "type": "dialog",
-      "source": "クルガン「今は、お前に構っている\n時間がない」",
+      "source": "クルガン「今は、お前に構っている\n<FFD4>時間がない」",
       "text": null
     },
     {
       "offset": "0x185B6",
       "type": "dialog",
-      "source": "クルガン「無能なリーダーで\n苦労しているようだな」",
+      "source": "クルガン「無能なリーダーで\n<FFD4>苦労しているようだな」",
       "text": null
     },
     {
@@ -102,7 +102,7 @@
     {
       "offset": "0x187C0",
       "type": "dialog",
-      "source": "クルガン「お前達、これはいったい\nどういうつもりだ」",
+      "source": "クルガン「お前達、これはいったい\n<FFD4>どういうつもりだ」",
       "text": null
     },
     {
@@ -126,7 +126,7 @@
     {
       "offset": "0x1888A",
       "type": "dialog",
-      "source": "クルガン「この俺に刃を向ける。\nその意味がわかって\nいるのか？」",
+      "source": "クルガン「この俺に刃を向ける。\n<FFD4>その意味がわかって\n<FFD4>いるのか？」",
       "text": null
     },
     {
@@ -186,7 +186,7 @@
     {
       "offset": "0x18A58",
       "type": "center",
-      "source": "\n\n「後ろは引き受ける」\n\n\n\n\n\n\nクルガン「後ろは引き受ける」<BREAK>",
+      "source": "\n\n<STYLE:5>「後ろは引き受ける」\n\n\n\n\n\n\n<STYLE:0> クルガン「後ろは引き受ける」<BREAK>",
       "text": null
     },
     {
@@ -216,7 +216,7 @@
     {
       "offset": "0x18B46",
       "type": "dialog",
-      "source": "クルガン「死にたくなければ\n武器を手に取れ」",
+      "source": "クルガン「死にたくなければ\n<FFD4>武器を手に取れ」",
       "text": null
     },
     {
@@ -270,7 +270,7 @@
     {
       "offset": "0x18CFC",
       "type": "center",
-      "source": "「もう、よい。\nクイーンガード二人を相手に\nよくここまで時をかせいだ」",
+      "source": "「もう、よい。\n<FFD0>クイーンガード二人を相手に\n<FFD0>よくここまで時をかせいだ」",
       "text": null
     },
     {
@@ -306,7 +306,7 @@
     {
       "offset": "0x18E66",
       "type": "dialog",
-      "source": "レドゥア「素直に命令にしたがっていれば\n命ながらえたものを………」",
+      "source": "レドゥア「素直に命令にしたがっていれば\n<FFD4>命ながらえたものを………」",
       "text": null
     },
     {
@@ -330,7 +330,7 @@
     {
       "offset": "0x18F58",
       "type": "dialog",
-      "source": "クルガン「魔法生物を作るのは\n長のお得意だったな……」",
+      "source": "クルガン「魔法生物を作るのは\n<FFD4>長のお得意だったな……」",
       "text": null
     },
     {
@@ -342,13 +342,13 @@
     {
       "offset": "0x18FC4",
       "type": "center",
-      "source": "レドゥア「全ては、陛下のため」",
+      "source": "<STYLE:2>レドゥア「全ては、陛下のため」",
       "text": null
     },
     {
       "offset": "0x18FE6",
       "type": "center",
-      "source": "レドゥア「ゴーレムよ、そこにいる\n全ての者の息の根を\n止めよ」",
+      "source": "<STYLE:2>レドゥア「ゴーレムよ、そこにいる\n     全ての者の息の根を\n     止めよ」",
       "text": null
     },
     {
@@ -372,19 +372,19 @@
     {
       "offset": "0x19134",
       "type": "dialog",
-      "source": "クルガン「長の…… いや、レドゥアの\n完全な人形と化したか」",
+      "source": "クルガン「長の…… いや、レドゥアの\n<FFD4>完全な人形と化したか」",
       "text": null
     },
     {
       "offset": "0x19174",
       "type": "dialog",
-      "source": "クルガン「<PAGE>、部下共には\n俺が人らしい最期を\n導いてやる」",
+      "source": "クルガン「<PAGE>、部下共には\n<FFD4>俺が人らしい最期を\n<FFD4>導いてやる」",
       "text": null
     },
     {
       "offset": "0x191B4",
       "type": "dialog",
-      "source": "クルガン「お前はあのゴーレムを\n倒せ！」",
+      "source": "クルガン「お前はあのゴーレムを\n<FFD4>倒せ！」",
       "text": null
     },
     {
@@ -432,7 +432,7 @@
     {
       "offset": "0x1933C",
       "type": "center",
-      "source": "「もう、よい。\nクイーンガード二人を相手に\nよくここまで時を稼いだ」",
+      "source": "「もう、よい。\n<FFD0>クイーンガード二人を相手に\n<FFD0>よくここまで時を稼いだ」",
       "text": null
     },
     {
@@ -468,7 +468,7 @@
     {
       "offset": "0x194A6",
       "type": "dialog",
-      "source": "レドゥア「素直に命令にしたがっていれば\n命ながらえたものを………」",
+      "source": "レドゥア「素直に命令にしたがっていれば\n<FFD4>命ながらえたものを………」",
       "text": null
     },
     {
@@ -492,7 +492,7 @@
     {
       "offset": "0x19598",
       "type": "dialog",
-      "source": "クルガン「魔法生物を作るのは\n長のお得意だったな……」",
+      "source": "クルガン「魔法生物を作るのは\n<FFD4>長のお得意だったな……」",
       "text": null
     },
     {
@@ -504,13 +504,13 @@
     {
       "offset": "0x19604",
       "type": "center",
-      "source": "レドゥア「全ては、陛下のため」",
+      "source": "<STYLE:2>レドゥア「全ては、陛下のため」",
       "text": null
     },
     {
       "offset": "0x19626",
       "type": "center",
-      "source": "レドゥア「ゴーレムよ、そこにいる\n全ての者の息の根を\n止めよ」",
+      "source": "<STYLE:2>レドゥア「ゴーレムよ、そこにいる\n     全ての者の息の根を\n     止めよ」",
       "text": null
     },
     {
@@ -534,19 +534,19 @@
     {
       "offset": "0x19772",
       "type": "dialog",
-      "source": "クルガン「長の…… いや、レドゥアの\n完全な人形と化したか」",
+      "source": "クルガン「長の…… いや、レドゥアの\n<FFD4>完全な人形と化したか」",
       "text": null
     },
     {
       "offset": "0x197B2",
       "type": "dialog",
-      "source": "クルガン「部下共には、俺が\n人らしい最期を導いてやる」",
+      "source": "クルガン「部下共には、俺が\n<FFD4>人らしい最期を導いてやる」",
       "text": null
     },
     {
       "offset": "0x197EC",
       "type": "dialog",
-      "source": "クルガン「お前達はあのゴーレムを\n倒せ！」",
+      "source": "クルガン「お前達はあのゴーレムを\n<FFD4>倒せ！」",
       "text": null
     },
     {
@@ -576,13 +576,13 @@
     {
       "offset": "0x19958",
       "type": "dialog",
-      "source": "クルガン「陛下…… 長……\nそして<PAGE>」",
+      "source": "クルガン「陛下…… 長……\n<FFD4>そして<PAGE>」",
       "text": null
     },
     {
       "offset": "0x19982",
       "type": "dialog",
-      "source": "クルガン「信じていたモノが\n次々に手からこぼれ\n落ちていく」",
+      "source": "クルガン「信じていたモノが\n<FFD4>次々に手からこぼれ\n<FFD4>落ちていく」",
       "text": null
     },
     {
@@ -594,19 +594,19 @@
     {
       "offset": "0x199E4",
       "type": "dialog",
-      "source": "クルガン「このまま、全てが失われるのを\n黙って見ていてなるものか」",
+      "source": "クルガン「このまま、全てが失われるのを\n<FFD4>黙って見ていてなるものか」",
       "text": null
     },
     {
       "offset": "0x19A2A",
       "type": "dialog",
-      "source": "クルガン「思えば、レドゥアの様子が\nおかしくなったのは、半年前に\nこの階層を調べてからだ」",
+      "source": "クルガン「思えば、レドゥアの様子が\n<FFD4>おかしくなったのは、半年前に\n<FFD4>この階層を調べてからだ」",
       "text": null
     },
     {
       "offset": "0x19A8A",
       "type": "dialog",
-      "source": "クルガン「きっとここに、何か手がかりが\nあるはずだ」",
+      "source": "クルガン「きっとここに、何か手がかりが\n<FFD4>あるはずだ」",
       "text": null
     },
     {
@@ -618,19 +618,19 @@
     {
       "offset": "0x19AF8",
       "type": "dialog",
-      "source": "クルガン「今回は仕方なく\n手を組んだだけの事」",
+      "source": "クルガン「今回は仕方なく\n<FFD4>手を組んだだけの事」",
       "text": null
     },
     {
       "offset": "0x19B2A",
       "type": "dialog",
-      "source": "クルガン「お前の裏切りを\n忘れた駅じゃない」",
+      "source": "クルガン「お前の裏切りを\n<FFD4>忘れた駅じゃない」",
       "text": null
     },
     {
       "offset": "0x19B5A",
       "type": "dialog",
-      "source": "クルガン「手がかりを見つけた\nその時は………」",
+      "source": "クルガン「手がかりを見つけた\n<FFD4>その時は………」",
       "text": null
     },
     {
@@ -666,13 +666,13 @@
     {
       "offset": "0x19CC4",
       "type": "dialog",
-      "source": "クルガン「陛下…… 長……\nそして<PAGE>」",
+      "source": "クルガン「陛下…… 長……\n<FFD4>そして<PAGE>」",
       "text": null
     },
     {
       "offset": "0x19CEE",
       "type": "dialog",
-      "source": "クルガン「信じていたモノが\n次々に手からこぼれ\n落ちていく」",
+      "source": "クルガン「信じていたモノが\n<FFD4>次々に手からこぼれ\n<FFD4>落ちていく」",
       "text": null
     },
     {
@@ -684,19 +684,19 @@
     {
       "offset": "0x19D50",
       "type": "dialog",
-      "source": "クルガン「このまま、全てが失われるのを\n黙って見ていてなるものか」",
+      "source": "クルガン「このまま、全てが失われるのを\n<FFD4>黙って見ていてなるものか」",
       "text": null
     },
     {
       "offset": "0x19D96",
       "type": "dialog",
-      "source": "クルガン「思えば、レドゥアの様子が\nおかしくなったのは、半年前に\nこの階層を調べてからだ」",
+      "source": "クルガン「思えば、レドゥアの様子が\n<FFD4>おかしくなったのは、半年前に\n<FFD4>この階層を調べてからだ」",
       "text": null
     },
     {
       "offset": "0x19DF6",
       "type": "dialog",
-      "source": "クルガン「きっとここに、何か手がかりが\nあるはずだ」",
+      "source": "クルガン「きっとここに、何か手がかりが\n<FFD4>あるはずだ」",
       "text": null
     },
     {
@@ -714,13 +714,13 @@
     {
       "offset": "0x19E66",
       "type": "dialog",
-      "source": "クルガン「今回は仕方なく\n手を組んだだけの事」",
+      "source": "クルガン「今回は仕方なく\n<FFD4>手を組んだだけの事」",
       "text": null
     },
     {
       "offset": "0x19E98",
       "type": "dialog",
-      "source": "クルガン「お前の裏切りを\n忘れはしない、とな」",
+      "source": "クルガン「お前の裏切りを\n<FFD4>忘れはしない、とな」",
       "text": null
     },
     {
@@ -732,49 +732,49 @@
     {
       "offset": "0x19EFC",
       "type": "dialog",
-      "source": "サラ「たしか…クルガンって、\nクイーンガードのはずよね」",
+      "source": "サラ「たしか…クルガンって、\n<FFD2>クイーンガードのはずよね」",
       "text": null
     },
     {
       "offset": "0x19F38",
       "type": "dialog",
-      "source": "サラ「なのにどうしてレドゥアは\n仲間を殺そうとするのかしら？」",
+      "source": "サラ「なのにどうしてレドゥアは\n<FFD2>仲間を殺そうとするのかしら？」",
       "text": null
     },
     {
       "offset": "0x19F7A",
       "type": "dialog",
-      "source": "サラ「クルガンって、悪い人には\n全然、見えないんだけど」",
+      "source": "サラ「クルガンって、悪い人には\n<FFD2>全然、見えないんだけど」",
       "text": null
     },
     {
       "offset": "0x19FB6",
       "type": "dialog",
-      "source": "サラ「どちらかと言えば単純で一本気。\n友情に厚く、曲がった事が\n大嫌い。そんなタイプじゃない」",
+      "source": "サラ「どちらかと言えば単純で一本気。\n<FFD2>友情に厚く、曲がった事が\n<FFD2>大嫌い。そんなタイプじゃない」",
       "text": null
     },
     {
       "offset": "0x1A01A",
       "type": "dialog",
-      "source": "サラ「…とすると考えられるのは、\n知ってはいけない秘密を知った。\nもしくは知られる可能性がある」",
+      "source": "サラ「…とすると考えられるのは、\n<FFD2>知ってはいけない秘密を知った。\n<FFD2>もしくは知られる可能性がある」",
       "text": null
     },
     {
       "offset": "0x1A080",
       "type": "dialog",
-      "source": "サラ「そして彼はそれを絶対許さない。\n何故なら真面目だから…\nレドゥアはそれを恐れた」",
+      "source": "サラ「そして彼はそれを絶対許さない。\n<FFD2>何故なら真面目だから…\n<FFD2>レドゥアはそれを恐れた」",
       "text": null
     },
     {
       "offset": "0x1A0DC",
       "type": "dialog",
-      "source": "サラ「どう、わたしの推理は？\n結構いい線いっていると\n思うんだけど」",
+      "source": "サラ「どう、わたしの推理は？\n<FFD2>結構いい線いっていると\n<FFD2>思うんだけど」",
       "text": null
     },
     {
       "offset": "0x1A126",
       "type": "dialog",
-      "source": "サラ「どちらにしてもこの先に、\n何かあるはずよ、きっと」",
+      "source": "サラ「どちらにしてもこの先に、\n<FFD2>何かあるはずよ、きっと」",
       "text": null
     },
     {
@@ -786,37 +786,37 @@
     {
       "offset": "0x1A186",
       "type": "dialog",
-      "source": "リカルド「よくわかんねえけど、\nこの先に向かってみれば」",
+      "source": "リカルド「よくわかんねえけど、\n<FFD4>この先に向かってみれば」",
       "text": null
     },
     {
       "offset": "0x1A1C2",
       "type": "dialog",
-      "source": "リカルド「行方不明の女王様の謎が\nわかるんじゃねえか？」",
+      "source": "リカルド「行方不明の女王様の謎が\n<FFD4>わかるんじゃねえか？」",
       "text": null
     },
     {
       "offset": "0x1A1FE",
       "type": "dialog",
-      "source": "リカルド「だってレドゥアの野郎が、\nあんなに必死な形相をして\n動き回ってるのは」",
+      "source": "リカルド「だってレドゥアの野郎が、\n<FFD4>あんなに必死な形相をして\n<FFD4>動き回ってるのは」",
       "text": null
     },
     {
       "offset": "0x1A254",
       "type": "dialog",
-      "source": "リカルド「女王様に関係する事以外は\n無いって思うけどね」",
+      "source": "リカルド「女王様に関係する事以外は\n<FFD4>無いって思うけどね」",
       "text": null
     },
     {
       "offset": "0x1A290",
       "type": "dialog",
-      "source": "リカルド「だがそれにしても仲間に\n手をかけてまでだなんて…」",
+      "source": "リカルド「だがそれにしても仲間に\n<FFD4>手をかけてまでだなんて…」",
       "text": null
     },
     {
       "offset": "0x1A2D0",
       "type": "dialog",
-      "source": "リカルド「レドゥアの奴はそこまで\n追い込まれているのかね」",
+      "source": "リカルド「レドゥアの奴はそこまで\n<FFD4>追い込まれているのかね」",
       "text": null
     },
     {
@@ -828,25 +828,25 @@
     {
       "offset": "0x1A330",
       "type": "dialog",
-      "source": "グレッグ「ホムンクルスに留まらず、\nあの様な人造生物まで\n造っていたとはな」",
+      "source": "グレッグ「ホムンクルスに留まらず、\n<FFD4>あの様な人造生物まで\n<FFD4>造っていたとはな」",
       "text": null
     },
     {
       "offset": "0x1A382",
       "type": "dialog",
-      "source": "グレッグ「レドゥアは狂気に冒されて\nいるのではないか」",
+      "source": "グレッグ「レドゥアは狂気に冒されて\n<FFD4>いるのではないか」",
       "text": null
     },
     {
       "offset": "0x1A3BC",
       "type": "dialog",
-      "source": "グレッグ「それとも……\nそこまでしなければならぬ\n理由でもあるのか？」",
+      "source": "グレッグ「それとも……\n<FFD4>そこまでしなければならぬ\n<FFD4>理由でもあるのか？」",
       "text": null
     },
     {
       "offset": "0x1A408",
       "type": "dialog",
-      "source": "グレッグ「クイーンガードの名も高き\n忠誠深いあの男の身に\n何があったのだ」",
+      "source": "グレッグ「クイーンガードの名も高き\n<FFD4>忠誠深いあの男の身に\n<FFD4>何があったのだ」",
       "text": null
     },
     {
@@ -858,19 +858,19 @@
     {
       "offset": "0x1A47A",
       "type": "dialog",
-      "source": "グレッグ「どうやら行ってみるしか\nなさそうだな」",
+      "source": "グレッグ「どうやら行ってみるしか\n<FFD4>なさそうだな」",
       "text": null
     },
     {
       "offset": "0x1A4AE",
       "type": "dialog",
-      "source": "クルガン「お前も来たのか。\nコレを見てみろ」",
+      "source": "クルガン「お前も来たのか。\n<FFD4>コレを見てみろ」",
       "text": null
     },
     {
       "offset": "0x1A4DE",
       "type": "dialog",
-      "source": "クルガン「こんな場所に、水晶の\n結晶体があるなんて……」",
+      "source": "クルガン「こんな場所に、水晶の\n<FFD4>結晶体があるなんて……」",
       "text": null
     },
     {
@@ -906,7 +906,7 @@
     {
       "offset": "0x1A5FA",
       "type": "dialog",
-      "source": "妖精「うかつに触ると\n想いの波にさらわれるよ」",
+      "source": "妖精「うかつに触ると\n<FFD2>想いの波にさらわれるよ」",
       "text": null
     },
     {
@@ -918,7 +918,7 @@
     {
       "offset": "0x1A662",
       "type": "dialog",
-      "source": "妖精「おや、こんなとこまで来て\nそんなカッコになってちゃあ\nお話しにならないねぇ」",
+      "source": "妖精「おや、こんなとこまで来て\n<FFD2>そんなカッコになってちゃあ\n<FFD2>お話しにならないねぇ」",
       "text": null
     },
     {
@@ -960,67 +960,67 @@
     {
       "offset": "0x1A764",
       "type": "dialog",
-      "source": "妖精「この水晶は、この神殿が\n造られた時に、魔力の\n媒体として用意されたもの」",
+      "source": "妖精「この水晶は、この神殿が\n<FFD2>造られた時に、魔力の\n<FFD2>媒体として用意されたもの」",
       "text": null
     },
     {
       "offset": "0x1A7B8",
       "type": "dialog",
-      "source": "妖精「神殿ごとこんな場所に\n移動してきた今も\nその力は衰えずに残ってる」",
+      "source": "妖精「神殿ごとこんな場所に\n<FFD2>移動してきた今も\n<FFD2>その力は衰えずに残ってる」",
       "text": null
     },
     {
       "offset": "0x1A806",
       "type": "dialog",
-      "source": "妖精「魔力が注ぎ込まれる事は\nなくなったけど……」",
+      "source": "妖精「魔力が注ぎ込まれる事は\n<FFD2>なくなったけど……」",
       "text": null
     },
     {
       "offset": "0x1A83C",
       "type": "dialog",
-      "source": "妖精「代わりに、色んな想いを\n宿すようになった」",
+      "source": "妖精「代わりに、色んな想いを\n<FFD2>宿すようになった」",
       "text": null
     },
     {
       "offset": "0x1A870",
       "type": "dialog",
-      "source": "妖精「ただよう想い… 逆巻く想い…\n焼付けられた想い…\n色んな想いをね」",
+      "source": "妖精「ただよう想い… 逆巻く想い…\n<FFD2>焼付けられた想い…\n<FFD2>色んな想いをね」",
       "text": null
     },
     {
       "offset": "0x1A8BE",
       "type": "dialog",
-      "source": "妖精「触れた途端に\n想いは解放される」",
+      "source": "妖精「触れた途端に\n<FFD2>想いは解放される」",
       "text": null
     },
     {
       "offset": "0x1A8E8",
       "type": "dialog",
-      "source": "妖精「彼方から、彼方へと\n想いの波は流れて行く」",
+      "source": "妖精「彼方から、彼方へと\n<FFD2>想いの波は流れて行く」",
       "text": null
     },
     {
       "offset": "0x1A91C",
       "type": "dialog",
-      "source": "妖精「あんた自身が強い\n想いを持っているなら………」",
+      "source": "妖精「あんた自身が強い\n<FFD2>想いを持っているなら………」",
       "text": null
     },
     {
       "offset": "0x1A954",
       "type": "dialog",
-      "source": "妖精「打ち寄せる想いの波を\n泳いで戻って来る事が\n出来るかもしれない」",
+      "source": "妖精「打ち寄せる想いの波を\n<FFD2>泳いで戻って来る事が\n<FFD2>出来るかもしれない」",
       "text": null
     },
     {
       "offset": "0x1A9A0",
       "type": "dialog",
-      "source": "妖精「だけど、あたしは\nたくさん見て来たよ」",
+      "source": "妖精「だけど、あたしは\n<FFD2>たくさん見て来たよ」",
       "text": null
     },
     {
       "offset": "0x1A9D0",
       "type": "dialog",
-      "source": "妖精「想いの波に呑まれて\n戻ってこなかった奴らを」",
+      "source": "妖精「想いの波に呑まれて\n<FFD2>戻ってこなかった奴らを」",
       "text": null
     },
     {
@@ -1038,7 +1038,7 @@
     {
       "offset": "0x1AA48",
       "type": "dialog",
-      "source": "妖精「ひどく恐い瞳の\n老いた魔術師………」",
+      "source": "妖精「ひどく恐い瞳の\n<FFD2>老いた魔術師………」",
       "text": null
     },
     {
@@ -1050,13 +1050,13 @@
     {
       "offset": "0x1AA8E",
       "type": "dialog",
-      "source": "妖精「あの人も随分\n青ざめていたっけ」",
+      "source": "妖精「あの人も随分\n<FFD2>青ざめていたっけ」",
       "text": null
     },
     {
       "offset": "0x1AAB8",
       "type": "dialog",
-      "source": "妖精「想いの波は\n見なくてもいいものまで\n見せてしまうから」",
+      "source": "妖精「想いの波は\n<FFD2>見なくてもいいものまで\n<FFD2>見せてしまうから」",
       "text": null
     },
     {
@@ -1080,13 +1080,13 @@
     {
       "offset": "0x1AB62",
       "type": "dialog",
-      "source": "妖精「そう。\nじゃぁ、いらっしゃいな」",
+      "source": "妖精「そう。\n<FFD2>じゃぁ、いらっしゃいな」",
       "text": null
     },
     {
       "offset": "0x1AB8C",
       "type": "dialog",
-      "source": "妖精「一緒に、想いの波に\n身をゆだねましょう」",
+      "source": "妖精「一緒に、想いの波に\n<FFD2>身をゆだねましょう」",
       "text": null
     },
     {
@@ -1110,13 +1110,13 @@
     {
       "offset": "0x1AC78",
       "type": "dialog",
-      "source": "老司教「神よ、私の祈りはあなた様に\n届いているのでしょうか…」",
+      "source": "老司教「神よ、私の祈りはあなた様に\n<FFD3>届いているのでしょうか…」",
       "text": null
     },
     {
       "offset": "0x1ACBA",
       "type": "dialog",
-      "source": "老司教「多くの者が私に救いを求め\n手を差し出します」",
+      "source": "老司教「多くの者が私に救いを求め\n<FFD3>手を差し出します」",
       "text": null
     },
     {
@@ -1128,25 +1128,25 @@
     {
       "offset": "0x1AD14",
       "type": "dialog",
-      "source": "老司教「神よ、私に彼らを救う力を\nお貸し下さい………」",
+      "source": "老司教「神よ、私に彼らを救う力を\n<FFD3>お貸し下さい………」",
       "text": null
     },
     {
       "offset": "0x1AD4E",
       "type": "dialog",
-      "source": "妖精「いつも必ず、想いの波は\nここから始まる」",
+      "source": "妖精「いつも必ず、想いの波は\n<FFD2>ここから始まる」",
       "text": null
     },
     {
       "offset": "0x1AD80",
       "type": "dialog",
-      "source": "妖精「随分と、強い想い\nなんだろうねぇ」",
+      "source": "妖精「随分と、強い想い\n<FFD2>なんだろうねぇ」",
       "text": null
     },
     {
       "offset": "0x1ADAC",
       "type": "dialog",
-      "source": "妖精「ほら、見てごらんよ。\n想いがわだかまっている…」",
+      "source": "妖精「ほら、見てごらんよ。\n<FFD2>想いがわだかまっている…」",
       "text": null
     },
     {
@@ -1164,7 +1164,7 @@
     {
       "offset": "0x1AEE4",
       "type": "center",
-      "source": "いや、迷ってはならぬ。\n神は常に我らと共に\nあられるのだ…！<BREAK>",
+      "source": "       いや、迷ってはならぬ。\n       神は常に我らと共に\n       あられるのだ…！<BREAK>",
       "text": null
     },
     {
@@ -1176,7 +1176,7 @@
     {
       "offset": "0x1AF9C",
       "type": "center",
-      "source": "共にあられるのなら\nご存じのはずだ。  <BREAK>     この私の信仰が\nどれほどの物かを……<BREAK>",
+      "source": "     共にあられるのなら\n     ご存じのはずだ。  <BREAK>     この私の信仰が\n     どれほどの物かを……<BREAK>",
       "text": null
     },
     {
@@ -1194,19 +1194,19 @@
     {
       "offset": "0x1B07E",
       "type": "dialog",
-      "source": "老司教「これほどに、信仰し\n全てを捧げた私にさえも\n応えては下さらぬのか……」",
+      "source": "老司教「これほどに、信仰し\n<FFD3>全てを捧げた私にさえも\n<FFD3>応えては下さらぬのか……」",
       "text": null
     },
     {
       "offset": "0x1B0D2",
       "type": "dialog",
-      "source": "老司教「ならば、いっそ、神などいらぬ。\nいや………」",
+      "source": "老司教「ならば、いっそ、神などいらぬ。\n<FFD3>いや………」",
       "text": null
     },
     {
       "offset": "0x1B10A",
       "type": "dialog",
-      "source": "老司教「我らを裏切らぬ神を\nこの手で、つくれば、いい」",
+      "source": "老司教「我らを裏切らぬ神を\n<FFD3>この手で、つくれば、いい」",
       "text": null
     },
     {
@@ -1260,43 +1260,43 @@
     {
       "offset": "0x1B2E6",
       "type": "dialog",
-      "source": "老司教「今こそ、我らが新しき神を\nつくり出す時！」",
+      "source": "老司教「今こそ、我らが新しき神を\n<FFD3>つくり出す時！」",
       "text": null
     },
     {
       "offset": "0x1B31C",
       "type": "dialog",
-      "source": "老司教「我がなげきの届かぬ\n古き神々はもういらぬ」",
+      "source": "老司教「我がなげきの届かぬ\n<FFD3>古き神々はもういらぬ」",
       "text": null
     },
     {
       "offset": "0x1B352",
       "type": "dialog",
-      "source": "老司教「これからは、我らの神こそが\n唯一絶対の神」",
+      "source": "老司教「これからは、我らの神こそが\n<FFD3>唯一絶対の神」",
       "text": null
     },
     {
       "offset": "0x1B388",
       "type": "dialog",
-      "source": "老司教「我らの新たな神の下\n魂は永遠に不変！」",
+      "source": "老司教「我らの新たな神の下\n<FFD3>魂は永遠に不変！」",
       "text": null
     },
     {
       "offset": "0x1B3BA",
       "type": "dialog",
-      "source": "老司教「もう、魂の消滅を\n恐れる事はないのだ！」",
+      "source": "老司教「もう、魂の消滅を\n<FFD3>恐れる事はないのだ！」",
       "text": null
     },
     {
       "offset": "0x1B3EE",
       "type": "dialog",
-      "source": "老司教「私は、新たな神のために\nもっとも大切なもの…\n我が孫娘を捧げる」",
+      "source": "老司教「私は、新たな神のために\n<FFD3>もっとも大切なもの…\n<FFD3>我が孫娘を捧げる」",
       "text": null
     },
     {
       "offset": "0x1B43C",
       "type": "dialog",
-      "source": "老司教「我が孫は、神の母となり\n世界を見守り続けるのだ」",
+      "source": "老司教「我が孫は、神の母となり\n<FFD3>世界を見守り続けるのだ」",
       "text": null
     },
     {
@@ -1308,7 +1308,7 @@
     {
       "offset": "0x1B49C",
       "type": "dialog",
-      "source": "妖精「あれ、あんたどうしたの？\n震えているじゃない」",
+      "source": "妖精「あれ、あんたどうしたの？\n<FFD2>震えているじゃない」",
       "text": null
     },
     {
@@ -1326,25 +1326,25 @@
     {
       "offset": "0x1B516",
       "type": "dialog",
-      "source": "クルガン「俺達は、あいつを知っている！\nあいつは、ドゥーハンを…」",
+      "source": "クルガン「俺達は、あいつを知っている！\n<FFD4>あいつは、ドゥーハンを…」",
       "text": null
     },
     {
       "offset": "0x1B55C",
       "type": "center",
-      "source": "<FD00>ソウ、シッテイル。\n<FD00>アノ、シキョウハ………",
+      "source": "<STYLE:2><FD00>ソウ、シッテイル。\n<STYLE:2><FD00>アノ、シキョウハ………",
       "text": null
     },
     {
       "offset": "0x1B590",
       "type": "center",
-      "source": "<FD01>イケナイ。\n<FD01>オモイダシテハイケナイ。",
+      "source": "<STYLE:2><FD01>イケナイ。\n<STYLE:2><FD01>オモイダシテハイケナイ。",
       "text": null
     },
     {
       "offset": "0x1B5BE",
       "type": "center",
-      "source": "オモイダシタラ、イキテハイラレナイ。",
+      "source": "<STYLE:2>オモイダシタラ、イキテハイラレナイ。",
       "text": null
     },
     {
@@ -1410,7 +1410,7 @@
     {
       "offset": "0x1B87A",
       "type": "center",
-      "source": "ご立派だった司教様が何故？\n\nあぁ、寺院が燃えてしまう！\n\nあんな神に魂を奪われるのはいや！\n\n俺は、俺でありたいんだ！\n\n陛下、何とぞ武神の討伐を！",
+      "source": "ご立派だった司教様が何故？\n\n     あぁ、寺院が燃えてしまう！\n\nあんな神に魂を奪われるのはいや！\n\n       俺は、俺でありたいんだ！\n\n陛下、何とぞ武神の討伐を！",
       "text": null
     },
     {
@@ -1428,37 +1428,37 @@
     {
       "offset": "0x1B98E",
       "type": "dialog",
-      "source": "妖精「女王オリアーナの命令で\nクイーンガードが武神を\n倒しに行くわ」",
+      "source": "妖精「女王オリアーナの命令で\n<FFD2>クイーンガードが武神を\n<FFD2>倒しに行くわ」",
       "text": null
     },
     {
       "offset": "0x1B9D8",
       "type": "dialog",
-      "source": "クルガン「<FB09><FB01>オリアーナ<FB06><FB00>、その名には\n覚えがある」",
+      "source": "クルガン「<FB09><FB01>オリアーナ<FB06><FB00>、その名には\n<FFD4>覚えがある」",
       "text": null
     },
     {
       "offset": "0x1BA12",
       "type": "dialog",
-      "source": "クルガン「確か、ドゥーハン中世期の\n女王だ」",
+      "source": "クルガン「確か、ドゥーハン中世期の\n<FFD4>女王だ」",
       "text": null
     },
     {
       "offset": "0x1BA42",
       "type": "dialog",
-      "source": "クルガン「それじゃ、これは\nドゥーハンの過去…？」",
+      "source": "クルガン「それじゃ、これは\n<FFD4>ドゥーハンの過去…？」",
       "text": null
     },
     {
       "offset": "0x1BA78",
       "type": "dialog",
-      "source": "妖精「大地に刻まれた想い…\nこの大地が見る夢よ」",
+      "source": "妖精「大地に刻まれた想い…\n<FFD2>この大地が見る夢よ」",
       "text": null
     },
     {
       "offset": "0x1BAAC",
       "type": "dialog",
-      "source": "妖精「信じるも、信じないも\nあんた達の勝手」",
+      "source": "妖精「信じるも、信じないも\n<FFD2>あんた達の勝手」",
       "text": null
     },
     {
@@ -1512,43 +1512,43 @@
     {
       "offset": "0x1BC9A",
       "type": "dialog",
-      "source": "老司教「おのれ、英雄気どりの\nクイーンガードどもめ！」",
+      "source": "老司教「おのれ、英雄気どりの\n<FFD3>クイーンガードどもめ！」",
       "text": null
     },
     {
       "offset": "0x1BCD4",
       "type": "dialog",
-      "source": "老司教「今はひとときの勝利に\n酔いしれておるがよい」",
+      "source": "老司教「今はひとときの勝利に\n<FFD3>酔いしれておるがよい」",
       "text": null
     },
     {
       "offset": "0x1BD0C",
       "type": "dialog",
-      "source": "老司教「酔いさめたその時こそ\n此度の蛮行を\n後悔させてくれる！」",
+      "source": "老司教「酔いさめたその時こそ\n<FFD3>此度の蛮行を\n<FFD3>後悔させてくれる！」",
       "text": null
     },
     {
       "offset": "0x1BD52",
       "type": "dialog",
-      "source": "老司教「我が神の力により\n私の魂は永遠不変！」",
+      "source": "老司教「我が神の力により\n<FFD3>私の魂は永遠不変！」",
       "text": null
     },
     {
       "offset": "0x1BD84",
       "type": "dialog",
-      "source": "老司教「尊い命を進んで差し出した\n孫娘のためにも……」",
+      "source": "老司教「尊い命を進んで差し出した\n<FFD3>孫娘のためにも……」",
       "text": null
     },
     {
       "offset": "0x1BDBE",
       "type": "dialog",
-      "source": "老司教「必ず我が神を復活\nさせてみせようぞ」",
+      "source": "老司教「必ず我が神を復活\n<FFD3>させてみせようぞ」",
       "text": null
     },
     {
       "offset": "0x1BDEE",
       "type": "dialog",
-      "source": "老司教「ドゥーハンの民\n全ての魂を贄とする事も\nいといはせぬ」",
+      "source": "老司教「ドゥーハンの民\n<FFD3>全ての魂を贄とする事も\n<FFD3>いといはせぬ」",
       "text": null
     },
     {
@@ -1560,7 +1560,7 @@
     {
       "offset": "0x1BE54",
       "type": "center",
-      "source": "<FD00>ソウ、コノオトコハ\n<FD00>コノコトバヲ\n<FD02>ジッコウシタ………",
+      "source": "<STYLE:2><FD00>ソウ、コノオトコハ\n<STYLE:2><FD00>コノコトバヲ\n<STYLE:2><FD02>ジッコウシタ………",
       "text": null
     },
     {
@@ -1578,13 +1578,13 @@
     {
       "offset": "0x1BEF4",
       "type": "dialog",
-      "source": "妖精「もっとも、それが幸せか\nどうかは、わからないけれど」",
+      "source": "妖精「もっとも、それが幸せか\n<FFD2>どうかは、わからないけれど」",
       "text": null
     },
     {
       "offset": "0x1BF32",
       "type": "dialog",
-      "source": "クルガン「レドゥアもコレを\n見たのか…？」",
+      "source": "<FFD1>クルガン「レドゥアもコレを\n<FFD6>見たのか…？」",
       "text": null
     },
     {
@@ -1608,25 +1608,25 @@
     {
       "offset": "0x1BFAE",
       "type": "dialog",
-      "source": "妖精「水晶は全部で三つあるわ\nあの人は、全部見たはずよ」",
+      "source": "妖精「水晶は全部で三つあるわ\n<FFD2>あの人は、全部見たはずよ」",
       "text": null
     },
     {
       "offset": "0x1BFEA",
       "type": "dialog",
-      "source": "クルガン「正直、次へ行くのが恐ろしい。\n俺達は、いったい何を見た」",
+      "source": "クルガン「正直、次へ行くのが恐ろしい。\n<FFD4>俺達は、いったい何を見た」",
       "text": null
     },
     {
       "offset": "0x1C030",
       "type": "dialog",
-      "source": "クルガン「あれの意味する事は\n何なんだ………？」",
+      "source": "クルガン「あれの意味する事は\n<FFD4>何なんだ………？」",
       "text": null
     },
     {
       "offset": "0x1C064",
       "type": "dialog",
-      "source": "クルガン「わからない。\n………わかりたくない」",
+      "source": "クルガン「わからない。\n<FFD4>………わかりたくない」",
       "text": null
     },
     {
@@ -1638,7 +1638,7 @@
     {
       "offset": "0x1C0BC",
       "type": "dialog",
-      "source": "妖精「アハハ、人って面白いね。\nたくさんの矛盾を抱え\n生きて行く」",
+      "source": "妖精「アハハ、人って面白いね。\n<FFD2>たくさんの矛盾を抱え\n<FFD2>生きて行く」",
       "text": null
     },
     {
@@ -1650,13 +1650,13 @@
     {
       "offset": "0x1C128",
       "type": "dialog",
-      "source": "妖精「あたしはここで\n想いと戯れ続けるだけ」",
+      "source": "妖精「あたしはここで\n<FFD2>想いと戯れ続けるだけ」",
       "text": null
     },
     {
       "offset": "0x1C158",
       "type": "dialog",
-      "source": "妖精「永遠に、繰り返す想いの\n中を………」",
+      "source": "妖精「永遠に、繰り返す想いの\n<FFD2>中を………」",
       "text": null
     },
     {
@@ -1668,7 +1668,7 @@
     {
       "offset": "0x1C1C2",
       "type": "dialog",
-      "source": "サラ「信仰が強い人間ほど\nそれが崩れたときの反動は\n大きいって聞いていたけど」",
+      "source": "サラ「信仰が強い人間ほど\n<FFD2>それが崩れたときの反動は\n<FFD2>大きいって聞いていたけど」",
       "text": null
     },
     {
@@ -1680,13 +1680,13 @@
     {
       "offset": "0x1C236",
       "type": "dialog",
-      "source": "サラ「水晶から伝わってくる波動は、\n気分が悪くなるほどすごく\n禍々しい物だわ」",
+      "source": "サラ「水晶から伝わってくる波動は、\n<FFD2>気分が悪くなるほどすごく\n<FFD2>禍々しい物だわ」",
       "text": null
     },
     {
       "offset": "0x1C28A",
       "type": "dialog",
-      "source": "サラ「わたし達が感じている\nこの迷宮の黒い波動を凝縮した\nそんな嫌な感じ…」",
+      "source": "サラ「わたし達が感じている\n<FFD2>この迷宮の黒い波動を凝縮した\n<FFD2>そんな嫌な感じ…」",
       "text": null
     },
     {
@@ -1716,67 +1716,67 @@
     {
       "offset": "0x1C3C2",
       "type": "dialog",
-      "source": "リカルド「あの司教の狂った毒気に\nあてられたせいだな」",
+      "source": "リカルド「あの司教の狂った毒気に\n<FFD4>あてられたせいだな」",
       "text": null
     },
     {
       "offset": "0x1C3FC",
       "type": "dialog",
-      "source": "リカルド「神様に裏切られたか何か\n知らねえけどさ」",
+      "source": "リカルド「神様に裏切られたか何か\n<FFD4>知らねえけどさ」",
       "text": null
     },
     {
       "offset": "0x1C432",
       "type": "dialog",
-      "source": "リカルド「孫娘を犠牲にしてまで\n仕返ししたいとはね」",
+      "source": "リカルド「孫娘を犠牲にしてまで\n<FFD4>仕返ししたいとはね」",
       "text": null
     },
     {
       "offset": "0x1C46A",
       "type": "dialog",
-      "source": "リカルド「ふん、どんな正当な理由が\nあるにしても」",
+      "source": "リカルド「ふん、どんな正当な理由が\n<FFD4>あるにしても」",
       "text": null
     },
     {
       "offset": "0x1C4A0",
       "type": "dialog",
-      "source": "リカルド「奴の魂自体が腐りきって\nいるのは間違いないね」",
+      "source": "リカルド「奴の魂自体が腐りきって\n<FFD4>いるのは間違いないね」",
       "text": null
     },
     {
       "offset": "0x1C4DC",
       "type": "dialog",
-      "source": "グレッグ「真に恐るべき事は、\n老司教は消滅しておらぬと\nいう事ではないか」",
+      "source": "グレッグ「真に恐るべき事は、\n<FFD4>老司教は消滅しておらぬと\n<FFD4>いう事ではないか」",
       "text": null
     },
     {
       "offset": "0x1C52C",
       "type": "dialog",
-      "source": "グレッグ「奴の憎悪の思念は今も\n消えずにこの世界に\n漂い続けている」",
+      "source": "グレッグ「奴の憎悪の思念は今も\n<FFD4>消えずにこの世界に\n<FFD4>漂い続けている」",
       "text": null
     },
     {
       "offset": "0x1C576",
       "type": "dialog",
-      "source": "グレッグ「それほどあの水晶から感じた\n奴の憎悪の念は強い」",
+      "source": "グレッグ「それほどあの水晶から感じた\n<FFD4>奴の憎悪の念は強い」",
       "text": null
     },
     {
       "offset": "0x1C5B4",
       "type": "dialog",
-      "source": "グレッグ「そして今回の一連の事件は\n何やら奴がからんでいる、\nそんな気がしてならぬ…」",
+      "source": "グレッグ「そして今回の一連の事件は\n<FFD4>何やら奴がからんでいる、\n<FFD4>そんな気がしてならぬ…」",
       "text": null
     },
     {
       "offset": "0x1C610",
       "type": "dialog",
-      "source": "グレッグ「すなわち閃光やこの迷宮の\n存在自体に奴の影がちらついて\n見えるという事だ」",
+      "source": "グレッグ「すなわち閃光やこの迷宮の\n<FFD4>存在自体に奴の影がちらついて\n<FFD4>見えるという事だ」",
       "text": null
     },
     {
       "offset": "0x1C66A",
       "type": "dialog",
-      "source": "グレッグ「あれほどの執念……\n魂と化した奴の仕業としても\nおかしくはない」",
+      "source": "グレッグ「あれほどの執念……\n<FFD4>魂と化した奴の仕業としても\n<FFD4>おかしくはない」",
       "text": null
     },
     {
@@ -1788,19 +1788,19 @@
     {
       "offset": "0x1C6EC",
       "type": "dialog",
-      "source": "ミシェル「あの水晶で見た禍々しい\n破滅の光景…」",
+      "source": "ミシェル「あの水晶で見た禍々しい\n<FFD4>破滅の光景…」",
       "text": null
     },
     {
       "offset": "0x1C720",
       "type": "dialog",
-      "source": "ミシェル「そしてあの老司教が何度も\n言っていた新しい神という\n言葉…」",
+      "source": "ミシェル「そしてあの老司教が何度も\n<FFD4>言っていた新しい神という\n<FFD4>言葉…」",
       "text": null
     },
     {
       "offset": "0x1C76C",
       "type": "dialog",
-      "source": "ミシェル「もしかしたら彼は、\n闇の神を蘇らせたのでは」",
+      "source": "ミシェル「もしかしたら彼は、\n<FFD4>闇の神を蘇らせたのでは」",
       "text": null
     },
     {
@@ -1812,25 +1812,25 @@
     {
       "offset": "0x1C7C6",
       "type": "dialog",
-      "source": "ミシェル「闇の神とはエルフの伝承にある\n邪神の事です」",
+      "source": "ミシェル「闇の神とはエルフの伝承にある\n<FFD4>邪神の事です」",
       "text": null
     },
     {
       "offset": "0x1C800",
       "type": "dialog",
-      "source": "ミシェル「奴は破壊をもたらすもの。\n根源なる闇にして救いなき\n悪しき存在」",
+      "source": "ミシェル「奴は破壊をもたらすもの。\n<FFD4>根源なる闇にして救いなき\n<FFD4>悪しき存在」",
       "text": null
     },
     {
       "offset": "0x1C850",
       "type": "dialog",
-      "source": "ミシェル「伝承では奴のせいで\n幾つもの街が一夜にて\nこの世から消えうせたと」",
+      "source": "ミシェル「伝承では奴のせいで\n<FFD4>幾つもの街が一夜にて\n<FFD4>この世から消えうせたと」",
       "text": null
     },
     {
       "offset": "0x1C8A2",
       "type": "dialog",
-      "source": "ミシェル「確かめにいきましょう。\n彼が本当に闇の神を\n蘇らせたのかどうかを」",
+      "source": "ミシェル「確かめにいきましょう。\n<FFD4>彼が本当に闇の神を\n<FFD4>蘇らせたのかどうかを」",
       "text": null
     },
     {
@@ -1854,13 +1854,13 @@
     {
       "offset": "0x1C988",
       "type": "dialog",
-      "source": "クルガン「さっきの水晶が宿していたのは\n大地の想い」",
+      "source": "クルガン「さっきの水晶が宿していたのは\n<FFD4>大地の想い」",
       "text": null
     },
     {
       "offset": "0x1C9C0",
       "type": "dialog",
-      "source": "クルガン「この水晶は、何を宿す？\nどんな、想いを…？」",
+      "source": "クルガン「この水晶は、何を宿す？\n<FFD4>どんな、想いを…？」",
       "text": null
     },
     {
@@ -1938,25 +1938,25 @@
     {
       "offset": "0x1CBFE",
       "type": "center",
-      "source": "困ったものだ。\nまた、我が寺院に子が捨てられた。",
+      "source": "<STYLE:2>困ったものだ。\n<STYLE:2>また、我が寺院に子が捨てられた。",
       "text": null
     },
     {
       "offset": "0x1CC34",
       "type": "center",
-      "source": "近隣の村では、長雨で、植えたばかりの\n作物の芽が枯れ果てたそうだ。\n子を捨てねば、生きて行けぬのだろう。",
+      "source": "<STYLE:2>近隣の村では、長雨で、植えたばかりの\n<STYLE:2>作物の芽が枯れ果てたそうだ。\n<STYLE:2>子を捨てねば、生きて行けぬのだろう。",
       "text": null
     },
     {
       "offset": "0x1CCA4",
       "type": "center",
-      "source": "だが、ここは孤児院ではない。\nそう何人も面倒は見きれんぞ。",
+      "source": "<STYLE:2>だが、ここは孤児院ではない。\n<STYLE:2>そう何人も面倒は見きれんぞ。",
       "text": null
     },
     {
       "offset": "0x1CCE4",
       "type": "center",
-      "source": "仕方あるまい。\n我が栄光の寺院の前で、幼子を\n飢え死にさせるわけにはいくまいよ。",
+      "source": "<STYLE:2>仕方あるまい。\n<STYLE:2>我が栄光の寺院の前で、幼子を\n<STYLE:2>飢え死にさせるわけにはいくまいよ。",
       "text": null
     },
     {
@@ -1968,13 +1968,13 @@
     {
       "offset": "0x1CD64",
       "type": "center",
-      "source": "捨てられた\n捨てられた\n捨てられた",
+      "source": "捨てられた\n      捨てられた\n            捨てられた",
       "text": null
     },
     {
       "offset": "0x1CDD0",
       "type": "center",
-      "source": "捨てられた       捨てられた\n捨てられた\n捨てられた     捨てられた\n捨てられた      捨て\nれた       捨てられた\n捨てられた    捨てられた\n捨てられた    捨てら\n捨てられた    捨てられた\nてられた    捨てられた 捨てら\n捨てられた   捨てられた",
+      "source": "捨てられた       捨てられた\n      捨てられた\n 捨てられた     捨てられた\n    捨てられた      捨て\nれた       捨てられた\n  捨てられた    捨てられた\n     捨てられた    捨てら\n 捨てられた    捨てられた\nてられた    捨てられた 捨てら\n   捨てられた   捨てられた",
       "text": null
     },
     {
@@ -2004,13 +2004,13 @@
     {
       "offset": "0x1D03E",
       "type": "dialog",
-      "source": "クルガン「これは、<PAGE>…\nお前の、記憶？」",
+      "source": "クルガン「これは、<PAGE>…\n<FFD4>お前の、記憶？」",
       "text": null
     },
     {
       "offset": "0x1D06A",
       "type": "dialog",
-      "source": "クルガン「あの子供には、お前の\n面影が…………」",
+      "source": "クルガン「あの子供には、お前の\n<FFD4>面影が…………」",
       "text": null
     },
     {
@@ -2064,7 +2064,7 @@
     {
       "offset": "0x1D298",
       "type": "dialog",
-      "source": "老司教「行く所が、いや……\n帰る所がないのか？」",
+      "source": "老司教「行く所が、いや……\n<FFD3>帰る所がないのか？」",
       "text": null
     },
     {
@@ -2088,7 +2088,7 @@
     {
       "offset": "0x1D334",
       "type": "dialog",
-      "source": "子供「母さんが……\n待っていなさいって」",
+      "source": "子供「母さんが……\n<FFD2>待っていなさいって」",
       "text": null
     },
     {
@@ -2106,13 +2106,13 @@
     {
       "offset": "0x1D3A4",
       "type": "dialog",
-      "source": "老司教「だが、そなた寒さに\n震えているではないか」",
+      "source": "老司教「だが、そなた寒さに\n<FFD3>震えているではないか」",
       "text": null
     },
     {
       "offset": "0x1D3DA",
       "type": "dialog",
-      "source": "老司教「私と共に来ないか？\nそこで母を待てばよい」",
+      "source": "老司教「私と共に来ないか？\n<FFD3>そこで母を待てばよい」",
       "text": null
     },
     {
@@ -2166,43 +2166,43 @@
     {
       "offset": "0x1D598",
       "type": "dialog",
-      "source": "老司教「<PAGE>よ。\n母を恨んではならぬ」",
+      "source": "老司教「<PAGE>よ。\n<FFD3>母を恨んではならぬ」",
       "text": null
     },
     {
       "offset": "0x1D5C0",
       "type": "dialog",
-      "source": "老司教「母も、身をさかれる想いで\nした事なのだ」",
+      "source": "老司教「母も、身をさかれる想いで\n<FFD3>した事なのだ」",
       "text": null
     },
     {
       "offset": "0x1D5F4",
       "type": "dialog",
-      "source": "老司教「どこの世に好んで子を捨てる\n母がいようか」",
+      "source": "老司教「どこの世に好んで子を捨てる\n<FFD3>母がいようか」",
       "text": null
     },
     {
       "offset": "0x1D62A",
       "type": "dialog",
-      "source": "老司教「そなたが、怒りを向ける矛先は\nただひとつ。\n女王オティーリエ」",
+      "source": "老司教「そなたが、怒りを向ける矛先は\n<FFD3>ただひとつ。\n<FFD3>女王オティーリエ」",
       "text": null
     },
     {
       "offset": "0x1D676",
       "type": "dialog",
-      "source": "老司教「不作に苦しむ民をかえりみず\n救いの手を差し伸べる事が\nなかった冷たい女王」",
+      "source": "老司教「不作に苦しむ民をかえりみず\n<FFD3>救いの手を差し伸べる事が\n<FFD3>なかった冷たい女王」",
       "text": null
     },
     {
       "offset": "0x1D6CE",
       "type": "dialog",
-      "source": "老司教「王位についたばかりの\nあの小娘が……」",
+      "source": "老司教「王位についたばかりの\n<FFD3>あの小娘が……」",
       "text": null
     },
     {
       "offset": "0x1D700",
       "type": "dialog",
-      "source": "老司教「即座に不作に対する\n対応をしていれば\nかような悲劇はなかったのだ」",
+      "source": "老司教「即座に不作に対する\n<FFD3>対応をしていれば\n<FFD3>かような悲劇はなかったのだ」",
       "text": null
     },
     {
@@ -2214,13 +2214,13 @@
     {
       "offset": "0x1D766",
       "type": "center",
-      "source": "クルガン「あのお優しい陛下が\nそんな事をなさるものか！」",
+      "source": "クルガン「あのお優しい陛下が\n     そんな事をなさるものか！」",
       "text": null
     },
     {
       "offset": "0x1D7B2",
       "type": "center",
-      "source": "クルガン「国庫を開いて、民を救おうと\nなさったはずだ！」",
+      "source": "クルガン「国庫を開いて、民を救おうと\n     なさったはずだ！」",
       "text": null
     },
     {
@@ -2232,13 +2232,13 @@
     {
       "offset": "0x1D854",
       "type": "dialog",
-      "source": "老司教「あの女王がある限り\n悲劇は続く」",
+      "source": "老司教「あの女王がある限り\n<FFD3>悲劇は続く」",
       "text": null
     },
     {
       "offset": "0x1D880",
       "type": "dialog",
-      "source": "老司教「<PAGE>よ\nそなたは、女王を裁く\n剣となるのだ」",
+      "source": "老司教「<PAGE>よ\n<FFD3>そなたは、女王を裁く\n<FFD3>剣となるのだ」",
       "text": null
     },
     {
@@ -2274,13 +2274,13 @@
     {
       "offset": "0x1D9DE",
       "type": "dialog",
-      "source": "クルガン「………そうして\nお前はやって来た」",
+      "source": "クルガン「………そうして\n<FFD4>お前はやって来た」",
       "text": null
     },
     {
       "offset": "0x1DA0E",
       "type": "dialog",
-      "source": "クルガン「陛下の命を奪う\nクイーンガードとして…！」",
+      "source": "クルガン「陛下の命を奪う\n<FFD4>クイーンガードとして…！」",
       "text": null
     },
     {
@@ -2292,13 +2292,13 @@
     {
       "offset": "0x1DA62",
       "type": "dialog",
-      "source": "クルガン「母に捨てられた、それは哀れ。\nあの男にすがるしかなかった。\nそれもいた仕方なかろう」",
+      "source": "クルガン「母に捨てられた、それは哀れ。\n<FFD4>あの男にすがるしかなかった。\n<FFD4>それもいた仕方なかろう」",
       "text": null
     },
     {
       "offset": "0x1DAC6",
       "type": "dialog",
-      "source": "クルガン「だが、陛下のお側にいたのなら\nあの男の言葉が戯言だと\n何故、わからなかった！」",
+      "source": "クルガン「だが、陛下のお側にいたのなら\n<FFD4>あの男の言葉が戯言だと\n<FFD4>何故、わからなかった！」",
       "text": null
     },
     {
@@ -2358,7 +2358,7 @@
     {
       "offset": "0x1DCD6",
       "type": "dialog",
-      "source": "女王「<PAGE>。\nクイーンガードの仕事には\nなれましたか？」",
+      "source": "女王「<PAGE>。\n<FFD2>クイーンガードの仕事には\n<FFD2>なれましたか？」",
       "text": null
     },
     {
@@ -2370,37 +2370,37 @@
     {
       "offset": "0x1DD1E",
       "type": "dialog",
-      "source": "女王「そう、それは良かった。\n新たなガードが増えて\n心強く思います」",
+      "source": "女王「そう、それは良かった。\n<FFD2>新たなガードが増えて\n<FFD2>心強く思います」",
       "text": null
     },
     {
       "offset": "0x1DD68",
       "type": "dialog",
-      "source": "女僧侶「<PAGE>\nここにいたの？」",
+      "source": "女僧侶「<PAGE>\n<FFD3>ここにいたの？」",
       "text": null
     },
     {
       "offset": "0x1DD88",
       "type": "dialog",
-      "source": "女僧侶「あなたはここからの\n風景が好きね」",
+      "source": "女僧侶「あなたはここからの\n<FFD3>風景が好きね」",
       "text": null
     },
     {
       "offset": "0x1DDB6",
       "type": "dialog",
-      "source": "女僧侶「何を考えて、何を感じて\n街を見ているの？」",
+      "source": "女僧侶「何を考えて、何を感じて\n<FFD3>街を見ているの？」",
       "text": null
     },
     {
       "offset": "0x1DDEC",
       "type": "dialog",
-      "source": "女僧侶「それとも、何かを\n思い出しているのかしら」",
+      "source": "女僧侶「それとも、何かを\n<FFD3>思い出しているのかしら」",
       "text": null
     },
     {
       "offset": "0x1DE22",
       "type": "dialog",
-      "source": "女僧侶「余計な事を聞いた？\nだったら、ごめんなさい」",
+      "source": "女僧侶「余計な事を聞いた？\n<FFD3>だったら、ごめんなさい」",
       "text": null
     },
     {
@@ -2412,13 +2412,13 @@
     {
       "offset": "0x1DE80",
       "type": "dialog",
-      "source": "女僧侶「あなたは、わたし達に\n心を見せてはくれないから…」",
+      "source": "女僧侶「あなたは、わたし達に\n<FFD3>心を見せてはくれないから…」",
       "text": null
     },
     {
       "offset": "0x1DEBE",
       "type": "dialog",
-      "source": "女僧侶「同じ、クイーンガードなのに\n心を閉ざし合うのは\nとても哀しいから………」",
+      "source": "女僧侶「同じ、クイーンガードなのに\n<FFD3>心を閉ざし合うのは\n<FFD3>とても哀しいから………」",
       "text": null
     },
     {
@@ -2460,13 +2460,13 @@
     {
       "offset": "0x1E01A",
       "type": "dialog",
-      "source": "女僧侶「お願いがあるの。\n一緒に来てくれる？」",
+      "source": "女僧侶「お願いがあるの。\n<FFD3>一緒に来てくれる？」",
       "text": null
     },
     {
       "offset": "0x1E04C",
       "type": "dialog",
-      "source": "女僧侶「陛下の事なら大丈夫。\n長とクルガンが\n一緒にいるわ」",
+      "source": "女僧侶「陛下の事なら大丈夫。\n<FFD3>長とクルガンが\n<FFD3>一緒にいるわ」",
       "text": null
     },
     {
@@ -2484,7 +2484,7 @@
     {
       "offset": "0x1E0E6",
       "type": "dialog",
-      "source": "女僧侶「旅立つ前に、あなたとこの景色を\n見ておきたかったの」",
+      "source": "女僧侶「旅立つ前に、あなたとこの景色を\n<FFD3>見ておきたかったの」",
       "text": null
     },
     {
@@ -2496,43 +2496,43 @@
     {
       "offset": "0x1E130",
       "type": "dialog",
-      "source": "女僧侶「わたしね。\n陛下の御命令で\n北部にある小さな村に行くの」",
+      "source": "女僧侶「わたしね。\n<FFD3>陛下の御命令で\n<FFD3>北部にある小さな村に行くの」",
       "text": null
     },
     {
       "offset": "0x1E176",
       "type": "dialog",
-      "source": "女僧侶「百に近い数の不死者が、村人を\n襲っているんですって」",
+      "source": "女僧侶「百に近い数の不死者が、村人を\n<FFD3>襲っているんですって」",
       "text": null
     },
     {
       "offset": "0x1E1B6",
       "type": "dialog",
-      "source": "女僧侶「その不死者達を浄化する役目を\nおおせつかったの」",
+      "source": "女僧侶「その不死者達を浄化する役目を\n<FFD3>おおせつかったの」",
       "text": null
     },
     {
       "offset": "0x1E1F2",
       "type": "dialog",
-      "source": "女僧侶「貴族の方々の中には、そんな小さな\n村ひとつ、捨ておけばいいと\n言う意見もあるそうだけれど」",
+      "source": "女僧侶「貴族の方々の中には、そんな小さな\n<FFD3>村ひとつ、捨ておけばいいと\n<FFD3>言う意見もあるそうだけれど」",
       "text": null
     },
     {
       "offset": "0x1E25A",
       "type": "dialog",
-      "source": "女僧侶「陛下は事態を重く見られたわ。\nこれは、ドゥーハン全土の\n問題だとおっしゃった」",
+      "source": "女僧侶「陛下は事態を重く見られたわ。\n<FFD3>これは、ドゥーハン全土の\n<FFD3>問題だとおっしゃった」",
       "text": null
     },
     {
       "offset": "0x1E2B6",
       "type": "dialog",
-      "source": "女僧侶「けれど、貴族の反対もあって\n正規の軍は動かせない」",
+      "source": "女僧侶「けれど、貴族の反対もあって\n<FFD3>正規の軍は動かせない」",
       "text": null
     },
     {
       "offset": "0x1E2F4",
       "type": "dialog",
-      "source": "女僧侶「そこで、陛下はわたしに\n命令なさったの」",
+      "source": "女僧侶「そこで、陛下はわたしに\n<FFD3>命令なさったの」",
       "text": null
     },
     {
@@ -2550,7 +2550,7 @@
     {
       "offset": "0x1E35A",
       "type": "dialog",
-      "source": "女僧侶「今度の事は、秘密裏に\n行わなければならない。\n行くのは、わたし一人よ」",
+      "source": "女僧侶「今度の事は、秘密裏に\n<FFD3>行わなければならない。\n<FFD3>行くのは、わたし一人よ」",
       "text": null
     },
     {
@@ -2586,7 +2586,7 @@
     {
       "offset": "0x1E470",
       "type": "dialog",
-      "source": "女僧侶「だけど、わたしは陛下の信頼に\n応えたい」",
+      "source": "女僧侶「だけど、わたしは陛下の信頼に\n<FFD3>応えたい」",
       "text": null
     },
     {
@@ -2598,13 +2598,13 @@
     {
       "offset": "0x1E4B4",
       "type": "dialog",
-      "source": "女僧侶「陛下は、決して無茶な事は\nおっしゃらない」",
+      "source": "女僧侶「陛下は、決して無茶な事は\n<FFD3>おっしゃらない」",
       "text": null
     },
     {
       "offset": "0x1E4EA",
       "type": "dialog",
-      "source": "女僧侶「わたしの力を信頼してくださって\nいるからこその命令なの」",
+      "source": "女僧侶「わたしの力を信頼してくださって\n<FFD3>いるからこその命令なの」",
       "text": null
     },
     {
@@ -2622,7 +2622,7 @@
     {
       "offset": "0x1E57E",
       "type": "dialog",
-      "source": "女僧侶「わたしは、必ず帰ってくる。\n陛下のためにも\nわたし自身のためにも」",
+      "source": "女僧侶「わたしは、必ず帰ってくる。\n<FFD3>陛下のためにも\n<FFD3>わたし自身のためにも」",
       "text": null
     },
     {
@@ -2634,7 +2634,7 @@
     {
       "offset": "0x1E5E4",
       "type": "dialog",
-      "source": "女僧侶「また、あなたとこの景色を\n見たいもの」",
+      "source": "女僧侶「また、あなたとこの景色を\n<FFD3>見たいもの」",
       "text": null
     },
     {
@@ -2664,7 +2664,7 @@
     {
       "offset": "0x1E6B0",
       "type": "dialog",
-      "source": "ソフィア「名前を呼んでくれたの\n初めてね」",
+      "source": "ソフィア「名前を呼んでくれたの\n<FFD4>初めてね」",
       "text": null
     },
     {
@@ -2676,7 +2676,7 @@
     {
       "offset": "0x1E702",
       "type": "dialog",
-      "source": "クルガン「………ソフィアは\nお前を慕っていた」",
+      "source": "クルガン「………ソフィアは\n<FFD4>お前を慕っていた」",
       "text": null
     },
     {
@@ -2688,13 +2688,13 @@
     {
       "offset": "0x1E74E",
       "type": "dialog",
-      "source": "クルガン「お前を疑った時\nあいつは、泣きそうな\n顔をしていた」",
+      "source": "クルガン「お前を疑った時\n<FFD4>あいつは、泣きそうな\n<FFD4>顔をしていた」",
       "text": null
     },
     {
       "offset": "0x1E792",
       "type": "dialog",
-      "source": "クルガン「そして陛下は、静かに俺を\nたしなめられた………」",
+      "source": "クルガン「そして陛下は、静かに俺を\n<FFD4>たしなめられた………」",
       "text": null
     },
     {
@@ -2706,37 +2706,37 @@
     {
       "offset": "0x1E7EA",
       "type": "dialog",
-      "source": "クルガン「何度かお前と共に、戦った。\nお前の強さはよくわかった」",
+      "source": "クルガン「何度かお前と共に、戦った。\n<FFD4>お前の強さはよくわかった」",
       "text": null
     },
     {
       "offset": "0x1E82E",
       "type": "dialog",
-      "source": "クルガン「だが、気になる事が\nひとつある」",
+      "source": "クルガン「だが、気になる事が\n<FFD4>ひとつある」",
       "text": null
     },
     {
       "offset": "0x1E85C",
       "type": "dialog",
-      "source": "クルガン「他の連中は気づいていない。\nこれに気づいたのは俺が\n忍者だからかもしれん」",
+      "source": "クルガン「他の連中は気づいていない。\n<FFD4>これに気づいたのは俺が\n<FFD4>忍者だからかもしれん」",
       "text": null
     },
     {
       "offset": "0x1E8B6",
       "type": "dialog",
-      "source": "クルガン「お前のその業……\nそれは、暗殺の業では\nないのか？」",
+      "source": "クルガン「お前のその業……\n<FFD4>それは、暗殺の業では\n<FFD4>ないのか？」",
       "text": null
     },
     {
       "offset": "0x1E8FA",
       "type": "dialog",
-      "source": "クルガン「お前から、死のニオイがする。\n死を運ぶ、風のニオイがな」",
+      "source": "クルガン「お前から、死のニオイがする。\n<FFD4>死を運ぶ、風のニオイがな」",
       "text": null
     },
     {
       "offset": "0x1E940",
       "type": "dialog",
-      "source": "クルガン「お前のその業、一体誰に\n向けるつもりだ？」",
+      "source": "クルガン「お前のその業、一体誰に\n<FFD4>向けるつもりだ？」",
       "text": null
     },
     {
@@ -2754,7 +2754,7 @@
     {
       "offset": "0x1E9C0",
       "type": "center",
-      "source": "「クルガン、おやめなさい」",
+      "source": "<STYLE:2>「クルガン、おやめなさい」",
       "text": null
     },
     {
@@ -2784,19 +2784,19 @@
     {
       "offset": "0x1EA7E",
       "type": "dialog",
-      "source": "クルガン「ですが、私は陛下のお命を\n護るつとめがあります」",
+      "source": "クルガン「ですが、私は陛下のお命を\n<FFD4>護るつとめがあります」",
       "text": null
     },
     {
       "offset": "0x1EABC",
       "type": "dialog",
-      "source": "クルガン「陛下の害となるものは\n始末せねばなりません」",
+      "source": "クルガン「陛下の害となるものは\n<FFD4>始末せねばなりません」",
       "text": null
     },
     {
       "offset": "0x1EAF6",
       "type": "dialog",
-      "source": "クルガン「例えそれが、仲間…\nクイーンガードであったと\nしても」",
+      "source": "クルガン「例えそれが、仲間…\n<FFD4>クイーンガードであったと\n<FFD4>しても」",
       "text": null
     },
     {
@@ -2820,31 +2820,31 @@
     {
       "offset": "0x1EBA6",
       "type": "dialog",
-      "source": "女王「わたくしは、あなた方を\n心から信頼しています」",
+      "source": "女王「わたくしは、あなた方を\n<FFD2>心から信頼しています」",
       "text": null
     },
     {
       "offset": "0x1EBDE",
       "type": "dialog",
-      "source": "女王「それゆえ、あなた方に\n命を預けているのです」",
+      "source": "女王「それゆえ、あなた方に\n<FFD2>命を預けているのです」",
       "text": null
     },
     {
       "offset": "0x1EC14",
       "type": "dialog",
-      "source": "女王「そのあなた方に\n命を狙われるのなら………」",
+      "source": "女王「そのあなた方に\n<FFD2>命を狙われるのなら………」",
       "text": null
     },
     {
       "offset": "0x1EC48",
       "type": "dialog",
-      "source": "女王「わたくしは、よほど愚かな事を\nしたのでしょう」",
+      "source": "女王「わたくしは、よほど愚かな事を\n<FFD2>したのでしょう」",
       "text": null
     },
     {
       "offset": "0x1EC80",
       "type": "dialog",
-      "source": "女王「そのような王などいりません。\n斬って捨てなさい」",
+      "source": "女王「そのような王などいりません。\n<FFD2>斬って捨てなさい」",
       "text": null
     },
     {
@@ -2856,19 +2856,19 @@
     {
       "offset": "0x1ECE8",
       "type": "dialog",
-      "source": "女王「あなた方は、命を懸けて\nわたくしを護る」",
+      "source": "女王「あなた方は、命を懸けて\n<FFD2>わたくしを護る」",
       "text": null
     },
     {
       "offset": "0x1ED1A",
       "type": "dialog",
-      "source": "女王「ならば、わたくしはその心に\n命を懸けましょう」",
+      "source": "女王「ならば、わたくしはその心に\n<FFD2>命を懸けましょう」",
       "text": null
     },
     {
       "offset": "0x1ED52",
       "type": "dialog",
-      "source": "女王「命には、命をもって\n報いましょう」",
+      "source": "女王「命には、命をもって\n<FFD2>報いましょう」",
       "text": null
     },
     {
@@ -2898,13 +2898,13 @@
     {
       "offset": "0x1EDEC",
       "type": "dialog",
-      "source": "女王「わたくしは、あなたを\n信頼しています」",
+      "source": "女王「わたくしは、あなたを\n<FFD2>信頼しています」",
       "text": null
     },
     {
       "offset": "0x1EE1C",
       "type": "dialog",
-      "source": "女王「固く鎧った心の奥に\nそっと息づいている\nあなたの心を………」",
+      "source": "女王「固く鎧った心の奥に\n<FFD2>そっと息づいている\n<FFD2>あなたの心を………」",
       "text": null
     },
     {
@@ -2922,43 +2922,43 @@
     {
       "offset": "0x1EE82",
       "type": "dialog",
-      "source": "クルガン「この時から\n確かにお前は変わった」",
+      "source": "クルガン「この時から\n<FFD4>確かにお前は変わった」",
       "text": null
     },
     {
       "offset": "0x1EEB2",
       "type": "dialog",
-      "source": "クルガン「だから、俺もあれ以上は\n何も言わなかった」",
+      "source": "クルガン「だから、俺もあれ以上は\n<FFD4>何も言わなかった」",
       "text": null
     },
     {
       "offset": "0x1EEEA",
       "type": "dialog",
-      "source": "クルガン「だが、今は思う。\nあの時………」",
+      "source": "クルガン「だが、今は思う。\n<FFD4>あの時………」",
       "text": null
     },
     {
       "offset": "0x1EF18",
       "type": "dialog",
-      "source": "クルガン「ソフィアに泣かれようと\n陛下にとがめられようと\nお前を始末していれば、と」",
+      "source": "クルガン「ソフィアに泣かれようと\n<FFD4>陛下にとがめられようと\n<FFD4>お前を始末していれば、と」",
       "text": null
     },
     {
       "offset": "0x1EF72",
       "type": "dialog",
-      "source": "クルガン「<PAGE>………\n何故、陛下と\nソフィアを裏切った！」",
+      "source": "クルガン「<PAGE>………\n<FFD4>何故、陛下と\n<FFD4>ソフィアを裏切った！」",
       "text": null
     },
     {
       "offset": "0x1EFB0",
       "type": "dialog",
-      "source": "クルガン「お前は、二人を大切に\n思うようになっていたんじゃ\nないのか！？」",
+      "source": "クルガン「お前は、二人を大切に\n<FFD4>思うようになっていたんじゃ\n<FFD4>ないのか！？」",
       "text": null
     },
     {
       "offset": "0x1F000",
       "type": "dialog",
-      "source": "クルガン「この想いの波からも\nお前の気持ちが伝わってくる。\nなのに、何故……！」",
+      "source": "クルガン「この想いの波からも\n<FFD4>お前の気持ちが伝わってくる。\n<FFD4>なのに、何故……！」",
       "text": null
     },
     {
@@ -3036,121 +3036,121 @@
     {
       "offset": "0x1F2A4",
       "type": "dialog",
-      "source": "サラ「この水晶からは心が痛くなる\n懐かしさと、せつなさが\n伝わってくる」",
+      "source": "サラ「この水晶からは心が痛くなる\n<FFD2>懐かしさと、せつなさが\n<FFD2>伝わってくる」",
       "text": null
     },
     {
       "offset": "0x1F2F2",
       "type": "dialog",
-      "source": "サラ「寒くて暗い闇の中で、\n一筋の暖かい光のような\n記憶がきらめいている」",
+      "source": "サラ「寒くて暗い闇の中で、\n<FFD2>一筋の暖かい光のような\n<FFD2>記憶がきらめいている」",
       "text": null
     },
     {
       "offset": "0x1F342",
       "type": "dialog",
-      "source": "サラ「この水晶ってあなたの心を\n映し出しているの？」",
+      "source": "サラ「この水晶ってあなたの心を\n<FFD2>映し出しているの？」",
       "text": null
     },
     {
       "offset": "0x1F37A",
       "type": "dialog",
-      "source": "サラ「もしそうだとしたら、\nあなたはその大切な記憶を\nどこで無くしてしまったの」",
+      "source": "サラ「もしそうだとしたら、\n<FFD2>あなたはその大切な記憶を\n<FFD2>どこで無くしてしまったの」",
       "text": null
     },
     {
       "offset": "0x1F3D0",
       "type": "dialog",
-      "source": "サラ「最初に出会った時あなたは、\n初めてこの街に来たような\n素振りだった」",
+      "source": "サラ「最初に出会った時あなたは、\n<FFD2>初めてこの街に来たような\n<FFD2>素振りだった」",
       "text": null
     },
     {
       "offset": "0x1F420",
       "type": "dialog",
-      "source": "サラ「何か隠さなきゃならない\nわけがあるなら別だけど」",
+      "source": "サラ「何か隠さなきゃならない\n<FFD2>わけがあるなら別だけど」",
       "text": null
     },
     {
       "offset": "0x1F45A",
       "type": "dialog",
-      "source": "サラ「あなたが、わたし達仲間まで\n騙すような人だとは、\nどうしても思えない」",
+      "source": "サラ「あなたが、わたし達仲間まで\n<FFD2>騙すような人だとは、\n<FFD2>どうしても思えない」",
       "text": null
     },
     {
       "offset": "0x1F4AC",
       "type": "dialog",
-      "source": "リカルド「まさか<PAGE>が、\nクイーンガードだったとは」",
+      "source": "リカルド「まさか<PAGE>が、\n<FFD4>クイーンガードだったとは」",
       "text": null
     },
     {
       "offset": "0x1F4E2",
       "type": "dialog",
-      "source": "リカルド「へへっ、俺も子供の時分、\nずいぶん憧れたものさ」",
+      "source": "リカルド「へへっ、俺も子供の時分、\n<FFD4>ずいぶん憧れたものさ」",
       "text": null
     },
     {
       "offset": "0x1F520",
       "type": "dialog",
-      "source": "リカルド「なんせ女王陛下を守る盾、\n歴戦の勇者達だもんな」",
+      "source": "リカルド「なんせ女王陛下を守る盾、\n<FFD4>歴戦の勇者達だもんな」",
       "text": null
     },
     {
       "offset": "0x1F55E",
       "type": "dialog",
-      "source": "リカルド「きっと<PAGE>は\n記憶を無くしているんだよ」",
+      "source": "リカルド「きっと<PAGE>は\n<FFD4>記憶を無くしているんだよ」",
       "text": null
     },
     {
       "offset": "0x1F592",
       "type": "dialog",
-      "source": "リカルド「だって俺達と会った時、\nアレイドも知らないまるで\n初心者みたいだったもんな」",
+      "source": "リカルド「だって俺達と会った時、\n<FFD4>アレイドも知らないまるで\n<FFD4>初心者みたいだったもんな」",
       "text": null
     },
     {
       "offset": "0x1F5EE",
       "type": "dialog",
-      "source": "リカルド「俺はあのクソジジイがなんか\nろくでもねえ事をしたのが\n原因だと思うぜ」",
+      "source": "リカルド「俺はあのクソジジイがなんか\n<FFD4>ろくでもねえ事をしたのが\n<FFD4>原因だと思うぜ」",
       "text": null
     },
     {
       "offset": "0x1F644",
       "type": "dialog",
-      "source": "グレッグ「<PAGE>が記憶を\n失っている事は明白」",
+      "source": "グレッグ「<PAGE>が記憶を\n<FFD4>失っている事は明白」",
       "text": null
     },
     {
       "offset": "0x1F672",
       "type": "dialog",
-      "source": "グレッグ「それにもしかしたら女王様も\n同じかもしれぬ」",
+      "source": "グレッグ「それにもしかしたら女王様も\n<FFD4>同じかもしれぬ」",
       "text": null
     },
     {
       "offset": "0x1F6AC",
       "type": "dialog",
-      "source": "グレッグ「何故なら君も見ただろう。\n水晶が映し出したあの慈しみ\n深き女王様を」",
+      "source": "グレッグ「何故なら君も見ただろう。\n<FFD4>水晶が映し出したあの慈しみ\n<FFD4>深き女王様を」",
       "text": null
     },
     {
       "offset": "0x1F700",
       "type": "dialog",
-      "source": "グレッグ「あれがドゥーハンの住民が\n愛する女王の真の姿」",
+      "source": "グレッグ「あれがドゥーハンの住民が\n<FFD4>愛する女王の真の姿」",
       "text": null
     },
     {
       "offset": "0x1F73C",
       "type": "dialog",
-      "source": "グレッグ「<PAGE>と原因が\n同じかはわからないが」",
+      "source": "グレッグ「<PAGE>と原因が\n<FFD4>同じかはわからないが」",
       "text": null
     },
     {
       "offset": "0x1F76C",
       "type": "dialog",
-      "source": "グレッグ「今の女王様がまったくの\n別人であるのは確かだ」",
+      "source": "グレッグ「今の女王様がまったくの\n<FFD4>別人であるのは確かだ」",
       "text": null
     },
     {
       "offset": "0x1F7A8",
       "type": "dialog",
-      "source": "グレッグ「残りの水晶がこの謎の\n答えを出してくれるなら\nいいのだが…」",
+      "source": "グレッグ「残りの水晶がこの謎の\n<FFD4>答えを出してくれるなら\n<FFD4>いいのだが…」",
       "text": null
     },
     {
@@ -3210,7 +3210,7 @@
     {
       "offset": "0x1F952",
       "type": "dialog",
-      "source": "女王「あなたに、渡しておきたい\n物があります」",
+      "source": "女王「あなたに、渡しておきたい\n<FFD2>物があります」",
       "text": null
     },
     {
@@ -3222,37 +3222,37 @@
     {
       "offset": "0x1F9B2",
       "type": "dialog",
-      "source": "女王「最近のあなたの成長ぶりは\n著しい」",
+      "source": "女王「最近のあなたの成長ぶりは\n<FFD2>著しい」",
       "text": null
     },
     {
       "offset": "0x1F9DE",
       "type": "dialog",
-      "source": "女王「滅多に人をほめた事のない\nレドゥアが、感心していた\nほどですもの」",
+      "source": "女王「滅多に人をほめた事のない\n<FFD2>レドゥアが、感心していた\n<FFD2>ほどですもの」",
       "text": null
     },
     {
       "offset": "0x1FA2C",
       "type": "dialog",
-      "source": "女王「本当にクイーンガードらしく\nなりましたね」",
+      "source": "女王「本当にクイーンガードらしく\n<FFD2>なりましたね」",
       "text": null
     },
     {
       "offset": "0x1FA60",
       "type": "dialog",
-      "source": "女王「今のあなたなら、この剣を持つに\nふさわしいでしょう」",
+      "source": "女王「今のあなたなら、この剣を持つに\n<FFD2>ふさわしいでしょう」",
       "text": null
     },
     {
       "offset": "0x1FA9E",
       "type": "dialog",
-      "source": "女王「これは、中世期より\nクイーンガードに代々\n受け継がれて来た剣」",
+      "source": "女王「これは、中世期より\n<FFD2>クイーンガードに代々\n<FFD2>受け継がれて来た剣」",
       "text": null
     },
     {
       "offset": "0x1FAE8",
       "type": "dialog",
-      "source": "女王「この剣を手に\n一層の働きを期待します」",
+      "source": "女王「この剣を手に\n<FFD2>一層の働きを期待します」",
       "text": null
     },
     {
@@ -3336,7 +3336,7 @@
     {
       "offset": "0x1FD08",
       "type": "dialog",
-      "source": "老司教「弱みはつくるなと\n教えたはずぞ、我が道具よ」",
+      "source": "老司教「弱みはつくるなと\n<FFD3>教えたはずぞ、我が道具よ」",
       "text": null
     },
     {
@@ -3348,7 +3348,7 @@
     {
       "offset": "0x1FD84",
       "type": "dialog",
-      "source": "老司教「<PAGE>よ。\nお前の使命を思い出させて\nやろう」",
+      "source": "老司教「<PAGE>よ。\n<FFD3>お前の使命を思い出させて\n<FFD3>やろう」",
       "text": null
     },
     {
@@ -3360,25 +3360,25 @@
     {
       "offset": "0x1FDD6",
       "type": "dialog",
-      "source": "老司教「出来ぬというのなら\nこの娘の命をもらう」",
+      "source": "老司教「出来ぬというのなら\n<FFD3>この娘の命をもらう」",
       "text": null
     },
     {
       "offset": "0x1FE0A",
       "type": "dialog",
-      "source": "老司教「この娘もクイーンガード。\n女王のためになら\n喜んで命を差し出すだろう」",
+      "source": "老司教「この娘もクイーンガード。\n<FFD3>女王のためになら\n<FFD3>喜んで命を差し出すだろう」",
       "text": null
     },
     {
       "offset": "0x1FE5E",
       "type": "dialog",
-      "source": "老司教「すぐに、とは言わぬ。\nよく考えるがいい」",
+      "source": "老司教「すぐに、とは言わぬ。\n<FFD3>よく考えるがいい」",
       "text": null
     },
     {
       "offset": "0x1FE92",
       "type": "dialog",
-      "source": "老司教「この娘をとるか…\n女王をとるかを\nようく、な」",
+      "source": "老司教「この娘をとるか…\n<FFD3>女王をとるかを\n<FFD3>ようく、な」",
       "text": null
     },
     {
@@ -3420,13 +3420,13 @@
     {
       "offset": "0x1FFBA",
       "type": "dialog",
-      "source": "クルガン「城内でおこった事なのに\n俺はこれに気づきも\nしなかったというのか？」",
+      "source": "クルガン「城内でおこった事なのに\n<FFD4>俺はこれに気づきも\n<FFD4>しなかったというのか？」",
       "text": null
     },
     {
       "offset": "0x2000E",
       "type": "dialog",
-      "source": "クルガン「陛下をおびき寄せるため\nソフィアをさらったのは\nお前では………」",
+      "source": "クルガン「陛下をおびき寄せるため\n<FFD4>ソフィアをさらったのは\n<FFD4>お前では………」",
       "text": null
     },
     {
@@ -3480,7 +3480,7 @@
     {
       "offset": "0x201E2",
       "type": "dialog",
-      "source": "老司教「<PAGE>よ。\nあくまでも逆らうのだな」",
+      "source": "老司教「<PAGE>よ。\n<FFD3>あくまでも逆らうのだな」",
       "text": null
     },
     {
@@ -3492,7 +3492,7 @@
     {
       "offset": "0x20230",
       "type": "dialog",
-      "source": "老司教「ならば、約束どおり\nこの娘の命をもらおうぞ！！」",
+      "source": "老司教「ならば、約束どおり\n<FFD3>この娘の命をもらおうぞ！！」",
       "text": null
     },
     {
@@ -3516,7 +3516,7 @@
     {
       "offset": "0x202F2",
       "type": "dialog",
-      "source": "老司教「ようこそ、女王。\n我が寺院へ………」",
+      "source": "老司教「ようこそ、女王。\n<FFD3>我が寺院へ………」",
       "text": null
     },
     {
@@ -3534,25 +3534,25 @@
     {
       "offset": "0x20354",
       "type": "dialog",
-      "source": "女王「あなた方の心に報いるため\nわたくしは命を懸けると」",
+      "source": "女王「あなた方の心に報いるため\n<FFD2>わたくしは命を懸けると」",
       "text": null
     },
     {
       "offset": "0x20390",
       "type": "dialog",
-      "source": "老司教「ほぅ。\n道具のために、自ら命を\n差し出すと言うのですな」",
+      "source": "老司教「ほぅ。\n<FFD3>道具のために、自ら命を\n<FFD3>差し出すと言うのですな」",
       "text": null
     },
     {
       "offset": "0x203D6",
       "type": "dialog",
-      "source": "女王「ひかえよ、下郎！！\nそなたに、くれる命はない」",
+      "source": "女王「ひかえよ、下郎！！\n<FFD2>そなたに、くれる命はない」",
       "text": null
     },
     {
       "offset": "0x2040E",
       "type": "dialog",
-      "source": "女王「わたくしは、<PAGE>と\nソフィアのために\n命を懸けるのです」",
+      "source": "女王「わたくしは、<PAGE>と\n<FFD2>ソフィアのために\n<FFD2>命を懸けるのです」",
       "text": null
     },
     {
@@ -3564,7 +3564,7 @@
     {
       "offset": "0x20466",
       "type": "dialog",
-      "source": "女王「ソフィアを助け\n必ず三人で生きて戻りますよ」",
+      "source": "女王「ソフィアを助け\n<FFD2>必ず三人で生きて戻りますよ」",
       "text": null
     },
     {
@@ -3636,7 +3636,7 @@
     {
       "offset": "0x206B2",
       "type": "dialog",
-      "source": "クルガン「<PAGE>。\n貴様何をしている！！」",
+      "source": "クルガン「<PAGE>。\n<FFD4>貴様何をしている！！」",
       "text": null
     },
     {
@@ -3654,13 +3654,13 @@
     {
       "offset": "0x2075A",
       "type": "dialog",
-      "source": "老司教「フハハ、もうよい\n<PAGE>」",
+      "source": "老司教「フハハ、もうよい\n<FFD3><PAGE>」",
       "text": null
     },
     {
       "offset": "0x2077C",
       "type": "dialog",
-      "source": "老司教「今こそ儀式の魔力は\n練りあがったわ！！」",
+      "source": "老司教「今こそ儀式の魔力は\n<FFD3>練りあがったわ！！」",
       "text": null
     },
     {
@@ -3690,25 +3690,25 @@
     {
       "offset": "0x20890",
       "type": "center",
-      "source": "魂が身体から引き離されるような衝撃が\n<PAGE>達を襲う。<BREAK>",
+      "source": "<STYLE:6>魂が身体から引き離されるような衝撃が\n<STYLE:6><PAGE>達を襲う。<BREAK>",
       "text": null
     },
     {
       "offset": "0x208CA",
       "type": "center",
-      "source": "白光の中、ソフィアの姿が\n消えて行った。<BREAK>",
+      "source": "<STYLE:6>白光の中、ソフィアの姿が\n<STYLE:6>消えて行った。<BREAK>",
       "text": null
     },
     {
       "offset": "0x208FA",
       "type": "center",
-      "source": "<PAGE>の意識も、光の中に\nとけ消えてしまいそうになる。<BREAK>",
+      "source": "<STYLE:6><PAGE>の意識も、光の中に\n<STYLE:6>とけ消えてしまいそうになる。<BREAK>",
       "text": null
     },
     {
       "offset": "0x20934",
       "type": "center",
-      "source": "<PAGE>は\n最後の力を振りしぼり\n老司教に、クイーンガードの剣を\n投げつけた………<BREAK>",
+      "source": "<STYLE:6><PAGE>は\n<STYLE:6>最後の力を振りしぼり\n<STYLE:6>老司教に、クイーンガードの剣を\n<STYLE:6>投げつけた………<BREAK>",
       "text": null
     },
     {
@@ -3726,7 +3726,7 @@
     {
       "offset": "0x209EE",
       "type": "center",
-      "source": "老司教「我が神よ！\n贄を受け取りたまえ！！」",
+      "source": "老司教「我が神よ！\n<FFD3>贄を受け取りたまえ！！」",
       "text": null
     },
     {
@@ -3780,13 +3780,13 @@
     {
       "offset": "0x20B98",
       "type": "dialog",
-      "source": "クルガン「レドゥアは何故\n俺達にこれを見せたく\nなかったんだ」",
+      "source": "クルガン「レドゥアは何故\n<FFD4>俺達にこれを見せたく\n<FFD4>なかったんだ」",
       "text": null
     },
     {
       "offset": "0x20BDC",
       "type": "dialog",
-      "source": "クルガン「俺達が見落としている事が\nあるのか？」",
+      "source": "クルガン「俺達が見落としている事が\n<FFD4>あるのか？」",
       "text": null
     },
     {
@@ -3798,7 +3798,7 @@
     {
       "offset": "0x20C34",
       "type": "dialog",
-      "source": "クルガン「………あの時\nレドゥアは言った」",
+      "source": "クルガン「………あの時\n<FFD4>レドゥアは言った」",
       "text": null
     },
     {
@@ -3834,7 +3834,7 @@
     {
       "offset": "0x20D32",
       "type": "dialog",
-      "source": "クルガン「いや、まさかな。\nそんな事があるはずがない。\nあって、たまるものか」",
+      "source": "クルガン「いや、まさかな。\n<FFD4>そんな事があるはずがない。\n<FFD4>あって、たまるものか」",
       "text": null
     },
     {
@@ -3846,31 +3846,31 @@
     {
       "offset": "0x20DDA",
       "type": "dialog",
-      "source": "ミシェル「闇の神を呼び寄せるための\n巨大な力…」",
+      "source": "ミシェル「闇の神を呼び寄せるための\n<FFD4>巨大な力…」",
       "text": null
     },
     {
       "offset": "0x20E0E",
       "type": "dialog",
-      "source": "ミシェル「それを得るために、\nあの狂った司教は閃光を\n起こしたんです」",
+      "source": "ミシェル「それを得るために、\n<FFD4>あの狂った司教は閃光を\n<FFD4>起こしたんです」",
       "text": null
     },
     {
       "offset": "0x20E5A",
       "type": "dialog",
-      "source": "ミシェル「全ては闇の神を蘇らせると\nいう愚かな願いのため…」",
+      "source": "ミシェル「全ては闇の神を蘇らせると\n<FFD4>いう愚かな願いのため…」",
       "text": null
     },
     {
       "offset": "0x20E9A",
       "type": "dialog",
-      "source": "ミシェル「そのために何の罪もない\n多くの人々の命が奪われた」",
+      "source": "ミシェル「そのために何の罪もない\n<FFD4>多くの人々の命が奪われた」",
       "text": null
     },
     {
       "offset": "0x20EDA",
       "type": "dialog",
-      "source": "ミシェル「彼らの魂を闇の神の飢えを\n満たす贄にするために…」",
+      "source": "ミシェル「彼らの魂を闇の神の飢えを\n<FFD4>満たす贄にするために…」",
       "text": null
     },
     {
@@ -3882,49 +3882,49 @@
     {
       "offset": "0x20F34",
       "type": "dialog",
-      "source": "アオバ「あれほど邪悪な人間を、\n私は見た事ありませんね」",
+      "source": "アオバ「あれほど邪悪な人間を、\n<FFD3>私は見た事ありませんね」",
       "text": null
     },
     {
       "offset": "0x20F70",
       "type": "dialog",
-      "source": "アオバ「聖なる者は邪になる素質にも、\n恵まれているというのは正に\n本当ですな」",
+      "source": "アオバ「聖なる者は邪になる素質にも、\n<FFD3>恵まれているというのは正に\n<FFD3>本当ですな」",
       "text": null
     },
     {
       "offset": "0x20FC4",
       "type": "dialog",
-      "source": "アオバ「魂と化しても憎しみ\n続けるなど、なかなか出来る\nもんじゃない」",
+      "source": "アオバ「魂と化しても憎しみ\n<FFD3>続けるなど、なかなか出来る\n<FFD3>もんじゃない」",
       "text": null
     },
     {
       "offset": "0x21010",
       "type": "dialog",
-      "source": "アオバ「まあ、いい加減な私には絶対\n無理という事は確かです」",
+      "source": "アオバ「まあ、いい加減な私には絶対\n<FFD3>無理という事は確かです」",
       "text": null
     },
     {
       "offset": "0x21050",
       "type": "dialog",
-      "source": "オルフェ「アオバ、ふざけている\n場合ではない！」",
+      "source": "オルフェ「アオバ、ふざけている\n<FFD4>場合ではない！」",
       "text": null
     },
     {
       "offset": "0x21084",
       "type": "dialog",
-      "source": "オルフェ「邪神の復活に我が父だけでなく\nドゥーハンの住民全てが\n犠牲になったのだ」",
+      "source": "オルフェ「邪神の復活に我が父だけでなく\n<FFD4>ドゥーハンの住民全てが\n<FFD4>犠牲になったのだ」",
       "text": null
     },
     {
       "offset": "0x210DC",
       "type": "dialog",
-      "source": "オルフェ「しかもその呪われるべき\n人間はこの世にはいない」",
+      "source": "オルフェ「しかもその呪われるべき\n<FFD4>人間はこの世にはいない」",
       "text": null
     },
     {
       "offset": "0x2111A",
       "type": "dialog",
-      "source": "オルフェ「この様な事が何故\n許されるのだ…」",
+      "source": "オルフェ「この様な事が何故\n<FFD4>許されるのだ…」",
       "text": null
     },
     {
@@ -3936,37 +3936,37 @@
     {
       "offset": "0x21168",
       "type": "dialog",
-      "source": "アオバ「地獄でしょうな。\n我々は皆、闇の中に生きて\nいるんですよ」",
+      "source": "アオバ「地獄でしょうな。\n<FFD3>我々は皆、闇の中に生きて\n<FFD3>いるんですよ」",
       "text": null
     },
     {
       "offset": "0x211B0",
       "type": "dialog",
-      "source": "アオバ「そうでないと、いろんな事が\n馬鹿馬鹿しくなっていけない」",
+      "source": "アオバ「そうでないと、いろんな事が\n<FFD3>馬鹿馬鹿しくなっていけない」",
       "text": null
     },
     {
       "offset": "0x211F4",
       "type": "dialog",
-      "source": "アオバ「だけどお嬢さん、\nあの女王様の気高いお心や」",
+      "source": "アオバ「だけどお嬢さん、\n<FFD3>あの女王様の気高いお心や」",
       "text": null
     },
     {
       "offset": "0x2122C",
       "type": "dialog",
-      "source": "アオバ「ソフィア僧侶の優しさも\nあれもまた真実ですよ」",
+      "source": "アオバ「ソフィア僧侶の優しさも\n<FFD3>あれもまた真実ですよ」",
       "text": null
     },
     {
       "offset": "0x21266",
       "type": "dialog",
-      "source": "アオバ「我々の心と同じですな。\nこの世は闇に違いないが\n光もちらほら見える」",
+      "source": "アオバ「我々の心と同じですな。\n<FFD3>この世は闇に違いないが\n<FFD3>光もちらほら見える」",
       "text": null
     },
     {
       "offset": "0x212B8",
       "type": "dialog",
-      "source": "アオバ「だからどちらも捨てきれないと\nいうところじゃないですか」",
+      "source": "アオバ「だからどちらも捨てきれないと\n<FFD3>いうところじゃないですか」",
       "text": null
     },
     {
@@ -3978,61 +3978,61 @@
     {
       "offset": "0x21320",
       "type": "dialog",
-      "source": "オルフェ「お前はまるで父の様に\nわたしを悟してくれる」",
+      "source": "オルフェ「お前はまるで父の様に\n<FFD4>わたしを悟してくれる」",
       "text": null
     },
     {
       "offset": "0x2135A",
       "type": "dialog",
-      "source": "オルフェ「これで我々が成すべき事が\n明らかになった」",
+      "source": "オルフェ「これで我々が成すべき事が\n<FFD4>明らかになった」",
       "text": null
     },
     {
       "offset": "0x21392",
       "type": "dialog",
-      "source": "オルフェ「あの司教のしでかした事が\n無駄だったと証明せねばな」",
+      "source": "オルフェ「あの司教のしでかした事が\n<FFD4>無駄だったと証明せねばな」",
       "text": null
     },
     {
       "offset": "0x213D4",
       "type": "dialog",
-      "source": "リカルド「<PAGE>、あんた\nとんでもない目に合って\nきたんだな」",
+      "source": "リカルド「<PAGE>、あんた\n<FFD4>とんでもない目に合って\n<FFD4>きたんだな」",
       "text": null
     },
     {
       "offset": "0x21414",
       "type": "dialog",
-      "source": "リカルド「親に裏切られ、司教にも\nだまされ、仲間にも信用して\nもらえずに」",
+      "source": "リカルド「親に裏切られ、司教にも\n<FFD4>だまされ、仲間にも信用して\n<FFD4>もらえずに」",
       "text": null
     },
     {
       "offset": "0x21464",
       "type": "dialog",
-      "source": "リカルド「しかも自分を信じてくれた\nたった二人の女性は、\nこの世から消えてしまった」",
+      "source": "リカルド「しかも自分を信じてくれた\n<FFD4>たった二人の女性は、\n<FFD4>この世から消えてしまった」",
       "text": null
     },
     {
       "offset": "0x214BE",
       "type": "dialog",
-      "source": "リカルド「俺なんかだったら、\nとっくの昔に人生が嫌に\nなっているね」",
+      "source": "リカルド「俺なんかだったら、\n<FFD4>とっくの昔に人生が嫌に\n<FFD4>なっているね」",
       "text": null
     },
     {
       "offset": "0x21508",
       "type": "dialog",
-      "source": "リカルド「だが信じてくれていい。\n少なくとも俺たちだけは\n違うと言っておくぜ」",
+      "source": "リカルド「だが信じてくれていい。\n<FFD4>少なくとも俺たちだけは\n<FFD4>違うと言っておくぜ」",
       "text": null
     },
     {
       "offset": "0x2155C",
       "type": "dialog",
-      "source": "リカルド「俺の魂はあんたに助けて\nもらったんだ」",
+      "source": "リカルド「俺の魂はあんたに助けて\n<FFD4>もらったんだ」",
       "text": null
     },
     {
       "offset": "0x21590",
       "type": "dialog",
-      "source": "リカルド「裏切る事はすなわち自分を\n捨てる事になっちまう」",
+      "source": "リカルド「裏切る事はすなわち自分を\n<FFD4>捨てる事になっちまう」",
       "text": null
     },
     {
@@ -4044,13 +4044,13 @@
     {
       "offset": "0x215F2",
       "type": "dialog",
-      "source": "サラ「人間、誰か信じてくれる者が\nいるならば生きていける」",
+      "source": "サラ「人間、誰か信じてくれる者が\n<FFD2>いるならば生きていける」",
       "text": null
     },
     {
       "offset": "0x21630",
       "type": "dialog",
-      "source": "サラ「だけどそれを与えてもらえず、\nやっとの事で手に入れた\nわずかな平安も奪われ…」",
+      "source": "サラ「だけどそれを与えてもらえず、\n<FFD2>やっとの事で手に入れた\n<FFD2>わずかな平安も奪われ…」",
       "text": null
     },
     {
@@ -4062,31 +4062,31 @@
     {
       "offset": "0x216AE",
       "type": "dialog",
-      "source": "サラ「あなたの辛い気持ちの\n全てがわかるっていう\nわけじゃないけど」",
+      "source": "サラ「あなたの辛い気持ちの\n<FFD2>全てがわかるっていう\n<FFD2>わけじゃないけど」",
       "text": null
     },
     {
       "offset": "0x216F8",
       "type": "dialog",
-      "source": "サラ「頼りにならなくても、\n今は仲間がいる事だけは\n忘れないでね」",
+      "source": "サラ「頼りにならなくても、\n<FFD2>今は仲間がいる事だけは\n<FFD2>忘れないでね」",
       "text": null
     },
     {
       "offset": "0x21740",
       "type": "dialog",
-      "source": "グレッグ「…たしかにあの水晶は、\n我らの知らぬ多くの事柄を\n見せてくれた」",
+      "source": "グレッグ「…たしかにあの水晶は、\n<FFD4>我らの知らぬ多くの事柄を\n<FFD4>見せてくれた」",
       "text": null
     },
     {
       "offset": "0x21790",
       "type": "dialog",
-      "source": "グレッグ「だが、今一つ解けぬ謎が\n残っている」",
+      "source": "グレッグ「だが、今一つ解けぬ謎が\n<FFD4>残っている」",
       "text": null
     },
     {
       "offset": "0x217C2",
       "type": "dialog",
-      "source": "グレッグ「あの老司教が神に捧げると\n言った<FB01>贄<FB00>の事」",
+      "source": "グレッグ「あの老司教が神に捧げると\n<FFD4>言った<FB01>贄<FB00>の事」",
       "text": null
     },
     {
@@ -4098,25 +4098,25 @@
     {
       "offset": "0x2181A",
       "type": "dialog",
-      "source": "グレッグ「あの時奴は執拗に陛下を\n狙っていた」",
+      "source": "グレッグ「あの時奴は執拗に陛下を\n<FFD4>狙っていた」",
       "text": null
     },
     {
       "offset": "0x2184C",
       "type": "dialog",
-      "source": "グレッグ「とすればオティーリエ女王を\n指すのではないか？」",
+      "source": "グレッグ「とすればオティーリエ女王を\n<FFD4>指すのではないか？」",
       "text": null
     },
     {
       "offset": "0x2188A",
       "type": "dialog",
-      "source": "グレッグ「ならば陛下は死んで\nいるんだろうか？」",
+      "source": "グレッグ「ならば陛下は死んで\n<FFD4>いるんだろうか？」",
       "text": null
     },
     {
       "offset": "0x218BE",
       "type": "dialog",
-      "source": "グレッグ「どうやらこの謎を解くのが、\n我らに与えられた使命の\nようだな」",
+      "source": "グレッグ「どうやらこの謎を解くのが、\n<FFD4>我らに与えられた使命の\n<FFD4>ようだな」",
       "text": null
     },
     {
@@ -4344,19 +4344,19 @@
     {
       "offset": "0x22032",
       "type": "dialog",
-      "source": "ソフィア「あなたが、わたしを\n思い出してくれたから……\nこうして会う事が出来る」",
+      "source": "ソフィア「あなたが、わたしを\n<FFD4>思い出してくれたから……\n<FFD4>こうして会う事が出来る」",
       "text": null
     },
     {
       "offset": "0x22088",
       "type": "dialog",
-      "source": "ソフィア「この時を\nずっと待っていたの」",
+      "source": "ソフィア「この時を\n<FFD4>ずっと待っていたの」",
       "text": null
     },
     {
       "offset": "0x220B4",
       "type": "dialog",
-      "source": "ソフィア「魂だけの存在となっても\nずっと……」",
+      "source": "ソフィア「魂だけの存在となっても\n<FFD4>ずっと……」",
       "text": null
     },
     {
@@ -4380,25 +4380,25 @@
     {
       "offset": "0x22192",
       "type": "dialog",
-      "source": "ソフィア「哀しいけれど\nもうあなたに触れる事は\n出来ない」",
+      "source": "ソフィア「哀しいけれど\n<FFD4>もうあなたに触れる事は\n<FFD4>出来ない」",
       "text": null
     },
     {
       "offset": "0x221D2",
       "type": "dialog",
-      "source": "ソフィア「でもね、少しの間だけど\nこうして、会話を交わす事は\n出来るわ」",
+      "source": "ソフィア「でもね、少しの間だけど\n<FFD4>こうして、会話を交わす事は\n<FFD4>出来るわ」",
       "text": null
     },
     {
       "offset": "0x22220",
       "type": "dialog",
-      "source": "ソフィア「それさえも、奇跡の様に\n思える」",
+      "source": "ソフィア「それさえも、奇跡の様に\n<FFD4>思える」",
       "text": null
     },
     {
       "offset": "0x2224E",
       "type": "dialog",
-      "source": "ソフィア「傷つき、戦うあなたを\n見ているだけだった\n今までと比べれば……」",
+      "source": "ソフィア「傷つき、戦うあなたを\n<FFD4>見ているだけだった\n<FFD4>今までと比べれば……」",
       "text": null
     },
     {
@@ -4434,7 +4434,7 @@
     {
       "offset": "0x223B4",
       "type": "center",
-      "source": "<PAGE>はソフィアに………\n\n礼を言う\n胸がいっぱいで何も言えない\n他に大切な人が出来たと言う\n",
+      "source": "<PAGE>はソフィアに………\n\n<FFC0>礼を言う\n<FFC1>胸がいっぱいで何も言えない\n<FFC2>他に大切な人が出来たと言う\n",
       "text": null
     },
     {
@@ -4446,7 +4446,7 @@
     {
       "offset": "0x22454",
       "type": "dialog",
-      "source": "ソフィア「やめて。\nわたし、あなたにお礼を\n言われる資格なんて、ない」",
+      "source": "ソフィア「やめて。\n<FFD4>わたし、あなたにお礼を\n<FFD4>言われる資格なんて、ない」",
       "text": null
     },
     {
@@ -4464,13 +4464,13 @@
     {
       "offset": "0x22530",
       "type": "dialog",
-      "source": "ソフィア「…ずっとあなたを\n見て来た。\nだから、知って、いるわ…」",
+      "source": "ソフィア「…ずっとあなたを\n<FFD4>見て来た。\n<FFD4>だから、知って、いるわ…」",
       "text": null
     },
     {
       "offset": "0x22578",
       "type": "dialog",
-      "source": "ソフィア「でもそれは仕方がないって\n思っている」",
+      "source": "ソフィア「でもそれは仕方がないって\n<FFD4>思っている」",
       "text": null
     },
     {
@@ -4482,25 +4482,25 @@
     {
       "offset": "0x225CC",
       "type": "dialog",
-      "source": "ソフィア「わたし、あなたの平和な日々を\nこわしてしまった」",
+      "source": "ソフィア「わたし、あなたの平和な日々を\n<FFD4>こわしてしまった」",
       "text": null
     },
     {
       "offset": "0x2260A",
       "type": "dialog",
-      "source": "ソフィア「わたしが捕まらなければ\nあなたは、今もあの場所で\n生きていたのに」",
+      "source": "ソフィア「わたしが捕まらなければ\n<FFD4>あなたは、今もあの場所で\n<FFD4>生きていたのに」",
       "text": null
     },
     {
       "offset": "0x2265C",
       "type": "dialog",
-      "source": "ソフィア「いくら謝っても\n謝りきれない」",
+      "source": "ソフィア「いくら謝っても\n<FFD4>謝りきれない」",
       "text": null
     },
     {
       "offset": "0x22688",
       "type": "dialog",
-      "source": "ソフィア「なのに、わたし、あなたに\nつらい仕事を頼もうと\nしている」",
+      "source": "ソフィア「なのに、わたし、あなたに\n<FFD4>つらい仕事を頼もうと\n<FFD4>している」",
       "text": null
     },
     {
@@ -4512,13 +4512,13 @@
     {
       "offset": "0x2270C",
       "type": "dialog",
-      "source": "ソフィア「ドゥーハンを襲った\n滅びの閃光…」",
+      "source": "ソフィア「ドゥーハンを襲った\n<FFD4>滅びの閃光…」",
       "text": null
     },
     {
       "offset": "0x2273C",
       "type": "dialog",
-      "source": "ソフィア「あれは、ただの破壊の\n魔法じゃない」",
+      "source": "ソフィア「あれは、ただの破壊の\n<FFD4>魔法じゃない」",
       "text": null
     },
     {
@@ -4530,49 +4530,49 @@
     {
       "offset": "0x2278A",
       "type": "dialog",
-      "source": "ソフィア「イレモノを破壊し\n魂を抽出する儀式なの！」",
+      "source": "ソフィア「イレモノを破壊し\n<FFD4>魂を抽出する儀式なの！」",
       "text": null
     },
     {
       "offset": "0x227C2",
       "type": "dialog",
-      "source": "ソフィア「抽出された魂達は\n異空に眠る禍々しい神への\n贄となる」",
+      "source": "ソフィア「抽出された魂達は\n<FFD4>異空に眠る禍々しい神への\n<FFD4>贄となる」",
       "text": null
     },
     {
       "offset": "0x22808",
       "type": "dialog",
-      "source": "ソフィア「中には、肉体が滅びた事が\n理解出来ず、存在し続ける\n魂や……」",
+      "source": "ソフィア「中には、肉体が滅びた事が\n<FFD4>理解出来ず、存在し続ける\n<FFD4>魂や……」",
       "text": null
     },
     {
       "offset": "0x22856",
       "type": "dialog",
-      "source": "ソフィア「強い想いを持つ事で\n存在し続ける魂もあるわ」",
+      "source": "ソフィア「強い想いを持つ事で\n<FFD4>存在し続ける魂もあるわ」",
       "text": null
     },
     {
       "offset": "0x22890",
       "type": "dialog",
-      "source": "ソフィア「でも、それらもいずれ\n神と同化するでしょう」",
+      "source": "ソフィア「でも、それらもいずれ\n<FFD4>神と同化するでしょう」",
       "text": null
     },
     {
       "offset": "0x228CA",
       "type": "dialog",
-      "source": "ソフィア「神の手中には今\n至高の魂がある」",
+      "source": "ソフィア「神の手中には今\n<FFD4>至高の魂がある」",
       "text": null
     },
     {
       "offset": "0x228F8",
       "type": "dialog",
-      "source": "ソフィア「あとわずかの魂で\n神は蘇るの……！」",
+      "source": "ソフィア「あとわずかの魂で\n<FFD4>神は蘇るの……！」",
       "text": null
     },
     {
       "offset": "0x2292A",
       "type": "dialog",
-      "source": "クルガン「至高の魂？\nまさか、それは…！」",
+      "source": "クルガン「至高の魂？\n<FFD4>まさか、それは…！」",
       "text": null
     },
     {
@@ -4590,7 +4590,7 @@
     {
       "offset": "0x229A4",
       "type": "dialog",
-      "source": "ソフィア「お願い、<PAGE>。\n陛下を、解放してあげて！」",
+      "source": "ソフィア「お願い、<PAGE>。\n<FFD4>陛下を、解放してあげて！」",
       "text": null
     },
     {
@@ -4632,7 +4632,7 @@
     {
       "offset": "0x22A92",
       "type": "center",
-      "source": "消え行くソフィアに<PAGE>は……\n\n笑顔が見たいという\n無言で見おくる\n力を与えてくれという\n",
+      "source": "消え行くソフィアに<PAGE>は……\n\n<FFC0>笑顔が見たいという\n<FFC1>無言で見おくる\n<FFC2>力を与えてくれという\n",
       "text": null
     },
     {
@@ -4662,7 +4662,7 @@
     {
       "offset": "0x22BBE",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -4722,7 +4722,7 @@
     {
       "offset": "0x22D4C",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -4764,7 +4764,7 @@
     {
       "offset": "0x22E4E",
       "type": "dialog",
-      "source": "ソフィア「残っている力……\n少しだけどあなたに\nたくすわ」",
+      "source": "ソフィア「残っている力……\n<FFD4>少しだけどあなたに\n<FFD4>たくすわ」",
       "text": null
     },
     {
@@ -4800,25 +4800,25 @@
     {
       "offset": "0x22F4E",
       "type": "dialog",
-      "source": "クルガン「クイーンガード、ソフィアの\n最後の言葉。\n確かに聞き届けた」",
+      "source": "クルガン「クイーンガード、ソフィアの\n<FFD4>最後の言葉。\n<FFD4>確かに聞き届けた」",
       "text": null
     },
     {
       "offset": "0x22F9A",
       "type": "dialog",
-      "source": "クルガン「俺の力、お前の好きに\n使ってくれて構わない」",
+      "source": "クルガン「俺の力、お前の好きに\n<FFD4>使ってくれて構わない」",
       "text": null
     },
     {
       "offset": "0x22FD4",
       "type": "dialog",
-      "source": "クルガン「何としても、陛下を救い\nあの禍々しき神の復活を\nくい止めよう」",
+      "source": "クルガン「何としても、陛下を救い\n<FFD4>あの禍々しき神の復活を\n<FFD4>くい止めよう」",
       "text": null
     },
     {
       "offset": "0x23022",
       "type": "dialog",
-      "source": "クルガン「身をていして俺達を\n護ってくれた、ソフィアの\n想いにかけて！」",
+      "source": "クルガン「身をていして俺達を\n<FFD4>護ってくれた、ソフィアの\n<FFD4>想いにかけて！」",
       "text": null
     },
     {
@@ -4836,31 +4836,31 @@
     {
       "offset": "0x23112",
       "type": "dialog",
-      "source": "ミシェル「ソフィア……\nあの頃と少しも変わらない」",
+      "source": "ミシェル「ソフィア……\n<FFD4>あの頃と少しも変わらない」",
       "text": null
     },
     {
       "offset": "0x23148",
       "type": "dialog",
-      "source": "ミシェル「彼女の優しさは\n慈しみ深き母のよう」",
+      "source": "ミシェル「彼女の優しさは\n<FFD4>慈しみ深き母のよう」",
       "text": null
     },
     {
       "offset": "0x2317A",
       "type": "dialog",
-      "source": "ミシェル「なんの見返りも期待せずに、\n命を投げ出す事が出来る」",
+      "source": "ミシェル「なんの見返りも期待せずに、\n<FFD4>命を投げ出す事が出来る」",
       "text": null
     },
     {
       "offset": "0x231BC",
       "type": "dialog",
-      "source": "ミシェル「どうしたら彼女のように\n強くなれるの？」",
+      "source": "ミシェル「どうしたら彼女のように\n<FFD4>強くなれるの？」",
       "text": null
     },
     {
       "offset": "0x231F2",
       "type": "dialog",
-      "source": "ミシェル「人を思う気持ちには\n限りはないと言うけど」",
+      "source": "ミシェル「人を思う気持ちには\n<FFD4>限りはないと言うけど」",
       "text": null
     },
     {
@@ -4878,19 +4878,19 @@
     {
       "offset": "0x232A6",
       "type": "dialog",
-      "source": "ミシェル「あの閃光で倒れた人達同様、\n彼女の魂はこの迷宮の闇に\nつながれている」",
+      "source": "ミシェル「あの閃光で倒れた人達同様、\n<FFD4>彼女の魂はこの迷宮の闇に\n<FFD4>つながれている」",
       "text": null
     },
     {
       "offset": "0x232FC",
       "type": "dialog",
-      "source": "ミシェル「それでも自分の苦しみより、\n人の事を心配して……」",
+      "source": "ミシェル「それでも自分の苦しみより、\n<FFD4>人の事を心配して……」",
       "text": null
     },
     {
       "offset": "0x2333C",
       "type": "dialog",
-      "source": "ミシェル「彼女にとっての心残りは、\n<PAGE>と女王様の事\nだったんですね」",
+      "source": "ミシェル「彼女にとっての心残りは、\n<FFD4><PAGE>と女王様の事\n<FFD4>だったんですね」",
       "text": null
     },
     {
@@ -4902,67 +4902,67 @@
     {
       "offset": "0x233B6",
       "type": "dialog",
-      "source": "ミシェル「彼女の魂に平安を与えて\nやってください」",
+      "source": "ミシェル「彼女の魂に平安を与えて\n<FFD4>やってください」",
       "text": null
     },
     {
       "offset": "0x233EC",
       "type": "dialog",
-      "source": "ミシェル「それが出来るのは残された\nわたし達だけなんです」",
+      "source": "ミシェル「それが出来るのは残された\n<FFD4>わたし達だけなんです」",
       "text": null
     },
     {
       "offset": "0x2342A",
       "type": "dialog",
-      "source": "グレッグ「どうやら私は勘違いして\nいたようだ…」",
+      "source": "グレッグ「どうやら私は勘違いして\n<FFD4>いたようだ…」",
       "text": null
     },
     {
       "offset": "0x2345E",
       "type": "dialog",
-      "source": "グレッグ「真の強さとは恐怖や苦しみに\n抗う心を言うのではなく」",
+      "source": "グレッグ「真の強さとは恐怖や苦しみに\n<FFD4>抗う心を言うのではなく」",
       "text": null
     },
     {
       "offset": "0x234A0",
       "type": "dialog",
-      "source": "グレッグ「闇すらも包み込み、打ち消す\n安らかな心を言うのだな」",
+      "source": "グレッグ「闇すらも包み込み、打ち消す\n<FFD4>安らかな心を言うのだな」",
       "text": null
     },
     {
       "offset": "0x234E2",
       "type": "dialog",
-      "source": "グレッグ「ソフィア僧侶の魂は限りなく\n純粋で、何よりも強い」",
+      "source": "グレッグ「ソフィア僧侶の魂は限りなく\n<FFD4>純粋で、何よりも強い」",
       "text": null
     },
     {
       "offset": "0x23522",
       "type": "dialog",
-      "source": "グレッグ「例え死であっても、\nたおやかな彼女の魂には\n傷一つつけられぬ」",
+      "source": "グレッグ「例え死であっても、\n<FFD4>たおやかな彼女の魂には\n<FFD4>傷一つつけられぬ」",
       "text": null
     },
     {
       "offset": "0x23570",
       "type": "dialog",
-      "source": "グレッグ「まさに目からウロコが\n落ちる思いだ」",
+      "source": "グレッグ「まさに目からウロコが\n<FFD4>落ちる思いだ」",
       "text": null
     },
     {
       "offset": "0x235A2",
       "type": "dialog",
-      "source": "グレッグ「真に強き者は優しさの中に\nあるものだとは…」",
+      "source": "グレッグ「真に強き者は優しさの中に\n<FFD4>あるものだとは…」",
       "text": null
     },
     {
       "offset": "0x235DC",
       "type": "dialog",
-      "source": "リカルド「あんたと彼女の間には、\n死をも崩せぬ固い絆がある」",
+      "source": "リカルド「あんたと彼女の間には、\n<FFD4>死をも崩せぬ固い絆がある」",
       "text": null
     },
     {
       "offset": "0x2361C",
       "type": "dialog",
-      "source": "リカルド「それは魂となっても、\n色あせる事なんてない」",
+      "source": "リカルド「それは魂となっても、\n<FFD4>色あせる事なんてない」",
       "text": null
     },
     {
@@ -4974,67 +4974,67 @@
     {
       "offset": "0x2367A",
       "type": "dialog",
-      "source": "リカルド「友情や愛情なんて移ろい\nやすいものじゃないか」",
+      "source": "リカルド「友情や愛情なんて移ろい\n<FFD4>やすいものじゃないか」",
       "text": null
     },
     {
       "offset": "0x236B6",
       "type": "dialog",
-      "source": "リカルド「だから誰も真剣に\n追い求めようなんてしない」",
+      "source": "リカルド「だから誰も真剣に\n<FFD4>追い求めようなんてしない」",
       "text": null
     },
     {
       "offset": "0x236F0",
       "type": "dialog",
-      "source": "リカルド「でも永遠に変わらないって\n事もあるんだよな」",
+      "source": "リカルド「でも永遠に変わらないって\n<FFD4>事もあるんだよな」",
       "text": null
     },
     {
       "offset": "0x2372A",
       "type": "dialog",
-      "source": "サラ「傷ついた者の心と身体を癒し、\n生きる勇気と力を与える、\nそれが僧侶の姿であるなら」",
+      "source": "サラ「傷ついた者の心と身体を癒し、\n<FFD2>生きる勇気と力を与える、\n<FFD2>それが僧侶の姿であるなら」",
       "text": null
     },
     {
       "offset": "0x23788",
       "type": "dialog",
-      "source": "サラ「わたしは今、その真実の姿を\n見たような気がする」",
+      "source": "サラ「わたしは今、その真実の姿を\n<FFD2>見たような気がする」",
       "text": null
     },
     {
       "offset": "0x237C2",
       "type": "dialog",
-      "source": "サラ「目の前の怪我人を治すだけが\n僧侶じゃなかったのね」",
+      "source": "サラ「目の前の怪我人を治すだけが\n<FFD2>僧侶じゃなかったのね」",
       "text": null
     },
     {
       "offset": "0x237FE",
       "type": "dialog",
-      "source": "サラ「人々に幸せと笑顔を与え、\n世界が光に溢れている事を\n知ってもらう」",
+      "source": "サラ「人々に幸せと笑顔を与え、\n<FFD2>世界が光に溢れている事を\n<FFD2>知ってもらう」",
       "text": null
     },
     {
       "offset": "0x2384C",
       "type": "dialog",
-      "source": "サラ「それを教えるのが、わたし達\n僧侶の本当の役目なんだわ」",
+      "source": "サラ「それを教えるのが、わたし達\n<FFD2>僧侶の本当の役目なんだわ」",
       "text": null
     },
     {
       "offset": "0x2388C",
       "type": "dialog",
-      "source": "サラ「きっとソフィア僧侶も\nそういった人だったんじゃない」",
+      "source": "サラ「きっとソフィア僧侶も\n<FFD2>そういった人だったんじゃない」",
       "text": null
     },
     {
       "offset": "0x238CA",
       "type": "dialog",
-      "source": "サラ「そばにいる者がなぜか\n優しい気持ちになってしまう\nそんな力を持った…」",
+      "source": "サラ「そばにいる者がなぜか\n<FFD2>優しい気持ちになってしまう\n<FFD2>そんな力を持った…」",
       "text": null
     },
     {
       "offset": "0x2391C",
       "type": "dialog",
-      "source": "サラ「そのソフィア僧侶の願い、\nわたしはこの命に替えても…\nかなえてみせるわ」",
+      "source": "サラ「そのソフィア僧侶の願い、\n<FFD2>わたしはこの命に替えても…\n<FFD2>かなえてみせるわ」",
       "text": null
     },
     {
@@ -5046,49 +5046,49 @@
     {
       "offset": "0x2398E",
       "type": "dialog",
-      "source": "ルイ「邪神だなんて、そんなの\n一介の冒険者のあたしには\n荷が重過ぎる仕事だわ」",
+      "source": "ルイ「邪神だなんて、そんなの\n<FFD2>一介の冒険者のあたしには\n<FFD2>荷が重過ぎる仕事だわ」",
       "text": null
     },
     {
       "offset": "0x239E2",
       "type": "dialog",
-      "source": "ルイ「だから気づかれないうちに、\nそろっと逃げ出そうって\n思ってんだけど…」",
+      "source": "ルイ「だから気づかれないうちに、\n<FFD2>そろっと逃げ出そうって\n<FFD2>思ってんだけど…」",
       "text": null
     },
     {
       "offset": "0x23A34",
       "type": "dialog",
-      "source": "ルイ「でもさ…\nよく考えてみればさ、\n魂が喰われるんでしょ？」",
+      "source": "ルイ「でもさ…\n<FFD2>よく考えてみればさ、\n<FFD2>魂が喰われるんでしょ？」",
       "text": null
     },
     {
       "offset": "0x23A78",
       "type": "dialog",
-      "source": "ルイ「もしかしたらあたしも\nその中に入っているんじゃ\nマズイよねって思ったの」",
+      "source": "ルイ「もしかしたらあたしも\n<FFD2>その中に入っているんじゃ\n<FFD2>マズイよねって思ったの」",
       "text": null
     },
     {
       "offset": "0x23ACC",
       "type": "dialog",
-      "source": "ルイ「どっちにしてもみんなが\n居なくなれば」",
+      "source": "ルイ「どっちにしてもみんなが\n<FFD2>居なくなれば」",
       "text": null
     },
     {
       "offset": "0x23AFC",
       "type": "dialog",
-      "source": "ルイ「あたし達の稼ぎ場所が\nなくなるってわけだから」",
+      "source": "ルイ「あたし達の稼ぎ場所が\n<FFD2>なくなるってわけだから」",
       "text": null
     },
     {
       "offset": "0x23B34",
       "type": "dialog",
-      "source": "ルイ「嫌でもやらなきゃ\n仕方ないんだけどね」",
+      "source": "ルイ「嫌でもやらなきゃ\n<FFD2>仕方ないんだけどね」",
       "text": null
     },
     {
       "offset": "0x23B64",
       "type": "dialog",
-      "source": "ダニエル「あ～あ、死んだ爺ちゃんの\n予言がこんな形で当たって\nしまうなんてね」",
+      "source": "ダニエル「あ～あ、死んだ爺ちゃんの\n<FFD4>予言がこんな形で当たって\n<FFD4>しまうなんてね」",
       "text": null
     },
     {
@@ -5100,19 +5100,19 @@
     {
       "offset": "0x23BDA",
       "type": "dialog",
-      "source": "ダニエル「盗賊はぜ～ったい一か八かの\n勝負だけはしちゃならんと」",
+      "source": "ダニエル「盗賊はぜ～ったい一か八かの\n<FFD4>勝負だけはしちゃならんと」",
       "text": null
     },
     {
       "offset": "0x23C1E",
       "type": "dialog",
-      "source": "ダニエル「欲をかかず、手間を惜しまず\n有る所から確実に盗む、\nそれが本道だって」",
+      "source": "ダニエル「欲をかかず、手間を惜しまず\n<FFD4>有る所から確実に盗む、\n<FFD4>それが本道だって」",
       "text": null
     },
     {
       "offset": "0x23C74",
       "type": "dialog",
-      "source": "ダニエル「でもおいらには大きな事をする\nそんな星があるから心配だって\n死ぬまで言ってたんだ」",
+      "source": "ダニエル「でもおいらには大きな事をする\n<FFD4>そんな星があるから心配だって\n<FFD4>死ぬまで言ってたんだ」",
       "text": null
     },
     {
@@ -5124,37 +5124,37 @@
     {
       "offset": "0x23D08",
       "type": "dialog",
-      "source": "ダニエル「仕方ないよ、おいらの夢は\n世界を又にかける大怪盗」",
+      "source": "ダニエル「仕方ないよ、おいらの夢は\n<FFD4>世界を又にかける大怪盗」",
       "text": null
     },
     {
       "offset": "0x23D48",
       "type": "dialog",
-      "source": "ダニエル「邪神の一つや二つ、\nそんなもの怖がっていたら\n何も出来ないものね」",
+      "source": "ダニエル「邪神の一つや二つ、\n<FFD4>そんなもの怖がっていたら\n<FFD4>何も出来ないものね」",
       "text": null
     },
     {
       "offset": "0x23D9A",
       "type": "dialog",
-      "source": "オルフェ「これまでは不運な運命を\n呪うしかなかったが」",
+      "source": "オルフェ「これまでは不運な運命を\n<FFD4>呪うしかなかったが」",
       "text": null
     },
     {
       "offset": "0x23DD4",
       "type": "dialog",
-      "source": "オルフェ「ようやく倒すべき相手が、\n見えただけでもいい」",
+      "source": "オルフェ「ようやく倒すべき相手が、\n<FFD4>見えただけでもいい」",
       "text": null
     },
     {
       "offset": "0x23E10",
       "type": "dialog",
-      "source": "オルフェ「戦士である以上、\n常に死は覚悟しているが」",
+      "source": "オルフェ「戦士である以上、\n<FFD4>常に死は覚悟しているが」",
       "text": null
     },
     {
       "offset": "0x23E48",
       "type": "dialog",
-      "source": "オルフェ「無駄に死ぬのだけは\nしたくなかった」",
+      "source": "オルフェ「無駄に死ぬのだけは\n<FFD4>したくなかった」",
       "text": null
     },
     {
@@ -5166,13 +5166,13 @@
     {
       "offset": "0x23EBA",
       "type": "dialog",
-      "source": "オルフェ「仇は邪神、この命を賭けるに\n値する相手だ…」",
+      "source": "オルフェ「仇は邪神、この命を賭けるに\n<FFD4>値する相手だ…」",
       "text": null
     },
     {
       "offset": "0x23EF4",
       "type": "dialog",
-      "source": "オルフェ「亡き父に代わって、\n例え一太刀であっても\nこの剣をあびせてみせる！」",
+      "source": "オルフェ「亡き父に代わって、\n<FFD4>例え一太刀であっても\n<FFD4>この剣をあびせてみせる！」",
       "text": null
     },
     {
@@ -5190,7 +5190,7 @@
     {
       "offset": "0x23F8E",
       "type": "dialog",
-      "source": "アオバ「もしもの事があったら、\n私は死んだ親父さんになんて\n言えばいいんですか」",
+      "source": "アオバ「もしもの事があったら、\n<FFD3>私は死んだ親父さんになんて\n<FFD3>言えばいいんですか」",
       "text": null
     },
     {
@@ -5202,7 +5202,7 @@
     {
       "offset": "0x24004",
       "type": "dialog",
-      "source": "オルフェ「我々二人とも言い駅を考える\n時間はたっぷりとある」",
+      "source": "オルフェ「我々二人とも言い駅を考える\n<FFD4>時間はたっぷりとある」",
       "text": null
     },
     {
@@ -5214,7 +5214,7 @@
     {
       "offset": "0x2406A",
       "type": "dialog",
-      "source": "オルフェ「その時に不出来な子供二人。\nあの世で共に頭を下げれば\n良いではないか」",
+      "source": "オルフェ「その時に不出来な子供二人。\n<FFD4>あの世で共に頭を下げれば\n<FFD4>良いではないか」",
       "text": null
     },
     {
@@ -5226,13 +5226,13 @@
     {
       "offset": "0x240FC",
       "type": "dialog",
-      "source": "アオバ「はいはい、わかりました。\nあの世までついてこいって\n言うわけですな」",
+      "source": "アオバ「はいはい、わかりました。\n<FFD3>あの世までついてこいって\n<FFD3>言うわけですな」",
       "text": null
     },
     {
       "offset": "0x2414E",
       "type": "dialog",
-      "source": "アオバ「女王様と人々の魂を\n救うですか…」",
+      "source": "アオバ「女王様と人々の魂を\n<FFD3>救うですか…」",
       "text": null
     },
     {
@@ -5244,13 +5244,13 @@
     {
       "offset": "0x2419C",
       "type": "dialog",
-      "source": "アオバ「別に私は死ぬ事なんて、\nどうでもいいんですよ」",
+      "source": "アオバ「別に私は死ぬ事なんて、\n<FFD3>どうでもいいんですよ」",
       "text": null
     },
     {
       "offset": "0x241D6",
       "type": "dialog",
-      "source": "アオバ「邪神に魂を喰われるなら、\nベッドで死のうが迷宮で\n死のうが同じですからな」",
+      "source": "アオバ「邪神に魂を喰われるなら、\n<FFD3>ベッドで死のうが迷宮で\n<FFD3>死のうが同じですからな」",
       "text": null
     },
     {
@@ -5262,25 +5262,25 @@
     {
       "offset": "0x24244",
       "type": "dialog",
-      "source": "アオバ「私達の肩にドゥーハンの運命が\n乗っかってくるとなると」",
+      "source": "アオバ「私達の肩にドゥーハンの運命が\n<FFD3>乗っかってくるとなると」",
       "text": null
     },
     {
       "offset": "0x24286",
       "type": "dialog",
-      "source": "アオバ「考えただけで冷や汗が、\nじわって出てきますよ」",
+      "source": "アオバ「考えただけで冷や汗が、\n<FFD3>じわって出てきますよ」",
       "text": null
     },
     {
       "offset": "0x242C0",
       "type": "dialog",
-      "source": "アオバ「まあどれほど役に立つか\nわかりませんが」",
+      "source": "アオバ「まあどれほど役に立つか\n<FFD3>わかりませんが」",
       "text": null
     },
     {
       "offset": "0x242F4",
       "type": "dialog",
-      "source": "アオバ「死んだ親父さんに\n顔向け出来るよう頑張らせて\nいただきます」",
+      "source": "アオバ「死んだ親父さんに\n<FFD3>顔向け出来るよう頑張らせて\n<FFD3>いただきます」",
       "text": null
     },
     {
@@ -5292,25 +5292,25 @@
     {
       "offset": "0x24368",
       "type": "dialog",
-      "source": "ヒナ「想いの強さに道を\nふみはずず者もいる…」",
+      "source": "ヒナ「想いの強さに道を\n<FFD2>ふみはずず者もいる…」",
       "text": null
     },
     {
       "offset": "0x2439A",
       "type": "dialog",
-      "source": "ヒナ「想いを告げられずに\n苦しむ者もいる…」",
+      "source": "ヒナ「想いを告げられずに\n<FFD2>苦しむ者もいる…」",
       "text": null
     },
     {
       "offset": "0x243CA",
       "type": "dialog",
-      "source": "ヒナ「わたしは………\n知っているつもりです」",
+      "source": "ヒナ「わたしは………\n<FFD2>知っているつもりです」",
       "text": null
     },
     {
       "offset": "0x243FA",
       "type": "dialog",
-      "source": "ヒナ「想いをかかえたまま、正しい道を\n歩む事のむずかしさを」",
+      "source": "ヒナ「想いをかかえたまま、正しい道を\n<FFD2>歩む事のむずかしさを」",
       "text": null
     },
     {
@@ -5322,25 +5322,25 @@
     {
       "offset": "0x24476",
       "type": "dialog",
-      "source": "ヒナ「ソフィアさんは\n間違えなかった」",
+      "source": "ヒナ「ソフィアさんは\n<FFD2>間違えなかった」",
       "text": null
     },
     {
       "offset": "0x244A0",
       "type": "dialog",
-      "source": "ヒナ「あの人は、暖かな光を\nその身に宿し、歩みきった\nのですね………」",
+      "source": "ヒナ「あの人は、暖かな光を\n<FFD2>その身に宿し、歩みきった\n<FFD2>のですね………」",
       "text": null
     },
     {
       "offset": "0x244EC",
       "type": "dialog",
-      "source": "ヒナ「人を想う気持ちは\nかくも美しく、かくも強い」",
+      "source": "ヒナ「人を想う気持ちは\n<FFD2>かくも美しく、かくも強い」",
       "text": null
     },
     {
       "offset": "0x24522",
       "type": "dialog",
-      "source": "ヒナ「わたしも、もう一度………\n人の想いという物を\n信じてみたくなりました」",
+      "source": "ヒナ「わたしも、もう一度………\n<FFD2>人の想いという物を\n<FFD2>信じてみたくなりました」",
       "text": null
     },
     {
@@ -5352,13 +5352,13 @@
     {
       "offset": "0x245A6",
       "type": "dialog",
-      "source": "グレース「心正しき者の願いを\n聞き届けるのが神様だと」",
+      "source": "グレース「心正しき者の願いを\n<FFD4>聞き届けるのが神様だと」",
       "text": null
     },
     {
       "offset": "0x245E0",
       "type": "dialog",
-      "source": "グレース「幼い頃から、そう教えられて\nきました」",
+      "source": "グレース「幼い頃から、そう教えられて\n<FFD4>きました」",
       "text": null
     },
     {
@@ -5370,25 +5370,25 @@
     {
       "offset": "0x2462C",
       "type": "dialog",
-      "source": "グレース「ソフィア僧侶のような\n清らかな心の持ち主に\n死をお与えになるとは」",
+      "source": "グレース「ソフィア僧侶のような\n<FFD4>清らかな心の持ち主に\n<FFD4>死をお与えになるとは」",
       "text": null
     },
     {
       "offset": "0x2467E",
       "type": "dialog",
-      "source": "グレース「どうやら神様はここには\nおられぬようですね…」",
+      "source": "グレース「どうやら神様はここには\n<FFD4>おられぬようですね…」",
       "text": null
     },
     {
       "offset": "0x246BA",
       "type": "dialog",
-      "source": "グレース「それとも世間の者が\n言うように、善人が早く\n天に召されるのは」",
+      "source": "グレース「それとも世間の者が\n<FFD4>言うように、善人が早く\n<FFD4>天に召されるのは」",
       "text": null
     },
     {
       "offset": "0x24708",
       "type": "dialog",
-      "source": "グレース「神様が心優しき者を\nその手元にお戻しになりたい\nためなのでしょうか…」",
+      "source": "グレース「神様が心優しき者を\n<FFD4>その手元にお戻しになりたい\n<FFD4>ためなのでしょうか…」",
       "text": null
     },
     {
@@ -5400,43 +5400,43 @@
     {
       "offset": "0x24784",
       "type": "dialog",
-      "source": "グレース「何を信じてよいのか\nわからなくなりました」",
+      "source": "グレース「何を信じてよいのか\n<FFD4>わからなくなりました」",
       "text": null
     },
     {
       "offset": "0x247BC",
       "type": "dialog",
-      "source": "ウォルフ「あのソフィアって娘さん、\nまったく健気じゃねえか」",
+      "source": "ウォルフ「あのソフィアって娘さん、\n<FFD4>まったく健気じゃねえか」",
       "text": null
     },
     {
       "offset": "0x247FC",
       "type": "dialog",
-      "source": "ウォルフ「死んだ後でも好いた者の\n安否を気づかうなんてよ」",
+      "source": "ウォルフ「死んだ後でも好いた者の\n<FFD4>安否を気づかうなんてよ」",
       "text": null
     },
     {
       "offset": "0x2483A",
       "type": "dialog",
-      "source": "ウォルフ「つまんねえこの世の中も、\nたまにそんな事があるから\n捨て切れねえんだよな」",
+      "source": "ウォルフ「つまんねえこの世の中も、\n<FFD4>たまにそんな事があるから\n<FFD4>捨て切れねえんだよな」",
       "text": null
     },
     {
       "offset": "0x24894",
       "type": "dialog",
-      "source": "ウォルフ「だけど<PAGE>は\n幸せだぜ」",
+      "source": "ウォルフ「だけど<PAGE>は\n<FFD4>幸せだぜ」",
       "text": null
     },
     {
       "offset": "0x248B8",
       "type": "dialog",
-      "source": "ウォルフ「もし死んだってな、\nあんな娘さんが待っているなら\n何も怖くねえ、そうだよな」",
+      "source": "ウォルフ「もし死んだってな、\n<FFD4>あんな娘さんが待っているなら\n<FFD4>何も怖くねえ、そうだよな」",
       "text": null
     },
     {
       "offset": "0x24914",
       "type": "dialog",
-      "source": "ウォルフ「俺なら即この世におさらばして\nあの世に行っているよ」",
+      "source": "ウォルフ「俺なら即この世におさらばして\n<FFD4>あの世に行っているよ」",
       "text": null
     },
     {
@@ -5448,25 +5448,25 @@
     {
       "offset": "0x2497E",
       "type": "dialog",
-      "source": "ウォルフ「だけど気を引きしめる事だ。\n闇になる前が一番明るい」",
+      "source": "ウォルフ「だけど気を引きしめる事だ。\n<FFD4>闇になる前が一番明るい」",
       "text": null
     },
     {
       "offset": "0x249C0",
       "type": "dialog",
-      "source": "ウォルフ「この迷宮の奥から\n無数の怨みの声が聞こえて\nこないか？」",
+      "source": "ウォルフ「この迷宮の奥から\n<FFD4>無数の怨みの声が聞こえて\n<FFD4>こないか？」",
       "text": null
     },
     {
       "offset": "0x24A08",
       "type": "dialog",
-      "source": "ウォルフ「これから先は大いなる闇が\n待ち受けている」",
+      "source": "ウォルフ「これから先は大いなる闇が\n<FFD4>待ち受けている」",
       "text": null
     },
     {
       "offset": "0x24A40",
       "type": "dialog",
-      "source": "ウォルフ「奪い取られんように、\n楽しい思い出は胸の奥に\n大事にしまっておきな」",
+      "source": "ウォルフ「奪い取られんように、\n<FFD4>楽しい思い出は胸の奥に\n<FFD4>大事にしまっておきな」",
       "text": null
     },
     {
@@ -5484,7 +5484,7 @@
     {
       "offset": "0x24B0A",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -5592,7 +5592,7 @@
     {
       "offset": "0x24E92",
       "type": "center",
-      "source": "どちらのクォーツを使いますか？\n\nクリムゾンクォーツ\nサプライズクォーツ\n",
+      "source": "どちらのクォーツを使いますか？\n\n<FFC0>クリムゾンクォーツ\n<FFC1>サプライズクォーツ\n",
       "text": null
     },
     {
@@ -15648,7 +15648,7 @@
     {
       "offset": "0x34930",
       "type": "center",
-      "source": "光のかけらは………\n\n<FFF0>に吸い込まれた\n<FFF1>に吸い込まれた\n<FFF2>に吸い込まれた\n<FFF3>に吸い込まれた\n<FFF4>に吸い込まれた\n<FFF5>に吸い込まれた\n",
+      "source": "光のかけらは………\n\n<FFC0><FFF0>に吸い込まれた\n<FFC1><FFF1>に吸い込まれた\n<FFC2><FFF2>に吸い込まれた\n<FFC3><FFF3>に吸い込まれた\n<FFC4><FFF4>に吸い込まれた\n<FFC5><FFF5>に吸い込まれた\n",
       "text": null
     },
     {
@@ -15690,7 +15690,7 @@
     {
       "offset": "0x34A44",
       "type": "center",
-      "source": "光のかけらは………\n\n<FFF0>に吸い込まれた\n<FFF1>に吸い込まれた\n<FFF2>に吸い込まれた\n<FFF3>に吸い込まれた\n<FFF4>に吸い込まれた\n<FFF5>に吸い込まれた\n",
+      "source": "光のかけらは………\n\n<FFC0><FFF0>に吸い込まれた\n<FFC1><FFF1>に吸い込まれた\n<FFC2><FFF2>に吸い込まれた\n<FFC3><FFF3>に吸い込まれた\n<FFC4><FFF4>に吸い込まれた\n<FFC5><FFF5>に吸い込まれた\n",
       "text": null
     },
     {
@@ -15732,7 +15732,7 @@
     {
       "offset": "0x34B88",
       "type": "center",
-      "source": "光のかけらは………\n\n<FFF0>に吸い込まれた\n<FFF1>に吸い込まれた\n<FFF2>に吸い込まれた\n<FFF3>に吸い込まれた\n<FFF4>に吸い込まれた\n<FFF5>に吸い込まれた\n",
+      "source": "光のかけらは………\n\n<FFC0><FFF0>に吸い込まれた\n<FFC1><FFF1>に吸い込まれた\n<FFC2><FFF2>に吸い込まれた\n<FFC3><FFF3>に吸い込まれた\n<FFC4><FFF4>に吸い込まれた\n<FFC5><FFF5>に吸い込まれた\n",
       "text": null
     },
     {
@@ -15774,7 +15774,7 @@
     {
       "offset": "0x34CB4",
       "type": "center",
-      "source": "光のかけらは………\n\n<FFF0>に吸い込まれた\n<FFF1>に吸い込まれた\n<FFF2>に吸い込まれた\n<FFF3>に吸い込まれた\n<FFF4>に吸い込まれた\n<FFF5>に吸い込まれた\n",
+      "source": "光のかけらは………\n\n<FFC0><FFF0>に吸い込まれた\n<FFC1><FFF1>に吸い込まれた\n<FFC2><FFF2>に吸い込まれた\n<FFC3><FFF3>に吸い込まれた\n<FFC4><FFF4>に吸い込まれた\n<FFC5><FFF5>に吸い込まれた\n",
       "text": null
     },
     {
@@ -15816,7 +15816,7 @@
     {
       "offset": "0x34DD4",
       "type": "center",
-      "source": "光のかけらは………\n\n<FFF0>に吸い込まれた\n<FFF1>に吸い込まれた\n<FFF2>に吸い込まれた\n<FFF3>に吸い込まれた\n<FFF4>に吸い込まれた\n<FFF5>に吸い込まれた\n",
+      "source": "光のかけらは………\n\n<FFC0><FFF0>に吸い込まれた\n<FFC1><FFF1>に吸い込まれた\n<FFC2><FFF2>に吸い込まれた\n<FFC3><FFF3>に吸い込まれた\n<FFC4><FFF4>に吸い込まれた\n<FFC5><FFF5>に吸い込まれた\n",
       "text": null
     },
     {
@@ -15858,7 +15858,7 @@
     {
       "offset": "0x34F84",
       "type": "center",
-      "source": "光のかけらは………\n\n<FFF0>に吸い込まれた\n<FFF1>に吸い込まれた\n<FFF2>に吸い込まれた\n<FFF3>に吸い込まれた\n<FFF4>に吸い込まれた\n<FFF5>に吸い込まれた\n",
+      "source": "光のかけらは………\n\n<FFC0><FFF0>に吸い込まれた\n<FFC1><FFF1>に吸い込まれた\n<FFC2><FFF2>に吸い込まれた\n<FFC3><FFF3>に吸い込まれた\n<FFC4><FFF4>に吸い込まれた\n<FFC5><FFF5>に吸い込まれた\n",
       "text": null
     },
     {
@@ -15924,7 +15924,7 @@
     {
       "offset": "0x35162",
       "type": "center",
-      "source": "光のかけらは………\n\n<FFF0>に吸い込まれた\n<FFF1>に吸い込まれた\n<FFF2>に吸い込まれた\n<FFF3>に吸い込まれた\n<FFF4>に吸い込まれた\n<FFF5>に吸い込まれた\n",
+      "source": "光のかけらは………\n\n<FFC0><FFF0>に吸い込まれた\n<FFC1><FFF1>に吸い込まれた\n<FFC2><FFF2>に吸い込まれた\n<FFC3><FFF3>に吸い込まれた\n<FFC4><FFF4>に吸い込まれた\n<FFC5><FFF5>に吸い込まれた\n",
       "text": null
     },
     {
@@ -15984,7 +15984,7 @@
     {
       "offset": "0x35440",
       "type": "center",
-      "source": "光のかけらは………\n\n<FFF0>に吸い込まれた\n<FFF1>に吸い込まれた\n<FFF2>に吸い込まれた\n<FFF3>に吸い込まれた\n<FFF4>に吸い込まれた\n<FFF5>に吸い込まれた\n",
+      "source": "光のかけらは………\n\n<FFC0><FFF0>に吸い込まれた\n<FFC1><FFF1>に吸い込まれた\n<FFC2><FFF2>に吸い込まれた\n<FFC3><FFF3>に吸い込まれた\n<FFC4><FFF4>に吸い込まれた\n<FFC5><FFF5>に吸い込まれた\n",
       "text": null
     },
     {
@@ -16044,7 +16044,7 @@
     {
       "offset": "0x35702",
       "type": "center",
-      "source": "光のかけらは………\n\n<FFF0>に吸い込まれた\n<FFF1>に吸い込まれた\n<FFF2>に吸い込まれた\n<FFF3>に吸い込まれた\n<FFF4>に吸い込まれた\n<FFF5>に吸い込まれた\n",
+      "source": "光のかけらは………\n\n<FFC0><FFF0>に吸い込まれた\n<FFC1><FFF1>に吸い込まれた\n<FFC2><FFF2>に吸い込まれた\n<FFC3><FFF3>に吸い込まれた\n<FFC4><FFF4>に吸い込まれた\n<FFC5><FFF5>に吸い込まれた\n",
       "text": null
     },
     {
@@ -16728,307 +16728,307 @@
     {
       "offset": "0x37CC4",
       "type": "dialog",
-      "source": "オーク\n<FB03>オダを、よんだだか？<FB02>",
+      "source": "    オーク\n      <FB03>オダを、よんだだか？<FB02>",
       "text": null
     },
     {
       "offset": "0x37CFA",
       "type": "dialog",
-      "source": "オーク\n<FB03>よびだしあいずがあったから\n<FB03>オダきただよ",
+      "source": "  オーク\n   <FB03>よびだしあいずがあったから\n      <FB03>オダきただよ",
       "text": null
     },
     {
       "offset": "0x37D46",
       "type": "dialog",
-      "source": "オーク\n<FB03>ものしりなオダがとっておき\n<FB03>じょうほうをおしえてやるだ",
+      "source": "  オーク\n    <FB03>ものしりなオダがとっておき\n    <FB03>じょうほうをおしえてやるだ",
       "text": null
     },
     {
       "offset": "0x37D9E",
       "type": "dialog",
-      "source": "オーク\n<FB03>だーれもしらない\n<FB03>オダだけのじょうほうだど！",
+      "source": "  オーク\n      <FB03>だーれもしらない\n    <FB03>オダだけのじょうほうだど！",
       "text": null
     },
     {
       "offset": "0x37DF0",
       "type": "dialog",
-      "source": "オーク\n<FB03>とっておきじょうほうだど！",
+      "source": "  オーク\n    <FB03>とっておきじょうほうだど！",
       "text": null
     },
     {
       "offset": "0x37E22",
       "type": "center",
-      "source": "<FB09><FB01>リカルド＝ドレフェス<FB00>\n\n名をあげようと、イナカ\nからやって来た戦士。\n\n以前のパーティで散々な\n目に合い、人間不信に\n陥りそうになっていた。<BREAK>",
+      "source": "       <FB09><FB01>リカルド＝ドレフェス<FB00>\n\n       名をあげようと、イナカ\n       からやって来た戦士。\n\n       以前のパーティで散々な\n       目に合い、人間不信に\n       陥りそうになっていた。<BREAK>",
       "text": null
     },
     {
       "offset": "0x37F14",
       "type": "center",
-      "source": "不器用な生き方しか\n出来ない自分を、案外\n気に入っている。\n雪を見ると、ウズウズ\nしてしまうようだ。\n\nはしゃぎ出しそうになる\nのを、じっとがまんして\nいるらしい。<BREAK>",
+      "source": "       不器用な生き方しか\n       出来ない自分を、案外\n       気に入っている。\n       雪を見ると、ウズウズ\n       してしまうようだ。\n\n       はしゃぎ出しそうになる\n       のを、じっとがまんして\n       いるらしい。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3804A",
       "type": "center",
-      "source": "<FB09><FB01>グレッグ＝メランド<FB00>\n\n以前は一人で迷宮を探索\nしていた忍者。\n\n命を落としかけた事で\n忍者としてのほこりを\n失いかけていた。<BREAK>",
+      "source": "        <FB09><FB01>グレッグ＝メランド<FB00>\n\n       以前は一人で迷宮を探索\n       していた忍者。\n\n       命を落としかけた事で\n       忍者としてのほこりを\n       失いかけていた。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3813C",
       "type": "center",
-      "source": "口数の少ない彼は、余り\n自分の事を語らない。\n\nしかし、酒が入ると\n昔語りを始めるようだ。\n\n以前、リカルドが\nグレッグにつきあった時\n酒場で一夜を明かす\nはめになったらしい……<BREAK>",
+      "source": "       口数の少ない彼は、余り\n       自分の事を語らない。\n\n       しかし、酒が入ると\n       昔語りを始めるようだ。\n\n       以前、リカルドが\n       グレッグにつきあった時\n       酒場で一夜を明かす\n       はめになったらしい……<BREAK>",
       "text": null
     },
     {
       "offset": "0x38282",
       "type": "center",
-      "source": "<FB09><FB01>サラ＝マクダフ<FB00>\n\n無料の救護院を作る事を\n夢見る女僧侶。\n\nなかなかしっかり者で\n時おり鋭い発言をする。<BREAK>",
+      "source": "         <FB09><FB01>サラ＝マクダフ<FB00>\n\n       無料の救護院を作る事を\n       夢見る女僧侶。\n\n       なかなかしっかり者で\n       時おり鋭い発言をする。<BREAK>",
       "text": null
     },
     {
       "offset": "0x38350",
       "type": "center",
-      "source": "幼い頃はおてんばで\n彼女が僧侶になるとは\n誰も思わなかった。\n\nしかし、努力家な彼女は\n地道に修行にはげみ\n僧侶としての資格を得た\nようだ。\nだが、修行時代の逸話は\n数多くあるらしい………<BREAK>",
+      "source": "       幼い頃はおてんばで\n       彼女が僧侶になるとは\n       誰も思わなかった。\n\n       しかし、努力家な彼女は\n       地道に修行にはげみ\n       僧侶としての資格を得た\n       ようだ。\n       だが、修行時代の逸話は\n       数多くあるらしい………<BREAK>",
       "text": null
     },
     {
       "offset": "0x384B8",
       "type": "center",
-      "source": "<FB09><FB01>アンルイナレイシィ<FB00>\n\n人当たりの良い女盗賊。\n明るい性格のため、皆に\nしたわれている。\n\n長ったらしい本名を\n口にする者はなく\n誰もが、<FB09><FB01>ルイ姉さん<FB00>と\n呼ぶ。<BREAK>",
+      "source": "        <FB09><FB01>アンルイナレイシィ<FB00>\n\n       人当たりの良い女盗賊。\n       明るい性格のため、皆に\n       したわれている。\n\n       長ったらしい本名を\n       口にする者はなく\n       誰もが、<FB09><FB01>ルイ姉さん<FB00>と\n       呼ぶ。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3860A",
       "type": "center",
-      "source": "代々、優秀な魔術師を\n出す家の一人娘だったが\n修行を途中で放り出し\n盗賊となった。\n以来、冒険者として\n生活している。\n\nなによりも自由を愛する\n女性である。<BREAK>",
+      "source": "       代々、優秀な魔術師を\n       出す家の一人娘だったが\n       修行を途中で放り出し\n       盗賊となった。\n       以来、冒険者として\n       生活している。\n\n       なによりも自由を愛する\n       女性である。<BREAK>",
       "text": null
     },
     {
       "offset": "0x38740",
       "type": "center",
-      "source": "<FB09><FB01>ダニエル＝ボーエン<FB00>\n\nいつもニコニコと笑って\nいるホビットの盗賊。\n\nしかし、その笑顔が\nなかなかの曲者で、笑い\nながら、とんでもない\n事をたくらんでいる。<BREAK>",
+      "source": "        <FB09><FB01>ダニエル＝ボーエン<FB00>\n\n       いつもニコニコと笑って\n       いるホビットの盗賊。\n\n       しかし、その笑顔が\n       なかなかの曲者で、笑い\n       ながら、とんでもない\n       事をたくらんでいる。<BREAK>",
       "text": null
     },
     {
       "offset": "0x38866",
       "type": "center",
-      "source": "抜け目がないが、意外に\nドジなところがあり\n本人も少し気にしている\nらしい。\n\n子供あつかいされると、\n怒り出すので要注意。\n彼は立派なホビット族の\n青年なのである………<BREAK>",
+      "source": "       抜け目がないが、意外に\n       ドジなところがあり\n       本人も少し気にしている\n       らしい。\n\n       子供あつかいされると、\n       怒り出すので要注意。\n       彼は立派なホビット族の\n       青年なのである………<BREAK>",
       "text": null
     },
     {
       "offset": "0x3899C",
       "type": "center",
-      "source": "<FB09><FB01>ミシェル＝ミラー<FB00>\n\n神秘的な表情をした\n美しいエルフの魔術師。\n\n閃光の原因を調べるため\nドゥーハンへとやって\n来た。<BREAK>",
+      "source": "       <FB09><FB01>ミシェル＝ミラー<FB00>\n\n       神秘的な表情をした\n       美しいエルフの魔術師。\n\n       閃光の原因を調べるため\n       ドゥーハンへとやって\n       来た。<BREAK>",
       "text": null
     },
     {
       "offset": "0x38A98",
       "type": "center",
-      "source": "美しい物、愛らしい物を\nこよなく愛する。\n特に、自然の美しさは\n強く彼女の心を打つ。\n\n優しそうな容姿のためか\nよくオークに話しかけ\nられるらしい。<BREAK>",
+      "source": "       美しい物、愛らしい物を\n       こよなく愛する。\n       特に、自然の美しさは\n       強く彼女の心を打つ。\n\n       優しそうな容姿のためか\n       よくオークに話しかけ\n       られるらしい。<BREAK>",
       "text": null
     },
     {
       "offset": "0x38BA8",
       "type": "center",
-      "source": "<FB09><FB01>ヒナ（陽奈）<FB00>\n\nはるか東の街から兄と\n弟を捜しに来た女侍。\n\n高い戦闘能力を持ち\nながらも、戦う事を\n嫌っている。<BREAK>",
+      "source": "        <FB09><FB01>ヒナ（陽奈）<FB00>\n\n       はるか東の街から兄と\n       弟を捜しに来た女侍。\n\n       高い戦闘能力を持ち\n       ながらも、戦う事を\n       嫌っている。<BREAK>",
       "text": null
     },
     {
       "offset": "0x38C98",
       "type": "center",
-      "source": "侍としての能力だけで\nなく、厳しい養母に\n女としての礼儀作法を\n叩き込まれたため\n一通りの事はこなす。\n\n特に、東方に伝わる扇の\n舞の腕前はかなりの物。\nヒナは兄の前で舞う事が\n何より好きだった。<BREAK>",
+      "source": "       侍としての能力だけで\n       なく、厳しい養母に\n       女としての礼儀作法を\n       叩き込まれたため\n       一通りの事はこなす。\n\n       特に、東方に伝わる扇の\n       舞の腕前はかなりの物。\n       ヒナは兄の前で舞う事が\n       何より好きだった。<BREAK>",
       "text": null
     },
     {
       "offset": "0x38E00",
       "type": "center",
-      "source": "<FB09><FB01>オリビア＝ブライト<FB00>\n\n切れ長の瞳と軽やかな\n身のこなしが印象的な\n女戦士。\n\n戦士として生きるため\n男性名「<FB09><FB01>オルフェ<FB00>」を\n名乗る。<BREAK>",
+      "source": "        <FB09><FB01>オリビア＝ブライト<FB00>\n\n       切れ長の瞳と軽やかな\n       身のこなしが印象的な\n       女戦士。\n\n       戦士として生きるため\n       男性名「<FB09><FB01>オルフェ<FB00>」を\n       名乗る。<BREAK>",
       "text": null
     },
     {
       "offset": "0x38F2C",
       "type": "center",
-      "source": "幼いころは、僧侶となる\nための修行をつんだが\n祈りよりも剣を選んだ。\n\n十五の時に女王の御前\n試合に出場し、三位と\nなった経験を持つ。\n\n父、グスタフの事を\n心から誇りにしている。<BREAK>",
+      "source": "       幼いころは、僧侶となる\n       ための修行をつんだが\n       祈りよりも剣を選んだ。\n\n       十五の時に女王の御前\n       試合に出場し、三位と\n       なった経験を持つ。\n\n       父、グスタフの事を\n       心から誇りにしている。<BREAK>",
       "text": null
     },
     {
       "offset": "0x39072",
       "type": "center",
-      "source": "<FB09><FB01>アオバ（青葉）<FB00>\n\nいつもオルフェと共に\n迷宮を探索する侍。\n\n幼いころに、オルフェの\n父グスタフに引き取られ\n育てられた。<BREAK>",
+      "source": "        <FB09><FB01>アオバ（青葉）<FB00>\n\n       いつもオルフェと共に\n       迷宮を探索する侍。\n\n       幼いころに、オルフェの\n       父グスタフに引き取られ\n       育てられた。<BREAK>",
       "text": null
     },
     {
       "offset": "0x39170",
       "type": "center",
-      "source": "戦士から転職したためか\n魔法は苦手で、武器で\n戦う事を好む。\n\n常にオルフェの周りに\n気を配り、彼女を護る。\nいつか、オルフェの事を\n「お嬢さん」ではなく\n名前で呼ぼうと思って\nいるらしい。<BREAK>",
+      "source": "       戦士から転職したためか\n       魔法は苦手で、武器で\n       戦う事を好む。\n\n       常にオルフェの周りに\n       気を配り、彼女を護る。\n       いつか、オルフェの事を\n       「お嬢さん」ではなく\n       名前で呼ぼうと思って\n       いるらしい。<BREAK>",
       "text": null
     },
     {
       "offset": "0x392CC",
       "type": "center",
-      "source": "<FB09><FB01>グレース＝ザリエル<FB00>\n\n白百合の美姫と呼ばれて\nいた貴族の娘。\n\nユージン卿との結婚を\n間近にひかえていた。<BREAK>",
+      "source": "        <FB09><FB01>グレース＝ザリエル<FB00>\n\n       白百合の美姫と呼ばれて\n       いた貴族の娘。\n\n       ユージン卿との結婚を\n       間近にひかえていた。<BREAK>",
       "text": null
     },
     {
       "offset": "0x393AA",
       "type": "center",
-      "source": "誰もが幸せな花嫁に\nなると信じていたが\n閃光や、ユージン卿の\n起こした事件のために\n騎士として生きる。\n\n幸せだったころに\nユージン卿がくれた\nお守りを、今も大切に\n持っているらしい。<BREAK>",
+      "source": "       誰もが幸せな花嫁に\n       なると信じていたが\n       閃光や、ユージン卿の\n       起こした事件のために\n       騎士として生きる。\n\n       幸せだったころに\n       ユージン卿がくれた\n       お守りを、今も大切に\n       持っているらしい。<BREAK>",
       "text": null
     },
     {
       "offset": "0x39500",
       "type": "center",
-      "source": "<FB09><FB01>ウォルフ＝ランバート<FB00>\n\nドワーフの村で育てられた\n人間族の戦士。\n\n戦いと酒をこよなく愛して\nいる。\nそのいずれもが簡単に手に\n入るドゥーハンが、お気に\nめしているようだ。<BREAK>",
+      "source": "       <FB09><FB01>ウォルフ＝ランバート<FB00>\n\n      ドワーフの村で育てられた\n      人間族の戦士。\n\n      戦いと酒をこよなく愛して\n      いる。\n      そのいずれもが簡単に手に\n      入るドゥーハンが、お気に\n      めしているようだ。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3964C",
       "type": "center",
-      "source": "見た目とはうらはらに\n涙もろく、織細な一面が\nある。\n\n酒を飲んで酔っぱらうと\n大声で歌い、騒ぐ。\nその声はまるで、つぶれた\nジャイアントトードの悲鳴\nとはリカルドの言である。<BREAK>",
+      "source": "      見た目とはうらはらに\n      涙もろく、織細な一面が\n      ある。\n\n      酒を飲んで酔っぱらうと\n      大声で歌い、騒ぐ。\n      その声はまるで、つぶれた\n      ジャイアントトードの悲鳴\n      とはリカルドの言である。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3978C",
       "type": "center",
-      "source": "<FB09><FB01>カザ＝ウィンザー<FB00>\n\nあまり人をよせつけない\nエルフの司教。\n\nソフィアへの想いが\n強く心にあるため\n他の事に目がいかない。<BREAK>",
+      "source": "       <FB09><FB01>カザ＝ウィンザー<FB00>\n\n       あまり人をよせつけない\n       エルフの司教。\n\n       ソフィアへの想いが\n       強く心にあるため\n       他の事に目がいかない。<BREAK>",
       "text": null
     },
     {
       "offset": "0x39888",
       "type": "center",
-      "source": "ソフィアを慕っていた\n彼は、司教となる前は\n僧侶の修行をしていた。\n\n今は、彼が微笑む事は\n余りないが、幼なじみの\nミシェルは、カザの\nはにかんだ笑みを\n見られる日を心待ちに\nしている。<BREAK>",
+      "source": "       ソフィアを慕っていた\n       彼は、司教となる前は\n       僧侶の修行をしていた。\n\n       今は、彼が微笑む事は\n       余りないが、幼なじみの\n       ミシェルは、カザの\n       はにかんだ笑みを\n       見られる日を心待ちに\n       している。<BREAK>",
       "text": null
     },
     {
       "offset": "0x399F0",
       "type": "center",
-      "source": "<FB09><FB01>爆炎のヴァーゴ<FB00>\n\n迷宮の最も奥に眠ると\n噂される財宝を求めて\n迷宮に挑む女魔術師。\n\nいつも気の弱そうな魔物\nをしたがえて、偉そうに\n迷宮内を探索している。<BREAK>",
+      "source": "         <FB09><FB01>爆炎のヴァーゴ<FB00>\n\n       迷宮の最も奥に眠ると\n       噂される財宝を求めて\n       迷宮に挑む女魔術師。\n\n       いつも気の弱そうな魔物\n       をしたがえて、偉そうに\n       迷宮内を探索している。<BREAK>",
       "text": null
     },
     {
       "offset": "0x39B24",
       "type": "center",
-      "source": "その気性の荒さと、\n態度の大きさで\n周りの冒険者の間から\n爆炎のヴァーゴと\n恐れられている。\n\nしかし、メイクを\n落とした素顔は意外と\n美人らしい………<BREAK>",
+      "source": "        その気性の荒さと、\n        態度の大きさで\n        周りの冒険者の間から\n        爆炎のヴァーゴと\n        恐れられている。\n\n        しかし、メイクを\n        落とした素顔は意外と\n        美人らしい………<BREAK>",
       "text": null
     },
     {
       "offset": "0x39C58",
       "type": "center",
-      "source": "<FB09><FB01>疾風のクルガン<FB00>\n\n疾風の二つ名を持つ\nクイーンガードの忍者。\n\nクイーンガードとなる\n前は、盗賊だった。<BREAK>",
+      "source": "         <FB09><FB01>疾風のクルガン<FB00>\n\n       疾風の二つ名を持つ\n       クイーンガードの忍者。\n\n       クイーンガードとなる\n       前は、盗賊だった。<BREAK>",
       "text": null
     },
     {
       "offset": "0x39D32",
       "type": "center",
-      "source": "腕試しのため、王宮に\n忍び込んだところを\nレドゥアに捕えられる。\n\nしかし、女王に腕前を\n買われ、クイーンガード\nとなった。\n以来、女王に厚い忠誠を\n誓っている。<BREAK>",
+      "source": "       腕試しのため、王宮に\n       忍び込んだところを\n       レドゥアに捕えられる。\n\n       しかし、女王に腕前を\n       買われ、クイーンガード\n       となった。\n       以来、女王に厚い忠誠を\n       誓っている。<BREAK>",
       "text": null
     },
     {
       "offset": "0x39E68",
       "type": "center",
-      "source": "<FB09><FB01>レドゥア＝アルムセイ<FB00>\n\n全ての魔法を使いこなす\nクイーンガードの長。\n魔法生物を作り出す事さえ\n出来る。\n\n女王のためなら、例え国を\n一つ滅ぼす事もいとわない\n男である。<BREAK>",
+      "source": "       <FB09><FB01>レドゥア＝アルムセイ<FB00>\n\n      全ての魔法を使いこなす\n      クイーンガードの長。\n      魔法生物を作り出す事さえ\n      出来る。\n\n      女王のためなら、例え国を\n      一つ滅ぼす事もいとわない\n      男である。<BREAK>",
       "text": null
     },
     {
       "offset": "0x39FB0",
       "type": "center",
-      "source": "クイーンガードとなる前は\n爵位を持つ貴族。\n女王の養育係りをつとめ\n数々の英知をさずけた。\n\nクイーンガードとなった\n時に、爵位を返上する。\n\nそのころから、眼光の\n鋭さが増したと言われて\nいる。<BREAK>",
+      "source": "      クイーンガードとなる前は\n      爵位を持つ貴族。\n      女王の養育係りをつとめ\n      数々の英知をさずけた。\n\n      クイーンガードとなった\n      時に、爵位を返上する。\n\n      そのころから、眼光の\n      鋭さが増したと言われて\n      いる。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3A124",
       "type": "center",
-      "source": "<FB09><FB01>ホムンクルス<FB00>\n\n残された女王の髪から\nレドゥアによって生み\n出されたホムンクルス。\n\nレドゥアの命令に従い、\n女王として振る舞う。<BREAK>",
+      "source": "         <FB09><FB01>ホムンクルス<FB00>\n\n       残された女王の髪から\n       レドゥアによって生み\n       出されたホムンクルス。\n\n       レドゥアの命令に従い、\n       女王として振る舞う。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3A224",
       "type": "center",
-      "source": "始めのうちは完全な人形\nだったが、夢魔の悪夢に\n触れた事で、「恐怖」が\n芽生えた。\n\nそれが呼び水となり、\n様々な感情が生まれる。\n以来、レドゥアに\n心ひかれているようだ。<BREAK>",
+      "source": "       始めのうちは完全な人形\n       だったが、夢魔の悪夢に\n       触れた事で、「恐怖」が\n       芽生えた。\n\n       それが呼び水となり、\n       様々な感情が生まれる。\n       以来、レドゥアに\n       心ひかれているようだ。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3A366",
       "type": "center",
-      "source": "<FB09><FB01>オティーリエ女王<FB00>\n\n聖ドゥーハン王国を\n治める、第十七代女王。\n\n現在、禍つ神の贄の核と\nなっており、解放される\n時を待っている。<BREAK>",
+      "source": "        <FB09><FB01>オティーリエ女王<FB00>\n\n       聖ドゥーハン王国を\n       治める、第十七代女王。\n\n       現在、禍つ神の贄の核と\n       なっており、解放される\n       時を待っている。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3A464",
       "type": "center",
-      "source": "慈愛に満ちた治世で\n民から信頼されていたが\nクイーンガード達だけは\n彼女の弱さや、傷つき\nやすい心を知っていた。\n\nなくした遠い恋を\n心の奥底に秘めていた\nらしいが………<BREAK>",
+      "source": "       慈愛に満ちた治世で\n       民から信頼されていたが\n       クイーンガード達だけは\n       彼女の弱さや、傷つき\n       やすい心を知っていた。\n\n       なくした遠い恋を\n       心の奥底に秘めていた\n       らしいが………<BREAK>",
       "text": null
     },
     {
       "offset": "0x3A5A6",
       "type": "center",
-      "source": "<FB09><FB01>ユージン＝ギュスターム<FB00>\n\n王位継承権を持つ公爵。\nドゥーハン北方の地を\n治めていた。\n\n名高い騎士だが、やや\n強引で、頑固なところが\nある。<BREAK>",
+      "source": "       <FB09><FB01>ユージン＝ギュスターム<FB00>\n\n       王位継承権を持つ公爵。\n       ドゥーハン北方の地を\n       治めていた。\n\n       名高い騎士だが、やや\n       強引で、頑固なところが\n       ある。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3A6D0",
       "type": "center",
-      "source": "閃光後の女王の行動に\n疑問を感じ、王国を\n自らの手で復興させる\n事を誓う。\n\n誓いのためには全てを\n捨て去る覚悟だったが\n婚約者グレースに贈る\n指輪だけは、最後まで\n手放せなかった………<BREAK>",
+      "source": "       閃光後の女王の行動に\n       疑問を感じ、王国を\n       自らの手で復興させる\n       事を誓う。\n\n       誓いのためには全てを\n       捨て去る覚悟だったが\n       婚約者グレースに贈る\n       指輪だけは、最後まで\n       手放せなかった………<BREAK>",
       "text": null
     },
     {
       "offset": "0x3A826",
       "type": "center",
-      "source": "<FB09><FB01>聖なる癒し手ソフィア<FB00>\n\n癒せぬ物は何もないと\nまで言われた女僧侶。\n\n百を越える不死者を\n一度に地に還した話は\n余りに有名である。<BREAK>",
+      "source": "       <FB09><FB01>聖なる癒し手ソフィア<FB00>\n\n       癒せぬ物は何もないと\n       まで言われた女僧侶。\n\n       百を越える不死者を\n       一度に地に還した話は\n       余りに有名である。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3A926",
       "type": "center",
-      "source": "始めは侍女として女王に\n仕えていたが、僧侶と\nしての資質を見出され\nクイーンガードとなる。\n\n女王とは姉妹のように\n仲が良く、二人で午後の\nお茶を楽しむ事もあった\nようだ。<BREAK>",
+      "source": "       始めは侍女として女王に\n       仕えていたが、僧侶と\n       しての資質を見出され\n       クイーンガードとなる。\n\n       女王とは姉妹のように\n       仲が良く、二人で午後の\n       お茶を楽しむ事もあった\n       ようだ。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3AA5C",
       "type": "center",
-      "source": "<FB09><FB01>狂えし司教<FB00>\n\nドゥーハンの中世期に\n生きた司教。\n\n当時は、ドゥーハン一の\n司教とまで称えられたが\nその信仰心ゆえに道を\nふみ外す。<BREAK>",
+      "source": "          <FB09><FB01>狂えし司教<FB00>\n\n       ドゥーハンの中世期に\n       生きた司教。\n\n       当時は、ドゥーハン一の\n       司教とまで称えられたが\n       その信仰心ゆえに道を\n       ふみ外す。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3AB86",
       "type": "center",
-      "source": "彼の行く先には常に\n悲劇が待つのみ。\n滅びと混沌が渦巻いて\nいる………\n\nドゥーハンは、彼の\n作り出した悲劇の鎖に\nからめとられた。<BREAK>",
+      "source": "       彼の行く先には常に\n       悲劇が待つのみ。\n       滅びと混沌が渦巻いて\n       いる………\n\n       ドゥーハンは、彼の\n       作り出した悲劇の鎖に\n       からめとられた。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3AC88",
       "type": "center",
-      "source": "<FB09><FB01>白髪の剣士<FB00>\n\nアレイドを教えてくれた\n剣士。\n古参の冒険者達からも\n一目おかれている。\n\n迷宮の最下層まで行く\n程の実力を持っていた。<BREAK>",
+      "source": "          <FB09><FB01>白髪の剣士<FB00>\n\n       アレイドを教えてくれた\n       剣士。\n       古参の冒険者達からも\n       一目おかれている。\n\n       迷宮の最下層まで行く\n       程の実力を持っていた。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3ADBA",
       "type": "center",
-      "source": "その身体は深く傷つき\n魂は、暗い哀しみに\n沈んでいる。\n\n氷のような瞳が見つめる\nのは、失くした過去か\n得られぬ未来か………<BREAK>",
+      "source": "       その身体は深く傷つき\n       魂は、暗い哀しみに\n       沈んでいる。\n\n       氷のような瞳が見つめる\n       のは、失くした過去か\n       得られぬ未来か………<BREAK>",
       "text": null
     },
     {
       "offset": "0x3AEB0",
       "type": "center",
-      "source": "<FB09><FB01>キャスタ<FB00>\n\n白髪の剣士と共にいる\nオーク。\n\n剣士の強さにひかれ\n自らすすんで部下に\nなった。<BREAK>",
+      "source": "           <FB09><FB01>キャスタ<FB00>\n\n        白髪の剣士と共にいる\n        オーク。\n\n        剣士の強さにひかれ\n        自らすすんで部下に\n        なった。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3AFC0",
       "type": "center",
-      "source": "けなげな性格のため\n一部の女性冒険者の\n間で人気がある。\n\nオークにしては珍しく\nキレイ好きで、水あび\n等もよくするらしい。<BREAK>",
+      "source": "        けなげな性格のため\n        一部の女性冒険者の\n        間で人気がある。\n\n        オークにしては珍しく\n        キレイ好きで、水あび\n        等もよくするらしい。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3B0B8",
       "type": "dialog",
-      "source": "オーク\n<FB03>な、な、面白かったべ？",
+      "source": "  オーク\n     <FB03>な、な、面白かったべ？",
       "text": null
     },
     {
       "offset": "0x3B0E8",
       "type": "dialog",
-      "source": "オーク\n<FB03>そんじゃ、またよんでくんろ！",
+      "source": "  オーク\n   <FB03>そんじゃ、またよんでくんろ！",
       "text": null
     },
     {
@@ -17052,7 +17052,7 @@
     {
       "offset": "0x3B1B8",
       "type": "center",
-      "source": "どちらのクォーツを使いますか？\n\nマナクォーツ\nサプライズクォーツ\n",
+      "source": "どちらのクォーツを使いますか？\n\n<FFC0>マナクォーツ\n<FFC1>サプライズクォーツ\n",
       "text": null
     },
     {
@@ -17088,7 +17088,7 @@
     {
       "offset": "0x3B2FC",
       "type": "center",
-      "source": "どちらのクォーツを使いますか？\n\nクリアクォーツ\nサプライズクォーツ\n",
+      "source": "どちらのクォーツを使いますか？\n\n<FFC0>クリアクォーツ\n<FFC1>サプライズクォーツ\n",
       "text": null
     },
     {
@@ -17112,373 +17112,373 @@
     {
       "offset": "0x3B3D2",
       "type": "center",
-      "source": "<FB09><FB01>ヘルガ＝シュミット<FB00>\n\nこれまでにない、斬新な\nビジネスで億万長者に\nなろうと日々アイデアを\n練っている少女。\n\nだが、あまりにも現実的\nでないことばかり考える\nため、彼女のビジネスが\n成功した試しはない。<BREAK>",
+      "source": "         <FB09><FB01>ヘルガ＝シュミット<FB00>\n\n       これまでにない、斬新な\n       ビジネスで億万長者に\n       なろうと日々アイデアを\n       練っている少女。\n\n       だが、あまりにも現実的\n       でないことばかり考える\n       ため、彼女のビジネスが\n       成功した試しはない。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3B554",
       "type": "center",
-      "source": "最近の目標としては、\nまずはヴィガー商店より\nも儲けること、らしい。\n\n好きな言葉は\n「ベンチャー」\n「起業」\n「一攫千金」<BREAK>",
+      "source": "       最近の目標としては、\n       まずはヴィガー商店より\n       も儲けること、らしい。\n\n       好きな言葉は\n         「ベンチャー」\n         「起業」\n         「一攫千金」<BREAK>",
       "text": null
     },
     {
       "offset": "0x3B670",
       "type": "center",
-      "source": "<FB09><FB01>リサ＝カサンドラ<FB00>\n\n片思いを叶えるために、\n毎日ありとあらゆる\nおまじないを試す少女。\n\nその数なんと128種類！\n広く知れ渡っている\nポピュラーなものから\n呪い紛いの怪しげなもの\nまで色々試したという。<BREAK>",
+      "source": "         <FB09><FB01>リサ＝カサンドラ<FB00>\n\n      片思いを叶えるために、\n      毎日ありとあらゆる\n      おまじないを試す少女。\n\n      その数なんと128種類！\n      広く知れ渡っている\n      ポピュラーなものから\n      呪い紛いの怪しげなもの\n      まで色々試したという。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3B7F0",
       "type": "center",
-      "source": "だが、おまじないをする\nばかりで直接ラディック\nにアプローチしたことは\n一度もない。\n\nそのため、ラディックは\n彼女の事などほとんど\n覚えていない…<BREAK>",
+      "source": "       だが、おまじないをする\n       ばかりで直接ラディック\n       にアプローチしたことは\n       一度もない。\n\n       そのため、ラディックは\n       彼女の事などほとんど\n       覚えていない…<BREAK>",
       "text": null
     },
     {
       "offset": "0x3B90C",
       "type": "center",
-      "source": "<FB09><FB01>マリア＝フレーデル<FB00>\n\n寺院で働きたいがために\n僧職を目指す少女。\n\nあまり裕福でない家庭で\n育った彼女は、両親から\n「寺院は不況知らず」と\n幼い頃から呪文のように\n言われ続けていた。<BREAK>",
+      "source": "         <FB09><FB01>マリア＝フレーデル<FB00>\n\n       寺院で働きたいがために\n       僧職を目指す少女。\n\n       あまり裕福でない家庭で\n       育った彼女は、両親から\n       「寺院は不況知らず」と\n       幼い頃から呪文のように\n       言われ続けていた。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3BA68",
       "type": "center",
-      "source": "閃光の後遺症で、つい最近\n重い病にかかった父の姿\nをみて、やっと本心から\n僧職を目指し始めた。<BREAK>",
+      "source": "       閃光の後遺症で、つい最近\n       重い病にかかった父の姿\n       をみて、やっと本心から\n       僧職を目指し始めた。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3BB04",
       "type": "center",
-      "source": "<FB09><FB01>ロレンツォ<FB00>\n\n故郷アンジュウの村から\n自分の娘アリシアを\n殺した、ギルマンという\n男の死刑を見るために\nはるばるやって来た男。<BREAK>",
+      "source": "         <FB09><FB01>ロレンツォ<FB00>\n\n       故郷アンジュウの村から\n       自分の娘アリシアを\n       殺した、ギルマンという\n       男の死刑を見るために\n       はるばるやって来た男。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3BBFC",
       "type": "center",
-      "source": "こう見えても、なんと\n料理が得意。\n\n味の方もなかなかで、\n特に、アンジュウ名産\nであるクリを使った\nお菓子は絶品。\n\n最近はオムレツ作りに\nこっている。<BREAK>",
+      "source": "        こう見えても、なんと\n        料理が得意。\n\n        味の方もなかなかで、\n        特に、アンジュウ名産\n        であるクリを使った\n        お菓子は絶品。\n\n        最近はオムレツ作りに\n        こっている。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3BD52",
       "type": "center",
-      "source": "<FB09><FB01>名も無き男<FB00>\n\n本当の名は、<FB09><FB01>ベルジェ＝\nアンドリュース<FB00>という。\nアンジュウの村の司教で\nあるこの男は、娘を殺し\nた疑いのあるギルマンと\nいう男が死刑にされると\n聞き、本当にその男が犯\n人なのかを確かめるため\nにやって来た。<BREAK>",
+      "source": "         <FB09><FB01>名も無き男<FB00>\n\n        本当の名は、<FB09><FB01>ベルジェ＝\n        アンドリュース<FB00>という。\n        アンジュウの村の司教で\n        あるこの男は、娘を殺し\n        た疑いのあるギルマンと\n        いう男が死刑にされると\n        聞き、本当にその男が犯\n        人なのかを確かめるため\n        にやって来た。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3BEFA",
       "type": "center",
-      "source": "笑いながら娘を殺したと\n話すギルマンを見て、\n司教であるにも関わらず\nギルマンを自らの手で\n殺めてしまったショック\nで、自分の名前を忘れて\nしまった。<BREAK>",
+      "source": "        笑いながら娘を殺したと\n        話すギルマンを見て、\n        司教であるにも関わらず\n        ギルマンを自らの手で\n        殺めてしまったショック\n        で、自分の名前を忘れて\n        しまった。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3C014",
       "type": "center",
-      "source": "<FB09><FB01>ゴッツ<FB00>\n\n迷宮の中に迷宮を作る！\nという野望のために、\n地下一階でひたすら作業\nしている熱血オーク。\n\n迷宮を作るかたわら、\n手製のトラップを作って\nは、通りかかる冒険者に\n試させている。<BREAK>",
+      "source": "           <FB09><FB01>ゴッツ<FB00>\n\n        迷宮の中に迷宮を作る！\n        という野望のために、\n        地下一階でひたすら作業\n        している熱血オーク。\n\n        迷宮を作るかたわら、\n        手製のトラップを作って\n        は、通りかかる冒険者に\n        試させている。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3C1A0",
       "type": "center",
-      "source": "ゴッツの作業する部屋は\nいつも大きな岩によって\n通路が塞がれているが、\n冒険者達の間では、あの\n岩の向こうには隠された\n迷宮があるに違いないと\n噂されている。<BREAK>",
+      "source": "        ゴッツの作業する部屋は\n        いつも大きな岩によって\n        通路が塞がれているが、\n        冒険者達の間では、あの\n        岩の向こうには隠された\n        迷宮があるに違いないと\n        噂されている。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3C2BA",
       "type": "center",
-      "source": "<FB09><FB01>ピピン<FB00>\n\n幅広いジャンルの作品を\n世に送り出す人気作家。\n\n中でも迷宮に挑む冒険者\nを観察し、その冒険の\n様子をコミカルに描いた\n冒険者かんさつ日記は\n今では十作目となる\n大人気シリーズだ。<BREAK>",
+      "source": "           <FB09><FB01>ピピン<FB00>\n\n        幅広いジャンルの作品を\n        世に送り出す人気作家。\n\n        中でも迷宮に挑む冒険者\n        を観察し、その冒険の\n        様子をコミカルに描いた\n        冒険者かんさつ日記は\n        今では十作目となる\n        大人気シリーズだ。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3C448",
       "type": "center",
-      "source": "とある文芸誌での\nピピン特集によると、\n今後はフィクションの\nホラーサスペンスなど\n新たなジャンルにも\n挑戦していきたいと\n考えているらしい。<BREAK>",
+      "source": "        とある文芸誌での\n        ピピン特集によると、\n        今後はフィクションの\n        ホラーサスペンスなど\n        新たなジャンルにも\n        挑戦していきたいと\n        考えているらしい。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3C562",
       "type": "center",
-      "source": "<FB09><FB01>フランソワ<FB00>\n\n幼い頃、自分の目の前で\nレベル99の騎士に\n両親ふくめた親族オーク\n16体が瞬殺された。\n\nそのトラウマで、毎日\n迷宮を行き交う冒険者に\nビクビクしながら生活\nしている気弱なオーク。<BREAK>",
+      "source": "          <FB09><FB01>フランソワ<FB00>\n\n        幼い頃、自分の目の前で\n        レベル99の騎士に\n        両親ふくめた親族オーク\n        16体が瞬殺された。\n\n        そのトラウマで、毎日\n        迷宮を行き交う冒険者に\n        ビクビクしながら生活\n        している気弱なオーク。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3C6F2",
       "type": "center",
-      "source": "唯一の友だと思っている\nカトリーヌの事を尊敬\nしている。\n\nいつか彼女の様な立派な\nロッティングコープスに\nなりたいと思っている。<BREAK>",
+      "source": "        唯一の友だと思っている\n        カトリーヌの事を尊敬\n        している。\n\n        いつか彼女の様な立派な\n        ロッティングコープスに\n        なりたいと思っている。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3C7F6",
       "type": "center",
-      "source": "<FB09><FB01>カトリーヌ<FB00>\n\n色んな魔物からチヤホヤ\nされている、モテモテの\nロッティングコープス。\n\n頭脳明晰、スポーツ万能\n趣味は料理と裁縫…と、\n女心も男心もくすぐる\n完璧なステータス。\n…だが、性格が悪い。<BREAK>",
+      "source": "         <FB09><FB01>カトリーヌ<FB00>\n\n       色んな魔物からチヤホヤ\n       されている、モテモテの\n       ロッティングコープス。\n\n       頭脳明晰、スポーツ万能\n       趣味は料理と裁縫…と、\n       女心も男心もくすぐる\n       完璧なステータス。\n       …だが、性格が悪い。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3C970",
       "type": "center",
-      "source": "最近お気に入りの遊びは\n自分を慕って、後から\nついてまわるフランソワ\nにデタラメの知識を\n身に付けさせること。\n\n笑い者にされている\nフランソワを見ては、\n物影でムフフ…と笑う。<BREAK>",
+      "source": "       最近お気に入りの遊びは\n       自分を慕って、後から\n       ついてまわるフランソワ\n       にデタラメの知識を\n       身に付けさせること。\n\n       笑い者にされている\n       フランソワを見ては、\n       物影でムフフ…と笑う。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3CAB2",
       "type": "center",
-      "source": "<FB09><FB01>バッシー<FB00>\n\n迷宮地下5階で営業する\nキャスタ商店の元店員。\n\nキャスタが店に出たく\nなったため、愛想が悪い\nことを理由にクビに\nされてしまった。\n\n現在は無職をエンジョイ<BREAK>",
+      "source": "         <FB09><FB01>バッシー<FB00>\n\n       迷宮地下5階で営業する\n       キャスタ商店の元店員。\n\n       キャスタが店に出たく\n       なったため、愛想が悪い\n       ことを理由にクビに\n       されてしまった。\n\n       現在は無職をエンジョイ<BREAK>",
       "text": null
     },
     {
       "offset": "0x3CC14",
       "type": "center",
-      "source": "もうそろそろしたら、\nキャスタ商店で働いた\n経験を活かして、\n自分の店を持ちたいと\n思っている。\n\nだが、そのための資金が\nないため、色んな魔物に\nお金を貸してくれと\n頼んでみてはいるが、\n誰にも貸してもらえず。<BREAK>",
+      "source": "       もうそろそろしたら、\n       キャスタ商店で働いた\n       経験を活かして、\n       自分の店を持ちたいと\n       思っている。\n\n       だが、そのための資金が\n       ないため、色んな魔物に\n       お金を貸してくれと\n       頼んでみてはいるが、\n       誰にも貸してもらえず。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3CDA2",
       "type": "center",
-      "source": "<FB09><FB01>バッシー<FB00>\n\n迷宮地下5階で営業する\nキャスタ商店の店員。\n\n生まれ持つ、おっかない\n顔のせいで、訪れる客に\nよく怖がられている。\n\nだが、本人はそれを\n結構気にしている。<BREAK>",
+      "source": "         <FB09><FB01>バッシー<FB00>\n\n       迷宮地下5階で営業する\n       キャスタ商店の店員。\n\n       生まれ持つ、おっかない\n       顔のせいで、訪れる客に\n       よく怖がられている。\n\n       だが、本人はそれを\n       結構気にしている。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3CF04",
       "type": "center",
-      "source": "いつかは独立して、\n自分の店・バッシー商店\nを開くのが夢。\n\nだが、安いバイト代で\nこきつかわれているため\n開業資金を集めるのは\n相当に難しい…<BREAK>",
+      "source": "       いつかは独立して、\n       自分の店・バッシー商店\n       を開くのが夢。\n\n       だが、安いバイト代で\n       こきつかわれているため\n       開業資金を集めるのは\n       相当に難しい…<BREAK>",
       "text": null
     },
     {
       "offset": "0x3D020",
       "type": "center",
-      "source": "<FB09><FB01>ジョセフ<FB00>\n\n酒場で知り合った冒険者\nに教えてもらった情報を\n元に、エリザベスと供に\n迷宮観光ガイドブックを\n執筆した。\n\n嘘が多いが、面白い\nので、冒険に行かない\n人々の間で人気がある。<BREAK>",
+      "source": "         <FB09><FB01>ジョセフ<FB00>\n\n        酒場で知り合った冒険者\n        に教えてもらった情報を\n        元に、エリザベスと供に\n        迷宮観光ガイドブックを\n        執筆した。\n\n        嘘が多いが、面白い\n        ので、冒険に行かない\n        人々の間で人気がある。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3D1AC",
       "type": "center",
-      "source": "齢87歳。\nだが、今でも元気。\n\n若い頃は遊び人で、\nよくエリザベスばあさん\nを泣かせていた。\n\n今は落ち着いたが、\nそれでもまだ若い気分が\n抜けず、しょっちゅう\n酒場へ通っている。<BREAK>",
+      "source": "        齢87歳。\n        だが、今でも元気。\n\n        若い頃は遊び人で、\n        よくエリザベスばあさん\n        を泣かせていた。\n\n        今は落ち着いたが、\n        それでもまだ若い気分が\n        抜けず、しょっちゅう\n        酒場へ通っている。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3D33A",
       "type": "center",
-      "source": "<FB09><FB01>エリザベス<FB00>\n\n酒場で知り合った冒険者\nに教えてもらった情報を\n元に、ジョセフと供に\n迷宮観光ガイドブックを\n執筆した。\n\n面白いが、嘘が多いので\n本当の冒険者達には\nあまり人気がない。<BREAK>",
+      "source": "         <FB09><FB01>エリザベス<FB00>\n\n        酒場で知り合った冒険者\n        に教えてもらった情報を\n        元に、ジョセフと供に\n        迷宮観光ガイドブックを\n        執筆した。\n\n        面白いが、嘘が多いので\n        本当の冒険者達には\n        あまり人気がない。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3D4C8",
       "type": "center",
-      "source": "齢75歳。\n若い頃は美人だったため\n酒場で働いていた時代に\nジョセフが毎日通って\nくどきおとし、20歳で\nめでたく結婚。\n\n結婚後30年間は、\nジョセフの浮気のせいで\n毎夜、涙を流していた。<BREAK>",
+      "source": "        齢75歳。\n        若い頃は美人だったため\n        酒場で働いていた時代に\n        ジョセフが毎日通って\n        くどきおとし、20歳で\n        めでたく結婚。\n\n        結婚後30年間は、\n        ジョセフの浮気のせいで\n        毎夜、涙を流していた。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3D644",
       "type": "center",
-      "source": "<FB09><FB01>リディア<FB00>\n\n迷宮で露天商をしている\nエリックの彼女。\n\nしょっちゅう喧嘩を\nしながらも、もう3年も\nつきあっている。<BREAK>",
+      "source": "         <FB09><FB01>リディア<FB00>\n\n        迷宮で露天商をしている\n        エリックの彼女。\n\n        しょっちゅう喧嘩を\n        しながらも、もう3年も\n        つきあっている。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3D758",
       "type": "center",
-      "source": "まともな職につかない\nエリックを責めたてる\nそんな彼女も現在無職。\n\n人の事をとやかく\n言えない立場だという\n自覚は全くないらしい。<BREAK>",
+      "source": "        まともな職につかない\n        エリックを責めたてる\n        そんな彼女も現在無職。\n\n        人の事をとやかく\n        言えない立場だという\n        自覚は全くないらしい。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3D85C",
       "type": "center",
-      "source": "<FB09><FB01>エリック<FB00>\n\n職を失って以来、迷宮で\n色んな物を路上販売して\n小銭稼ぎをしている。\n\n今の状況を楽しんでいる\nらしく、恋人リディアに\n文句を言われながらも\n露天商を辞めようとは\nしない。<BREAK>",
+      "source": "         <FB09><FB01>エリック<FB00>\n\n        職を失って以来、迷宮で\n        色んな物を路上販売して\n        小銭稼ぎをしている。\n\n        今の状況を楽しんでいる\n        らしく、恋人リディアに\n        文句を言われながらも\n        露天商を辞めようとは\n        しない。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3D9E8",
       "type": "center",
-      "source": "売り物は主に、自ら考え\n出したアイデア商品。\n\n自信作には\n不死族変装セット、\nオーク声に変声ガス、\nピクシーにもてる薬、\nボギーキャット級育毛剤\nなどがあるらしいが、\n実際にどれ程売れたかは\n定かではない。<BREAK>",
+      "source": "        売り物は主に、自ら考え\n        出したアイデア商品。\n\n        自信作には\n        不死族変装セット、\n        オーク声に変声ガス、\n        ピクシーにもてる薬、\n        ボギーキャット級育毛剤\n        などがあるらしいが、\n        実際にどれ程売れたかは\n        定かではない。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3DB8C",
       "type": "center",
-      "source": "<FB09><FB01>ポール＝ゴドウィン<FB00>\n\nギャンブルにのめりこみ\n大損しては、酒を飲み\n暴力を振るい、五年前に\nとうとう女房と子供に\n逃げられてしまった。\n\n以来、少し反省した様で\n今は週末に楽しむ程度に\n落ち着いた。<BREAK>",
+      "source": "        <FB09><FB01>ポール＝ゴドウィン<FB00>\n\n        ギャンブルにのめりこみ\n        大損しては、酒を飲み\n        暴力を振るい、五年前に\n        とうとう女房と子供に\n        逃げられてしまった。\n\n        以来、少し反省した様で\n        今は週末に楽しむ程度に\n        落ち着いた。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3DD1C",
       "type": "center",
-      "source": "最近、逃げられた家族が\n恋しくなり、何かいい事\nをすれば神様が家族を\n連れ戻してくれるだろう\nと信じ、人の役に立つ事\nを実践している。\n\n周りのギャンブル仲間は\nそんなポールを偽善者と\nこっそり呼んでいる。<BREAK>",
+      "source": "        最近、逃げられた家族が\n        恋しくなり、何かいい事\n        をすれば神様が家族を\n        連れ戻してくれるだろう\n        と信じ、人の役に立つ事\n        を実践している。\n\n        周りのギャンブル仲間は\n        そんなポールを偽善者と\n        こっそり呼んでいる。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3DE98",
       "type": "center",
-      "source": "<FB09><FB01>ローズ＝アベイロ<FB00>\n\n以前は盗賊として活躍\nしていたが、ジョルジュ\nと付き合い始めた直後、\nオークが怖いと言う\n彼よりも強くあっては\nならないと思い、\n盗賊業も冒険もぱったり\n辞めてしまった。<BREAK>",
+      "source": "         <FB09><FB01>ローズ＝アベイロ<FB00>\n\n        以前は盗賊として活躍\n        していたが、ジョルジュ\n        と付き合い始めた直後、\n        オークが怖いと言う\n        彼よりも強くあっては\n        ならないと思い、\n        盗賊業も冒険もぱったり\n        辞めてしまった。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3E016",
       "type": "center",
-      "source": "ジョルジュに女らしい所\nを見せようと本人なりに\n努力はしているのだが、\n酒場で冒険者の男達に\nからかわれる度、\nジョルジュの目の前でも\n平気で相手を殴ったり\nするので、意味がない。<BREAK>",
+      "source": "        ジョルジュに女らしい所\n        を見せようと本人なりに\n        努力はしているのだが、\n        酒場で冒険者の男達に\n        からかわれる度、\n        ジョルジュの目の前でも\n        平気で相手を殴ったり\n        するので、意味がない。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3E158",
       "type": "center",
-      "source": "<FB09><FB01>ジョルジュ＝アベイロ<FB00>\n\n自分が殺し屋だという事\nを隠すために、オークが\n怖いなどという、度が\n過ぎた嘘をついてしまい\n彼女のローズを悩ませる\n結果になってしまった。<BREAK>",
+      "source": "        <FB09><FB01>ジョルジュ＝アベイロ<FB00>\n\n        自分が殺し屋だという事\n        を隠すために、オークが\n        怖いなどという、度が\n        過ぎた嘘をついてしまい\n        彼女のローズを悩ませる\n        結果になってしまった。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3E288",
       "type": "center",
-      "source": "職業柄、ローズが昔\n盗賊だった事など\nとっくに知っている。\n\nだが、ローズが女らしく\n振舞おうとして失敗する\n様子があまりにも愉快\nなので、ローズには\n何も知らないふりを\nしている。<BREAK>",
+      "source": "        職業柄、ローズが昔\n        盗賊だった事など\n        とっくに知っている。\n\n        だが、ローズが女らしく\n        振舞おうとして失敗する\n        様子があまりにも愉快\n        なので、ローズには\n        何も知らないふりを\n        している。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3E404",
       "type": "center",
-      "source": "<FB09><FB01>ルシーダ<FB00>\n\n迷宮地下五階で楽器店を\n営んでいる。\n\n滅多に街には帰らず、\nたった一人の肉親である\n弟とも長い間、連絡を\n取っていない。<BREAK>",
+      "source": "         <FB09><FB01>ルシーダ<FB00>\n\n        迷宮地下五階で楽器店を\n        営んでいる。\n\n        滅多に街には帰らず、\n        たった一人の肉親である\n        弟とも長い間、連絡を\n        取っていない。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3E53C",
       "type": "center",
-      "source": "街の近くに開けばいい\nものを、景色が良いと\nいう理由だけで地下五階\nに店を開いてしまった\nせいで、人間より魔物の\n客でにぎわっている。\n\n勘違いしたオークが時々\n子守唄を唄ってくれと\n頼みに来るらしい…<BREAK>",
+      "source": "        街の近くに開けばいい\n        ものを、景色が良いと\n        いう理由だけで地下五階\n        に店を開いてしまった\n        せいで、人間より魔物の\n        客でにぎわっている。\n\n        勘違いしたオークが時々\n        子守唄を唄ってくれと\n        頼みに来るらしい…<BREAK>",
       "text": null
     },
     {
       "offset": "0x3E6B8",
       "type": "center",
-      "source": "<FB09><FB01>デューン<FB00>\n\n迷宮地下五階で楽器屋を\n営むルシーダの弟。\n\n友達がいないらしく、\nいつも一人で迷宮の\n浅い階層をウロチョロ\nしながら、気の弱そうな\n冒険者にちょっかいを\nかける淋しがり屋さん。<BREAK>",
+      "source": "          <FB09><FB01>デューン<FB00>\n\n        迷宮地下五階で楽器屋を\n        営むルシーダの弟。\n\n        友達がいないらしく、\n        いつも一人で迷宮の\n        浅い階層をウロチョロ\n        しながら、気の弱そうな\n        冒険者にちょっかいを\n        かける淋しがり屋さん。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3E842",
       "type": "center",
-      "source": "本当は姉と一緒に暮らし\nたいと思っている。\n\nだが、恥ずかしくて言い\n出せないため、自分の\n気持ちをわかって\nくれない姉に腹を立てて\nいる甘えん坊さん。<BREAK>",
+      "source": "        本当は姉と一緒に暮らし\n        たいと思っている。\n\n        だが、恥ずかしくて言い\n        出せないため、自分の\n        気持ちをわかって\n        くれない姉に腹を立てて\n        いる甘えん坊さん。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3E96E",
       "type": "center",
-      "source": "<FB09><FB01>フォーン＝アザエル<FB00>\n\nドゥーハンの南西に位置\nする深き森からやって\n来たエルフ族の長。\n\n閃光により森は失われ\n住む場所を失ったため\nソフィアを慕っていた\n数人のエルフ達と一緒に\nドゥーハンにやって来た<BREAK>",
+      "source": "      <FB09><FB01>フォーン＝アザエル<FB00>\n\n        ドゥーハンの南西に位置\n        する深き森からやって\n        来たエルフ族の長。\n\n        閃光により森は失われ\n        住む場所を失ったため\n        ソフィアを慕っていた\n        数人のエルフ達と一緒に\n        ドゥーハンにやって来た<BREAK>",
       "text": null
     },
     {
       "offset": "0x3EAFA",
       "type": "center",
-      "source": "昔は闘う司教という異名\nをとる程、武術に長けて\nおり、特にメイスの扱い\nに関してはエルフ族の中\nで右に出る者などいない\nと言われていた。\n\n盲てしまった今は、\n戦いをやめ、得意の\nエルフ酒を作りながら\n大人しく暮らしている。<BREAK>",
+      "source": "        昔は闘う司教という異名\n        をとる程、武術に長けて\n        おり、特にメイスの扱い\n        に関してはエルフ族の中\n        で右に出る者などいない\n        と言われていた。\n\n        盲てしまった今は、\n        戦いをやめ、得意の\n        エルフ酒を作りながら\n        大人しく暮らしている。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3EC9E",
       "type": "center",
-      "source": "<FB09><FB01>オスカー<FB00>\n\nドゥーハンのスラムで\n育った盗賊の少年。\n\nひと目でアンマリーの\nとりこになり、以後\n行動を共にする。<BREAK>",
+      "source": "          <FB09><FB01>オスカー<FB00>\n\n        ドゥーハンのスラムで\n        育った盗賊の少年。\n\n        ひと目でアンマリーの\n        とりこになり、以後\n        行動を共にする。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3ED92",
       "type": "center",
-      "source": "育った環境のせいか、\n食べ物に目がない。\n初めは、酒場の安い料理\nにも涙したほど。\n最近のお気に入りは、\n絶品と評判のノーム族の\nきのこシチュー。\n\nいつか、アンマリーの\n手料理を食べたいという\n大それた夢がある………<BREAK>",
+      "source": "       育った環境のせいか、\n       食べ物に目がない。\n       初めは、酒場の安い料理\n       にも涙したほど。\n       最近のお気に入りは、\n       絶品と評判のノーム族の\n       きのこシチュー。\n\n       いつか、アンマリーの\n       手料理を食べたいという\n       大それた夢がある………<BREAK>",
       "text": null
     },
     {
       "offset": "0x3EF14",
       "type": "center",
-      "source": "<FB09><FB01>リューン＝ブラウン<FB00>\n\nそこそこの家に育った、\nそこそこの才を持つ\n戦士の若者。\n\nひと目でアンマリーの\nとりこになり、以後\n行動を共にする。<BREAK>",
+      "source": "        <FB09><FB01>リューン＝ブラウン<FB00>\n\n       そこそこの家に育った、\n       そこそこの才を持つ\n       戦士の若者。\n\n       ひと目でアンマリーの\n       とりこになり、以後\n       行動を共にする。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3F02E",
       "type": "center",
-      "source": "面倒見が良く、あれこれ\n世話をやいてしまう。\n意外とインテリで知識も\n豊富である。\n\n幼い頃についたあだ名は\n雑学キング。\n\nアンマリーを母親に紹介\nしたいなぁ、とぼんやり\n思っている………………<BREAK>",
+      "source": "       面倒見が良く、あれこれ\n       世話をやいてしまう。\n       意外とインテリで知識も\n       豊富である。\n\n       幼い頃についたあだ名は\n       雑学キング。\n\n       アンマリーを母親に紹介\n       したいなぁ、とぼんやり\n       思っている………………<BREAK>",
       "text": null
     },
     {
       "offset": "0x3F19A",
       "type": "center",
-      "source": "<FB09><FB01>アンマリー＝エンジェル<FB00>\n\n西国ハリスの寺院所属の\n高レベル司教。\n\nハリス教皇の命を受け\nドゥーハン滅亡の原因を\n密かに調査している……\nはずである。<BREAK>",
+      "source": "       <FB09><FB01>アンマリー＝エンジェル<FB00>\n\n       西国ハリスの寺院所属の\n       高レベル司教。\n\n       ハリス教皇の命を受け\n       ドゥーハン滅亡の原因を\n       密かに調査している……\n       はずである。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3F2B4",
       "type": "center",
-      "source": "幼い頃から、司教として\n高い能力を示し、寺院で\n大切に育てられた。\nその愛くるしい容姿と\n能力のため、王女の様な\n生活をしていたようだ。\n\n冒険者として、初めての\n自由を楽しんでいるため\n目的を忘れがちである。<BREAK>",
+      "source": "       幼い頃から、司教として\n       高い能力を示し、寺院で\n       大切に育てられた。\n       その愛くるしい容姿と\n       能力のため、王女の様な\n       生活をしていたようだ。\n\n       冒険者として、初めての\n       自由を楽しんでいるため\n       目的を忘れがちである。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3F410",
       "type": "center",
-      "source": "<FB09><FB01>ラディック＝フォード<FB00>\n\n生真面目な王宮騎士。\n\n王室管理室の入り口を\n護り、新参冒険者達の\n試験を受け持つ。<BREAK>",
+      "source": "       <FB09><FB01>ラディック＝フォード<FB00>\n\n       生真面目な王宮騎士。\n\n       王室管理室の入り口を\n       護り、新参冒険者達の\n       試験を受け持つ。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3F4D4",
       "type": "center",
-      "source": "名門の家で育ったためか\n冒険者には、やや高圧的\n態度をとってしまう。\n\n最近の悩みは、不思議な\n悪寒に襲われる事。\n\n悪寒はもっぱら、月夜に\n起こる事が多いようだ。<BREAK>",
+      "source": "       名門の家で育ったためか\n       冒険者には、やや高圧的\n       態度をとってしまう。\n\n       最近の悩みは、不思議な\n       悪寒に襲われる事。\n\n       悪寒はもっぱら、月夜に\n       起こる事が多いようだ。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3F5F4",
       "type": "center",
-      "source": "<FB09><FB01>マルス＝スペンサー<FB00>\n\n迷宮二階への階段を護る\nエルフのドゥーハン兵。\n\n訪れる冒険者の通行証を\n確認する任を受け持って\nいる。<BREAK>",
+      "source": "        <FB09><FB01>マルス＝スペンサー<FB00>\n\n       迷宮二階への階段を護る\n       エルフのドゥーハン兵。\n\n       訪れる冒険者の通行証を\n       確認する任を受け持って\n       いる。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3F6E8",
       "type": "center",
-      "source": "都会生まれの都会育ちの\nため、エルフ独特の閉鎖\n性とは無縁の男。\n\nいつもしかめ面をして\nいるが、意外と冗談が\n好きで、笑い出したら\n止まらないらしい……<BREAK>",
+      "source": "       都会生まれの都会育ちの\n       ため、エルフ独特の閉鎖\n       性とは無縁の男。\n\n       いつもしかめ面をして\n       いるが、意外と冗談が\n       好きで、笑い出したら\n       止まらないらしい……<BREAK>",
       "text": null
     },
     {
       "offset": "0x3F804",
       "type": "center",
-      "source": "<FB09><FB01>タイガ（大河）<FB00>\n\n迷宮探索の任を受け持つ\nドゥーハンの侍兵。\n\n中々の実力者のようで\n幾つもの死線をくぐり\n抜け、生き残っている。<BREAK>",
+      "source": "         <FB09><FB01>タイガ（大河）<FB00>\n\n       迷宮探索の任を受け持つ\n       ドゥーハンの侍兵。\n\n       中々の実力者のようで\n       幾つもの死線をくぐり\n       抜け、生き残っている。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3F8F8",
       "type": "center",
-      "source": "エルフには似合わぬ\n風変わりな名は、侍に\n憧れた父がつけた。\n幼い頃は、ずいぶん\n抵抗があったが、今は\n気に入っている。\n\n平和が戻ったあかつき\nには、東方に伝わる\n唄を学びたいと思って\nいるようだ。<BREAK>",
+      "source": "        エルフには似合わぬ\n        風変わりな名は、侍に\n        憧れた父がつけた。\n        幼い頃は、ずいぶん\n        抵抗があったが、今は\n        気に入っている。\n\n        平和が戻ったあかつき\n        には、東方に伝わる\n        唄を学びたいと思って\n        いるようだ。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3FA86",
       "type": "center",
-      "source": "<FB09><FB01>アラベラ＝クライン<FB00>\n\n迷宮探索の任を受け持つ\nドゥーハンの僧兵。\n\n部隊の仲間達に護られて\nなんとか、死線をくぐり\n抜けて来た。<BREAK>",
+      "source": "        <FB09><FB01>アラベラ＝クライン<FB00>\n\n       迷宮探索の任を受け持つ\n       ドゥーハンの僧兵。\n\n       部隊の仲間達に護られて\n       なんとか、死線をくぐり\n       抜けて来た。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3FB7A",
       "type": "center",
-      "source": "かつては、ソフィアの\n部下をつとめており、\n今でも彼女の事を深く\n尊敬している。\n\n王宮騎士のラディック\nとは恋仲で、二人の\n仲の良さを知らぬ者は\n兵の間では、モグリと\n言われている。<BREAK>",
+      "source": "        かつては、ソフィアの\n        部下をつとめており、\n        今でも彼女の事を深く\n        尊敬している。\n\n        王宮騎士のラディック\n        とは恋仲で、二人の\n        仲の良さを知らぬ者は\n        兵の間では、モグリと\n        言われている。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3FCE2",
       "type": "center",
-      "source": "<FB09><FB01>マツリ（祭）<FB00>\n\n一人で迷宮を旅する侍。\nドゥーハン北方出身。\n\n大恩あるソフィア僧侶を\n捜すため、ドゥーハンに\nやって来た。<BREAK>",
+      "source": "          <FB09><FB01>マツリ（祭）<FB00>\n\n       一人で迷宮を旅する侍。\n       ドゥーハン北方出身。\n\n       大恩あるソフィア僧侶を\n       捜すため、ドゥーハンに\n       やって来た。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3FDD6",
       "type": "center",
-      "source": "花鎮の祭の日に生まれた\nため、マツリと名づけ\nられた。\n\nそのせいか、祭好きで、\n各地の祭に現われる。\n\nいつか、自分のための\n祭を開くのが夢。<BREAK>",
+      "source": "       花鎮の祭の日に生まれた\n       ため、マツリと名づけ\n       られた。\n\n       そのせいか、祭好きで、\n       各地の祭に現われる。\n\n       いつか、自分のための\n       祭を開くのが夢。<BREAK>",
       "text": null
     },
     {
       "offset": "0x3FEEA",
       "type": "center",
-      "source": "<FB09><FB01>忍者兵達<FB00>\n\n疾風のクルガン直属の\nドゥーハン忍者部隊に\n所属している。\n\n他の兵士には出来ない\n困難な作業を一手に\n引き受ける。<BREAK>",
+      "source": "           <FB09><FB01>忍者兵達<FB00>\n\n        疾風のクルガン直属の\n        ドゥーハン忍者部隊に\n        所属している。\n\n        他の兵士には出来ない\n        困難な作業を一手に\n        引き受ける。<BREAK>",
       "text": null
     },
     {
       "offset": "0x40008",
       "type": "center",
-      "source": "女王の捜索や、迷宮の\n探索等で活躍したが、\nレドゥアの魔法で傀儡\nとなった。\n\n中には魔法に耐えよう\nとして、発狂した者も\nいたようだ。<BREAK>",
+      "source": "        女王の捜索や、迷宮の\n        探索等で活躍したが、\n        レドゥアの魔法で傀儡\n        となった。\n\n        中には魔法に耐えよう\n        として、発狂した者も\n        いたようだ。<BREAK>",
       "text": null
     },
     {
       "offset": "0x40126",
       "type": "center",
-      "source": "<FB09><FB01>水晶の妖精<FB00>\n\n迷宮八階の第一の水晶に\n宿る妖精。\n\n水晶が魔力の媒体として\nつくられた時に、生まれ\n出た。<BREAK>",
+      "source": "           <FB09><FB01>水晶の妖精<FB00>\n\n       迷宮八階の第一の水晶に\n       宿る妖精。\n\n       水晶が魔力の媒体として\n       つくられた時に、生まれ\n       出た。<BREAK>",
       "text": null
     },
     {
       "offset": "0x4021A",
       "type": "center",
-      "source": "水晶から離れられない\nらしく、訪れた者の話を\n聞く事を好む。\n\nピピンが彼女のために\n料理をしたり、ヘタな歌\nつきで踊ったりした話は\n有名である。<BREAK>",
+      "source": "       水晶から離れられない\n       らしく、訪れた者の話を\n       聞く事を好む。\n\n       ピピンが彼女のために\n       料理をしたり、ヘタな歌\n       つきで踊ったりした話は\n       有名である。<BREAK>",
       "text": null
     },
     {
@@ -17496,109 +17496,109 @@
     {
       "offset": "0x404A8",
       "type": "center",
-      "source": "<FB09><FB01>月光の僧侶<FB00>\n\n決まった階層に、決まった\n月齢の時だけ現われる、\n謎の占い師。\n\n月光がもたらすカードは、\n祝福と不運を導く。<BREAK>",
+      "source": "          <FB09><FB01>月光の僧侶<FB00>\n\n      決まった階層に、決まった\n      月齢の時だけ現われる、\n      謎の占い師。\n\n      月光がもたらすカードは、\n      祝福と不運を導く。<BREAK>",
       "text": null
     },
     {
       "offset": "0x40598",
       "type": "center",
-      "source": "冒険者達がやって来ない\n時は、魔物相手に占いを\nする事もあるらしい。\n\n一度、ヴァーゴに頼まれ\n占いをしたが、良くない\n結果だった為、彼女に\nひどい目にあわされた。\n\n以来、彼女とは会わない\nようにしている。<BREAK>",
+      "source": "       冒険者達がやって来ない\n       時は、魔物相手に占いを\n       する事もあるらしい。\n\n       一度、ヴァーゴに頼まれ\n       占いをしたが、良くない\n       結果だった為、彼女に\n       ひどい目にあわされた。\n\n       以来、彼女とは会わない\n       ようにしている。<BREAK>",
       "text": null
     },
     {
       "offset": "0x40710",
       "type": "center",
-      "source": "<FB09><FB01>ナチ（那智）<FB00>\n\n弟のナオを殺した魔神、\nグレーターデーモンに\n復讐を誓い、鬼と化した\n男。\n\nかつては、人々の尊敬を\n一身に受ける、優秀な侍\nだった。<BREAK>",
+      "source": "         <FB09><FB01>ナチ（那智）<FB00>\n\n       弟のナオを殺した魔神、\n       グレーターデーモンに\n       復讐を誓い、鬼と化した\n       男。\n\n       かつては、人々の尊敬を\n       一身に受ける、優秀な侍\n       だった。<BREAK>",
       "text": null
     },
     {
       "offset": "0x4084E",
       "type": "center",
-      "source": "十四年前、火事で家族を\n失くした少女と出会う。\n\nナチは両親を説得し、\n少女を妹として、家に\n引き取った。\n\n喋る事が出来なくなって\nいた少女は、ナチから\nヒナという名をもらった\n直後、声を取り戻した。<BREAK>",
+      "source": "       十四年前、火事で家族を\n       失くした少女と出会う。\n\n       ナチは両親を説得し、\n       少女を妹として、家に\n       引き取った。\n\n       喋る事が出来なくなって\n       いた少女は、ナチから\n       ヒナという名をもらった\n       直後、声を取り戻した。<BREAK>",
       "text": null
     },
     {
       "offset": "0x409C2",
       "type": "center",
-      "source": "<FB09><FB01>炎の番人ギムレイ<FB00>\n\n死の国に逆巻く、紅の\n炎を御する番人。\n\n迷宮の空間の歪みが、\n彼を炎と共に、死の国\nから招いた。<BREAK>",
+      "source": "         <FB09><FB01>炎の番人ギムレイ<FB00>\n\n        死の国に逆巻く、紅の\n        炎を御する番人。\n\n        迷宮の空間の歪みが、\n        彼を炎と共に、死の国\n        から招いた。<BREAK>",
       "text": null
     },
     {
       "offset": "0x40ABA",
       "type": "center",
-      "source": "訪れる冒険者に、例の\n問いを投げかけ続けて\nいる。\n\n帰還時には、死の国の\n王に、全てを報告する\n心づもりだ。\nどのような報告が\nなされるのか、それは\n冒険者達の信頼の心に\nかかっている…………<BREAK>",
+      "source": "        訪れる冒険者に、例の\n        問いを投げかけ続けて\n        いる。\n\n        帰還時には、死の国の\n        王に、全てを報告する\n        心づもりだ。\n        どのような報告が\n        なされるのか、それは\n        冒険者達の信頼の心に\n        かかっている…………<BREAK>",
       "text": null
     },
     {
       "offset": "0x40C46",
       "type": "center",
-      "source": "<FB09><FB01>ギース＝グリーニー<FB00>\n\n自称、名の知られた\n戦士。\n\n逆立った髪と隻眼が\n特徴である。<BREAK>",
+      "source": "         <FB09><FB01>ギース＝グリーニー<FB00>\n\n         自称、名の知られた\n         戦士。\n\n         逆立った髪と隻眼が\n         特徴である。<BREAK>",
       "text": null
     },
     {
       "offset": "0x40D1C",
       "type": "center",
-      "source": "数々の冒険の果てに、\n理想の女性とめぐり\n会う事が出来た。\n\n以来、宝飾店や香料の\n店へ通うようになる。\n\n初めて宝飾店に入った\n時には、強盗と間違え\nられ、ちょっとした\n騒ぎになったそうだ。<BREAK>",
+      "source": "        数々の冒険の果てに、\n        理想の女性とめぐり\n        会う事が出来た。\n\n        以来、宝飾店や香料の\n        店へ通うようになる。\n\n        初めて宝飾店に入った\n        時には、強盗と間違え\n        られ、ちょっとした\n        騒ぎになったそうだ。<BREAK>",
       "text": null
     },
     {
       "offset": "0x40E88",
       "type": "center",
-      "source": "<FB09><FB01>ハンナ<FB00>\n\n戦士ギースの恋人。\n\n気が強く、可愛いい\n彼女は、ギースには\nもったいないと\nもっぱらの評判。\n実はピクシーが変化\nしている。<BREAK>",
+      "source": "            <FB09><FB01>ハンナ<FB00>\n\n         戦士ギースの恋人。\n\n         気が強く、可愛いい\n         彼女は、ギースには\n         もったいないと\n         もっぱらの評判。\n         実はピクシーが変化\n         している。<BREAK>",
       "text": null
     },
     {
       "offset": "0x40FD0",
       "type": "center",
-      "source": "最初は、自分の身を\n守るために、ギースに\nとりついていた。\nしかし、共に過ごす\nうちに、本心から彼の\n事を慕うようになる。\n\nギースの子供っぽい\n笑顔にほれたらしい。\nどうやら、ギャップに\n弱かったようだ。<BREAK>",
+      "source": "        最初は、自分の身を\n        守るために、ギースに\n        とりついていた。\n        しかし、共に過ごす\n        うちに、本心から彼の\n        事を慕うようになる。\n\n        ギースの子供っぽい\n        笑顔にほれたらしい。\n        どうやら、ギャップに\n        弱かったようだ。<BREAK>",
       "text": null
     },
     {
       "offset": "0x41160",
       "type": "center",
-      "source": "<FB09><FB01>ウォルター＝ベリー<FB00>\n\n閃光により失われた\n古文書を探す学者。\n\n元々は王室に仕えて\nいたらしい。<BREAK>",
+      "source": "         <FB09><FB01>ウォルター＝ベリー<FB00>\n\n         閃光により失われた\n         古文書を探す学者。\n\n         元々は王室に仕えて\n         いたらしい。<BREAK>",
       "text": null
     },
     {
       "offset": "0x41236",
       "type": "center",
-      "source": "古文書の解読に人生の\n全てを懸けている男。\n\n何日も眠らずにいたか\nと思うと、三日間眠り\nつづける事もある。\n\n南方の名産品である豆\nから作る、香りの良い\n琥珀色の飲み物を愛飲\nしている。<BREAK>",
+      "source": "        古文書の解読に人生の\n        全てを懸けている男。\n\n        何日も眠らずにいたか\n        と思うと、三日間眠り\n        つづける事もある。\n\n        南方の名産品である豆\n        から作る、香りの良い\n        琥珀色の飲み物を愛飲\n        している。<BREAK>",
       "text": null
     },
     {
       "offset": "0x413AE",
       "type": "center",
-      "source": "<FB09><FB01>メレク＝アブドゥール<FB00>\n\n竜の心臓を求める謎の\n老人。\n\n粗末な服に身を包んで\nいるが、元は王宮の\n魔術師だった。<BREAK>",
+      "source": "        <FB09><FB01>メレク＝アブドゥール<FB00>\n\n        竜の心臓を求める謎の\n        老人。\n\n        粗末な服に身を包んで\n        いるが、元は王宮の\n        魔術師だった。<BREAK>",
       "text": null
     },
     {
       "offset": "0x414A6",
       "type": "center",
-      "source": "王宮魔術師だった頃は\n幾人もの弟子を抱えて\nいた。\n現、クイーンガード長\nレドゥアもその一人。\n\nメレクが研究していた\n禁断の術を受け継いだ\nのもレドゥアである。<BREAK>",
+      "source": "        王宮魔術師だった頃は\n        幾人もの弟子を抱えて\n        いた。\n        現、クイーンガード長\n        レドゥアもその一人。\n\n        メレクが研究していた\n        禁断の術を受け継いだ\n        のもレドゥアである。<BREAK>",
       "text": null
     },
     {
       "offset": "0x415E6",
       "type": "center",
-      "source": "<FB09><FB01>グスタフ＝ブライト<FB00>\n\n王宮第十五騎士隊の\n隊長を務めた男。\nオルフェの父親でも\nある。\n\n騎士道に生きた父の\n背を見てオルフェは\n育った。<BREAK>",
+      "source": "         <FB09><FB01>グスタフ＝ブライト<FB00>\n\n         王宮第十五騎士隊の\n         隊長を務めた男。\n         オルフェの父親でも\n         ある。\n\n         騎士道に生きた父の\n         背を見てオルフェは\n         育った。<BREAK>",
       "text": null
     },
     {
       "offset": "0x4173A",
       "type": "center",
-      "source": "幼い頃のオルフェは\nたいそう愛らしく、\nグスタフの自慢のタネ\nだったらしい。\n\nだが、成長した彼女は\n戦士として生きる事を\n決意。\n\nグスタフは卒倒したと\nいう………<BREAK>",
+      "source": "        幼い頃のオルフェは\n        たいそう愛らしく、\n        グスタフの自慢のタネ\n        だったらしい。\n\n        だが、成長した彼女は\n        戦士として生きる事を\n        決意。\n\n        グスタフは卒倒したと\n        いう………<BREAK>",
       "text": null
     },
     {
       "offset": "0x418B6",
       "type": "center",
-      "source": "<FB09><FB01>パロ<FB00>\n\nドゥーハン忍者兵。\n悪夢に悩まされ続け\n眠れぬ夜を過ごす。\n\n閃光以来、兵として\n働いておらず、除名\nされている。<BREAK>",
+      "source": "             <FB09><FB01>パロ<FB00>\n\n         ドゥーハン忍者兵。\n         悪夢に悩まされ続け\n         眠れぬ夜を過ごす。\n\n         閃光以来、兵として\n         働いておらず、除名\n         されている。<BREAK>",
       "text": null
     },
     {
       "offset": "0x419E4",
       "type": "center",
-      "source": "パロと名乗っているが\n本名ではないらしい。\n\n鋭い神経の持ち主で、\n危険を察知したり、\n人ならざる物を感じる\n力に長けている。\n\n忍者兵時代には重宝な\n力だったのだが………<BREAK>",
+      "source": "        パロと名乗っているが\n        本名ではないらしい。\n\n        鋭い神経の持ち主で、\n        危険を察知したり、\n        人ならざる物を感じる\n        力に長けている。\n\n        忍者兵時代には重宝な\n        力だったのだが………<BREAK>",
       "text": null
     },
     {
@@ -17622,7 +17622,7 @@
     {
       "offset": "0x41BC4",
       "type": "center",
-      "source": "「第八層の水晶で見た光景は\n私の予想を完全に超えていた」",
+      "source": "「第八層の水晶で見た光景は\n 私の予想を完全に超えていた」",
       "text": null
     },
     {
@@ -17634,43 +17634,43 @@
     {
       "offset": "0x41C64",
       "type": "dialog",
-      "source": "ユージン「たった一人の狂人のせいで、\n我が都が野犬すら避ける\n廃墟になってしまったとは」",
+      "source": "ユージン「たった一人の狂人のせいで、\n<FFD4>我が都が野犬すら避ける\n<FFD4>廃墟になってしまったとは」",
       "text": null
     },
     {
       "offset": "0x41CC2",
       "type": "dialog",
-      "source": "ユージン「歴史を見渡してみても、\n悲劇の始まりはささいなものが\n多かったが」",
+      "source": "ユージン「歴史を見渡してみても、\n<FFD4>悲劇の始まりはささいなものが\n<FFD4>多かったが」",
       "text": null
     },
     {
       "offset": "0x41D14",
       "type": "dialog",
-      "source": "ユージン「個人の狂気がひとつの\n世界を破壊した一例だな」",
+      "source": "ユージン「個人の狂気がひとつの\n<FFD4>世界を破壊した一例だな」",
       "text": null
     },
     {
       "offset": "0x41D50",
       "type": "dialog",
-      "source": "ユージン「これでようやく我が都を襲った\n悲劇の全体像が見えてきた」",
+      "source": "ユージン「これでようやく我が都を襲った\n<FFD4>悲劇の全体像が見えてきた」",
       "text": null
     },
     {
       "offset": "0x41D96",
       "type": "dialog",
-      "source": "ユージン「だがそれでもわからぬのが、\nレドゥアの真意だ」",
+      "source": "ユージン「だがそれでもわからぬのが、\n<FFD4>レドゥアの真意だ」",
       "text": null
     },
     {
       "offset": "0x41DD2",
       "type": "dialog",
-      "source": "ユージン「確かに民の事を考えれば、\nレドゥアが人外の法に\n手を出したのもうなずける」",
+      "source": "ユージン「確かに民の事を考えれば、\n<FFD4>レドゥアが人外の法に\n<FFD4>手を出したのもうなずける」",
       "text": null
     },
     {
       "offset": "0x41E2C",
       "type": "dialog",
-      "source": "ユージン「女王の不在を知れば、\n悲惨な状況下にある民衆は\n希望すらも無くしてしまう」",
+      "source": "ユージン「女王の不在を知れば、\n<FFD4>悲惨な状況下にある民衆は\n<FFD4>希望すらも無くしてしまう」",
       "text": null
     },
     {
@@ -17688,55 +17688,55 @@
     {
       "offset": "0x41ED6",
       "type": "dialog",
-      "source": "ユージン「本当に女王は閃光の時に\n死んだのだろうか…」",
+      "source": "ユージン「本当に女王は閃光の時に\n<FFD4>死んだのだろうか…」",
       "text": null
     },
     {
       "offset": "0x41F10",
       "type": "dialog",
-      "source": "ユージン「だが、例えそうだとしても、\n何故レドゥアは荒れ果てた街を\n復興させようとしない？」",
+      "source": "ユージン「だが、例えそうだとしても、\n<FFD4>何故レドゥアは荒れ果てた街を\n<FFD4>復興させようとしない？」",
       "text": null
     },
     {
       "offset": "0x41F72",
       "type": "dialog",
-      "source": "ユージン「それが亡き女王の意思にも\nなるではないか？」",
+      "source": "ユージン「それが亡き女王の意思にも\n<FFD4>なるではないか？」",
       "text": null
     },
     {
       "offset": "0x41FAC",
       "type": "dialog",
-      "source": "ユージン「そうすれば民はきっと、\nレドゥアを新しい王として\n歓呼の声で迎えるはずだ」",
+      "source": "ユージン「そうすれば民はきっと、\n<FFD4>レドゥアを新しい王として\n<FFD4>歓呼の声で迎えるはずだ」",
       "text": null
     },
     {
       "offset": "0x42006",
       "type": "dialog",
-      "source": "ユージン「なのに何故憑かれたように\nこの迷宮に関わる？」",
+      "source": "ユージン「なのに何故憑かれたように\n<FFD4>この迷宮に関わる？」",
       "text": null
     },
     {
       "offset": "0x42042",
       "type": "dialog",
-      "source": "ユージン「人々に恨まれ、\n国庫を空にしてまで迷宮を\n存続させている理由は？」",
+      "source": "ユージン「人々に恨まれ、\n<FFD4>国庫を空にしてまで迷宮を\n<FFD4>存続させている理由は？」",
       "text": null
     },
     {
       "offset": "0x42094",
       "type": "dialog",
-      "source": "ユージン「私の想像が正しければ、\n女王は生きている」",
+      "source": "ユージン「私の想像が正しければ、\n<FFD4>女王は生きている」",
       "text": null
     },
     {
       "offset": "0x420CC",
       "type": "dialog",
-      "source": "ユージン「そしてレドゥアもまた\n女王が生きている事を\n知っているのだ」",
+      "source": "ユージン「そしてレドゥアもまた\n<FFD4>女王が生きている事を\n<FFD4>知っているのだ」",
       "text": null
     },
     {
       "offset": "0x42118",
       "type": "dialog",
-      "source": "ユージン「複雑にもつれていた糸が、\n次第に解けてきたようだな」",
+      "source": "ユージン「複雑にもつれていた糸が、\n<FFD4>次第に解けてきたようだな」",
       "text": null
     },
     {
@@ -17748,13 +17748,13 @@
     {
       "offset": "0x4218C",
       "type": "dialog",
-      "source": "ユージン「さてさてどうやらレドゥアに\n会わねばならぬ」",
+      "source": "ユージン「さてさてどうやらレドゥアに\n<FFD4>会わねばならぬ」",
       "text": null
     },
     {
       "offset": "0x421C6",
       "type": "dialog",
-      "source": "ユージン「そしてこの悲劇の結末の幕を\n引く事にしよう」",
+      "source": "ユージン「そしてこの悲劇の結末の幕を\n<FFD4>引く事にしよう」",
       "text": null
     },
     {
@@ -17814,7 +17814,7 @@
     {
       "offset": "0x42416",
       "type": "dialog",
-      "source": "グレース「お願いです。\n剣をお貸しください！」",
+      "source": "グレース「お願いです。\n<FFD4>剣をお貸しください！」",
       "text": null
     },
     {
@@ -17826,7 +17826,7 @@
     {
       "offset": "0x42488",
       "type": "center",
-      "source": "「やばい！！\nやつがそっちに行った！」",
+      "source": "<STYLE:2>「やばい！！\n やつがそっちに行った！」",
       "text": null
     },
     {
@@ -17844,13 +17844,13 @@
     {
       "offset": "0x42538",
       "type": "dialog",
-      "source": "戦士「やっぱり不死者の王相手に\n肉弾戦だけじゃ無理があるな」",
+      "source": "戦士「やっぱり不死者の王相手に\n<FFD2>肉弾戦だけじゃ無理があるな」",
       "text": null
     },
     {
       "offset": "0x42578",
       "type": "dialog",
-      "source": "戦士「しかもみっともない事に\nガルシアの親父が作ってくれた\n武器は結局使わずじまい…」",
+      "source": "戦士「しかもみっともない事に\n<FFD2>ガルシアの親父が作ってくれた\n<FFD2>武器は結局使わずじまい…」",
       "text": null
     },
     {
@@ -17868,43 +17868,43 @@
     {
       "offset": "0x42618",
       "type": "dialog",
-      "source": "戦士「俺の名前は<FB01><FB09>ウォルフ<FB00>。\nあんたに命を助けてもらった\nこの恩は忘れないぜ」",
+      "source": "戦士「俺の名前は<FB01><FB09>ウォルフ<FB00>。\n<FFD2>あんたに命を助けてもらった\n<FFD2>この恩は忘れないぜ」",
       "text": null
     },
     {
       "offset": "0x42670",
       "type": "dialog",
-      "source": "グレース「わたしからもお礼を\n言わせてください」",
+      "source": "グレース「わたしからもお礼を\n<FFD4>言わせてください」",
       "text": null
     },
     {
       "offset": "0x426A4",
       "type": "dialog",
-      "source": "グレース「あなたのおかげで\nユージンは救われます」",
+      "source": "グレース「あなたのおかげで\n<FFD4>ユージンは救われます」",
       "text": null
     },
     {
       "offset": "0x426DA",
       "type": "dialog",
-      "source": "グレース「魔神との契約は相手が\n消滅すれば無効になると\n聞いております」",
+      "source": "グレース「魔神との契約は相手が\n<FFD4>消滅すれば無効になると\n<FFD4>聞いております」",
       "text": null
     },
     {
       "offset": "0x42728",
       "type": "dialog",
-      "source": "グレース「これでユージンは計画を\n中止せざるを得ないはず」",
+      "source": "グレース「これでユージンは計画を\n<FFD4>中止せざるを得ないはず」",
       "text": null
     },
     {
       "offset": "0x42766",
       "type": "dialog",
-      "source": "グレース「今は恨まれるかも\nしれないけど…」",
+      "source": "グレース「今は恨まれるかも\n<FFD4>しれないけど…」",
       "text": null
     },
     {
       "offset": "0x42796",
       "type": "dialog",
-      "source": "グレース「きっといつかは、\nわたし達がした事を\n理解してくれると思います」",
+      "source": "グレース「きっといつかは、\n<FFD4>わたし達がした事を\n<FFD4>理解してくれると思います」",
       "text": null
     },
     {
@@ -17916,7 +17916,7 @@
     {
       "offset": "0x42838",
       "type": "center",
-      "source": "「クククク、お前達は愉快な\n生き物だな…」",
+      "source": "<STYLE:2>「クククク、お前達は愉快な\n 生き物だな…」",
       "text": null
     },
     {
@@ -17934,19 +17934,19 @@
     {
       "offset": "0x42920",
       "type": "dialog",
-      "source": "不死者の王「私に挑んだその理由が、\n愛する者を救うためだと\nいうのか？」",
+      "source": "不死者の王「私に挑んだその理由が、\n<FFD5>愛する者を救うためだと\n<FFD5>いうのか？」",
       "text": null
     },
     {
       "offset": "0x4296E",
       "type": "dialog",
-      "source": "不死者の王「お前達の行動が、\n永遠に近い年月を生きる\n我々には理解出来ぬ」",
+      "source": "不死者の王「お前達の行動が、\n<FFD5>永遠に近い年月を生きる\n<FFD5>我々には理解出来ぬ」",
       "text": null
     },
     {
       "offset": "0x429BE",
       "type": "dialog",
-      "source": "不死者の王「死を異常なまでに恐れ、\nその反面ささいな事で\n死に急いでしまう」",
+      "source": "不死者の王「死を異常なまでに恐れ、\n<FFD5>その反面ささいな事で\n<FFD5>死に急いでしまう」",
       "text": null
     },
     {
@@ -17958,19 +17958,19 @@
     {
       "offset": "0x42A32",
       "type": "dialog",
-      "source": "不死者の王「剣を収めたまえ。\nひとまず休戦しようでは\nないか」",
+      "source": "不死者の王「剣を収めたまえ。\n<FFD5>ひとまず休戦しようでは\n<FFD5>ないか」",
       "text": null
     },
     {
       "offset": "0x42A76",
       "type": "dialog",
-      "source": "不死者の王「一言忠告しておくが、\n我々を倒す事は本質的に\n不可能だ」",
+      "source": "不死者の王「一言忠告しておくが、\n<FFD5>我々を倒す事は本質的に\n<FFD5>不可能だ」",
       "text": null
     },
     {
       "offset": "0x42AC0",
       "type": "dialog",
-      "source": "不死者の王「朝日は闇を退けるが、\n再び世界が夜の帳に包み\n込まれるように」",
+      "source": "不死者の王「朝日は闇を退けるが、\n<FFD5>再び世界が夜の帳に包み\n<FFD5>込まれるように」",
       "text": null
     },
     {
@@ -17982,25 +17982,25 @@
     {
       "offset": "0x42B32",
       "type": "dialog",
-      "source": "不死者の王「だが悲しき事に我々が、\n神に愛される事はない」",
+      "source": "不死者の王「だが悲しき事に我々が、\n<FFD5>神に愛される事はない」",
       "text": null
     },
     {
       "offset": "0x42B70",
       "type": "dialog",
-      "source": "不死者の王「我々は不死を与えられたが、\nその代わりに地上に住む\n事は許されなかった」",
+      "source": "不死者の王「我々は不死を与えられたが、\n<FFD5>その代わりに地上に住む\n<FFD5>事は許されなかった」",
       "text": null
     },
     {
       "offset": "0x42BCA",
       "type": "dialog",
-      "source": "不死者の王「つらい事だが我々が\n地上に姿を現す時は、\nこの様な姿でなく」",
+      "source": "不死者の王「つらい事だが我々が\n<FFD5>地上に姿を現す時は、\n<FFD5>この様な姿でなく」",
       "text": null
     },
     {
       "offset": "0x42C18",
       "type": "dialog",
-      "source": "不死者の王「招かれざる客人となって、\n忌まわしい獣か幻獣の姿を\nとってさまようしかない」",
+      "source": "不死者の王「招かれざる客人となって、\n<FFD5>忌まわしい獣か幻獣の姿を\n<FFD5>とってさまようしかない」",
       "text": null
     },
     {
@@ -18024,37 +18024,37 @@
     {
       "offset": "0x42D06",
       "type": "dialog",
-      "source": "不死者の王「この世界では君達が、\n招かれざる客人なのだよ」",
+      "source": "不死者の王「この世界では君達が、\n<FFD5>招かれざる客人なのだよ」",
       "text": null
     },
     {
       "offset": "0x42D44",
       "type": "center",
-      "source": "「ああ…そうそう、残念だったな」",
+      "source": "<STYLE:2>「ああ…そうそう、残念だったな」",
       "text": null
     },
     {
       "offset": "0x42D68",
       "type": "center",
-      "source": "「ユージン＝ギュスターム卿の\n契約は継続される」",
+      "source": "<STYLE:2>「ユージン＝ギュスターム卿の\n 契約は継続される」",
       "text": null
     },
     {
       "offset": "0x42DA6",
       "type": "center",
-      "source": "「彼の魂は闇の主の下で\n死後永遠なるものになるだろう」",
+      "source": "<STYLE:2>「彼の魂は闇の主の下で\n 死後永遠なるものになるだろう」",
       "text": null
     },
     {
       "offset": "0x42DEC",
       "type": "dialog",
-      "source": "ウォルフ「あいつ、何を言って\nやがったんだ？」",
+      "source": "ウォルフ「あいつ、何を言って\n<FFD4>やがったんだ？」",
       "text": null
     },
     {
       "offset": "0x42E1E",
       "type": "dialog",
-      "source": "ウォルフ「それにあいつ……\nなんで死なねえんだよ？」",
+      "source": "ウォルフ「それにあいつ……\n<FFD4>なんで死なねえんだよ？」",
       "text": null
     },
     {
@@ -18072,7 +18072,7 @@
     {
       "offset": "0x42EAC",
       "type": "dialog",
-      "source": "グレース「そして…わたし達は……\nこの世界の住民でないと…」",
+      "source": "グレース「そして…わたし達は……\n<FFD4>この世界の住民でないと…」",
       "text": null
     },
     {
@@ -18084,19 +18084,19 @@
     {
       "offset": "0x42F0A",
       "type": "dialog",
-      "source": "ウォルフ「他の魔物もあとでこっそり、\nさっきの野郎みたいに\n蘇ってきているのか？」",
+      "source": "ウォルフ「他の魔物もあとでこっそり、\n<FFD4>さっきの野郎みたいに\n<FFD4>蘇ってきているのか？」",
       "text": null
     },
     {
       "offset": "0x42F62",
       "type": "dialog",
-      "source": "ウォルフ「だけどそれじゃ、\n俺達が今まで倒してきた\n魔物達はなんだい？」",
+      "source": "ウォルフ「だけどそれじゃ、\n<FFD4>俺達が今まで倒してきた\n<FFD4>魔物達はなんだい？」",
       "text": null
     },
     {
       "offset": "0x42FB0",
       "type": "dialog",
-      "source": "ウォルフ「そんなイカサマ勝負が\nまかり通るのなら、\n世の中真っ暗闇じゃねえか」",
+      "source": "ウォルフ「そんなイカサマ勝負が\n<FFD4>まかり通るのなら、\n<FFD4>世の中真っ暗闇じゃねえか」",
       "text": null
     },
     {
@@ -18108,31 +18108,31 @@
     {
       "offset": "0x4302E",
       "type": "dialog",
-      "source": "グレース「ユージン…あなたを…\n助けられなかった……」",
+      "source": "グレース「ユージン…あなたを…\n<FFD4>助けられなかった……」",
       "text": null
     },
     {
       "offset": "0x43068",
       "type": "dialog",
-      "source": "ウォルフ「まあ心配するな。\nなにか方法は絶対あるはず」",
+      "source": "ウォルフ「まあ心配するな。\n<FFD4>なにか方法は絶対あるはず」",
       "text": null
     },
     {
       "offset": "0x430A2",
       "type": "dialog",
-      "source": "ウォルフ「それにあいつが真実を\n語っているという証拠も\nないんだしな」",
+      "source": "ウォルフ「それにあいつが真実を\n<FFD4>語っているという証拠も\n<FFD4>ないんだしな」",
       "text": null
     },
     {
       "offset": "0x430EE",
       "type": "dialog",
-      "source": "ウォルフ「だけどこれ以上深い階層へは\n俺一人の力じゃ無理だ」",
+      "source": "ウォルフ「だけどこれ以上深い階層へは\n<FFD4>俺一人の力じゃ無理だ」",
       "text": null
     },
     {
       "offset": "0x4312E",
       "type": "dialog",
-      "source": "ウォルフ「街に戻って誰か冒険者を\n探そうじゃないか」",
+      "source": "ウォルフ「街に戻って誰か冒険者を\n<FFD4>探そうじゃないか」",
       "text": null
     },
     {

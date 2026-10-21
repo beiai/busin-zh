@@ -72,103 +72,103 @@
     {
       "offset": "0x86F6",
       "type": "dialog",
-      "source": "女戦士「古くからの言い伝えでは\n不死者が五匹集まれば\n異界への扉が開き…」",
+      "source": "女戦士「古くからの言い伝えでは\n<FFD3>不死者が五匹集まれば\n<FFD3>異界への扉が開き…」",
       "text": null
     },
     {
       "offset": "0x8746",
       "type": "dialog",
-      "source": "女戦士「十匹集まれば通路が出来ると\n言われている」",
+      "source": "女戦士「十匹集まれば通路が出来ると\n<FFD3>言われている」",
       "text": null
     },
     {
       "offset": "0x877C",
       "type": "dialog",
-      "source": "女戦士「この様子ではどうやら噂は\n本当らしいな」",
+      "source": "女戦士「この様子ではどうやら噂は\n<FFD3>本当らしいな」",
       "text": null
     },
     {
       "offset": "0x87B0",
       "type": "dialog",
-      "source": "女戦士「迷宮の第四層が不死者共の\n住処になっていると\nいうのは…」",
+      "source": "女戦士「迷宮の第四層が不死者共の\n<FFD3>住処になっていると\n<FFD3>いうのは…」",
       "text": null
     },
     {
       "offset": "0x87F8",
       "type": "center",
-      "source": "「お嬢さん、大丈夫でしたか？」",
+      "source": "<STYLE:2>「お嬢さん、大丈夫でしたか？」",
       "text": null
     },
     {
       "offset": "0x881A",
       "type": "dialog",
-      "source": "侍「勝手に行かれては困ります。\nどこに行かれたのか\n探し回りましたよ…」",
+      "source": "侍「勝手に行かれては困ります。\n<FFD1>どこに行かれたのか\n<FFD1>探し回りましたよ…」",
       "text": null
     },
     {
       "offset": "0x8868",
       "type": "dialog",
-      "source": "女戦士「やれやれ、行動するのにも\n了承をとらねばならぬとは、\n兄など持つものではないな」",
+      "source": "女戦士「やれやれ、行動するのにも\n<FFD3>了承をとらねばならぬとは、\n<FFD3>兄など持つものではないな」",
       "text": null
     },
     {
       "offset": "0x88C6",
       "type": "dialog",
-      "source": "ジョセフ「ほぉ…\nここが噂の、入る度に\n地形が変わるという…」",
+      "source": "ジョセフ「ほぉ…\n<FFD4>ここが噂の、入る度に\n<FFD4>地形が変わるという…」",
       "text": null
     },
     {
       "offset": "0x890A",
       "type": "dialog",
-      "source": "ベス「だけども、わたし達は\n初めて来たのだから、\nよくわかりませんねぇ…」",
+      "source": "ベス「だけども、わたし達は\n<FFD2>初めて来たのだから、\n<FFD2>よくわかりませんねぇ…」",
       "text": null
     },
     {
       "offset": "0x895A",
       "type": "dialog",
-      "source": "ジョセフ「それなら大丈夫じゃぞ！\nワシらも、実際に\n確かめてみるのじゃ！」",
+      "source": "ジョセフ「それなら大丈夫じゃぞ！\n<FFD4>ワシらも、実際に\n<FFD4>確かめてみるのじゃ！」",
       "text": null
     },
     {
       "offset": "0x89AA",
       "type": "dialog",
-      "source": "ジョセフ「二回、三階を歩いてまわれば\n本当に地形が変わるかどうか\n確かめられるぞい！」",
+      "source": "ジョセフ「二回、三階を歩いてまわれば\n<FFD4>本当に地形が変わるかどうか\n<FFD4>確かめられるぞい！」",
       "text": null
     },
     {
       "offset": "0x8A06",
       "type": "dialog",
-      "source": "ベス「だけども、じいさん。\nそんなに無理な運動をして\n腰を悪くしても知りませんよ」",
+      "source": "ベス「だけども、じいさん。\n<FFD2>そんなに無理な運動をして\n<FFD2>腰を悪くしても知りませんよ」",
       "text": null
     },
     {
       "offset": "0x8A5E",
       "type": "dialog",
-      "source": "ジョセフ「心配無用じゃ！\nワシは、まだまだ全然\n元気じゃぞい！」",
+      "source": "ジョセフ「心配無用じゃ！\n<FFD4>ワシは、まだまだ全然\n<FFD4>元気じゃぞい！」",
       "text": null
     },
     {
       "offset": "0x8AA4",
       "type": "dialog",
-      "source": "ジョセフ「ばあさんの方こそ、\n自信がないのならば\n休んでいても良いぞ！」",
+      "source": "ジョセフ「ばあさんの方こそ、\n<FFD4>自信がないのならば\n<FFD4>休んでいても良いぞ！」",
       "text": null
     },
     {
       "offset": "0x8AF2",
       "type": "dialog",
-      "source": "ベス「冗談はよしてくださいな。\nこんな魔物だらけのおっかない所に\n置き去りにされるなんて…」",
+      "source": "ベス「冗談はよしてくださいな。\n<FFD2>こんな魔物だらけのおっかない所に\n<FFD2>置き去りにされるなんて…」",
       "text": null
     },
     {
       "offset": "0x8B54",
       "type": "dialog",
-      "source": "ジョセフ「そうか！\nなら決まりじゃな！」",
+      "source": "ジョセフ「そうか！\n<FFD4>なら決まりじゃな！」",
       "text": null
     },
     {
       "offset": "0x8B80",
       "type": "dialog",
-      "source": "ジョセフ「すまぬが、この第三階層は\n一度、下の階層まで行った後\nまた戻ってきておくれ」",
+      "source": "ジョセフ「すまぬが、この第三階層は\n<FFD4>一度、下の階層まで行った後\n<FFD4>また戻ってきておくれ」",
       "text": null
     },
     {
@@ -180,37 +180,37 @@
     {
       "offset": "0x8BF0",
       "type": "dialog",
-      "source": "ジョセフ「ほおおおおお…！\n摩訶不思議じゃ！」",
+      "source": "ジョセフ「ほおおおおお…！\n<FFD4>摩訶不思議じゃ！」",
       "text": null
     },
     {
       "offset": "0x8C22",
       "type": "dialog",
-      "source": "ジョセフ「確かに、前とは\n地形が異なっておる！」",
+      "source": "ジョセフ「確かに、前とは\n<FFD4>地形が異なっておる！」",
       "text": null
     },
     {
       "offset": "0x8C56",
       "type": "dialog",
-      "source": "ベス「言われてみれば、そうですねえ…\n迷宮という物は\nまるで生き物の様ですね」",
+      "source": "ベス「言われてみれば、そうですねえ…\n<FFD2>迷宮という物は\n<FFD2>まるで生き物の様ですね」",
       "text": null
     },
     {
       "offset": "0x8CAA",
       "type": "dialog",
-      "source": "ジョセフ「うむむ…実の所、\n地形が変わるという話だけは\n半信半疑だったのじゃ…」",
+      "source": "ジョセフ「うむむ…実の所、\n<FFD4>地形が変わるという話だけは\n<FFD4>半信半疑だったのじゃ…」",
       "text": null
     },
     {
       "offset": "0x8D00",
       "type": "dialog",
-      "source": "ジョセフ「じゃが、実際にこの目で\n見てしまったのじゃから\n疑う駅にもいくまい…」",
+      "source": "ジョセフ「じゃが、実際にこの目で\n<FFD4>見てしまったのじゃから\n<FFD4>疑う駅にもいくまい…」",
       "text": null
     },
     {
       "offset": "0x8D56",
       "type": "dialog",
-      "source": "ジョセフ「何だか頭が、こんがらがって\nしまいそうじゃ…」",
+      "source": "ジョセフ「何だか頭が、こんがらがって\n<FFD4>しまいそうじゃ…」",
       "text": null
     },
     {
@@ -222,37 +222,37 @@
     {
       "offset": "0x8DB4",
       "type": "dialog",
-      "source": "ベス「迷宮なんて物は、本来\n存在する事自体が\n不思議なんじゃありませんか」",
+      "source": "ベス「迷宮なんて物は、本来\n<FFD2>存在する事自体が\n<FFD2>不思議なんじゃありませんか」",
       "text": null
     },
     {
       "offset": "0x8E04",
       "type": "dialog",
-      "source": "ベス「中で起こる現象まで、わたしら\n人間の常識で考えては\n全くきりがないでしょう」",
+      "source": "ベス「中で起こる現象まで、わたしら\n<FFD2>人間の常識で考えては\n<FFD2>全くきりがないでしょう」",
       "text": null
     },
     {
       "offset": "0x8E5C",
       "type": "dialog",
-      "source": "ベス「じいさんも、もう歳なんですから\nあんまり難しい事を考えるのは\nおよしになってください」",
+      "source": "ベス「じいさんも、もう歳なんですから\n<FFD2>あんまり難しい事を考えるのは\n<FFD2>およしになってください」",
       "text": null
     },
     {
       "offset": "0x8EBE",
       "type": "dialog",
-      "source": "ジョセフ「ああ、そうじゃのう…\nすまんのう、ばあさん。\nついついクセでな…」",
+      "source": "ジョセフ「ああ、そうじゃのう…\n<FFD4>すまんのう、ばあさん。\n<FFD4>ついついクセでな…」",
       "text": null
     },
     {
       "offset": "0x8F10",
       "type": "dialog",
-      "source": "ジョセフ「さて、第三階層の噂も\nしっかりと確かめた！」",
+      "source": "ジョセフ「さて、第三階層の噂も\n<FFD4>しっかりと確かめた！」",
       "text": null
     },
     {
       "offset": "0x8F4A",
       "type": "dialog",
-      "source": "ジョセフ「次は第四階層を\nじっくり見てまわるぞい！」",
+      "source": "ジョセフ「次は第四階層を\n<FFD4>じっくり見てまわるぞい！」",
       "text": null
     },
     {
@@ -270,13 +270,13 @@
     {
       "offset": "0x8FBC",
       "type": "dialog",
-      "source": "ジョセフ「戻って来たのはええが、\n三階を歩き足らんのじゃ…」",
+      "source": "ジョセフ「戻って来たのはええが、\n<FFD4>三階を歩き足らんのじゃ…」",
       "text": null
     },
     {
       "offset": "0x8FFC",
       "type": "dialog",
-      "source": "ジョセフ「本当に地形が変わったのか\nよくわからん…」",
+      "source": "ジョセフ「本当に地形が変わったのか\n<FFD4>よくわからん…」",
       "text": null
     },
     {
@@ -288,25 +288,25 @@
     {
       "offset": "0x9058",
       "type": "dialog",
-      "source": "ベス「わたしも、じいさんに任せて\nしまって、はっきりと道を\n覚えてませんよ」",
+      "source": "ベス「わたしも、じいさんに任せて\n<FFD2>しまって、はっきりと道を\n<FFD2>覚えてませんよ」",
       "text": null
     },
     {
       "offset": "0x90AA",
       "type": "dialog",
-      "source": "ジョセフ「ガイドさんや、すまぬが\nもう一度三階をじっくりと\n歩かせてくれんかのう…」",
+      "source": "ジョセフ「ガイドさんや、すまぬが\n<FFD4>もう一度三階をじっくりと\n<FFD4>歩かせてくれんかのう…」",
       "text": null
     },
     {
       "offset": "0x9104",
       "type": "dialog",
-      "source": "ジョセフ「きちんと下り階段の前まで\n行ってくれれば、その道順を\nしっかりと覚えておくぞい」",
+      "source": "ジョセフ「きちんと下り階段の前まで\n<FFD4>行ってくれれば、その道順を\n<FFD4>しっかりと覚えておくぞい」",
       "text": null
     },
     {
       "offset": "0x9164",
       "type": "dialog",
-      "source": "ジョセフ「面倒な事を頼んで\nすまんのう…」",
+      "source": "ジョセフ「面倒な事を頼んで\n<FFD4>すまんのう…」",
       "text": null
     },
     {
@@ -324,7 +324,7 @@
     {
       "offset": "0x91CC",
       "type": "dialog",
-      "source": "ジョセフ「戻って来たのはええが、\n時間が経ちすぎたものじゃから\n地形を忘れてしもうた…」",
+      "source": "ジョセフ「戻って来たのはええが、\n<FFD4>時間が経ちすぎたものじゃから\n<FFD4>地形を忘れてしもうた…」",
       "text": null
     },
     {
@@ -336,43 +336,43 @@
     {
       "offset": "0x924E",
       "type": "dialog",
-      "source": "ベス「わたしも、じいさんに任せて\nしまって、はっきりと道を\n覚えてませんよ」",
+      "source": "ベス「わたしも、じいさんに任せて\n<FFD2>しまって、はっきりと道を\n<FFD2>覚えてませんよ」",
       "text": null
     },
     {
       "offset": "0x92A0",
       "type": "dialog",
-      "source": "ジョセフ「ガイドさんや、すまぬが\nもう一度三階をじっくりと\n歩かせてくれんかのう…」",
+      "source": "ジョセフ「ガイドさんや、すまぬが\n<FFD4>もう一度三階をじっくりと\n<FFD4>歩かせてくれんかのう…」",
       "text": null
     },
     {
       "offset": "0x92FA",
       "type": "dialog",
-      "source": "ジョセフ「きちんと下り階段の前まで\n行ってくれれば、その道順を\nしっかりと覚えておくぞい」",
+      "source": "ジョセフ「きちんと下り階段の前まで\n<FFD4>行ってくれれば、その道順を\n<FFD4>しっかりと覚えておくぞい」",
       "text": null
     },
     {
       "offset": "0x935A",
       "type": "dialog",
-      "source": "ジョセフ「面倒な事を頼んで\nすまんのう…」",
+      "source": "ジョセフ「面倒な事を頼んで\n<FFD4>すまんのう…」",
       "text": null
     },
     {
       "offset": "0x9388",
       "type": "dialog",
-      "source": "ジョセフ「この階段から\n下の階層に降りられる\n様じゃの！」",
+      "source": "ジョセフ「この階段から\n<FFD4>下の階層に降りられる\n<FFD4>様じゃの！」",
       "text": null
     },
     {
       "offset": "0x93C8",
       "type": "dialog",
-      "source": "ジョセフ「そして、もう一度上って\n来た時には地形が変わって\nおるんじゃの！」",
+      "source": "ジョセフ「そして、もう一度上って\n<FFD4>来た時には地形が変わって\n<FFD4>おるんじゃの！」",
       "text": null
     },
     {
       "offset": "0x941A",
       "type": "dialog",
-      "source": "ジョセフ「うむむ！\nワクワクするぞい！」",
+      "source": "ジョセフ「うむむ！\n<FFD4>ワクワクするぞい！」",
       "text": null
     },
     {
@@ -396,7 +396,7 @@
     {
       "offset": "0x94AA",
       "type": "dialog",
-      "source": "アンマリー「いやだ。\nわたしったら、まだ名前を\n聞いていなかったわ」",
+      "source": "アンマリー「いやだ。\n<FFD5>わたしったら、まだ名前を\n<FFD5>聞いていなかったわ」",
       "text": null
     },
     {
@@ -408,7 +408,7 @@
     {
       "offset": "0x9518",
       "type": "dialog",
-      "source": "オスカー「てめえ！\nアンに名乗らないたぁ\nどう言う了見だ！」",
+      "source": "オスカー「てめえ！\n<FFD4>アンに名乗らないたぁ\n<FFD4>どう言う了見だ！」",
       "text": null
     },
     {
@@ -420,13 +420,13 @@
     {
       "offset": "0x9576",
       "type": "dialog",
-      "source": "アンマリー「オスカー、あまり何度も\n同じ事、言わせないでね」",
+      "source": "アンマリー「オスカー、あまり何度も\n<FFD5>同じ事、言わせないでね」",
       "text": null
     },
     {
       "offset": "0x95B6",
       "type": "dialog",
-      "source": "アンマリー「わたしガラの悪い人って\nキライよ」",
+      "source": "アンマリー「わたしガラの悪い人って\n<FFD5>キライよ」",
       "text": null
     },
     {
@@ -438,7 +438,7 @@
     {
       "offset": "0x961C",
       "type": "dialog",
-      "source": "オスカー「ご、ごめんよ！ アン！\nつい口がすべっちゃうんだ」",
+      "source": "オスカー「ご、ごめんよ！ アン！\n<FFD4>つい口がすべっちゃうんだ」",
       "text": null
     },
     {
@@ -456,7 +456,7 @@
     {
       "offset": "0x96D0",
       "type": "dialog",
-      "source": "リューン「よければ\n名前を教えてくれないか？」",
+      "source": "リューン「よければ\n<FFD4>名前を教えてくれないか？」",
       "text": null
     },
     {
@@ -474,13 +474,13 @@
     {
       "offset": "0x972E",
       "type": "dialog",
-      "source": "アンマリー「いつからあなたが\nこのパーティのリーダーに\nなったのかしら………」",
+      "source": "アンマリー「いつからあなたが\n<FFD5>このパーティのリーダーに\n<FFD5>なったのかしら………」",
       "text": null
     },
     {
       "offset": "0x9782",
       "type": "dialog",
-      "source": "リューン「す、すまん、アン！！\n出過ぎたマネをした！！」",
+      "source": "リューン「す、すまん、アン！！\n<FFD4>出過ぎたマネをした！！」",
       "text": null
     },
     {
@@ -492,7 +492,7 @@
     {
       "offset": "0x9802",
       "type": "dialog",
-      "source": "アンマリー「もういいわ。\nあまりみっともないマネは\nしない方が良くってよ」",
+      "source": "アンマリー「もういいわ。\n<FFD5>あまりみっともないマネは\n<FFD5>しない方が良くってよ」",
       "text": null
     },
     {
@@ -504,7 +504,7 @@
     {
       "offset": "0x987C",
       "type": "dialog",
-      "source": "アンマリー「それじゃ、改めて\n尋ねるわ」",
+      "source": "アンマリー「それじゃ、改めて\n<FFD5>尋ねるわ」",
       "text": null
     },
     {
@@ -516,7 +516,7 @@
     {
       "offset": "0x98CC",
       "type": "center",
-      "source": "<PAGE>は………\n\n名前を教える\n名乗る必要はない\n",
+      "source": "<PAGE>は………\n\n<FFC0>名前を教える\n<FFC1>名乗る必要はない\n",
       "text": null
     },
     {
@@ -528,43 +528,43 @@
     {
       "offset": "0x993A",
       "type": "dialog",
-      "source": "アンマリー「まぁ………\nとても口に出来ない様な\nハズカシイ名前<STYLE:0>なのね」",
+      "source": "アンマリー「まぁ………\n<FFD5>とても口に出来ない様な\n<FFD5><STYLE:1>ハズカシイ名前<STYLE:0>なのね」",
       "text": null
     },
     {
       "offset": "0x998A",
       "type": "dialog",
-      "source": "アンマリー「わかったわ。\nもう聞かない」",
+      "source": "アンマリー「わかったわ。\n<FFD5>もう聞かない」",
       "text": null
     },
     {
       "offset": "0x99B6",
       "type": "dialog",
-      "source": "アンマリー「誰にだって、触れられたく\nない事くらいあるもの」",
+      "source": "アンマリー「誰にだって、触れられたく\n<FFD5>ない事くらいあるもの」",
       "text": null
     },
     {
       "offset": "0x99F6",
       "type": "dialog",
-      "source": "アンマリー「あぁ、でも気になるわ。\nどんな<STYLE:1>ハズカシイ名前<STYLE:0>\nなのかしら………」",
+      "source": "アンマリー「あぁ、でも気になるわ。\n<FFD5>どんな<STYLE:1>ハズカシイ名前<STYLE:0>\n<FFD5>なのかしら………」",
       "text": null
     },
     {
       "offset": "0x9A4C",
       "type": "dialog",
-      "source": "アンマリー「あんな名前や、こんな名前\nかもしれないのね！」",
+      "source": "アンマリー「あんな名前や、こんな名前\n<FFD5>かもしれないのね！」",
       "text": null
     },
     {
       "offset": "0x9A8A",
       "type": "dialog",
-      "source": "アンマリー「ウフフフ。\n心の中で、こっそりと\n呼ばせていただくわ」",
+      "source": "アンマリー「ウフフフ。\n<FFD5>心の中で、こっそりと\n<FFD5>呼ばせていただくわ」",
       "text": null
     },
     {
       "offset": "0x9AD2",
       "type": "dialog",
-      "source": "アンマリー「それはそれとして……\nあなた、わたし達と\n少し遊ばない？」",
+      "source": "アンマリー「それはそれとして……\n<FFD5>あなた、わたし達と\n<FFD5>少し遊ばない？」",
       "text": null
     },
     {
@@ -576,13 +576,13 @@
     {
       "offset": "0x9B4E",
       "type": "dialog",
-      "source": "アンマリー「<PAGE>、ね。\n覚えたわ！」",
+      "source": "アンマリー「<PAGE>、ね。\n<FFD5>覚えたわ！」",
       "text": null
     },
     {
       "offset": "0x9B74",
       "type": "dialog",
-      "source": "アンマリー「あら、どこかで聞いた事が\nある様な名前ね？」",
+      "source": "アンマリー「あら、どこかで聞いた事が\n<FFD5>ある様な名前ね？」",
       "text": null
     },
     {
@@ -618,13 +618,13 @@
     {
       "offset": "0x9C48",
       "type": "dialog",
-      "source": "アンマリー「まぁ、いいわ。\n<PAGE>なんて\nよくある名前ですものね」",
+      "source": "アンマリー「まぁ、いいわ。\n<FFD5><PAGE>なんて\n<FFD5>よくある名前ですものね」",
       "text": null
     },
     {
       "offset": "0x9C8C",
       "type": "dialog",
-      "source": "アンマリー「それより、<PAGE>。\nわたし達と少し\n遊ばない？」",
+      "source": "アンマリー「それより、<PAGE>。\n<FFD5>わたし達と少し\n<FFD5>遊ばない？」",
       "text": null
     },
     {
@@ -642,25 +642,25 @@
     {
       "offset": "0x9D30",
       "type": "dialog",
-      "source": "アンマリー「四階への階段に行くまでに\nどちらが多く敵のパーティを\n倒すか競争よ」",
+      "source": "アンマリー「四階への階段に行くまでに\n<FFD5>どちらが多く敵のパーティを\n<FFD5>倒すか競争よ」",
       "text": null
     },
     {
       "offset": "0x9D86",
       "type": "dialog",
-      "source": "アンマリー「<PAGE>が勝てば\n魔法石をあげる」",
+      "source": "アンマリー「<PAGE>が勝てば\n<FFD5>魔法石をあげる」",
       "text": null
     },
     {
       "offset": "0x9DB2",
       "type": "dialog",
-      "source": "アンマリー「あなたが勝てば\n魔法石をあげる」",
+      "source": "アンマリー「あなたが勝てば\n<FFD5>魔法石をあげる」",
       "text": null
     },
     {
       "offset": "0x9DE2",
       "type": "dialog",
-      "source": "アンマリー「その代わり、わたし達が\n勝てば、所持金を半分\nいただく事にするわ」",
+      "source": "アンマリー「その代わり、わたし達が\n<FFD5>勝てば、所持金を半分\n<FFD5>いただく事にするわ」",
       "text": null
     },
     {
@@ -678,7 +678,7 @@
     {
       "offset": "0x9E86",
       "type": "center",
-      "source": "アンマリー達と勝負を……\n\nす る\nしない\n",
+      "source": "アンマリー達と勝負を……\n\n<FFC0>す る\n<FFC1>しない\n",
       "text": null
     },
     {
@@ -702,13 +702,13 @@
     {
       "offset": "0x9F34",
       "type": "dialog",
-      "source": "アンマリー「ルールはさっき\n言ったとおりよ」",
+      "source": "アンマリー「ルールはさっき\n<FFD5>言ったとおりよ」",
       "text": null
     },
     {
       "offset": "0x9F64",
       "type": "dialog",
-      "source": "アンマリー「四階への階段に行くまでに\nどちらが多く敵のパーティを\n倒すか競争するの」",
+      "source": "アンマリー「四階への階段に行くまでに\n<FFD5>どちらが多く敵のパーティを\n<FFD5>倒すか競争するの」",
       "text": null
     },
     {
@@ -726,37 +726,37 @@
     {
       "offset": "0xA008",
       "type": "dialog",
-      "source": "アンマリー「あなたが他の階層に移動した\n時には、勝負を放棄したと\n見なしますからね」",
+      "source": "アンマリー「あなたが他の階層に移動した\n<FFD5>時には、勝負を放棄したと\n<FFD5>見なしますからね」",
       "text": null
     },
     {
       "offset": "0xA062",
       "type": "dialog",
-      "source": "アンマリー「その時には、わたし達\n迷宮の一階で待っているから\n何か罰を受けてもらうわ」",
+      "source": "アンマリー「その時には、わたし達\n<FFD5>迷宮の一階で待っているから\n<FFD5>何か罰を受けてもらうわ」",
       "text": null
     },
     {
       "offset": "0xA0BE",
       "type": "dialog",
-      "source": "アンマリー「そうねぇ………\n罰は何が良いかしら」",
+      "source": "アンマリー「そうねぇ………\n<FFD5>罰は何が良いかしら」",
       "text": null
     },
     {
       "offset": "0xA0F2",
       "type": "dialog",
-      "source": "アンマリー「ゆっくり考えさせて\nもらうわね」",
+      "source": "アンマリー「ゆっくり考えさせて\n<FFD5>もらうわね」",
       "text": null
     },
     {
       "offset": "0xA122",
       "type": "dialog",
-      "source": "アンマリー「それじゃ、そろそろ\n始めましょうか」",
+      "source": "アンマリー「それじゃ、そろそろ\n<FFD5>始めましょうか」",
       "text": null
     },
     {
       "offset": "0xA156",
       "type": "center",
-      "source": "<PAGE>は………\n\n始めようとうなずく\n何回戦えば良いか目安が知りたい\n",
+      "source": "<PAGE>は………\n\n<FFC0>始めようとうなずく\n<FFC1>何回戦えば良いか目安が知りたい\n",
       "text": null
     },
     {
@@ -768,25 +768,25 @@
     {
       "offset": "0xA1CE",
       "type": "dialog",
-      "source": "アンマリー「そうね、今のわたしの\nパーティなら………」",
+      "source": "アンマリー「そうね、今のわたしの\n<FFD5>パーティなら………」",
       "text": null
     },
     {
       "offset": "0xA208",
       "type": "dialog",
-      "source": "アンマリー「この階の敵と戦えるのは\n<FB01>約5回<FB00>と言ったところ\nかしら………」",
+      "source": "アンマリー「この階の敵と戦えるのは\n<FFD5><FB01>約5回<FB00>と言ったところ\n<FFD5>かしら………」",
       "text": null
     },
     {
       "offset": "0xA25A",
       "type": "dialog",
-      "source": "アンマリー「ある程度、力は温存しないと\nいけないものね」",
+      "source": "アンマリー「ある程度、力は温存しないと\n<FFD5>いけないものね」",
       "text": null
     },
     {
       "offset": "0xA296",
       "type": "dialog",
-      "source": "リューン「アン、わざわざ教えて\nやる必要は………」",
+      "source": "リューン「アン、わざわざ教えて\n<FFD4>やる必要は………」",
       "text": null
     },
     {
@@ -804,13 +804,13 @@
     {
       "offset": "0xA2FC",
       "type": "dialog",
-      "source": "アンマリー「リューンって意外と\n心がせまいのね」",
+      "source": "アンマリー「リューンって意外と\n<FFD5>心がせまいのね」",
       "text": null
     },
     {
       "offset": "0xA330",
       "type": "dialog",
-      "source": "アンマリー「わたし、心のせまい人って\nはっきり言って……」",
+      "source": "アンマリー「わたし、心のせまい人って\n<FFD5>はっきり言って……」",
       "text": null
     },
     {
@@ -846,7 +846,7 @@
     {
       "offset": "0xA422",
       "type": "dialog",
-      "source": "アンマリー「わたし、心のせまい人も\nキライだけれど\n他人の不幸を笑う人は……」",
+      "source": "アンマリー「わたし、心のせまい人も\n<FFD5>キライだけれど\n<FFD5>他人の不幸を笑う人は……」",
       "text": null
     },
     {
@@ -864,13 +864,13 @@
     {
       "offset": "0xA4CA",
       "type": "dialog",
-      "source": "アンマリー「さぁ、それじゃあ\n始めましょう」",
+      "source": "アンマリー「さぁ、それじゃあ\n<FFD5>始めましょう」",
       "text": null
     },
     {
       "offset": "0xA4FA",
       "type": "dialog",
-      "source": "アンマリー「ウフフ、どちらが勝つか\n楽しみね！」",
+      "source": "アンマリー「ウフフ、どちらが勝つか\n<FFD5>楽しみね！」",
       "text": null
     },
     {
@@ -888,7 +888,7 @@
     {
       "offset": "0xA58E",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「アン！！\n待ってくれよぉ！！」",
+      "source": "オスカー＆リューン\n<FFD3>「アン！！\n<FFD4>待ってくれよぉ！！」",
       "text": null
     },
     {
@@ -900,25 +900,25 @@
     {
       "offset": "0xA600",
       "type": "dialog",
-      "source": "アンマリー「ウフフ、どちらが勝つか\n楽しみね！」",
+      "source": "アンマリー「ウフフ、どちらが勝つか\n<FFD5>楽しみね！」",
       "text": null
     },
     {
       "offset": "0xA634",
       "type": "dialog",
-      "source": "アンマリー「それじゃ、リューン\nオスカー、行きましょう」",
+      "source": "アンマリー「それじゃ、リューン\n<FFD5>オスカー、行きましょう」",
       "text": null
     },
     {
       "offset": "0xA670",
       "type": "dialog",
-      "source": "オスカー「俺、アンのために\nがんばるよ！」",
+      "source": "オスカー「俺、アンのために\n<FFD4>がんばるよ！」",
       "text": null
     },
     {
       "offset": "0xA69E",
       "type": "dialog",
-      "source": "リューン「そ、そうさ！\n期待しててくれ！」",
+      "source": "リューン「そ、そうさ！\n<FFD4>期待しててくれ！」",
       "text": null
     },
     {
@@ -936,7 +936,7 @@
     {
       "offset": "0xA75A",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「アン！！\n待ってくれよぉ！！」",
+      "source": "オスカー＆リューン\n<FFD3>「アン！！\n<FFD4>待ってくれよぉ！！」",
       "text": null
     },
     {
@@ -954,19 +954,19 @@
     {
       "offset": "0xA7F2",
       "type": "dialog",
-      "source": "アンマリー「ひどい。\nせっかくさそってあげたのに\n断るなんて……」",
+      "source": "アンマリー「ひどい。\n<FFD5>せっかくさそってあげたのに\n<FFD5>断るなんて……」",
       "text": null
     },
     {
       "offset": "0xA83A",
       "type": "dialog",
-      "source": "オスカー「てめぇ！\nアンを泣かせやがって！！」",
+      "source": "オスカー「てめぇ！\n<FFD4>アンを泣かせやがって！！」",
       "text": null
     },
     {
       "offset": "0xA86C",
       "type": "dialog",
-      "source": "オスカー「おい、リューン！\nやっちまおうぜ！！」",
+      "source": "オスカー「おい、リューン！\n<FFD4>やっちまおうぜ！！」",
       "text": null
     },
     {
@@ -990,19 +990,19 @@
     {
       "offset": "0xA8FC",
       "type": "dialog",
-      "source": "オスカー「なんだってこんなに\n強いんだ！！」",
+      "source": "オスカー「なんだってこんなに\n<FFD4>強いんだ！！」",
       "text": null
     },
     {
       "offset": "0xA92C",
       "type": "dialog",
-      "source": "リューン「ま、まだ修行が\nたりないとでもいうのか？」",
+      "source": "リューン「ま、まだ修行が\n<FFD4>たりないとでもいうのか？」",
       "text": null
     },
     {
       "offset": "0xA964",
       "type": "dialog",
-      "source": "アンマリー「二人ともとっても\nだらしがないわ」",
+      "source": "アンマリー「二人ともとっても\n<FFD5>だらしがないわ」",
       "text": null
     },
     {
@@ -1014,7 +1014,7 @@
     {
       "offset": "0xA9CC",
       "type": "dialog",
-      "source": "アンマリー「これじゃあ、忍者になったり\nクイーンガードになるのは\n夢のまた夢ね」",
+      "source": "アンマリー「これじゃあ、忍者になったり\n<FFD5>クイーンガードになるのは\n<FFD5>夢のまた夢ね」",
       "text": null
     },
     {
@@ -1026,25 +1026,25 @@
     {
       "offset": "0xAA46",
       "type": "dialog",
-      "source": "アンマリー「<PAGE>って\nとても強いのね！」",
+      "source": "アンマリー「<PAGE>って\n<FFD5>とても強いのね！」",
       "text": null
     },
     {
       "offset": "0xAA70",
       "type": "dialog",
-      "source": "アンマリー「あなたって\nとても強いのね！」",
+      "source": "アンマリー「あなたって\n<FFD5>とても強いのね！」",
       "text": null
     },
     {
       "offset": "0xAA9E",
       "type": "dialog",
-      "source": "アンマリー「オスカーとリューンとは\n比べ物にならないわ」",
+      "source": "アンマリー「オスカーとリューンとは\n<FFD5>比べ物にならないわ」",
       "text": null
     },
     {
       "offset": "0xAADA",
       "type": "dialog",
-      "source": "アンマリー「クイーンガードにだって\nなれるかもしれないわね！」",
+      "source": "アンマリー「クイーンガードにだって\n<FFD5>なれるかもしれないわね！」",
       "text": null
     },
     {
@@ -1062,13 +1062,13 @@
     {
       "offset": "0xAB76",
       "type": "dialog",
-      "source": "オスカー「がんばって強くなるから\n嫌わないでくれよ」",
+      "source": "オスカー「がんばって強くなるから\n<FFD4>嫌わないでくれよ」",
       "text": null
     },
     {
       "offset": "0xABAE",
       "type": "dialog",
-      "source": "リューン「そうだよ、アン。\nいつかこいつを倒せるくらいに\n強くなってみせるから……」",
+      "source": "リューン「そうだよ、アン。\n<FFD4>いつかこいつを倒せるくらいに\n<FFD4>強くなってみせるから……」",
       "text": null
     },
     {
@@ -1080,13 +1080,13 @@
     {
       "offset": "0xAC48",
       "type": "dialog",
-      "source": "アンマリー「あぁ、いいのよ。\n無理しなくったって」",
+      "source": "アンマリー「あぁ、いいのよ。\n<FFD5>無理しなくったって」",
       "text": null
     },
     {
       "offset": "0xAC7E",
       "type": "dialog",
-      "source": "アンマリー「人にはそれぞれ分という物が\nあるのですもの」",
+      "source": "アンマリー「人にはそれぞれ分という物が\n<FFD5>あるのですもの」",
       "text": null
     },
     {
@@ -1098,7 +1098,7 @@
     {
       "offset": "0xAD08",
       "type": "dialog",
-      "source": "アンマリー「また、気が向いたら\n遊んでちょうだいね」",
+      "source": "アンマリー「また、気が向いたら\n<FFD5>遊んでちょうだいね」",
       "text": null
     },
     {
@@ -1116,7 +1116,7 @@
     {
       "offset": "0xAD94",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「アン！！\n待ってくれよぉ！！」",
+      "source": "オスカー＆リューン\n<FFD3>「アン！！\n<FFD4>待ってくれよぉ！！」",
       "text": null
     },
     {
@@ -1134,19 +1134,19 @@
     {
       "offset": "0xAE20",
       "type": "dialog",
-      "source": "オスカー「なんだってこんなに\n強いんだ！！」",
+      "source": "オスカー「なんだってこんなに\n<FFD4>強いんだ！！」",
       "text": null
     },
     {
       "offset": "0xAE50",
       "type": "dialog",
-      "source": "リューン「ま、まだ修行が\nたりないとでもいうのか？」",
+      "source": "リューン「ま、まだ修行が\n<FFD4>たりないとでもいうのか？」",
       "text": null
     },
     {
       "offset": "0xAE88",
       "type": "dialog",
-      "source": "アンマリー「二人ともとっても\nだらしがないわ」",
+      "source": "アンマリー「二人ともとっても\n<FFD5>だらしがないわ」",
       "text": null
     },
     {
@@ -1158,7 +1158,7 @@
     {
       "offset": "0xAEF0",
       "type": "dialog",
-      "source": "アンマリー「これじゃあ、忍者になったり\nクイーンガードになるのは\n夢のまた夢ね」",
+      "source": "アンマリー「これじゃあ、忍者になったり\n<FFD5>クイーンガードになるのは\n<FFD5>夢のまた夢ね」",
       "text": null
     },
     {
@@ -1170,19 +1170,19 @@
     {
       "offset": "0xAF6A",
       "type": "dialog",
-      "source": "アンマリー「あなた達って\nとても強いのね！」",
+      "source": "アンマリー「あなた達って\n<FFD5>とても強いのね！」",
       "text": null
     },
     {
       "offset": "0xAF9A",
       "type": "dialog",
-      "source": "アンマリー「オスカーとリューンとは\n比べ物にならないわ」",
+      "source": "アンマリー「オスカーとリューンとは\n<FFD5>比べ物にならないわ」",
       "text": null
     },
     {
       "offset": "0xAFD6",
       "type": "dialog",
-      "source": "アンマリー「クイーンガードにだって\nなれるかもしれないわね！」",
+      "source": "アンマリー「クイーンガードにだって\n<FFD5>なれるかもしれないわね！」",
       "text": null
     },
     {
@@ -1200,13 +1200,13 @@
     {
       "offset": "0xB072",
       "type": "dialog",
-      "source": "オスカー「がんばって強くなるから\n嫌わないでくれよ」",
+      "source": "オスカー「がんばって強くなるから\n<FFD4>嫌わないでくれよ」",
       "text": null
     },
     {
       "offset": "0xB0AA",
       "type": "dialog",
-      "source": "リューン「そうだよ、アン。\nいつかこいつらを倒せるくらい\n強くなってみせるから……」",
+      "source": "リューン「そうだよ、アン。\n<FFD4>いつかこいつらを倒せるくらい\n<FFD4>強くなってみせるから……」",
       "text": null
     },
     {
@@ -1218,13 +1218,13 @@
     {
       "offset": "0xB144",
       "type": "dialog",
-      "source": "アンマリー「あぁ、いいのよ。\n無理しなくったって」",
+      "source": "アンマリー「あぁ、いいのよ。\n<FFD5>無理しなくったって」",
       "text": null
     },
     {
       "offset": "0xB17A",
       "type": "dialog",
-      "source": "アンマリー「人にはそれぞれ分という物が\nあるのですもの」",
+      "source": "アンマリー「人にはそれぞれ分という物が\n<FFD5>あるのですもの」",
       "text": null
     },
     {
@@ -1236,7 +1236,7 @@
     {
       "offset": "0xB206",
       "type": "dialog",
-      "source": "アンマリー「また、気が向いたら\n遊んでちょうだいね」",
+      "source": "アンマリー「また、気が向いたら\n<FFD5>遊んでちょうだいね」",
       "text": null
     },
     {
@@ -1254,7 +1254,7 @@
     {
       "offset": "0xB292",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「アン！！\n待ってくれよぉ！！」",
+      "source": "オスカー＆リューン\n<FFD3>「アン！！\n<FFD4>待ってくれよぉ！！」",
       "text": null
     },
     {
@@ -1272,25 +1272,25 @@
     {
       "offset": "0xB34A",
       "type": "dialog",
-      "source": "アンマリー「<PAGE>ったら\n遅かったのね。\n待ちくたびれちゃった」",
+      "source": "アンマリー「<PAGE>ったら\n<FFD5>遅かったのね。\n<FFD5>待ちくたびれちゃった」",
       "text": null
     },
     {
       "offset": "0xB38C",
       "type": "dialog",
-      "source": "アンマリー「遅かったのね。\n待ちくたびれちゃった」",
+      "source": "アンマリー「遅かったのね。\n<FFD5>待ちくたびれちゃった」",
       "text": null
     },
     {
       "offset": "0xB3C2",
       "type": "dialog",
-      "source": "アンマリー「それじゃ、さっそくだけど\n結果発表といきましょう」",
+      "source": "アンマリー「それじゃ、さっそくだけど\n<FFD5>結果発表といきましょう」",
       "text": null
     },
     {
       "offset": "0xB404",
       "type": "dialog",
-      "source": "アンマリー「わたし達は、<FB01>7つ<FB00>の\nパーティを倒したわ」",
+      "source": "アンマリー「わたし達は、<FB01>7つ<FB00>の\n<FFD5>パーティを倒したわ」",
       "text": null
     },
     {
@@ -1332,7 +1332,7 @@
     {
       "offset": "0xB53C",
       "type": "dialog",
-      "source": "オスカー「リューン！\nお前があんなザコに\n手間取るからだ！！」",
+      "source": "オスカー「リューン！\n<FFD4>お前があんなザコに\n<FFD4>手間取るからだ！！」",
       "text": null
     },
     {
@@ -1344,7 +1344,7 @@
     {
       "offset": "0xB59C",
       "type": "dialog",
-      "source": "リューン「ドラゴンフライのブレスで\nヒィヒィ言ってたのは\nお前だろ！？」",
+      "source": "リューン「ドラゴンフライのブレスで\n<FFD4>ヒィヒィ言ってたのは\n<FFD4>お前だろ！？」",
       "text": null
     },
     {
@@ -1362,13 +1362,13 @@
     {
       "offset": "0xB642",
       "type": "dialog",
-      "source": "アンマリー「いいかげんにしないと\n二人とも本当に\nキライになっちゃうわよ」",
+      "source": "アンマリー「いいかげんにしないと\n<FFD5>二人とも本当に\n<FFD5>キライになっちゃうわよ」",
       "text": null
     },
     {
       "offset": "0xB692",
       "type": "dialog",
-      "source": "アンマリー「わたしとパーティを組みたい\n人は、何もあなた達だけじゃ\nないんですからね」",
+      "source": "アンマリー「わたしとパーティを組みたい\n<FFD5>人は、何もあなた達だけじゃ\n<FFD5>ないんですからね」",
       "text": null
     },
     {
@@ -1380,7 +1380,7 @@
     {
       "offset": "0xB736",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「ア、アン～～～………」",
+      "source": "オスカー＆リューン\n<FFD3>「ア、アン～～～………」",
       "text": null
     },
     {
@@ -1392,7 +1392,7 @@
     {
       "offset": "0xB7A8",
       "type": "center",
-      "source": "<PAGE>は………\n\n呆れる\n二人に同情する\n",
+      "source": "<PAGE>は………\n\n<FFC0>呆れる\n<FFC1>二人に同情する\n",
       "text": null
     },
     {
@@ -1452,13 +1452,13 @@
     {
       "offset": "0xB9DC",
       "type": "dialog",
-      "source": "アンマリー「<PAGE>が\n勝ったんだから、約束どおり\n魔法石をあげなくちゃね」",
+      "source": "アンマリー「<PAGE>が\n<FFD5>勝ったんだから、約束どおり\n<FFD5>魔法石をあげなくちゃね」",
       "text": null
     },
     {
       "offset": "0xBA28",
       "type": "dialog",
-      "source": "アンマリー「あなたが勝ったんだから\n約束どおり、魔法石を\nあげなくちゃね」",
+      "source": "アンマリー「あなたが勝ったんだから\n<FFD5>約束どおり、魔法石を\n<FFD5>あげなくちゃね」",
       "text": null
     },
     {
@@ -1470,19 +1470,19 @@
     {
       "offset": "0xBAA8",
       "type": "dialog",
-      "source": "アンマリー「好きな物を\n選んでくれてけっこうよ」",
+      "source": "アンマリー「好きな物を\n<FFD5>選んでくれてけっこうよ」",
       "text": null
     },
     {
       "offset": "0xBADC",
       "type": "center",
-      "source": "どれをもらいますか？\n\nジャクレタの石 4LV魔術師攻撃魔法\nカーカスの石  5LV僧 侶回復魔法\nラフィールの石 5LV僧 侶回復魔法\nデッドリィの石 6LV僧 侶攻撃魔法\nいらない\n",
+      "source": "どれをもらいますか？\n\n<FFC0>ジャクレタの石 4LV魔術師攻撃魔法\n<FFC1>カーカスの石  5LV僧 侶回復魔法\n<FFC2>ラフィールの石 5LV僧 侶回復魔法\n<FFC3>デッドリィの石 6LV僧 侶攻撃魔法\n<FFC4>いらない\n",
       "text": null
     },
     {
       "offset": "0xBBBE",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -1512,7 +1512,7 @@
     {
       "offset": "0xBC90",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -1542,7 +1542,7 @@
     {
       "offset": "0xBD5A",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -1572,7 +1572,7 @@
     {
       "offset": "0xBE2C",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -1632,25 +1632,25 @@
     {
       "offset": "0xC026",
       "type": "dialog",
-      "source": "アンマリー「これでゲームは\nおしまい」",
+      "source": "アンマリー「これでゲームは\n<FFD5>おしまい」",
       "text": null
     },
     {
       "offset": "0xC050",
       "type": "dialog",
-      "source": "アンマリー「負けちゃったけど\nなかなか楽しかったわ」",
+      "source": "アンマリー「負けちゃったけど\n<FFD5>なかなか楽しかったわ」",
       "text": null
     },
     {
       "offset": "0xC088",
       "type": "dialog",
-      "source": "アンマリー「わたし、ドキドキするの\n大好きなの！」",
+      "source": "アンマリー「わたし、ドキドキするの\n<FFD5>大好きなの！」",
       "text": null
     },
     {
       "offset": "0xC0BE",
       "type": "dialog",
-      "source": "アンマリー「また、機会があったら\n遊んでちょうだいね」",
+      "source": "アンマリー「また、機会があったら\n<FFD5>遊んでちょうだいね」",
       "text": null
     },
     {
@@ -1662,13 +1662,13 @@
     {
       "offset": "0xC12A",
       "type": "dialog",
-      "source": "アンマリー「さぁ、オスカー、リューン。\n街へ帰りましょう」",
+      "source": "アンマリー「さぁ、オスカー、リューン。\n<FFD5>街へ帰りましょう」",
       "text": null
     },
     {
       "offset": "0xC168",
       "type": "dialog",
-      "source": "アンマリー「少し疲れたから\nしっかり護ってね」",
+      "source": "アンマリー「少し疲れたから\n<FFD5>しっかり護ってね」",
       "text": null
     },
     {
@@ -1680,13 +1680,13 @@
     {
       "offset": "0xC1B8",
       "type": "dialog",
-      "source": "オスカー「あ、ああ！\nまかせてくれ！！」",
+      "source": "オスカー「あ、ああ！\n<FFD4>まかせてくれ！！」",
       "text": null
     },
     {
       "offset": "0xC1E4",
       "type": "dialog",
-      "source": "リューン「アンのためなら\nグレーターデーモンだって\n倒してみせるさ！」",
+      "source": "リューン「アンのためなら\n<FFD4>グレーターデーモンだって\n<FFD4>倒してみせるさ！」",
       "text": null
     },
     {
@@ -1704,7 +1704,7 @@
     {
       "offset": "0xC28A",
       "type": "dialog",
-      "source": "アンマリー「それじゃ、<PAGE>。\nごきげんよう」",
+      "source": "アンマリー「それじゃ、<PAGE>。\n<FFD5>ごきげんよう」",
       "text": null
     },
     {
@@ -1728,19 +1728,19 @@
     {
       "offset": "0xC342",
       "type": "dialog",
-      "source": "アンマリー「ひどい。\nせっかくの魔法石を\nいらないなんて……」",
+      "source": "アンマリー「ひどい。\n<FFD5>せっかくの魔法石を\n<FFD5>いらないなんて……」",
       "text": null
     },
     {
       "offset": "0xC386",
       "type": "dialog",
-      "source": "オスカー「てめぇ！\nアンの好意をふみにじり\nやがって！！」",
+      "source": "オスカー「てめぇ！\n<FFD4>アンの好意をふみにじり\n<FFD4>やがって！！」",
       "text": null
     },
     {
       "offset": "0xC3C6",
       "type": "dialog",
-      "source": "オスカー「おい、リューン！\nやっちまおうぜ！！」",
+      "source": "オスカー「おい、リューン！\n<FFD4>やっちまおうぜ！！」",
       "text": null
     },
     {
@@ -1764,19 +1764,19 @@
     {
       "offset": "0xC456",
       "type": "dialog",
-      "source": "オスカー「なんだってこんなに\n強いんだ！！」",
+      "source": "オスカー「なんだってこんなに\n<FFD4>強いんだ！！」",
       "text": null
     },
     {
       "offset": "0xC486",
       "type": "dialog",
-      "source": "リューン「ま、まだ修行が\nたりないとでもいうのか？」",
+      "source": "リューン「ま、まだ修行が\n<FFD4>たりないとでもいうのか？」",
       "text": null
     },
     {
       "offset": "0xC4BE",
       "type": "dialog",
-      "source": "アンマリー「二人ともとっても\nだらしがないわ」",
+      "source": "アンマリー「二人ともとっても\n<FFD5>だらしがないわ」",
       "text": null
     },
     {
@@ -1788,7 +1788,7 @@
     {
       "offset": "0xC542",
       "type": "dialog",
-      "source": "アンマリー「これじゃあ、忍者になったり\nクイーンガードになるのは\n夢のまた夢ね」",
+      "source": "アンマリー「これじゃあ、忍者になったり\n<FFD5>クイーンガードになるのは\n<FFD5>夢のまた夢ね」",
       "text": null
     },
     {
@@ -1800,25 +1800,25 @@
     {
       "offset": "0xC5BC",
       "type": "dialog",
-      "source": "アンマリー「<PAGE>って\nとても強いのね！」",
+      "source": "アンマリー「<PAGE>って\n<FFD5>とても強いのね！」",
       "text": null
     },
     {
       "offset": "0xC5E6",
       "type": "dialog",
-      "source": "アンマリー「あなたって\nとても強いのね！」",
+      "source": "アンマリー「あなたって\n<FFD5>とても強いのね！」",
       "text": null
     },
     {
       "offset": "0xC614",
       "type": "dialog",
-      "source": "アンマリー「オスカーとリューンとは\n比べ物にならないわ」",
+      "source": "アンマリー「オスカーとリューンとは\n<FFD5>比べ物にならないわ」",
       "text": null
     },
     {
       "offset": "0xC650",
       "type": "dialog",
-      "source": "アンマリー「クイーンガードにだって\nなれるかもしれないわね！」",
+      "source": "アンマリー「クイーンガードにだって\n<FFD5>なれるかもしれないわね！」",
       "text": null
     },
     {
@@ -1836,13 +1836,13 @@
     {
       "offset": "0xC6EE",
       "type": "dialog",
-      "source": "オスカー「がんばって強くなるから\n嫌わないでくれよ」",
+      "source": "オスカー「がんばって強くなるから\n<FFD4>嫌わないでくれよ」",
       "text": null
     },
     {
       "offset": "0xC726",
       "type": "dialog",
-      "source": "リューン「そうだよ、アン。\nいつかこいつを倒せるくらいに\n強くなってみせるから……」",
+      "source": "リューン「そうだよ、アン。\n<FFD4>いつかこいつを倒せるくらいに\n<FFD4>強くなってみせるから……」",
       "text": null
     },
     {
@@ -1854,13 +1854,13 @@
     {
       "offset": "0xC7C0",
       "type": "dialog",
-      "source": "アンマリー「あぁ、いいのよ。\n無理しなくったって」",
+      "source": "アンマリー「あぁ、いいのよ。\n<FFD5>無理しなくったって」",
       "text": null
     },
     {
       "offset": "0xC7F6",
       "type": "dialog",
-      "source": "アンマリー「人にはそれぞれ分という物が\nあるのですもの」",
+      "source": "アンマリー「人にはそれぞれ分という物が\n<FFD5>あるのですもの」",
       "text": null
     },
     {
@@ -1878,13 +1878,13 @@
     {
       "offset": "0xC8A8",
       "type": "dialog",
-      "source": "アンマリー「だから、さっきの無礼な態度は\n許してあげる」",
+      "source": "アンマリー「だから、さっきの無礼な態度は\n<FFD5>許してあげる」",
       "text": null
     },
     {
       "offset": "0xC8E4",
       "type": "dialog",
-      "source": "アンマリー「また、気が向いたら\n遊んでちょうだいね」",
+      "source": "アンマリー「また、気が向いたら\n<FFD5>遊んでちょうだいね」",
       "text": null
     },
     {
@@ -1902,7 +1902,7 @@
     {
       "offset": "0xC970",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「アン！！\n待ってくれよぉ！！」",
+      "source": "オスカー＆リューン\n<FFD3>「アン！！\n<FFD4>待ってくれよぉ！！」",
       "text": null
     },
     {
@@ -1920,19 +1920,19 @@
     {
       "offset": "0xCA04",
       "type": "dialog",
-      "source": "オスカー「なんだってこんなに\n強いんだ！！」",
+      "source": "オスカー「なんだってこんなに\n<FFD4>強いんだ！！」",
       "text": null
     },
     {
       "offset": "0xCA34",
       "type": "dialog",
-      "source": "リューン「ま、まだ修行が\nたりないとでもいうのか？」",
+      "source": "リューン「ま、まだ修行が\n<FFD4>たりないとでもいうのか？」",
       "text": null
     },
     {
       "offset": "0xCA6C",
       "type": "dialog",
-      "source": "アンマリー「二人ともとっても\nだらしがないわ」",
+      "source": "アンマリー「二人ともとっても\n<FFD5>だらしがないわ」",
       "text": null
     },
     {
@@ -1944,7 +1944,7 @@
     {
       "offset": "0xCAF0",
       "type": "dialog",
-      "source": "アンマリー「これじゃあ、忍者になったり\nクイーンガードになるのは\n夢のまた夢ね」",
+      "source": "アンマリー「これじゃあ、忍者になったり\n<FFD5>クイーンガードになるのは\n<FFD5>夢のまた夢ね」",
       "text": null
     },
     {
@@ -1956,19 +1956,19 @@
     {
       "offset": "0xCB6A",
       "type": "dialog",
-      "source": "アンマリー「あなた達って\nとても強いのね！」",
+      "source": "アンマリー「あなた達って\n<FFD5>とても強いのね！」",
       "text": null
     },
     {
       "offset": "0xCB9A",
       "type": "dialog",
-      "source": "アンマリー「オスカーとリューンとは\n比べ物にならないわ」",
+      "source": "アンマリー「オスカーとリューンとは\n<FFD5>比べ物にならないわ」",
       "text": null
     },
     {
       "offset": "0xCBD6",
       "type": "dialog",
-      "source": "アンマリー「クイーンガードにだって\nなれるかもしれないわね！」",
+      "source": "アンマリー「クイーンガードにだって\n<FFD5>なれるかもしれないわね！」",
       "text": null
     },
     {
@@ -1986,13 +1986,13 @@
     {
       "offset": "0xCC72",
       "type": "dialog",
-      "source": "オスカー「がんばって強くなるから\n嫌わないでくれよ」",
+      "source": "オスカー「がんばって強くなるから\n<FFD4>嫌わないでくれよ」",
       "text": null
     },
     {
       "offset": "0xCCAA",
       "type": "dialog",
-      "source": "リューン「そうだよ、アン。\nいつかこいつらを倒せるくらい\n強くなってみせるから……」",
+      "source": "リューン「そうだよ、アン。\n<FFD4>いつかこいつらを倒せるくらい\n<FFD4>強くなってみせるから……」",
       "text": null
     },
     {
@@ -2004,13 +2004,13 @@
     {
       "offset": "0xCD44",
       "type": "dialog",
-      "source": "アンマリー「あぁ、いいのよ。\n無理しなくったって」",
+      "source": "アンマリー「あぁ、いいのよ。\n<FFD5>無理しなくったって」",
       "text": null
     },
     {
       "offset": "0xCD7A",
       "type": "dialog",
-      "source": "アンマリー「人にはそれぞれ分という物が\nあるのですもの」",
+      "source": "アンマリー「人にはそれぞれ分という物が\n<FFD5>あるのですもの」",
       "text": null
     },
     {
@@ -2028,13 +2028,13 @@
     {
       "offset": "0xCE2E",
       "type": "dialog",
-      "source": "アンマリー「だから、さっきの無礼な態度は\n許してあげる」",
+      "source": "アンマリー「だから、さっきの無礼な態度は\n<FFD5>許してあげる」",
       "text": null
     },
     {
       "offset": "0xCE6A",
       "type": "dialog",
-      "source": "アンマリー「また、気が向いたら\n遊んでちょうだいね」",
+      "source": "アンマリー「また、気が向いたら\n<FFD5>遊んでちょうだいね」",
       "text": null
     },
     {
@@ -2052,7 +2052,7 @@
     {
       "offset": "0xCEF6",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「アン！！\n待ってくれよぉ！！」",
+      "source": "オスカー＆リューン\n<FFD3>「アン！！\n<FFD4>待ってくれよぉ！！」",
       "text": null
     },
     {
@@ -2088,7 +2088,7 @@
     {
       "offset": "0xD036",
       "type": "dialog",
-      "source": "オスカー「リューン！\nお前がもっと強かったら\nもう少しいけたのに！！」",
+      "source": "オスカー「リューン！\n<FFD4>お前がもっと強かったら\n<FFD4>もう少しいけたのに！！」",
       "text": null
     },
     {
@@ -2100,31 +2100,31 @@
     {
       "offset": "0xD09E",
       "type": "dialog",
-      "source": "リューン「サムライににらまれて\n腰をぬかしかけたのは\nお前だろ！？」",
+      "source": "リューン「サムライににらまれて\n<FFD4>腰をぬかしかけたのは\n<FFD4>お前だろ！？」",
       "text": null
     },
     {
       "offset": "0xD0E8",
       "type": "dialog",
-      "source": "オスカー「俺は盗賊だから\nいいんだよ！」",
+      "source": "オスカー「俺は盗賊だから\n<FFD4>いいんだよ！」",
       "text": null
     },
     {
       "offset": "0xD114",
       "type": "dialog",
-      "source": "オスカー「お前は戦士だってのに\nオークキングにボコスコ\nなぐられてたじゃねえか！」",
+      "source": "オスカー「お前は戦士だってのに\n<FFD4>オークキングにボコスコ\n<FFD4>なぐられてたじゃねえか！」",
       "text": null
     },
     {
       "offset": "0xD16C",
       "type": "dialog",
-      "source": "リューン「盗賊だって言うんなら\nトラップをしっかり\nはずせよ！！」",
+      "source": "リューン「盗賊だって言うんなら\n<FFD4>トラップをしっかり\n<FFD4>はずせよ！！」",
       "text": null
     },
     {
       "offset": "0xD1B4",
       "type": "dialog",
-      "source": "リューン「俺が今イチふるわなかったのは\nトラップのスピアに足を\nやられたからだぞ！」",
+      "source": "リューン「俺が今イチふるわなかったのは\n<FFD4>トラップのスピアに足を\n<FFD4>やられたからだぞ！」",
       "text": null
     },
     {
@@ -2136,7 +2136,7 @@
     {
       "offset": "0xD236",
       "type": "dialog",
-      "source": "オスカー「だいたいなぁ、アンの魔法も\nロクスッポ………」",
+      "source": "オスカー「だいたいなぁ、アンの魔法も\n<FFD4>ロクスッポ………」",
       "text": null
     },
     {
@@ -2160,7 +2160,7 @@
     {
       "offset": "0xD2EA",
       "type": "dialog",
-      "source": "アンマリー「その後に続く言葉は\n何なのかしら？」",
+      "source": "アンマリー「その後に続く言葉は\n<FFD5>何なのかしら？」",
       "text": null
     },
     {
@@ -2178,13 +2178,13 @@
     {
       "offset": "0xD37C",
       "type": "dialog",
-      "source": "アンマリー「別に構わないのよ？\n無理してパーティを\n組まなくたって」",
+      "source": "アンマリー「別に構わないのよ？\n<FFD5>無理してパーティを\n<FFD5>組まなくたって」",
       "text": null
     },
     {
       "offset": "0xD3C6",
       "type": "dialog",
-      "source": "アンマリー「わたしとパーティを組みたい\n人は、何もあなた達だけじゃ\nないんですからね」",
+      "source": "アンマリー「わたしとパーティを組みたい\n<FFD5>人は、何もあなた達だけじゃ\n<FFD5>ないんですからね」",
       "text": null
     },
     {
@@ -2196,19 +2196,19 @@
     {
       "offset": "0xD442",
       "type": "dialog",
-      "source": "アンマリー「忍者のラコクと騎士のギィが\n一緒に組もうって\n言ってたかしら」",
+      "source": "アンマリー「忍者のラコクと騎士のギィが\n<FFD5>一緒に組もうって\n<FFD5>言ってたかしら」",
       "text": null
     },
     {
       "offset": "0xD492",
       "type": "dialog",
-      "source": "アンマリー「二人ともとっても\n紳士なのよね」",
+      "source": "アンマリー「二人ともとっても\n<FFD5>紳士なのよね」",
       "text": null
     },
     {
       "offset": "0xD4C2",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「ア、アン～～～………」",
+      "source": "オスカー＆リューン\n<FFD3>「ア、アン～～～………」",
       "text": null
     },
     {
@@ -2220,7 +2220,7 @@
     {
       "offset": "0xD534",
       "type": "center",
-      "source": "<PAGE>は………\n\n呆れる\n二人に同情する\n",
+      "source": "<PAGE>は………\n\n<FFC0>呆れる\n<FFC1>二人に同情する\n",
       "text": null
     },
     {
@@ -2274,7 +2274,7 @@
     {
       "offset": "0xD73E",
       "type": "dialog",
-      "source": "アンマリー「そう言えば\n引き分けの時のルールを\n決めてなかったわね」",
+      "source": "アンマリー「そう言えば\n<FFD5>引き分けの時のルールを\n<FFD5>決めてなかったわね」",
       "text": null
     },
     {
@@ -2292,7 +2292,7 @@
     {
       "offset": "0xD7BE",
       "type": "dialog",
-      "source": "アンマリー「あげるはずだった\n魔法石を買ってもらえば\n良いのよね」",
+      "source": "アンマリー「あげるはずだった\n<FFD5>魔法石を買ってもらえば\n<FFD5>良いのよね」",
       "text": null
     },
     {
@@ -2304,25 +2304,25 @@
     {
       "offset": "0xD836",
       "type": "dialog",
-      "source": "アンマリー「好きな物を\n選んでくれてけっこうよ」",
+      "source": "アンマリー「好きな物を\n<FFD5>選んでくれてけっこうよ」",
       "text": null
     },
     {
       "offset": "0xD86A",
       "type": "dialog",
-      "source": "アンマリー「値段はどれでも\n10000ゴールドに\nしておくわ」",
+      "source": "アンマリー「値段はどれでも\n<FFD5>10000ゴールドに\n<FFD5>しておくわ」",
       "text": null
     },
     {
       "offset": "0xD8AE",
       "type": "center",
-      "source": "どれを買いますか？\n\nジャクレタの石 4LV魔術師攻撃魔法\nカーカスの石  5LV僧 侶回復魔法\nラフィールの石 5LV僧 侶回復魔法\nデッドリィの石 6LV僧 侶攻撃魔法\n買わない\n",
+      "source": "どれを買いますか？\n\n<FFC0>ジャクレタの石 4LV魔術師攻撃魔法\n<FFC1>カーカスの石  5LV僧 侶回復魔法\n<FFC2>ラフィールの石 5LV僧 侶回復魔法\n<FFC3>デッドリィの石 6LV僧 侶攻撃魔法\n<FFC4>買わない\n",
       "text": null
     },
     {
       "offset": "0xD98E",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -2352,7 +2352,7 @@
     {
       "offset": "0xDA5C",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -2382,7 +2382,7 @@
     {
       "offset": "0xDB22",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -2412,7 +2412,7 @@
     {
       "offset": "0xDBF0",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -2448,13 +2448,13 @@
     {
       "offset": "0xDCE4",
       "type": "dialog",
-      "source": "アンマリー「残念だけど\n魔法石はあげられないわ」",
+      "source": "アンマリー「残念だけど\n<FFD5>魔法石はあげられないわ」",
       "text": null
     },
     {
       "offset": "0xDD18",
       "type": "dialog",
-      "source": "アンマリー「あら、いならないの。\n残念だけれど………\n仕方ないわね」",
+      "source": "アンマリー「あら、いならないの。\n<FFD5>残念だけれど………\n<FFD5>仕方ないわね」",
       "text": null
     },
     {
@@ -2490,25 +2490,25 @@
     {
       "offset": "0xDE8A",
       "type": "dialog",
-      "source": "アンマリー「これでゲームは\nおしまい」",
+      "source": "アンマリー「これでゲームは\n<FFD5>おしまい」",
       "text": null
     },
     {
       "offset": "0xDEB4",
       "type": "dialog",
-      "source": "アンマリー「勝敗はつかなかったけど\nなかなか楽しかったわ」",
+      "source": "アンマリー「勝敗はつかなかったけど\n<FFD5>なかなか楽しかったわ」",
       "text": null
     },
     {
       "offset": "0xDEF2",
       "type": "dialog",
-      "source": "アンマリー「わたし、ドキドキするの\n大好きなの！」",
+      "source": "アンマリー「わたし、ドキドキするの\n<FFD5>大好きなの！」",
       "text": null
     },
     {
       "offset": "0xDF28",
       "type": "dialog",
-      "source": "アンマリー「また、機会があったら\n遊んでちょうだいね」",
+      "source": "アンマリー「また、機会があったら\n<FFD5>遊んでちょうだいね」",
       "text": null
     },
     {
@@ -2520,13 +2520,13 @@
     {
       "offset": "0xDF94",
       "type": "dialog",
-      "source": "アンマリー「あんまりかわいそうだから\nもう少し、がまんしてあげる\n事にするわ」",
+      "source": "アンマリー「あんまりかわいそうだから\n<FFD5>もう少し、がまんしてあげる\n<FFD5>事にするわ」",
       "text": null
     },
     {
       "offset": "0xDFE8",
       "type": "dialog",
-      "source": "アンマリー「さぁ、街へ帰りましょう。\n少し疲れたから\nしっかり護ってね」",
+      "source": "アンマリー「さぁ、街へ帰りましょう。\n<FFD5>少し疲れたから\n<FFD5>しっかり護ってね」",
       "text": null
     },
     {
@@ -2538,13 +2538,13 @@
     {
       "offset": "0xE054",
       "type": "dialog",
-      "source": "オスカー「あ、ああ！\nまかせてくれ！！」",
+      "source": "オスカー「あ、ああ！\n<FFD4>まかせてくれ！！」",
       "text": null
     },
     {
       "offset": "0xE080",
       "type": "dialog",
-      "source": "リューン「アンのためなら\nバンパイアロードだって\n倒してみせるさ！」",
+      "source": "リューン「アンのためなら\n<FFD4>バンパイアロードだって\n<FFD4>倒してみせるさ！」",
       "text": null
     },
     {
@@ -2562,7 +2562,7 @@
     {
       "offset": "0xE124",
       "type": "dialog",
-      "source": "アンマリー「それじゃ、<PAGE>。\nごきげんよう」",
+      "source": "アンマリー「それじゃ、<PAGE>。\n<FFD5>ごきげんよう」",
       "text": null
     },
     {
@@ -2598,19 +2598,19 @@
     {
       "offset": "0xE258",
       "type": "dialog",
-      "source": "アンマリー「それじゃ、わたし達の\n勝ちね！」",
+      "source": "アンマリー「それじゃ、わたし達の\n<FFD5>勝ちね！」",
       "text": null
     },
     {
       "offset": "0xE288",
       "type": "dialog",
-      "source": "オスカー「ヘヘヘ！ ガスドラゴンの\nポイズンブレスをくらった\nかいがあったぜ！」",
+      "source": "オスカー「ヘヘヘ！ ガスドラゴンの\n<FFD4>ポイズンブレスをくらった\n<FFD4>かいがあったぜ！」",
       "text": null
     },
     {
       "offset": "0xE2DE",
       "type": "dialog",
-      "source": "リューン「ああ！\nやつは強かったからな！」",
+      "source": "リューン「ああ！\n<FFD4>やつは強かったからな！」",
       "text": null
     },
     {
@@ -2622,13 +2622,13 @@
     {
       "offset": "0xE33A",
       "type": "dialog",
-      "source": "アンマリー「でも、オスカーがトラップを\nひきあてたり………」",
+      "source": "アンマリー「でも、オスカーがトラップを\n<FFD5>ひきあてたり………」",
       "text": null
     },
     {
       "offset": "0xE37A",
       "type": "dialog",
-      "source": "アンマリー「リューンがビショップの\n魔法で眠ってしまって足を\nひっぱった事は………」",
+      "source": "アンマリー「リューンがビショップの\n<FFD5>魔法で眠ってしまって足を\n<FFD5>ひっぱった事は………」",
       "text": null
     },
     {
@@ -2646,13 +2646,13 @@
     {
       "offset": "0xE420",
       "type": "dialog",
-      "source": "アンマリー「それじゃ、約束通り所持金の\n半分をもらうわね」",
+      "source": "アンマリー「それじゃ、約束通り所持金の\n<FFD5>半分をもらうわね」",
       "text": null
     },
     {
       "offset": "0xE45E",
       "type": "center",
-      "source": "所持金をわたしますか？\n\nわたす\nわたさない\n",
+      "source": "所持金をわたしますか？\n\n<FFC0>わたす\n<FFC1>わたさない\n",
       "text": null
     },
     {
@@ -2676,13 +2676,13 @@
     {
       "offset": "0xE58E",
       "type": "dialog",
-      "source": "アンマリー「わたし、声をかけては\nいけない人に、声をかけて\nしまったのかしら………」",
+      "source": "アンマリー「わたし、声をかけては\n<FFD5>いけない人に、声をかけて\n<FFD5>しまったのかしら………」",
       "text": null
     },
     {
       "offset": "0xE5E8",
       "type": "dialog",
-      "source": "アンマリー「あんまり気の毒で\n涙が出て来そうだわ」",
+      "source": "アンマリー「あんまり気の毒で\n<FFD5>涙が出て来そうだわ」",
       "text": null
     },
     {
@@ -2700,7 +2700,7 @@
     {
       "offset": "0xE65E",
       "type": "dialog",
-      "source": "アンマリー「少ないけれど宿代にでも\nしてちょうだい」",
+      "source": "アンマリー「少ないけれど宿代にでも\n<FFD5>してちょうだい」",
       "text": null
     },
     {
@@ -2742,13 +2742,13 @@
     {
       "offset": "0xE76C",
       "type": "dialog",
-      "source": "オスカー「今夜の宿代もないなんて\nあんたもいろいろ苦労\nしてるんだなぁ………」",
+      "source": "オスカー「今夜の宿代もないなんて\n<FFD4>あんたもいろいろ苦労\n<FFD4>してるんだなぁ………」",
       "text": null
     },
     {
       "offset": "0xE7C0",
       "type": "dialog",
-      "source": "リューン「がんばっていれば\nいつか良い事もあるさ」",
+      "source": "リューン「がんばっていれば\n<FFD4>いつか良い事もあるさ」",
       "text": null
     },
     {
@@ -2760,7 +2760,7 @@
     {
       "offset": "0xE82A",
       "type": "dialog",
-      "source": "アンマリー「それじゃ\n気を落とさないでね\nさようなら………！！」",
+      "source": "アンマリー「それじゃ\n<FFD5>気を落とさないでね\n<FFD5>さようなら………！！」",
       "text": null
     },
     {
@@ -2778,7 +2778,7 @@
     {
       "offset": "0xE8E6",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「アン！！\n待ってくれよぉ！！」",
+      "source": "オスカー＆リューン\n<FFD3>「アン！！\n<FFD4>待ってくれよぉ！！」",
       "text": null
     },
     {
@@ -2802,19 +2802,19 @@
     {
       "offset": "0xE9AC",
       "type": "dialog",
-      "source": "アンマリー「とっても\nとっても少ないわ」",
+      "source": "アンマリー「とっても\n<FFD5>とっても少ないわ」",
       "text": null
     },
     {
       "offset": "0xE9D8",
       "type": "dialog",
-      "source": "アンマリー「なんだか\n損した気分だわ」",
+      "source": "アンマリー「なんだか\n<FFD5>損した気分だわ」",
       "text": null
     },
     {
       "offset": "0xEA02",
       "type": "dialog",
-      "source": "アンマリー「でも、約束だから\n仕方ないわね」",
+      "source": "アンマリー「でも、約束だから\n<FFD5>仕方ないわね」",
       "text": null
     },
     {
@@ -2826,25 +2826,25 @@
     {
       "offset": "0xEA56",
       "type": "dialog",
-      "source": "リューン「あんたは、もう少し\n持っていると思ったんだが\nなぁ………」",
+      "source": "リューン「あんたは、もう少し\n<FFD4>持っていると思ったんだが\n<FFD4>なぁ………」",
       "text": null
     },
     {
       "offset": "0xEAA0",
       "type": "dialog",
-      "source": "アンマリー「人はみかけで判断\n出来ないというものよ」",
+      "source": "アンマリー「人はみかけで判断\n<FFD5>出来ないというものよ」",
       "text": null
     },
     {
       "offset": "0xEAD8",
       "type": "dialog",
-      "source": "アンマリー「ごめんなさい。\n誘って悪かったわ」",
+      "source": "アンマリー「ごめんなさい。\n<FFD5>誘って悪かったわ」",
       "text": null
     },
     {
       "offset": "0xEB0A",
       "type": "dialog",
-      "source": "アンマリー「でも、これも試練だと思って\n強く、のりこえてね…」",
+      "source": "アンマリー「でも、これも試練だと思って\n<FFD5>強く、のりこえてね…」",
       "text": null
     },
     {
@@ -2874,19 +2874,19 @@
     {
       "offset": "0xEC26",
       "type": "dialog",
-      "source": "アンマリー「なんとも言えない金額ね…\n哀しみも大きくない代わりに\n喜びも大きくないわ」",
+      "source": "アンマリー「なんとも言えない金額ね…\n<FFD5>哀しみも大きくない代わりに\n<FFD5>喜びも大きくないわ」",
       "text": null
     },
     {
       "offset": "0xEC82",
       "type": "dialog",
-      "source": "オスカー「チッ、手に入った金で\nさんざん飲み食いしようと\n思ってたのによ！」",
+      "source": "オスカー「チッ、手に入った金で\n<FFD4>さんざん飲み食いしようと\n<FFD4>思ってたのによ！」",
       "text": null
     },
     {
       "offset": "0xECD4",
       "type": "dialog",
-      "source": "リューン「俺は装備を買い替えようかと\n思ってたんだがなぁ………」",
+      "source": "リューン「俺は装備を買い替えようかと\n<FFD4>思ってたんだがなぁ………」",
       "text": null
     },
     {
@@ -2898,13 +2898,13 @@
     {
       "offset": "0xED3A",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「ハ、ハイッ！」",
+      "source": "オスカー＆リューン\n<FFD4>「ハ、ハイッ！」",
       "text": null
     },
     {
       "offset": "0xED62",
       "type": "dialog",
-      "source": "アンマリー「いつ、あなた達がゴールドを\n自由にして良い事になったの\nかしら？」",
+      "source": "アンマリー「いつ、あなた達がゴールドを\n<FFD5>自由にして良い事になったの\n<FFD5>かしら？」",
       "text": null
     },
     {
@@ -2916,19 +2916,19 @@
     {
       "offset": "0xEDE6",
       "type": "dialog",
-      "source": "オスカー「ご、ごごごごご\nごめんよ、アン！」",
+      "source": "オスカー「ご、ごごごごご\n<FFD4>ごめんよ、アン！」",
       "text": null
     },
     {
       "offset": "0xEE16",
       "type": "dialog",
-      "source": "オスカー「パーティのお金には\n絶対手をつけないから！！」",
+      "source": "オスカー「パーティのお金には\n<FFD4>絶対手をつけないから！！」",
       "text": null
     },
     {
       "offset": "0xEE52",
       "type": "dialog",
-      "source": "リューン「そそ、そうだよアン！\n心配しないでくれよ」",
+      "source": "リューン「そそ、そうだよアン！\n<FFD4>心配しないでくれよ」",
       "text": null
     },
     {
@@ -2940,7 +2940,7 @@
     {
       "offset": "0xEEBA",
       "type": "dialog",
-      "source": "アンマリー「そう？\nなら、良いわ」",
+      "source": "アンマリー「そう？\n<FFD5>なら、良いわ」",
       "text": null
     },
     {
@@ -2952,19 +2952,19 @@
     {
       "offset": "0xEF28",
       "type": "dialog",
-      "source": "アンマリー「それじゃ<PAGE>\nまた遊びましょうね！」",
+      "source": "アンマリー「それじゃ<PAGE>\n<FFD5>また遊びましょうね！」",
       "text": null
     },
     {
       "offset": "0xEF5A",
       "type": "dialog",
-      "source": "アンマリー「それじゃ\nまた遊びましょうね！」",
+      "source": "アンマリー「それじゃ\n<FFD5>また遊びましょうね！」",
       "text": null
     },
     {
       "offset": "0xEF8A",
       "type": "dialog",
-      "source": "アンマリー「次はもう少しお金を多く\n持つ事を、お奨めして\nおくわ」",
+      "source": "アンマリー「次はもう少しお金を多く\n<FFD5>持つ事を、お奨めして\n<FFD5>おくわ」",
       "text": null
     },
     {
@@ -2976,7 +2976,7 @@
     {
       "offset": "0xF01A",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「アン！！\n待ってくれよぉ！！」",
+      "source": "オスカー＆リューン\n<FFD3>「アン！！\n<FFD4>待ってくれよぉ！！」",
       "text": null
     },
     {
@@ -3012,37 +3012,37 @@
     {
       "offset": "0xF154",
       "type": "dialog",
-      "source": "アンマリー「これでこそ\nゲームをしたかいが\nあると言うものよね」",
+      "source": "アンマリー「これでこそ\n<FFD5>ゲームをしたかいが\n<FFD5>あると言うものよね」",
       "text": null
     },
     {
       "offset": "0xF19A",
       "type": "dialog",
-      "source": "オスカー「へぇ、けっこうな\n額じゃねぇか」",
+      "source": "オスカー「へぇ、けっこうな\n<FFD4>額じゃねぇか」",
       "text": null
     },
     {
       "offset": "0xF1C8",
       "type": "dialog",
-      "source": "オスカー「これで今夜は鳥の丸焼きに\nヒメマスのムニエルと\nしゃれこもうぜ！」",
+      "source": "オスカー「これで今夜は鳥の丸焼きに\n<FFD4>ヒメマスのムニエルと\n<FFD4>しゃれこもうぜ！」",
       "text": null
     },
     {
       "offset": "0xF21A",
       "type": "dialog",
-      "source": "オスカー「うまくいったら\nアップルパイも\nたのめるかもな！！」",
+      "source": "オスカー「うまくいったら\n<FFD4>アップルパイも\n<FFD4>たのめるかもな！！」",
       "text": null
     },
     {
       "offset": "0xF25E",
       "type": "dialog",
-      "source": "リューン「あの閃光からロクな物を\nくってないから、それも\n良いが………」",
+      "source": "リューン「あの閃光からロクな物を\n<FFD4>くってないから、それも\n<FFD4>良いが………」",
       "text": null
     },
     {
       "offset": "0xF2AC",
       "type": "dialog",
-      "source": "リューン「装備を買い替えるっていうのも\n良いと思うんだ」",
+      "source": "リューン「装備を買い替えるっていうのも\n<FFD4>良いと思うんだ」",
       "text": null
     },
     {
@@ -3066,13 +3066,13 @@
     {
       "offset": "0xF35A",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「ハ、ハイッ！」",
+      "source": "オスカー＆リューン\n<FFD4>「ハ、ハイッ！」",
       "text": null
     },
     {
       "offset": "0xF382",
       "type": "dialog",
-      "source": "アンマリー「いつ、あなた達がゴールドを\n自由にして良い事になったの\nかしら？」",
+      "source": "アンマリー「いつ、あなた達がゴールドを\n<FFD5>自由にして良い事になったの\n<FFD5>かしら？」",
       "text": null
     },
     {
@@ -3084,31 +3084,31 @@
     {
       "offset": "0xF406",
       "type": "dialog",
-      "source": "オスカー「ご、ごごごごご\nごめんよ、アン！」",
+      "source": "オスカー「ご、ごごごごご\n<FFD4>ごめんよ、アン！」",
       "text": null
     },
     {
       "offset": "0xF436",
       "type": "dialog",
-      "source": "オスカー「俺、スラム育ちで、鳥の丸焼き\nなんて食った事ないもんだから\nちょっと夢見ただけなんだ」",
+      "source": "オスカー「俺、スラム育ちで、鳥の丸焼き\n<FFD4>なんて食った事ないもんだから\n<FFD4>ちょっと夢見ただけなんだ」",
       "text": null
     },
     {
       "offset": "0xF49C",
       "type": "dialog",
-      "source": "オスカー「パーティのお金には\n絶対手をつけないから！！」",
+      "source": "オスカー「パーティのお金には\n<FFD4>絶対手をつけないから！！」",
       "text": null
     },
     {
       "offset": "0xF4D8",
       "type": "dialog",
-      "source": "リューン「そそ、そうだよアン！\n心配しないでくれよ」",
+      "source": "リューン「そそ、そうだよアン！\n<FFD4>心配しないでくれよ」",
       "text": null
     },
     {
       "offset": "0xF510",
       "type": "dialog",
-      "source": "リューン「いや、なに、俺の剣だって\nちょっと刃こぼれしてるけど\nまたとげば良いだけの話さ」",
+      "source": "リューン「いや、なに、俺の剣だって\n<FFD4>ちょっと刃こぼれしてるけど\n<FFD4>またとげば良いだけの話さ」",
       "text": null
     },
     {
@@ -3120,7 +3120,7 @@
     {
       "offset": "0xF5A0",
       "type": "dialog",
-      "source": "アンマリー「そう？\nなら、良いわ」",
+      "source": "アンマリー「そう？\n<FFD5>なら、良いわ」",
       "text": null
     },
     {
@@ -3132,25 +3132,25 @@
     {
       "offset": "0xF60E",
       "type": "dialog",
-      "source": "アンマリー「それじゃ<PAGE>\nまた遊びましょうね！」",
+      "source": "アンマリー「それじゃ<PAGE>\n<FFD5>また遊びましょうね！」",
       "text": null
     },
     {
       "offset": "0xF640",
       "type": "dialog",
-      "source": "アンマリー「それじゃ\nまた遊びましょうね！」",
+      "source": "アンマリー「それじゃ\n<FFD5>また遊びましょうね！」",
       "text": null
     },
     {
       "offset": "0xF670",
       "type": "dialog",
-      "source": "アンマリー「なんだか、あなたとは\n友達になれそうな気が\nするの」",
+      "source": "アンマリー「なんだか、あなたとは\n<FFD5>友達になれそうな気が\n<FFD5>するの」",
       "text": null
     },
     {
       "offset": "0xF6B6",
       "type": "center",
-      "source": "アンマリーの言葉に<PAGE>は…\n\n笑顔でうなずく\nお断りだと叫ぶ\n沈黙を守る\n",
+      "source": "アンマリーの言葉に<PAGE>は…\n\n<FFC0>笑顔でうなずく\n<FFC1>お断りだと叫ぶ\n<FFC2>沈黙を守る\n",
       "text": null
     },
     {
@@ -3198,7 +3198,7 @@
     {
       "offset": "0xF872",
       "type": "dialog",
-      "source": "アンマリー「おつきあいのほど\nよろしくお願いするわ」",
+      "source": "アンマリー「おつきあいのほど\n<FFD5>よろしくお願いするわ」",
       "text": null
     },
     {
@@ -3210,7 +3210,7 @@
     {
       "offset": "0xF8EA",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「アン！！\n待ってくれよぉ！！」",
+      "source": "オスカー＆リューン\n<FFD3>「アン！！\n<FFD4>待ってくれよぉ！！」",
       "text": null
     },
     {
@@ -3234,19 +3234,19 @@
     {
       "offset": "0xF9CE",
       "type": "dialog",
-      "source": "アンマリー「ルールをやぶるなんて\nひどい………」",
+      "source": "アンマリー「ルールをやぶるなんて\n<FFD5>ひどい………」",
       "text": null
     },
     {
       "offset": "0xFA02",
       "type": "dialog",
-      "source": "オスカー「てめぇ！\n金を払わないばかりか\nアンまで泣かせやがって！」",
+      "source": "オスカー「てめぇ！\n<FFD4>金を払わないばかりか\n<FFD4>アンまで泣かせやがって！」",
       "text": null
     },
     {
       "offset": "0xFA4C",
       "type": "dialog",
-      "source": "オスカー「おい、リューン！\nやっちまおうぜ！！」",
+      "source": "オスカー「おい、リューン！\n<FFD4>やっちまおうぜ！！」",
       "text": null
     },
     {
@@ -3264,19 +3264,19 @@
     {
       "offset": "0xFAC2",
       "type": "dialog",
-      "source": "アンマリー「遅かったのね。\n待ちくたびれちゃった」",
+      "source": "アンマリー「遅かったのね。\n<FFD5>待ちくたびれちゃった」",
       "text": null
     },
     {
       "offset": "0xFAF8",
       "type": "dialog",
-      "source": "アンマリー「それじゃ、さっそくだけど\n結果発表といきましょう」",
+      "source": "アンマリー「それじゃ、さっそくだけど\n<FFD5>結果発表といきましょう」",
       "text": null
     },
     {
       "offset": "0xFB3A",
       "type": "dialog",
-      "source": "アンマリー「わたし達は、<FB01>7つ<FB00>の\nパーティを倒したわ」",
+      "source": "アンマリー「わたし達は、<FB01>7つ<FB00>の\n<FFD5>パーティを倒したわ」",
       "text": null
     },
     {
@@ -3306,7 +3306,7 @@
     {
       "offset": "0xFC32",
       "type": "dialog",
-      "source": "オスカー「リューン！\nお前があんなザコに\n手間取るからだ！！」",
+      "source": "オスカー「リューン！\n<FFD4>お前があんなザコに\n<FFD4>手間取るからだ！！」",
       "text": null
     },
     {
@@ -3318,7 +3318,7 @@
     {
       "offset": "0xFC92",
       "type": "dialog",
-      "source": "リューン「ドラゴンフライのブレスで\nヒィヒィ言ってたのは\nお前だろ！？」",
+      "source": "リューン「ドラゴンフライのブレスで\n<FFD4>ヒィヒィ言ってたのは\n<FFD4>お前だろ！？」",
       "text": null
     },
     {
@@ -3336,13 +3336,13 @@
     {
       "offset": "0xFD38",
       "type": "dialog",
-      "source": "アンマリー「いいかげんにしないと\n二人とも本当に\nキライになっちゃうわよ」",
+      "source": "アンマリー「いいかげんにしないと\n<FFD5>二人とも本当に\n<FFD5>キライになっちゃうわよ」",
       "text": null
     },
     {
       "offset": "0xFD88",
       "type": "dialog",
-      "source": "アンマリー「わたしとパーティを組みたい\n人は、何もあなた達だけじゃ\nないんですからね」",
+      "source": "アンマリー「わたしとパーティを組みたい\n<FFD5>人は、何もあなた達だけじゃ\n<FFD5>ないんですからね」",
       "text": null
     },
     {
@@ -3354,7 +3354,7 @@
     {
       "offset": "0xFE2C",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「ア、アン～～～………」",
+      "source": "オスカー＆リューン\n<FFD3>「ア、アン～～～………」",
       "text": null
     },
     {
@@ -3366,7 +3366,7 @@
     {
       "offset": "0xFE9E",
       "type": "center",
-      "source": "一行は………\n\n呆れる\n二人に同情する\n",
+      "source": "一行は………\n\n<FFC0>呆れる\n<FFC1>二人に同情する\n",
       "text": null
     },
     {
@@ -3426,7 +3426,7 @@
     {
       "offset": "0x100DC",
       "type": "dialog",
-      "source": "アンマリー「あなた達が勝ったんだから\n約束どおり、魔法石を\nあげなくちゃね」",
+      "source": "アンマリー「あなた達が勝ったんだから\n<FFD5>約束どおり、魔法石を\n<FFD5>あげなくちゃね」",
       "text": null
     },
     {
@@ -3438,19 +3438,19 @@
     {
       "offset": "0x1015E",
       "type": "dialog",
-      "source": "アンマリー「好きな物を\n選んでくれてけっこうよ」",
+      "source": "アンマリー「好きな物を\n<FFD5>選んでくれてけっこうよ」",
       "text": null
     },
     {
       "offset": "0x10192",
       "type": "center",
-      "source": "どれをもらいますか？\n\nジャクレタの石 4LV魔術師攻撃魔法\nカーカスの石  5LV僧 侶回復魔法\nラフィールの石 5LV僧 侶回復魔法\nデッドリィの石 6LV僧 侶攻撃魔法\nいらない\n",
+      "source": "どれをもらいますか？\n\n<FFC0>ジャクレタの石 4LV魔術師攻撃魔法\n<FFC1>カーカスの石  5LV僧 侶回復魔法\n<FFC2>ラフィールの石 5LV僧 侶回復魔法\n<FFC3>デッドリィの石 6LV僧 侶攻撃魔法\n<FFC4>いらない\n",
       "text": null
     },
     {
       "offset": "0x10274",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -3480,7 +3480,7 @@
     {
       "offset": "0x10346",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -3510,7 +3510,7 @@
     {
       "offset": "0x10410",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -3540,7 +3540,7 @@
     {
       "offset": "0x104E2",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -3600,25 +3600,25 @@
     {
       "offset": "0x106EA",
       "type": "dialog",
-      "source": "アンマリー「これでゲームは\nおしまい」",
+      "source": "アンマリー「これでゲームは\n<FFD5>おしまい」",
       "text": null
     },
     {
       "offset": "0x10714",
       "type": "dialog",
-      "source": "アンマリー「負けちゃったけど\nなかなか楽しかったわ」",
+      "source": "アンマリー「負けちゃったけど\n<FFD5>なかなか楽しかったわ」",
       "text": null
     },
     {
       "offset": "0x1074C",
       "type": "dialog",
-      "source": "アンマリー「わたし、ドキドキするの\n大好きなの！」",
+      "source": "アンマリー「わたし、ドキドキするの\n<FFD5>大好きなの！」",
       "text": null
     },
     {
       "offset": "0x10782",
       "type": "dialog",
-      "source": "アンマリー「また、機会があったら\n遊んでちょうだいね」",
+      "source": "アンマリー「また、機会があったら\n<FFD5>遊んでちょうだいね」",
       "text": null
     },
     {
@@ -3630,13 +3630,13 @@
     {
       "offset": "0x107EE",
       "type": "dialog",
-      "source": "アンマリー「さぁ、オスカー、リューン。\n街へ帰りましょう」",
+      "source": "アンマリー「さぁ、オスカー、リューン。\n<FFD5>街へ帰りましょう」",
       "text": null
     },
     {
       "offset": "0x1082C",
       "type": "dialog",
-      "source": "アンマリー「少し疲れたから\nしっかり護ってね」",
+      "source": "アンマリー「少し疲れたから\n<FFD5>しっかり護ってね」",
       "text": null
     },
     {
@@ -3648,13 +3648,13 @@
     {
       "offset": "0x1087C",
       "type": "dialog",
-      "source": "オスカー「あ、ああ！\nまかせてくれ！！」",
+      "source": "オスカー「あ、ああ！\n<FFD4>まかせてくれ！！」",
       "text": null
     },
     {
       "offset": "0x108A8",
       "type": "dialog",
-      "source": "リューン「アンのためなら\nグレーターデーモンだって\n倒してみせるさ！」",
+      "source": "リューン「アンのためなら\n<FFD4>グレーターデーモンだって\n<FFD4>倒してみせるさ！」",
       "text": null
     },
     {
@@ -3690,19 +3690,19 @@
     {
       "offset": "0x109DC",
       "type": "dialog",
-      "source": "アンマリー「ひどい。\nせっかくの魔法石を\nいらないなんて……」",
+      "source": "アンマリー「ひどい。\n<FFD5>せっかくの魔法石を\n<FFD5>いらないなんて……」",
       "text": null
     },
     {
       "offset": "0x10A20",
       "type": "dialog",
-      "source": "オスカー「てめぇら！\nアンの好意をふみにじり\nやがって！！」",
+      "source": "オスカー「てめぇら！\n<FFD4>アンの好意をふみにじり\n<FFD4>やがって！！」",
       "text": null
     },
     {
       "offset": "0x10A62",
       "type": "dialog",
-      "source": "オスカー「おい、リューン！\nやっちまおうぜ！！」",
+      "source": "オスカー「おい、リューン！\n<FFD4>やっちまおうぜ！！」",
       "text": null
     },
     {
@@ -3738,7 +3738,7 @@
     {
       "offset": "0x10B66",
       "type": "dialog",
-      "source": "オスカー「リューン！\nお前がもっと強かったら\nもう少しいけたのに！！」",
+      "source": "オスカー「リューン！\n<FFD4>お前がもっと強かったら\n<FFD4>もう少しいけたのに！！」",
       "text": null
     },
     {
@@ -3750,31 +3750,31 @@
     {
       "offset": "0x10BCE",
       "type": "dialog",
-      "source": "リューン「サムライににらまれて\n腰をぬかしかけたのは\nお前だろ！？」",
+      "source": "リューン「サムライににらまれて\n<FFD4>腰をぬかしかけたのは\n<FFD4>お前だろ！？」",
       "text": null
     },
     {
       "offset": "0x10C18",
       "type": "dialog",
-      "source": "オスカー「俺は盗賊だから\n良いんだよ！」",
+      "source": "オスカー「俺は盗賊だから\n<FFD4>良いんだよ！」",
       "text": null
     },
     {
       "offset": "0x10C44",
       "type": "dialog",
-      "source": "オスカー「お前は戦士だってのに\nオークキングにボコスコ\nなぐられてたじゃねえか！」",
+      "source": "オスカー「お前は戦士だってのに\n<FFD4>オークキングにボコスコ\n<FFD4>なぐられてたじゃねえか！」",
       "text": null
     },
     {
       "offset": "0x10C9C",
       "type": "dialog",
-      "source": "リューン「盗賊だって言うんなら\nトラップをしっかり\nはずせよ！！」",
+      "source": "リューン「盗賊だって言うんなら\n<FFD4>トラップをしっかり\n<FFD4>はずせよ！！」",
       "text": null
     },
     {
       "offset": "0x10CE4",
       "type": "dialog",
-      "source": "リューン「俺が今イチふるわなかったのは\nトラップのスピアに足を\nやられたからだぞ！」",
+      "source": "リューン「俺が今イチふるわなかったのは\n<FFD4>トラップのスピアに足を\n<FFD4>やられたからだぞ！」",
       "text": null
     },
     {
@@ -3786,7 +3786,7 @@
     {
       "offset": "0x10D66",
       "type": "dialog",
-      "source": "オスカー「だいたいなぁ、アンの魔法も\nロクスッポ………」",
+      "source": "オスカー「だいたいなぁ、アンの魔法も\n<FFD4>ロクスッポ………」",
       "text": null
     },
     {
@@ -3810,7 +3810,7 @@
     {
       "offset": "0x10E1A",
       "type": "dialog",
-      "source": "アンマリー「その後に続く言葉は\n何なのかしら？」",
+      "source": "アンマリー「その後に続く言葉は\n<FFD5>何なのかしら？」",
       "text": null
     },
     {
@@ -3828,13 +3828,13 @@
     {
       "offset": "0x10EAC",
       "type": "dialog",
-      "source": "アンマリー「別に構わないのよ？\n無理してパーティを\n組まなくたって」",
+      "source": "アンマリー「別に構わないのよ？\n<FFD5>無理してパーティを\n<FFD5>組まなくたって」",
       "text": null
     },
     {
       "offset": "0x10EF6",
       "type": "dialog",
-      "source": "アンマリー「わたしとパーティを組みたい\n人は、何もあなた達だけじゃ\nないんですからね」",
+      "source": "アンマリー「わたしとパーティを組みたい\n<FFD5>人は、何もあなた達だけじゃ\n<FFD5>ないんですからね」",
       "text": null
     },
     {
@@ -3846,19 +3846,19 @@
     {
       "offset": "0x10F72",
       "type": "dialog",
-      "source": "アンマリー「忍者のラコクと騎士のギィが\n一緒に組もうって\n言ってたかしら」",
+      "source": "アンマリー「忍者のラコクと騎士のギィが\n<FFD5>一緒に組もうって\n<FFD5>言ってたかしら」",
       "text": null
     },
     {
       "offset": "0x10FC2",
       "type": "dialog",
-      "source": "アンマリー「二人ともとっても\n紳士なのよね」",
+      "source": "アンマリー「二人ともとっても\n<FFD5>紳士なのよね」",
       "text": null
     },
     {
       "offset": "0x10FF2",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「ア、アン～～～………」",
+      "source": "オスカー＆リューン\n<FFD3>「ア、アン～～～………」",
       "text": null
     },
     {
@@ -3870,7 +3870,7 @@
     {
       "offset": "0x11064",
       "type": "center",
-      "source": "一行は………\n\n呆れる\n二人に同情する\n",
+      "source": "一行は………\n\n<FFC0>呆れる\n<FFC1>二人に同情する\n",
       "text": null
     },
     {
@@ -3924,7 +3924,7 @@
     {
       "offset": "0x1127C",
       "type": "dialog",
-      "source": "アンマリー「そう言えば\n引き分けの時のルールを\n決めてなかったわね」",
+      "source": "アンマリー「そう言えば\n<FFD5>引き分けの時のルールを\n<FFD5>決めてなかったわね」",
       "text": null
     },
     {
@@ -3942,7 +3942,7 @@
     {
       "offset": "0x112FC",
       "type": "dialog",
-      "source": "アンマリー「あげるはずだった\n魔法石を買ってもらえば\n良いのよね」",
+      "source": "アンマリー「あげるはずだった\n<FFD5>魔法石を買ってもらえば\n<FFD5>良いのよね」",
       "text": null
     },
     {
@@ -3954,25 +3954,25 @@
     {
       "offset": "0x11374",
       "type": "dialog",
-      "source": "アンマリー「好きな物を\n選んでくれてけっこうよ」",
+      "source": "アンマリー「好きな物を\n<FFD5>選んでくれてけっこうよ」",
       "text": null
     },
     {
       "offset": "0x113A8",
       "type": "dialog",
-      "source": "アンマリー「値段はどれでも\n10000ゴールドに\nしておくわ」",
+      "source": "アンマリー「値段はどれでも\n<FFD5>10000ゴールドに\n<FFD5>しておくわ」",
       "text": null
     },
     {
       "offset": "0x113EC",
       "type": "center",
-      "source": "どれを買いますか？\n\nジャクレタの石 4LV魔術師攻撃魔法\nカーカスの石  5LV僧 侶回復魔法\nラフィールの石 5LV僧 侶回復魔法\nデッドリィの石 6LV僧 侶攻撃魔法\n買わない\n",
+      "source": "どれを買いますか？\n\n<FFC0>ジャクレタの石 4LV魔術師攻撃魔法\n<FFC1>カーカスの石  5LV僧 侶回復魔法\n<FFC2>ラフィールの石 5LV僧 侶回復魔法\n<FFC3>デッドリィの石 6LV僧 侶攻撃魔法\n<FFC4>買わない\n",
       "text": null
     },
     {
       "offset": "0x114CC",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -4002,7 +4002,7 @@
     {
       "offset": "0x1159A",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -4032,7 +4032,7 @@
     {
       "offset": "0x11660",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -4062,7 +4062,7 @@
     {
       "offset": "0x1172E",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -4098,13 +4098,13 @@
     {
       "offset": "0x11822",
       "type": "dialog",
-      "source": "アンマリー「残念だけど\n魔法石はあげられないわ」",
+      "source": "アンマリー「残念だけど\n<FFD5>魔法石はあげられないわ」",
       "text": null
     },
     {
       "offset": "0x11856",
       "type": "dialog",
-      "source": "アンマリー「あら、いならないの。\n残念だけれど………\n仕方ないわね」",
+      "source": "アンマリー「あら、いならないの。\n<FFD5>残念だけれど………\n<FFD5>仕方ないわね」",
       "text": null
     },
     {
@@ -4140,25 +4140,25 @@
     {
       "offset": "0x119D6",
       "type": "dialog",
-      "source": "アンマリー「これでゲームは\nおしまい」",
+      "source": "アンマリー「これでゲームは\n<FFD5>おしまい」",
       "text": null
     },
     {
       "offset": "0x11A00",
       "type": "dialog",
-      "source": "アンマリー「勝敗はつかなかったけど\nなかなか楽しかったわ」",
+      "source": "アンマリー「勝敗はつかなかったけど\n<FFD5>なかなか楽しかったわ」",
       "text": null
     },
     {
       "offset": "0x11A3E",
       "type": "dialog",
-      "source": "アンマリー「わたし、ドキドキするの\n大好きなの！」",
+      "source": "アンマリー「わたし、ドキドキするの\n<FFD5>大好きなの！」",
       "text": null
     },
     {
       "offset": "0x11A74",
       "type": "dialog",
-      "source": "アンマリー「また、機会があったら\n遊んでちょうだいね」",
+      "source": "アンマリー「また、機会があったら\n<FFD5>遊んでちょうだいね」",
       "text": null
     },
     {
@@ -4170,13 +4170,13 @@
     {
       "offset": "0x11AE0",
       "type": "dialog",
-      "source": "アンマリー「あんまりかわいそうだから\nもう少し、がまんしてあげる\n事にするわ」",
+      "source": "アンマリー「あんまりかわいそうだから\n<FFD5>もう少し、がまんしてあげる\n<FFD5>事にするわ」",
       "text": null
     },
     {
       "offset": "0x11B34",
       "type": "dialog",
-      "source": "アンマリー「さぁ、街へ帰りましょう。\n少し疲れたから\nしっかり護ってね」",
+      "source": "アンマリー「さぁ、街へ帰りましょう。\n<FFD5>少し疲れたから\n<FFD5>しっかり護ってね」",
       "text": null
     },
     {
@@ -4188,13 +4188,13 @@
     {
       "offset": "0x11BA0",
       "type": "dialog",
-      "source": "オスカー「あ、ああ！\nまかせてくれ！！」",
+      "source": "オスカー「あ、ああ！\n<FFD4>まかせてくれ！！」",
       "text": null
     },
     {
       "offset": "0x11BCC",
       "type": "dialog",
-      "source": "リューン「アンのためなら\nバンパイアロードだって\n倒してみせるさ！」",
+      "source": "リューン「アンのためなら\n<FFD4>バンパイアロードだって\n<FFD4>倒してみせるさ！」",
       "text": null
     },
     {
@@ -4236,19 +4236,19 @@
     {
       "offset": "0x11D48",
       "type": "dialog",
-      "source": "アンマリー「それじゃ、わたし達の\n勝ちね！」",
+      "source": "アンマリー「それじゃ、わたし達の\n<FFD5>勝ちね！」",
       "text": null
     },
     {
       "offset": "0x11D78",
       "type": "dialog",
-      "source": "オスカー「ヘヘヘ！ ガスドラゴンの\nポイズンブレスをくらった\nかいがあったぜ！」",
+      "source": "オスカー「ヘヘヘ！ ガスドラゴンの\n<FFD4>ポイズンブレスをくらった\n<FFD4>かいがあったぜ！」",
       "text": null
     },
     {
       "offset": "0x11DCE",
       "type": "dialog",
-      "source": "リューン「ああ！\nやつは強かったからな！」",
+      "source": "リューン「ああ！\n<FFD4>やつは強かったからな！」",
       "text": null
     },
     {
@@ -4260,13 +4260,13 @@
     {
       "offset": "0x11E2A",
       "type": "dialog",
-      "source": "アンマリー「でも、オスカーがトラップを\nひきあてたり………」",
+      "source": "アンマリー「でも、オスカーがトラップを\n<FFD5>ひきあてたり………」",
       "text": null
     },
     {
       "offset": "0x11E6A",
       "type": "dialog",
-      "source": "アンマリー「リューンがビショップの\n魔法で眠ってしまって足を\nひっぱった事は………」",
+      "source": "アンマリー「リューンがビショップの\n<FFD5>魔法で眠ってしまって足を\n<FFD5>ひっぱった事は………」",
       "text": null
     },
     {
@@ -4284,13 +4284,13 @@
     {
       "offset": "0x11F10",
       "type": "dialog",
-      "source": "アンマリー「それじゃ、約束通り所持金の\n半分をもらうわね」",
+      "source": "アンマリー「それじゃ、約束通り所持金の\n<FFD5>半分をもらうわね」",
       "text": null
     },
     {
       "offset": "0x11F4E",
       "type": "center",
-      "source": "所持金をわたしますか？\n\nわたす\nわたさない\n",
+      "source": "所持金をわたしますか？\n\n<FFC0>わたす\n<FFC1>わたさない\n",
       "text": null
     },
     {
@@ -4314,13 +4314,13 @@
     {
       "offset": "0x12082",
       "type": "dialog",
-      "source": "アンマリー「わたし、声をかけては\nいけない人に、声をかけて\nしまったのかしら………」",
+      "source": "アンマリー「わたし、声をかけては\n<FFD5>いけない人に、声をかけて\n<FFD5>しまったのかしら………」",
       "text": null
     },
     {
       "offset": "0x120DC",
       "type": "dialog",
-      "source": "アンマリー「あんまり気の毒で\n涙が出て来そうだわ」",
+      "source": "アンマリー「あんまり気の毒で\n<FFD5>涙が出て来そうだわ」",
       "text": null
     },
     {
@@ -4338,7 +4338,7 @@
     {
       "offset": "0x12152",
       "type": "dialog",
-      "source": "アンマリー「少ないけれど宿代にでも\nしてちょうだい」",
+      "source": "アンマリー「少ないけれど宿代にでも\n<FFD5>してちょうだい」",
       "text": null
     },
     {
@@ -4380,13 +4380,13 @@
     {
       "offset": "0x12260",
       "type": "dialog",
-      "source": "オスカー「今夜の宿代もないなんて\nあんた達もいろいろ苦労\nしてるんだなぁ………」",
+      "source": "オスカー「今夜の宿代もないなんて\n<FFD4>あんた達もいろいろ苦労\n<FFD4>してるんだなぁ………」",
       "text": null
     },
     {
       "offset": "0x122B6",
       "type": "dialog",
-      "source": "リューン「がんばっていれば\nいつか良い事もあるさ」",
+      "source": "リューン「がんばっていれば\n<FFD4>いつか良い事もあるさ」",
       "text": null
     },
     {
@@ -4398,7 +4398,7 @@
     {
       "offset": "0x12320",
       "type": "dialog",
-      "source": "アンマリー「それじゃ\n気を落とさないでね\nさようなら………！！」",
+      "source": "アンマリー「それじゃ\n<FFD5>気を落とさないでね\n<FFD5>さようなら………！！」",
       "text": null
     },
     {
@@ -4416,7 +4416,7 @@
     {
       "offset": "0x123DA",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「アン！！\n待ってくれよぉ！！」",
+      "source": "オスカー＆リューン\n<FFD3>「アン！！\n<FFD4>待ってくれよぉ！！」",
       "text": null
     },
     {
@@ -4440,19 +4440,19 @@
     {
       "offset": "0x124A4",
       "type": "dialog",
-      "source": "アンマリー「とっても\nとっても少ないわ」",
+      "source": "アンマリー「とっても\n<FFD5>とっても少ないわ」",
       "text": null
     },
     {
       "offset": "0x124D0",
       "type": "dialog",
-      "source": "アンマリー「なんだか\n損した気分だわ」",
+      "source": "アンマリー「なんだか\n<FFD5>損した気分だわ」",
       "text": null
     },
     {
       "offset": "0x124FA",
       "type": "dialog",
-      "source": "アンマリー「でも、約束だから\n仕方ないわね」",
+      "source": "アンマリー「でも、約束だから\n<FFD5>仕方ないわね」",
       "text": null
     },
     {
@@ -4464,25 +4464,25 @@
     {
       "offset": "0x12550",
       "type": "dialog",
-      "source": "リューン「あんた達は、もう少し\n持っていると思ったんだが\nなぁ………」",
+      "source": "リューン「あんた達は、もう少し\n<FFD4>持っていると思ったんだが\n<FFD4>なぁ………」",
       "text": null
     },
     {
       "offset": "0x1259C",
       "type": "dialog",
-      "source": "アンマリー「人は見かけで判断\n出来ないというものよ」",
+      "source": "アンマリー「人は見かけで判断\n<FFD5>出来ないというものよ」",
       "text": null
     },
     {
       "offset": "0x125D4",
       "type": "dialog",
-      "source": "アンマリー「ごめんなさい。\n誘って悪かったわ」",
+      "source": "アンマリー「ごめんなさい。\n<FFD5>誘って悪かったわ」",
       "text": null
     },
     {
       "offset": "0x12606",
       "type": "dialog",
-      "source": "アンマリー「でも、これも試練だと思って\n強く、乗り越えてね…」",
+      "source": "アンマリー「でも、これも試練だと思って\n<FFD5>強く、乗り越えてね…」",
       "text": null
     },
     {
@@ -4512,19 +4512,19 @@
     {
       "offset": "0x1272E",
       "type": "dialog",
-      "source": "アンマリー「なんとも言えない金額ね…\n哀しみも大きくない代わりに\n喜びも大きくないわ」",
+      "source": "アンマリー「なんとも言えない金額ね…\n<FFD5>哀しみも大きくない代わりに\n<FFD5>喜びも大きくないわ」",
       "text": null
     },
     {
       "offset": "0x1278A",
       "type": "dialog",
-      "source": "オスカー「チッ、手に入った金で\nさんざん飲み食いしようと\n思ってたのによ！」",
+      "source": "オスカー「チッ、手に入った金で\n<FFD4>さんざん飲み食いしようと\n<FFD4>思ってたのによ！」",
       "text": null
     },
     {
       "offset": "0x127DC",
       "type": "dialog",
-      "source": "リューン「俺は装備を買い替えようかと\n思ってたんだがなぁ………」",
+      "source": "リューン「俺は装備を買い替えようかと\n<FFD4>思ってたんだがなぁ………」",
       "text": null
     },
     {
@@ -4536,13 +4536,13 @@
     {
       "offset": "0x12842",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「ハ、ハイッ！」",
+      "source": "オスカー＆リューン\n<FFD4>「ハ、ハイッ！」",
       "text": null
     },
     {
       "offset": "0x1286A",
       "type": "dialog",
-      "source": "アンマリー「いつ、あなた達がゴールドを\n自由にして良い事になったの\nかしら？」",
+      "source": "アンマリー「いつ、あなた達がゴールドを\n<FFD5>自由にして良い事になったの\n<FFD5>かしら？」",
       "text": null
     },
     {
@@ -4554,19 +4554,19 @@
     {
       "offset": "0x128EE",
       "type": "dialog",
-      "source": "オスカー「ご、ごごごごご\nごめんよ、アン！」",
+      "source": "オスカー「ご、ごごごごご\n<FFD4>ごめんよ、アン！」",
       "text": null
     },
     {
       "offset": "0x1291E",
       "type": "dialog",
-      "source": "オスカー「パーティのお金には\n絶対手をつけないから！！」",
+      "source": "オスカー「パーティのお金には\n<FFD4>絶対手をつけないから！！」",
       "text": null
     },
     {
       "offset": "0x1295A",
       "type": "dialog",
-      "source": "リューン「そそ、そうだよアン！\n心配しないでくれよ」",
+      "source": "リューン「そそ、そうだよアン！\n<FFD4>心配しないでくれよ」",
       "text": null
     },
     {
@@ -4578,7 +4578,7 @@
     {
       "offset": "0x129C2",
       "type": "dialog",
-      "source": "アンマリー「そう？\nなら、良いわ」",
+      "source": "アンマリー「そう？\n<FFD5>なら、良いわ」",
       "text": null
     },
     {
@@ -4590,13 +4590,13 @@
     {
       "offset": "0x12A30",
       "type": "dialog",
-      "source": "アンマリー「それじゃ\nまた遊びましょうね！」",
+      "source": "アンマリー「それじゃ\n<FFD5>また遊びましょうね！」",
       "text": null
     },
     {
       "offset": "0x12A60",
       "type": "dialog",
-      "source": "アンマリー「次はもう少しお金を多く\n持つ事を、お奨めして\nおくわ」",
+      "source": "アンマリー「次はもう少しお金を多く\n<FFD5>持つ事を、お奨めして\n<FFD5>おくわ」",
       "text": null
     },
     {
@@ -4608,7 +4608,7 @@
     {
       "offset": "0x12AF0",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「アン！！\n待ってくれよぉ！！」",
+      "source": "オスカー＆リューン\n<FFD3>「アン！！\n<FFD4>待ってくれよぉ！！」",
       "text": null
     },
     {
@@ -4644,37 +4644,37 @@
     {
       "offset": "0x12C30",
       "type": "dialog",
-      "source": "アンマリー「これでこそ\nゲームをしたかいが\nあると言うものよね」",
+      "source": "アンマリー「これでこそ\n<FFD5>ゲームをしたかいが\n<FFD5>あると言うものよね」",
       "text": null
     },
     {
       "offset": "0x12C76",
       "type": "dialog",
-      "source": "オスカー「へぇ、けっこうな\n額じゃねぇか」",
+      "source": "オスカー「へぇ、けっこうな\n<FFD4>額じゃねぇか」",
       "text": null
     },
     {
       "offset": "0x12CA4",
       "type": "dialog",
-      "source": "オスカー「これで今夜は鳥の丸焼きに\nヒメマスのムニエルと\nしゃれこもうぜ！」",
+      "source": "オスカー「これで今夜は鳥の丸焼きに\n<FFD4>ヒメマスのムニエルと\n<FFD4>しゃれこもうぜ！」",
       "text": null
     },
     {
       "offset": "0x12CF6",
       "type": "dialog",
-      "source": "オスカー「うまくいったら\nアップルパイも\nたのめるかもな！！」",
+      "source": "オスカー「うまくいったら\n<FFD4>アップルパイも\n<FFD4>たのめるかもな！！」",
       "text": null
     },
     {
       "offset": "0x12D3A",
       "type": "dialog",
-      "source": "リューン「あの閃光からロクな物を\nくってないから、それも\n良いが………」",
+      "source": "リューン「あの閃光からロクな物を\n<FFD4>くってないから、それも\n<FFD4>良いが………」",
       "text": null
     },
     {
       "offset": "0x12D88",
       "type": "dialog",
-      "source": "リューン「装備を買い替えるっていうのも\n良いと思うんだ」",
+      "source": "リューン「装備を買い替えるっていうのも\n<FFD4>良いと思うんだ」",
       "text": null
     },
     {
@@ -4698,13 +4698,13 @@
     {
       "offset": "0x12E36",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「ハ、ハイッ！」",
+      "source": "オスカー＆リューン\n<FFD4>「ハ、ハイッ！」",
       "text": null
     },
     {
       "offset": "0x12E5E",
       "type": "dialog",
-      "source": "アンマリー「いつ、あなた達がゴールドを\n自由にして良い事になったの\nかしら？」",
+      "source": "アンマリー「いつ、あなた達がゴールドを\n<FFD5>自由にして良い事になったの\n<FFD5>かしら？」",
       "text": null
     },
     {
@@ -4716,31 +4716,31 @@
     {
       "offset": "0x12EE2",
       "type": "dialog",
-      "source": "オスカー「ご、ごごごごご\nごめんよ、アン！」",
+      "source": "オスカー「ご、ごごごごご\n<FFD4>ごめんよ、アン！」",
       "text": null
     },
     {
       "offset": "0x12F12",
       "type": "dialog",
-      "source": "オスカー「俺、スラム育ちで、鳥の丸焼き\nなんて食った事ないもんだから\nちょっと夢みただけなんだ」",
+      "source": "オスカー「俺、スラム育ちで、鳥の丸焼き\n<FFD4>なんて食った事ないもんだから\n<FFD4>ちょっと夢みただけなんだ」",
       "text": null
     },
     {
       "offset": "0x12F78",
       "type": "dialog",
-      "source": "オスカー「パーティのお金には\n絶対手をつけないから！！」",
+      "source": "オスカー「パーティのお金には\n<FFD4>絶対手をつけないから！！」",
       "text": null
     },
     {
       "offset": "0x12FB4",
       "type": "dialog",
-      "source": "リューン「そそ、そうだよアン！\n心配しないでくれよ」",
+      "source": "リューン「そそ、そうだよアン！\n<FFD4>心配しないでくれよ」",
       "text": null
     },
     {
       "offset": "0x12FEC",
       "type": "dialog",
-      "source": "リューン「いや、なに、俺の剣だって\nちょっと刃こぼれしてるけど\nまたとげば良いだけの話さ」",
+      "source": "リューン「いや、なに、俺の剣だって\n<FFD4>ちょっと刃こぼれしてるけど\n<FFD4>またとげば良いだけの話さ」",
       "text": null
     },
     {
@@ -4752,7 +4752,7 @@
     {
       "offset": "0x1307C",
       "type": "dialog",
-      "source": "アンマリー「そう？\nなら、良いわ」",
+      "source": "アンマリー「そう？\n<FFD5>なら、良いわ」",
       "text": null
     },
     {
@@ -4764,19 +4764,19 @@
     {
       "offset": "0x130EA",
       "type": "dialog",
-      "source": "アンマリー「それじゃ\nまた遊びましょうね！」",
+      "source": "アンマリー「それじゃ\n<FFD5>また遊びましょうね！」",
       "text": null
     },
     {
       "offset": "0x1311A",
       "type": "dialog",
-      "source": "アンマリー「なんだか、あなた達とは\n友達になれそうな気が\nするの」",
+      "source": "アンマリー「なんだか、あなた達とは\n<FFD5>友達になれそうな気が\n<FFD5>するの」",
       "text": null
     },
     {
       "offset": "0x13162",
       "type": "center",
-      "source": "アンマリーの言葉に一行は…\n\n笑顔でうなずく\nお断りだと叫ぶ\n沈黙を守る\n",
+      "source": "アンマリーの言葉に一行は…\n\n<FFC0>笑顔でうなずく\n<FFC1>お断りだと叫ぶ\n<FFC2>沈黙を守る\n",
       "text": null
     },
     {
@@ -4824,7 +4824,7 @@
     {
       "offset": "0x13326",
       "type": "dialog",
-      "source": "アンマリー「おつきあいのほど\nよろしくお願いするわ」",
+      "source": "アンマリー「おつきあいのほど\n<FFD5>よろしくお願いするわ」",
       "text": null
     },
     {
@@ -4836,7 +4836,7 @@
     {
       "offset": "0x1339E",
       "type": "dialog",
-      "source": "オスカー＆リューン\n「アン！！\n待ってくれよぉ！！」",
+      "source": "オスカー＆リューン\n<FFD3>「アン！！\n<FFD4>待ってくれよぉ！！」",
       "text": null
     },
     {
@@ -4860,19 +4860,19 @@
     {
       "offset": "0x13484",
       "type": "dialog",
-      "source": "アンマリー「ルールをやぶるなんて\nひどい………」",
+      "source": "アンマリー「ルールをやぶるなんて\n<FFD5>ひどい………」",
       "text": null
     },
     {
       "offset": "0x134B8",
       "type": "dialog",
-      "source": "オスカー「てめぇら！\n金を払わないばかりか\nアンまで泣かせやがって！」",
+      "source": "オスカー「てめぇら！\n<FFD4>金を払わないばかりか\n<FFD4>アンまで泣かせやがって！」",
       "text": null
     },
     {
       "offset": "0x13504",
       "type": "dialog",
-      "source": "オスカー「おい、リューン！\nやっちまおうぜ！！」",
+      "source": "オスカー「おい、リューン！\n<FFD4>やっちまおうぜ！！」",
       "text": null
     },
     {
@@ -4902,25 +4902,25 @@
     {
       "offset": "0x135C4",
       "type": "dialog",
-      "source": "僧侶「月光の導きの下\n私とそなたは出会った」",
+      "source": "僧侶「月光の導きの下\n<FFD2>私とそなたは出会った」",
       "text": null
     },
     {
       "offset": "0x135F4",
       "type": "dialog",
-      "source": "僧侶「私の占いは\nそなたに祝福と\n不運をもたらすだろう」",
+      "source": "僧侶「私の占いは\n<FFD2>そなたに祝福と\n<FFD2>不運をもたらすだろう」",
       "text": null
     },
     {
       "offset": "0x13632",
       "type": "center",
-      "source": "占いをたのみますか？\n\nは い\nいいえ\n",
+      "source": "占いをたのみますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
       "offset": "0x13660",
       "type": "dialog",
-      "source": "僧侶「では、月光が次の機会を\n導くのを待つとしよう」",
+      "source": "僧侶「では、月光が次の機会を\n<FFD2>導くのを待つとしよう」",
       "text": null
     },
     {
@@ -4932,25 +4932,25 @@
     {
       "offset": "0x136AA",
       "type": "dialog",
-      "source": "僧侶「では、月光にさらした\nこのカードの山から\nこれはと思う物を選ぶのだ」",
+      "source": "僧侶「では、月光にさらした\n<FFD2>このカードの山から\n<FFD2>これはと思う物を選ぶのだ」",
       "text": null
     },
     {
       "offset": "0x136FA",
       "type": "center",
-      "source": "どの山を選びますか？\n\n右の山\n真中の山\n左の山\n",
+      "source": "どの山を選びますか？\n\n<FFC0>右の山\n<FFC1>真中の山\n<FFC2>左の山\n",
       "text": null
     },
     {
       "offset": "0x13738",
       "type": "dialog",
-      "source": "僧侶「このカードの山に\n運命がひそんでいる」",
+      "source": "僧侶「このカードの山に\n<FFD2>運命がひそんでいる」",
       "text": null
     },
     {
       "offset": "0x13768",
       "type": "dialog",
-      "source": "僧侶「月の導きの下\nそなたの運命をひきあてよう」",
+      "source": "僧侶「月の導きの下\n<FFD2>そなたの運命をひきあてよう」",
       "text": null
     },
     {
@@ -4980,13 +4980,13 @@
     {
       "offset": "0x13846",
       "type": "dialog",
-      "source": "僧侶「そなたは近く\n<FB01>妖精の祝福<FB00>をうける」",
+      "source": "僧侶「そなたは近く\n<FFD2><FB01>妖精の祝福<FB00>をうける」",
       "text": null
     },
     {
       "offset": "0x13876",
       "type": "dialog",
-      "source": "僧侶「ただ、ぼんやりしていると\n妖精の祝福はすりぬけて\nいくだろうがな」",
+      "source": "僧侶「ただ、ぼんやりしていると\n<FFD2>妖精の祝福はすりぬけて\n<FFD2>いくだろうがな」",
       "text": null
     },
     {
@@ -4998,7 +4998,7 @@
     {
       "offset": "0x138FA",
       "type": "dialog",
-      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "source": "僧侶「ほう、そなた\n<FFD2>なかなかついておるな」",
       "text": null
     },
     {
@@ -5016,13 +5016,13 @@
     {
       "offset": "0x1397A",
       "type": "dialog",
-      "source": "僧侶「そなたは近く\n魔法石を得るだろう」",
+      "source": "僧侶「そなたは近く\n<FFD2>魔法石を得るだろう」",
       "text": null
     },
     {
       "offset": "0x139A6",
       "type": "dialog",
-      "source": "僧侶「ただ、ぼんやりしていると\nその機会は失われるがな」",
+      "source": "僧侶「ただ、ぼんやりしていると\n<FFD2>その機会は失われるがな」",
       "text": null
     },
     {
@@ -5034,7 +5034,7 @@
     {
       "offset": "0x13A18",
       "type": "dialog",
-      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "source": "僧侶「ほう、そなた\n<FFD2>なかなかついておるな」",
       "text": null
     },
     {
@@ -5052,13 +5052,13 @@
     {
       "offset": "0x13AAA",
       "type": "dialog",
-      "source": "僧侶「このカードを引いた者には\n私が<FB01>力の祝福<FB00>を導く事に\nなっておる」",
+      "source": "僧侶「このカードを引いた者には\n<FFD2>私が<FB01>力の祝福<FB00>を導く事に\n<FFD2>なっておる」",
       "text": null
     },
     {
       "offset": "0x13AF8",
       "type": "center",
-      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "source": "誰が祝福を受けますか？\n\n<FFC0><FFF0>\n<FFC1><FFF1>\n<FFC2><FFF2>\n<FFC3><FFF3>\n<FFC4><FFF4>\n<FFC5><FFF5>\n",
       "text": null
     },
     {
@@ -5148,7 +5148,7 @@
     {
       "offset": "0x13C96",
       "type": "dialog",
-      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "source": "僧侶「ほう、そなた\n<FFD2>なかなかついておるな」",
       "text": null
     },
     {
@@ -5166,13 +5166,13 @@
     {
       "offset": "0x13D20",
       "type": "dialog",
-      "source": "僧侶「このカードを引いた者には\n私が<FB01>知恵の祝福<FB00>を導く事に\nなっておる」",
+      "source": "僧侶「このカードを引いた者には\n<FFD2>私が<FB01>知恵の祝福<FB00>を導く事に\n<FFD2>なっておる」",
       "text": null
     },
     {
       "offset": "0x13D70",
       "type": "center",
-      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "source": "誰が祝福を受けますか？\n\n<FFC0><FFF0>\n<FFC1><FFF1>\n<FFC2><FFF2>\n<FFC3><FFF3>\n<FFC4><FFF4>\n<FFC5><FFF5>\n",
       "text": null
     },
     {
@@ -5262,7 +5262,7 @@
     {
       "offset": "0x13F2A",
       "type": "dialog",
-      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "source": "僧侶「ほう、そなた\n<FFD2>なかなかついておるな」",
       "text": null
     },
     {
@@ -5280,13 +5280,13 @@
     {
       "offset": "0x13FB4",
       "type": "dialog",
-      "source": "僧侶「このカードを引いた者には\n私が<FB01>信仰の祝福<FB00>を導く事に\nなっておる」",
+      "source": "僧侶「このカードを引いた者には\n<FFD2>私が<FB01>信仰の祝福<FB00>を導く事に\n<FFD2>なっておる」",
       "text": null
     },
     {
       "offset": "0x14004",
       "type": "center",
-      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "source": "誰が祝福を受けますか？\n\n<FFC0><FFF0>\n<FFC1><FFF1>\n<FFC2><FFF2>\n<FFC3><FFF3>\n<FFC4><FFF4>\n<FFC5><FFF5>\n",
       "text": null
     },
     {
@@ -5376,7 +5376,7 @@
     {
       "offset": "0x141CC",
       "type": "dialog",
-      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "source": "僧侶「ほう、そなた\n<FFD2>なかなかついておるな」",
       "text": null
     },
     {
@@ -5394,13 +5394,13 @@
     {
       "offset": "0x1424A",
       "type": "dialog",
-      "source": "僧侶「このカードを引いた者には\n私が<FB01>生命の祝福<FB00>を導く事に\nなっておる」",
+      "source": "僧侶「このカードを引いた者には\n<FFD2>私が<FB01>生命の祝福<FB00>を導く事に\n<FFD2>なっておる」",
       "text": null
     },
     {
       "offset": "0x1429A",
       "type": "center",
-      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "source": "誰が祝福を受けますか？\n\n<FFC0><FFF0>\n<FFC1><FFF1>\n<FFC2><FFF2>\n<FFC3><FFF3>\n<FFC4><FFF4>\n<FFC5><FFF5>\n",
       "text": null
     },
     {
@@ -5490,7 +5490,7 @@
     {
       "offset": "0x14462",
       "type": "dialog",
-      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "source": "僧侶「ほう、そなた\n<FFD2>なかなかついておるな」",
       "text": null
     },
     {
@@ -5508,13 +5508,13 @@
     {
       "offset": "0x144EE",
       "type": "dialog",
-      "source": "僧侶「このカードを引いた者には\n私が<FB01>敏捷の祝福<FB00>を導く事に\nなっておる」",
+      "source": "僧侶「このカードを引いた者には\n<FFD2>私が<FB01>敏捷の祝福<FB00>を導く事に\n<FFD2>なっておる」",
       "text": null
     },
     {
       "offset": "0x1453E",
       "type": "center",
-      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "source": "誰が祝福を受けますか？\n\n<FFC0><FFF0>\n<FFC1><FFF1>\n<FFC2><FFF2>\n<FFC3><FFF3>\n<FFC4><FFF4>\n<FFC5><FFF5>\n",
       "text": null
     },
     {
@@ -5604,7 +5604,7 @@
     {
       "offset": "0x14706",
       "type": "dialog",
-      "source": "僧侶「ほう、そなた\nなかなかついておるな」",
+      "source": "僧侶「ほう、そなた\n<FFD2>なかなかついておるな」",
       "text": null
     },
     {
@@ -5622,13 +5622,13 @@
     {
       "offset": "0x147B2",
       "type": "dialog",
-      "source": "僧侶「このカードを引いた者には\n私が<FB01>幸運の祝福<FB00>を導く事に\nなっておる」",
+      "source": "僧侶「このカードを引いた者には\n<FFD2>私が<FB01>幸運の祝福<FB00>を導く事に\n<FFD2>なっておる」",
       "text": null
     },
     {
       "offset": "0x14802",
       "type": "center",
-      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "source": "誰が祝福を受けますか？\n\n<FFC0><FFF0>\n<FFC1><FFF1>\n<FFC2><FFF2>\n<FFC3><FFF3>\n<FFC4><FFF4>\n<FFC5><FFF5>\n",
       "text": null
     },
     {
@@ -5718,13 +5718,13 @@
     {
       "offset": "0x149CA",
       "type": "dialog",
-      "source": "僧侶「ほう、このカードが\n出てくるとは………」",
+      "source": "僧侶「ほう、このカードが\n<FFD2>出てくるとは………」",
       "text": null
     },
     {
       "offset": "0x149FC",
       "type": "dialog",
-      "source": "僧侶「これは\n<FB01>クイーンガードのカード<FB00>」",
+      "source": "僧侶「これは\n<FFD2><FB01>クイーンガードのカード<FB00>」",
       "text": null
     },
     {
@@ -5736,13 +5736,13 @@
     {
       "offset": "0x14A88",
       "type": "dialog",
-      "source": "僧侶「このカードを引いた者には\n私が<FB01>全ての祝福<FB00>を\n導く事になっておる」",
+      "source": "僧侶「このカードを引いた者には\n<FFD2>私が<FB01>全ての祝福<FB00>を\n<FFD2>導く事になっておる」",
       "text": null
     },
     {
       "offset": "0x14AD8",
       "type": "center",
-      "source": "誰が祝福を受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "source": "誰が祝福を受けますか？\n\n<FFC0><FFF0>\n<FFC1><FFF1>\n<FFC2><FFF2>\n<FFC3><FFF3>\n<FFC4><FFF4>\n<FFC5><FFF5>\n",
       "text": null
     },
     {
@@ -5754,7 +5754,7 @@
     {
       "offset": "0x14B36",
       "type": "center",
-      "source": "<FB01>力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "source": "<FB01> 力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
       "text": null
     },
     {
@@ -5766,7 +5766,7 @@
     {
       "offset": "0x14BF0",
       "type": "center",
-      "source": "<FB01>力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "source": "<FB01> 力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
       "text": null
     },
     {
@@ -5778,7 +5778,7 @@
     {
       "offset": "0x14CAA",
       "type": "center",
-      "source": "<FB01>力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "source": "<FB01> 力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
       "text": null
     },
     {
@@ -5790,7 +5790,7 @@
     {
       "offset": "0x14D64",
       "type": "center",
-      "source": "<FB01>力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "source": "<FB01> 力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
       "text": null
     },
     {
@@ -5802,7 +5802,7 @@
     {
       "offset": "0x14E1E",
       "type": "center",
-      "source": "<FB01>力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "source": "<FB01> 力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
       "text": null
     },
     {
@@ -5814,7 +5814,7 @@
     {
       "offset": "0x14ED8",
       "type": "center",
-      "source": "<FB01>力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "source": "<FB01> 力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
       "text": null
     },
     {
@@ -5826,19 +5826,19 @@
     {
       "offset": "0x14F92",
       "type": "center",
-      "source": "<FB01>力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
+      "source": "<FB01> 力 が1増えた！<FB00><BREAK>\n<FB01>知 恵が1増えた！<FB00><BREAK>\n<FB01>信仰心が1増えた！<FB00><BREAK>\n<FB01>生命力が1増えた！<FB00><BREAK>\n<FB01>敏捷度が1増えた！<FB00><BREAK>\n<FB01>幸運度が1増えた！<FB00><BREAK>",
       "text": null
     },
     {
       "offset": "0x1502E",
       "type": "dialog",
-      "source": "僧侶「このカードの山に\n運命がひそんでいる」",
+      "source": "僧侶「このカードの山に\n<FFD2>運命がひそんでいる」",
       "text": null
     },
     {
       "offset": "0x1505E",
       "type": "dialog",
-      "source": "僧侶「月の導きの下\nそなたの運命をひきあてよう」",
+      "source": "僧侶「月の導きの下\n<FFD2>そなたの運命をひきあてよう」",
       "text": null
     },
     {
@@ -5850,7 +5850,7 @@
     {
       "offset": "0x150C4",
       "type": "dialog",
-      "source": "僧侶「おや、おや\nぶっそうな………」",
+      "source": "僧侶「おや、おや\n<FFD2>ぶっそうな………」",
       "text": null
     },
     {
@@ -5868,13 +5868,13 @@
     {
       "offset": "0x15148",
       "type": "dialog",
-      "source": "僧侶「そなたは近く\n魔剣のうなりを聞くだろう」",
+      "source": "僧侶「そなたは近く\n<FFD2>魔剣のうなりを聞くだろう」",
       "text": null
     },
     {
       "offset": "0x1517A",
       "type": "dialog",
-      "source": "僧侶「ただ、注意していれば\n逃れられるやもしれんがな」",
+      "source": "僧侶「ただ、注意していれば\n<FFD2>逃れられるやもしれんがな」",
       "text": null
     },
     {
@@ -5904,13 +5904,13 @@
     {
       "offset": "0x15276",
       "type": "dialog",
-      "source": "僧侶「そなたは近く\n邪妖精の唄を聞くだろう」",
+      "source": "僧侶「そなたは近く\n<FFD2>邪妖精の唄を聞くだろう」",
       "text": null
     },
     {
       "offset": "0x152A6",
       "type": "dialog",
-      "source": "僧侶「ただ、注意していれば\n逃れられるやもしれんがな」",
+      "source": "僧侶「ただ、注意していれば\n<FFD2>逃れられるやもしれんがな」",
       "text": null
     },
     {
@@ -5922,7 +5922,7 @@
     {
       "offset": "0x15316",
       "type": "dialog",
-      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "source": "僧侶「ほう、これは\n<FFD2>気の毒に………」",
       "text": null
     },
     {
@@ -5940,13 +5940,13 @@
     {
       "offset": "0x153AE",
       "type": "dialog",
-      "source": "僧侶「このカードを引いた者には\n私が<FB01>力の災い<FB00>を導く事に\nなっておる」",
+      "source": "僧侶「このカードを引いた者には\n<FFD2>私が<FB01>力の災い<FB00>を導く事に\n<FFD2>なっておる」",
       "text": null
     },
     {
       "offset": "0x153FC",
       "type": "center",
-      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "source": "誰が災いを受けますか？\n\n<FFC0><FFF0>\n<FFC1><FFF1>\n<FFC2><FFF2>\n<FFC3><FFF3>\n<FFC4><FFF4>\n<FFC5><FFF5>\n",
       "text": null
     },
     {
@@ -6036,7 +6036,7 @@
     {
       "offset": "0x1559A",
       "type": "dialog",
-      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "source": "僧侶「ほう、これは\n<FFD2>気の毒に………」",
       "text": null
     },
     {
@@ -6054,13 +6054,13 @@
     {
       "offset": "0x15638",
       "type": "dialog",
-      "source": "僧侶「このカードを引いた者には\n私が<FB01>知恵の災い<FB00>を導く事に\nなっておる」",
+      "source": "僧侶「このカードを引いた者には\n<FFD2>私が<FB01>知恵の災い<FB00>を導く事に\n<FFD2>なっておる」",
       "text": null
     },
     {
       "offset": "0x15688",
       "type": "center",
-      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "source": "誰が災いを受けますか？\n\n<FFC0><FFF0>\n<FFC1><FFF1>\n<FFC2><FFF2>\n<FFC3><FFF3>\n<FFC4><FFF4>\n<FFC5><FFF5>\n",
       "text": null
     },
     {
@@ -6150,7 +6150,7 @@
     {
       "offset": "0x15842",
       "type": "dialog",
-      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "source": "僧侶「ほう、これは\n<FFD2>気の毒に………」",
       "text": null
     },
     {
@@ -6168,13 +6168,13 @@
     {
       "offset": "0x158D0",
       "type": "dialog",
-      "source": "僧侶「このカードを引いた者には\n私が<FB01>信仰の災い<FB00>を導く事に\nなっておる」",
+      "source": "僧侶「このカードを引いた者には\n<FFD2>私が<FB01>信仰の災い<FB00>を導く事に\n<FFD2>なっておる」",
       "text": null
     },
     {
       "offset": "0x15920",
       "type": "center",
-      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "source": "誰が災いを受けますか？\n\n<FFC0><FFF0>\n<FFC1><FFF1>\n<FFC2><FFF2>\n<FFC3><FFF3>\n<FFC4><FFF4>\n<FFC5><FFF5>\n",
       "text": null
     },
     {
@@ -6264,7 +6264,7 @@
     {
       "offset": "0x15AE8",
       "type": "dialog",
-      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "source": "僧侶「ほう、これは\n<FFD2>気の毒に………」",
       "text": null
     },
     {
@@ -6282,13 +6282,13 @@
     {
       "offset": "0x15B74",
       "type": "dialog",
-      "source": "僧侶「このカードを引いた者には\n私が<FB01>生命の災い<FB00>を導く事に\nなっておる」",
+      "source": "僧侶「このカードを引いた者には\n<FFD2>私が<FB01>生命の災い<FB00>を導く事に\n<FFD2>なっておる」",
       "text": null
     },
     {
       "offset": "0x15BC4",
       "type": "center",
-      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "source": "誰が災いを受けますか？\n\n<FFC0><FFF0>\n<FFC1><FFF1>\n<FFC2><FFF2>\n<FFC3><FFF3>\n<FFC4><FFF4>\n<FFC5><FFF5>\n",
       "text": null
     },
     {
@@ -6378,7 +6378,7 @@
     {
       "offset": "0x15D8C",
       "type": "dialog",
-      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "source": "僧侶「ほう、これは\n<FFD2>気の毒に………」",
       "text": null
     },
     {
@@ -6396,13 +6396,13 @@
     {
       "offset": "0x15E1E",
       "type": "dialog",
-      "source": "僧侶「このカードを引いた者には\n私が<FB01>敏捷の災い<FB00>を導く事に\nなっておる」",
+      "source": "僧侶「このカードを引いた者には\n<FFD2>私が<FB01>敏捷の災い<FB00>を導く事に\n<FFD2>なっておる」",
       "text": null
     },
     {
       "offset": "0x15E6E",
       "type": "center",
-      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "source": "誰が災いを受けますか？\n\n<FFC0><FFF0>\n<FFC1><FFF1>\n<FFC2><FFF2>\n<FFC3><FFF3>\n<FFC4><FFF4>\n<FFC5><FFF5>\n",
       "text": null
     },
     {
@@ -6492,7 +6492,7 @@
     {
       "offset": "0x16036",
       "type": "dialog",
-      "source": "僧侶「ほう、これは\n気の毒に………」",
+      "source": "僧侶「ほう、これは\n<FFD2>気の毒に………」",
       "text": null
     },
     {
@@ -6510,13 +6510,13 @@
     {
       "offset": "0x160DC",
       "type": "dialog",
-      "source": "僧侶「このカードを引いた者には\n私が<FB01>不吉なる災い<FB00>を導く事に\nなっておる」",
+      "source": "僧侶「このカードを引いた者には\n<FFD2>私が<FB01>不吉なる災い<FB00>を導く事に\n<FFD2>なっておる」",
       "text": null
     },
     {
       "offset": "0x1612E",
       "type": "center",
-      "source": "誰が災いを受けますか？\n\n<FFF0>\n<FFF1>\n<FFF2>\n<FFF3>\n<FFF4>\n<FFF5>\n",
+      "source": "誰が災いを受けますか？\n\n<FFC0><FFF0>\n<FFC1><FFF1>\n<FFC2><FFF2>\n<FFC3><FFF3>\n<FFC4><FFF4>\n<FFC5><FFF5>\n",
       "text": null
     },
     {
@@ -6618,7 +6618,7 @@
     {
       "offset": "0x16342",
       "type": "center",
-      "source": "僧侶「そなたは近く\n魔剣のうなりを聞くだろう」",
+      "source": "<STYLE:2>僧侶「そなたは近く\n<STYLE:2>   魔剣のうなりを聞くだろう」",
       "text": null
     },
     {
@@ -6660,25 +6660,25 @@
     {
       "offset": "0x16482",
       "type": "dialog",
-      "source": "僧侶「月光の導きの下\n私とそなたは出会った」",
+      "source": "僧侶「月光の導きの下\n<FFD2>私とそなたは出会った」",
       "text": null
     },
     {
       "offset": "0x164B2",
       "type": "dialog",
-      "source": "僧侶「私の占いは\nそなたに祝福と\n不運をもたらすだろう」",
+      "source": "僧侶「私の占いは\n<FFD2>そなたに祝福と\n<FFD2>不運をもたらすだろう」",
       "text": null
     },
     {
       "offset": "0x164F0",
       "type": "center",
-      "source": "占いをたのみますか？\n\nは い\nいいえ\n",
+      "source": "占いをたのみますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
       "offset": "0x1651E",
       "type": "dialog",
-      "source": "僧侶「では、月光が次の機会を\n導くのを待つとしよう」",
+      "source": "僧侶「では、月光が次の機会を\n<FFD2>導くのを待つとしよう」",
       "text": null
     },
     {
@@ -6690,25 +6690,25 @@
     {
       "offset": "0x16568",
       "type": "dialog",
-      "source": "僧侶「では、月光にさらした\nこのカードの山から\nこれはと思う物を選ぶのだ」",
+      "source": "僧侶「では、月光にさらした\n<FFD2>このカードの山から\n<FFD2>これはと思う物を選ぶのだ」",
       "text": null
     },
     {
       "offset": "0x165B8",
       "type": "center",
-      "source": "どの山を選びますか？\n\n右の山\n真中の山\n左の山\n",
+      "source": "どの山を選びますか？\n\n<FFC0>右の山\n<FFC1>真中の山\n<FFC2>左の山\n",
       "text": null
     },
     {
       "offset": "0x165F6",
       "type": "dialog",
-      "source": "僧侶「このカードの山に\n運命がひそんでいる」",
+      "source": "僧侶「このカードの山に\n<FFD2>運命がひそんでいる」",
       "text": null
     },
     {
       "offset": "0x16626",
       "type": "dialog",
-      "source": "僧侶「月の導きの下\nそなたの運命をひきあてよう」",
+      "source": "僧侶「月の導きの下\n<FFD2>そなたの運命をひきあてよう」",
       "text": null
     },
     {
@@ -6720,7 +6720,7 @@
     {
       "offset": "0x1668C",
       "type": "center",
-      "source": "クスクスクス",
+      "source": "<STYLE:2>クスクスクス",
       "text": null
     },
     {
@@ -6732,7 +6732,7 @@
     {
       "offset": "0x166C8",
       "type": "center",
-      "source": "アハハハハ！",
+      "source": "<STYLE:2>アハハハハ！",
       "text": null
     },
     {
@@ -6750,7 +6750,7 @@
     {
       "offset": "0x16728",
       "type": "center",
-      "source": "見つけた、見つけた。\n月光の刻印！\n邪妖精へのみつぎ物……",
+      "source": "<STYLE:2>見つけた、見つけた。\n<STYLE:2>月光の刻印！\n<STYLE:2>邪妖精へのみつぎ物……",
       "text": null
     },
     {
@@ -6774,7 +6774,7 @@
     {
       "offset": "0x16804",
       "type": "center",
-      "source": "ねむれ、ねむれ、ゆるやかに\nまぶたをとざし、夢の中へ……\n\nねむれ、ねむれ、今すぐに\n母の胸を思い出せ……",
+      "source": "<STYLE:2>ねむれ、ねむれ、ゆるやかに\n<STYLE:2>まぶたをとざし、夢の中へ……\n\n<STYLE:2>ねむれ、ねむれ、今すぐに\n<STYLE:2>母の胸を思い出せ……",
       "text": null
     },
     {
@@ -6786,7 +6786,7 @@
     {
       "offset": "0x168AC",
       "type": "center",
-      "source": "クスクスクス\nフフフフフ……\nアハハハハ！",
+      "source": "<STYLE:2>クスクスクス\n<STYLE:2>フフフフフ……\n<STYLE:2>アハハハハ！",
       "text": null
     },
     {
@@ -6822,7 +6822,7 @@
     {
       "offset": "0x169AE",
       "type": "center",
-      "source": "ウフフ",
+      "source": "<STYLE:2>ウフフ",
       "text": null
     },
     {
@@ -6834,7 +6834,7 @@
     {
       "offset": "0x169E4",
       "type": "center",
-      "source": "ウフフフフ",
+      "source": "<STYLE:2>ウフフフフ",
       "text": null
     },
     {
@@ -6852,13 +6852,13 @@
     {
       "offset": "0x16A36",
       "type": "center",
-      "source": "ここよ！",
+      "source": "<STYLE:2>ここよ！",
       "text": null
     },
     {
       "offset": "0x16A42",
       "type": "dialog",
-      "source": "妖精「月光の刻印を持つあなたに\n妖精の祝福を………」",
+      "source": "妖精「月光の刻印を持つあなたに\n<FFD2>妖精の祝福を………」",
       "text": null
     },
     {
@@ -6942,7 +6942,7 @@
     {
       "offset": "0x16C1A",
       "type": "center",
-      "source": "求める物は………\n\n雷の如き猛々しさ\n流れ行く風の如きうつろい\n春の泉の如き癒し\n天空の如き全てを見通す瞳\n",
+      "source": "求める物は………\n\n<FFC0>雷の如き猛々しさ\n<FFC1>流れ行く風の如きうつろい\n<FFC2>春の泉の如き癒し\n<FFC3>天空の如き全てを見通す瞳\n",
       "text": null
     },
     {
@@ -6954,7 +6954,7 @@
     {
       "offset": "0x16CCC",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -7002,7 +7002,7 @@
     {
       "offset": "0x16DF2",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -7050,7 +7050,7 @@
     {
       "offset": "0x16F20",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -7098,7 +7098,7 @@
     {
       "offset": "0x1704E",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -7146,7 +7146,7 @@
     {
       "offset": "0x1716C",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -7194,7 +7194,7 @@
     {
       "offset": "0x1729A",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -7242,7 +7242,7 @@
     {
       "offset": "0x173C0",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {

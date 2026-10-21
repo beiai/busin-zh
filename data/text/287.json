@@ -6,13 +6,13 @@
     {
       "offset": "0xC900",
       "type": "dialog",
-      "source": "レドゥア「報告を受けている。\n兵士の危機を救ってくれた\nそうだな」",
+      "source": "レドゥア「報告を受けている。\n<FFD4>兵士の危機を救ってくれた\n<FFD4>そうだな」",
       "text": null
     },
     {
       "offset": "0xC948",
       "type": "dialog",
-      "source": "レドゥア「ドゥーハン王国と\n女王陛下のための働きと認め\n報奨を出そう」",
+      "source": "レドゥア「ドゥーハン王国と\n<FFD4>女王陛下のための働きと認め\n<FFD4>報奨を出そう」",
       "text": null
     },
     {
@@ -24,7 +24,7 @@
     {
       "offset": "0xC9C6",
       "type": "dialog",
-      "source": "レドゥア「さらに、冒険の助けとなる物を\n授けよう」",
+      "source": "レドゥア「さらに、冒険の助けとなる物を\n<FFD4>授けよう」",
       "text": null
     },
     {
@@ -36,7 +36,7 @@
     {
       "offset": "0xCA1E",
       "type": "center",
-      "source": "どれをもらいますか？\n\n武 器\n防 具\n魔法石\n",
+      "source": "どれをもらいますか？\n\n<FFC0>武 器\n<FFC1>防 具\n<FFC2>魔法石\n",
       "text": null
     },
     {
@@ -54,7 +54,7 @@
     {
       "offset": "0xCAA8",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -96,7 +96,7 @@
     {
       "offset": "0xCBD6",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -156,7 +156,7 @@
     {
       "offset": "0xCD86",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -186,7 +186,7 @@
     {
       "offset": "0xCE50",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -216,7 +216,7 @@
     {
       "offset": "0xCF22",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -246,7 +246,7 @@
     {
       "offset": "0xCFF4",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -276,13 +276,13 @@
     {
       "offset": "0xD0C6",
       "type": "dialog",
-      "source": "レドゥア「では、引き続き迷宮の探索を\n続けよ」",
+      "source": "レドゥア「では、引き続き迷宮の探索を\n<FFD4>続けよ」",
       "text": null
     },
     {
       "offset": "0xD0F8",
       "type": "dialog",
-      "source": "レドゥア「よりよい働きを\n期待しているぞ」",
+      "source": "レドゥア「よりよい働きを\n<FFD4>期待しているぞ」",
       "text": null
     },
     {
@@ -348,13 +348,13 @@
     {
       "offset": "0xD300",
       "type": "dialog",
-      "source": "レドゥア「この指輪は、あの閃光で\n陛下がなくされた物」",
+      "source": "レドゥア「この指輪は、あの閃光で\n<FFD4>陛下がなくされた物」",
       "text": null
     },
     {
       "offset": "0xD33A",
       "type": "dialog",
-      "source": "レドゥア「それまで、この指輪は\n長く陛下と共にあった…」",
+      "source": "レドゥア「それまで、この指輪は\n<FFD4>長く陛下と共にあった…」",
       "text": null
     },
     {
@@ -468,13 +468,13 @@
     {
       "offset": "0xD704",
       "type": "dialog",
-      "source": "レドゥア「この指輪は、あの閃光で\n陛下がなくされた物」",
+      "source": "レドゥア「この指輪は、あの閃光で\n<FFD4>陛下がなくされた物」",
       "text": null
     },
     {
       "offset": "0xD73E",
       "type": "dialog",
-      "source": "レドゥア「それまで、この指輪は\n長く陛下と共にあった」",
+      "source": "レドゥア「それまで、この指輪は\n<FFD4>長く陛下と共にあった」",
       "text": null
     },
     {
@@ -510,7 +510,7 @@
     {
       "offset": "0xD876",
       "type": "dialog",
-      "source": "レドゥア「では、行け。\n引き続き\n兵士を捜すがよい」",
+      "source": "レドゥア「では、行け。\n<FFD4>引き続き\n<FFD4>兵士を捜すがよい」",
       "text": null
     },
     {
@@ -528,25 +528,25 @@
     {
       "offset": "0xD93C",
       "type": "center",
-      "source": "ピピンの冒険者かんさつ日記<STYLE:0>\n\n<E0DB>アレイドんへの道のり\n日記を閉じる<STYLE:0>\n",
+      "source": "<STYLE:3>ピピンの冒険者かんさつ日記<STYLE:0>\n\n<FFC0><STYLE:4><E0DB>アレイドんへの道のり\n<FFC1><STYLE:7>日記を閉じる<STYLE:0>\n",
       "text": null
     },
     {
       "offset": "0xD998",
       "type": "center",
-      "source": "ピピンの冒険者かんさつ日記<STYLE:0>\n\n<E0DB>アレイドんへの道のり\n<E0B9>地下 1階\n日記を閉じる<STYLE:0>\n",
+      "source": "<STYLE:3>ピピンの冒険者かんさつ日記<STYLE:0>\n\n<FFC0><STYLE:4><E0DB>アレイドんへの道のり\n<FFC1><STYLE:4><E0B9>地下 1階\n<FFC2><STYLE:7>日記を閉じる<STYLE:0>\n",
       "text": null
     },
     {
       "offset": "0xDA16",
       "type": "center",
-      "source": "ピピンの冒険者かんさつ日記<STYLE:0>\n\n<E0DB>アレイドんへの道のり\n<E0B9>地下 1階\n<E0AC>地下 2階\n日記を閉じる<STYLE:0>\n",
+      "source": "<STYLE:3>ピピンの冒険者かんさつ日記<STYLE:0>\n\n<FFC0><STYLE:4><E0DB>アレイドんへの道のり\n<FFC1><STYLE:4><E0B9>地下 1階\n<FFC2><STYLE:4><E0AC>地下 2階\n<FFC3><STYLE:7>日記を閉じる<STYLE:0>\n",
       "text": null
     },
     {
       "offset": "0xDAAA",
       "type": "center",
-      "source": "ピピンの冒険者かんさつ日記<STYLE:0>\n\n<E0DB>アレイドんへの道のり\n<E0B9>地下 1階\n<E0AC>地下 2階\n日記を閉じる<STYLE:0>\n",
+      "source": "<STYLE:3>ピピンの冒険者かんさつ日記<STYLE:0>\n\n<FFC0><STYLE:4><E0DB>アレイドんへの道のり\n<FFC1><STYLE:4><E0B9>地下 1階\n<FFC2><STYLE:4><E0AC>地下 2階\n<FFC3><STYLE:7>日記を閉じる<STYLE:0>\n",
       "text": null
     },
     {
@@ -804,139 +804,139 @@
     {
       "offset": "0xFBE4",
       "type": "center",
-      "source": "露天商「寄ってらっしゃーい！\n見てらっしゃーい！」",
+      "source": "<STYLE:2>露天商「寄ってらっしゃーい！\n    見てらっしゃーい！」",
       "text": null
     },
     {
       "offset": "0xFC22",
       "type": "dialog",
-      "source": "露天商「背に乗せられる、\n腹にも乗せられる\nかわいい<FB01>オーク<FB00>だよ！」",
+      "source": "露天商「背に乗せられる、\n<FFD3>腹にも乗せられる\n<FFD3>かわいい<FB01>オーク<FB00>だよ！」",
       "text": null
     },
     {
       "offset": "0xFC6E",
       "type": "dialog",
-      "source": "売られているオーク\n<FB03>…がわいいおーぐだ…",
+      "source": "売られているオーク\n<FFD3><FB03>…がわいいおーぐだ…",
       "text": null
     },
     {
       "offset": "0xFC9C",
       "type": "dialog",
-      "source": "露天商「よっ、アンタは新顔だな。\nアンタも一匹どうだい？\n体乗りオーク！」",
+      "source": "露天商「よっ、アンタは新顔だな。\n<FFD3>アンタも一匹どうだい？\n<FFD3>体乗りオーク！」",
       "text": null
     },
     {
       "offset": "0xFCEC",
       "type": "dialog",
-      "source": "露天商「えっ？\n手乗りじゃないのかって？」",
+      "source": "露天商「えっ？\n<FFD3>手乗りじゃないのかって？」",
       "text": null
     },
     {
       "offset": "0xFD1A",
       "type": "dialog",
-      "source": "露天商「お客さん、考え方が古いぜー\nオークは鳥とは違うんだ。\n体に乗せてナンボってもんさ！」",
+      "source": "露天商「お客さん、考え方が古いぜー\n<FFD3>オークは鳥とは違うんだ。\n<FFD3>体に乗せてナンボってもんさ！」",
       "text": null
     },
     {
       "offset": "0xFD7C",
       "type": "dialog",
-      "source": "露天商「ペットにするもよし！\n悪の魔王に育てるもよし！\nオークに育てられるもよし！」",
+      "source": "露天商「ペットにするもよし！\n<FFD3>悪の魔王に育てるもよし！\n<FFD3>オークに育てられるもよし！」",
       "text": null
     },
     {
       "offset": "0xFDD6",
       "type": "dialog",
-      "source": "露天商「これからの時代は\n一家に一オークがトレンドだ」",
+      "source": "露天商「これからの時代は\n<FFD3>一家に一オークがトレンドだ」",
       "text": null
     },
     {
       "offset": "0xFE10",
       "type": "dialog",
-      "source": "売られているオーク\n<FB03>ど…どれんどだ…",
+      "source": "売られているオーク\n<FFD4><FB03>ど…どれんどだ…",
       "text": null
     },
     {
       "offset": "0xFE3A",
       "type": "dialog",
-      "source": "露天商「今なら初回特典に、この\n悪魔かもしれない何者かの角<STYLE:0>を\nもれなくプレゼント！」",
+      "source": "露天商「今なら初回特典に、この\n<FFD3><STYLE:7>悪魔かもしれない何者かの角<STYLE:0>を\n<FFD3>もれなくプレゼント！」",
       "text": null
     },
     {
       "offset": "0xFE98",
       "type": "dialog",
-      "source": "露天商「どうだい、それ以外にも\n商品は色々あるんだが\nいっちょ見てみるかい？」",
+      "source": "露天商「どうだい、それ以外にも\n<FFD3>商品は色々あるんだが\n<FFD3>いっちょ見てみるかい？」",
       "text": null
     },
     {
       "offset": "0xFEEC",
       "type": "center",
-      "source": "商品を見てみますか？\n\nは い\nいいえ\n",
+      "source": "商品を見てみますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
       "offset": "0xFF1A",
       "type": "dialog",
-      "source": "露天商「さっすがお客さん！\nさぁ、じっくり見てくれ！」",
+      "source": "露天商「さっすがお客さん！\n<FFD3>さぁ、じっくり見てくれ！」",
       "text": null
     },
     {
       "offset": "0xFF54",
       "type": "center",
-      "source": "商品リスト\n\nオーク（初回特典付） 1000000\nオークのえさ（固形）    売り切れ\nオークのえさ（生タイプ）  入荷待ち\n",
+      "source": "商品リスト\n\n<FFC0>オーク（初回特典付） 1000000\n<FFC1>オークのえさ（固形）    売り切れ\n<FFC2>オークのえさ（生タイプ）  入荷待ち\n",
       "text": null
     },
     {
       "offset": "0xFFDC",
       "type": "dialog",
-      "source": "露天商「そんなあ！\nそりゃないぜ、お客さん！」",
+      "source": "露天商「そんなあ！\n<FFD3>そりゃないぜ、お客さん！」",
       "text": null
     },
     {
       "offset": "0x1000E",
       "type": "dialog",
-      "source": "露天商「お客さんは、このオークが\n可愛くないってのかい？」",
+      "source": "露天商「お客さんは、このオークが\n<FFD3>可愛くないってのかい？」",
       "text": null
     },
     {
       "offset": "0x1004C",
       "type": "dialog",
-      "source": "売られているオーク\n<FB03>おだ…がわいいのだ…",
+      "source": "売られているオーク\n<FFD3><FB03>おだ…がわいいのだ…",
       "text": null
     },
     {
       "offset": "0x1007A",
       "type": "dialog",
-      "source": "露天商「まー仕方ないか！\nんじゃな、お客さん！\nまた会ったらヨロシクだぜ！」",
+      "source": "露天商「まー仕方ないか！\n<FFD3>んじゃな、お客さん！\n<FFD3>また会ったらヨロシクだぜ！」",
       "text": null
     },
     {
       "offset": "0x100CC",
       "type": "dialog",
-      "source": "売られているオーク\n<FB03>よ…よろしくだ…",
+      "source": "売られているオーク\n<FFD4><FB03>よ…よろしくだ…",
       "text": null
     },
     {
       "offset": "0x100F6",
       "type": "dialog",
-      "source": "露天商「おっと、お客さん\n金が足りねぇじゃねえか！」",
+      "source": "露天商「おっと、お客さん\n<FFD3>金が足りねぇじゃねえか！」",
       "text": null
     },
     {
       "offset": "0x1012E",
       "type": "dialog",
-      "source": "露天商「悪いが、このオークは\n現品限りのプレミアもんだから\nビタ一文まけられねえんだ」",
+      "source": "露天商「悪いが、このオークは\n<FFD3>現品限りのプレミアもんだから\n<FFD3>ビタ一文まけられねえんだ」",
       "text": null
     },
     {
       "offset": "0x1018A",
       "type": "dialog",
-      "source": "売られているオーク\n<FB03>お…おたからだ……<FB02>",
+      "source": "売られているオーク\n<FB03>     お…おたからだ……<FB02>",
       "text": null
     },
     {
       "offset": "0x101C0",
       "type": "dialog",
-      "source": "露天商「おおおおおっっと！\n買ってくれるの？！」",
+      "source": "露天商「おおおおおっっと！\n<FFD3>買ってくれるの？！」",
       "text": null
     },
     {
@@ -948,31 +948,31 @@
     {
       "offset": "0x1020E",
       "type": "dialog",
-      "source": "露天商「さぁ、オークよ！\n今からおまえの御主人様は\nこの方だ！」",
+      "source": "露天商「さぁ、オークよ！\n<FFD3>今からおまえの御主人様は\n<FFD3>この方だ！」",
       "text": null
     },
     {
       "offset": "0x10254",
       "type": "dialog",
-      "source": "売られているオーク\n<FB03>えっ…ぞっ…ぞんなあ…\nきいてないだよぅ…",
+      "source": "売られているオーク\n<FB03>    えっ…ぞっ…ぞんなあ…\n     きいてないだよぅ…",
       "text": null
     },
     {
       "offset": "0x102A8",
       "type": "dialog",
-      "source": "売られているオーク\n<FB03>おだ…いやなんだな……\nおだ…おだ…ひとみしりだ…",
+      "source": "売られているオーク\n<FB03>    おだ…いやなんだな……\n   おだ…おだ…ひとみしりだ…",
       "text": null
     },
     {
       "offset": "0x10300",
       "type": "dialog",
-      "source": "売られているオーク\n<FB03><FC05>ゔゔゔゔゔ…",
+      "source": "売られているオーク\n<FB03>     <FC05>ゔゔゔゔゔ…",
       "text": null
     },
     {
       "offset": "0x10330",
       "type": "dialog",
-      "source": "売られているオーク\n<FB03><FC05>ゔわぁぁぁぁん！！！",
+      "source": "売られているオーク\n<FB03>   <FC05>ゔわぁぁぁぁん！！！",
       "text": null
     },
     {
@@ -984,7 +984,7 @@
     {
       "offset": "0x103E4",
       "type": "dialog",
-      "source": "露天商「ああっ…！！\nおいっ、ちょっと待てって…」",
+      "source": "露天商「ああっ…！！\n<FFD3>おいっ、ちょっと待てって…」",
       "text": null
     },
     {
@@ -1002,19 +1002,19 @@
     {
       "offset": "0x10462",
       "type": "dialog",
-      "source": "露天商「また、いい物仕入れとくから\n今度会った時もよろしく！」",
+      "source": "露天商「また、いい物仕入れとくから\n<FFD3>今度会った時もよろしく！」",
       "text": null
     },
     {
       "offset": "0x104A4",
       "type": "dialog",
-      "source": "露天商「そうそう、俺<FB01>魔物屋<FB00>も\nやってんだよ！」",
+      "source": "露天商「そうそう、俺<FB01>魔物屋<FB00>も\n<FFD3>やってんだよ！」",
       "text": null
     },
     {
       "offset": "0x104DA",
       "type": "dialog",
-      "source": "露天商「そこの向かって左の分かれ道を\nまっすぐ行った突き当たりの\n部屋でやってるんだ」",
+      "source": "露天商「そこの向かって左の分かれ道を\n<FFD3>まっすぐ行った突き当たりの\n<FFD3>部屋でやってるんだ」",
       "text": null
     },
     {
@@ -1026,19 +1026,19 @@
     {
       "offset": "0x1055C",
       "type": "dialog",
-      "source": "露天商「そうそう、俺<FB01>魔物屋<FB00>も\nやってんだよ！」",
+      "source": "露天商「そうそう、俺<FB01>魔物屋<FB00>も\n<FFD3>やってんだよ！」",
       "text": null
     },
     {
       "offset": "0x10592",
       "type": "dialog",
-      "source": "露天商「ほら、<FB01>王室管理室の手前に\n四つ角<FB00>があるだろ」",
+      "source": "露天商「ほら、<FB01>王室管理室の手前に\n<FFD3>四つ角<FB00>があるだろ」",
       "text": null
     },
     {
       "offset": "0x105CE",
       "type": "dialog",
-      "source": "露天商「そこの向かって左の分かれ道を\nまっすぐ行った突き当たりの\n部屋でやってるんだ」",
+      "source": "露天商「そこの向かって左の分かれ道を\n<FFD3>まっすぐ行った突き当たりの\n<FFD3>部屋でやってるんだ」",
       "text": null
     },
     {
@@ -1050,49 +1050,49 @@
     {
       "offset": "0x10650",
       "type": "dialog",
-      "source": "露天商「おっと、ごめんよ！\nオークのえさ固形タイプは\n今ちょっとキラしてんだ！」",
+      "source": "露天商「おっと、ごめんよ！\n<FFD3>オークのえさ固形タイプは\n<FFD3>今ちょっとキラしてんだ！」",
       "text": null
     },
     {
       "offset": "0x106A6",
       "type": "dialog",
-      "source": "売られているオーク\n<FB03>は…はらへっだ…",
+      "source": "売られているオーク\n<FFD4><FB03>は…はらへっだ…",
       "text": null
     },
     {
       "offset": "0x106D0",
       "type": "dialog",
-      "source": "露天商「おっと、ごめんよ！\nオークのえさ生タイプは\n入荷待ちなんだ！」",
+      "source": "露天商「おっと、ごめんよ！\n<FFD3>オークのえさ生タイプは\n<FFD3>入荷待ちなんだ！」",
       "text": null
     },
     {
       "offset": "0x1071C",
       "type": "dialog",
-      "source": "売られているオーク\n<FB03>なま…ぐいだいのだ…",
+      "source": "売られているオーク\n<FFD3><FB03>なま…ぐいだいのだ…",
       "text": null
     },
     {
       "offset": "0x1074A",
       "type": "dialog",
-      "source": "露天商「…っと、いけねえ！\nもう移動の時間だ」",
+      "source": "露天商「…っと、いけねえ！\n<FFD3>もう移動の時間だ」",
       "text": null
     },
     {
       "offset": "0x1077C",
       "type": "dialog",
-      "source": "露天商「また見かけたら\n買い物してくれよな！」",
+      "source": "露天商「また見かけたら\n<FFD3>買い物してくれよな！」",
       "text": null
     },
     {
       "offset": "0x107AE",
       "type": "dialog",
-      "source": "露天商「そうそう、俺<FB01>魔物屋<FB00>も\nやってんだよ！」",
+      "source": "露天商「そうそう、俺<FB01>魔物屋<FB00>も\n<FFD3>やってんだよ！」",
       "text": null
     },
     {
       "offset": "0x107E4",
       "type": "dialog",
-      "source": "露天商「そこの向かって左の分かれ道を\nまっすぐ行った突き当たりの\n部屋でやってるんだ」",
+      "source": "露天商「そこの向かって左の分かれ道を\n<FFD3>まっすぐ行った突き当たりの\n<FFD3>部屋でやってるんだ」",
       "text": null
     },
     {
@@ -1104,19 +1104,19 @@
     {
       "offset": "0x10866",
       "type": "dialog",
-      "source": "露天商「そうそう、俺<FB01>魔物屋<FB00>も\nやってんだよ！」",
+      "source": "露天商「そうそう、俺<FB01>魔物屋<FB00>も\n<FFD3>やってんだよ！」",
       "text": null
     },
     {
       "offset": "0x1089C",
       "type": "dialog",
-      "source": "露天商「ほら、<FB01>王室管理室の手前に\n四つ角<FB00>があるだろ」",
+      "source": "露天商「ほら、<FB01>王室管理室の手前に\n<FFD3>四つ角<FB00>があるだろ」",
       "text": null
     },
     {
       "offset": "0x108D8",
       "type": "dialog",
-      "source": "露天商「そこの向かって左の分かれ道を\nまっすぐ行った突き当たりの\n部屋でやってるんだ」",
+      "source": "露天商「そこの向かって左の分かれ道を\n<FFD3>まっすぐ行った突き当たりの\n<FFD3>部屋でやってるんだ」",
       "text": null
     },
     {
@@ -1128,7 +1128,7 @@
     {
       "offset": "0x1095A",
       "type": "dialog",
-      "source": "売られているオーク\n<FB03>おだも…がえるのだ…",
+      "source": "売られているオーク\n<FFD3><FB03>おだも…がえるのだ…",
       "text": null
     },
     {
@@ -1158,7 +1158,7 @@
     {
       "offset": "0x10A90",
       "type": "dialog",
-      "source": "ヘルガ「あっ、<PAGE>ちゃん！\nうわぁ…チョー偶然！\nヤッホー！ 元気してた？」",
+      "source": "ヘルガ「あっ、<PAGE>ちゃん！\n<FFD3>うわぁ…チョー偶然！\n<FFD3>ヤッホー！ 元気してた？」",
       "text": null
     },
     {
@@ -1170,31 +1170,31 @@
     {
       "offset": "0x10B2A",
       "type": "dialog",
-      "source": "ヘルガ「ってか、ナイスタイミング！\n丁度、今からウワサの魔法石を\n作ってみるとこだったの！」",
+      "source": "ヘルガ「ってか、ナイスタイミング！\n<FFD3>丁度、今からウワサの魔法石を\n<FFD3>作ってみるとこだったの！」",
       "text": null
     },
     {
       "offset": "0x10B8C",
       "type": "dialog",
-      "source": "ヘルガ「せっかくなんだから、\nアタシの奇跡の瞬間を\n見届けていってよ！」",
+      "source": "ヘルガ「せっかくなんだから、\n<FFD3>アタシの奇跡の瞬間を\n<FFD3>見届けていってよ！」",
       "text": null
     },
     {
       "offset": "0x10BDA",
       "type": "center",
-      "source": "ヘルガを見届けますか？\n\n見届ける\n見捨てる\n",
+      "source": "ヘルガを見届けますか？\n\n<FFC0>見届ける\n<FFC1>見捨てる\n",
       "text": null
     },
     {
       "offset": "0x10C0E",
       "type": "dialog",
-      "source": "ヘルガ「やったぁ！\nさっすが、アタシの同志よね！」",
+      "source": "ヘルガ「やったぁ！\n<FFD3>さっすが、アタシの同志よね！」",
       "text": null
     },
     {
       "offset": "0x10C44",
       "type": "dialog",
-      "source": "ヘルガ「何言ってんのよ！\nアンタはアタシの同志として\nアタシを見守るべきなの！」",
+      "source": "ヘルガ「何言ってんのよ！\n<FFD3>アンタはアタシの同志として\n<FFD3>アタシを見守るべきなの！」",
       "text": null
     },
     {
@@ -1206,19 +1206,19 @@
     {
       "offset": "0x10CB0",
       "type": "dialog",
-      "source": "ヘルガ「そうね…\n魔法は何にしようかしら…」",
+      "source": "ヘルガ「そうね…\n<FFD3>魔法は何にしようかしら…」",
       "text": null
     },
     {
       "offset": "0x10CE0",
       "type": "dialog",
-      "source": "ヘルガ「…あっ…アタシ、\nクレタしか知らないんだった！」",
+      "source": "ヘルガ「…あっ…アタシ、\n<FFD3>クレタしか知らないんだった！」",
       "text": null
     },
     {
       "offset": "0x10D1C",
       "type": "dialog",
-      "source": "ヘルガ「な～んか、こう、\nインパクトに欠けるけど…\nまぁいっか！」",
+      "source": "ヘルガ「な～んか、こう、\n<FFD3>インパクトに欠けるけど…\n<FFD3>まぁいっか！」",
       "text": null
     },
     {
@@ -1230,7 +1230,7 @@
     {
       "offset": "0x10D7C",
       "type": "center",
-      "source": "<FC03>クレタ！",
+      "source": "<STYLE:1><FC03>クレタ！",
       "text": null
     },
     {
@@ -1260,25 +1260,25 @@
     {
       "offset": "0x10E92",
       "type": "dialog",
-      "source": "ヘルガ「えっへへ…\n奇跡の瞬間までには\nアクシデントはつきものよ…」",
+      "source": "ヘルガ「えっへへ…\n<FFD3>奇跡の瞬間までには\n<FFD3>アクシデントはつきものよ…」",
       "text": null
     },
     {
       "offset": "0x10EDC",
       "type": "dialog",
-      "source": "ヘルガ「けど、次こそは\n奇跡の瞬間になるわ！」",
+      "source": "ヘルガ「けど、次こそは\n<FFD3>奇跡の瞬間になるわ！」",
       "text": null
     },
     {
       "offset": "0x10F0E",
       "type": "dialog",
-      "source": "ヘルガ「石を地面においてから\n魔法をかければいいのよね！\nアタシってば頭いい！」",
+      "source": "ヘルガ「石を地面においてから\n<FFD3>魔法をかければいいのよね！\n<FFD3>アタシってば頭いい！」",
       "text": null
     },
     {
       "offset": "0x10F64",
       "type": "dialog",
-      "source": "ヘルガ「さあ！\n今度こそうまくやるわよ！」",
+      "source": "ヘルガ「さあ！\n<FFD3>今度こそうまくやるわよ！」",
       "text": null
     },
     {
@@ -1296,7 +1296,7 @@
     {
       "offset": "0x10FE4",
       "type": "center",
-      "source": "<FC03>クレタ！",
+      "source": "<STYLE:1><FC03>クレタ！",
       "text": null
     },
     {
@@ -1308,37 +1308,37 @@
     {
       "offset": "0x11006",
       "type": "dialog",
-      "source": "ヘルガ「あれ…？\nおっかしぃなぁ…\n何ともないなぁ…」",
+      "source": "ヘルガ「あれ…？\n<FFD3>おっかしぃなぁ…\n<FFD3>何ともないなぁ…」",
       "text": null
     },
     {
       "offset": "0x11042",
       "type": "dialog",
-      "source": "ヘルガ「そっか！\nきっと、まだまだ魔力が\n足りないんだわ！」",
+      "source": "ヘルガ「そっか！\n<FFD3>きっと、まだまだ魔力が\n<FFD3>足りないんだわ！」",
       "text": null
     },
     {
       "offset": "0x11084",
       "type": "dialog",
-      "source": "ヘルガ「…こうなったら、\n魔力を全部使ってでも\n作ってみせるわ！」",
+      "source": "ヘルガ「…こうなったら、\n<FFD3>魔力を全部使ってでも\n<FFD3>作ってみせるわ！」",
       "text": null
     },
     {
       "offset": "0x110CC",
       "type": "center",
-      "source": "<FC03>クレタ！",
+      "source": "<STYLE:1><FC03>クレタ！",
       "text": null
     },
     {
       "offset": "0x110DA",
       "type": "center",
-      "source": "<FC03>クレタ！\nクレタ！",
+      "source": "<STYLE:1><FC03>クレタ！\nクレタ！",
       "text": null
     },
     {
       "offset": "0x110F2",
       "type": "center",
-      "source": "<FC05>クレタ！\nクレタ！\nクレタ！",
+      "source": "<STYLE:1><FC05>クレタ！\nクレタ！\nクレタ！",
       "text": null
     },
     {
@@ -1356,19 +1356,19 @@
     {
       "offset": "0x11192",
       "type": "dialog",
-      "source": "ヘルガ「やったわ！\nなんだか、それっぽく\nなってきたじゃない！」",
+      "source": "ヘルガ「やったわ！\n<FFD3>なんだか、それっぽく\n<FFD3>なってきたじゃない！」",
       "text": null
     },
     {
       "offset": "0x111D8",
       "type": "dialog",
-      "source": "ヘルガ「よ～し、\n最後にもう一発、\nお見舞いしてやるわ！」",
+      "source": "ヘルガ「よ～し、\n<FFD3>最後にもう一発、\n<FFD3>お見舞いしてやるわ！」",
       "text": null
     },
     {
       "offset": "0x11218",
       "type": "center",
-      "source": "<FC0A>クレタ",
+      "source": "<STYLE:1><FC0A>クレタ",
       "text": null
     },
     {
@@ -1380,67 +1380,67 @@
     {
       "offset": "0x1125E",
       "type": "dialog",
-      "source": "ヘルガ「やったわ！\nとうとう魔法石が出来たのね！」",
+      "source": "ヘルガ「やったわ！\n<FFD3>とうとう魔法石が出来たのね！」",
       "text": null
     },
     {
       "offset": "0x11294",
       "type": "dialog",
-      "source": "ヘルガ「さぁ…さっそく\n使ってみなきゃ…」",
+      "source": "ヘルガ「さぁ…さっそく\n<FFD3>使ってみなきゃ…」",
       "text": null
     },
     {
       "offset": "0x112C2",
       "type": "dialog",
-      "source": "ヘルガ「…あぁ…ダメだわ…\nアタシ、クレタ使えるから\n意味がないんだわ…」",
+      "source": "ヘルガ「…あぁ…ダメだわ…\n<FFD3>アタシ、クレタ使えるから\n<FFD3>意味がないんだわ…」",
       "text": null
     },
     {
       "offset": "0x11312",
       "type": "dialog",
-      "source": "ヘルガ「あっ！ アンタ！\nクレタを使えなさそうな\n顔してるじゃない！」",
+      "source": "ヘルガ「あっ！ アンタ！\n<FFD3>クレタを使えなさそうな\n<FFD3>顔してるじゃない！」",
       "text": null
     },
     {
       "offset": "0x1135E",
       "type": "dialog",
-      "source": "ヘルガ「そうだわ！\nアンタとアタシは\n同志だものね！」",
+      "source": "ヘルガ「そうだわ！\n<FFD3>アンタとアタシは\n<FFD3>同志だものね！」",
       "text": null
     },
     {
       "offset": "0x1139A",
       "type": "dialog",
-      "source": "ヘルガ「この魔法石は\n同志のアンタに\n使わせてあげるわ」",
+      "source": "ヘルガ「この魔法石は\n<FFD3>同志のアンタに\n<FFD3>使わせてあげるわ」",
       "text": null
     },
     {
       "offset": "0x113D8",
       "type": "dialog",
-      "source": "ヘルガ「魔法石を作ったアタシと\n魔法石を使ったアンタ。\nう～ん、まさに名コンビ！」",
+      "source": "ヘルガ「魔法石を作ったアタシと\n<FFD3>魔法石を使ったアンタ。\n<FFD3>う～ん、まさに名コンビ！」",
       "text": null
     },
     {
       "offset": "0x11430",
       "type": "dialog",
-      "source": "ヘルガ「魔法石屋を開いたら\n二人で力を合わせて\n切りもりするのもいいわね」",
+      "source": "ヘルガ「魔法石屋を開いたら\n<FFD3>二人で力を合わせて\n<FFD3>切りもりするのもいいわね」",
       "text": null
     },
     {
       "offset": "0x11480",
       "type": "dialog",
-      "source": "ヘルガ「あっ、心配しないで！\n別に迷宮に行く事を\nやめさせはしないわ」",
+      "source": "ヘルガ「あっ、心配しないで！\n<FFD3>別に迷宮に行く事を\n<FFD3>やめさせはしないわ」",
       "text": null
     },
     {
       "offset": "0x114CC",
       "type": "dialog",
-      "source": "ヘルガ「アンタには、迷宮の石を\n拾うという重要なポストに\nついてもらうんだからね！」",
+      "source": "ヘルガ「アンタには、迷宮の石を\n<FFD3>拾うという重要なポストに\n<FFD3>ついてもらうんだからね！」",
       "text": null
     },
     {
       "offset": "0x11526",
       "type": "dialog",
-      "source": "ヘルガ「さぁ、\nはやくそのクレタの石を\n使ってみてちょうだい！」",
+      "source": "ヘルガ「さぁ、\n<FFD3>はやくそのクレタの石を\n<FFD3>使ってみてちょうだい！」",
       "text": null
     },
     {
@@ -1470,7 +1470,7 @@
     {
       "offset": "0x11662",
       "type": "dialog",
-      "source": "ヘルガ「ちょっと！\nアタシの大事な魔法石を\n投げ飛ばすとは何事よ！」",
+      "source": "ヘルガ「ちょっと！\n<FFD3>アタシの大事な魔法石を\n<FFD3>投げ飛ばすとは何事よ！」",
       "text": null
     },
     {
@@ -1482,7 +1482,7 @@
     {
       "offset": "0x116F4",
       "type": "dialog",
-      "source": "ヘルガ「きゃっ…\nどっ…どうしたの…\nその手…？！」",
+      "source": "ヘルガ「きゃっ…\n<FFD3>どっ…どうしたの…\n<FFD3>その手…？！」",
       "text": null
     },
     {
@@ -1506,13 +1506,13 @@
     {
       "offset": "0x117DC",
       "type": "dialog",
-      "source": "ヘルガ「なっ…なによアレ！\nただの焼けた石じゃない…」",
+      "source": "ヘルガ「なっ…なによアレ！\n<FFD3>ただの焼けた石じゃない…」",
       "text": null
     },
     {
       "offset": "0x11816",
       "type": "dialog",
-      "source": "ヘルガ「ああ…ショックだわ…\nアタシの大金持ちプランが…」",
+      "source": "ヘルガ「ああ…ショックだわ…\n<FFD3>アタシの大金持ちプランが…」",
       "text": null
     },
     {
@@ -1524,31 +1524,31 @@
     {
       "offset": "0x11876",
       "type": "dialog",
-      "source": "ヘルガ「新たな大金持ちプランを\n考え出してみせる！」",
+      "source": "ヘルガ「新たな大金持ちプランを\n<FFD3>考え出してみせる！」",
       "text": null
     },
     {
       "offset": "0x118AE",
       "type": "dialog",
-      "source": "ヘルガ「その時は、\nまた手伝ってよね！」",
+      "source": "ヘルガ「その時は、\n<FFD3>また手伝ってよね！」",
       "text": null
     },
     {
       "offset": "0x118DA",
       "type": "dialog",
-      "source": "ヘルガ「さぁ、そうと決まれば\n急いで次のアイデアを\n考え出さなきゃね！」",
+      "source": "ヘルガ「さぁ、そうと決まれば\n<FFD3>急いで次のアイデアを\n<FFD3>考え出さなきゃね！」",
       "text": null
     },
     {
       "offset": "0x11928",
       "type": "dialog",
-      "source": "ヘルガ「あ～っ！\n忙しいったらありゃしない！」",
+      "source": "ヘルガ「あ～っ！\n<FFD3>忙しいったらありゃしない！」",
       "text": null
     },
     {
       "offset": "0x1195A",
       "type": "dialog",
-      "source": "ヘルガ「忙しいから\nアタシ、もう行くわ！\nまったね～！」",
+      "source": "ヘルガ「忙しいから\n<FFD3>アタシ、もう行くわ！\n<FFD3>まったね～！」",
       "text": null
     },
     {
@@ -1566,7 +1566,7 @@
     {
       "offset": "0x119FA",
       "type": "center",
-      "source": "鍵を開けてみますか？\n\nは い\nいいえ\n",
+      "source": "鍵を開けてみますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -1584,97 +1584,97 @@
     {
       "offset": "0x11A5E",
       "type": "center",
-      "source": "－目 次－<STYLE:0>\n\n<B0BF>1ページ\n閉じる\n",
+      "source": "<STYLE:3>－目 次－<STYLE:0>\n\n<FFC0><STYLE:4><B0BF>1ページ\n<FFC1><STYLE:7>閉じる\n",
       "text": null
     },
     {
       "offset": "0x11A94",
       "type": "center",
-      "source": "－目 次－<STYLE:0>\n\n<B0BF>1ページ\n<B0C0>2ページ\n閉じる\n",
+      "source": "<STYLE:3>－目 次－<STYLE:0>\n\n<FFC0><STYLE:4><B0BF>1ページ\n<FFC1><STYLE:4><B0C0>2ページ\n<FFC2><STYLE:7>閉じる\n",
       "text": null
     },
     {
       "offset": "0x11ADC",
       "type": "center",
-      "source": "－目 次－<STYLE:0>\n\n<B0BF>1ページ\n<B0C0>2ページ\n<B0C1>3ページ\n閉じる\n",
+      "source": "<STYLE:3>－目 次－<STYLE:0>\n\n<FFC0><STYLE:4><B0BF>1ページ\n<FFC1><STYLE:4><B0C0>2ページ\n<FFC2><STYLE:4><B0C1>3ページ\n<FFC3><STYLE:7>閉じる\n",
       "text": null
     },
     {
       "offset": "0x11B36",
       "type": "center",
-      "source": "－目 次－<STYLE:0>\n\n<B0BF>1ページ\n<B0C0>2ページ\n<B0C1>3ページ\n<B0C2>4ページ\n閉じる\n",
+      "source": "<STYLE:3>－目 次－<STYLE:0>\n\n<FFC0><STYLE:4><B0BF>1ページ\n<FFC1><STYLE:4><B0C0>2ページ\n<FFC2><STYLE:4><B0C1>3ページ\n<FFC3><STYLE:4><B0C2>4ページ\n<FFC4><STYLE:7>閉じる\n",
       "text": null
     },
     {
       "offset": "0x11BA2",
       "type": "center",
-      "source": "－目 次－<STYLE:0>\n\n<B0BF>1ページ\n<B0C0>2ページ\n<B0C1>3ページ\n<B0C2>4ページ\n<B0C3>5ページ\n閉じる\n",
+      "source": "<STYLE:3>－目 次－<STYLE:0>\n\n<FFC0><STYLE:4><B0BF>1ページ\n<FFC1><STYLE:4><B0C0>2ページ\n<FFC2><STYLE:4><B0C1>3ページ\n<FFC3><STYLE:4><B0C2>4ページ\n<FFC4><STYLE:4><B0C3>5ページ\n<FFC5><STYLE:7>閉じる\n",
       "text": null
     },
     {
       "offset": "0x11C20",
       "type": "center",
-      "source": "－目 次－<STYLE:0>\n\n<B0BF>1ページ\n<B0C0>2ページ\n<B0C1>3ページ\n<B0C2>4ページ\n<B0C3>5ページ\n<B0C4>6ページ\n閉じる\n",
+      "source": "<STYLE:3>－目 次－<STYLE:0>\n\n<FFC0><STYLE:4><B0BF>1ページ\n<FFC1><STYLE:4><B0C0>2ページ\n<FFC2><STYLE:4><B0C1>3ページ\n<FFC3><STYLE:4><B0C2>4ページ\n<FFC4><STYLE:4><B0C3>5ページ\n<FFC5><STYLE:4><B0C4>6ページ\n<FFC6><STYLE:7>閉じる\n",
       "text": null
     },
     {
       "offset": "0x11CB0",
       "type": "center",
-      "source": "－目 次－<STYLE:0>\n\n<B0BF>1ページ\n<B0C0>2ページ\n<B0C1>3ページ\n<B0C2>4ページ\n<B0C3>5ページ\n<B0C4>6ページ\n次のページへ\n閉じる\n",
+      "source": "<STYLE:3>－目 次－<STYLE:0>\n\n<FFC0><STYLE:4><B0BF>1ページ\n<FFC1><STYLE:4><B0C0>2ページ\n<FFC2><STYLE:4><B0C1>3ページ\n<FFC3><STYLE:4><B0C2>4ページ\n<FFC4><STYLE:4><B0C3>5ページ\n<FFC5><STYLE:4><B0C4>6ページ\n<FFC6><STYLE:7>次のページへ\n<FFC7>閉じる\n",
       "text": null
     },
     {
       "offset": "0x11D52",
       "type": "center",
-      "source": "－目 次－<STYLE:0>\n\n<B0BF>1ページ\n<B0C0>2ページ\n<B0C1>3ページ\n<B0C2>4ページ\n<B0C3>5ページ\n<B0C4>6ページ\n次のページへ\n閉じる\n",
+      "source": "<STYLE:3>－目 次－<STYLE:0>\n\n<FFC0><STYLE:4><B0BF>1ページ\n<FFC1><STYLE:4><B0C0>2ページ\n<FFC2><STYLE:4><B0C1>3ページ\n<FFC3><STYLE:4><B0C2>4ページ\n<FFC4><STYLE:4><B0C3>5ページ\n<FFC5><STYLE:4><B0C4>6ページ\n<FFC6><STYLE:7>次のページへ\n<FFC7>閉じる\n",
       "text": null
     },
     {
       "offset": "0x11DF4",
       "type": "center",
-      "source": "－目 次－<STYLE:0>\n\n<B0BF>1ページ\n<B0C0>2ページ\n<B0C1>3ページ\n<B0C2>4ページ\n<B0C3>5ページ\n<B0C4>6ページ\n次のページへ\n閉じる\n",
+      "source": "<STYLE:3>－目 次－<STYLE:0>\n\n<FFC0><STYLE:4><B0BF>1ページ\n<FFC1><STYLE:4><B0C0>2ページ\n<FFC2><STYLE:4><B0C1>3ページ\n<FFC3><STYLE:4><B0C2>4ページ\n<FFC4><STYLE:4><B0C3>5ページ\n<FFC5><STYLE:4><B0C4>6ページ\n<FFC6><STYLE:7>次のページへ\n<FFC7>閉じる\n",
       "text": null
     },
     {
       "offset": "0x11E96",
       "type": "center",
-      "source": "－目 次－<STYLE:0>\n\n<B0BF>1ページ\n<B0C0>2ページ\n<B0C1>3ページ\n<B0C2>4ページ\n<B0C3>5ページ\n<B0C4>6ページ\n次のページへ\n閉じる\n",
+      "source": "<STYLE:3>－目 次－<STYLE:0>\n\n<FFC0><STYLE:4><B0BF>1ページ\n<FFC1><STYLE:4><B0C0>2ページ\n<FFC2><STYLE:4><B0C1>3ページ\n<FFC3><STYLE:4><B0C2>4ページ\n<FFC4><STYLE:4><B0C3>5ページ\n<FFC5><STYLE:4><B0C4>6ページ\n<FFC6><STYLE:7>次のページへ\n<FFC7>閉じる\n",
       "text": null
     },
     {
       "offset": "0x11F38",
       "type": "center",
-      "source": "－目 次－<STYLE:0>\n\n<B0BF>1ページ\n<B0C0>2ページ\n<B0C1>3ページ\n<B0C2>4ページ\n<B0C3>5ページ\n<B0C4>6ページ\n次のページへ\n閉じる\n",
+      "source": "<STYLE:3>－目 次－<STYLE:0>\n\n<FFC0><STYLE:4><B0BF>1ページ\n<FFC1><STYLE:4><B0C0>2ページ\n<FFC2><STYLE:4><B0C1>3ページ\n<FFC3><STYLE:4><B0C2>4ページ\n<FFC4><STYLE:4><B0C3>5ページ\n<FFC5><STYLE:4><B0C4>6ページ\n<FFC6><STYLE:7>次のページへ\n<FFC7>閉じる\n",
       "text": null
     },
     {
       "offset": "0x11FDA",
       "type": "center",
-      "source": "－目 次－<STYLE:0>\n\n<B0C5>7ページ\n前のページへ\n閉じる\n",
+      "source": "<STYLE:3>－目 次－<STYLE:0>\n\n<FFC0><STYLE:4><B0C5>7ページ\n<FFC1><STYLE:7>前のページへ\n<FFC2>閉じる\n",
       "text": null
     },
     {
       "offset": "0x12024",
       "type": "center",
-      "source": "－目 次－<STYLE:0>\n\n<B0C5>7ページ\n<B0C6>8ページ\n前のページへ\n閉じる\n",
+      "source": "<STYLE:3>－目 次－<STYLE:0>\n\n<FFC0><STYLE:4><B0C5>7ページ\n<FFC1><STYLE:4><B0C6>8ページ\n<FFC2>前のページへ\n<FFC3>閉じる\n",
       "text": null
     },
     {
       "offset": "0x12080",
       "type": "center",
-      "source": "－目 次－<STYLE:0>\n\n<B0C5>7ページ\n<B0C6>8ページ\n<B0C7>9ページ\n前のページへ\n閉じる\n",
+      "source": "<STYLE:3>－目 次－<STYLE:0>\n\n<FFC0><STYLE:4><B0C5>7ページ\n<FFC1><STYLE:4><B0C6>8ページ\n<FFC2><STYLE:4><B0C7>9ページ\n<FFC3><STYLE:7>前のページへ\n<FFC4>閉じる\n",
       "text": null
     },
     {
       "offset": "0x120F2",
       "type": "center",
-      "source": "－目 次－<STYLE:0>\n\n<B0C5>7ページ\n<B0C6>8ページ\n<B0C7>9ページ\n<B0C8>10ページ\n前のページへ\n閉じる\n",
+      "source": "<STYLE:3>－目 次－<STYLE:0>\n\n<FFC0><STYLE:4><B0C5>7ページ\n<FFC1><STYLE:4><B0C6>8ページ\n<FFC2><STYLE:4><B0C7>9ページ\n<FFC3><STYLE:4><B0C8>10ページ\n<FFC4><STYLE:7>前のページへ\n<FFC5>閉じる\n",
       "text": null
     },
     {
       "offset": "0x12178",
       "type": "center",
-      "source": "－目 次－<STYLE:0>\n\n<B0C5>7ページ\n<B0C6>8ページ\n<B0C7>9ページ\n<B0C8>10ページ\n<B0C9>11ページ\n前のページへ\n閉じる\n",
+      "source": "<STYLE:3>－目 次－<STYLE:0>\n\n<FFC0><STYLE:4><B0C5>7ページ\n<FFC1><STYLE:4><B0C6>8ページ\n<FFC2><STYLE:4><B0C7>9ページ\n<FFC3><STYLE:4><B0C8>10ページ\n<FFC4><STYLE:4><B0C9>11ページ\n<FFC5><STYLE:7>前のページへ\n<FFC6>閉じる\n",
       "text": null
     },
     {
@@ -1818,7 +1818,7 @@
     {
       "offset": "0x130EC",
       "type": "center",
-      "source": "そうねぇ…25、6の\n魔術師もいいけど、\n31、2ぐらいの盗賊！\nってのもワイルドで\nかなりメロメロ<STYLE:1>♥\n\nそんな人が依頼を\n受けちゃったら、\nアタシのハートが\n盗まれちゃうわ…<STYLE:1>♥<BREAK>",
+      "source": "そうねぇ…25、6の\n魔術師もいいけど、\n31、2ぐらいの盗賊！\nってのもワイルドで\nかなりメロメロ<STYLE:1>♥\n\n<STYLE:0>そんな人が依頼を\n受けちゃったら、\nアタシのハートが\n盗まれちゃうわ…<STYLE:1>♥<BREAK>",
       "text": null
     },
     {
@@ -1902,25 +1902,25 @@
     {
       "offset": "0x13924",
       "type": "center",
-      "source": "その本の表紙には、\n「DIARY」\nと書かれていた。<BREAK>",
+      "source": "その本の表紙には、\n<STYLE:3>「DIARY」\n<STYLE:0>と書かれていた。<BREAK>",
       "text": null
     },
     {
       "offset": "0x13960",
       "type": "center",
-      "source": "「ちょっとおぉぉーっ！」",
+      "source": "<STYLE:2>「ちょっとおぉぉーっ！」",
       "text": null
     },
     {
       "offset": "0x1397C",
       "type": "dialog",
-      "source": "少女「人の部屋に勝手に入って\n一体、何してんのよ！」",
+      "source": "少女「人の部屋に勝手に入って\n<FFD2>一体、何してんのよ！」",
       "text": null
     },
     {
       "offset": "0x139B4",
       "type": "dialog",
-      "source": "少女「きゃあぁっっ！\nちょ…ちょっと、そ…それ…！」",
+      "source": "少女「きゃあぁっっ！\n<FFD2>ちょ…ちょっと、そ…それ…！」",
       "text": null
     },
     {
@@ -1938,25 +1938,25 @@
     {
       "offset": "0x13A5E",
       "type": "center",
-      "source": "何と答えますか？\n\n日記を見た\n何も見ていない\n",
+      "source": "何と答えますか？\n\n<FFC0>日記を見た\n<FFC1>何も見ていない\n",
       "text": null
     },
     {
       "offset": "0x13A98",
       "type": "dialog",
-      "source": "少女「ゆ…許せない…！！！\n絶対、許せないわ！」",
+      "source": "少女「ゆ…許せない…！！！\n<FFD2>絶対、許せないわ！」",
       "text": null
     },
     {
       "offset": "0x13ACC",
       "type": "dialog",
-      "source": "少女「バカ！ カス！ スケベ！\nヘンタイ！ イナカモノ！」",
+      "source": "少女「バカ！ カス！ スケベ！\n<FFD2>ヘンタイ！ イナカモノ！」",
       "text": null
     },
     {
       "offset": "0x13B0A",
       "type": "dialog",
-      "source": "少女「はやく、出てって！\n出てってったら、出てって！！」",
+      "source": "少女「はやく、出てって！\n<FFD2>出てってったら、出てって！！」",
       "text": null
     },
     {
@@ -1968,7 +1968,7 @@
     {
       "offset": "0x13B98",
       "type": "dialog",
-      "source": "少女「よ…良かったぁぁ！\n見てないのね？ ね？」",
+      "source": "少女「よ…良かったぁぁ！\n<FFD2>見てないのね？ ね？」",
       "text": null
     },
     {
@@ -1980,19 +1980,19 @@
     {
       "offset": "0x13BE4",
       "type": "dialog",
-      "source": "少女「…じゃないわよ！\nここはアタシの部屋なの！」",
+      "source": "少女「…じゃないわよ！\n<FFD2>ここはアタシの部屋なの！」",
       "text": null
     },
     {
       "offset": "0x13C1A",
       "type": "dialog",
-      "source": "少女「アタシの許可なく\n勝手に入るのは、\nアタシが禁止してるのよ！」",
+      "source": "少女「アタシの許可なく\n<FFD2>勝手に入るのは、\n<FFD2>アタシが禁止してるのよ！」",
       "text": null
     },
     {
       "offset": "0x13C64",
       "type": "dialog",
-      "source": "少女「さぁっ、わかったら\nはやく出てってちょうだい！」",
+      "source": "少女「さぁっ、わかったら\n<FFD2>はやく出てってちょうだい！」",
       "text": null
     },
     {
@@ -2010,25 +2010,25 @@
     {
       "offset": "0x13D10",
       "type": "center",
-      "source": "災いあれドゥーハンよ<BREAK>\nお前には人々の呪いの\n声が聞こえないのか<BREAK>",
+      "source": "<STYLE:2>災いあれドゥーハンよ<BREAK>\n<STYLE:2>お前には人々の呪いの\n声が聞こえないのか<BREAK>",
       "text": null
     },
     {
       "offset": "0x13D58",
       "type": "center",
-      "source": "妖魔どもの笑い声が響く中、\n\n<FD02>邪な女王よ、\nそなたの望みはどこにある…<BREAK>",
+      "source": "<STYLE:2>妖魔どもの笑い声が響く中、\n\n<FD02>邪な女王よ、\nそなたの望みはどこにある…<BREAK>",
       "text": null
     },
     {
       "offset": "0x13DA6",
       "type": "dialog",
-      "source": "男「また一人、迷宮の闇に\n魅入られた者がきよったわ」",
+      "source": "男「また一人、迷宮の闇に\n<FFD1>魅入られた者がきよったわ」",
       "text": null
     },
     {
       "offset": "0x13DDE",
       "type": "dialog",
-      "source": "男「ふんっ、我らが女王を始め\nどいつもこいつも亡国の民だな」",
+      "source": "男「ふんっ、我らが女王を始め\n<FFD1>どいつもこいつも亡国の民だな」",
       "text": null
     },
     {
@@ -2040,31 +2040,31 @@
     {
       "offset": "0x13E50",
       "type": "dialog",
-      "source": "男「この迷宮が害悪を垂れ流して\nいるのを何故気づかぬ？」",
+      "source": "男「この迷宮が害悪を垂れ流して\n<FFD1>いるのを何故気づかぬ？」",
       "text": null
     },
     {
       "offset": "0x13E8C",
       "type": "dialog",
-      "source": "男「財宝が欲しければ\n身を粉にして働けば\n神が与えてくれるではないか」",
+      "source": "男「財宝が欲しければ\n<FFD1>身を粉にして働けば\n<FFD1>神が与えてくれるではないか」",
       "text": null
     },
     {
       "offset": "0x13ED8",
       "type": "dialog",
-      "source": "男「名声が欲しければ\n立派な行いと日々の努力が\nそれを確実にしてくれる」",
+      "source": "男「名声が欲しければ\n<FFD1>立派な行いと日々の努力が\n<FFD1>それを確実にしてくれる」",
       "text": null
     },
     {
       "offset": "0x13F26",
       "type": "dialog",
-      "source": "男「だが迷宮は何も与えてくれぬ。\n闇の先にあるのは闇しかない。\n無は、ただ無を生むだけだ」",
+      "source": "男「だが迷宮は何も与えてくれぬ。\n<FFD1>闇の先にあるのは闇しかない。\n<FFD1>無は、ただ無を生むだけだ」",
       "text": null
     },
     {
       "offset": "0x13F86",
       "type": "dialog",
-      "source": "男「こんな呪われた場所など\n塞いでしまえばよいのだ」",
+      "source": "男「こんな呪われた場所など\n<FFD1>塞いでしまえばよいのだ」",
       "text": null
     },
     {
@@ -2076,13 +2076,13 @@
     {
       "offset": "0x1400E",
       "type": "center",
-      "source": "麗しき都ドゥーハン\n輝けるその日々は永遠に\n戻ってはこぬ",
+      "source": "<STYLE:2>麗しき都ドゥーハン\n輝けるその日々は永遠に\n戻ってはこぬ",
       "text": null
     },
     {
       "offset": "0x1404A",
       "type": "center",
-      "source": "慈しみ深き我らの女王よ…\n<FD02>あなたの御心は我々から\n離れてしまったのか",
+      "source": "<STYLE:2>慈しみ深き我らの女王よ…\n<FD02>あなたの御心は我々から\n離れてしまったのか",
       "text": null
     },
     {
@@ -2094,121 +2094,121 @@
     {
       "offset": "0x140C4",
       "type": "center",
-      "source": "「こんな場所に滝だなんて\n不思議に思うだろ？」",
+      "source": "「こんな場所に滝だなんて\n 不思議に思うだろ？」",
       "text": null
     },
     {
       "offset": "0x140F8",
       "type": "dialog",
-      "source": "男「その流れ込んでいる水は、\n迷宮深くの泉へとつながっている」",
+      "source": "男「その流れ込んでいる水は、\n<FFD1>迷宮深くの泉へとつながっている」",
       "text": null
     },
     {
       "offset": "0x1413A",
       "type": "dialog",
-      "source": "男「失われたエルフの集落らしいが\n何故そんなところにあるのか\n誰もわからん」",
+      "source": "男「失われたエルフの集落らしいが\n<FFD1>何故そんなところにあるのか\n<FFD1>誰もわからん」",
       "text": null
     },
     {
       "offset": "0x1418C",
       "type": "dialog",
-      "source": "男「それ以外にも下の階層に行けば\n街の者が眠る墓所があるんだ」",
+      "source": "男「それ以外にも下の階層に行けば\n<FFD1>街の者が眠る墓所があるんだ」",
       "text": null
     },
     {
       "offset": "0x141CE",
       "type": "dialog",
-      "source": "男「街外れにあった墓所が\nそっくりそのまま迷宮深くへと\n移動したらしいのだが」",
+      "source": "男「街外れにあった墓所が\n<FFD1>そっくりそのまま迷宮深くへと\n<FFD1>移動したらしいのだが」",
       "text": null
     },
     {
       "offset": "0x14222",
       "type": "dialog",
-      "source": "男「おかしな話だよ。\nだから墓参りにいくのにも\nこうして苦労せねばならぬ」",
+      "source": "男「おかしな話だよ。\n<FFD1>だから墓参りにいくのにも\n<FFD1>こうして苦労せねばならぬ」",
       "text": null
     },
     {
       "offset": "0x14272",
       "type": "center",
-      "source": "ピピンのアレイドん日記。<STYLE:0>\n\n<B0A6>疑 の日々\n<B0A5>盟 の日々\n<B0A4>義 の日々\n<B0A3>友 の日々\n<B0A2>信 の日々\n<B0A1>誓 の日々\n<B0A0>絆 の日々\n日記を閉じる\n",
+      "source": "<STYLE:3>ピピンのアレイドん日記。<STYLE:0>\n\n<FFC0><STYLE:4><B0A6>疑 の日々\n<FFC1><STYLE:4><B0A5>盟 の日々\n<FFC2><STYLE:4><B0A4>義 の日々\n<FFC3><STYLE:4><B0A3>友 の日々\n<FFC4><STYLE:4><B0A2>信 の日々\n<FFC5><STYLE:4><B0A1>誓 の日々\n<FFC6><STYLE:4><B0A0>絆 の日々\n<FFC7><STYLE:7>日記を閉じる\n",
       "text": null
     },
     {
       "offset": "0x14332",
       "type": "center",
-      "source": "ピピンのアレイドん日記。<STYLE:0>\n\n<B0A6>疑 の日々\n<B0A5>盟 の日々\n<B0A4>義 の日々\n<B0A3>友 の日々\n<B0A2>信 の日々\n<B0A1>誓 の日々\n日記を閉じる\n",
+      "source": "<STYLE:3>ピピンのアレイドん日記。<STYLE:0>\n\n<FFC0><STYLE:4><B0A6>疑 の日々\n<FFC1><STYLE:4><B0A5>盟 の日々\n<FFC2><STYLE:4><B0A4>義 の日々\n<FFC3><STYLE:4><B0A3>友 の日々\n<FFC4><STYLE:4><B0A2>信 の日々\n<FFC5><STYLE:4><B0A1>誓 の日々\n<FFC6><STYLE:7>日記を閉じる\n",
       "text": null
     },
     {
       "offset": "0x143DE",
       "type": "center",
-      "source": "ピピンのアレイドん日記。<STYLE:0>\n\n<B0A6>疑 の日々\n<B0A5>盟 の日々\n<B0A4>義 の日々\n<B0A3>友 の日々\n<B0A2>信 の日々\n日記を閉じる\n",
+      "source": "<STYLE:3>ピピンのアレイドん日記。<STYLE:0>\n\n<FFC0><STYLE:4><B0A6>疑 の日々\n<FFC1><STYLE:4><B0A5>盟 の日々\n<FFC2><STYLE:4><B0A4>義 の日々\n<FFC3><STYLE:4><B0A3>友 の日々\n<FFC4><STYLE:4><B0A2>信 の日々\n<FFC5><STYLE:7>日記を閉じる\n",
       "text": null
     },
     {
       "offset": "0x14476",
       "type": "center",
-      "source": "ピピンのアレイドん日記。<STYLE:0>\n\n<B0A6>疑 の日々\n<B0A5>盟 の日々\n<B0A4>義 の日々\n<B0A3>友 の日々\n日記を閉じる\n",
+      "source": "<STYLE:3>ピピンのアレイドん日記。<STYLE:0>\n\n<FFC0><STYLE:4><B0A6>疑 の日々\n<FFC1><STYLE:4><B0A5>盟 の日々\n<FFC2><STYLE:4><B0A4>義 の日々\n<FFC3><STYLE:4><B0A3>友 の日々\n<FFC4><STYLE:7>日記を閉じる\n",
       "text": null
     },
     {
       "offset": "0x144FA",
       "type": "center",
-      "source": "ピピンのアレイドん日記。<STYLE:0>\n\n<B0A6>疑 の日々\n<B0A5>盟 の日々\n<B0A4>義 の日々\n日記を閉じる\n",
+      "source": "<STYLE:3>ピピンのアレイドん日記。<STYLE:0>\n\n<FFC0><STYLE:4><B0A6>疑 の日々\n<FFC1><STYLE:4><B0A5>盟 の日々\n<FFC2><STYLE:4><B0A4>義 の日々\n<FFC3><STYLE:7>日記を閉じる\n",
       "text": null
     },
     {
       "offset": "0x1456A",
       "type": "center",
-      "source": "ピピンのアレイドん日記。<STYLE:0>\n\n<B0A6>疑 の日々\n<B0A5>盟 の日々\n日記を閉じる\n",
+      "source": "<STYLE:3>ピピンのアレイドん日記。<STYLE:0>\n\n<FFC0><STYLE:4><B0A6>疑 の日々\n<FFC1><STYLE:4><B0A5>盟 の日々\n<FFC2><STYLE:7>日記を閉じる\n",
       "text": null
     },
     {
       "offset": "0x145C6",
       "type": "center",
-      "source": "ピピンのアレイドん日記。<STYLE:0>\n\n<B0A6>疑 の日々\n日記を閉じる\n",
+      "source": "<STYLE:3>ピピンのアレイドん日記。<STYLE:0>\n\n<FFC0><STYLE:4><B0A6>疑 の日々\n<FFC1><STYLE:7>日記を閉じる\n",
       "text": null
     },
     {
       "offset": "0x1460E",
       "type": "center",
-      "source": "疑 の日々\n\n<B088>フロントガード\n表紙に戻る\n日記を閉じる\n",
+      "source": "疑 の日々\n\n<FFC0><STYLE:4><B088>フロントガード\n<FFC1><STYLE:7>表紙に戻る\n<FFC2>日記を閉じる\n",
       "text": null
     },
     {
       "offset": "0x1465A",
       "type": "center",
-      "source": "盟 の日々\n\n<B089>牽制射撃\n<B08A>Wスラッシュ\n<B08B>ラッシュ\n表紙に戻る\n日記を閉じる\n",
+      "source": "盟 の日々\n\n<FFC0><STYLE:4><B089>牽制射撃\n<FFC1><STYLE:4><B08A>Wスラッシュ\n<FFC2><STYLE:4><B08B>ラッシュ\n<FFC3><STYLE:7>表紙に戻る\n<FFC4>日記を閉じる\n",
       "text": null
     },
     {
       "offset": "0x146C8",
       "type": "center",
-      "source": "義 の日々\n\n<B08C>S・スマッシュ\n<B08D>マジック・キャンセル\n<B08E>ホールドアタック\n<B08F>援護射撃\n<B090>バックアタック\n表紙に戻る\n日記を閉じる\n",
+      "source": "義 の日々\n\n<FFC0><STYLE:4><B08C>S・スマッシュ\n<FFC1><STYLE:4><B08D>マジック・キャンセル\n<FFC2><STYLE:4><B08E>ホールドアタック\n<FFC3><STYLE:4><B08F>援護射撃\n<FFC4><STYLE:4><B090>バックアタック\n<FFC5><STYLE:7>表紙に戻る\n<FFC6>日記を閉じる\n",
       "text": null
     },
     {
       "offset": "0x14796",
       "type": "center",
-      "source": "友 の日々\n\n<B091>範囲攻撃\n<B092>S・Jアタック\n<B093>スレイクラッシュ\n<B094>マジックソード\n表紙に戻る\n日記を閉じる\n",
+      "source": "友 の日々\n\n<FFC0><STYLE:4><B091>範囲攻撃\n<FFC1><STYLE:4><B092>S・Jアタック\n<FFC2><STYLE:4><B093>スレイクラッシュ\n<FFC3><STYLE:4><B094>マジックソード\n<FFC4><STYLE:7>表紙に戻る\n<FFC5>日記を閉じる\n",
       "text": null
     },
     {
       "offset": "0x14830",
       "type": "center",
-      "source": "信 の日々\n\n<B095>集中攻撃\n<B096>魔法協力\n<B097>散開\n<B098>フェイクアタック\n<B099>マジック・シェル\n表紙に戻る\n日記を閉じる\n",
+      "source": "信 の日々\n\n<FFC0><STYLE:4><B095>集中攻撃\n<FFC1><STYLE:4><B096>魔法協力\n<FFC2><STYLE:4><B097>散開\n<FFC3><STYLE:4><B098>フェイクアタック\n<FFC4><STYLE:4><B099>マジック・シェル\n<FFC5><STYLE:7>表紙に戻る\n<FFC6>日記を閉じる\n",
       "text": null
     },
     {
       "offset": "0x148E2",
       "type": "center",
-      "source": "誓 の日々\n\n<B09A>呪文集中陣\n<B09B>ゲイルスラッシュ\n<B09C>B・サイレンス\n表紙に戻る\n日記を閉じる\n",
+      "source": "誓 の日々\n\n<FFC0><STYLE:4><B09A>呪文集中陣\n<FFC1><STYLE:4><B09B>ゲイルスラッシュ\n<FFC2><STYLE:4><B09C>B・サイレンス\n<FFC3><STYLE:7>表紙に戻る\n<FFC4>日記を閉じる\n",
       "text": null
     },
     {
       "offset": "0x14964",
       "type": "center",
-      "source": "絆 の日々\n\n<B09D>S・クロス\n<B09E>立体殺法\n<B09F>ワープアタック\n表紙に戻る\n日記を閉じる\n",
+      "source": "絆 の日々\n\n<FFC0><STYLE:4><B09D>S・クロス\n<FFC1><STYLE:4><B09E>立体殺法\n<FFC2><STYLE:4><B09F>ワープアタック\n<FFC3><STYLE:7>表紙に戻る\n<FFC4>日記を閉じる\n",
       "text": null
     },
     {
@@ -2334,7 +2334,7 @@
     {
       "offset": "0x1512A",
       "type": "center",
-      "source": "だから、なまぐさオヤジに\nアレイドんを教えてもらいに\n行こうとした息子に\n\n「そんなもの覚えるのに\n金払えるかボケ！」\nって、怒鳴っていたのだ。<BREAK>",
+      "source": "だから、なまぐさオヤジに\nアレイドんを教えてもらいに\n行こうとした息子に\n\n「そんなもの覚えるのに\n      金払えるかボケ！」\nって、怒鳴っていたのだ。<BREAK>",
       "text": null
     },
     {
@@ -2430,19 +2430,19 @@
     {
       "offset": "0x157E2",
       "type": "center",
-      "source": "1、まずは前衛の誰かと\nコンビを組む。\n\nこれは大丈夫だ。<BREAK>",
+      "source": "1、まずは前衛の誰かと\n  コンビを組む。\n\nこれは大丈夫だ。<BREAK>",
       "text": null
     },
     {
       "offset": "0x15828",
       "type": "center",
-      "source": "2、次に敵前衛に向かって突進。\n端にいるやつをぶん殴る。\n\nこれも簡単だ。<BREAK>",
+      "source": "2、次に敵前衛に向かって突進。\n  端にいるやつをぶん殴る。\n\nこれも簡単だ。<BREAK>",
       "text": null
     },
     {
       "offset": "0x1587C",
       "type": "center",
-      "source": "3、そして敵後衛がいれば横に\n回りこんでぶん殴る。\nいなければ帰ってくる。<BREAK>",
+      "source": "3、そして敵後衛がいれば横に\n  回りこんでぶん殴る。\n  いなければ帰ってくる。<BREAK>",
       "text": null
     },
     {
@@ -2676,13 +2676,13 @@
     {
       "offset": "0x16872",
       "type": "dialog",
-      "source": "オークのピピン\n<FB03>オダのエッセイ\nよんでくれたか！",
+      "source": "オークのピピン\n<FFD5><FB03>オダのエッセイ\n<FFD4>よんでくれたか！",
       "text": null
     },
     {
       "offset": "0x168AA",
       "type": "dialog",
-      "source": "オークのピピン\n<FB03>オダ、がんばって、\nもっと、かくだよー！",
+      "source": "オークのピピン\n<FFD4><FB03>オダ、がんばって、\n<FFD3>もっと、かくだよー！",
       "text": null
     },
     {
@@ -2694,19 +2694,19 @@
     {
       "offset": "0x16930",
       "type": "center",
-      "source": "「目指せドゥーハンドリーム\nオークション☆サクセスストーリー」<BREAK>",
+      "source": "<STYLE:3>「目指せドゥーハンドリーム\n  オークション☆サクセスストーリー」<BREAK>",
       "text": null
     },
     {
       "offset": "0x16984",
       "type": "center",
-      "source": "「絶対イケる、一攫千金！\n斬新アイデア商品」<BREAK>",
+      "source": "<STYLE:2> 「絶対イケる、一攫千金！\n         斬新アイデア商品」<BREAK>",
       "text": null
     },
     {
       "offset": "0x169D8",
       "type": "center",
-      "source": "「独立したいあなたにささぐ\n特選ビジネスプラン100」<BREAK>",
+      "source": "<STYLE:1> 「独立したいあなたにささぐ\n     特選ビジネスプラン100」<BREAK>",
       "text": null
     },
     {
@@ -2718,25 +2718,25 @@
     {
       "offset": "0x16A68",
       "type": "center",
-      "source": "「冒険家の詩－うた－\nピピン詩集」<STYLE:0>\n\n<B05F>序章 はじめに\n<B060>一章  街の詩\n<B061>二章  心の詩\n<B062>三章  技の詩\n<B063>四章  体の詩\n<B064>最終章 旅の詩\n詩集を閉じる\n",
+      "source": "<STYLE:3>「冒険家の詩－うた－\n     ピピン詩集」<STYLE:0>\n\n<FFC0><STYLE:4><B05F>序章 はじめに\n<FFC1><STYLE:4><B060>一章  街の詩\n<FFC2><STYLE:4><B061>二章  心の詩\n<FFC3><STYLE:4><B062>三章  技の詩\n<FFC4><STYLE:4><B063>四章  体の詩\n<FFC5><STYLE:4><B064>最終章 旅の詩\n<FFC6><STYLE:7>詩集を閉じる\n",
       "text": null
     },
     {
       "offset": "0x16B38",
       "type": "center",
-      "source": "－この詩集を、敬愛する\n偉大なる冒険家オトムに捧ぐ－<BREAK>",
+      "source": "－この詩集を、敬愛する\n 偉大なる冒険家オトムに捧ぐ－<BREAK>",
       "text": null
     },
     {
       "offset": "0x16B7A",
       "type": "center",
-      "source": "一章 街の詩<STYLE:0>\n\n<B065>迷宮の迷い子\n<B066>宿屋でレベルアップ\n<B067>ギルドで過ごす時間\n<B068>酒場での語らい\n<B069>寺院は癒し系\n<B06A>商店コレクション\n<B06B>思い出をセーブ\n表紙へ戻る\n詩集を閉じる\n",
+      "source": "<STYLE:3>一章 街の詩<STYLE:0>\n\n<FFC0><STYLE:4><B065>迷宮の迷い子\n<FFC1><STYLE:4><B066>宿屋でレベルアップ\n<FFC2><STYLE:4><B067>ギルドで過ごす時間\n<FFC3><STYLE:4><B068>酒場での語らい\n<FFC4><STYLE:4><B069>寺院は癒し系\n<FFC5><STYLE:4><B06A>商店コレクション\n<FFC6><STYLE:4><B06B>思い出をセーブ\n<FFC7><STYLE:7>表紙へ戻る\n<FFC8>詩集を閉じる\n",
       "text": null
     },
     {
       "offset": "0x16C74",
       "type": "center",
-      "source": "迷宮の迷い子<STYLE:0>\n\n何処へ行けばいいのだ\n何をすればいいのだ\nオダは何故潜るのだ\n\nそれは、もちろん…\n「そこに迷宮があるから」<BREAK>",
+      "source": "<STYLE:3>迷宮の迷い子<STYLE:0>\n\n何処へ行けばいいのだ\n何をすればいいのだ\nオダは何故潜るのだ\n\nそれは、もちろん…\n「そこに迷宮があるから」<BREAK>",
       "text": null
     },
     {
@@ -2748,7 +2748,7 @@
     {
       "offset": "0x16DBA",
       "type": "center",
-      "source": "宿屋でレベルアップ<STYLE:0>\n\n宿屋は不思議だ\n宿屋で夜をすごすと\nオダは強くなっている\n\nレベルアップ\n\nそう、まさしく\n\nオダは強くなっている<BREAK>",
+      "source": "<STYLE:3>宿屋でレベルアップ<STYLE:0>\n\n宿屋は不思議だ\n宿屋で夜をすごすと\nオダは強くなっている\n\nレベルアップ\n\nそう、まさしく\n\nオダは強くなっている<BREAK>",
       "text": null
     },
     {
@@ -2760,19 +2760,19 @@
     {
       "offset": "0x16EDA",
       "type": "center",
-      "source": "ギルドで過ごす時間<STYLE:0>\n\n仲間をつくったり\nアレイドんを覚えたり\n転職をしたり\n\nギルドでの ひととき\n冒険者だけの ひととき<BREAK>",
+      "source": "<STYLE:3>ギルドで過ごす時間<STYLE:0>\n\n仲間をつくったり\nアレイドんを覚えたり\n転職をしたり\n\nギルドでの ひととき\n冒険者だけの ひととき<BREAK>",
       "text": null
     },
     {
       "offset": "0x16F60",
       "type": "center",
-      "source": "酒場での語らい<STYLE:0>\n\n皆集まる にぎやかな空間\n\n色んな情報が見えてくる\n色んな依頼が待っている\n\nぶどう酒を片手に\nちょっぴり大人の話\n\n今日のオダは\nちょっぴり背伸び<BREAK>",
+      "source": "<STYLE:3>酒場での語らい<STYLE:0>\n\n皆集まる にぎやかな空間\n\n色んな情報が見えてくる\n色んな依頼が待っている\n\nぶどう酒を片手に\n   ちょっぴり大人の話\n\n今日のオダは\n    ちょっぴり背伸び<BREAK>",
       "text": null
     },
     {
       "offset": "0x17038",
       "type": "center",
-      "source": "寺院は癒し系<STYLE:0>\n\n優しいメロディーと\n優しい神父様\n\n優しいシスターの\n優しい眼差し\n\nああ…オダの至福の時\n\nさあ、オダを癒しておくれ<BREAK>",
+      "source": "<STYLE:3>寺院は癒し系<STYLE:0>\n\n優しいメロディーと\n優しい神父様\n\n優しいシスターの\n優しい眼差し\n\nああ…オダの至福の時\n\nさあ、オダを癒しておくれ<BREAK>",
       "text": null
     },
     {
@@ -2784,19 +2784,19 @@
     {
       "offset": "0x1719C",
       "type": "center",
-      "source": "商店コレクション<STYLE:0>\n\n商店のオヤジ ものぐさオヤジ\n仕入れに行かない ぐうたらオヤジ\n\nちっとも増えない ダメダメ商店\n\nちょいと協力してやろう\n\nオダのお宝売ってやろう<BREAK>",
+      "source": "<STYLE:3>商店コレクション<STYLE:0>\n\n商店のオヤジ ものぐさオヤジ\n仕入れに行かない ぐうたらオヤジ\n\nちっとも増えない ダメダメ商店\n\nちょいと協力してやろう\n\nオダのお宝売ってやろう<BREAK>",
       "text": null
     },
     {
       "offset": "0x17254",
       "type": "center",
-      "source": "ダガーを売った\nダガーが増えた\n\n呪いのブーツを売った\n呪いのブーツが並んだ\n\nこの世のアイテム 全部売った\nこの世のアイテム 全部並んだ\n\nオダの物置 ヴィガー商店<BREAK>",
+      "source": "  ダガーを売った\n      ダガーが増えた\n\n呪いのブーツを売った\n     呪いのブーツが並んだ\n\nこの世のアイテム 全部売った\n この世のアイテム 全部並んだ\n\nオダの物置 ヴィガー商店<BREAK>",
       "text": null
     },
     {
       "offset": "0x1733C",
       "type": "center",
-      "source": "思い出をセーブ<STYLE:0>\n\n君と僕のメモリーを\n秘密の場所にセーブしよう\n\nほら、ひとつ、ひとつ\nそびえたつ石に刻むんだ<BREAK>",
+      "source": "<STYLE:3>思い出をセーブ<STYLE:0>\n\n君と僕のメモリーを\n秘密の場所にセーブしよう\n\nほら、ひとつ、ひとつ\nそびえたつ石に刻むんだ<BREAK>",
       "text": null
     },
     {
@@ -2808,25 +2808,25 @@
     {
       "offset": "0x17410",
       "type": "center",
-      "source": "二章 心の詩<STYLE:0>\n\n<B06C>れっつキャラメイキング\n<B06D>種族、色々\n<B06E>属性、色々\n<B06F>職業、色々\n<B070>僕等の絆、深めよう\n<B071>リフレッシュ転職\n<B072>転職出来ないアイツに捧ぐ\n表紙へ戻る\n詩集を閉じる\n",
+      "source": "<STYLE:3>二章 心の詩<STYLE:0>\n\n<FFC0><STYLE:4><B06C>れっつキャラメイキング\n<FFC1><STYLE:4><B06D>種族、色々\n<FFC2><STYLE:4><B06E>属性、色々\n<FFC3><STYLE:4><B06F>職業、色々\n<FFC4><STYLE:4><B070>僕等の絆、深めよう\n<FFC5><STYLE:4><B071>リフレッシュ転職\n<FFC6><STYLE:4><B072>転職出来ないアイツに捧ぐ\n<FFC7><STYLE:7>表紙へ戻る\n<FFC8>詩集を閉じる\n",
       "text": null
     },
     {
       "offset": "0x17540",
       "type": "center",
-      "source": "れっつキャラメイキング<STYLE:0>\n\n好きな名前をつけるだど\n\n好きな種族決めるだど\n\n好きな属性決めるだど\n\n好きにパワー入れるだど\n\n最後に「決定」\nプッシュ プッシュ<BREAK>",
+      "source": "<STYLE:3>れっつキャラメイキング<STYLE:0>\n\n好きな名前をつけるだど\n\n好きな種族決めるだど\n\n好きな属性決めるだど\n\n好きにパワー入れるだど\n\n最後に「決定」\n  プッシュ プッシュ<BREAK>",
       "text": null
     },
     {
       "offset": "0x175FE",
       "type": "center",
-      "source": "後は酒場にレッツラゴー\n\n期待を胸に\nダッシュ ダッシュ\n\n希望の仲間が待っている\n皆 酒場で待ちぼうけ\nオダのチームへ ウエルカム！<BREAK>",
+      "source": "後は酒場にレッツラゴー\n\n期待を胸に\n  ダッシュ ダッシュ\n\n希望の仲間が待っている\n皆 酒場で待ちぼうけ\nオダのチームへ ウエルカム！<BREAK>",
       "text": null
     },
     {
       "offset": "0x1769C",
       "type": "center",
-      "source": "種族、色々<STYLE:0>\n\n世界には たくさん、たくさん\n色んな種族が 住んでいる\n\n種族変われば 性格も変わる\n\n色んな違いはあるけれど\n皆同じ、生きる者<BREAK>",
+      "source": "<STYLE:3>種族、色々<STYLE:0>\n\n世界には たくさん、たくさん\n色んな種族が 住んでいる\n\n種族変われば 性格も変わる\n\n色んな違いはあるけれど\n      皆同じ、生きる者<BREAK>",
       "text": null
     },
     {
@@ -2838,31 +2838,31 @@
     {
       "offset": "0x17804",
       "type": "center",
-      "source": "属性、色々<STYLE:0>\n\n善・中立・悪\n\n属性色々、種族色々、性格色々\n\n属性変われば 性格も変わる\n\n色んなヤツがいるけれど\nなんとか、うまくやっていこう…<BREAK>",
+      "source": "<STYLE:3>属性、色々<STYLE:0>\n\n善・中立・悪\n\n属性色々、種族色々、性格色々\n\n属性変われば 性格も変わる\n\n色んなヤツがいるけれど\n なんとか、うまくやっていこう…<BREAK>",
       "text": null
     },
     {
       "offset": "0x178B2",
       "type": "center",
-      "source": "善属性の素直なアイツ\n悪く言えば ヘタレ\n\n中立属性の平和なアイツ\n悪く言えば 能天気\n\n悪属性の強気なアイツ\n悪く言えば 勝手な奴\n\n色んなヤツがいるけれど\nほんとに、うまくやれるかな…<BREAK>",
+      "source": "善属性の素直なアイツ\n      悪く言えば ヘタレ\n\n中立属性の平和なアイツ\n      悪く言えば 能天気\n\n悪属性の強気なアイツ\n     悪く言えば 勝手な奴\n\n色んなヤツがいるけれど\n  ほんとに、うまくやれるかな…<BREAK>",
       "text": null
     },
     {
       "offset": "0x179C4",
       "type": "center",
-      "source": "職業、色々<STYLE:0>\n\n戦士・盗賊・魔術師・僧侶\n忍者・侍・騎士・司教\n\nお仕事色々、人生色々\n\n職業変われば 装備も変わる\n強さも変わる\n色々、変わる<BREAK>",
+      "source": "<STYLE:3>職業、色々<STYLE:0>\n\n戦士・盗賊・魔術師・僧侶\n忍者・侍・騎士・司教\n\nお仕事色々、人生色々\n\n職業変われば 装備も変わる\n       強さも変わる\n       色々、変わる<BREAK>",
       "text": null
     },
     {
       "offset": "0x17A7C",
       "type": "center",
-      "source": "僕等の絆、深めよう<STYLE:0>\n\n今は<STYLE:1>憎<STYLE:0>しみあっているけれど\nだんだん<STYLE:7>疑<STYLE:0>いだすようになって\n形だけ同<STYLE:7>盟<STYLE:0>を結んでみたりしながら\n義<STYLE:0>理で気を使ってやってるうちに\n「僕等って<STYLE:3>友<STYLE:0>達？」なんて思ったりして\nきっと<STYLE:3>信<STYLE:0>用出来るようになるだろうから\nその時、永遠の仲間と<STYLE:2>誓<STYLE:0>いあって\n僕等は深い<STYLE:2>絆<STYLE:0>で結ばれるんだ！<BREAK>",
+      "source": "<STYLE:3>僕等の絆、深めよう<STYLE:0>\n\n今は<STYLE:1>憎<STYLE:0>しみあっているけれど\nだんだん<STYLE:7>疑<STYLE:0>いだすようになって\n形だけ同<STYLE:7>盟<STYLE:0>を結んでみたりしながら\n<STYLE:4>義<STYLE:0>理で気を使ってやってるうちに\n「僕等って<STYLE:3>友<STYLE:0>達？」なんて思ったりして\nきっと<STYLE:3>信<STYLE:0>用出来るようになるだろうから\nその時、永遠の仲間と<STYLE:2>誓<STYLE:0>いあって\n僕等は深い<STYLE:2>絆<STYLE:0>で結ばれるんだ！<BREAK>",
       "text": null
     },
     {
       "offset": "0x17BC0",
       "type": "center",
-      "source": "リフレッシュ転職<STYLE:0>\n\nオダは戦士 パワフル戦士\n\n「そうだ！ 僧侶になるど！」\n\nギルドで転職 今日から僧侶\n\nパラメータが変わって リフレッシュ<BREAK>",
+      "source": "<STYLE:3>リフレッシュ転職<STYLE:0>\n\nオダは戦士 パワフル戦士\n\n「そうだ！ 僧侶になるど！」\n\nギルドで転職 今日から僧侶\n\nパラメータが変わって リフレッシュ<BREAK>",
       "text": null
     },
     {
@@ -2880,7 +2880,7 @@
     {
       "offset": "0x17D68",
       "type": "center",
-      "source": "転職出来ないアイツに捧ぐ<STYLE:0>\n\n「転職なんて 信じらんない！」\n\nギルドでゴネるヤツがいる\nまったくもって けしからん！\n\n途中から仲間にしてやった\nアイツとアイツとアイツとアイツ\n\nなんでも誇りがあるらしい\n変なプライドは捨てちまえ！<BREAK>",
+      "source": "<STYLE:3>転職出来ないアイツに捧ぐ<STYLE:0>\n\n「転職なんて 信じらんない！」\n\nギルドでゴネるヤツがいる\nまったくもって けしからん！\n\n途中から仲間にしてやった\nアイツとアイツとアイツとアイツ\n\nなんでも誇りがあるらしい\n変なプライドは捨てちまえ！<BREAK>",
       "text": null
     },
     {
@@ -2892,13 +2892,13 @@
     {
       "offset": "0x17F04",
       "type": "center",
-      "source": "三章 技の詩<STYLE:0>\n\n<B073>らくらくトラップ\n<B074>☆ミラクル魔法石☆\n<B075>ランクアップ！My魔法\n<B076>合成オバサン、分解オバサン\n<B077>不死族との付き合い方\n<B078>解放しとく？ スペシャルパワー\n<B079>これなあに？ －鑑定ノススメ－\n表紙へ戻る\n詩集を閉じる\n",
+      "source": "<STYLE:3>三章 技の詩<STYLE:0>\n\n<FFC0><STYLE:4><B073>らくらくトラップ\n<FFC1><STYLE:4><B074>☆ミラクル魔法石☆\n<FFC2><STYLE:4><B075>ランクアップ！My魔法\n<FFC3><STYLE:4><B076>合成オバサン、分解オバサン\n<FFC4><STYLE:4><B077>不死族との付き合い方\n<FFC5><STYLE:4><B078>解放しとく？ スペシャルパワー\n<FFC6><STYLE:4><B079>これなあに？ －鑑定ノススメ－\n<FFC7><STYLE:7>表紙へ戻る\n<FFC8>詩集を閉じる\n",
       "text": null
     },
     {
       "offset": "0x1806A",
       "type": "center",
-      "source": "らくらくトラップ<STYLE:0>\n\nトラップ解除は苦手\nオダはとっても苦手\n\nだけど、苦手だと大変\nトラップでズタボロ\n\nそんなとき、助けて忍者君！<BREAK>",
+      "source": "<STYLE:3>らくらくトラップ<STYLE:0>\n\nトラップ解除は苦手\nオダはとっても苦手\n\nだけど、苦手だと大変\nトラップでズタボロ\n\nそんなとき、助けて忍者君！<BREAK>",
       "text": null
     },
     {
@@ -2910,19 +2910,19 @@
     {
       "offset": "0x181B2",
       "type": "center",
-      "source": "☆ミラクル魔法石☆<STYLE:0>\n\n魔法石は不思議 とっても不思議\n\n持ってるだけで 心があったかい\n\nだけど持ってるだけじゃダメ\n\nとっても綺麗だから 勿体無いけど\n\n思い切って 使わなきゃ<BREAK>",
+      "source": "<STYLE:3>☆ミラクル魔法石☆<STYLE:0>\n\n魔法石は不思議 とっても不思議\n\n持ってるだけで 心があったかい\n\nだけど持ってるだけじゃダメ\n\nとっても綺麗だから 勿体無いけど\n\n思い切って 使わなきゃ<BREAK>",
       "text": null
     },
     {
       "offset": "0x18276",
       "type": "center",
-      "source": "今日からキミも魔法使い\n\nもちろんオダも魔法使い\n\n一緒に唱えよう 素敵な呪文\n－ ヴァルハラ －\n\nキミとオダに奇跡が起こる\nほら、魔法石のミラクル<BREAK>",
+      "source": "今日からキミも魔法使い\n\nもちろんオダも魔法使い\n\n一緒に唱えよう 素敵な呪文\n      － ヴァルハラ －\n\nキミとオダに奇跡が起こる\n   ほら、魔法石のミラクル<BREAK>",
       "text": null
     },
     {
       "offset": "0x1832C",
       "type": "center",
-      "source": "ランクアップ！My魔法<STYLE:0>\n\n弱い弱い 魔法でも\nいつか必ず 強くなる\n\n待っているだけじゃダメ\n魔法石を使わなきゃ\n何個も何個も、使わなきゃ\n\nパワーアップ！My魔法<BREAK>",
+      "source": "<STYLE:3>ランクアップ！My魔法<STYLE:0>\n\n弱い弱い 魔法でも\nいつか必ず 強くなる\n\n待っているだけじゃダメ\n魔法石を使わなきゃ\n何個も何個も、使わなきゃ\n\nパワーアップ！My魔法<BREAK>",
       "text": null
     },
     {
@@ -2934,67 +2934,67 @@
     {
       "offset": "0x1846E",
       "type": "center",
-      "source": "合成オバサン、分解オバサン<STYLE:0>\n\n商店のオバサンは合成オバサン\n\n合成素材をコネコネコネ…\n羊皮紙見ながらコネコネコネコネ…\n\n毎日毎日 魔法石を作るのさ\n\nたまに変なの出来るけど\nそれがまた すんごい石！<BREAK>",
+      "source": "<STYLE:3>合成オバサン、分解オバサン<STYLE:0>\n\n商店のオバサンは合成オバサン\n\n合成素材をコネコネコネ…\n羊皮紙見ながらコネコネコネコネ…\n\n毎日毎日 魔法石を作るのさ\n\nたまに変なの出来るけど\n  それがまた すんごい石！<BREAK>",
       "text": null
     },
     {
       "offset": "0x18552",
       "type": "center",
-      "source": "商店のオバサンは分解オバサン\n\n魔法石をグリグリグリ…\n羊皮紙で作ったのは無理みたい\n\n毎日毎日 合成素材に戻すのさ\n\nたまに変なの出来るけど\nそれがまた すんごいショボイ！<BREAK>",
+      "source": "商店のオバサンは分解オバサン\n\n魔法石をグリグリグリ…\n  羊皮紙で作ったのは無理みたい\n\n毎日毎日 合成素材に戻すのさ\n\nたまに変なの出来るけど\n それがまた すんごいショボイ！<BREAK>",
       "text": null
     },
     {
       "offset": "0x18624",
       "type": "center",
-      "source": "不死族との付き合い方<STYLE:0>\n\nゾンビ…シェイド…スピリッツ\nアイツら ちょっと普通じゃない\n\nだってさ、死んでるんだよ！\n\nボコボコ…ベシベシー…バシバシ…\n殴っても殴っても 死にやしない\n\nとっくに、死んでるからね！<BREAK>",
+      "source": "<STYLE:3>不死族との付き合い方<STYLE:0>\n\nゾンビ…シェイド…スピリッツ\n   アイツら ちょっと普通じゃない\n\nだってさ、死んでるんだよ！\n\nボコボコ…ベシベシー…バシバシ…\n   殴っても殴っても 死にやしない\n\nとっくに、死んでるからね！<BREAK>",
       "text": null
     },
     {
       "offset": "0x18720",
       "type": "center",
-      "source": "不死族の奴等と付き合うには\n一筋縄じゃいかない\n\n普通に接しちゃ ナメられて終わり\n\n試しにディスペルしてやりな\n幸せそうに 成仏するから\n\n試しに魔法 かけてやりな\n苦しそうに 成仏するから<BREAK>",
+      "source": "不死族の奴等と付き合うには\n         一筋縄じゃいかない\n\n普通に接しちゃ ナメられて終わり\n\n試しにディスペルしてやりな\n    幸せそうに 成仏するから\n\n試しに魔法 かけてやりな\n    苦しそうに 成仏するから<BREAK>",
       "text": null
     },
     {
       "offset": "0x18822",
       "type": "center",
-      "source": "解放しとく？ スペシャルパワー<STYLE:0>\n\n何が起こるかなんて\n知ったこっちゃあない\n\nだけどきっと大丈夫。\n\nアイテム壊すだけの価値はある\n\n「とにかく、とんでもないことが\n起こるらしい！」<BREAK>",
+      "source": "<STYLE:3>解放しとく？ スペシャルパワー<STYLE:0>\n\n何が起こるかなんて\n     知ったこっちゃあない\n\nだけどきっと大丈夫。\n\nアイテム壊すだけの価値はある\n\n「とにかく、とんでもないことが\n          起こるらしい！」<BREAK>",
       "text": null
     },
     {
       "offset": "0x18918",
       "type": "center",
-      "source": "これなあに？ －鑑定ノススメ－<STYLE:0>\n\n？剣 ？斧 ？刀 ？杖\n\nオダのもちもの\nせっかく手に入れたのに\n？ばっかり ついている\n？ってなあに？\n\nオダわかんなーい！<BREAK>",
+      "source": "<STYLE:3>これなあに？ －鑑定ノススメ－<STYLE:0>\n\n？剣 ？斧 ？刀 ？杖\n\nオダのもちもの\nせっかく手に入れたのに\n？ばっかり ついている\n？ってなあに？\n\nオダわかんなーい！<BREAK>",
       "text": null
     },
     {
       "offset": "0x189C6",
       "type": "center",
-      "source": "そんなときはアイツの出番！\n司教 そう、ビショップさ！\n\n商店行けば 高いけど\nビショップなら タダなのさ\n\n時には失敗もするけれど\n（怖いよー！）\n\nタダより安いものはない！<BREAK>",
+      "source": "そんなときはアイツの出番！\n司教 そう、ビショップさ！\n\n商店行けば 高いけど\nビショップなら タダなのさ\n\n時には失敗もするけれど\n        （怖いよー！）\n\nタダより安いものはない！<BREAK>",
       "text": null
     },
     {
       "offset": "0x18A98",
       "type": "center",
-      "source": "四章 体の詩<STYLE:0>\n\n<B07A>使いたい、色んな魔法\n<B07B>呪われコーディネート\n<B07C>エナジードレイン？！\n<B07D>体調不良\n<B07E>オダは恐怖に怯える\n<B07F>憑かれちゃった！\n<B080>消滅－LOST－\n表紙へ戻る\n詩集を閉じる\n",
+      "source": "<STYLE:3>四章 体の詩<STYLE:0>\n\n<FFC0><STYLE:4><B07A>使いたい、色んな魔法\n<FFC1><STYLE:4><B07B>呪われコーディネート\n<FFC2><STYLE:4><B07C>エナジードレイン？！\n<FFC3><STYLE:4><B07D>体調不良\n<FFC4><STYLE:4><B07E>オダは恐怖に怯える\n<FFC5><STYLE:4><B07F>憑かれちゃった！\n<FFC6><STYLE:4><B080>消滅－LOST－\n<FFC7><STYLE:7>表紙へ戻る\n<FFC8>詩集を閉じる\n",
       "text": null
     },
     {
       "offset": "0x18BA4",
       "type": "center",
-      "source": "使いたい、色んな魔法<STYLE:0>\n\n使いたい、色んな魔法\n\n魔術師魔法 僧侶魔法\nレベル1、2、3、4、5、6、7\n魔法がいっぱい\nレベルもいっぱい\nランクもいっぱい\nMPもいっぱい\nオダの頭は いっぱい、いっぱい<BREAK>",
+      "source": "<STYLE:3>使いたい、色んな魔法<STYLE:0>\n\n使いたい、色んな魔法\n\n魔術師魔法 僧侶魔法\nレベル1、2、3、4、5、6、7\n魔法がいっぱい\nレベルもいっぱい\nランクもいっぱい\nMPもいっぱい\nオダの頭は いっぱい、いっぱい<BREAK>",
       "text": null
     },
     {
       "offset": "0x18C7A",
       "type": "center",
-      "source": "その時 神の声がした\n\n「MP0なら使えない\nMP1なら1回ピシリ！\nMP5なら5回ズベシ！\nMP9なら9回ドベシ！」\n\nなんだ そうだったのか、\n数字の分だけ 使えるか！\nそれならオダでもカンタンだ！<BREAK>",
+      "source": "その時 神の声がした\n\n「MP0なら使えない\n MP1なら1回ピシリ！\n MP5なら5回ズベシ！\n MP9なら9回ドベシ！」\n\nなんだ そうだったのか、\n数字の分だけ 使えるか！\nそれならオダでもカンタンだ！<BREAK>",
       "text": null
     },
     {
       "offset": "0x18D5C",
       "type": "center",
-      "source": "呪われコーディネート<STYLE:0>\n\n呪いの刀、呪いの兜、\n呪いのローブに呪いの指輪！\n\n今日のオダ ちょっぴり呪いモード\n思い切ってフル装備！\n\nうぐっ…！\n魔力が吸われてる…命が削られてる…\nすぐ体が変になるしお金まで減ってる！<BREAK>",
+      "source": "<STYLE:3>呪われコーディネート<STYLE:0>\n\n呪いの刀、呪いの兜、\n呪いのローブに呪いの指輪！\n\n今日のオダ ちょっぴり呪いモード\n思い切ってフル装備！\n\nうぐっ…！\n魔力が吸われてる…命が削られてる…\nすぐ体が変になるしお金まで減ってる！<BREAK>",
       "text": null
     },
     {
@@ -3006,13 +3006,13 @@
     {
       "offset": "0x18F2A",
       "type": "center",
-      "source": "エナジードレイン？！<STYLE:0>\n\n吸い取る 吸い取る\nオダのエナジー\n\n弱る 弱る オダのパワー\n\nドレイン ドレイン\nオダのエナジー\n\n下がる 下がる オダのレベル<BREAK>",
+      "source": "<STYLE:3>エナジードレイン？！<STYLE:0>\n\n吸い取る 吸い取る\nオダのエナジー\n\n弱る 弱る オダのパワー\n\nドレイン ドレイン\nオダのエナジー\n\n下がる 下がる オダのレベル<BREAK>",
       "text": null
     },
     {
       "offset": "0x18FD6",
       "type": "center",
-      "source": "体調不良<STYLE:0>\n\n毒で ズキズキ\n\n麻痺で ピリピリ\n\n石化で ガチガチ\n\n封魔で ダンマリ\n\n恐怖で ブルブル<BREAK>",
+      "source": "<STYLE:3>体調不良<STYLE:0>\n\n毒で ズキズキ\n\n麻痺で ピリピリ\n\n石化で ガチガチ\n\n封魔で ダンマリ\n\n恐怖で ブルブル<BREAK>",
       "text": null
     },
     {
@@ -3024,7 +3024,7 @@
     {
       "offset": "0x190DC",
       "type": "center",
-      "source": "オダは恐怖に怯える<STYLE:0>\n\n「怖くなんかないよ」\nいくら優しい言葉をかけられたって\n怖いものは怖いんだ\n\nそう、何も強がることなんてない\n怖い時は正直に言ってしまおう\n「オダは怖いんだ」<BREAK>",
+      "source": "<STYLE:3>オダは恐怖に怯える<STYLE:0>\n\n「怖くなんかないよ」\nいくら優しい言葉をかけられたって\n怖いものは怖いんだ\n\nそう、何も強がることなんてない\n怖い時は正直に言ってしまおう\n「オダは怖いんだ」<BREAK>",
       "text": null
     },
     {
@@ -3036,7 +3036,7 @@
     {
       "offset": "0x191F8",
       "type": "center",
-      "source": "憑かれちゃった！<STYLE:0>\n\n死神君 死神君 死神君\n死神君に憑かれちゃった\n\n抵抗力がなくなって\nダメージいっぱいアイタタタ<BREAK>",
+      "source": "<STYLE:3>憑かれちゃった！<STYLE:0>\n\n死神君 死神君 死神君\n死神君に憑かれちゃった\n\n抵抗力がなくなって\nダメージいっぱいアイタタタ<BREAK>",
       "text": null
     },
     {
@@ -3054,7 +3054,7 @@
     {
       "offset": "0x19418",
       "type": "center",
-      "source": "消滅－LOST－<STYLE:0>\n\n死んだ あなた\n大好きな大好きな あなた\n\n死んだら嫌だ\n\nだからオダは 蘇生する\n\n生き返ってくで！\n願いを込めて カテドラル（還魂）<BREAK>",
+      "source": "<STYLE:3>消滅－LOST－<STYLE:0>\n\n死んだ あなた\n大好きな大好きな あなた\n\n死んだら嫌だ\n\nだからオダは 蘇生する\n\n生き返ってくで！\n願いを込めて カテドラル（還魂）<BREAK>",
       "text": null
     },
     {
@@ -3090,19 +3090,19 @@
     {
       "offset": "0x19626",
       "type": "center",
-      "source": "最終章 旅の詩<STYLE:0>\n\n<B081>宝箱はカラフル\n<B082>魔物の残骸＝合成素材\n<B083>羊皮紙あつめよ。\n<B084>死神君ゾロゾロ\n<B085>迷宮ミステリー ～地形が！～\n<B086>とんでもワープ\n<B087>スリルいっぱい、罠いっぱい\n<B0BA>追いかけっこモンスター\n表紙へ戻る\n詩集を閉じる\n",
+      "source": "<STYLE:3>最終章 旅の詩<STYLE:0>\n\n<FFC0><STYLE:4><B081>宝箱はカラフル\n<FFC1><STYLE:4><B082>魔物の残骸＝合成素材\n<FFC2><STYLE:4><B083>羊皮紙あつめよ。\n<FFC3><STYLE:4><B084>死神君ゾロゾロ\n<FFC4><STYLE:4><B085>迷宮ミステリー ～地形が！～\n<FFC5><STYLE:4><B086>とんでもワープ\n<FFC6><STYLE:4><B087>スリルいっぱい、罠いっぱい\n<FFC7><STYLE:4><B0BA>追いかけっこモンスター\n<FFC8><STYLE:7>表紙へ戻る\n<FFC9>詩集を閉じる\n",
       "text": null
     },
     {
       "offset": "0x197A0",
       "type": "center",
-      "source": "宝箱はカラフル<STYLE:0>\n\nお宝いっぱい宝箱\n\n赤・青・黄色、黒もある\n\nとってもカラフル宝箱\n\n今日は何色 開けるかな？<BREAK>",
+      "source": "<STYLE:3>宝箱はカラフル<STYLE:0>\n\nお宝いっぱい宝箱\n\n赤・青・黄色、黒もある\n\nとってもカラフル宝箱\n\n今日は何色 開けるかな？<BREAK>",
       "text": null
     },
     {
       "offset": "0x19820",
       "type": "center",
-      "source": "青をオープン\nすんなり開いた！\n\n黄をオープン\nおっとカギつき！\n\n赤をオープン\nうっそ罠だど！\n\n黒をオープン\nうぐぐカギに罠まで！<BREAK>",
+      "source": "青をオープン\n    すんなり開いた！\n\n黄をオープン\n    おっとカギつき！\n\n赤をオープン\n     うっそ罠だど！\n\n黒をオープン\n  うぐぐカギに罠まで！<BREAK>",
       "text": null
     },
     {
@@ -3114,7 +3114,7 @@
     {
       "offset": "0x1994C",
       "type": "center",
-      "source": "魔物の残骸＝合成素材<STYLE:0>\n\n折ってやった！ 戦士の剣\n抜いてやった！ 僧侶の髪\n剃ってやった！ 侍のヒゲ\n\nいっぱいあるぞ 合成素材\n魔物の残骸 ぜーんぶOK<BREAK>",
+      "source": "<STYLE:3>魔物の残骸＝合成素材<STYLE:0>\n\n折ってやった！ 戦士の剣\n抜いてやった！ 僧侶の髪\n剃ってやった！ 侍のヒゲ\n\nいっぱいあるぞ 合成素材\n魔物の残骸 ぜーんぶOK<BREAK>",
       "text": null
     },
     {
@@ -3126,7 +3126,7 @@
     {
       "offset": "0x19A7A",
       "type": "center",
-      "source": "羊皮紙あつめよ。<STYLE:0>\n\n何枚あつめられるかな？\n\n仮睡、示標、治痺…\n色んな名前がついてる。\n\nデス、リゲル、アルク…\n色んなすごい人が書いてる。<BREAK>",
+      "source": "<STYLE:3>羊皮紙あつめよ。<STYLE:0>\n\n何枚あつめられるかな？\n\n仮睡、示標、治痺…\n色んな名前がついてる。\n\nデス、リゲル、アルク…\n色んなすごい人が書いてる。<BREAK>",
       "text": null
     },
     {
@@ -3138,31 +3138,31 @@
     {
       "offset": "0x19BC4",
       "type": "center",
-      "source": "死神君ゾロゾロ<STYLE:0>\n\n迷宮に潜む イヤなヤツ\n\nとり憑いて弱らせてみたり\nとり憑いて殺してみたり\n\n死神君はとり憑くのが大好き\n\n死神君\n今日もゾロゾロ 迷宮をお散歩<BREAK>",
+      "source": "<STYLE:3>死神君ゾロゾロ<STYLE:0>\n\n迷宮に潜む イヤなヤツ\n\nとり憑いて弱らせてみたり\nとり憑いて殺してみたり\n\n死神君はとり憑くのが大好き\n\n死神君\n今日もゾロゾロ 迷宮をお散歩<BREAK>",
       "text": null
     },
     {
       "offset": "0x19C76",
       "type": "center",
-      "source": "すぐにとり憑く ニクいヤツ\n\nいつまでも迷宮に居座る冒険者とか\n\n死神君がこっそり決めてる\n縄張りに迷いこんだ冒険者とか\n\n死神君はそんなヤツが大好き\n\n死神君\n今日もドタバタ 追いかけっこ<BREAK>",
+      "source": "すぐにとり憑く ニクいヤツ\n\nいつまでも迷宮に居座る冒険者とか\n\n死神君がこっそり決めてる\n  縄張りに迷いこんだ冒険者とか\n\n死神君はそんなヤツが大好き\n\n死神君\n今日もドタバタ 追いかけっこ<BREAK>",
       "text": null
     },
     {
       "offset": "0x19D4C",
       "type": "center",
-      "source": "迷宮ミステリー ～地形が！～<STYLE:0>\n\nこないだ来た時とも\nこないだのこないだ来た時とも\nこないだのこないだのこないだとも\n\n違う…違う違う違う…\n違うんだよ！\n\n地形が！！！<BREAK>",
+      "source": "<STYLE:3>迷宮ミステリー ～地形が！～<STYLE:0>\n\nこないだ来た時とも\nこないだのこないだ来た時とも\nこないだのこないだのこないだとも\n\n違う…違う違う違う…\n違うんだよ！\n\n地形が！！！<BREAK>",
       "text": null
     },
     {
       "offset": "0x19E02",
       "type": "center",
-      "source": "地形がコロコロ（なんで？！）\n不思議なフロアー\n\n魔法石がゴロゴロ（ラッキー！）\nお得なフロアー\n\n地下3、7、9階は\nミステリーダンジョン<BREAK>",
+      "source": "地形がコロコロ（なんで？！）\n        不思議なフロアー\n\n魔法石がゴロゴロ（ラッキー！）\n         お得なフロアー\n\n地下3、7、9階は\nミステリーダンジョン<BREAK>",
       "text": null
     },
     {
       "offset": "0x19EBE",
       "type": "center",
-      "source": "とんでもワープ<STYLE:0>\n\n地下一階の下は地下二階\n地下二階の下は地下三階\nそれがフツー、それが当たり前\n\nなのに… こりゃとんでもない！\n\n地下一階の次が地下五階だったり\n地下二階の次が地下四階だったりする<BREAK>",
+      "source": "<STYLE:3>とんでもワープ<STYLE:0>\n\n地下一階の下は地下二階\n地下二階の下は地下三階\nそれがフツー、それが当たり前\n\nなのに… こりゃとんでもない！\n\n地下一階の次が地下五階だったり\n地下二階の次が地下四階だったりする<BREAK>",
       "text": null
     },
     {
@@ -3174,13 +3174,13 @@
     {
       "offset": "0x1A03E",
       "type": "center",
-      "source": "スリルいっぱい、罠いっぱい<STYLE:0>\n\n月曜日\nスピア<STYLE:0>に刺されてチクリと痛むダ…\nこりゃ、お先真っ暗<STYLE:1>ダークフォグ<STYLE:0>\n\n火曜日\nヒアリング・ブラスター<STYLE:0>で耳がキンキン\nしてワケわかんないうちに、\n落とし穴<STYLE:0>に落ちちゃっただど…<BREAK>",
+      "source": "<STYLE:3>スリルいっぱい、罠いっぱい<STYLE:0>\n\n月曜日\n<STYLE:1>スピア<STYLE:0>に刺されてチクリと痛むダ…\nこりゃ、お先真っ暗<STYLE:1>ダークフォグ<STYLE:0>\n\n火曜日\n<STYLE:1>ヒアリング・ブラスター<STYLE:0>で耳がキンキン\nしてワケわかんないうちに、\n<STYLE:1>落とし穴<STYLE:0>に落ちちゃっただど…<BREAK>",
       "text": null
     },
     {
       "offset": "0x1A128",
       "type": "center",
-      "source": "水曜日\nクロスボウ・ボルト<STYLE:0>が飛んで来て\n痛みにうずくまっていたら、上からの\n落盤で皆<STYLE:0>、被害をうけてしまっだ\n\n木曜日\n怨霊から<STYLE:1>MPドレイン<STYLE:0>をくらって\nMPがなくなったばかりのところなのに\nポイズン・ガス<STYLE:0>で毒におかされた…<BREAK>",
+      "source": "水曜日\n<STYLE:1>クロスボウ・ボルト<STYLE:0>が飛んで来て\n痛みにうずくまっていたら、上からの\n<STYLE:1>落盤で皆<STYLE:0>、被害をうけてしまっだ\n\n木曜日\n怨霊から<STYLE:1>MPドレイン<STYLE:0>をくらって\nMPがなくなったばかりのところなのに\n<STYLE:1>ポイズン・ガス<STYLE:0>で毒におかされた…<BREAK>",
       "text": null
     },
     {
@@ -3198,7 +3198,7 @@
     {
       "offset": "0x1A308",
       "type": "center",
-      "source": "追いかけっこモンスター<STYLE:0>\n\nぐるぐる、ぐるぐる\n今日もアイツと追いかけっこ\n\n歩いてるやつとか\n飛んでるやつとか\nばったり出会ったら\nコテンパン<BREAK>",
+      "source": "<STYLE:3>追いかけっこモンスター<STYLE:0>\n\nぐるぐる、ぐるぐる\n今日もアイツと追いかけっこ\n\n歩いてるやつとか\n飛んでるやつとか\nばったり出会ったら\nコテンパン<BREAK>",
       "text": null
     },
     {
@@ -3210,13 +3210,13 @@
     {
       "offset": "0x1A436",
       "type": "center",
-      "source": "マイルフィックのスマイリー商店<STYLE:0>\n\n初めて御利用される方は\n<FB01>必ず<FB00>説明をお読みください。\n\n買い物をする\n説明を読む\nやめる\n",
+      "source": "<STYLE:3>マイルフィックのスマイリー商店<STYLE:0>\n\n初めて御利用される方は\n<FB01>必ず<FB00>説明をお読みください。\n\n<FFC0>買い物をする\n<FFC1>説明を読む\n<FFC2>やめる\n",
       "text": null
     },
     {
       "offset": "0x1A4C8",
       "type": "center",
-      "source": "スマイリー商店 商品リスト<STYLE:0>\n\n転移の薬   500ゴールド\n封傷の薬   250ゴールド\n解毒の薬   250ゴールド\n快癒の薬 20000ゴールド\n示標の杖   900ゴールド\nやめる\n",
+      "source": "<STYLE:3>スマイリー商店 商品リスト<STYLE:0>\n\n<FFC0>転移の薬   500ゴールド\n<FFC1>封傷の薬   250ゴールド\n<FFC2>解毒の薬   250ゴールド\n<FFC3>快癒の薬 20000ゴールド\n<FFC4>示標の杖   900ゴールド\n<FFC5>やめる\n",
       "text": null
     },
     {
@@ -3234,7 +3234,7 @@
     {
       "offset": "0x1A706",
       "type": "center",
-      "source": "良識ある行動をお願いします。\n違反された場合、命の保証は\nいたしかねますのでご了承ください。\n\n店主 マイルフィック<BREAK>",
+      "source": "良識ある行動をお願いします。\n違反された場合、命の保証は\nいたしかねますのでご了承ください。\n\n        店主 マイルフィック<BREAK>",
       "text": null
     },
     {
@@ -3300,37 +3300,37 @@
     {
       "offset": "0x1A8FC",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
       "offset": "0x1A93E",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
       "offset": "0x1A980",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
       "offset": "0x1A9C2",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
       "offset": "0x1AA04",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
       "offset": "0x1AA46",
       "type": "center",
-      "source": "所持金が足りません。\n商品を元の場所に戻しますか？\n\nは い\nいいえ\n",
+      "source": "所持金が足りません。\n商品を元の場所に戻しますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -3348,19 +3348,19 @@
     {
       "offset": "0x1AB18",
       "type": "center",
-      "source": "「そなたは、その品をどうする気か。\n代価を支払う事なく、自分の\n所持品に加えようというのか…？」",
+      "source": "<STYLE:2>「そなたは、その品をどうする気か。\n 代価を支払う事なく、自分の\n 所持品に加えようというのか…？」",
       "text": null
     },
     {
       "offset": "0x1AB86",
       "type": "center",
-      "source": "謎の声が問いかける…\nどうやら返答を求めているよです。\n\n謝って商品を返す\n強引に持ち去る\n",
+      "source": "謎の声が問いかける…\nどうやら返答を求めているよです。\n\n<FFC0>謝って商品を返す\n<FFC1>強引に持ち去る\n",
       "text": null
     },
     {
       "offset": "0x1ABEA",
       "type": "center",
-      "source": "「わかればよいのだ」",
+      "source": "<STYLE:2>「わかればよいのだ」",
       "text": null
     },
     {
@@ -3372,7 +3372,7 @@
     {
       "offset": "0x1AC68",
       "type": "center",
-      "source": "「掟を破る者に、\n我等は制裁を加える」",
+      "source": "<STYLE:2>「掟を破る者に、\n 我等は制裁を加える」",
       "text": null
     },
     {
@@ -3396,13 +3396,13 @@
     {
       "offset": "0x1AE2E",
       "type": "center",
-      "source": "男「はぁあーっ…」",
+      "source": "<STYLE:2>男「はぁあーっ…」",
       "text": null
     },
     {
       "offset": "0x1AE44",
       "type": "center",
-      "source": "男「今日もさっぱりだ…」",
+      "source": "<STYLE:2>男「今日もさっぱりだ…」",
       "text": null
     },
     {
@@ -3438,7 +3438,7 @@
     {
       "offset": "0x1B0A2",
       "type": "dialog",
-      "source": "露天商「おおっ、お客さんは…！\nちゃーんと憶えてるぜ！\nいらっしゃい！」",
+      "source": "露天商「おおっ、お客さんは…！\n<FFD3>ちゃーんと憶えてるぜ！\n<FFD3>いらっしゃい！」",
       "text": null
     },
     {
@@ -3450,43 +3450,43 @@
     {
       "offset": "0x1B110",
       "type": "dialog",
-      "source": "露天商「生け捕りにした魔物を\n販売しているんだ！」",
+      "source": "露天商「生け捕りにした魔物を\n<FFD3>販売しているんだ！」",
       "text": null
     },
     {
       "offset": "0x1B146",
       "type": "dialog",
-      "source": "露天商「後はお客さんがブッ殺して\n合成素材をとってくれ！」",
+      "source": "露天商「後はお客さんがブッ殺して\n<FFD3>合成素材をとってくれ！」",
       "text": null
     },
     {
       "offset": "0x1B184",
       "type": "dialog",
-      "source": "露天商「まあ、なんだ。\n要するに思い通りの合成素材を\n効率よく集める！」",
+      "source": "露天商「まあ、なんだ。\n<FFD3>要するに思い通りの合成素材を\n<FFD3>効率よく集める！」",
       "text": null
     },
     {
       "offset": "0x1B1D2",
       "type": "dialog",
-      "source": "露天商「そのお手伝いさんと\n思ってくれ！」",
+      "source": "露天商「そのお手伝いさんと\n<FFD3>思ってくれ！」",
       "text": null
     },
     {
       "offset": "0x1B200",
       "type": "dialog",
-      "source": "露天商「さあ、試しになんか\n買ってみないか？」",
+      "source": "露天商「さあ、試しになんか\n<FFD3>買ってみないか？」",
       "text": null
     },
     {
       "offset": "0x1B232",
       "type": "dialog",
-      "source": "露天商「…おお、そうそう！\nアイツら威勢がいいから\n飛び掛かってきやがるからな」",
+      "source": "露天商「…おお、そうそう！\n<FFD3>アイツら威勢がいいから\n<FFD3>飛び掛かってきやがるからな」",
       "text": null
     },
     {
       "offset": "0x1B288",
       "type": "dialog",
-      "source": "露天商「放した途端に襲ってくる\nこと間違いなしだから\n戦闘態勢をとっとけよ！」",
+      "source": "露天商「放した途端に襲ってくる\n<FFD3>こと間違いなしだから\n<FFD3>戦闘態勢をとっとけよ！」",
       "text": null
     },
     {
@@ -3498,7 +3498,7 @@
     {
       "offset": "0x1B2FC",
       "type": "center",
-      "source": "本日のメニュー\n\nオーク    5匹セット 160G\nピクシー   3匹セット 195G\nボギーキャット3匹セット 162G\n買わない\n",
+      "source": "本日のメニュー\n\n<FFC0>オーク    5匹セット 160G\n<FFC1>ピクシー   3匹セット 195G\n<FFC2>ボギーキャット3匹セット 162G\n<FFC3>買わない\n",
       "text": null
     },
     {
@@ -3510,7 +3510,7 @@
     {
       "offset": "0x1B3CA",
       "type": "dialog",
-      "source": "露天商「なぁんだ、\n買ってくれないの？！」",
+      "source": "露天商「なぁんだ、\n<FFD3>買ってくれないの？！」",
       "text": null
     },
     {
@@ -3528,7 +3528,7 @@
     {
       "offset": "0x1B432",
       "type": "dialog",
-      "source": "露天商「また気が向いたら\n買いに来てくれよな！」",
+      "source": "露天商「また気が向いたら\n<FFD3>買いに来てくれよな！」",
       "text": null
     },
     {
@@ -3540,7 +3540,7 @@
     {
       "offset": "0x1B488",
       "type": "dialog",
-      "source": "露天商「なぁんだ、\nお金足りないじゃん？！」",
+      "source": "露天商「なぁんだ、\n<FFD3>お金足りないじゃん？！」",
       "text": null
     },
     {
@@ -3558,7 +3558,7 @@
     {
       "offset": "0x1B4F2",
       "type": "dialog",
-      "source": "露天商「また気が向いたら\n買いに来てくれよな！」",
+      "source": "露天商「また気が向いたら\n<FFD3>買いに来てくれよな！」",
       "text": null
     },
     {
@@ -3570,7 +3570,7 @@
     {
       "offset": "0x1B546",
       "type": "dialog",
-      "source": "露天商「はい、オーク5匹セットね\nまいどありー！」",
+      "source": "露天商「はい、オーク5匹セットね\n<FFD3>まいどありー！」",
       "text": null
     },
     {
@@ -3594,7 +3594,7 @@
     {
       "offset": "0x1B670",
       "type": "dialog",
-      "source": "露天商「はい、ピクシー3匹セットね\nまいどありー！」",
+      "source": "露天商「はい、ピクシー3匹セットね\n<FFD3>まいどありー！」",
       "text": null
     },
     {
@@ -3618,7 +3618,7 @@
     {
       "offset": "0x1B79E",
       "type": "dialog",
-      "source": "露天商「はい、ボギーキャット\n3匹セットね、まいどありー！」",
+      "source": "露天商「はい、ボギーキャット\n<FFD3>3匹セットね、まいどありー！」",
       "text": null
     },
     {
@@ -3648,13 +3648,13 @@
     {
       "offset": "0x1B962",
       "type": "dialog",
-      "source": "露天商「あっちゃー…\nこんなはずじゃあ\nなかったのになあ…」",
+      "source": "露天商「あっちゃー…\n<FFD3>こんなはずじゃあ\n<FFD3>なかったのになあ…」",
       "text": null
     },
     {
       "offset": "0x1B9A4",
       "type": "dialog",
-      "source": "露天商「お客さん、\n手加減しないから…」",
+      "source": "露天商「お客さん、\n<FFD3>手加減しないから…」",
       "text": null
     },
     {
@@ -3666,7 +3666,7 @@
     {
       "offset": "0x1BA08",
       "type": "dialog",
-      "source": "露天商「あはは…冗談、冗談！\nほら、代金は返すって！」",
+      "source": "露天商「あはは…冗談、冗談！\n<FFD3>ほら、代金は返すって！」",
       "text": null
     },
     {
@@ -3690,13 +3690,13 @@
     {
       "offset": "0x1BB10",
       "type": "dialog",
-      "source": "露天商「あっちゃー…\nこんなはずじゃあ\nなかったのになあ…」",
+      "source": "露天商「あっちゃー…\n<FFD3>こんなはずじゃあ\n<FFD3>なかったのになあ…」",
       "text": null
     },
     {
       "offset": "0x1BB52",
       "type": "dialog",
-      "source": "露天商「お客さん、\n手加減しないから…」",
+      "source": "露天商「お客さん、\n<FFD3>手加減しないから…」",
       "text": null
     },
     {
@@ -3708,7 +3708,7 @@
     {
       "offset": "0x1BBB6",
       "type": "dialog",
-      "source": "露天商「あはは…冗談、冗談！\nほら、代金は返すって！」",
+      "source": "露天商「あはは…冗談、冗談！\n<FFD3>ほら、代金は返すって！」",
       "text": null
     },
     {
@@ -3732,13 +3732,13 @@
     {
       "offset": "0x1BCFE",
       "type": "dialog",
-      "source": "露天商「あっちゃー…\nこんなはずじゃあ\nなかったのになあ…」",
+      "source": "露天商「あっちゃー…\n<FFD3>こんなはずじゃあ\n<FFD3>なかったのになあ…」",
       "text": null
     },
     {
       "offset": "0x1BD40",
       "type": "dialog",
-      "source": "露天商「お客さん、\n手加減しないから…」",
+      "source": "露天商「お客さん、\n<FFD3>手加減しないから…」",
       "text": null
     },
     {
@@ -3750,7 +3750,7 @@
     {
       "offset": "0x1BDA4",
       "type": "dialog",
-      "source": "露天商「あはは…冗談、冗談！\nほら、代金は返すって！」",
+      "source": "露天商「あはは…冗談、冗談！\n<FFD3>ほら、代金は返すって！」",
       "text": null
     },
     {
@@ -3762,19 +3762,19 @@
     {
       "offset": "0x1BE04",
       "type": "dialog",
-      "source": "露天商「あーあ…俺の魔物屋、\nうまくいくと思ったのになあ」",
+      "source": "露天商「あーあ…俺の魔物屋、\n<FFD3>うまくいくと思ったのになあ」",
       "text": null
     },
     {
       "offset": "0x1BE42",
       "type": "dialog",
-      "source": "露天商「合成素材のための商売なんて\n誰もやってないからさー」",
+      "source": "露天商「合成素材のための商売なんて\n<FFD3>誰もやってないからさー」",
       "text": null
     },
     {
       "offset": "0x1BE82",
       "type": "dialog",
-      "source": "露天商「これからは絶対あたるって\n自信あるんだけど…」",
+      "source": "露天商「これからは絶対あたるって\n<FFD3>自信あるんだけど…」",
       "text": null
     },
     {
@@ -3786,7 +3786,7 @@
     {
       "offset": "0x1BEFE",
       "type": "dialog",
-      "source": "オーク\n<FB03>あ…おだ…おだ…",
+      "source": "オーク\n<FB03>     あ…おだ…おだ…",
       "text": null
     },
     {
@@ -3798,43 +3798,43 @@
     {
       "offset": "0x1BF48",
       "type": "dialog",
-      "source": "露天商「んあ？\nオークの小僧がこんな所に\n何の用だ？」",
+      "source": "露天商「んあ？\n<FFD3>オークの小僧がこんな所に\n<FFD3>何の用だ？」",
       "text": null
     },
     {
       "offset": "0x1BF84",
       "type": "dialog",
-      "source": "オーク\n<FB03>おだ…もうすぐ…と…ともだちの\nかとりぃぬぢゃんがたんじょうびで…",
+      "source": "オーク\n<FB03>  おだ…もうすぐ…と…ともだちの\n かとりぃぬぢゃんがたんじょうびで…",
       "text": null
     },
     {
       "offset": "0x1BFD8",
       "type": "dialog",
-      "source": "オーク\n<FB03>あ…かとりぃぬぢゃんっでいうのわ、\nろ…ろってぃんぐ…",
+      "source": "オーク\n<FB03> あ…かとりぃぬぢゃんっでいうのわ、\n     ろ…ろってぃんぐ…",
       "text": null
     },
     {
       "offset": "0x1C026",
       "type": "dialog",
-      "source": "オーク\n<FB03>ろってぃんぐこーぷすの\nおんなのこなんだな……",
+      "source": "オーク\n<FB03>    ろってぃんぐこーぷすの\n    おんなのこなんだな……",
       "text": null
     },
     {
       "offset": "0x1C070",
       "type": "dialog",
-      "source": "オーク\n<FB03>そでで…かとりぃぬぢゃんが\nぷれぜんどを…ちょうだいっで…",
+      "source": "オーク\n<FB03>   そでで…かとりぃぬぢゃんが\n  ぷれぜんどを…ちょうだいっで…",
       "text": null
     },
     {
       "offset": "0x1C0C0",
       "type": "dialog",
-      "source": "オーク\n<FB03>だ…だげど…おだ…\nおこづかい…もってないだ…",
+      "source": "オーク\n<FB03>     だ…だげど…おだ…\n   おこづかい…もってないだ…",
       "text": null
     },
     {
       "offset": "0x1C10A",
       "type": "dialog",
-      "source": "オーク\n<FB03>だがら…こで…\nこで…かってほしいだ…",
+      "source": "オーク\n<FB03>      だがら…こで…\n    こで…かってほしいだ…",
       "text": null
     },
     {
@@ -3846,67 +3846,67 @@
     {
       "offset": "0x1C18A",
       "type": "dialog",
-      "source": "オーク\n<FB03>おだ…すごく…よわいから…\nにんげんに…いぢめらでるだな…",
+      "source": "オーク\n<FB03>   おだ…すごく…よわいから…\n  にんげんに…いぢめらでるだな…",
       "text": null
     },
     {
       "offset": "0x1C1DA",
       "type": "dialog",
-      "source": "オーク\n<FB03>そでで…おだ…いっづも…けんを\nおられで…いっぱい…おれてる…",
+      "source": "オーク\n<FB03>  そでで…おだ…いっづも…けんを\n  おられで…いっぱい…おれてる…",
       "text": null
     },
     {
       "offset": "0x1C22C",
       "type": "dialog",
-      "source": "オーク\n<FB03>だ…だげど…このけん…\nおれだけんは…おれでるけども…",
+      "source": "オーク\n<FB03>    だ…だげど…このけん…\n  おれだけんは…おれでるけども…",
       "text": null
     },
     {
       "offset": "0x1C27A",
       "type": "dialog",
-      "source": "オーク\n<FB03>このけんは…なげだら…\nほのおのまほうになるだな…",
+      "source": "オーク\n<FB03>    このけんは…なげだら…\n   ほのおのまほうになるだな…",
       "text": null
     },
     {
       "offset": "0x1C2C6",
       "type": "dialog",
-      "source": "オーク\n<FB03>だがら…にんげんが\nほしがるっで…きいだ…",
+      "source": "オーク\n<FB03>     だがら…にんげんが\n    ほしがるっで…きいだ…",
       "text": null
     },
     {
       "offset": "0x1C30E",
       "type": "dialog",
-      "source": "オーク\n<FB03>おだ…まちにいきたいだが…\nまちは…に…にんげんだらけだ…",
+      "source": "オーク\n<FB03>   おだ…まちにいきたいだが…\n  まちは…に…にんげんだらけだ…",
       "text": null
     },
     {
       "offset": "0x1C35E",
       "type": "dialog",
-      "source": "オーク\n<FB03>わるい…にんげん…おだを…\nい…いぢめるがら…",
+      "source": "オーク\n<FB03>   わるい…にんげん…おだを…\n     い…いぢめるがら…",
       "text": null
     },
     {
       "offset": "0x1C3A8",
       "type": "dialog",
-      "source": "オーク\n<FB03>おだ…こわぐで…まち…いけないだ…",
+      "source": "オーク\n<FB03> おだ…こわぐで…まち…いけないだ…",
       "text": null
     },
     {
       "offset": "0x1C3D8",
       "type": "dialog",
-      "source": "オーク\n<FB03>いっこ100ごーるどで\nかっでほぢいのだ…",
+      "source": "オーク\n<FB03>    いっこ100ごーるどで\n     かっでほぢいのだ…",
       "text": null
     },
     {
       "offset": "0x1C420",
       "type": "dialog",
-      "source": "オーク\n<FB03>5こあるがら…500ごーるど…\nか…かえっこ…してほしいだな…",
+      "source": "オーク\n<FB03>  5こあるがら…500ごーるど…\n  か…かえっこ…してほしいだな…",
       "text": null
     },
     {
       "offset": "0x1C472",
       "type": "dialog",
-      "source": "オーク\n<FB03>おねがいしますだ…",
+      "source": "オーク\n<FB03>     おねがいしますだ…",
       "text": null
     },
     {
@@ -3924,13 +3924,13 @@
     {
       "offset": "0x1C4E0",
       "type": "dialog",
-      "source": "露天商「よし、わかった！\n500ゴールドだな！」",
+      "source": "露天商「よし、わかった！\n<FFD3>500ゴールドだな！」",
       "text": null
     },
     {
       "offset": "0x1C514",
       "type": "dialog",
-      "source": "露天商「ほらよ、その剣をよこしな。\n俺が買い取ってやるよ！」",
+      "source": "露天商「ほらよ、その剣をよこしな。\n<FFD3>俺が買い取ってやるよ！」",
       "text": null
     },
     {
@@ -3942,13 +3942,13 @@
     {
       "offset": "0x1C5A8",
       "type": "dialog",
-      "source": "オーク\n<FB03>ほっ…！ ほんとだのか…！\nおだ…おだ…おだ…",
+      "source": "オーク\n<FB03>   ほっ…！ ほんとだのか…！\n     おだ…おだ…おだ…",
       "text": null
     },
     {
       "offset": "0x1C5F2",
       "type": "dialog",
-      "source": "オーク\n<FB03><FC05>うれしいだーーーー！！！",
+      "source": "オーク\n<FB03><FC05> うれしいだーーーー！！！",
       "text": null
     },
     {
@@ -3960,7 +3960,7 @@
     {
       "offset": "0x1C664",
       "type": "dialog",
-      "source": "露天商「わっ！ わかった！\nわかったから、俺の服で\n鼻水をふくのだけはやめろ！」",
+      "source": "露天商「わっ！ わかった！\n<FFD3>わかったから、俺の服で\n<FFD3>鼻水をふくのだけはやめろ！」",
       "text": null
     },
     {
@@ -3978,37 +3978,37 @@
     {
       "offset": "0x1C720",
       "type": "dialog",
-      "source": "オーク\n<FB03>お…おだ…<FB01><FB09>ふらんそわ<FB00>…",
+      "source": "オーク\n<FB03>    お…おだ…<FB01><FB09>ふらんそわ<FB00>…",
       "text": null
     },
     {
       "offset": "0x1C750",
       "type": "dialog",
-      "source": "フランソワ\n<FB03>しんだ…かあちゃんが…\nつけでくでだ…",
+      "source": "フランソワ\n<FB03>    しんだ…かあちゃんが…\n      つけでくでだ…",
       "text": null
     },
     {
       "offset": "0x1C79A",
       "type": "dialog",
-      "source": "フランソワ\n<FB03>に…にんげんに…まけないように\nごーじゃすな…にんげんのなまえだ…",
+      "source": "フランソワ\n<FB03>  に…にんげんに…まけないように\n ごーじゃすな…にんげんのなまえだ…",
       "text": null
     },
     {
       "offset": "0x1C7F2",
       "type": "dialog",
-      "source": "フランソワ\n<FB03>おだ…いま…なまえにまけでる…",
+      "source": "フランソワ\n<FB03>  おだ…いま…なまえにまけでる…",
       "text": null
     },
     {
       "offset": "0x1C824",
       "type": "dialog",
-      "source": "フランソワ\n<FB03>だげど…いづか…なまえみたいに\nごーじゃすな…オークになるだ…",
+      "source": "フランソワ\n<FB03>  だげど…いづか…なまえみたいに\n  ごーじゃすな…オークになるだ…",
       "text": null
     },
     {
       "offset": "0x1C87A",
       "type": "dialog",
-      "source": "露天商「そうか、フランソワか！\nほらよ、500ゴールド！」",
+      "source": "露天商「そうか、フランソワか！\n<FFD3>ほらよ、500ゴールド！」",
       "text": null
     },
     {
@@ -4026,19 +4026,19 @@
     {
       "offset": "0x1C92C",
       "type": "dialog",
-      "source": "フランソワ\n<FB03>あ…ありがとだな…",
+      "source": "フランソワ\n<FB03>     あ…ありがとだな…",
       "text": null
     },
     {
       "offset": "0x1C958",
       "type": "dialog",
-      "source": "露天商「おう！\nまた買い取ってほしけりゃ\nいつでも持ってこいよ！」",
+      "source": "露天商「おう！\n<FFD3>また買い取ってほしけりゃ\n<FFD3>いつでも持ってこいよ！」",
       "text": null
     },
     {
       "offset": "0x1C9A0",
       "type": "dialog",
-      "source": "フランソワ\n<FB03>い…いいにんげんだな…\nおだ…う…うれしいだ…",
+      "source": "フランソワ\n<FB03>    い…いいにんげんだな…\n    おだ…う…うれしいだ…",
       "text": null
     },
     {
@@ -4056,25 +4056,25 @@
     {
       "offset": "0x1CA72",
       "type": "dialog",
-      "source": "露天商「よし、決めた！\n魔物屋は今日で廃業だ！」",
+      "source": "露天商「よし、決めた！\n<FFD3>魔物屋は今日で廃業だ！」",
       "text": null
     },
     {
       "offset": "0x1CAA6",
       "type": "dialog",
-      "source": "露天商「やっとわかったぜ…\nあのオークのおかげでな！」",
+      "source": "露天商「やっとわかったぜ…\n<FFD3>あのオークのおかげでな！」",
       "text": null
     },
     {
       "offset": "0x1CAE0",
       "type": "dialog",
-      "source": "露天商「さあ、とっとと\n店じまいして、次の店の\n準備を始めなきゃな！」",
+      "source": "露天商「さあ、とっとと\n<FFD3>店じまいして、次の店の\n<FFD3>準備を始めなきゃな！」",
       "text": null
     },
     {
       "offset": "0x1CB2C",
       "type": "dialog",
-      "source": "露天商「また近いうちにここで\n店を開くからさ」",
+      "source": "露天商「また近いうちにここで\n<FFD3>店を開くからさ」",
       "text": null
     },
     {
@@ -4128,25 +4128,25 @@
     {
       "offset": "0x1CD26",
       "type": "center",
-      "source": "露天商「魔物屋へようこそ！」",
+      "source": "<STYLE:2>露天商「魔物屋へようこそ！」",
       "text": null
     },
     {
       "offset": "0x1CD46",
       "type": "dialog",
-      "source": "露天商「お客さんさー、\n前も来てくれただろ？」",
+      "source": "露天商「お客さんさー、\n<FFD3>前も来てくれただろ？」",
       "text": null
     },
     {
       "offset": "0x1CD78",
       "type": "dialog",
-      "source": "露天商「いやー、もう\nバッチリ覚えてるって！」",
+      "source": "露天商「いやー、もう\n<FFD3>バッチリ覚えてるって！」",
       "text": null
     },
     {
       "offset": "0x1CDAA",
       "type": "dialog",
-      "source": "露天商「どうだい？\n今度こそ、買わない？」",
+      "source": "露天商「どうだい？\n<FFD3>今度こそ、買わない？」",
       "text": null
     },
     {
@@ -4170,37 +4170,37 @@
     {
       "offset": "0x1CEBC",
       "type": "dialog",
-      "source": "石積みオーク\n<FB03><FC05>…んが？",
+      "source": "石積みオーク\n<FB03>      <FC05>…んが？",
       "text": null
     },
     {
       "offset": "0x1CEE4",
       "type": "dialog",
-      "source": "石積みオーク\n<FB03>オマエもオダと一緒に、\n石積みたいんだか？",
+      "source": "石積みオーク\n<FB03>    オマエもオダと一緒に、\n     石積みたいんだか？",
       "text": null
     },
     {
       "offset": "0x1CF32",
       "type": "center",
-      "source": "一緒に石を積みたいですか？\n\n石をわけてほしい\nは い\nいいえ\n",
+      "source": "一緒に石を積みたいですか？\n\n<FFC0>石をわけてほしい\n<FFC1>は い\n<FFC2>いいえ\n",
       "text": null
     },
     {
       "offset": "0x1CF8E",
       "type": "center",
-      "source": "一緒に石を積みたいですか？\n\nは い\nいいえ\n",
+      "source": "一緒に石を積みたいですか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
       "offset": "0x1CFC2",
       "type": "dialog",
-      "source": "石積みオーク\n<FB03>なんだーっ？！\nオマエ、変なヤツだなー",
+      "source": "石積みオーク\n<FB03>      なんだーっ？！\n    オマエ、変なヤツだなー",
       "text": null
     },
     {
       "offset": "0x1D00E",
       "type": "dialog",
-      "source": "石積みオーク\n<FB03>まっ、いっぱいあるから\n1こぐらいわけてやってやるぞ！",
+      "source": "石積みオーク\n<FB03>    まっ、いっぱいあるから\n  1こぐらいわけてやってやるぞ！",
       "text": null
     },
     {
@@ -4218,25 +4218,25 @@
     {
       "offset": "0x1D0DC",
       "type": "dialog",
-      "source": "石積みオーク\n<FB03>大事にしてくれよーう！",
+      "source": "石積みオーク\n<FB03>    大事にしてくれよーう！",
       "text": null
     },
     {
       "offset": "0x1D10C",
       "type": "dialog",
-      "source": "石積みオーク\n<FB03>オダ、<FB09><FB01>ゴッツ<FB00>っていうだよ！",
+      "source": "石積みオーク\n<FB03>   オダ、<FB09><FB01>ゴッツ<FB00>っていうだよ！",
       "text": null
     },
     {
       "offset": "0x1D144",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>石積んで迷宮作るのが夢だ！",
+      "source": "ゴッツ\n<FB03>   石積んで迷宮作るのが夢だ！",
       "text": null
     },
     {
       "offset": "0x1D170",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダずっとここで石積んでるから\n気が向いたら遊びに来いだよな！",
+      "source": "ゴッツ\n<FB03>  オダずっとここで石積んでるから\n  気が向いたら遊びに来いだよな！",
       "text": null
     },
     {
@@ -4248,31 +4248,31 @@
     {
       "offset": "0x1D20A",
       "type": "dialog",
-      "source": "石積みオーク\n<FB03>そっかそっかあー！\nオマエいいやつだなー！",
+      "source": "石積みオーク\n<FB03>     そっかそっかあー！\n    オマエいいやつだなー！",
       "text": null
     },
     {
       "offset": "0x1D258",
       "type": "dialog",
-      "source": "石積みオーク\n<FB03>オダ、石積んで迷宮作ってんだ！",
+      "source": "石積みオーク\n<FB03>  オダ、石積んで迷宮作ってんだ！",
       "text": null
     },
     {
       "offset": "0x1D28C",
       "type": "dialog",
-      "source": "石積みオーク\n<FB03>迷宮の中に迷宮があるなんて\nかっちょえーだど！",
+      "source": "石積みオーク\n<FB03>   迷宮の中に迷宮があるなんて\n     かっちょえーだど！",
       "text": null
     },
     {
       "offset": "0x1D2DC",
       "type": "dialog",
-      "source": "石積みオーク\n<FB03>あ、オダ、<FB09><FB01>ゴッツ<FB00>っていうだよ！\nおぼえといてくで！",
+      "source": "石積みオーク\n<FB03>  あ、オダ、<FB09><FB01>ゴッツ<FB00>っていうだよ！\n     おぼえといてくで！",
       "text": null
     },
     {
       "offset": "0x1D334",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>おお、そだべ！\n友情の証にこれやるだ！",
+      "source": "ゴッツ\n<FB03>      おお、そだべ！\n    友情の証にこれやるだ！",
       "text": null
     },
     {
@@ -4290,13 +4290,13 @@
     {
       "offset": "0x1D3F6",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>大事にしてくれよーう！",
+      "source": "ゴッツ\n<FB03>    大事にしてくれよーう！",
       "text": null
     },
     {
       "offset": "0x1D420",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダずっとここで石積んでるから\n気が向いたら遊びに来いだよな！",
+      "source": "ゴッツ\n<FB03>  オダずっとここで石積んでるから\n  気が向いたら遊びに来いだよな！",
       "text": null
     },
     {
@@ -4308,55 +4308,55 @@
     {
       "offset": "0x1D4BA",
       "type": "dialog",
-      "source": "石積みオーク\n<FB03>なんだー、冷やかしか！\nオマエ、嫌なヤツだどっ！",
+      "source": "石積みオーク\n<FB03>    なんだー、冷やかしか！\n   オマエ、嫌なヤツだどっ！",
       "text": null
     },
     {
       "offset": "0x1D50A",
       "type": "dialog",
-      "source": "石積みオーク\n<FB03>どーせオダのことバカにしてるだろ！\nオダが何してるか聞きもせずに！",
+      "source": "石積みオーク\n<FB03> どーせオダのことバカにしてるだろ！\n  オダが何してるか聞きもせずに！",
       "text": null
     },
     {
       "offset": "0x1D564",
       "type": "dialog",
-      "source": "石積みオーク\n<FB03>ジャラジャラリィーン！\n教えてやるど！",
+      "source": "石積みオーク\n<FB03>    ジャラジャラリィーン！\n      教えてやるど！",
       "text": null
     },
     {
       "offset": "0x1D5B0",
       "type": "dialog",
-      "source": "石積みオーク\n<FB03>まず、オダの名前！\nオダは<FB09><FB01>ゴッツ<FB00>っていう！",
+      "source": "石積みオーク\n<FB03>     まず、オダの名前！\n    オダは<FB09><FB01>ゴッツ<FB00>っていう！",
       "text": null
     },
     {
       "offset": "0x1D604",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そしてここからが重要ポイント！\nオダのやっていること！",
+      "source": "ゴッツ\n<FB03>  そしてここからが重要ポイント！\n    オダのやっていること！",
       "text": null
     },
     {
       "offset": "0x1D652",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>なんと！ オダは石を積んで\n迷宮を作っているのだ！",
+      "source": "ゴッツ\n<FB03>   なんと！ オダは石を積んで\n    迷宮を作っているのだ！",
       "text": null
     },
     {
       "offset": "0x1D69E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>迷宮の中に迷宮がある！\nこれぞオトコのロマンってやつだど！",
+      "source": "ゴッツ\n<FB03>    迷宮の中に迷宮がある！\n これぞオトコのロマンってやつだど！",
       "text": null
     },
     {
       "offset": "0x1D6EE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>おお、そだべ！\nオマエにも1こやるだ！",
+      "source": "ゴッツ\n<FB03>      おお、そだべ！\n    オマエにも1こやるだ！",
       "text": null
     },
     {
       "offset": "0x1D734",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>いつか迷宮が完成したときは\nプレミア価格で売れるだよ！",
+      "source": "ゴッツ\n<FB03>   いつか迷宮が完成したときは\n   プレミア価格で売れるだよ！",
       "text": null
     },
     {
@@ -4374,13 +4374,13 @@
     {
       "offset": "0x1D7FE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>大事にしてくれよーう！",
+      "source": "ゴッツ\n<FB03>    大事にしてくれよーう！",
       "text": null
     },
     {
       "offset": "0x1D828",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダずっとここで石積んでるから\n気が向いたら遊びに来いだよな！",
+      "source": "ゴッツ\n<FB03>  オダずっとここで石積んでるから\n  気が向いたら遊びに来いだよな！",
       "text": null
     },
     {
@@ -4392,19 +4392,19 @@
     {
       "offset": "0x1D8C2",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>おおーっ、ちょっとまつだ！",
+      "source": "ゴッツ\n<FB03>   おおーっ、ちょっとまつだ！",
       "text": null
     },
     {
       "offset": "0x1D8EE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ちょっと頼みたいことが\nあって、まちぶせしてただよ",
+      "source": "ゴッツ\n<FB03>    ちょっと頼みたいことが\n   あって、まちぶせしてただよ",
       "text": null
     },
     {
       "offset": "0x1D93A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>とにかく、なんだべな！\nオダのひみつ基地に入るべ！",
+      "source": "ゴッツ\n<FB03>    とにかく、なんだべな！\n   オダのひみつ基地に入るべ！",
       "text": null
     },
     {
@@ -4416,7 +4416,7 @@
     {
       "offset": "0x1D9C0",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ふうぅーっ…！\nやっぱ狭いトコは落ち着く！",
+      "source": "ゴッツ\n<FB03>      ふうぅーっ…！\n   やっぱ狭いトコは落ち着く！",
       "text": null
     },
     {
@@ -4428,25 +4428,25 @@
     {
       "offset": "0x1DA50",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ゴホンッ！\nそれでは、早速…！",
+      "source": "ゴッツ\n<FB03>       ゴホンッ！\n     それでは、早速…！",
       "text": null
     },
     {
       "offset": "0x1DA92",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ジャラジャラリィーン！\nトラップスタート！",
+      "source": "ゴッツ\n<FB03>    ジャラジャラリィーン！\n     トラップスタート！",
       "text": null
     },
     {
       "offset": "0x1DADA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>パラリロリィーン！\nおめでとーうございまーす！",
+      "source": "ゴッツ\n<FB03>     パラリロリィーン！\n   おめでとーうございまーす！",
       "text": null
     },
     {
       "offset": "0x1DB24",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03><FB01>フィールの石<FB00>プレゼント～♪",
+      "source": "ゴッツ\n<FB03>   <FB01>フィールの石<FB00>プレゼント～♪",
       "text": null
     },
     {
@@ -4458,13 +4458,13 @@
     {
       "offset": "0x1DB76",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…って、なんだーオマエ\n荷物いっぱいじゃねーか",
+      "source": "ゴッツ\n<FB03>    …って、なんだーオマエ\n    荷物いっぱいじゃねーか",
       "text": null
     },
     {
       "offset": "0x1DBC0",
       "type": "center",
-      "source": "何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -4476,73 +4476,73 @@
     {
       "offset": "0x1DC0C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>荷物と財布と心には\nいつもゆとりをもて…って！",
+      "source": "ゴッツ\n<FB03>     荷物と財布と心には\n   いつもゆとりをもて…って！",
       "text": null
     },
     {
       "offset": "0x1DC56",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>こどもの頃にカーチャンから\n教わらなかったべ？",
+      "source": "ゴッツ\n<FB03>   こどもの頃にカーチャンから\n     教わらなかったべ？",
       "text": null
     },
     {
       "offset": "0x1DCA0",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダは、そう教わった！",
+      "source": "ゴッツ\n<FB03>    オダは、そう教わった！",
       "text": null
     },
     {
       "offset": "0x1DCCA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>あーあ…、オダの好意を\nもったいないことするだな…",
+      "source": "ゴッツ\n<FB03>    あーあ…、オダの好意を\n   もったいないことするだな…",
       "text": null
     },
     {
       "offset": "0x1DD16",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>荷物と財布と心には\nいつもゆとりをもて…って！",
+      "source": "ゴッツ\n<FB03>     荷物と財布と心には\n   いつもゆとりをもて…って！",
       "text": null
     },
     {
       "offset": "0x1DD60",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>こどもの頃にカーチャンから\n教わらなかったべ？",
+      "source": "ゴッツ\n<FB03>   こどもの頃にカーチャンから\n     教わらなかったべ？",
       "text": null
     },
     {
       "offset": "0x1DDAA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダは、そう教わった！",
+      "source": "ゴッツ\n<FB03>    オダは、そう教わった！",
       "text": null
     },
     {
       "offset": "0x1DDD4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>あーあ…、オダの好意を\nもったいないことするだな…",
+      "source": "ゴッツ\n<FB03>    あーあ…、オダの好意を\n   もったいないことするだな…",
       "text": null
     },
     {
       "offset": "0x1DE20",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>荷物と財布と心には\nいつもゆとりをもて…って！",
+      "source": "ゴッツ\n<FB03>     荷物と財布と心には\n   いつもゆとりをもて…って！",
       "text": null
     },
     {
       "offset": "0x1DE6A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>こどもの頃にカーチャンから\n教わらなかったべ？",
+      "source": "ゴッツ\n<FB03>   こどもの頃にカーチャンから\n     教わらなかったべ？",
       "text": null
     },
     {
       "offset": "0x1DEB4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダは、そう教わった！",
+      "source": "ゴッツ\n<FB03>    オダは、そう教わった！",
       "text": null
     },
     {
       "offset": "0x1DEDE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ブッブー！\nざんねんしょーう！",
+      "source": "ゴッツ\n<FB03>       ブッブー！\n     ざんねんしょーう！",
       "text": null
     },
     {
@@ -4560,49 +4560,49 @@
     {
       "offset": "0x1DFAE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…まあ、こんな感じだ！",
+      "source": "ゴッツ\n<FB03>    …まあ、こんな感じだ！",
       "text": null
     },
     {
       "offset": "0x1DFD8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダの手作りトラップだど！\nパワーが小さいのが欠点だども…",
+      "source": "ゴッツ\n<FB03>   オダの手作りトラップだど！\n  パワーが小さいのが欠点だども…",
       "text": null
     },
     {
       "offset": "0x1E028",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>もっともっと改良して、\nオダの迷宮に置いていくだよ！！",
+      "source": "ゴッツ\n<FB03>    もっともっと改良して、\n  オダの迷宮に置いていくだよ！！",
       "text": null
     },
     {
       "offset": "0x1E076",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>種類だって、色んなの作る！",
+      "source": "ゴッツ\n<FB03>   種類だって、色んなの作る！",
       "text": null
     },
     {
       "offset": "0x1E0A2",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>絶妙なバランスのトラップを\n作るのがオダの目標だ！",
+      "source": "ゴッツ\n<FB03>   絶妙なバランスのトラップを\n    作るのがオダの目標だ！",
       "text": null
     },
     {
       "offset": "0x1E0EE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そこでっ！ オマエにも\n手伝って欲しいのだよ！",
+      "source": "ゴッツ\n<FB03>    そこでっ！ オマエにも\n    手伝って欲しいのだよ！",
       "text": null
     },
     {
       "offset": "0x1E138",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダと固い友情で結ばれてる\nオマエにしか頼めない極秘の仕事だ！",
+      "source": "ゴッツ\n<FB03>   オダと固い友情で結ばれてる\n オマエにしか頼めない極秘の仕事だ！",
       "text": null
     },
     {
       "offset": "0x1E18A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダとオマエの友情の証\nほだ、持ってるだろー？",
+      "source": "ゴッツ\n<FB03>    オダとオマエの友情の証\n    ほだ、持ってるだろー？",
       "text": null
     },
     {
@@ -4620,145 +4620,145 @@
     {
       "offset": "0x1E28A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>・・・・・・・・・・・・・・・",
+      "source": "ゴッツ\n<FB03>  ・・・・・・・・・・・・・・・",
       "text": null
     },
     {
       "offset": "0x1E2B8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オマエ…最高だ…！\nやっぱ、オダの目に狂いはなかった！",
+      "source": "ゴッツ\n<FB03>     オマエ…最高だ…！\n やっぱ、オダの目に狂いはなかった！",
       "text": null
     },
     {
       "offset": "0x1E306",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>・・・・・・・・・・・・・・・",
+      "source": "ゴッツ\n<FB03>  ・・・・・・・・・・・・・・・",
       "text": null
     },
     {
       "offset": "0x1E334",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…ない？",
+      "source": "ゴッツ\n<FB03>       …ない？",
       "text": null
     },
     {
       "offset": "0x1E356",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>・・・・・・・・・・・・・・・",
+      "source": "ゴッツ\n<FB03>  ・・・・・・・・・・・・・・・",
       "text": null
     },
     {
       "offset": "0x1E384",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そうか…娘っこにあげたか…\nオマエ、青春してるだなあ…",
+      "source": "ゴッツ\n<FB03>   そうか…娘っこにあげたか…\n   オマエ、青春してるだなあ…",
       "text": null
     },
     {
       "offset": "0x1E3D2",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダとの友情、娘っこに抱く\n淡い恋心……<STYLE:1>♥<STYLE:0>",
+      "source": "ゴッツ\n<FB03>   オダとの友情、娘っこに抱く\n      淡い恋心……<STYLE:1>♥<STYLE:0>",
       "text": null
     },
     {
       "offset": "0x1E41E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そして迷宮に挑む熱意…\n…おおおおお…",
+      "source": "ゴッツ\n<FB03>    そして迷宮に挑む熱意…\n      …おおおおお…",
       "text": null
     },
     {
       "offset": "0x1E464",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オマエいい感じだ！\nやっぱ、オダの目に狂いはなかった！",
+      "source": "ゴッツ\n<FB03>     オマエいい感じだ！\n やっぱ、オダの目に狂いはなかった！",
       "text": null
     },
     {
       "offset": "0x1E4B2",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>心配しなくても、仕事は\n簡単ラクチンだべ！",
+      "source": "ゴッツ\n<FB03>    心配しなくても、仕事は\n     簡単ラクチンだべ！",
       "text": null
     },
     {
       "offset": "0x1E4FA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダの作ったトラップの品質を、\nチェックして欲しいのだよ！",
+      "source": "ゴッツ\n<FB03>  オダの作ったトラップの品質を、\n   チェックして欲しいのだよ！",
       "text": null
     },
     {
       "offset": "0x1E54A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>もちろん、いくらオダ達が親友でも、\nタダなんてケチなことは言わんだよ！",
+      "source": "ゴッツ\n<FB03> もちろん、いくらオダ達が親友でも、\n タダなんてケチなことは言わんだよ！",
       "text": null
     },
     {
       "offset": "0x1E5A0",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オマエがオダの頼んだ通りにチェック\nしてくれたら、オダはお礼をやるど！",
+      "source": "ゴッツ\n<FB03> オマエがオダの頼んだ通りにチェック\n してくれたら、オダはお礼をやるど！",
       "text": null
     },
     {
       "offset": "0x1E5F6",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>その代わり、チェックする時には\nオダにトラップ代を払ってくで…",
+      "source": "ゴッツ\n<FB03>  その代わり、チェックする時には\n  オダにトラップ代を払ってくで…",
       "text": null
     },
     {
       "offset": "0x1E648",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダのトラップは手作りで、大量生産\n出来ないからコストが高いだよ…",
+      "source": "ゴッツ\n<FB03> オダのトラップは手作りで、大量生産\n  出来ないからコストが高いだよ…",
       "text": null
     },
     {
       "offset": "0x1E69C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダ、稼ぎが少ないから\nあんまり無理出来ないだよ…",
+      "source": "ゴッツ\n<FB03>    オダ、稼ぎが少ないから\n   あんまり無理出来ないだよ…",
       "text": null
     },
     {
       "offset": "0x1E6E8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>その代わり、お礼はいいもの\nやるからよう…",
+      "source": "ゴッツ\n<FB03>   その代わり、お礼はいいもの\n      やるからよう…",
       "text": null
     },
     {
       "offset": "0x1E730",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>たのんだど、兄弟！",
+      "source": "ゴッツ\n<FB03>     たのんだど、兄弟！",
       "text": null
     },
     {
       "offset": "0x1E758",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オマエが次に来るまでに\nオダ頑張って準備しとくだよっ！",
+      "source": "ゴッツ\n<FB03>    オマエが次に来るまでに\n  オダ頑張って準備しとくだよっ！",
       "text": null
     },
     {
       "offset": "0x1E7A6",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…オマエ、そんなにオダの手伝い\nやりたいだか…",
+      "source": "ゴッツ\n<FB03>  …オマエ、そんなにオダの手伝い\n      やりたいだか…",
       "text": null
     },
     {
       "offset": "0x1E7F0",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>いいヤツだよなあ…",
+      "source": "ゴッツ\n<FB03>     いいヤツだよなあ…",
       "text": null
     },
     {
       "offset": "0x1E818",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>だけど、早すぎだ！\nオダ、まだ準備中だよ…",
+      "source": "ゴッツ\n<FB03>     だけど、早すぎだ！\n    オダ、まだ準備中だよ…",
       "text": null
     },
     {
       "offset": "0x1E860",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>迷宮ばっかり潜ってないで、\nたまには街にも帰ったらいいど！",
+      "source": "ゴッツ\n<FB03>   迷宮ばっかり潜ってないで、\n  たまには街にも帰ったらいいど！",
       "text": null
     },
     {
       "offset": "0x1E8B0",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>迷宮ばっかり潜ってたら\nオダみたいな魔物になっちゃうど",
+      "source": "ゴッツ\n<FB03>    迷宮ばっかり潜ってたら\n  オダみたいな魔物になっちゃうど",
       "text": null
     },
     {
@@ -4776,19 +4776,19 @@
     {
       "offset": "0x1E938",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>おおおっ、よく来てくでた！\nオダ準備して待ってただよ！",
+      "source": "ゴッツ\n<FB03>   おおおっ、よく来てくでた！\n   オダ準備して待ってただよ！",
       "text": null
     },
     {
       "offset": "0x1E986",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ジャラジャラリィーン！\nゴッツのトラップ第一弾～♪",
+      "source": "ゴッツ\n<FB03>    ジャラジャラリィーン！\n   ゴッツのトラップ第一弾～♪",
       "text": null
     },
     {
       "offset": "0x1E9D2",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ちなみに、オダはこれを作るのに\n1000ゴールドも使っただよ…",
+      "source": "ゴッツ\n<FB03>  ちなみに、オダはこれを作るのに\n  1000ゴールドも使っただよ…",
       "text": null
     },
     {
@@ -4800,31 +4800,31 @@
     {
       "offset": "0x1EAB0",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>友よ、<FB01>1000ゴールド<FB00>\nオダに投資しておくれだよ！",
+      "source": "ゴッツ\n<FB03>    友よ、<FB01>1000ゴールド<FB00>\n   オダに投資しておくれだよ！",
       "text": null
     },
     {
       "offset": "0x1EB00",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そのかわり、壊れるまで\nテストしてくでたなら…",
+      "source": "ゴッツ\n<FB03>    そのかわり、壊れるまで\n    テストしてくでたなら…",
       "text": null
     },
     {
       "offset": "0x1EB4A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ジャラジャラリィーン！\n<FB01>転移の薬3個セット<FB00>プレゼントォー！",
+      "source": "ゴッツ\n<FB03>    ジャラジャラリィーン！\n<FB01>転移の薬3個セット<FB00>プレゼントォー！",
       "text": null
     },
     {
       "offset": "0x1EB9C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダの予想では、10回くらいで\n壊れると思うだよー",
+      "source": "ゴッツ\n<FB03>  オダの予想では、10回くらいで\n     壊れると思うだよー",
       "text": null
     },
     {
       "offset": "0x1EBE8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>さぁさぁ、やってみてくでるな？",
+      "source": "ゴッツ\n<FB03>  さぁさぁ、やってみてくでるな？",
       "text": null
     },
     {
@@ -4836,19 +4836,19 @@
     {
       "offset": "0x1EC46",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>おっ、おっ、おっ！\nよく来てくでただよー！",
+      "source": "ゴッツ\n<FB03>     おっ、おっ、おっ！\n    よく来てくでただよー！",
       "text": null
     },
     {
       "offset": "0x1EC8E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ジャラジャラリィーン！\nゴッツのトラップ第二弾～♪",
+      "source": "ゴッツ\n<FB03>    ジャラジャラリィーン！\n   ゴッツのトラップ第二弾～♪",
       "text": null
     },
     {
       "offset": "0x1ECDA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>第一弾は耐久力がひくすぎただ…\nそこで改良をくわえてみた！",
+      "source": "ゴッツ\n<FB03>  第一弾は耐久力がひくすぎただ…\n   そこで改良をくわえてみた！",
       "text": null
     },
     {
@@ -4860,67 +4860,67 @@
     {
       "offset": "0x1EDCE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>このトラップ作るのには\n羊皮紙がいっぱい、いっただよー",
+      "source": "ゴッツ\n<FB03>    このトラップ作るのには\n  羊皮紙がいっぱい、いっただよー",
       "text": null
     },
     {
       "offset": "0x1EE1C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダ、1こ作っただけで\n2000ゴールド使っちまった…",
+      "source": "ゴッツ\n<FB03>    オダ、1こ作っただけで\n  2000ゴールド使っちまった…",
       "text": null
     },
     {
       "offset": "0x1EE6A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>同志よ、オダに<FB01>2000ゴールド<FB00>\n出資してくでたまえっ！",
+      "source": "ゴッツ\n<FB03>  同志よ、オダに<FB01>2000ゴールド<FB00>\n    出資してくでたまえっ！",
       "text": null
     },
     {
       "offset": "0x1EEBC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そのかわり、今回はもっとすごい\nお礼の品を用意しただ！",
+      "source": "ゴッツ\n<FB03>  そのかわり、今回はもっとすごい\n    お礼の品を用意しただ！",
       "text": null
     },
     {
       "offset": "0x1EF0A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ジャラジャラリィーン！\n<FB01>快癒の薬<FB00>プレゼントォー！！",
+      "source": "ゴッツ\n<FB03>    ジャラジャラリィーン！\n   <FB01>快癒の薬<FB00>プレゼントォー！！",
       "text": null
     },
     {
       "offset": "0x1EF5A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダの予感で、今回のトラップは\nこないだの2倍は強いと思うだよ",
+      "source": "ゴッツ\n<FB03>  オダの予感で、今回のトラップは\n  こないだの2倍は強いと思うだよ",
       "text": null
     },
     {
       "offset": "0x1EFAC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>さぁさぁ、もちろんやってみるだな？",
+      "source": "ゴッツ\n<FB03> さぁさぁ、もちろんやってみるだな？",
       "text": null
     },
     {
       "offset": "0x1EFDC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>遅いだよー、もう！\n首を長くして待ってただよーう！",
+      "source": "ゴッツ\n<FB03>     遅いだよー、もう！\n  首を長くして待ってただよーう！",
       "text": null
     },
     {
       "offset": "0x1F028",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ジャラジャラリィーン！\nゴッツのトラップ第三弾～♪",
+      "source": "ゴッツ\n<FB03>    ジャラジャラリィーン！\n   ゴッツのトラップ第三弾～♪",
       "text": null
     },
     {
       "offset": "0x1F074",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>第二弾は紙で出来てたからな\nやっぱ耐久性が低かっただなあ。",
+      "source": "ゴッツ\n<FB03>   第二弾は紙で出来てたからな\n  やっぱ耐久性が低かっただなあ。",
       "text": null
     },
     {
       "offset": "0x1F0C4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そこで！ またまた改良だ！\nいやー、苦労しただよ…",
+      "source": "ゴッツ\n<FB03>   そこで！ またまた改良だ！\n    いやー、苦労しただよ…",
       "text": null
     },
     {
@@ -4938,79 +4938,79 @@
     {
       "offset": "0x1F196",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダ、粘土を集めるために、\nそりゃあもう必死で頑張っただよー！",
+      "source": "ゴッツ\n<FB03>   オダ、粘土を集めるために、\n そりゃあもう必死で頑張っただよー！",
       "text": null
     },
     {
       "offset": "0x1F1E8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そしたら結局3000ゴールドも\nかかってしまっただよ…",
+      "source": "ゴッツ\n<FB03>  そしたら結局3000ゴールドも\n    かかってしまっただよ…",
       "text": null
     },
     {
       "offset": "0x1F236",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>盟友よ、オダに<FB01>3000ゴールド<FB00>\n黙って渡してくで！",
+      "source": "ゴッツ\n<FB03>  盟友よ、オダに<FB01>3000ゴールド<FB00>\n     黙って渡してくで！",
       "text": null
     },
     {
       "offset": "0x1F286",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>もちろん、お礼は奮発する！",
+      "source": "ゴッツ\n<FB03>   もちろん、お礼は奮発する！",
       "text": null
     },
     {
       "offset": "0x1F2B2",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ジャラジャラリィーン！\n<FB01>お薬セット<FB00>プレゼントォー！",
+      "source": "ゴッツ\n<FB03>    ジャラジャラリィーン！\n   <FB01>お薬セット<FB00>プレゼントォー！",
       "text": null
     },
     {
       "offset": "0x1F302",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>転移と封傷と解毒と快癒の薬の、\n4個セットなんだどー！",
+      "source": "ゴッツ\n<FB03>  転移と封傷と解毒と快癒の薬の、\n    4個セットなんだどー！",
       "text": null
     },
     {
       "offset": "0x1F350",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>腕に自信があるなら、荷物を\n空けてきてくでよ！",
+      "source": "ゴッツ\n<FB03>   腕に自信があるなら、荷物を\n     空けてきてくでよ！",
       "text": null
     },
     {
       "offset": "0x1F39A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダの直感で、今回のトラップは\n30回は耐えてくでる！",
+      "source": "ゴッツ\n<FB03>  オダの直感で、今回のトラップは\n    30回は耐えてくでる！",
       "text": null
     },
     {
       "offset": "0x1F3E8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>さぁさぁ、是非やってみてくで！",
+      "source": "ゴッツ\n<FB03>  さぁさぁ、是非やってみてくで！",
       "text": null
     },
     {
       "offset": "0x1F416",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>おおおっ、そろそろ来るって\n思ってただよーっ！",
+      "source": "ゴッツ\n<FB03>   おおおっ、そろそろ来るって\n     思ってただよーっ！",
       "text": null
     },
     {
       "offset": "0x1F460",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ジャラジャラリィーン！\nゴッツのトラップ第四弾～♪",
+      "source": "ゴッツ\n<FB03>    ジャラジャラリィーン！\n   ゴッツのトラップ第四弾～♪",
       "text": null
     },
     {
       "offset": "0x1F4AC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>第三弾は粘土だったからな。\nあれはモロくてダメだった！",
+      "source": "ゴッツ\n<FB03>   第三弾は粘土だったからな。\n   あれはモロくてダメだった！",
       "text": null
     },
     {
       "offset": "0x1F4FA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そこでオダは、品種改良\nしたわけなのだよ！",
+      "source": "ゴッツ\n<FB03>    そこでオダは、品種改良\n     したわけなのだよ！",
       "text": null
     },
     {
@@ -5028,37 +5028,37 @@
     {
       "offset": "0x1F5BE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>石を削ってる間に、いっぱい\n剣を折ってしまったんだよ…",
+      "source": "ゴッツ\n<FB03>   石を削ってる間に、いっぱい\n   剣を折ってしまったんだよ…",
       "text": null
     },
     {
       "offset": "0x1F60C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>それで剣を買い換えたりするのに\n4000ゴールドもかかっただよ…！",
+      "source": "ゴッツ\n<FB03>  それで剣を買い換えたりするのに\n 4000ゴールドもかかっただよ…！",
       "text": null
     },
     {
       "offset": "0x1F660",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>夢を追う仲間よ！ オダのために\n<FB01>4000ゴールド<FB00>使っておくで！",
+      "source": "ゴッツ\n<FB03>  夢を追う仲間よ！ オダのために\n  <FB01>4000ゴールド<FB00>使っておくで！",
       "text": null
     },
     {
       "offset": "0x1F6B6",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダが頑張って集めまくった\n<FB01>ドワーフグッズ<FB00>やるからよーう！",
+      "source": "ゴッツ\n<FB03>   オダが頑張って集めまくった\n  <FB01>ドワーフグッズ<FB00>やるからよーう！",
       "text": null
     },
     {
       "offset": "0x1F70A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダの計算では、このトラップは\n40回くらいで壊れると思うだ！",
+      "source": "ゴッツ\n<FB03>  オダの計算では、このトラップは\n  40回くらいで壊れると思うだ！",
       "text": null
     },
     {
       "offset": "0x1F75C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>さぁさぁ、はやくやってみてくでっ！",
+      "source": "ゴッツ\n<FB03> さぁさぁ、はやくやってみてくでっ！",
       "text": null
     },
     {
@@ -5070,37 +5070,37 @@
     {
       "offset": "0x1F81E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>なーんだっ、また来ただか！\nオマエも好きだなぁー！",
+      "source": "ゴッツ\n<FB03>   なーんだっ、また来ただか！\n    オマエも好きだなぁー！",
       "text": null
     },
     {
       "offset": "0x1F86A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>よしよし、オダもちゃーんと\nオマエのために用意しておいた！",
+      "source": "ゴッツ\n<FB03>   よしよし、オダもちゃーんと\n  オマエのために用意しておいた！",
       "text": null
     },
     {
       "offset": "0x1F8BA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ジャラジャラリィーン！\nゴッツのトラップ第五弾～♪",
+      "source": "ゴッツ\n<FB03>    ジャラジャラリィーン！\n   ゴッツのトラップ第五弾～♪",
       "text": null
     },
     {
       "offset": "0x1F906",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>第四弾はな、オダって石彫るのが\nヘタッピだったからよ…",
+      "source": "ゴッツ\n<FB03>  第四弾はな、オダって石彫るのが\n    ヘタッピだったからよ…",
       "text": null
     },
     {
       "offset": "0x1F954",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そこでっ、オダはプロを雇った！",
+      "source": "ゴッツ\n<FB03>  そこでっ、オダはプロを雇った！",
       "text": null
     },
     {
       "offset": "0x1F982",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>プロの女流不死彫刻家、\nロッテさんに依頼しただよ！",
+      "source": "ゴッツ\n<FB03>    プロの女流不死彫刻家、\n   ロッテさんに依頼しただよ！",
       "text": null
     },
     {
@@ -5112,103 +5112,103 @@
     {
       "offset": "0x1FA54",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>どうだっ、プロの彫刻は？！",
+      "source": "ゴッツ\n<FB03>   どうだっ、プロの彫刻は？！",
       "text": null
     },
     {
       "offset": "0x1FA80",
       "type": "center",
-      "source": "何と答えようか？\n\n立派だと誉める\n粗悪だとけなす\n",
+      "source": "何と答えようか？\n\n<FFC0>立派だと誉める\n<FFC1>粗悪だとけなす\n",
       "text": null
     },
     {
       "offset": "0x1FABA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>だろっ、だろおーっ！？\nオダもヒシヒシと感じている！！",
+      "source": "ゴッツ\n<FB03>    だろっ、だろおーっ！？\n  オダもヒシヒシと感じている！！",
       "text": null
     },
     {
       "offset": "0x1FB08",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>いやー、オマエにも芸術センスは\nあるみたいで安心した！",
+      "source": "ゴッツ\n<FB03>  いやー、オマエにも芸術センスは\n    あるみたいで安心した！",
       "text": null
     },
     {
       "offset": "0x1FB56",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ギャヒャッヒャッヒャ！\nオマエ、オコチャマだなあ！",
+      "source": "ゴッツ\n<FB03>    ギャヒャッヒャッヒャ！\n   オマエ、オコチャマだなあ！",
       "text": null
     },
     {
       "offset": "0x1FBA2",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>芸術ってものがわかってないだよう！",
+      "source": "ゴッツ\n<FB03> 芸術ってものがわかってないだよう！",
       "text": null
     },
     {
       "offset": "0x1FBD2",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>この粗さが芸術だよなあ…！\nオダの粗さとは違うものを感じるっ！",
+      "source": "ゴッツ\n<FB03>   この粗さが芸術だよなあ…！\n オダの粗さとは違うものを感じるっ！",
       "text": null
     },
     {
       "offset": "0x1FC24",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>それでロッテさんに依頼した代金が、\n10000ゴールドかかっただ…",
+      "source": "ゴッツ\n<FB03> それでロッテさんに依頼した代金が、\n  10000ゴールドかかっただ…",
       "text": null
     },
     {
       "offset": "0x1FC78",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>でも、オダは後悔してない！",
+      "source": "ゴッツ\n<FB03>   でも、オダは後悔してない！",
       "text": null
     },
     {
       "offset": "0x1FCA4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>こんな芸術作品が、たったの\n10000ゴールドで手に入っただ！",
+      "source": "ゴッツ\n<FB03>   こんな芸術作品が、たったの\n 10000ゴールドで手に入っただ！",
       "text": null
     },
     {
       "offset": "0x1FCF6",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オマエも芸術鑑賞料にワリカンだよ！\n<FB01>5000ゴールド<FB00>立て替えといただ！",
+      "source": "ゴッツ\n<FB03> オマエも芸術鑑賞料にワリカンだよ！\n <FB01>5000ゴールド<FB00>立て替えといただ！",
       "text": null
     },
     {
       "offset": "0x1FD50",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>その代わり払ってくでたら、この\n芸術作品のトラップを壊させてやる！",
+      "source": "ゴッツ\n<FB03>  その代わり払ってくでたら、この\n 芸術作品のトラップを壊させてやる！",
       "text": null
     },
     {
       "offset": "0x1FDA4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>破壊もまた芸術！！\n破壊はオークの美学！！",
+      "source": "ゴッツ\n<FB03>     破壊もまた芸術！！\n    破壊はオークの美学！！",
       "text": null
     },
     {
       "offset": "0x1FDEC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダの予知夢では、50回で\nガシャーンと壊れただよ",
+      "source": "ゴッツ\n<FB03>   オダの予知夢では、50回で\n    ガシャーンと壊れただよ",
       "text": null
     },
     {
       "offset": "0x1FE38",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>芸術的に破壊出来たならば、\nオダはオマエにいいものやるだ！",
+      "source": "ゴッツ\n<FB03>   芸術的に破壊出来たならば、\n  オダはオマエにいいものやるだ！",
       "text": null
     },
     {
       "offset": "0x1FE88",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ジャラジャラリィーン！\n<FB01>突然変異魔法石フルセット<FB00>ォー！",
+      "source": "ゴッツ\n<FB03>    ジャラジャラリィーン！\n  <FB01>突然変異魔法石フルセット<FB00>ォー！",
       "text": null
     },
     {
       "offset": "0x1FEDA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>さぁ、どうするよう？！",
+      "source": "ゴッツ\n<FB03>    さぁ、どうするよう？！",
       "text": null
     },
     {
@@ -5220,7 +5220,7 @@
     {
       "offset": "0x1FF2A",
       "type": "center",
-      "source": "「<FB03>よ…よっこらぢょ…<FB02>」",
+      "source": "<STYLE:2>「<FB03>よ…よっこらぢょ…<FB02>」",
       "text": null
     },
     {
@@ -5232,7 +5232,7 @@
     {
       "offset": "0x1FF9A",
       "type": "center",
-      "source": "「<FB03>…んが…誰かいるだな…\n危ないから、外へ出とけ…<FB02>」",
+      "source": "<STYLE:2>「<FB03>…んが…誰かいるだな…\n 危ないから、外へ出とけ…<FB02>」",
       "text": null
     },
     {
@@ -5250,55 +5250,55 @@
     {
       "offset": "0x2003E",
       "type": "center",
-      "source": "「<FB03>もういいだよー！<FB02>」",
+      "source": "<STYLE:2>「<FB03>もういいだよー！<FB02>」",
       "text": null
     },
     {
       "offset": "0x2005A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>なーんだ、やっぱオマエか！\nいやー、待たせてわるかっただよ",
+      "source": "ゴッツ\n<FB03>   なーんだ、やっぱオマエか！\n  いやー、待たせてわるかっただよ",
       "text": null
     },
     {
       "offset": "0x200AA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>何をしてたかは、ヒミツだ！",
+      "source": "ゴッツ\n<FB03>   何をしてたかは、ヒミツだ！",
       "text": null
     },
     {
       "offset": "0x200D6",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そんなことより、いつものあれ！\nまた新作発表だどーっ！",
+      "source": "ゴッツ\n<FB03>  そんなことより、いつものあれ！\n    また新作発表だどーっ！",
       "text": null
     },
     {
       "offset": "0x20124",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ジャラジャラリィーン！\nゴッツのトラップ第六弾～♪",
+      "source": "ゴッツ\n<FB03>    ジャラジャラリィーン！\n   ゴッツのトラップ第六弾～♪",
       "text": null
     },
     {
       "offset": "0x20170",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>外注もいいけど、やっぱりオダは\nアーチストとして、自作したいだよ！",
+      "source": "ゴッツ\n<FB03>  外注もいいけど、やっぱりオダは\n アーチストとして、自作したいだよ！",
       "text": null
     },
     {
       "offset": "0x201C4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そこでえぇぇぇっ！\n今回のテーマはナチュラル！",
+      "source": "ゴッツ\n<FB03>     そこでえぇぇぇっ！\n   今回のテーマはナチュラル！",
       "text": null
     },
     {
       "offset": "0x2020E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>樹齢六千年の超高級な木を彫って\n作ってみただよっ！",
+      "source": "ゴッツ\n<FB03>  樹齢六千年の超高級な木を彫って\n     作ってみただよっ！",
       "text": null
     },
     {
       "offset": "0x2025A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>名づけて、木彫りトラップ～ゥ♪",
+      "source": "ゴッツ\n<FB03>  名づけて、木彫りトラップ～ゥ♪",
       "text": null
     },
     {
@@ -5310,97 +5310,97 @@
     {
       "offset": "0x2032A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>本当に高級でよう…これっぽっち\n買うだけで6000ゴールドもした…",
+      "source": "ゴッツ\n<FB03>  本当に高級でよう…これっぽっち\n 買うだけで6000ゴールドもした…",
       "text": null
     },
     {
       "offset": "0x2037E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>さぁ、大地の子よ！",
+      "source": "ゴッツ\n<FB03>     さぁ、大地の子よ！",
       "text": null
     },
     {
       "offset": "0x203A6",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03><FB01>6000ゴールド<FB00>と引き換えに、\n大自然の神秘を味わうがええだ！",
+      "source": "ゴッツ\n<FB03>  <FB01>6000ゴールド<FB00>と引き換えに、\n  大自然の神秘を味わうがええだ！",
       "text": null
     },
     {
       "offset": "0x203FC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>樹齢からして、60回は\n自然を味わえるに違いないだな！",
+      "source": "ゴッツ\n<FB03>    樹齢からして、60回は\n  自然を味わえるに違いないだな！",
       "text": null
     },
     {
       "offset": "0x2044A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そして、<FB01>転職宝玉フルセット<FB00>を使って\n好きな自分に生まれ変わるがええだ！",
+      "source": "ゴッツ\n<FB03> そして、<FB01>転職宝玉フルセット<FB00>を使って\n 好きな自分に生まれ変わるがええだ！",
       "text": null
     },
     {
       "offset": "0x204A4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>もちろん、荷物は開けておくことっ！\nちなみに全部で8つあるだよ",
+      "source": "ゴッツ\n<FB03> もちろん、荷物は開けておくことっ！\n   ちなみに全部で8つあるだよ",
       "text": null
     },
     {
       "offset": "0x204F6",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>でないと宝玉は1つもやらねえ！\nそれが大自然の厳しさってもんだべさ",
+      "source": "ゴッツ\n<FB03>  でないと宝玉は1つもやらねえ！\n それが大自然の厳しさってもんだべさ",
       "text": null
     },
     {
       "offset": "0x2054A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オマエは、ちゃーんと8つ持って行く\n余裕があるだべな、よし合格！！",
+      "source": "ゴッツ\n<FB03> オマエは、ちゃーんと8つ持って行く\n  余裕があるだべな、よし合格！！",
       "text": null
     },
     {
       "offset": "0x2059E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オマエは、8つ荷物を持っていく\n余裕がないだべ、…不合格！",
+      "source": "ゴッツ\n<FB03>  オマエは、8つ荷物を持っていく\n   余裕がないだべ、…不合格！",
       "text": null
     },
     {
       "offset": "0x205EE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>転職宝玉フルセットが欲しければ\n荷物を整理して出直し決定！",
+      "source": "ゴッツ\n<FB03>  転職宝玉フルセットが欲しければ\n   荷物を整理して出直し決定！",
       "text": null
     },
     {
       "offset": "0x2063E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>いらないなら、このままチャレンジ！",
+      "source": "ゴッツ\n<FB03> いらないなら、このままチャレンジ！",
       "text": null
     },
     {
       "offset": "0x2066E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>どうだべっ、どうだべっ？！",
+      "source": "ゴッツ\n<FB03>   どうだべっ、どうだべっ？！",
       "text": null
     },
     {
       "offset": "0x2069A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>おっ、ちょうどいいとこに来た！",
+      "source": "ゴッツ\n<FB03>  おっ、ちょうどいいとこに来た！",
       "text": null
     },
     {
       "offset": "0x206C8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ジャラジャラリィーン！\nゴッツのトラップ第七弾～♪",
+      "source": "ゴッツ\n<FB03>    ジャラジャラリィーン！\n   ゴッツのトラップ第七弾～♪",
       "text": null
     },
     {
       "offset": "0x20714",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>たった今、完成したばかりの\n出来たてホヤホヤなんだど！",
+      "source": "ゴッツ\n<FB03>   たった今、完成したばかりの\n   出来たてホヤホヤなんだど！",
       "text": null
     },
     {
       "offset": "0x20762",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>その名も、銅版トラップ！！",
+      "source": "ゴッツ\n<FB03>   その名も、銅版トラップ！！",
       "text": null
     },
     {
@@ -5412,85 +5412,85 @@
     {
       "offset": "0x20826",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダもアーチストとして\nどんどんレベルアップしてるだろう！",
+      "source": "ゴッツ\n<FB03>    オダもアーチストとして\n どんどんレベルアップしてるだろう！",
       "text": null
     },
     {
       "offset": "0x20876",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>迷宮作りだって、順調に\nはかどってるんだからなっ！",
+      "source": "ゴッツ\n<FB03>    迷宮作りだって、順調に\n   はかどってるんだからなっ！",
       "text": null
     },
     {
       "offset": "0x208C2",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>だが、この大事な時期に制作費を\n7000ゴールドもかけてしまった…",
+      "source": "ゴッツ\n<FB03>  だが、この大事な時期に制作費を\n 7000ゴールドもかけてしまった…",
       "text": null
     },
     {
       "offset": "0x20916",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>たのむだよ！ だまされたと思って、\nオダに7000ゴールド払ってくで！",
+      "source": "ゴッツ\n<FB03> たのむだよ！ だまされたと思って、\n オダに7000ゴールド払ってくで！",
       "text": null
     },
     {
       "offset": "0x2096C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そのかわり、これを壊せたら\n魔法石を14個やるっ！",
+      "source": "ゴッツ\n<FB03>   そのかわり、これを壊せたら\n    魔法石を14個やるっ！",
       "text": null
     },
     {
       "offset": "0x209B8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>しかも、羊皮紙がないと合成出来ない\nあの超ナイスな魔法石なんだど！",
+      "source": "ゴッツ\n<FB03> しかも、羊皮紙がないと合成出来ない\n  あの超ナイスな魔法石なんだど！",
       "text": null
     },
     {
       "offset": "0x20A0C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>その名もっっっっ！\n羊皮紙合成魔法石フルセットォーッ♪",
+      "source": "ゴッツ\n<FB03>     その名もっっっっ！\n 羊皮紙合成魔法石フルセットォーッ♪",
       "text": null
     },
     {
       "offset": "0x20A5A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダの占いの結果では…70回！\n70回で壊れるとみた！",
+      "source": "ゴッツ\n<FB03>  オダの占いの結果では…70回！\n    70回で壊れるとみた！",
       "text": null
     },
     {
       "offset": "0x20AA8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>これはもう、無理にでも荷物の隙間を\n14個分空けてくるっきゃないだろ！",
+      "source": "ゴッツ\n<FB03> これはもう、無理にでも荷物の隙間を\n 14個分空けてくるっきゃないだろ！",
       "text": null
     },
     {
       "offset": "0x20AFE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>まあ、おまえは荷物の心配なんて\nなさそうだな！",
+      "source": "ゴッツ\n<FB03>  まあ、おまえは荷物の心配なんて\n      なさそうだな！",
       "text": null
     },
     {
       "offset": "0x20B48",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>あーあーあーあーっ！！\n言ってるそばから荷物だらけだべ",
+      "source": "ゴッツ\n<FB03>    あーあーあーあーっ！！\n  言ってるそばから荷物だらけだべ",
       "text": null
     },
     {
       "offset": "0x20B96",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>しらねーぞ…70回トラップ解除\n出来ても、なーんもなしだぞー…",
+      "source": "ゴッツ\n<FB03>  しらねーぞ…70回トラップ解除\n  出来ても、なーんもなしだぞー…",
       "text": null
     },
     {
       "offset": "0x20BE8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>それが困るなら、出直してこいだべよ",
+      "source": "ゴッツ\n<FB03> それが困るなら、出直してこいだべよ",
       "text": null
     },
     {
       "offset": "0x20C18",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ジャラジャラリィーン！\n銅版トラップ、スタートォー？！",
+      "source": "ゴッツ\n<FB03>    ジャラジャラリィーン！\n  銅版トラップ、スタートォー？！",
       "text": null
     },
     {
@@ -5508,25 +5508,25 @@
     {
       "offset": "0x20CA6",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>どうだー、ビックリしただろう！",
+      "source": "ゴッツ\n<FB03>  どうだー、ビックリしただろう！",
       "text": null
     },
     {
       "offset": "0x20CD4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オマエが来るのがわかったから、\nこっそり隠れてたんだよう！",
+      "source": "ゴッツ\n<FB03>  オマエが来るのがわかったから、\n   こっそり隠れてたんだよう！",
       "text": null
     },
     {
       "offset": "0x20D24",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>迷宮には、背後から迫り来る\n魔物だっていっぱいいるからな！",
+      "source": "ゴッツ\n<FB03>   迷宮には、背後から迫り来る\n  魔物だっていっぱいいるからな！",
       "text": null
     },
     {
       "offset": "0x20D74",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダも背後からドッカーンと\n不意討ちする練習してるだよう！",
+      "source": "ゴッツ\n<FB03>   オダも背後からドッカーンと\n  不意討ちする練習してるだよう！",
       "text": null
     },
     {
@@ -5538,25 +5538,25 @@
     {
       "offset": "0x20E1E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>さーてとっ…！",
+      "source": "ゴッツ\n<FB03>      さーてとっ…！",
       "text": null
     },
     {
       "offset": "0x20E44",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ジャラジャラリィーン！\nゴッツのトラップ第八弾～♪",
+      "source": "ゴッツ\n<FB03>    ジャラジャラリィーン！\n   ゴッツのトラップ第八弾～♪",
       "text": null
     },
     {
       "offset": "0x20E90",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>こないだは銅だったから\n今度は銀で作ってみただよ！",
+      "source": "ゴッツ\n<FB03>    こないだは銅だったから\n   今度は銀で作ってみただよ！",
       "text": null
     },
     {
       "offset": "0x20EDC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ギンギラギンでカッチョいいだろー！",
+      "source": "ゴッツ\n<FB03> ギンギラギンでカッチョいいだろー！",
       "text": null
     },
     {
@@ -5574,19 +5574,19 @@
     {
       "offset": "0x20FEA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>これは、ベイクド銀っていう\nすんげく貴重な銀を使ってるだよー！",
+      "source": "ゴッツ\n<FB03>   これは、ベイクド銀っていう\n すんげく貴重な銀を使ってるだよー！",
       "text": null
     },
     {
       "offset": "0x2103C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>こうやってピンクに輝くのが\nかわいいのだ！",
+      "source": "ゴッツ\n<FB03>   こうやってピンクに輝くのが\n      かわいいのだ！",
       "text": null
     },
     {
       "offset": "0x21084",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>このベイクド銀を掘り出す人件費が、\n8000ゴールドもかかっただよう…",
+      "source": "ゴッツ\n<FB03> このベイクド銀を掘り出す人件費が、\n 8000ゴールドもかかっただよう…",
       "text": null
     },
     {
@@ -5598,97 +5598,97 @@
     {
       "offset": "0x21112",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ほだ、ほだ、もうわかってるだろぉ♪",
+      "source": "ゴッツ\n<FB03> ほだ、ほだ、もうわかってるだろぉ♪",
       "text": null
     },
     {
       "offset": "0x21142",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>・・・・・・・・・・・・・・・",
+      "source": "ゴッツ\n<FB03>  ・・・・・・・・・・・・・・・",
       "text": null
     },
     {
       "offset": "0x21170",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03><FB01>合成素材フルセット<FB00>やるでよぉ！",
+      "source": "ゴッツ\n<FB03>  <FB01>合成素材フルセット<FB00>やるでよぉ！",
       "text": null
     },
     {
       "offset": "0x211A2",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダ、合成素材屋でバイトしてる\nフランソワとは幼なじみでよう！",
+      "source": "ゴッツ\n<FB03>  オダ、合成素材屋でバイトしてる\n  フランソワとは幼なじみでよう！",
       "text": null
     },
     {
       "offset": "0x211F4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ちょっと頼んで、こっそりと\nわけてもらっただよっ！",
+      "source": "ゴッツ\n<FB03>   ちょっと頼んで、こっそりと\n    わけてもらっただよっ！",
       "text": null
     },
     {
       "offset": "0x21240",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダの広い友達ネットワークで、\n色んなヤツに頼んでわけてもらった！",
+      "source": "ゴッツ\n<FB03>  オダの広い友達ネットワークで、\n 色んなヤツに頼んでわけてもらった！",
       "text": null
     },
     {
       "offset": "0x21294",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ちなみに31個もあるだよ！",
+      "source": "ゴッツ\n<FB03>   ちなみに31個もあるだよ！",
       "text": null
     },
     {
       "offset": "0x212C0",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>腕に自信があるならば、持ち物を\n31個あけてくることをオススメ！！",
+      "source": "ゴッツ\n<FB03>  腕に自信があるならば、持ち物を\n 31個あけてくることをオススメ！！",
       "text": null
     },
     {
       "offset": "0x21314",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>だけど、31個あけてこなければ\n1個もやらねえからな！",
+      "source": "ゴッツ\n<FB03>  だけど、31個あけてこなければ\n    1個もやらねえからな！",
       "text": null
     },
     {
       "offset": "0x21362",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>それがオークってもんだ！！",
+      "source": "ゴッツ\n<FB03>   それがオークってもんだ！！",
       "text": null
     },
     {
       "offset": "0x2138E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オマエは…、よし！\n31個荷物が増えても平気だな！",
+      "source": "ゴッツ\n<FB03>     オマエは…、よし！\n  31個荷物が増えても平気だな！",
       "text": null
     },
     {
       "offset": "0x213DA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オマエは…むむ、31個も荷物を\n持てねえようだど…",
+      "source": "ゴッツ\n<FB03>  オマエは…むむ、31個も荷物を\n     持てねえようだど…",
       "text": null
     },
     {
       "offset": "0x21426",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>それじゃあトラップを破壊しても\n合成素材フルセットはやらねえ！",
+      "source": "ゴッツ\n<FB03>  それじゃあトラップを破壊しても\n  合成素材フルセットはやらねえ！",
       "text": null
     },
     {
       "offset": "0x21478",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>それが困るならば、\n頑張って持ち物を減らしてこい！",
+      "source": "ゴッツ\n<FB03>     それが困るならば、\n  頑張って持ち物を減らしてこい！",
       "text": null
     },
     {
       "offset": "0x214C4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>たったの80回で壊れるように、\n設計して作っておいたからよう！",
+      "source": "ゴッツ\n<FB03>  たったの80回で壊れるように、\n  設計して作っておいたからよう！",
       "text": null
     },
     {
       "offset": "0x21516",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>だからっ、なっ、なっ！\n<FB01>8000ゴールド<FB00>だど！",
+      "source": "ゴッツ\n<FB03>    だからっ、なっ、なっ！\n    <FB01>8000ゴールド<FB00>だど！",
       "text": null
     },
     {
@@ -5706,25 +5706,25 @@
     {
       "offset": "0x215D8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>うわっ、はやいだなー！\nおまえタイミングよすぎるだよ！",
+      "source": "ゴッツ\n<FB03>    うわっ、はやいだなー！\n  おまえタイミングよすぎるだよ！",
       "text": null
     },
     {
       "offset": "0x21626",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ジャラジャラリィーン！\nゴッツのトラップ第九弾～♪",
+      "source": "ゴッツ\n<FB03>    ジャラジャラリィーン！\n   ゴッツのトラップ第九弾～♪",
       "text": null
     },
     {
       "offset": "0x21672",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>これ、すげえだろおー！\n金100％だどっ！",
+      "source": "ゴッツ\n<FB03>    これ、すげえだろおー！\n     金100％だどっ！",
       "text": null
     },
     {
       "offset": "0x216BA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>キンキラキンでカッチョいいだろー！",
+      "source": "ゴッツ\n<FB03> キンキラキンでカッチョいいだろー！",
       "text": null
     },
     {
@@ -5742,31 +5742,31 @@
     {
       "offset": "0x217E4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダはな、100回やっても大丈夫な\nトラップを作るのが夢なんだよー",
+      "source": "ゴッツ\n<FB03> オダはな、100回やっても大丈夫な\n  トラップを作るのが夢なんだよー",
       "text": null
     },
     {
       "offset": "0x21838",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>今回のトラップは、そのつもりで\n作ってみたんだけども、どうだかなー？！",
+      "source": "ゴッツ\n<FB03>  今回のトラップは、そのつもりで\n作ってみたんだけども、どうだかなー？！",
       "text": null
     },
     {
       "offset": "0x2188E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>奮発して<FB01>9000ゴールド<FB00>も\n使っちまったしなあー！",
+      "source": "ゴッツ\n<FB03>   奮発して<FB01>9000ゴールド<FB00>も\n    使っちまったしなあー！",
       "text": null
     },
     {
       "offset": "0x218DE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>記念品だって、すごいのを用意した！\nなんと…<FB01>魔法石フルセット<FB00>！",
+      "source": "ゴッツ\n<FB03> 記念品だって、すごいのを用意した！\n   なんと…<FB01>魔法石フルセット<FB00>！",
       "text": null
     },
     {
       "offset": "0x21934",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>持ち物、50個開けてこいだよ…\nでないと、後悔するど！",
+      "source": "ゴッツ\n<FB03>  持ち物、50個開けてこいだよ…\n    でないと、後悔するど！",
       "text": null
     },
     {
@@ -5778,19 +5778,19 @@
     {
       "offset": "0x219DC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>・・・・・・・・・・・・・・・・・",
+      "source": "ゴッツ\n<FB03> ・・・・・・・・・・・・・・・・・",
       "text": null
     },
     {
       "offset": "0x21A0C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>・・・やるだよな？",
+      "source": "ゴッツ\n<FB03>     ・・・やるだよな？",
       "text": null
     },
     {
       "offset": "0x21A34",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>・・・・・・・・・・・・・・・・・",
+      "source": "ゴッツ\n<FB03> ・・・・・・・・・・・・・・・・・",
       "text": null
     },
     {
@@ -5808,19 +5808,19 @@
     {
       "offset": "0x21AB8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>とうとう…とうとう…とうとう！",
+      "source": "ゴッツ\n<FB03>  とうとう…とうとう…とうとう！",
       "text": null
     },
     {
       "offset": "0x21AE6",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03><FC05>とうとう、でけた！",
+      "source": "ゴッツ\n<FB03><FC05>   とうとう、でけた！",
       "text": null
     },
     {
       "offset": "0x21B0C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ちょっとこれを見てくでよ！",
+      "source": "ゴッツ\n<FB03>   ちょっとこれを見てくでよ！",
       "text": null
     },
     {
@@ -5838,43 +5838,43 @@
     {
       "offset": "0x21BAA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ジャラジャラリィーン！\nゴッツのトラップ第十弾～♪",
+      "source": "ゴッツ\n<FB03>    ジャラジャラリィーン！\n   ゴッツのトラップ第十弾～♪",
       "text": null
     },
     {
       "offset": "0x21BF6",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>カラフルでハイカラで、\nかっちょいーだろーう！",
+      "source": "ゴッツ\n<FB03>    カラフルでハイカラで、\n    かっちょいーだろーう！",
       "text": null
     },
     {
       "offset": "0x21C40",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>その名も…魔法石トラップ！",
+      "source": "ゴッツ\n<FB03>   その名も…魔法石トラップ！",
       "text": null
     },
     {
       "offset": "0x21C6C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>これなら魔法パワーで、\n絶対100回は大丈夫だど！",
+      "source": "ゴッツ\n<FB03>    これなら魔法パワーで、\n   絶対100回は大丈夫だど！",
       "text": null
     },
     {
       "offset": "0x21CB8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>10000ゴールドかけて、魔法石を\n作りまくっただけの価値はあるだよ！",
+      "source": "ゴッツ\n<FB03> 10000ゴールドかけて、魔法石を\n 作りまくっただけの価値はあるだよ！",
       "text": null
     },
     {
       "offset": "0x21D0E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>さぁ、記念すべき魔法石トラップ\n第一回目の挑戦者よっ！",
+      "source": "ゴッツ\n<FB03>  さぁ、記念すべき魔法石トラップ\n    第一回目の挑戦者よっ！",
       "text": null
     },
     {
       "offset": "0x21D5C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>荷物を14個あけて、オダに\n挑むがええだよう！",
+      "source": "ゴッツ\n<FB03>   荷物を14個あけて、オダに\n     挑むがええだよう！",
       "text": null
     },
     {
@@ -5886,31 +5886,31 @@
     {
       "offset": "0x21E04",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>お…おおお、オダの予感どおりだよ！\nちょうど10回で壊れちまっただ",
+      "source": "ゴッツ\n<FB03> お…おおお、オダの予感どおりだよ！\n  ちょうど10回で壊れちまっただ",
       "text": null
     },
     {
       "offset": "0x21E58",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ありがとうだ！\nほだ、転移の薬もらってくでっ！",
+      "source": "ゴッツ\n<FB03>      ありがとうだ！\n  ほだ、転移の薬もらってくでっ！",
       "text": null
     },
     {
       "offset": "0x21EA2",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オオッー！ 友よ、よくきただ！\nあれ、やりにきただかっ？！",
+      "source": "ゴッツ\n<FB03>  オオッー！ 友よ、よくきただ！\n   あれ、やりにきただかっ？！",
       "text": null
     },
     {
       "offset": "0x21EF2",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オオッー！ 友よ、よくきただ！\nまた、あれやってみるかっ？",
+      "source": "ゴッツ\n<FB03>  オオッー！ 友よ、よくきただ！\n   また、あれやってみるかっ？",
       "text": null
     },
     {
       "offset": "0x21F42",
       "type": "center",
-      "source": "トラップテスト レベル1\n開始しますか？\n\nは い\nいいえ\n",
+      "source": "トラップテスト レベル1\n開始しますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -5922,7 +5922,7 @@
     {
       "offset": "0x21FB4",
       "type": "center",
-      "source": "トラップテスト レベル2\n開始しますか？\n\nは い\nいいえ\n",
+      "source": "トラップテスト レベル2\n開始しますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -5934,7 +5934,7 @@
     {
       "offset": "0x22026",
       "type": "center",
-      "source": "トラップテスト レベル3\n開始しますか？\n\nは い\nいいえ\n",
+      "source": "トラップテスト レベル3\n開始しますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -5946,7 +5946,7 @@
     {
       "offset": "0x22098",
       "type": "center",
-      "source": "トラップテスト レベル4\n開始しますか？\n\nは い\nいいえ\n",
+      "source": "トラップテスト レベル4\n開始しますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -5958,7 +5958,7 @@
     {
       "offset": "0x2210A",
       "type": "center",
-      "source": "トラップテスト レベル5\n開始しますか？\n\nは い\nいいえ\n",
+      "source": "トラップテスト レベル5\n開始しますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -5970,7 +5970,7 @@
     {
       "offset": "0x2217C",
       "type": "center",
-      "source": "トラップテスト レベル6\n開始しますか？\n\nは い\nいいえ\n",
+      "source": "トラップテスト レベル6\n開始しますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -5982,7 +5982,7 @@
     {
       "offset": "0x221EE",
       "type": "center",
-      "source": "トラップテスト レベル7\n開始しますか？\n\nは い\nいいえ\n",
+      "source": "トラップテスト レベル7\n開始しますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -5994,7 +5994,7 @@
     {
       "offset": "0x22260",
       "type": "center",
-      "source": "トラップテスト レベル8\n開始しますか？\n\nは い\nいいえ\n",
+      "source": "トラップテスト レベル8\n開始しますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -6006,7 +6006,7 @@
     {
       "offset": "0x222D2",
       "type": "center",
-      "source": "トラップテスト レベル9\n開始しますか？\n\nは い\nいいえ\n",
+      "source": "トラップテスト レベル9\n開始しますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -6018,7 +6018,7 @@
     {
       "offset": "0x22344",
       "type": "center",
-      "source": "トラップテスト レベル10\n開始しますか？\n\nは い\nいいえ\n",
+      "source": "トラップテスト レベル10\n開始しますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -6036,13 +6036,13 @@
     {
       "offset": "0x2241C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>お…おおお、オダの予感どおりだよ！\nちょうど20回で壊れちまっただ",
+      "source": "ゴッツ\n<FB03> お…おおお、オダの予感どおりだよ！\n  ちょうど20回で壊れちまっただ",
       "text": null
     },
     {
       "offset": "0x22470",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ありがとうだ！\nほだ、快癒の薬もらってくでっ！",
+      "source": "ゴッツ\n<FB03>      ありがとうだ！\n  ほだ、快癒の薬もらってくでっ！",
       "text": null
     },
     {
@@ -6054,13 +6054,13 @@
     {
       "offset": "0x22538",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>お…おおお、オダの直感どおりだよ！\nちょうど30回で壊れちまっただ",
+      "source": "ゴッツ\n<FB03> お…おおお、オダの直感どおりだよ！\n  ちょうど30回で壊れちまっただ",
       "text": null
     },
     {
       "offset": "0x2258C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ありがとうだ！\nほだ、お薬セットもらってくで！",
+      "source": "ゴッツ\n<FB03>      ありがとうだ！\n  ほだ、お薬セットもらってくで！",
       "text": null
     },
     {
@@ -6072,13 +6072,13 @@
     {
       "offset": "0x22644",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>お…おおお、オダの計算どおりだよ！\nちょうど40回で壊れちまっただ",
+      "source": "ゴッツ\n<FB03> お…おおお、オダの計算どおりだよ！\n  ちょうど40回で壊れちまっただ",
       "text": null
     },
     {
       "offset": "0x22698",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ありがとうだ！\nほだ、今回のドワーフグッズだ！",
+      "source": "ゴッツ\n<FB03>      ありがとうだ！\n  ほだ、今回のドワーフグッズだ！",
       "text": null
     },
     {
@@ -6090,7 +6090,7 @@
     {
       "offset": "0x22774",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>お…おおお…オダの夢は正夢だった！\nちょうど50回で壊れちまった！",
+      "source": "ゴッツ\n<FB03> お…おおお…オダの夢は正夢だった！\n  ちょうど50回で壊れちまった！",
       "text": null
     },
     {
@@ -6102,13 +6102,13 @@
     {
       "offset": "0x22846",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>おおおお…やっぱ、大自然の力は\nすごいだなぁ…",
+      "source": "ゴッツ\n<FB03>  おおおお…やっぱ、大自然の力は\n      すごいだなぁ…",
       "text": null
     },
     {
       "offset": "0x22890",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ちょうど60回で壊れただ！",
+      "source": "ゴッツ\n<FB03>   ちょうど60回で壊れただ！",
       "text": null
     },
     {
@@ -6120,7 +6120,7 @@
     {
       "offset": "0x22944",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>やったー…オダの占い、的中しただ！\nちょうど70回で壊れただよう！",
+      "source": "ゴッツ\n<FB03> やったー…オダの占い、的中しただ！\n  ちょうど70回で壊れただよう！",
       "text": null
     },
     {
@@ -6132,7 +6132,7 @@
     {
       "offset": "0x229F6",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>なっ、言ったとおりだろっ！\nオダの設計どおりに出来てるだよー！",
+      "source": "ゴッツ\n<FB03>   なっ、言ったとおりだろっ！\n オダの設計どおりに出来てるだよー！",
       "text": null
     },
     {
@@ -6144,7 +6144,7 @@
     {
       "offset": "0x22AB0",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>・・・・・・・・・・・・・・・・・",
+      "source": "ゴッツ\n<FB03> ・・・・・・・・・・・・・・・・・",
       "text": null
     },
     {
@@ -6168,25 +6168,25 @@
     {
       "offset": "0x22C22",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>あででででで…\nこんなはずじゃないだのに…",
+      "source": "ゴッツ\n<FB03>      あででででで…\n   こんなはずじゃないだのに…",
       "text": null
     },
     {
       "offset": "0x22C6A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ゔぐぐ…やっぱし100回用には\nアレを用意しなきゃダメだのか…",
+      "source": "ゴッツ\n<FB03>  ゔぐぐ…やっぱし100回用には\n  アレを用意しなきゃダメだのか…",
       "text": null
     },
     {
       "offset": "0x22CBC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>開発費をケチろうなんて考えた、\nオダがバカだったのか…",
+      "source": "ゴッツ\n<FB03>  開発費をケチろうなんて考えた、\n    オダがバカだったのか…",
       "text": null
     },
     {
       "offset": "0x22D0A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>いいだよ、100回じゃないけど\n約束は約束だからなあ…",
+      "source": "ゴッツ\n<FB03>  いいだよ、100回じゃないけど\n    約束は約束だからなあ…",
       "text": null
     },
     {
@@ -6198,313 +6198,313 @@
     {
       "offset": "0x22DCA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>おっおっおっおぉっ…！\n100回いったどーっ！",
+      "source": "ゴッツ\n<FB03>    おっおっおっおぉっ…！\n    100回いったどーっ！",
       "text": null
     },
     {
       "offset": "0x22E14",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>とうとうオダは100回持ちこたえる\nトラップを作ることに成功しただよ！",
+      "source": "ゴッツ\n<FB03> とうとうオダは100回持ちこたえる\n トラップを作ることに成功しただよ！",
       "text": null
     },
     {
       "offset": "0x22E6A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>さぁ、100回記念のオダの気持ちを\n受け取ってくで…！",
+      "source": "ゴッツ\n<FB03> さぁ、100回記念のオダの気持ちを\n     受け取ってくで…！",
       "text": null
     },
     {
       "offset": "0x22EB8",
       "type": "center",
-      "source": "トラップLV1…1000G\nトラップLV2…2000G\nやらない\nLV説明を見る\n",
+      "source": "<FFC0>トラップLV1…1000G\n<FFC1>トラップLV2…2000G\n<FFC2>やらない\n<FFC3>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x22F32",
       "type": "center",
-      "source": "\nトラップLV1…1000G\nやらない\nLV説明を見る\n",
+      "source": "\n<FFC0>トラップLV1…1000G\n<FFC1>やらない\n<FFC2>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x22F90",
       "type": "center",
-      "source": "\nトラップLV2…2000G\n他のレベルにする\nやらない\nLV説明を見る\n",
+      "source": "\n<FFC0>トラップLV2…2000G\n<FFC1>他のレベルにする\n<FFC2>やらない\n<FFC3>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x2300C",
       "type": "center",
-      "source": "レベル選択<STYLE:0>\n\nトラップLV1…1000G\nトラップLV2…2000G\nやらない\nLV説明を見る\n",
+      "source": "<STYLE:3>レベル選択<STYLE:0>\n\n<FFC0>トラップLV1…1000G\n<FFC1>トラップLV2…2000G\n<FFC2>やらない\n<FFC3>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x23098",
       "type": "center",
-      "source": "レベル選択<STYLE:0>\nトラップLV1…1000G\nトラップLV2…2000G\nトラップLV3…3000G\nやらない\nLV説明を見る\n",
+      "source": "<STYLE:3>レベル選択<STYLE:0>\n<FFC0>トラップLV1…1000G\n<FFC1>トラップLV2…2000G\n<FFC2>トラップLV3…3000G\n<FFC3>やらない\n<FFC4>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x23140",
       "type": "center",
-      "source": "\nトラップLV3…3000G\n他のレベルにする\nやらない\nLV説明を見る\n",
+      "source": "\n<FFC0>トラップLV3…3000G\n<FFC1>他のレベルにする\n<FFC2>やらない\n<FFC3>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x231BC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オオッー！ 同志よ、よくきた！\nあれ、やってくれるかっ？！",
+      "source": "ゴッツ\n<FB03>  オオッー！ 同志よ、よくきた！\n   あれ、やってくれるかっ？！",
       "text": null
     },
     {
       "offset": "0x2320C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>待ってだど、盟友！\nあれ、やるだよなっ？！",
+      "source": "ゴッツ\n<FB03>     待ってだど、盟友！\n    あれ、やるだよなっ？！",
       "text": null
     },
     {
       "offset": "0x23254",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>よく来てくでたな！\nやるだよなっ、なっ？！",
+      "source": "ゴッツ\n<FB03>     よく来てくでたな！\n    やるだよなっ、なっ？！",
       "text": null
     },
     {
       "offset": "0x2329C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>グヒャッヒャッヒャッ！\nあれ、やりに来ただなっ？！",
+      "source": "ゴッツ\n<FB03>    グヒャッヒャッヒャッ！\n   あれ、やりに来ただなっ？！",
       "text": null
     },
     {
       "offset": "0x232E8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>・・・やるだよな？",
+      "source": "ゴッツ\n<FB03>     ・・・やるだよな？",
       "text": null
     },
     {
       "offset": "0x23310",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>おっ、またやるだか？！",
+      "source": "ゴッツ\n<FB03>    おっ、またやるだか？！",
       "text": null
     },
     {
       "offset": "0x2333A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>よう、あれやりに来ただど？",
+      "source": "ゴッツ\n<FB03>   よう、あれやりに来ただど？",
       "text": null
     },
     {
       "offset": "0x23366",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>あれやるなら、勝手にやっていいど！",
+      "source": "ゴッツ\n<FB03> あれやるなら、勝手にやっていいど！",
       "text": null
     },
     {
       "offset": "0x23396",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>おうおう、あれやりたいか！",
+      "source": "ゴッツ\n<FB03>   おうおう、あれやりたいか！",
       "text": null
     },
     {
       "offset": "0x233C2",
       "type": "center",
-      "source": "\nトラップLV4…4000G\n他のレベルにする\nやらない\nLV説明を見る\n",
+      "source": "\n<FFC0>トラップLV4…4000G\n<FFC1>他のレベルにする\n<FFC2>やらない\n<FFC3>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x2343E",
       "type": "center",
-      "source": "\nトラップLV5…5000G\n他のレベルにする\nやらない\nLV説明を見る\n",
+      "source": "\n<FFC0>トラップLV5…5000G\n<FFC1>他のレベルにする\n<FFC2>やらない\n<FFC3>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x234BA",
       "type": "center",
-      "source": "\nトラップLV6…6000G\n他のレベルにする\nやらない\nLV説明を見る\n",
+      "source": "\n<FFC0>トラップLV6…6000G\n<FFC1>他のレベルにする\n<FFC2>やらない\n<FFC3>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x23536",
       "type": "center",
-      "source": "\nトラップLV7…7000G\n他のレベルにする\nやらない\nLV説明を見る\n",
+      "source": "\n<FFC0>トラップLV7…7000G\n<FFC1>他のレベルにする\n<FFC2>やらない\n<FFC3>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x235B2",
       "type": "center",
-      "source": "\nトラップLV8…8000G\n他のレベルにする\nやらない\nLV説明を見る\n",
+      "source": "\n<FFC0>トラップLV8…8000G\n<FFC1>他のレベルにする\n<FFC2>やらない\n<FFC3>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x2362E",
       "type": "center",
-      "source": "\nトラップLV9…9000G\n他のレベルにする\nやらない\nLV説明を見る\n",
+      "source": "\n<FFC0>トラップLV9…9000G\n<FFC1>他のレベルにする\n<FFC2>やらない\n<FFC3>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x236AA",
       "type": "center",
-      "source": "\nトラップLV10…10000G\n他のレベルにする\nやらない\nLV説明を見る\n",
+      "source": "\n<FFC0>トラップLV10…10000G\n<FFC1>他のレベルにする\n<FFC2>やらない\n<FFC3>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x23736",
       "type": "center",
-      "source": "レベル選択<STYLE:0>\n\nトラップLV1…1000G\nトラップLV2…2000G\nトラップLV3…3000G\nやらない\nLV説明を見る\n",
+      "source": "<STYLE:3>レベル選択<STYLE:0>\n\n<FFC0>トラップLV1…1000G\n<FFC1>トラップLV2…2000G\n<FFC2>トラップLV3…3000G\n<FFC3>やらない\n<FFC4>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x237E0",
       "type": "center",
-      "source": "レベル選択<STYLE:0>\n\nトラップLV1…1000G\nトラップLV2…2000G\nトラップLV3…3000G\nトラップLV4…4000G\nやらない\nLV説明を見る\n",
+      "source": "<STYLE:3>レベル選択<STYLE:0>\n\n<FFC0>トラップLV1…1000G\n<FFC1>トラップLV2…2000G\n<FFC2>トラップLV3…3000G\n<FFC3>トラップLV4…4000G\n<FFC4>やらない\n<FFC5>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x238A8",
       "type": "center",
-      "source": "レベル選択<STYLE:0>\n\nトラップLV1…1000G\nトラップLV2…2000G\nトラップLV3…3000G\nトラップLV4…4000G\nトラップLV5…5000G\nやらない\nLV説明を見る\n",
+      "source": "<STYLE:3>レベル選択<STYLE:0>\n\n<FFC0>トラップLV1…1000G\n<FFC1>トラップLV2…2000G\n<FFC2>トラップLV3…3000G\n<FFC3>トラップLV4…4000G\n<FFC4>トラップLV5…5000G\n<FFC5>やらない\n<FFC6>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x2398E",
       "type": "center",
-      "source": "レベル選択<STYLE:0>\n\nトラップLV1…1000G\nトラップLV2…2000G\nトラップLV3…3000G\nトラップLV4…4000G\nトラップLV5…5000G\n次のページ\nやらない\nLV説明を見る\n",
+      "source": "<STYLE:3>レベル選択<STYLE:0>\n\n<FFC0>トラップLV1…1000G\n<FFC1>トラップLV2…2000G\n<FFC2>トラップLV3…3000G\n<FFC3>トラップLV4…4000G\n<FFC4>トラップLV5…5000G\n<FFC5>次のページ\n<FFC6>やらない\n<FFC7>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x23A92",
       "type": "center",
-      "source": "レベル選択<STYLE:0>\n\nトラップLV6…6000G\n前のページ\nやらない\nLV説明を見る\n",
+      "source": "<STYLE:3>レベル選択<STYLE:0>\n\n<FFC0>トラップLV6…6000G\n<FFC1>前のページ\n<FFC2>やらない\n<FFC3>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x23B1E",
       "type": "center",
-      "source": "レベル選択<STYLE:0>\n\nトラップLV1…1000G\nトラップLV2…2000G\nトラップLV3…3000G\nトラップLV4…4000G\nトラップLV5…5000G\n次のページ\nやらない\nLV説明を見る\n",
+      "source": "<STYLE:3>レベル選択<STYLE:0>\n\n<FFC0>トラップLV1…1000G\n<FFC1>トラップLV2…2000G\n<FFC2>トラップLV3…3000G\n<FFC3>トラップLV4…4000G\n<FFC4>トラップLV5…5000G\n<FFC5>次のページ\n<FFC6>やらない\n<FFC7>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x23C22",
       "type": "center",
-      "source": "レベル選択<STYLE:0>\n\nトラップLV6…6000G\nトラップLV7…7000G\n前のページ\nやらない\nLV説明を見る\n",
+      "source": "<STYLE:3>レベル選択<STYLE:0>\n\n<FFC0>トラップLV6…6000G\n<FFC1>トラップLV7…7000G\n<FFC2>前のページ\n<FFC3>やらない\n<FFC4>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x23CCC",
       "type": "center",
-      "source": "レベル選択<STYLE:0>\n\nトラップLV1…1000G\nトラップLV2…2000G\nトラップLV3…3000G\nトラップLV4…4000G\nトラップLV5…5000G\n次のページ\nやらない\nLV説明を見る\n",
+      "source": "<STYLE:3>レベル選択<STYLE:0>\n\n<FFC0>トラップLV1…1000G\n<FFC1>トラップLV2…2000G\n<FFC2>トラップLV3…3000G\n<FFC3>トラップLV4…4000G\n<FFC4>トラップLV5…5000G\n<FFC5>次のページ\n<FFC6>やらない\n<FFC7>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x23DD0",
       "type": "center",
-      "source": "レベル選択<STYLE:0>\n\nトラップLV6…6000G\nトラップLV7…7000G\nトラップLV8…8000G\n前のページ\nやらない\nLV説明を見る\n",
+      "source": "<STYLE:3>レベル選択<STYLE:0>\n\n<FFC0>トラップLV6…6000G\n<FFC1>トラップLV7…7000G\n<FFC2>トラップLV8…8000G\n<FFC3>前のページ\n<FFC4>やらない\n<FFC5>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x23E98",
       "type": "center",
-      "source": "レベル選択<STYLE:0>\n\nトラップLV1…1000G\nトラップLV2…2000G\nトラップLV3…3000G\nトラップLV4…4000G\nトラップLV5…5000G\n次のページ\nやらない\nLV説明を見る\n",
+      "source": "<STYLE:3>レベル選択<STYLE:0>\n\n<FFC0>トラップLV1…1000G\n<FFC1>トラップLV2…2000G\n<FFC2>トラップLV3…3000G\n<FFC3>トラップLV4…4000G\n<FFC4>トラップLV5…5000G\n<FFC5>次のページ\n<FFC6>やらない\n<FFC7>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x23F9C",
       "type": "center",
-      "source": "レベル選択<STYLE:0>\n\nトラップLV6…6000G\nトラップLV7…7000G\nトラップLV8…8000G\nトラップLV9…9000G\n前のページ\nやらない\nLV説明を見る\n",
+      "source": "<STYLE:3>レベル選択<STYLE:0>\n\n<FFC0>トラップLV6…6000G\n<FFC1>トラップLV7…7000G\n<FFC2>トラップLV8…8000G\n<FFC3>トラップLV9…9000G\n<FFC4>前のページ\n<FFC5>やらない\n<FFC6>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x24082",
       "type": "center",
-      "source": "レベル選択<STYLE:0>\n\nトラップLV1…1000G\nトラップLV2…2000G\nトラップLV3…3000G\nトラップLV4…4000G\nトラップLV5…5000G\n次のページ\nやらない\nLV説明を見る\n",
+      "source": "<STYLE:3>レベル選択<STYLE:0>\n\n<FFC0>トラップLV1…1000G\n<FFC1>トラップLV2…2000G\n<FFC2>トラップLV3…3000G\n<FFC3>トラップLV4…4000G\n<FFC4>トラップLV5…5000G\n<FFC5>次のページ\n<FFC6>やらない\n<FFC7>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x24186",
       "type": "center",
-      "source": "レベル選択<STYLE:0>\n\nトラップLV6 …6000G\nトラップLV7 …7000G\nトラップLV8 …8000G\nトラップLV9 …9000G\nトラップLV10…10000G\n前のページ\nやらない\nLV説明を見る\n",
+      "source": "<STYLE:3>レベル選択<STYLE:0>\n\n<FFC0>トラップLV6 …6000G\n<FFC1>トラップLV7 …7000G\n<FFC2>トラップLV8 …8000G\n<FFC3>トラップLV9 …9000G\n<FFC4>トラップLV10…10000G\n<FFC5>前のページ\n<FFC6>やらない\n<FFC7>LV説明を見る\n",
       "text": null
     },
     {
       "offset": "0x242AA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>パラリロリィーン！\nおめでとーうございまーす！",
+      "source": "ゴッツ\n<FB03>     パラリロリィーン！\n   おめでとーうございまーす！",
       "text": null
     },
     {
       "offset": "0x242F4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ほだ、転移の薬もらってくでっ！",
+      "source": "ゴッツ\n<FB03>  ほだ、転移の薬もらってくでっ！",
       "text": null
     },
     {
       "offset": "0x24322",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>パラリロリィーン！\nおめでとーうございまーす！",
+      "source": "ゴッツ\n<FB03>     パラリロリィーン！\n   おめでとーうございまーす！",
       "text": null
     },
     {
       "offset": "0x2436C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ほだ、快癒の薬もらってくでっ！",
+      "source": "ゴッツ\n<FB03>  ほだ、快癒の薬もらってくでっ！",
       "text": null
     },
     {
       "offset": "0x2439A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>パラリロリィーン！\nおめでとーうございまーす！",
+      "source": "ゴッツ\n<FB03>     パラリロリィーン！\n   おめでとーうございまーす！",
       "text": null
     },
     {
       "offset": "0x243E4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ほだ、お薬セットあげるだよっ！",
+      "source": "ゴッツ\n<FB03>  ほだ、お薬セットあげるだよっ！",
       "text": null
     },
     {
       "offset": "0x24412",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>パラリロリィーン！\nおめでとーうございまーす！",
+      "source": "ゴッツ\n<FB03>     パラリロリィーン！\n   おめでとーうございまーす！",
       "text": null
     },
     {
       "offset": "0x2445C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ほだ、ドワーフグッズ！\nもらってくでよっ！",
+      "source": "ゴッツ\n<FB03>    ほだ、ドワーフグッズ！\n     もらってくでよっ！",
       "text": null
     },
     {
       "offset": "0x244A4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>パラリロリィーン！\nおめでとーうございまーす！",
+      "source": "ゴッツ\n<FB03>     パラリロリィーン！\n   おめでとーうございまーす！",
       "text": null
     },
     {
       "offset": "0x244EE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>パラリロリィーン！\nおめでとーうございまーす！",
+      "source": "ゴッツ\n<FB03>     パラリロリィーン！\n   おめでとーうございまーす！",
       "text": null
     },
     {
       "offset": "0x24538",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>パラリロリィーン！\nおめでとーうございまーす！",
+      "source": "ゴッツ\n<FB03>     パラリロリィーン！\n   おめでとーうございまーす！",
       "text": null
     },
     {
       "offset": "0x24582",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>パラリロリィーン！\nおめでとーうございまーす！",
+      "source": "ゴッツ\n<FB03>     パラリロリィーン！\n   おめでとーうございまーす！",
       "text": null
     },
     {
       "offset": "0x245CC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>パラリロリィーン！\nおめでとーうございまーす！",
+      "source": "ゴッツ\n<FB03>     パラリロリィーン！\n   おめでとーうございまーす！",
       "text": null
     },
     {
       "offset": "0x24616",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>パラリロリィーン！\nおめでとーうございまーす！",
+      "source": "ゴッツ\n<FB03>     パラリロリィーン！\n   おめでとーうございまーす！",
       "text": null
     },
     {
@@ -6516,13 +6516,13 @@
     {
       "offset": "0x24682",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…オマエ、荷物多すぎて\n2個しか持っていけないど！",
+      "source": "ゴッツ\n<FB03>    …オマエ、荷物多すぎて\n   2個しか持っていけないど！",
       "text": null
     },
     {
       "offset": "0x246CE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>仕方ないから、2個だけ\nオマエにやるだよ！",
+      "source": "ゴッツ\n<FB03>    仕方ないから、2個だけ\n     オマエにやるだよ！",
       "text": null
     },
     {
@@ -6534,13 +6534,13 @@
     {
       "offset": "0x24738",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…オマエ、荷物多すぎて\n1個しか持っていけないど！",
+      "source": "ゴッツ\n<FB03>    …オマエ、荷物多すぎて\n   1個しか持っていけないど！",
       "text": null
     },
     {
       "offset": "0x24784",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>仕方ないから、1個だけ\nオマエにやるだよ！",
+      "source": "ゴッツ\n<FB03>    仕方ないから、1個だけ\n     オマエにやるだよ！",
       "text": null
     },
     {
@@ -6552,43 +6552,43 @@
     {
       "offset": "0x247EA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…って、なんだーオマエ\n荷物いっぱいじゃねーか",
+      "source": "ゴッツ\n<FB03>    …って、なんだーオマエ\n    荷物いっぱいじゃねーか",
       "text": null
     },
     {
       "offset": "0x24834",
       "type": "center",
-      "source": "何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
       "offset": "0x2485E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…そっか、こんなのいらないか…",
+      "source": "ゴッツ\n<FB03>  …そっか、こんなのいらないか…",
       "text": null
     },
     {
       "offset": "0x2488C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>じゃあ、もったいないから、\nオダが持っておくだ",
+      "source": "ゴッツ\n<FB03>   じゃあ、もったいないから、\n     オダが持っておくだ",
       "text": null
     },
     {
       "offset": "0x248D6",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…そっか、こんなのいらないか…",
+      "source": "ゴッツ\n<FB03>  …そっか、こんなのいらないか…",
       "text": null
     },
     {
       "offset": "0x24904",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>じゃあ、もったいないから、\nオダが持っておくだ",
+      "source": "ゴッツ\n<FB03>   じゃあ、もったいないから、\n     オダが持っておくだ",
       "text": null
     },
     {
       "offset": "0x2494E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>またいつでも、テストしてくで！",
+      "source": "ゴッツ\n<FB03>  またいつでも、テストしてくで！",
       "text": null
     },
     {
@@ -6600,61 +6600,61 @@
     {
       "offset": "0x2499A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…って、なんだーオマエ\n荷物いっぱいじゃねーか",
+      "source": "ゴッツ\n<FB03>    …って、なんだーオマエ\n    荷物いっぱいじゃねーか",
       "text": null
     },
     {
       "offset": "0x249E4",
       "type": "center",
-      "source": "何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
       "offset": "0x24A0E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…そっか、こんなのいらないか…",
+      "source": "ゴッツ\n<FB03>  …そっか、こんなのいらないか…",
       "text": null
     },
     {
       "offset": "0x24A3C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>じゃあ、もったいないから、\nオダが持っておくだ",
+      "source": "ゴッツ\n<FB03>   じゃあ、もったいないから、\n     オダが持っておくだ",
       "text": null
     },
     {
       "offset": "0x24A86",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…そっか、こんなのいらないか…",
+      "source": "ゴッツ\n<FB03>  …そっか、こんなのいらないか…",
       "text": null
     },
     {
       "offset": "0x24AB4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>じゃあ、もったいないから、\nオダが持っておくだ",
+      "source": "ゴッツ\n<FB03>   じゃあ、もったいないから、\n     オダが持っておくだ",
       "text": null
     },
     {
       "offset": "0x24AFE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダ、もっとずっとすんげえ\nトラップを作るだよう！",
+      "source": "ゴッツ\n<FB03>   オダ、もっとずっとすんげえ\n    トラップを作るだよう！",
       "text": null
     },
     {
       "offset": "0x24B4A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>またいつでも、テストしてくで！",
+      "source": "ゴッツ\n<FB03>  またいつでも、テストしてくで！",
       "text": null
     },
     {
       "offset": "0x24B78",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…って、なんだーオマエ\n荷物いっぱいじゃねーか",
+      "source": "ゴッツ\n<FB03>    …って、なんだーオマエ\n    荷物いっぱいじゃねーか",
       "text": null
     },
     {
       "offset": "0x24BC2",
       "type": "center",
-      "source": "何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -6666,49 +6666,49 @@
     {
       "offset": "0x24C0C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダ、ずっとずっとイケてる\nトラップを作るだよう！",
+      "source": "ゴッツ\n<FB03>   オダ、ずっとずっとイケてる\n    トラップを作るだよう！",
       "text": null
     },
     {
       "offset": "0x24C58",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>またいつでも、テストしてくで！",
+      "source": "ゴッツ\n<FB03>  またいつでも、テストしてくで！",
       "text": null
     },
     {
       "offset": "0x24C86",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…そっか、こんなのいらないか…",
+      "source": "ゴッツ\n<FB03>  …そっか、こんなのいらないか…",
       "text": null
     },
     {
       "offset": "0x24CB4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>じゃあ、もったいないから、\nオダが持っておくだ",
+      "source": "ゴッツ\n<FB03>   じゃあ、もったいないから、\n     オダが持っておくだ",
       "text": null
     },
     {
       "offset": "0x24CFE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダ、ずっとずっとイケてる\nトラップを作るだよう！",
+      "source": "ゴッツ\n<FB03>   オダ、ずっとずっとイケてる\n    トラップを作るだよう！",
       "text": null
     },
     {
       "offset": "0x24D4A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>またいつでも、テストしてくで！",
+      "source": "ゴッツ\n<FB03>  またいつでも、テストしてくで！",
       "text": null
     },
     {
       "offset": "0x24D78",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…って、なんだーオマエ\n荷物いっぱいじゃねーか",
+      "source": "ゴッツ\n<FB03>    …って、なんだーオマエ\n    荷物いっぱいじゃねーか",
       "text": null
     },
     {
       "offset": "0x24DC2",
       "type": "center",
-      "source": "何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -6732,43 +6732,43 @@
     {
       "offset": "0x24E5C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダ、これからも頑張って、\nトラップを作るだよう！",
+      "source": "ゴッツ\n<FB03>   オダ、これからも頑張って、\n    トラップを作るだよう！",
       "text": null
     },
     {
       "offset": "0x24EA8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>また何回でも、テストしてくで！",
+      "source": "ゴッツ\n<FB03>  また何回でも、テストしてくで！",
       "text": null
     },
     {
       "offset": "0x24ED6",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…そっか、こんなのいらないか…",
+      "source": "ゴッツ\n<FB03>  …そっか、こんなのいらないか…",
       "text": null
     },
     {
       "offset": "0x24F04",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>じゃあ、もったいないから、\nオダが持っておくだ",
+      "source": "ゴッツ\n<FB03>   じゃあ、もったいないから、\n     オダが持っておくだ",
       "text": null
     },
     {
       "offset": "0x24F4E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダ、これからも頑張って、\nトラップを作るだよう！",
+      "source": "ゴッツ\n<FB03>   オダ、これからも頑張って、\n    トラップを作るだよう！",
       "text": null
     },
     {
       "offset": "0x24F9A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>また何回でも、テストしてくで！",
+      "source": "ゴッツ\n<FB03>  また何回でも、テストしてくで！",
       "text": null
     },
     {
       "offset": "0x24FC8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ありがとうだ！\nほだっ、合成素材フルセット！！",
+      "source": "ゴッツ\n<FB03>      ありがとうだ！\n  ほだっ、合成素材フルセット！！",
       "text": null
     },
     {
@@ -6780,49 +6780,49 @@
     {
       "offset": "0x2503A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ありがとうだ！\n…だけど、オマエは荷物が多すぎる！",
+      "source": "ゴッツ\n<FB03>      ありがとうだ！\n …だけど、オマエは荷物が多すぎる！",
       "text": null
     },
     {
       "offset": "0x25086",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダは31個以上荷物を持てなければ\nやらねえと言ったからなっ！",
+      "source": "ゴッツ\n<FB03> オダは31個以上荷物を持てなければ\n   やらねえと言ったからなっ！",
       "text": null
     },
     {
       "offset": "0x250D8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そういうわけだから、あきらめろっ！",
+      "source": "ゴッツ\n<FB03> そういうわけだから、あきらめろっ！",
       "text": null
     },
     {
       "offset": "0x25108",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>欲しかったら、荷物を片付けてから、\nまたチャレンジするだよう！",
+      "source": "ゴッツ\n<FB03> 欲しかったら、荷物を片付けてから、\n   またチャレンジするだよう！",
       "text": null
     },
     {
       "offset": "0x2515A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>もう次と次のプランまで\n組んであるだよー！",
+      "source": "ゴッツ\n<FB03>    もう次と次のプランまで\n     組んであるだよー！",
       "text": null
     },
     {
       "offset": "0x251A2",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダ頑張ってトラップ開発しとくから\nまたテキトーに遊びにきてくで！",
+      "source": "ゴッツ\n<FB03> オダ頑張ってトラップ開発しとくから\n  またテキトーに遊びにきてくで！",
       "text": null
     },
     {
       "offset": "0x251F6",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダ頑張ってトラップ開発しとくから\nまたテキトーに遊びにきてくで！",
+      "source": "ゴッツ\n<FB03> オダ頑張ってトラップ開発しとくから\n  またテキトーに遊びにきてくで！",
       "text": null
     },
     {
       "offset": "0x2524A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ありがとうだ！\nほだっ、転職宝玉フルセット！！",
+      "source": "ゴッツ\n<FB03>      ありがとうだ！\n  ほだっ、転職宝玉フルセット！！",
       "text": null
     },
     {
@@ -6834,43 +6834,43 @@
     {
       "offset": "0x252BC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ありがとうだ！\n…だけど、オマエは荷物が多すぎる！",
+      "source": "ゴッツ\n<FB03>      ありがとうだ！\n …だけど、オマエは荷物が多すぎる！",
       "text": null
     },
     {
       "offset": "0x25308",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダは8個以上荷物を持てなかったら\nやらねえと言ったからなっ！",
+      "source": "ゴッツ\n<FB03> オダは8個以上荷物を持てなかったら\n   やらねえと言ったからなっ！",
       "text": null
     },
     {
       "offset": "0x2535A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そういうわけだから、あきらめろっ！",
+      "source": "ゴッツ\n<FB03> そういうわけだから、あきらめろっ！",
       "text": null
     },
     {
       "offset": "0x2538A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>欲しかったら、荷物を片付けてから、\nまたチャレンジするだよう！",
+      "source": "ゴッツ\n<FB03> 欲しかったら、荷物を片付けてから、\n   またチャレンジするだよう！",
       "text": null
     },
     {
       "offset": "0x253DC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そんじゃあ、オダはこれからだって\nびっくりトラップを開発するでよう！",
+      "source": "ゴッツ\n<FB03> そんじゃあ、オダはこれからだって\n びっくりトラップを開発するでよう！",
       "text": null
     },
     {
       "offset": "0x25430",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>また、どんどん遊びにきてくでなっ！",
+      "source": "ゴッツ\n<FB03> また、どんどん遊びにきてくでなっ！",
       "text": null
     },
     {
       "offset": "0x25460",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ありがとうだ！\n羊皮紙合成魔法石フルセットやるど！",
+      "source": "ゴッツ\n<FB03>      ありがとうだ！\n 羊皮紙合成魔法石フルセットやるど！",
       "text": null
     },
     {
@@ -6882,55 +6882,55 @@
     {
       "offset": "0x254DE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ありがとうだ！\n…だけど、オマエは荷物が多すぎる！",
+      "source": "ゴッツ\n<FB03>      ありがとうだ！\n …だけど、オマエは荷物が多すぎる！",
       "text": null
     },
     {
       "offset": "0x2552A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダは14個以上荷物を持てなければ\nやらねえと言ったからなっ！",
+      "source": "ゴッツ\n<FB03> オダは14個以上荷物を持てなければ\n   やらねえと言ったからなっ！",
       "text": null
     },
     {
       "offset": "0x2557C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そういうわけだから、やらんのだっ！",
+      "source": "ゴッツ\n<FB03> そういうわけだから、やらんのだっ！",
       "text": null
     },
     {
       "offset": "0x255AC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>欲しかったら、荷物を片付けてから、\nまた出直してこいよう！",
+      "source": "ゴッツ\n<FB03> 欲しかったら、荷物を片付けてから、\n    また出直してこいよう！",
       "text": null
     },
     {
       "offset": "0x255FC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>さぁっ、もっともっとふんばって\nスペシャルトラップを作るでよーう！",
+      "source": "ゴッツ\n<FB03>  さぁっ、もっともっとふんばって\n スペシャルトラップを作るでよーう！",
       "text": null
     },
     {
       "offset": "0x25650",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>また、どんどんチャレンジしてくで！",
+      "source": "ゴッツ\n<FB03> また、どんどんチャレンジしてくで！",
       "text": null
     },
     {
       "offset": "0x25680",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ほだ、突然変異魔法石フルセット\nもらってくでよっ！",
+      "source": "ゴッツ\n<FB03>  ほだ、突然変異魔法石フルセット\n     もらってくでよっ！",
       "text": null
     },
     {
       "offset": "0x256CC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…って、なんだーオマエ\n荷物いっぱいじゃねーか",
+      "source": "ゴッツ\n<FB03>    …って、なんだーオマエ\n    荷物いっぱいじゃねーか",
       "text": null
     },
     {
       "offset": "0x25716",
       "type": "center",
-      "source": "何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -6942,25 +6942,25 @@
     {
       "offset": "0x25770",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そんじゃあ、オダはこれからだって\nすんげえトラップを用意するでよう！",
+      "source": "ゴッツ\n<FB03> そんじゃあ、オダはこれからだって\n すんげえトラップを用意するでよう！",
       "text": null
     },
     {
       "offset": "0x257C4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>まー、ボチボチ遊びにきてくでよっ！",
+      "source": "ゴッツ\n<FB03> まー、ボチボチ遊びにきてくでよっ！",
       "text": null
     },
     {
       "offset": "0x257F4",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>魔法石フルセット、やるだよう…",
+      "source": "ゴッツ\n<FB03>  魔法石フルセット、やるだよう…",
       "text": null
     },
     {
       "offset": "0x25822",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>っくーーーーーうぅっっっ！\n持ってけ、ドロボーウ！",
+      "source": "ゴッツ\n<FB03>   っくーーーーーうぅっっっ！\n    持ってけ、ドロボーウ！",
       "text": null
     },
     {
@@ -6972,13 +6972,13 @@
     {
       "offset": "0x25894",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>んじゃあ、オダはトラップ開発に\n励むので忙しいから、はやく出てけ！",
+      "source": "ゴッツ\n<FB03>  んじゃあ、オダはトラップ開発に\n 励むので忙しいから、はやく出てけ！",
       "text": null
     },
     {
       "offset": "0x258E8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>悪いなーっ、兄弟！\nまたそのうち遊びに来るとええだよ！",
+      "source": "ゴッツ\n<FB03>     悪いなーっ、兄弟！\n またそのうち遊びに来るとええだよ！",
       "text": null
     },
     {
@@ -7002,25 +7002,25 @@
     {
       "offset": "0x259F2",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…あっ…オマエさては…\n荷物50個持てないだなっ！",
+      "source": "ゴッツ\n<FB03>    …あっ…オマエさては…\n   荷物50個持てないだなっ！",
       "text": null
     },
     {
       "offset": "0x25A3E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>じゃあ魔法石フルセット、やらねえ！",
+      "source": "ゴッツ\n<FB03> じゃあ魔法石フルセット、やらねえ！",
       "text": null
     },
     {
       "offset": "0x25A6E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>んじゃあ、オダはトラップ開発に\n励むので忙しいから、はやく出てけ！",
+      "source": "ゴッツ\n<FB03>  んじゃあ、オダはトラップ開発に\n 励むので忙しいから、はやく出てけ！",
       "text": null
     },
     {
       "offset": "0x25AC2",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>悪いなーっ、兄弟！\nまたそのうち遊びに来るとええだよ！",
+      "source": "ゴッツ\n<FB03>     悪いなーっ、兄弟！\n またそのうち遊びに来るとええだよ！",
       "text": null
     },
     {
@@ -7050,301 +7050,301 @@
     {
       "offset": "0x25BF8",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…なんだ、オマエ荷物だらけか…\nふう…オダの気持ちを拒むだか…",
+      "source": "ゴッツ\n<FB03>  …なんだ、オマエ荷物だらけか…\n  ふう…オダの気持ちを拒むだか…",
       "text": null
     },
     {
       "offset": "0x25C4A",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>まぁいいだよ！\nとにかくよくやってくれただよ！",
+      "source": "ゴッツ\n<FB03>      まぁいいだよ！\n  とにかくよくやってくれただよ！",
       "text": null
     },
     {
       "offset": "0x25C94",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オダのトラップ開発は、\nこれで打ち切りするべ！",
+      "source": "ゴッツ\n<FB03>    オダのトラップ開発は、\n    これで打ち切りするべ！",
       "text": null
     },
     {
       "offset": "0x25CDE",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>これからは、どんどん大量生産を\nはじめるだよ！",
+      "source": "ゴッツ\n<FB03>  これからは、どんどん大量生産を\n      はじめるだよ！",
       "text": null
     },
     {
       "offset": "0x25D28",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オマエもたまには、品質チェックしに\n来てくでよなーっ！",
+      "source": "ゴッツ\n<FB03> オマエもたまには、品質チェックしに\n     来てくでよなーっ！",
       "text": null
     },
     {
       "offset": "0x25D76",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>これからも、どんどん大量生産を\nつづけるだよ！",
+      "source": "ゴッツ\n<FB03>  これからも、どんどん大量生産を\n      つづけるだよ！",
       "text": null
     },
     {
       "offset": "0x25DC0",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オマエもたまには、品質チェックしに\n来てくでよなーっ！",
+      "source": "ゴッツ\n<FB03> オマエもたまには、品質チェックしに\n     来てくでよなーっ！",
       "text": null
     },
     {
       "offset": "0x25E0E",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>…そっか、こんなのいらないか…",
+      "source": "ゴッツ\n<FB03>  …そっか、こんなのいらないか…",
       "text": null
     },
     {
       "offset": "0x25E3C",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>じゃあ、もったいないから、\nオダが持っておくだ",
+      "source": "ゴッツ\n<FB03>   じゃあ、もったいないから、\n     オダが持っておくだ",
       "text": null
     },
     {
       "offset": "0x25E86",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そんじゃあ、オダはこれからだって\nすんげえトラップを用意するでよう！",
+      "source": "ゴッツ\n<FB03> そんじゃあ、オダはこれからだって\n すんげえトラップを用意するでよう！",
       "text": null
     },
     {
       "offset": "0x25EDA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>まー、ボチボチ遊びにきてくでよっ！",
+      "source": "ゴッツ\n<FB03> まー、ボチボチ遊びにきてくでよっ！",
       "text": null
     },
     {
       "offset": "0x25F0A",
       "type": "center",
-      "source": "トラップLV1<STYLE:0>\n\n制作費 1000G\n\n耐久度 10回\n\n報酬 転移の薬3個セット<BREAK>",
+      "source": "<STYLE:3>トラップLV1<STYLE:0>\n\n制作費 1000G\n\n耐久度 10回\n\n報酬 転移の薬3個セット<BREAK>",
       "text": null
     },
     {
       "offset": "0x25F64",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>もどる\n",
       "text": null
     },
     {
       "offset": "0x25F9C",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nトラップLV3\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>トラップLV3\n<FFC3>もどる\n",
       "text": null
     },
     {
       "offset": "0x25FE6",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nトラップLV3\nトラップLV4\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>トラップLV3\n<FFC3>トラップLV4\n<FFC4>もどる\n",
       "text": null
     },
     {
       "offset": "0x26042",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nトラップLV3\nトラップLV4\nトラップLV5\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>トラップLV3\n<FFC3>トラップLV4\n<FFC4>トラップLV5\n<FFC5>もどる\n",
       "text": null
     },
     {
       "offset": "0x260B0",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nトラップLV3\nトラップLV4\nトラップLV5\n次のレベル\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>トラップLV3\n<FFC3>トラップLV4\n<FFC4>トラップLV5\n<FFC5>次のレベル\n<FFC6>もどる\n",
       "text": null
     },
     {
       "offset": "0x26130",
       "type": "center",
-      "source": "\nトラップLV6\n前のレベル\nもどる\n\n\n\n\n",
+      "source": "\n<FFC0>トラップLV6\n<FFC1>前のレベル\n<FFC2>もどる\n\n\n\n\n",
       "text": null
     },
     {
       "offset": "0x26178",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nトラップLV3\nトラップLV4\nトラップLV5\n次のレベル\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>トラップLV3\n<FFC3>トラップLV4\n<FFC4>トラップLV5\n<FFC5>次のレベル\n<FFC6>もどる\n",
       "text": null
     },
     {
       "offset": "0x261F8",
       "type": "center",
-      "source": "\nトラップLV6\nトラップLV7\n前のレベル\nもどる\n\n\n\n",
+      "source": "\n<FFC0>トラップLV6\n<FFC1>トラップLV7\n<FFC2>前のレベル\n<FFC3>もどる\n\n\n\n",
       "text": null
     },
     {
       "offset": "0x26252",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nトラップLV3\nトラップLV4\nトラップLV5\n次のレベル\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>トラップLV3\n<FFC3>トラップLV4\n<FFC4>トラップLV5\n<FFC5>次のレベル\n<FFC6>もどる\n",
       "text": null
     },
     {
       "offset": "0x262D2",
       "type": "center",
-      "source": "トラップLV6\nトラップLV7\nトラップLV8\n前のレベル\nもどる\n\n\n",
+      "source": "<FFC0>トラップLV6\n<FFC1>トラップLV7\n<FFC2>トラップLV8\n<FFC3>前のレベル\n<FFC4>もどる\n\n\n",
       "text": null
     },
     {
       "offset": "0x26332",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nトラップLV3\nトラップLV4\nトラップLV5\n次のレベル\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>トラップLV3\n<FFC3>トラップLV4\n<FFC4>トラップLV5\n<FFC5>次のレベル\n<FFC6>もどる\n",
       "text": null
     },
     {
       "offset": "0x263B2",
       "type": "center",
-      "source": "トラップLV6\nトラップLV7\nトラップLV8\nトラップLV9\n前のレベル\nもどる\n\n",
+      "source": "<FFC0>トラップLV6\n<FFC1>トラップLV7\n<FFC2>トラップLV8\n<FFC3>トラップLV9\n<FFC4>前のレベル\n<FFC5>もどる\n\n",
       "text": null
     },
     {
       "offset": "0x26422",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nトラップLV3\nトラップLV4\nトラップLV5\n次のレベル\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>トラップLV3\n<FFC3>トラップLV4\n<FFC4>トラップLV5\n<FFC5>次のレベル\n<FFC6>もどる\n",
       "text": null
     },
     {
       "offset": "0x264B0",
       "type": "center",
-      "source": "トラップLV6\nトラップLV7\nトラップLV8\nトラップLV9\nトラップLV10\n前のレベル\nもどる\n",
+      "source": "<FFC0>トラップLV6\n<FFC1>トラップLV7\n<FFC2>トラップLV8\n<FFC3>トラップLV9\n<FFC4>トラップLV10\n<FFC5>前のレベル\n<FFC6>もどる\n",
       "text": null
     },
     {
       "offset": "0x2653E",
       "type": "center",
-      "source": "トラップLV1<STYLE:0>\n\n制作費 1000G\n\n耐久度 10回？\n\n報酬 転移の薬3個セット<BREAK>",
+      "source": "<STYLE:3>トラップLV1<STYLE:0>\n\n制作費 1000G\n\n耐久度 10回？\n\n報酬 転移の薬3個セット<BREAK>",
       "text": null
     },
     {
       "offset": "0x2659A",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>もどる\n",
       "text": null
     },
     {
       "offset": "0x265D2",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nトラップLV3\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>トラップLV3\n<FFC3>もどる\n",
       "text": null
     },
     {
       "offset": "0x2661C",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nトラップLV3\nトラップLV4\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>トラップLV3\n<FFC3>トラップLV4\n<FFC4>もどる\n",
       "text": null
     },
     {
       "offset": "0x26678",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nトラップLV3\nトラップLV4\nトラップLV5\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>トラップLV3\n<FFC3>トラップLV4\n<FFC4>トラップLV5\n<FFC5>もどる\n",
       "text": null
     },
     {
       "offset": "0x266E6",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nトラップLV3\nトラップLV4\nトラップLV5\nトラップLV6\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>トラップLV3\n<FFC3>トラップLV4\n<FFC4>トラップLV5\n<FFC5>トラップLV6\n<FFC6>もどる\n",
       "text": null
     },
     {
       "offset": "0x26766",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nトラップLV3\nトラップLV4\nトラップLV5\nトラップLV6\nトラップLV7\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>トラップLV3\n<FFC3>トラップLV4\n<FFC4>トラップLV5\n<FFC5>トラップLV6\n<FFC6>トラップLV7\n<FFC7>もどる\n",
       "text": null
     },
     {
       "offset": "0x267F8",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nトラップLV3\nトラップLV4\nトラップLV5\nトラップLV6\nトラップLV7\nトラップLV8\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>トラップLV3\n<FFC3>トラップLV4\n<FFC4>トラップLV5\n<FFC5>トラップLV6\n<FFC6>トラップLV7\n<FFC7>トラップLV8\n<FFC8>もどる\n",
       "text": null
     },
     {
       "offset": "0x2689C",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nトラップLV3\nトラップLV4\nトラップLV5\nトラップLV6\nトラップLV7\nトラップLV8\nトラップLV9\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>トラップLV3\n<FFC3>トラップLV4\n<FFC4>トラップLV5\n<FFC5>トラップLV6\n<FFC6>トラップLV7\n<FFC7>トラップLV8\n<FFC8>トラップLV9\n<FFC9>もどる\n",
       "text": null
     },
     {
       "offset": "0x26952",
       "type": "center",
-      "source": "トラップLV1\nトラップLV2\nトラップLV3\nトラップLV4\nトラップLV5\n次のレベル\nもどる\n",
+      "source": "<FFC0>トラップLV1\n<FFC1>トラップLV2\n<FFC2>トラップLV3\n<FFC3>トラップLV4\n<FFC4>トラップLV5\n<FFC5>次のレベル\n<FFC6>もどる\n",
       "text": null
     },
     {
       "offset": "0x269E0",
       "type": "center",
-      "source": "\nトラップLV6\nトラップLV7\nトラップLV8\nトラップLV9\nトラップLV10\n前のレベル\nもどる\n",
+      "source": "\n<FFC0>トラップLV6\n<FFC1>トラップLV7\n<FFC2>トラップLV8\n<FFC3>トラップLV9\n<FFC4>トラップLV10\n<FFC5>前のレベル\n<FFC6>もどる\n",
       "text": null
     },
     {
       "offset": "0x26A70",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>ブッブー！\nざーんねーんでーしたーぁ！",
+      "source": "ゴッツ\n<FB03>       ブッブー！\n   ざーんねーんでーしたーぁ！",
       "text": null
     },
     {
       "offset": "0x26AB6",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>またいつでも、テストしてくで！\nオダいつでも待ってるからよう！",
+      "source": "ゴッツ\n<FB03>  またいつでも、テストしてくで！\n  オダいつでも待ってるからよう！",
       "text": null
     },
     {
       "offset": "0x26B08",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>・・・・・・・・・・・・・・・",
+      "source": "ゴッツ\n<FB03>  ・・・・・・・・・・・・・・・",
       "text": null
     },
     {
       "offset": "0x26B36",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>そっか…やってくれないか…",
+      "source": "ゴッツ\n<FB03>   そっか…やってくれないか…",
       "text": null
     },
     {
       "offset": "0x26B62",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>いいだよ、オダ別に\n悲しんでなんかないだでよ！",
+      "source": "ゴッツ\n<FB03>     いいだよ、オダ別に\n   悲しんでなんかないだでよ！",
       "text": null
     },
     {
       "offset": "0x26BAC",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>またいつでも、やりにきてくで！",
+      "source": "ゴッツ\n<FB03>  またいつでも、やりにきてくで！",
       "text": null
     },
     {
       "offset": "0x26BDA",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>・・・・・・・・・・・・・・・",
+      "source": "ゴッツ\n<FB03>  ・・・・・・・・・・・・・・・",
       "text": null
     },
     {
       "offset": "0x26C08",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>オマエ…お金ないのか…\nオマエも苦労してるだなあ…",
+      "source": "ゴッツ\n<FB03>    オマエ…お金ないのか…\n   オマエも苦労してるだなあ…",
       "text": null
     },
     {
       "offset": "0x26C54",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>だけどオダも裕福じゃないだ",
+      "source": "ゴッツ\n<FB03>   だけどオダも裕福じゃないだ",
       "text": null
     },
     {
       "offset": "0x26C80",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>いくら友達って言っても\nお金のことはきちんとしとかねえとな",
+      "source": "ゴッツ\n<FB03>    いくら友達って言っても\n お金のことはきちんとしとかねえとな",
       "text": null
     },
     {
       "offset": "0x26CD0",
       "type": "dialog",
-      "source": "ゴッツ\n<FB03>お金ためたら、また来てくでよ！\nオダずっと待ってるからよ！",
+      "source": "ゴッツ\n<FB03>  お金ためたら、また来てくでよ！\n   オダずっと待ってるからよ！",
       "text": null
     },
     {
       "offset": "0x26D20",
       "type": "center",
-      "source": "トラップLV1<STYLE:0>\n\n制作費 1000G\n\n耐久度 10回\n\n報酬 転移の薬3個セット\n（アイテム数 <STYLE:7>3<STYLE:0>）<BREAK>",
+      "source": "<STYLE:3>トラップLV1<STYLE:0>\n\n制作費 1000G\n\n耐久度 10回\n\n報酬 転移の薬3個セット\n（アイテム数 <STYLE:7>3<STYLE:0>）<BREAK>",
       "text": null
     },
     {
       "offset": "0x26D92",
       "type": "center",
-      "source": "トラップLV1<STYLE:0>\n\n制作費 1000G\n\n耐久度 10回？\n\n報酬 転移の薬3個セット<BREAK>",
+      "source": "<STYLE:3>トラップLV1<STYLE:0>\n\n制作費 1000G\n\n耐久度 10回？\n\n報酬 転移の薬3個セット<BREAK>",
       "text": null
     },
     {
@@ -7356,169 +7356,169 @@
     {
       "offset": "0x26E08",
       "type": "center",
-      "source": "トラップLV2<STYLE:0>\n\n制作費 2000G\n\n耐久度 20回\n\n報酬 快癒の薬<BREAK>",
+      "source": "<STYLE:3>トラップLV2<STYLE:0>\n\n制作費 2000G\n\n耐久度 20回\n\n報酬 快癒の薬<BREAK>",
       "text": null
     },
     {
       "offset": "0x26E58",
       "type": "center",
-      "source": "トラップLV2<STYLE:0>\n\n制作費 2000G\n\n耐久度 20回？\n\n報酬 快癒の薬<BREAK>",
+      "source": "<STYLE:3>トラップLV2<STYLE:0>\n\n制作費 2000G\n\n耐久度 20回？\n\n報酬 快癒の薬<BREAK>",
       "text": null
     },
     {
       "offset": "0x26EAA",
       "type": "center",
-      "source": "トラップLV3<STYLE:0>\n\n制作費 3000G\n\n耐久度 30回\n\n報酬 お薬セット\n（アイテム数 <STYLE:7>4<STYLE:0>）<BREAK>",
+      "source": "<STYLE:3>トラップLV3<STYLE:0>\n\n制作費 3000G\n\n耐久度 30回\n\n報酬 お薬セット\n（アイテム数 <STYLE:7>4<STYLE:0>）<BREAK>",
       "text": null
     },
     {
       "offset": "0x26F14",
       "type": "center",
-      "source": "トラップLV3<STYLE:0>\n\n制作費 3000G\n\n耐久度 30回？\n\n報酬 お薬セット\n（アイテム数 <STYLE:7>4<STYLE:0>）<BREAK>",
+      "source": "<STYLE:3>トラップLV3<STYLE:0>\n\n制作費 3000G\n\n耐久度 30回？\n\n報酬 お薬セット\n（アイテム数 <STYLE:7>4<STYLE:0>）<BREAK>",
       "text": null
     },
     {
       "offset": "0x26F80",
       "type": "center",
-      "source": "トラップLV4<STYLE:0>\n\n制作費 4000G\n\n耐久度 40回\n\n報酬 ドワーフグッズ<BREAK>",
+      "source": "<STYLE:3>トラップLV4<STYLE:0>\n\n制作費 4000G\n\n耐久度 40回\n\n報酬 ドワーフグッズ<BREAK>",
       "text": null
     },
     {
       "offset": "0x26FD6",
       "type": "center",
-      "source": "トラップLV4<STYLE:0>\n\n制作費 4000G\n\n耐久度 40回？\n\n報酬 ドワーフグッズ<BREAK>",
+      "source": "<STYLE:3>トラップLV4<STYLE:0>\n\n制作費 4000G\n\n耐久度 40回？\n\n報酬 ドワーフグッズ<BREAK>",
       "text": null
     },
     {
       "offset": "0x2702E",
       "type": "center",
-      "source": "トラップLV5<STYLE:0>\n\n制作費 5000G\n\n耐久度 50回\n\n報酬 突然変異魔法石フルセット\n（アイテム数 <STYLE:7>5<STYLE:0>）<BREAK>",
+      "source": "<STYLE:3>トラップLV5<STYLE:0>\n\n制作費 5000G\n\n耐久度 50回\n\n報酬 突然変異魔法石フルセット\n（アイテム数 <STYLE:7>5<STYLE:0>）<BREAK>",
       "text": null
     },
     {
       "offset": "0x270A6",
       "type": "center",
-      "source": "トラップLV5<STYLE:0>\n\n制作費 5000G\n\n耐久度 50回？\n\n報酬 突然変異魔法石フルセット\n（アイテム数 <STYLE:7>5<STYLE:0>）<BREAK>",
+      "source": "<STYLE:3>トラップLV5<STYLE:0>\n\n制作費 5000G\n\n耐久度 50回？\n\n報酬 突然変異魔法石フルセット\n（アイテム数 <STYLE:7>5<STYLE:0>）<BREAK>",
       "text": null
     },
     {
       "offset": "0x27120",
       "type": "center",
-      "source": "トラップLV6<STYLE:0>\n\n制作費 6000G\n\n耐久度 60回\n\n報酬 転職宝玉フルセット\n（必要アイテム空き数 <STYLE:7>8<STYLE:0>）<BREAK>",
+      "source": "<STYLE:3>トラップLV6<STYLE:0>\n\n制作費 6000G\n\n耐久度 60回\n\n報酬 転職宝玉フルセット\n（必要アイテム空き数 <STYLE:7>8<STYLE:0>）<BREAK>",
       "text": null
     },
     {
       "offset": "0x2719A",
       "type": "center",
-      "source": "トラップLV6<STYLE:0>\n\n制作費 6000G\n\n耐久度 60回\n\n報酬 転職宝玉フルセット\n（必要アイテム空き数 <STYLE:7>8<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
+      "source": "<STYLE:3>トラップLV6<STYLE:0>\n\n制作費 6000G\n\n耐久度 60回\n\n報酬 転職宝玉フルセット\n（必要アイテム空き数 <STYLE:7>8<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
       "text": null
     },
     {
       "offset": "0x27238",
       "type": "center",
-      "source": "トラップLV6<STYLE:0>\n\n制作費 6000G\n\n耐久度 60回？\n\n報酬 転職宝玉フルセット\n（必要アイテム空き数 <STYLE:7>8<STYLE:0>）<BREAK>",
+      "source": "<STYLE:3>トラップLV6<STYLE:0>\n\n制作費 6000G\n\n耐久度 60回？\n\n報酬 転職宝玉フルセット\n（必要アイテム空き数 <STYLE:7>8<STYLE:0>）<BREAK>",
       "text": null
     },
     {
       "offset": "0x272B4",
       "type": "center",
-      "source": "トラップLV6<STYLE:0>\n\n制作費 6000G\n\n耐久度 60回？\n\n報酬 転職宝玉フルセット\n（必要アイテム空き数 <STYLE:7>8<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
+      "source": "<STYLE:3>トラップLV6<STYLE:0>\n\n制作費 6000G\n\n耐久度 60回？\n\n報酬 転職宝玉フルセット\n（必要アイテム空き数 <STYLE:7>8<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
       "text": null
     },
     {
       "offset": "0x27354",
       "type": "center",
-      "source": "トラップLV7<STYLE:0>\n\n制作費 7000G\n\n耐久度 70回\n\n報酬 羊皮紙魔法石フルセット\n（必要アイテム空き数 <STYLE:7>14<STYLE:0>）<BREAK>",
+      "source": "<STYLE:3>トラップLV7<STYLE:0>\n\n制作費 7000G\n\n耐久度 70回\n\n報酬 羊皮紙魔法石フルセット\n（必要アイテム空き数 <STYLE:7>14<STYLE:0>）<BREAK>",
       "text": null
     },
     {
       "offset": "0x273D4",
       "type": "center",
-      "source": "トラップLV7<STYLE:0>\n\n制作費 7000G\n\n耐久度 70回\n\n報酬 羊皮紙魔法石フルセット\n（必要アイテム空き数 <STYLE:7>14<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
+      "source": "<STYLE:3>トラップLV7<STYLE:0>\n\n制作費 7000G\n\n耐久度 70回\n\n報酬 羊皮紙魔法石フルセット\n（必要アイテム空き数 <STYLE:7>14<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
       "text": null
     },
     {
       "offset": "0x27478",
       "type": "center",
-      "source": "トラップLV7<STYLE:0>\n\n制作費 7000G\n\n耐久度 70回？\n\n報酬 羊皮紙魔法石フルセット\n（必要アイテム空き数 <STYLE:7>14<STYLE:0>）<BREAK>",
+      "source": "<STYLE:3>トラップLV7<STYLE:0>\n\n制作費 7000G\n\n耐久度 70回？\n\n報酬 羊皮紙魔法石フルセット\n（必要アイテム空き数 <STYLE:7>14<STYLE:0>）<BREAK>",
       "text": null
     },
     {
       "offset": "0x274FA",
       "type": "center",
-      "source": "トラップLV7<STYLE:0>\n\n制作費 7000G\n\n耐久度 70回？\n\n報酬 羊皮紙魔法石フルセット\n（必要アイテム空き数 <STYLE:7>14<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
+      "source": "<STYLE:3>トラップLV7<STYLE:0>\n\n制作費 7000G\n\n耐久度 70回？\n\n報酬 羊皮紙魔法石フルセット\n（必要アイテム空き数 <STYLE:7>14<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
       "text": null
     },
     {
       "offset": "0x275A0",
       "type": "center",
-      "source": "トラップLV8<STYLE:0>\n\n制作費 8000G\n\n耐久度 80回\n\n報酬 合成素材フルセット\n（必要アイテム空き数 <STYLE:7>31<STYLE:0>）<BREAK>",
+      "source": "<STYLE:3>トラップLV8<STYLE:0>\n\n制作費 8000G\n\n耐久度 80回\n\n報酬 合成素材フルセット\n（必要アイテム空き数 <STYLE:7>31<STYLE:0>）<BREAK>",
       "text": null
     },
     {
       "offset": "0x2761C",
       "type": "center",
-      "source": "トラップLV8<STYLE:0>\n\n制作費 8000G\n\n耐久度 80回\n\n報酬 合成素材フルセット\n（必要アイテム空き数 <STYLE:7>31<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
+      "source": "<STYLE:3>トラップLV8<STYLE:0>\n\n制作費 8000G\n\n耐久度 80回\n\n報酬 合成素材フルセット\n（必要アイテム空き数 <STYLE:7>31<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
       "text": null
     },
     {
       "offset": "0x276BC",
       "type": "center",
-      "source": "トラップLV8<STYLE:0>\n\n制作費 8000G\n\n耐久度 80回？\n\n報酬 合成素材フルセット\n（必要アイテム空き数 <STYLE:7>31<STYLE:0>）<BREAK>",
+      "source": "<STYLE:3>トラップLV8<STYLE:0>\n\n制作費 8000G\n\n耐久度 80回？\n\n報酬 合成素材フルセット\n（必要アイテム空き数 <STYLE:7>31<STYLE:0>）<BREAK>",
       "text": null
     },
     {
       "offset": "0x2773A",
       "type": "center",
-      "source": "トラップLV8<STYLE:0>\n\n制作費 8000G\n\n耐久度 80回？\n\n報酬 合成素材フルセット\n（必要アイテム空き数 <STYLE:7>31<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
+      "source": "<STYLE:3>トラップLV8<STYLE:0>\n\n制作費 8000G\n\n耐久度 80回？\n\n報酬 合成素材フルセット\n（必要アイテム空き数 <STYLE:7>31<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
       "text": null
     },
     {
       "offset": "0x277DC",
       "type": "center",
-      "source": "トラップLV9<STYLE:0>\n\n制作費 9000G\n\n耐久度 90回\n\n報酬 魔法石フルセット\n（必要アイテム空き数 <STYLE:7>50<STYLE:0>）<BREAK>",
+      "source": "<STYLE:3>トラップLV9<STYLE:0>\n\n制作費 9000G\n\n耐久度 90回\n\n報酬 魔法石フルセット\n（必要アイテム空き数 <STYLE:7>50<STYLE:0>）<BREAK>",
       "text": null
     },
     {
       "offset": "0x27856",
       "type": "center",
-      "source": "トラップLV9<STYLE:0>\n\n制作費 9000G\n\n耐久度 90回\n\n報酬 魔法石フルセット\n（必要アイテム空き数 <STYLE:7>50<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
+      "source": "<STYLE:3>トラップLV9<STYLE:0>\n\n制作費 9000G\n\n耐久度 90回\n\n報酬 魔法石フルセット\n（必要アイテム空き数 <STYLE:7>50<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
       "text": null
     },
     {
       "offset": "0x278F4",
       "type": "center",
-      "source": "トラップLV9<STYLE:0>\n\n制作費 9000G\n\n耐久度 100回？\n\n報酬 魔法石フルセット\n（必要アイテム空き数 <STYLE:7>50<STYLE:0>）<BREAK>",
+      "source": "<STYLE:3>トラップLV9<STYLE:0>\n\n制作費 9000G\n\n耐久度 100回？\n\n報酬 魔法石フルセット\n（必要アイテム空き数 <STYLE:7>50<STYLE:0>）<BREAK>",
       "text": null
     },
     {
       "offset": "0x27972",
       "type": "center",
-      "source": "トラップLV9<STYLE:0>\n\n制作費 9000G\n\n耐久度 100回？\n\n報酬 魔法石フルセット\n（必要アイテム空き数 <STYLE:7>50<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
+      "source": "<STYLE:3>トラップLV9<STYLE:0>\n\n制作費 9000G\n\n耐久度 100回？\n\n報酬 魔法石フルセット\n（必要アイテム空き数 <STYLE:7>50<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
       "text": null
     },
     {
       "offset": "0x27A18",
       "type": "center",
-      "source": "トラップLV10<STYLE:0>\n\n制作費 10000G\n\n耐久度 100回\n\n報酬 呪いフルセット\n（必要アイテム空き数 <STYLE:7>14<STYLE:0>）<BREAK>",
+      "source": "<STYLE:3>トラップLV10<STYLE:0>\n\n制作費 10000G\n\n耐久度 100回\n\n報酬 呪いフルセット\n（必要アイテム空き数 <STYLE:7>14<STYLE:0>）<BREAK>",
       "text": null
     },
     {
       "offset": "0x27A96",
       "type": "center",
-      "source": "トラップLV10<STYLE:0>\n\n制作費 10000G\n\n耐久度 100回\n\n報酬 呪いフルセット\n（必要アイテム空き数 <STYLE:7>14<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
+      "source": "<STYLE:3>トラップLV10<STYLE:0>\n\n制作費 10000G\n\n耐久度 100回\n\n報酬 呪いフルセット\n（必要アイテム空き数 <STYLE:7>14<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
       "text": null
     },
     {
       "offset": "0x27B38",
       "type": "center",
-      "source": "トラップLV10<STYLE:0>\n\n制作費 10000G\n\n耐久度 100回？\n\n報酬 呪いフルセット\n（必要アイテム空き数 <STYLE:7>14<STYLE:0>）<BREAK>",
+      "source": "<STYLE:3>トラップLV10<STYLE:0>\n\n制作費 10000G\n\n耐久度 100回？\n\n報酬 呪いフルセット\n（必要アイテム空き数 <STYLE:7>14<STYLE:0>）<BREAK>",
       "text": null
     },
     {
       "offset": "0x27BB8",
       "type": "center",
-      "source": "トラップLV10<STYLE:0>\n\n制作費 10000G\n\n耐久度 100回？\n\n報酬 呪いフルセット\n（必要アイテム空き数 <STYLE:7>14<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
+      "source": "<STYLE:3>トラップLV10<STYLE:0>\n\n制作費 10000G\n\n耐久度 100回？\n\n報酬 呪いフルセット\n（必要アイテム空き数 <STYLE:7>14<STYLE:0>）\n\n<FB01>アイテム空き数が足りません！<FB00><BREAK>",
       "text": null
     }
   ]

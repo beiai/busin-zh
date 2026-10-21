@@ -12,19 +12,19 @@
     {
       "offset": "0x7FC4",
       "type": "dialog",
-      "source": "兵士「これは悪夢だ……\nこんな事があってはならない…」",
+      "source": "兵士「これは悪夢だ……\n<FFD2>こんな事があってはならない…」",
       "text": null
     },
     {
       "offset": "0x7FFE",
       "type": "dialog",
-      "source": "兵士「ドゥーハンは、女王が治める\n聖なる都」",
+      "source": "兵士「ドゥーハンは、女王が治める\n<FFD2>聖なる都」",
       "text": null
     },
     {
       "offset": "0x802E",
       "type": "dialog",
-      "source": "兵士「あんなモノが存在していては\nいけないんだ」",
+      "source": "兵士「あんなモノが存在していては\n<FFD2>いけないんだ」",
       "text": null
     },
     {
@@ -42,13 +42,13 @@
     {
       "offset": "0x80BE",
       "type": "dialog",
-      "source": "兵士「た、頼む！！\n女王陛下を救ってくれ！」",
+      "source": "兵士「た、頼む！！\n<FFD2>女王陛下を救ってくれ！」",
       "text": null
     },
     {
       "offset": "0x80EE",
       "type": "dialog",
-      "source": "兵士「我らの女王を、あれ以上\n汚さないでくれぇっ！！」",
+      "source": "兵士「我らの女王を、あれ以上\n<FFD2>汚さないでくれぇっ！！」",
       "text": null
     },
     {
@@ -72,19 +72,19 @@
     {
       "offset": "0x81C0",
       "type": "dialog",
-      "source": "兵士「これは悪夢だ……\nこんな事があってはならない…」",
+      "source": "兵士「これは悪夢だ……\n<FFD2>こんな事があってはならない…」",
       "text": null
     },
     {
       "offset": "0x81FA",
       "type": "dialog",
-      "source": "兵士「ドゥーハンは、女王が治める\n聖なる都」",
+      "source": "兵士「ドゥーハンは、女王が治める\n<FFD2>聖なる都」",
       "text": null
     },
     {
       "offset": "0x822A",
       "type": "dialog",
-      "source": "兵士「あんなモノが存在していては\nいけないんだ」",
+      "source": "兵士「あんなモノが存在していては\n<FFD2>いけないんだ」",
       "text": null
     },
     {
@@ -102,13 +102,13 @@
     {
       "offset": "0x82BC",
       "type": "dialog",
-      "source": "兵士「た、頼む！！\n女王陛下を救ってくれ！」",
+      "source": "兵士「た、頼む！！\n<FFD2>女王陛下を救ってくれ！」",
       "text": null
     },
     {
       "offset": "0x82EC",
       "type": "dialog",
-      "source": "兵士「我らの女王を、あれ以上\n汚さないでくれぇっ！！」",
+      "source": "兵士「我らの女王を、あれ以上\n<FFD2>汚さないでくれぇっ！！」",
       "text": null
     },
     {
@@ -150,7 +150,7 @@
     {
       "offset": "0x848A",
       "type": "center",
-      "source": "汝、触れる事かなわぬ。",
+      "source": "<STYLE:5>汝、触れる事かなわぬ。",
       "text": null
     },
     {
@@ -174,19 +174,19 @@
     {
       "offset": "0x857C",
       "type": "dialog",
-      "source": "夢魔「私の可愛い人形に\n汚らしい指で触る事は\n許さぬ」",
+      "source": "夢魔「私の可愛い人形に\n<FFD2>汚らしい指で触る事は\n<FFD2>許さぬ」",
       "text": null
     },
     {
       "offset": "0x85B8",
       "type": "dialog",
-      "source": "夢魔「これは契約にもとづき\n私に引き渡されたのだ」",
+      "source": "夢魔「これは契約にもとづき\n<FFD2>私に引き渡されたのだ」",
       "text": null
     },
     {
       "offset": "0x85EE",
       "type": "dialog",
-      "source": "夢魔「指も、<FD01>瞳も、<FD01>唇も、<FD01>その髪の一筋に\nいたるまで、<FD01>全て私の物だ。\n何者にも触れさせはしない」",
+      "source": "夢魔「指も、<FD01>瞳も、<FD01>唇も、<FD01>その髪の一筋に\n<FFD2>いたるまで、<FD01>全て私の物だ。\n<FFD2>何者にも触れさせはしない」",
       "text": null
     },
     {
@@ -198,13 +198,13 @@
     {
       "offset": "0x86AA",
       "type": "dialog",
-      "source": "夢魔「あの男は、またとない\n貴重なる物をくれた事よ」",
+      "source": "夢魔「あの男は、またとない\n<FFD2>貴重なる物をくれた事よ」",
       "text": null
     },
     {
       "offset": "0x86E2",
       "type": "dialog",
-      "source": "夢魔「夢を見ぬ物に悪夢を与える…\n恐怖を知らぬ物に恐怖を与える…\nまさに、最上の悦びではないか」",
+      "source": "夢魔「夢を見ぬ物に悪夢を与える…\n<FFD2>恐怖を知らぬ物に恐怖を与える…\n<FFD2>まさに、最上の悦びではないか」",
       "text": null
     },
     {
@@ -216,25 +216,25 @@
     {
       "offset": "0x87AC",
       "type": "dialog",
-      "source": "夢魔「これは、私の悪夢の中で\n恐怖を知り、悦びを知り\n一人の女になるのだ」",
+      "source": "夢魔「これは、私の悪夢の中で\n<FFD2>恐怖を知り、悦びを知り\n<FFD2>一人の女になるのだ」",
       "text": null
     },
     {
       "offset": "0x87FC",
       "type": "dialog",
-      "source": "夢魔「その時こそ、極上の夢の中で\n私と交わろうぞ」",
+      "source": "夢魔「その時こそ、極上の夢の中で\n<FFD2>私と交わろうぞ」",
       "text": null
     },
     {
       "offset": "0x8832",
       "type": "dialog",
-      "source": "夢魔「堕落し、甘美なる海に\nひたろうではないか………」",
+      "source": "夢魔「堕落し、甘美なる海に\n<FFD2>ひたろうではないか………」",
       "text": null
     },
     {
       "offset": "0x886C",
       "type": "center",
-      "source": "ソノヒトヲ、ケガスナ！！",
+      "source": "<STYLE:2>ソノヒトヲ、ケガスナ！！",
       "text": null
     },
     {
@@ -252,7 +252,7 @@
     {
       "offset": "0x88E0",
       "type": "center",
-      "source": "ソノヒトヲ、ケガスナ！！",
+      "source": "<STYLE:2>ソノヒトヲ、ケガスナ！！",
       "text": null
     },
     {
@@ -294,7 +294,7 @@
     {
       "offset": "0x8A6A",
       "type": "center",
-      "source": "汝、触れる事かなわぬ。",
+      "source": "<STYLE:5>汝、触れる事かなわぬ。",
       "text": null
     },
     {
@@ -318,19 +318,19 @@
     {
       "offset": "0x8B5E",
       "type": "dialog",
-      "source": "夢魔「私の可愛い人形に\nきたならしい指で触る事は\n許さぬ」",
+      "source": "夢魔「私の可愛い人形に\n<FFD2>きたならしい指で触る事は\n<FFD2>許さぬ」",
       "text": null
     },
     {
       "offset": "0x8B9E",
       "type": "dialog",
-      "source": "夢魔「これは契約にもとづき\n私に引き渡されたのだ」",
+      "source": "夢魔「これは契約にもとづき\n<FFD2>私に引き渡されたのだ」",
       "text": null
     },
     {
       "offset": "0x8BD4",
       "type": "dialog",
-      "source": "夢魔「指も、<FD01>瞳も、<FD01>唇も、<FD01>その髪の一筋に\nいたるまで、<FD01>全て私の物だ。\n何者にも触れさせはしない」",
+      "source": "夢魔「指も、<FD01>瞳も、<FD01>唇も、<FD01>その髪の一筋に\n<FFD2>いたるまで、<FD01>全て私の物だ。\n<FFD2>何者にも触れさせはしない」",
       "text": null
     },
     {
@@ -342,13 +342,13 @@
     {
       "offset": "0x8C6E",
       "type": "dialog",
-      "source": "夢魔「あの男は、またとない\n貴重なる物をくれた事よ」",
+      "source": "夢魔「あの男は、またとない\n<FFD2>貴重なる物をくれた事よ」",
       "text": null
     },
     {
       "offset": "0x8CA6",
       "type": "dialog",
-      "source": "夢魔「夢を見ぬ物に悪夢を与える…\n恐怖を知らぬ物に恐怖を与える…\nまさに、最上の悦びではないか」",
+      "source": "夢魔「夢を見ぬ物に悪夢を与える…\n<FFD2>恐怖を知らぬ物に恐怖を与える…\n<FFD2>まさに、最上の悦びではないか」",
       "text": null
     },
     {
@@ -360,19 +360,19 @@
     {
       "offset": "0x8D72",
       "type": "dialog",
-      "source": "夢魔「これは、私の悪夢の中で\n恐怖を知り、悦びを知り\n一人の女になるのだ」",
+      "source": "夢魔「これは、私の悪夢の中で\n<FFD2>恐怖を知り、悦びを知り\n<FFD2>一人の女になるのだ」",
       "text": null
     },
     {
       "offset": "0x8DC2",
       "type": "dialog",
-      "source": "夢魔「その時こそ、極上の夢の中で\n私と交わろうぞ」",
+      "source": "夢魔「その時こそ、極上の夢の中で\n<FFD2>私と交わろうぞ」",
       "text": null
     },
     {
       "offset": "0x8DF8",
       "type": "dialog",
-      "source": "夢魔「堕落し、甘美なる海に\nひたろうではないか………」",
+      "source": "夢魔「堕落し、甘美なる海に\n<FFD2>ひたろうではないか………」",
       "text": null
     },
     {
@@ -390,13 +390,13 @@
     {
       "offset": "0x8E96",
       "type": "dialog",
-      "source": "夢魔「かよわき生き物の分際で\n私を傷つけようというのか？」",
+      "source": "夢魔「かよわき生き物の分際で\n<FFD2>私を傷つけようというのか？」",
       "text": null
     },
     {
       "offset": "0x8ED4",
       "type": "dialog",
-      "source": "夢魔「我が悪夢にたえられもせぬ\n貧弱な生き物が！」",
+      "source": "夢魔「我が悪夢にたえられもせぬ\n<FFD2>貧弱な生き物が！」",
       "text": null
     },
     {
@@ -408,37 +408,37 @@
     {
       "offset": "0x8F2E",
       "type": "dialog",
-      "source": "夢魔「我が蜜月を邪魔する愚か者。\n狂おしいほどの悪夢を\nとくと味わうが良い」",
+      "source": "夢魔「我が蜜月を邪魔する愚か者。\n<FFD2>狂おしいほどの悪夢を\n<FFD2>とくと味わうが良い」",
       "text": null
     },
     {
       "offset": "0x8F80",
       "type": "dialog",
-      "source": "夢魔「理性の鎖を解き放ち\n快楽に意識をゆだねよ」",
+      "source": "夢魔「理性の鎖を解き放ち\n<FFD2>快楽に意識をゆだねよ」",
       "text": null
     },
     {
       "offset": "0x8FB4",
       "type": "dialog",
-      "source": "夢魔「来世まで忘れる事が出来ぬ\n悦びと恐怖を汝の魂に\nきざんでくれるわ！！」",
+      "source": "夢魔「来世まで忘れる事が出来ぬ\n<FFD2>悦びと恐怖を汝の魂に\n<FFD2>きざんでくれるわ！！」",
       "text": null
     },
     {
       "offset": "0x9006",
       "type": "center",
-      "source": "ククク、クハハハ！！",
+      "source": "<STYLE:5>ククク、クハハハ！！",
       "text": null
     },
     {
       "offset": "0x901E",
       "type": "center",
-      "source": "私を倒したとて悪夢は覚めぬ。\nいや、悪夢の様な現実が\n汝をうちのめすだろう。",
+      "source": "<STYLE:5>私を倒したとて悪夢は覚めぬ。\n<STYLE:5>いや、悪夢の様な現実が\n<STYLE:5>汝をうちのめすだろう。",
       "text": null
     },
     {
       "offset": "0x9072",
       "type": "center",
-      "source": "私は汝が血涙を流すその様を\n魔界からじっくりと見届けてやるわ！\nククク、ハハハハハ………！！",
+      "source": "<STYLE:5>私は汝が血涙を流すその様を\n<STYLE:5>魔界からじっくりと見届けてやるわ！\n<STYLE:5>ククク、ハハハハハ………！！",
       "text": null
     },
     {
@@ -456,19 +456,19 @@
     {
       "offset": "0x9172",
       "type": "center",
-      "source": "ククク、クハハハ！！",
+      "source": "<STYLE:5>ククク、クハハハ！！",
       "text": null
     },
     {
       "offset": "0x918A",
       "type": "center",
-      "source": "私を倒したとて悪夢は覚めぬ。\nいや、悪夢の様な現実が\n汝をうちのめすだろう。",
+      "source": "<STYLE:5>私を倒したとて悪夢は覚めぬ。\n<STYLE:5>いや、悪夢の様な現実が\n<STYLE:5>汝をうちのめすだろう。",
       "text": null
     },
     {
       "offset": "0x91DE",
       "type": "center",
-      "source": "私は汝が血涙を流すその様を\n魔界からじっくりと見届けてやるわ！\nククク、ハハハハハ………！！",
+      "source": "<STYLE:5>私は汝が血涙を流すその様を\n<STYLE:5>魔界からじっくりと見届けてやるわ！\n<STYLE:5>ククク、ハハハハハ………！！",
       "text": null
     },
     {
@@ -564,19 +564,19 @@
     {
       "offset": "0x95A4",
       "type": "center",
-      "source": "ククク、クハハハ！！",
+      "source": "<STYLE:5>ククク、クハハハ！！",
       "text": null
     },
     {
       "offset": "0x95BC",
       "type": "center",
-      "source": "私を倒したとて悪夢は覚めぬ。\nいや、悪夢の様な現実が\n汝をうちのめすだろう。",
+      "source": "<STYLE:5>私を倒したとて悪夢は覚めぬ。\n<STYLE:5>いや、悪夢の様な現実が\n<STYLE:5>汝をうちのめすだろう。",
       "text": null
     },
     {
       "offset": "0x9610",
       "type": "center",
-      "source": "私は汝が血涙を流すその様を\n魔界からじっくりと見届けてやるわ！\nククク、ハハハハハ………！！",
+      "source": "<STYLE:5>私は汝が血涙を流すその様を\n<STYLE:5>魔界からじっくりと見届けてやるわ！\n<STYLE:5>ククク、ハハハハハ………！！",
       "text": null
     },
     {
@@ -630,19 +630,19 @@
     {
       "offset": "0x983C",
       "type": "center",
-      "source": "ククク、クハハハ！！",
+      "source": "<STYLE:5>ククク、クハハハ！！",
       "text": null
     },
     {
       "offset": "0x9854",
       "type": "center",
-      "source": "私を倒したとて悪夢は覚めぬ。\nいや、悪夢の様な現実が\n汝をうちのめすだろう。",
+      "source": "<STYLE:5>私を倒したとて悪夢は覚めぬ。\n<STYLE:5>いや、悪夢の様な現実が\n<STYLE:5>汝をうちのめすだろう。",
       "text": null
     },
     {
       "offset": "0x98A8",
       "type": "center",
-      "source": "私は汝が血涙を流すその様を\n魔界からじっくりと見届けてやるわ！\nククク、ハハハハハ………！！",
+      "source": "<STYLE:5>私は汝が血涙を流すその様を\n<STYLE:5>魔界からじっくりと見届けてやるわ！\n<STYLE:5>ククク、ハハハハハ………！！",
       "text": null
     },
     {
@@ -702,19 +702,19 @@
     {
       "offset": "0x9B18",
       "type": "center",
-      "source": "ククク、クハハハ！！",
+      "source": "<STYLE:5>ククク、クハハハ！！",
       "text": null
     },
     {
       "offset": "0x9B30",
       "type": "center",
-      "source": "私を倒したとて悪夢は覚めぬ。\nいや、悪夢の様な現実が\n汝をうちのめすだろう。",
+      "source": "<STYLE:5>私を倒したとて悪夢は覚めぬ。\n<STYLE:5>いや、悪夢の様な現実が\n<STYLE:5>汝をうちのめすだろう。",
       "text": null
     },
     {
       "offset": "0x9B84",
       "type": "center",
-      "source": "私は汝が血涙を流すその様を\n魔界からじっくりと見届けてやるわ！\nククク、ハハハハハ………！！",
+      "source": "<STYLE:5>私は汝が血涙を流すその様を\n<STYLE:5>魔界からじっくりと見届けてやるわ！\n<STYLE:5>ククク、ハハハハハ………！！",
       "text": null
     },
     {
@@ -750,25 +750,25 @@
     {
       "offset": "0x9D4A",
       "type": "dialog",
-      "source": "女王「わたくしは………\nオティーリエ」",
+      "source": "女王「わたくしは………\n<FFD2>オティーリエ」",
       "text": null
     },
     {
       "offset": "0x9D74",
       "type": "dialog",
-      "source": "女王「聖都………\nドゥーハンの女王」",
+      "source": "女王「聖都………\n<FFD2>ドゥーハンの女王」",
       "text": null
     },
     {
       "offset": "0x9D9C",
       "type": "dialog",
-      "source": "女王「わたくしは………\nオティーリエ」",
+      "source": "女王「わたくしは………\n<FFD2>オティーリエ」",
       "text": null
     },
     {
       "offset": "0x9DC6",
       "type": "dialog",
-      "source": "女王「聖都………\nドゥーハンの女王」",
+      "source": "女王「聖都………\n<FFD2>ドゥーハンの女王」",
       "text": null
     },
     {
@@ -786,7 +786,7 @@
     {
       "offset": "0x9E58",
       "type": "center",
-      "source": "「陛下はご無事か！？」",
+      "source": "<STYLE:2>「陛下はご無事か！？」",
       "text": null
     },
     {
@@ -822,7 +822,7 @@
     {
       "offset": "0x9F7C",
       "type": "dialog",
-      "source": "女王「あなたが側にいなければ\nわたくしは、何をすればよいのか\nわからない！」",
+      "source": "女王「あなたが側にいなければ\n<FFD2>わたくしは、何をすればよいのか\n<FFD2>わからない！」",
       "text": null
     },
     {
@@ -864,13 +864,13 @@
     {
       "offset": "0xA0D0",
       "type": "dialog",
-      "source": "レドゥア「尊きお身体がご無事で\n何よりでございました」",
+      "source": "レドゥア「尊きお身体がご無事で\n<FFD4>何よりでございました」",
       "text": null
     },
     {
       "offset": "0xA10A",
       "type": "dialog",
-      "source": "レドゥア「私はここにおります。\n安心して、役目をはたして\n下さいませ」",
+      "source": "レドゥア「私はここにおります。\n<FFD4>安心して、役目をはたして\n<FFD4>下さいませ」",
       "text": null
     },
     {
@@ -888,7 +888,7 @@
     {
       "offset": "0xA1A4",
       "type": "dialog",
-      "source": "レドゥア「陛下を夢魔から救った\n冒険者に、お言葉を\nたまわれますよう」",
+      "source": "レドゥア「陛下を夢魔から救った\n<FFD4>冒険者に、お言葉を\n<FFD4>たまわれますよう」",
       "text": null
     },
     {
@@ -918,7 +918,7 @@
     {
       "offset": "0xA2D8",
       "type": "dialog",
-      "source": "女王「大儀、ご苦労。\n冒険者よ」",
+      "source": "女王「大儀、ご苦労。\n<FFD2>冒険者よ」",
       "text": null
     },
     {
@@ -936,25 +936,25 @@
     {
       "offset": "0xA344",
       "type": "center",
-      "source": "大儀、ご苦労でした。\nわたくしのガード達。\nゆっくり身体を癒すのですよ。",
+      "source": "<STYLE:5>大儀、ご苦労でした。\nわたくしのガード達。\nゆっくり身体を癒すのですよ。",
       "text": null
     },
     {
       "offset": "0xA390",
       "type": "center",
-      "source": "そなたは、だんだんと\nクイーンガードらしくなる。\n始めの内は、どうなる事かと\n思ったがな。",
+      "source": "<STYLE:5>そなたは、だんだんと\nクイーンガードらしくなる。\n始めの内は、どうなる事かと\n思ったがな。",
       "text": null
     },
     {
       "offset": "0xA3EE",
       "type": "center",
-      "source": "陛下は、国を背負うには\n心が優しすぎるの。\nだから、わたし達が\n少しでも陛下をお助けしなければ。",
+      "source": "<STYLE:5>陛下は、国を背負うには\n心が優しすぎるの。\nだから、わたし達が\n少しでも陛下をお助けしなければ。",
       "text": null
     },
     {
       "offset": "0xA452",
       "type": "center",
-      "source": "行くぞ、<PAGE>！\n陛下のご命令だ。\n\n陛下のお優しいお顔を\nくもらせてはならない。\n迅速に命令を遂行するんだ！",
+      "source": "<STYLE:5>行くぞ、<PAGE>！\n陛下のご命令だ。\n\n陛下のお優しいお顔を\nくもらせてはならない。\n迅速に命令を遂行するんだ！",
       "text": null
     },
     {
@@ -972,7 +972,7 @@
     {
       "offset": "0xA4FC",
       "type": "dialog",
-      "source": "クルガン「おそれながら\n陛下に申し上げます！」",
+      "source": "クルガン「おそれながら\n<FFD4>陛下に申し上げます！」",
       "text": null
     },
     {
@@ -984,19 +984,19 @@
     {
       "offset": "0xA55C",
       "type": "dialog",
-      "source": "クルガン「陛下をお助けしたと言えど\n<PAGE>は裏切り者…」",
+      "source": "クルガン「陛下をお助けしたと言えど\n<FFD4><PAGE>は裏切り者…」",
       "text": null
     },
     {
       "offset": "0xA594",
       "type": "dialog",
-      "source": "クルガン「死によってしか\n罪はつぐなえません」",
+      "source": "クルガン「死によってしか\n<FFD4>罪はつぐなえません」",
       "text": null
     },
     {
       "offset": "0xA5C6",
       "type": "dialog",
-      "source": "クルガン「今度こそ、私に\n<PAGE>を処刑する\n許可をお与え下さい！」",
+      "source": "クルガン「今度こそ、私に\n<FFD4><PAGE>を処刑する\n<FFD4>許可をお与え下さい！」",
       "text": null
     },
     {
@@ -1008,7 +1008,7 @@
     {
       "offset": "0xA626",
       "type": "dialog",
-      "source": "レドゥア「今、真に裁くべきは\n陛下誘拐を画策した\nユージン＝ギュスターム」",
+      "source": "レドゥア「今、真に裁くべきは\n<FFD4>陛下誘拐を画策した\n<FFD4>ユージン＝ギュスターム」",
       "text": null
     },
     {
@@ -1020,13 +1020,13 @@
     {
       "offset": "0xA68A",
       "type": "dialog",
-      "source": "女王「クイーンガード、クルガンに\n命を下します」",
+      "source": "女王「クイーンガード、クルガンに\n<FFD2>命を下します」",
       "text": null
     },
     {
       "offset": "0xA6BE",
       "type": "dialog",
-      "source": "女王「国家転覆をはかった\nユージン＝ギュスタームを\n捕らえなさい！」",
+      "source": "女王「国家転覆をはかった\n<FFD2>ユージン＝ギュスタームを\n<FFD2>捕らえなさい！」",
       "text": null
     },
     {
@@ -1050,13 +1050,13 @@
     {
       "offset": "0xA7AC",
       "type": "dialog",
-      "source": "レドゥア「では、我らは戻るが…\n此度の事はいっさい\n他言無用」",
+      "source": "レドゥア「では、我らは戻るが…\n<FFD4>此度の事はいっさい\n<FFD4>他言無用」",
       "text": null
     },
     {
       "offset": "0xA7F0",
       "type": "dialog",
-      "source": "レドゥア「そなたの口から噂が\n広まったと私が知れば\n命はないものと思うがよい」",
+      "source": "レドゥア「そなたの口から噂が\n<FFD4>広まったと私が知れば\n<FFD4>命はないものと思うがよい」",
       "text": null
     },
     {
@@ -1086,7 +1086,7 @@
     {
       "offset": "0xA960",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -1134,13 +1134,13 @@
     {
       "offset": "0xAAB0",
       "type": "center",
-      "source": "加勢しますか？\n\nは い\nいいえ\n",
+      "source": "加勢しますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
       "offset": "0xAAD8",
       "type": "center",
-      "source": "無理に加勢する必要はないと判断し\n女僧侶が、魔法を使った隙に\nその場から離れた。<BREAK>",
+      "source": "<STYLE:6>無理に加勢する必要はないと判断し\n<STYLE:6>女僧侶が、魔法を使った隙に\n<STYLE:6>その場から離れた。<BREAK>",
       "text": null
     },
     {
@@ -1224,37 +1224,37 @@
     {
       "offset": "0xADEE",
       "type": "dialog",
-      "source": "タイガ「………もう、知っていると思うが\n女王陛下が、誘拐された」",
+      "source": "タイガ「………もう、知っていると思うが\n<FFD3>女王陛下が、誘拐された」",
       "text": null
     },
     {
       "offset": "0xAE32",
       "type": "dialog",
-      "source": "タイガ「犯人は、禁呪を使って魔神を\n呼びよせたらしい」",
+      "source": "タイガ「犯人は、禁呪を使って魔神を\n<FFD3>呼びよせたらしい」",
       "text": null
     },
     {
       "offset": "0xAE6C",
       "type": "dialog",
-      "source": "タイガ「捕らえたオークから聞き出した\nところ、戦争を始めるつもり\nだとか」",
+      "source": "タイガ「捕らえたオークから聞き出した\n<FFD3>ところ、戦争を始めるつもり\n<FFD3>だとか」",
       "text": null
     },
     {
       "offset": "0xAEBC",
       "type": "dialog",
-      "source": "タイガ「そのため、次々に強大な\n魔神が呼びだされたそうだ」",
+      "source": "タイガ「そのため、次々に強大な\n<FFD3>魔神が呼びだされたそうだ」",
       "text": null
     },
     {
       "offset": "0xAEFA",
       "type": "dialog",
-      "source": "タイガ「この階に、濃く邪悪な空気が\n渦巻くのを感じる」",
+      "source": "タイガ「この階に、濃く邪悪な空気が\n<FFD3>渦巻くのを感じる」",
       "text": null
     },
     {
       "offset": "0xAF34",
       "type": "dialog",
-      "source": "タイガ「君達も、この先に進むなら\n十分に注意する事だ」",
+      "source": "タイガ「君達も、この先に進むなら\n<FFD3>十分に注意する事だ」",
       "text": null
     },
     {
@@ -1266,7 +1266,7 @@
     {
       "offset": "0xAF82",
       "type": "dialog",
-      "source": "タイガ「君も、この先に進むなら\n十分に注意する事だ」",
+      "source": "タイガ「君も、この先に進むなら\n<FFD3>十分に注意する事だ」",
       "text": null
     },
     {
@@ -1284,7 +1284,7 @@
     {
       "offset": "0xB000",
       "type": "dialog",
-      "source": "アラベラ「せめてもの御礼に\n回復をさせて下さいね」",
+      "source": "アラベラ「せめてもの御礼に\n<FFD4>回復をさせて下さいね」",
       "text": null
     },
     {
@@ -1356,19 +1356,19 @@
     {
       "offset": "0xB174",
       "type": "dialog",
-      "source": "アラベラ「優しく、哀しい力を感じます。\n引き離された何かを求める\nような…」",
+      "source": "アラベラ「優しく、哀しい力を感じます。\n<FFD4>引き離された何かを求める\n<FFD4>ような…」",
       "text": null
     },
     {
       "offset": "0xB1C6",
       "type": "dialog",
-      "source": "アラベラ「いずれ、何かのお役に立つかも\nしれません」",
+      "source": "アラベラ「いずれ、何かのお役に立つかも\n<FFD4>しれません」",
       "text": null
     },
     {
       "offset": "0xB1FE",
       "type": "dialog",
-      "source": "タイガ「では、これで失礼する。\n互いの武運を祈ろう」",
+      "source": "タイガ「では、これで失礼する。\n<FFD3>互いの武運を祈ろう」",
       "text": null
     },
     {
@@ -1392,13 +1392,13 @@
     {
       "offset": "0xB2EE",
       "type": "dialog",
-      "source": "魔神「ククク、小さな勝利に\n酔いしれるが良い」",
+      "source": "魔神「ククク、小さな勝利に\n<FFD2>酔いしれるが良い」",
       "text": null
     },
     {
       "offset": "0xB320",
       "type": "dialog",
-      "source": "魔神「お前達のさきに待つは\n深遠なる悪夢のみ！！」",
+      "source": "魔神「お前達のさきに待つは\n<FFD2>深遠なる悪夢のみ！！」",
       "text": null
     },
     {
@@ -1410,7 +1410,7 @@
     {
       "offset": "0xB374",
       "type": "dialog",
-      "source": "魔神「ククク、お前達の大切な物は\n今ごろ、あの方の御手の中……」",
+      "source": "魔神「ククク、お前達の大切な物は\n<FFD2>今ごろ、あの方の御手の中……」",
       "text": null
     },
     {
@@ -1446,13 +1446,13 @@
     {
       "offset": "0xB4A0",
       "type": "dialog",
-      "source": "忍者兵「………魔神の言葉など\n信じる必要はない」",
+      "source": "忍者兵「………魔神の言葉など\n<FFD3>信じる必要はない」",
       "text": null
     },
     {
       "offset": "0xB4D4",
       "type": "dialog",
-      "source": "忍者兵「しかし、あの御方とはいったい？\n大切な者とは陛下の事では…」",
+      "source": "忍者兵「しかし、あの御方とはいったい？\n<FFD3>大切な者とは陛下の事では…」",
       "text": null
     },
     {
@@ -1500,7 +1500,7 @@
     {
       "offset": "0xB638",
       "type": "dialog",
-      "source": "クルガン「気をつけろ！\nヤツは毒のブレスを吐く！」",
+      "source": "クルガン「気をつけろ！\n<FFD4>ヤツは毒のブレスを吐く！」",
       "text": null
     },
     {
@@ -1548,13 +1548,13 @@
     {
       "offset": "0xB7BA",
       "type": "dialog",
-      "source": "クルガン「クイーンガード長を…\nレドゥア様をお呼びしろ！」",
+      "source": "クルガン「クイーンガード長を…\n<FFD4>レドゥア様をお呼びしろ！」",
       "text": null
     },
     {
       "offset": "0xB7F8",
       "type": "dialog",
-      "source": "クルガン「やつらに立ち向かうには\n長の魔力が必要だ！！」",
+      "source": "クルガン「やつらに立ち向かうには\n<FFD4>長の魔力が必要だ！！」",
       "text": null
     },
     {
@@ -1566,7 +1566,7 @@
     {
       "offset": "0xB846",
       "type": "dialog",
-      "source": "クルガン「残りの者は、俺と共に\nあの巨人を倒すんだ！！」",
+      "source": "クルガン「残りの者は、俺と共に\n<FFD4>あの巨人を倒すんだ！！」",
       "text": null
     },
     {
@@ -1686,13 +1686,13 @@
     {
       "offset": "0xBC06",
       "type": "dialog",
-      "source": "忍者兵「冒険者がまきこまれても\n我らは助ける事が出来ない。\n即刻、立ち去ってくれ！」",
+      "source": "忍者兵「冒険者がまきこまれても\n<FFD3>我らは助ける事が出来ない。\n<FFD3>即刻、立ち去ってくれ！」",
       "text": null
     },
     {
       "offset": "0xBC60",
       "type": "dialog",
-      "source": "クルガン「持ち場を離れるな！\n冒険者にかまっている\n時間はない！！」",
+      "source": "クルガン「持ち場を離れるな！\n<FFD4>冒険者にかまっている\n<FFD4>時間はない！！」",
       "text": null
     },
     {
@@ -1746,13 +1746,13 @@
     {
       "offset": "0xBE2C",
       "type": "dialog",
-      "source": "忍者兵「冒険者が巻きこまれても\n我らは助ける事が出来ない。\n即刻、立ち去ってくれ！」",
+      "source": "忍者兵「冒険者が巻きこまれても\n<FFD3>我らは助ける事が出来ない。\n<FFD3>即刻、立ち去ってくれ！」",
       "text": null
     },
     {
       "offset": "0xBE86",
       "type": "dialog",
-      "source": "クルガン「持ち場を離れるな！\n冒険者に構っている\n時間はない！！」",
+      "source": "クルガン「持ち場を離れるな！\n<FFD4>冒険者に構っている\n<FFD4>時間はない！！」",
       "text": null
     },
     {
@@ -1806,13 +1806,13 @@
     {
       "offset": "0xC04E",
       "type": "dialog",
-      "source": "忍者兵「冒険者がまきこまれても\n我らは助ける事が出来ない。\n即刻、立ち去ってくれ！」",
+      "source": "忍者兵「冒険者がまきこまれても\n<FFD3>我らは助ける事が出来ない。\n<FFD3>即刻、立ち去ってくれ！」",
       "text": null
     },
     {
       "offset": "0xC0A8",
       "type": "dialog",
-      "source": "クルガン「持ち場を離れるな！\n冒険者にかまっている\n時間はない！！」",
+      "source": "クルガン「持ち場を離れるな！\n<FFD4>冒険者にかまっている\n<FFD4>時間はない！！」",
       "text": null
     },
     {
@@ -1866,79 +1866,79 @@
     {
       "offset": "0xC314",
       "type": "dialog",
-      "source": "リカルド「人がせっかく助けてやったのに\n何が、他言無用、だよ！」",
+      "source": "リカルド「人がせっかく助けてやったのに\n<FFD4>何が、他言無用、だよ！」",
       "text": null
     },
     {
       "offset": "0xC358",
       "type": "dialog",
-      "source": "リカルド「なんで良い事したのに誰にも\n言っちゃいけないんだ？」",
+      "source": "リカルド「なんで良い事したのに誰にも\n<FFD4>言っちゃいけないんだ？」",
       "text": null
     },
     {
       "offset": "0xC39A",
       "type": "dialog",
-      "source": "リカルド「まるで俺達、要らない事をした\nようなあつかいじゃないか」",
+      "source": "リカルド「まるで俺達、要らない事をした\n<FFD4>ようなあつかいじゃないか」",
       "text": null
     },
     {
       "offset": "0xC3E0",
       "type": "dialog",
-      "source": "リカルド「くそっ…ムカツク…\nなんか損した気分だぜ」",
+      "source": "リカルド「くそっ…ムカツク…\n<FFD4>なんか損した気分だぜ」",
       "text": null
     },
     {
       "offset": "0xC418",
       "type": "dialog",
-      "source": "グレッグ「女王のあの取り乱し様は、\n尋常ではないな」",
+      "source": "グレッグ「女王のあの取り乱し様は、\n<FFD4>尋常ではないな」",
       "text": null
     },
     {
       "offset": "0xC450",
       "type": "dialog",
-      "source": "グレッグ「夢魔の影響だけが原因だとは\nどうしても思えぬ」",
+      "source": "グレッグ「夢魔の影響だけが原因だとは\n<FFD4>どうしても思えぬ」",
       "text": null
     },
     {
       "offset": "0xC48C",
       "type": "dialog",
-      "source": "グレッグ「心の深い部分が欠如していると\nでも言うのか…」",
+      "source": "グレッグ「心の深い部分が欠如していると\n<FFD4>でも言うのか…」",
       "text": null
     },
     {
       "offset": "0xC4C8",
       "type": "dialog",
-      "source": "グレッグ「まるで人間を真似ようとする\n悪趣味な人形を見ている様な\nそんな気がしてならぬ…」",
+      "source": "グレッグ「まるで人間を真似ようとする\n<FFD4>悪趣味な人形を見ている様な\n<FFD4>そんな気がしてならぬ…」",
       "text": null
     },
     {
       "offset": "0xC528",
       "type": "dialog",
-      "source": "グレッグ「考えすぎかもしれぬな。\n私も迷宮の魔風にあてられ\nでもしたか」",
+      "source": "グレッグ「考えすぎかもしれぬな。\n<FFD4>私も迷宮の魔風にあてられ\n<FFD4>でもしたか」",
       "text": null
     },
     {
       "offset": "0xC576",
       "type": "dialog",
-      "source": "サラ「ねえ、あの女王様の態度、\nちょっとおかしいと思わない？」",
+      "source": "サラ「ねえ、あの女王様の態度、\n<FFD2>ちょっとおかしいと思わない？」",
       "text": null
     },
     {
       "offset": "0xC5B8",
       "type": "dialog",
-      "source": "サラ「同じ言葉を何度も繰り返したり、\nなんだか気味悪い…」",
+      "source": "サラ「同じ言葉を何度も繰り返したり、\n<FFD2>なんだか気味悪い…」",
       "text": null
     },
     {
       "offset": "0xC5F6",
       "type": "dialog",
-      "source": "サラ「それにあのクルガンの\n<PAGE>に対する憎しみも\n変だといえば変だし…」",
+      "source": "サラ「それにあのクルガンの\n<FFD2><PAGE>に対する憎しみも\n<FFD2>変だといえば変だし…」",
       "text": null
     },
     {
       "offset": "0xC642",
       "type": "dialog",
-      "source": "サラ「彼ら絶対に何か隠している。\nわたし達には言えない何かを…」",
+      "source": "サラ「彼ら絶対に何か隠している。\n<FFD2>わたし達には言えない何かを…」",
       "text": null
     },
     {
@@ -1950,13 +1950,13 @@
     {
       "offset": "0xC6BC",
       "type": "dialog",
-      "source": "ダニエル「へへへ、オイラはお礼よりも\nお宝お宝♪」",
+      "source": "ダニエル「へへへ、オイラはお礼よりも\n<FFD4>お宝お宝♪」",
       "text": null
     },
     {
       "offset": "0xC6F2",
       "type": "dialog",
-      "source": "ダニエル「ほら、あの憎たらしい\nジジイから、くすねて\nおいたからね！」",
+      "source": "ダニエル「ほら、あの憎たらしい\n<FFD4>ジジイから、くすねて\n<FFD4>おいたからね！」",
       "text": null
     },
     {
@@ -1968,7 +1968,7 @@
     {
       "offset": "0xC766",
       "type": "dialog",
-      "source": "ルイ「心は冷たそうな老人だけど\n懐だけは暖かいみたいね」",
+      "source": "ルイ「心は冷たそうな老人だけど\n<FFD2>懐だけは暖かいみたいね」",
       "text": null
     },
     {
@@ -1980,19 +1980,19 @@
     {
       "offset": "0xC7EA",
       "type": "dialog",
-      "source": "ルイ「転んでもただでは起きない。\nこれは盗賊のセオリーよ」",
+      "source": "ルイ「転んでもただでは起きない。\n<FFD2>これは盗賊のセオリーよ」",
       "text": null
     },
     {
       "offset": "0xC828",
       "type": "dialog",
-      "source": "ダニエル「今ごろあのじいちゃん\n怒り狂っているんじゃない」",
+      "source": "ダニエル「今ごろあのじいちゃん\n<FFD4>怒り狂っているんじゃない」",
       "text": null
     },
     {
       "offset": "0xC866",
       "type": "dialog",
-      "source": "ダニエル「まあ、礼も言われなかったから\nこれぐらいもらわなきゃね」",
+      "source": "ダニエル「まあ、礼も言われなかったから\n<FFD4>これぐらいもらわなきゃね」",
       "text": null
     },
     {
@@ -2010,7 +2010,7 @@
     {
       "offset": "0xC8FC",
       "type": "dialog",
-      "source": "ルイ「心は冷たそうな老人だけど\n懐だけは暖かいみたいね」",
+      "source": "ルイ「心は冷たそうな老人だけど\n<FFD2>懐だけは暖かいみたいね」",
       "text": null
     },
     {
@@ -2022,7 +2022,7 @@
     {
       "offset": "0xC966",
       "type": "dialog",
-      "source": "ルイ「転んでもただでは起きない。\nこれは盗賊のセオリーよ」",
+      "source": "ルイ「転んでもただでは起きない。\n<FFD2>これは盗賊のセオリーよ」",
       "text": null
     },
     {
@@ -2040,13 +2040,13 @@
     {
       "offset": "0xCA00",
       "type": "dialog",
-      "source": "ダニエル「へへへ、オイラはお礼よりも\nお宝お宝♪」",
+      "source": "ダニエル「へへへ、オイラはお礼よりも\n<FFD4>お宝お宝♪」",
       "text": null
     },
     {
       "offset": "0xCA36",
       "type": "dialog",
-      "source": "ダニエル「ほら、あの憎たらしい\nジジイから、くすねて\nおいたからね！」",
+      "source": "ダニエル「ほら、あの憎たらしい\n<FFD4>ジジイから、くすねて\n<FFD4>おいたからね！」",
       "text": null
     },
     {
@@ -2058,13 +2058,13 @@
     {
       "offset": "0xCAB4",
       "type": "dialog",
-      "source": "ダニエル「今ごろあのじいちゃん\n怒り狂っているんじゃない」",
+      "source": "ダニエル「今ごろあのじいちゃん\n<FFD4>怒り狂っているんじゃない」",
       "text": null
     },
     {
       "offset": "0xCAF2",
       "type": "dialog",
-      "source": "ダニエル「ま、礼も言われなかったから\nこれぐらいもらわなきゃね」",
+      "source": "ダニエル「ま、礼も言われなかったから\n<FFD4>これぐらいもらわなきゃね」",
       "text": null
     },
     {
@@ -2088,85 +2088,85 @@
     {
       "offset": "0xCBD6",
       "type": "dialog",
-      "source": "ピクシー「キャハハハ！\n人と人が殺し合ってるよ！」",
+      "source": "ピクシー「キャハハハ！\n<FFD4>人と人が殺し合ってるよ！」",
       "text": null
     },
     {
       "offset": "0xCC0C",
       "type": "dialog",
-      "source": "ピクシー「ねえねえ、たくさんの悲鳴が\n聞こえない？」",
+      "source": "ピクシー「ねえねえ、たくさんの悲鳴が\n<FFD4>聞こえない？」",
       "text": null
     },
     {
       "offset": "0xCC44",
       "type": "dialog",
-      "source": "ピクシー「昔からそうだった。\n人間は殺し合うのが大好き！」",
+      "source": "ピクシー「昔からそうだった。\n<FFD4>人間は殺し合うのが大好き！」",
       "text": null
     },
     {
       "offset": "0xCC82",
       "type": "dialog",
-      "source": "ピクシー「うふふっ、\n人間っていつまで経っても\n変わらないのね」",
+      "source": "ピクシー「うふふっ、\n<FFD4>人間っていつまで経っても\n<FFD4>変わらないのね」",
       "text": null
     },
     {
       "offset": "0xCCC8",
       "type": "dialog",
-      "source": "ピクシー「わたし達魔物の事を\n口では憎しみ罵るけど…」",
+      "source": "ピクシー「わたし達魔物の事を\n<FFD4>口では憎しみ罵るけど…」",
       "text": null
     },
     {
       "offset": "0xCD02",
       "type": "dialog",
-      "source": "ピクシー「いつも、わたし達の\n真似ばかり」",
+      "source": "ピクシー「いつも、わたし達の\n<FFD4>真似ばかり」",
       "text": null
     },
     {
       "offset": "0xCD30",
       "type": "dialog",
-      "source": "ピクシー「憎悪に、殺し合い、\nねたみに裏切りまで\n数えたらきりがない」",
+      "source": "ピクシー「憎悪に、殺し合い、\n<FFD4>ねたみに裏切りまで\n<FFD4>数えたらきりがない」",
       "text": null
     },
     {
       "offset": "0xCD7C",
       "type": "dialog",
-      "source": "ピクシー「反省するのはいつも\n好きな事をしてから」",
+      "source": "ピクシー「反省するのはいつも\n<FFD4>好きな事をしてから」",
       "text": null
     },
     {
       "offset": "0xCDB2",
       "type": "dialog",
-      "source": "ピクシー「しばらくすると\nまた同じ事を繰り返す」",
+      "source": "ピクシー「しばらくすると\n<FFD4>また同じ事を繰り返す」",
       "text": null
     },
     {
       "offset": "0xCDE6",
       "type": "dialog",
-      "source": "ピクシー「物覚えが悪いの？\nそれとも本当は\n悪い事が好きなの？」",
+      "source": "ピクシー「物覚えが悪いの？\n<FFD4>それとも本当は\n<FFD4>悪い事が好きなの？」",
       "text": null
     },
     {
       "offset": "0xCE2C",
       "type": "dialog",
-      "source": "ピクシー「反省なんかしない\nわたし達の方がずーっと\n正直だと思うけど」",
+      "source": "ピクシー「反省なんかしない\n<FFD4>わたし達の方がずーっと\n<FFD4>正直だと思うけど」",
       "text": null
     },
     {
       "offset": "0xCE78",
       "type": "dialog",
-      "source": "ピクシー「あらあら、大変。\n早く逃げなきゃ！」",
+      "source": "ピクシー「あらあら、大変。\n<FFD4>早く逃げなきゃ！」",
       "text": null
     },
     {
       "offset": "0xCEAA",
       "type": "dialog",
-      "source": "ピクシー「ほんと！\nとっても大きな黒い霧が\n向こうの方で渦巻いている」",
+      "source": "ピクシー「ほんと！\n<FFD4>とっても大きな黒い霧が\n<FFD4>向こうの方で渦巻いている」",
       "text": null
     },
     {
       "offset": "0xCEF6",
       "type": "dialog",
-      "source": "ピクシー「きっと馬鹿な奴等が\n魔神を蘇らそうと\nしているんだ！」",
+      "source": "ピクシー「きっと馬鹿な奴等が\n<FFD4>魔神を蘇らそうと\n<FFD4>しているんだ！」",
       "text": null
     },
     {
@@ -2196,7 +2196,7 @@
     {
       "offset": "0xD02A",
       "type": "center",
-      "source": "どうしますか？\n\n手記を読む\nやめておく\n",
+      "source": "どうしますか？\n\n<FFC0>手記を読む\n<FFC1>やめておく\n",
       "text": null
     },
     {
@@ -2226,55 +2226,55 @@
     {
       "offset": "0xD14C",
       "type": "center",
-      "source": "どうしますか？\n\n手記を読む\nそのまま拾う\nやめておく\n",
+      "source": "どうしますか？\n\n<FFC0>手記を読む\n<FFC1>そのまま拾う\n<FFC2>やめておく\n",
       "text": null
     },
     {
       "offset": "0xD190",
       "type": "center",
-      "source": "私は真実を知るために\nこの迷宮を進む事を決意する。\n\n待ち受ける運命が\nどれほど過酷な物であっても、\n救いが残されているとしたら\n私の歩みは止まる事はない。\n\n次のページへ\n手記を閉じる\n",
+      "source": "私は真実を知るために\nこの迷宮を進む事を決意する。\n\n待ち受ける運命が\nどれほど過酷な物であっても、\n救いが残されているとしたら\n私の歩みは止まる事はない。\n\n<FFC0>次のページへ\n<FFC1>手記を閉じる\n",
       "text": null
     },
     {
       "offset": "0xD276",
       "type": "center",
-      "source": "妖魔共の国とも言うべき\nこの迷宮の内に立ってみると、\n見えなかった物が見え、\n確かだったものが不確かになる。\n\n\n\n\n次のページへ\n手記を閉じる\n",
+      "source": "妖魔共の国とも言うべき\nこの迷宮の内に立ってみると、\n見えなかった物が見え、\n確かだったものが不確かになる。\n\n\n\n\n<FFC0>次のページへ\n<FFC1>手記を閉じる\n",
       "text": null
     },
     {
       "offset": "0xD332",
       "type": "center",
-      "source": "私はこの迷宮に\n相反する二つの意思を見る。\n\n我々は生きる事を許され、\nそして死を求められている。\n\n\n\n次のページへ\n手記を閉じる\n",
+      "source": "私はこの迷宮に\n相反する二つの意思を見る。\n\n我々は生きる事を許され、\nそして死を求められている。\n\n\n\n<FFC0>次のページへ\n<FFC1>手記を閉じる\n",
       "text": null
     },
     {
       "offset": "0xD3E2",
       "type": "center",
-      "source": "何故、神はこの迷宮の存在を\n許されるのだろうか？\n\n深遠なる神の意志は\n我々人間にはうかがい知れぬ\n物かもしれない。\n\n\n次のページへ\n手記を閉じる\n",
+      "source": "何故、神はこの迷宮の存在を\n許されるのだろうか？\n\n深遠なる神の意志は\n我々人間にはうかがい知れぬ\n物かもしれない。\n\n\n<FFC0>次のページへ\n<FFC1>手記を閉じる\n",
       "text": null
     },
     {
       "offset": "0xD4A2",
       "type": "center",
-      "source": "だが、そこになんらかの意味が\n隠されているとしたら、\n迷宮の最深部まで行く事が、\n一つの答えになるのかもしれない。\n\n\n\n\n次のページへ\n手記を閉じる\n",
+      "source": "だが、そこになんらかの意味が\n隠されているとしたら、\n迷宮の最深部まで行く事が、\n一つの答えになるのかもしれない。\n\n\n\n\n<FFC0>次のページへ\n<FFC1>手記を閉じる\n",
       "text": null
     },
     {
       "offset": "0xD564",
       "type": "center",
-      "source": "何故ならその場所には、\n確固たる強い意志と、\n幾多の犠牲を払った者しか\n辿り着けないからだ。\n\n\n\n\n次のページへ\n手記を閉じる\n",
+      "source": "何故ならその場所には、\n確固たる強い意志と、\n幾多の犠牲を払った者しか\n辿り着けないからだ。\n\n\n\n\n<FFC0>次のページへ\n<FFC1>手記を閉じる\n",
       "text": null
     },
     {
       "offset": "0xD610",
       "type": "center",
-      "source": "私は一人の男に会った。\n\n眼光の鋭い男であった。\n\n惟悴しきった顔、\n全身は疲労と怪我で\n歩く事もままならない。\n\n次のページへ\n手記を閉じる\n",
+      "source": "私は一人の男に会った。\n\n眼光の鋭い男であった。\n\n惟悴しきった顔、\n全身は疲労と怪我で\n歩く事もままならない。\n\n<FFC0>次のページへ\n<FFC1>手記を閉じる\n",
       "text": null
     },
     {
       "offset": "0xD6CA",
       "type": "center",
-      "source": "白くなった髪を肩に垂らし\nぼろぼろに刃こぼれした\n剣を杖代わりに近づいてくる。\n\n男のその姿は\nさながら荒野をさまよう\n亡霊の様だった。\n\n次のページへ\n手記を閉じる\n",
+      "source": "白くなった髪を肩に垂らし\nぼろぼろに刃こぼれした\n剣を杖代わりに近づいてくる。\n\n男のその姿は\nさながら荒野をさまよう\n亡霊の様だった。\n\n<FFC0>次のページへ\n<FFC1>手記を閉じる\n",
       "text": null
     },
     {
@@ -2340,19 +2340,19 @@
     {
       "offset": "0xDA3C",
       "type": "dialog",
-      "source": "ヒナ「やはり、この斬り口は…\n刀の物………」",
+      "source": "ヒナ「やはり、この斬り口は…\n<FFD2>刀の物………」",
       "text": null
     },
     {
       "offset": "0xDA6C",
       "type": "dialog",
-      "source": "ヒナ「よほど腕の立つ剣士\nでなくては、こうは斬れない」",
+      "source": "ヒナ「よほど腕の立つ剣士\n<FFD2>でなくては、こうは斬れない」",
       "text": null
     },
     {
       "offset": "0xDAA6",
       "type": "dialog",
-      "source": "ヒナ「わたしは、この斬り口を\n知っている…」",
+      "source": "ヒナ「わたしは、この斬り口を\n<FFD2>知っている…」",
       "text": null
     },
     {
@@ -2370,7 +2370,7 @@
     {
       "offset": "0xDB3A",
       "type": "center",
-      "source": "まだ足らぬ…\n奴を呼び出すにはもっと\n血が必要だ…",
+      "source": "<STYLE:2>まだ足らぬ…\n奴を呼び出すにはもっと\n血が必要だ…",
       "text": null
     },
     {
@@ -2394,19 +2394,19 @@
     {
       "offset": "0xDC0C",
       "type": "dialog",
-      "source": "侍「愚かな奴等め…\n餌食になりに来たのか」",
+      "source": "侍「愚かな奴等め…\n<FFD1>餌食になりに来たのか」",
       "text": null
     },
     {
       "offset": "0xDC3A",
       "type": "center",
-      "source": "ヒナ「兄上！！」",
+      "source": "<STYLE:2>ヒナ「兄上！！」",
       "text": null
     },
     {
       "offset": "0xDC4E",
       "type": "center",
-      "source": "ヒナ「兄上……、やめて下さい！！」",
+      "source": "<STYLE:2>ヒナ「兄上……、やめて下さい！！」",
       "text": null
     },
     {
@@ -2436,31 +2436,31 @@
     {
       "offset": "0xDD86",
       "type": "dialog",
-      "source": "ヒナ「あなたは、侍の魂を捨てて\n何をしようとしているの？」",
+      "source": "ヒナ「あなたは、侍の魂を捨てて\n<FFD2>何をしようとしているの？」",
       "text": null
     },
     {
       "offset": "0xDDC4",
       "type": "dialog",
-      "source": "ヒナ「弟を亡くした悲しみと狂気で\n人を斬りつづけるだけなの？」",
+      "source": "ヒナ「弟を亡くした悲しみと狂気で\n<FFD2>人を斬りつづけるだけなの？」",
       "text": null
     },
     {
       "offset": "0xDE06",
       "type": "dialog",
-      "source": "ヒナ「でも…、わたしは信じたい。\nあなたの心に、まだ優しさが\n残っていると」",
+      "source": "ヒナ「でも…、わたしは信じたい。\n<FFD2>あなたの心に、まだ優しさが\n<FFD2>残っていると」",
       "text": null
     },
     {
       "offset": "0xDE58",
       "type": "dialog",
-      "source": "ヒナ「だって、斬ろうと思えば\n斬れたはずなのに、あなたは\nわたしを斬りはしなかった…」",
+      "source": "ヒナ「だって、斬ろうと思えば\n<FFD2>斬れたはずなのに、あなたは\n<FFD2>わたしを斬りはしなかった…」",
       "text": null
     },
     {
       "offset": "0xDEB4",
       "type": "dialog",
-      "source": "ヒナ「わたしは、それに\nいちるの望みを懸ける………！」",
+      "source": "ヒナ「わたしは、それに\n<FFD2>いちるの望みを懸ける………！」",
       "text": null
     },
     {
@@ -2478,31 +2478,31 @@
     {
       "offset": "0xDF60",
       "type": "dialog",
-      "source": "コボルド「な、なんだよテメエ～！\nくそっ、マジむかつく…」",
+      "source": "コボルド「な、なんだよテメエ～！\n<FFD4>くそっ、マジむかつく…」",
       "text": null
     },
     {
       "offset": "0xDF9E",
       "type": "dialog",
-      "source": "コボルド「突然現われやがるから、\nてっきりあの黒髪野郎だと\n思ったじゃねえかよ！」",
+      "source": "コボルド「突然現われやがるから、\n<FFD4>てっきりあの黒髪野郎だと\n<FFD4>思ったじゃねえかよ！」",
       "text": null
     },
     {
       "offset": "0xDFF6",
       "type": "dialog",
-      "source": "コボルド「ちくしょう、馬鹿にすんな！\n俺だってほんとはな、\nコソコソしたくねえんだよ」",
+      "source": "コボルド「ちくしょう、馬鹿にすんな！\n<FFD4>俺だってほんとはな、\n<FFD4>コソコソしたくねえんだよ」",
       "text": null
     },
     {
       "offset": "0xE052",
       "type": "dialog",
-      "source": "コボルド「だけどあの黒髪野郎は、\n人でも魔物でも見境なしに\n殺しやがるんだ！」",
+      "source": "コボルド「だけどあの黒髪野郎は、\n<FFD4>人でも魔物でも見境なしに\n<FFD4>殺しやがるんだ！」",
       "text": null
     },
     {
       "offset": "0xE0A6",
       "type": "dialog",
-      "source": "コボルド「ありゃ完全にいかれてるね。\nあいつ魔神の名前を叫び\nながら斬り刻むんだぜ！」",
+      "source": "コボルド「ありゃ完全にいかれてるね。\n<FFD4>あいつ魔神の名前を叫び\n<FFD4>ながら斬り刻むんだぜ！」",
       "text": null
     },
     {
@@ -2514,13 +2514,13 @@
     {
       "offset": "0xE132",
       "type": "dialog",
-      "source": "コボルド「見ろよ…、\n俺の首の後の毛がチリチリ\n立っちまってるよ…」",
+      "source": "コボルド「見ろよ…、\n<FFD4>俺の首の後の毛がチリチリ\n<FFD4>立っちまってるよ…」",
       "text": null
     },
     {
       "offset": "0xE17C",
       "type": "dialog",
-      "source": "コボルド「ぜったい来るぜ…\nマジであんな事してたら」",
+      "source": "コボルド「ぜったい来るぜ…\n<FFD4>マジであんな事してたら」",
       "text": null
     },
     {
@@ -2550,55 +2550,55 @@
     {
       "offset": "0xE284",
       "type": "dialog",
-      "source": "オルフェ「墓場から帰った後\n父に会いに行ったのだが\n何処にも見当たらないのだ」",
+      "source": "オルフェ「墓場から帰った後\n<FFD4>父に会いに行ったのだが\n<FFD4>何処にも見当たらないのだ」",
       "text": null
     },
     {
       "offset": "0xE2D8",
       "type": "dialog",
-      "source": "オルフェ「酒場の店主に聞けば\n最後に出会ったのは\nお前達と言うではないか！」",
+      "source": "オルフェ「酒場の店主に聞けば\n<FFD4>最後に出会ったのは\n<FFD4>お前達と言うではないか！」",
       "text": null
     },
     {
       "offset": "0xE32A",
       "type": "dialog",
-      "source": "オルフェ「父はどこに行った？\n貴様達知っているだろ！\n言わぬか！」",
+      "source": "オルフェ「父はどこに行った？\n<FFD4>貴様達知っているだろ！\n<FFD4>言わぬか！」",
       "text": null
     },
     {
       "offset": "0xE372",
       "type": "center",
-      "source": "侍「多分、この人達は\n何も知らないと思いますがね」",
+      "source": "<STYLE:2>侍「多分、この人達は\n  何も知らないと思いますがね」",
       "text": null
     },
     {
       "offset": "0xE3B8",
       "type": "dialog",
-      "source": "オルフェ「アオバ！\n貴様、何処にいたのだ！」",
+      "source": "オルフェ「アオバ！\n<FFD4>貴様、何処にいたのだ！」",
       "text": null
     },
     {
       "offset": "0xE3E8",
       "type": "dialog",
-      "source": "オルフェ「父は言わば貴様にとって\n師匠の様なものでは\nないか！」",
+      "source": "オルフェ「父は言わば貴様にとって\n<FFD4>師匠の様なものでは\n<FFD4>ないか！」",
       "text": null
     },
     {
       "offset": "0xE42E",
       "type": "dialog",
-      "source": "オルフェ「その師匠の行方が\nわからぬというのに…」",
+      "source": "オルフェ「その師匠の行方が\n<FFD4>わからぬというのに…」",
       "text": null
     },
     {
       "offset": "0xE464",
       "type": "dialog",
-      "source": "アオバ「酒場でのやり取りの後、\nちょっと気になる事が\nありましてね…」",
+      "source": "アオバ「酒場でのやり取りの後、\n<FFD3>ちょっと気になる事が\n<FFD3>ありましてね…」",
       "text": null
     },
     {
       "offset": "0xE4B0",
       "type": "dialog",
-      "source": "アオバ「多分、お嬢さんに言えば\n首を斬り飛ばされるんで、\n黙ってたのですよ」",
+      "source": "アオバ「多分、お嬢さんに言えば\n<FFD3>首を斬り飛ばされるんで、\n<FFD3>黙ってたのですよ」",
       "text": null
     },
     {
@@ -2610,13 +2610,13 @@
     {
       "offset": "0xE51E",
       "type": "dialog",
-      "source": "アオバ「俺はあの後、もう一度墓場に\n行って確かめてみたんです」",
+      "source": "アオバ「俺はあの後、もう一度墓場に\n<FFD3>行って確かめてみたんです」",
       "text": null
     },
     {
       "offset": "0xE560",
       "type": "dialog",
-      "source": "アオバ「あの盾が落ちていた場所の\n死体が気になったからね」",
+      "source": "アオバ「あの盾が落ちていた場所の\n<FFD3>死体が気になったからね」",
       "text": null
     },
     {
@@ -2628,13 +2628,13 @@
     {
       "offset": "0xE5B2",
       "type": "dialog",
-      "source": "アオバ「お嬢さんも気づいたんじゃ\nないですか？」",
+      "source": "アオバ「お嬢さんも気づいたんじゃ\n<FFD3>ないですか？」",
       "text": null
     },
     {
       "offset": "0xE5E6",
       "type": "dialog",
-      "source": "アオバ「死体の頭から顔にかけて\n大きな刀傷があるのを…」",
+      "source": "アオバ「死体の頭から顔にかけて\n<FFD3>大きな刀傷があるのを…」",
       "text": null
     },
     {
@@ -2652,49 +2652,49 @@
     {
       "offset": "0xE684",
       "type": "dialog",
-      "source": "オルフェ「そんなもの冒険者なら\nあり得る傷だ」",
+      "source": "オルフェ「そんなもの冒険者なら\n<FFD4>あり得る傷だ」",
       "text": null
     },
     {
       "offset": "0xE6B6",
       "type": "dialog",
-      "source": "アオバ「だけどあそこの死体は\n全て王宮の騎士隊のもの」",
+      "source": "アオバ「だけどあそこの死体は\n<FFD3>全て王宮の騎士隊のもの」",
       "text": null
     },
     {
       "offset": "0xE6F0",
       "type": "dialog",
-      "source": "アオバ「それに私は騎士隊の者は\n全員顔を知ってますが、\n頭に傷があったのは…」",
+      "source": "アオバ「それに私は騎士隊の者は\n<FFD3>全員顔を知ってますが、\n<FFD3>頭に傷があったのは…」",
       "text": null
     },
     {
       "offset": "0xE744",
       "type": "dialog",
-      "source": "オルフェ「うるさい！\nならお前はこう言うのか！」",
+      "source": "オルフェ「うるさい！\n<FFD4>ならお前はこう言うのか！」",
       "text": null
     },
     {
       "offset": "0xE778",
       "type": "dialog",
-      "source": "オルフェ「父はすでに死んでいる。\nそして亡霊となって\n我々の前に姿を現したと！」",
+      "source": "オルフェ「父はすでに死んでいる。\n<FFD4>そして亡霊となって\n<FFD4>我々の前に姿を現したと！」",
       "text": null
     },
     {
       "offset": "0xE7CE",
       "type": "dialog",
-      "source": "オルフェ「そんなものだけで、\n父だという証拠にならぬ！」",
+      "source": "オルフェ「そんなものだけで、\n<FFD4>父だという証拠にならぬ！」",
       "text": null
     },
     {
       "offset": "0xE80A",
       "type": "dialog",
-      "source": "オルフェ「馬鹿馬鹿しい…\nきっと父は今回の遠征に\nついてきているのだ！」",
+      "source": "オルフェ「馬鹿馬鹿しい…\n<FFD4>きっと父は今回の遠征に\n<FFD4>ついてきているのだ！」",
       "text": null
     },
     {
       "offset": "0xE858",
       "type": "dialog",
-      "source": "オルフェ「ドゥーハン兵士達に\n聞けばそう言うはず！」",
+      "source": "オルフェ「ドゥーハン兵士達に\n<FFD4>聞けばそう言うはず！」",
       "text": null
     },
     {
@@ -2706,7 +2706,7 @@
     {
       "offset": "0xE8C4",
       "type": "dialog",
-      "source": "アオバ「遠征ね…\n歩くのもままならない程\n怪我をしていた親父さんがね」",
+      "source": "アオバ「遠征ね…\n<FFD3>歩くのもままならない程\n<FFD3>怪我をしていた親父さんがね」",
       "text": null
     },
     {
@@ -2718,37 +2718,37 @@
     {
       "offset": "0xE932",
       "type": "dialog",
-      "source": "アオバ「楽しく酒場で喋っていた者が\n次の日には行方知れずに\nなっていたり…」",
+      "source": "アオバ「楽しく酒場で喋っていた者が\n<FFD3>次の日には行方知れずに\n<FFD3>なっていたり…」",
       "text": null
     },
     {
       "offset": "0xE984",
       "type": "dialog",
-      "source": "アオバ「街を出て行ったという者も\n誰も行き先を聞いて\nいなかったり…」",
+      "source": "アオバ「街を出て行ったという者も\n<FFD3>誰も行き先を聞いて\n<FFD3>いなかったり…」",
       "text": null
     },
     {
       "offset": "0xE9D0",
       "type": "dialog",
-      "source": "アオバ「何やら我々は死者の国に\n来ているような…」",
+      "source": "アオバ「何やら我々は死者の国に\n<FFD3>来ているような…」",
       "text": null
     },
     {
       "offset": "0xEA06",
       "type": "dialog",
-      "source": "アオバ「そんな薄気味悪い感じが\nするんですよ。\n考えすぎですかね…」",
+      "source": "アオバ「そんな薄気味悪い感じが\n<FFD3>するんですよ。\n<FFD3>考えすぎですかね…」",
       "text": null
     },
     {
       "offset": "0xEA50",
       "type": "dialog",
-      "source": "アオバ「まあとりあえず、\nお嬢さんを追いかけなきゃ」",
+      "source": "アオバ「まあとりあえず、\n<FFD3>お嬢さんを追いかけなきゃ」",
       "text": null
     },
     {
       "offset": "0xEA88",
       "type": "dialog",
-      "source": "アオバ「頭に血がのぼって魔物に\n捕まってなきゃ良いんだが」",
+      "source": "アオバ「頭に血がのぼって魔物に\n<FFD3>捕まってなきゃ良いんだが」",
       "text": null
     },
     {
@@ -2778,7 +2778,7 @@
     {
       "offset": "0xEB88",
       "type": "center",
-      "source": "常世の闇に包まれし\n幼き骸よ…",
+      "source": "<STYLE:2>常世の闇に包まれし\n幼き骸よ…",
       "text": null
     },
     {
@@ -2802,7 +2802,7 @@
     {
       "offset": "0xEC3A",
       "type": "center",
-      "source": "ヒナ「兄上！！」",
+      "source": "<STYLE:2>ヒナ「兄上！！」",
       "text": null
     },
     {
@@ -2814,7 +2814,7 @@
     {
       "offset": "0xEC8A",
       "type": "dialog",
-      "source": "ナチ「や…やっと会えたぞ…\n逃がしはせぬ……」",
+      "source": "ナチ「や…やっと会えたぞ…\n<FFD2>逃がしはせぬ……」",
       "text": null
     },
     {
@@ -2838,7 +2838,7 @@
     {
       "offset": "0xED6C",
       "type": "dialog",
-      "source": "ヒナ「兄が、ナチが殺されてしまう…！\nどうか、ご助力を！！」",
+      "source": "ヒナ「兄が、ナチが殺されてしまう…！\n<FFD2>どうか、ご助力を！！」",
       "text": null
     },
     {
@@ -2850,43 +2850,43 @@
     {
       "offset": "0xEDC2",
       "type": "dialog",
-      "source": "ナチ「迷宮は願いを聞いてくれた！\nさらなる強さと、\n弟を殺した魔神への復讐を！」",
+      "source": "ナチ「迷宮は願いを聞いてくれた！\n<FFD2>さらなる強さと、\n<FFD2>弟を殺した魔神への復讐を！」",
       "text": null
     },
     {
       "offset": "0xEE18",
       "type": "dialog",
-      "source": "ナチ「ハハッ…\nだが、なんという皮肉な事だ」",
+      "source": "ナチ「ハハッ…\n<FFD2>だが、なんという皮肉な事だ」",
       "text": null
     },
     {
       "offset": "0xEE48",
       "type": "dialog",
-      "source": "ナチ「最後になって、私の手から\nそれをかすめ取ってしまうとは」",
+      "source": "ナチ「最後になって、私の手から\n<FFD2>それをかすめ取ってしまうとは」",
       "text": null
     },
     {
       "offset": "0xEE8A",
       "type": "dialog",
-      "source": "ナチ「そして、それをなしたのが\n戦いを嫌っていた、ヒナ……\nお前だとは………」",
+      "source": "ナチ「そして、それをなしたのが\n<FFD2>戦いを嫌っていた、ヒナ……\n<FFD2>お前だとは………」",
       "text": null
     },
     {
       "offset": "0xEEDE",
       "type": "dialog",
-      "source": "ナチ「迷宮は、私をおとしめ\nあざ笑っただけだというのか！？」",
+      "source": "ナチ「迷宮は、私をおとしめ\n<FFD2>あざ笑っただけだというのか！？」",
       "text": null
     },
     {
       "offset": "0xEF1E",
       "type": "dialog",
-      "source": "ナチ「ククク、ならば、私も己の運命を\n嘲笑おうではないか！」",
+      "source": "ナチ「ククク、ならば、私も己の運命を\n<FFD2>嘲笑おうではないか！」",
       "text": null
     },
     {
       "offset": "0xEF5E",
       "type": "center",
-      "source": "ヒナ「兄上…帰りましょう…\n帰って、もう一度やり直せば…」",
+      "source": "<STYLE:2>ヒナ「兄上…帰りましょう…\n   帰って、もう一度やり直せば…」",
       "text": null
     },
     {
@@ -2898,13 +2898,13 @@
     {
       "offset": "0xEFCE",
       "type": "dialog",
-      "source": "ナチ「魔神を憎むあまりに\n侍としての魂も捨て去った。\n幾多の人を殺めた………」",
+      "source": "ナチ「魔神を憎むあまりに\n<FFD2>侍としての魂も捨て去った。\n<FFD2>幾多の人を殺めた………」",
       "text": null
     },
     {
       "offset": "0xF022",
       "type": "dialog",
-      "source": "ナチ「この闇の底で私の魂もまた、\n闇に染まってしまったのだ…」",
+      "source": "ナチ「この闇の底で私の魂もまた、\n<FFD2>闇に染まってしまったのだ…」",
       "text": null
     },
     {
@@ -2922,7 +2922,7 @@
     {
       "offset": "0xF0B4",
       "type": "dialog",
-      "source": "ナチ「愚かな兄弟の、愚かな運命に\nつきあわせてしまった」",
+      "source": "ナチ「愚かな兄弟の、愚かな運命に\n<FFD2>つきあわせてしまった」",
       "text": null
     },
     {
@@ -2940,13 +2940,13 @@
     {
       "offset": "0xF1A6",
       "type": "dialog",
-      "source": "ナチ「もう、お前が私達にしばられる\n必要はない」",
+      "source": "ナチ「もう、お前が私達にしばられる\n<FFD2>必要はない」",
       "text": null
     },
     {
       "offset": "0xF1DA",
       "type": "dialog",
-      "source": "ナチ「後を追おうなどとは考えず\n自由に、生きて、いくが良い…」",
+      "source": "ナチ「後を追おうなどとは考えず\n<FFD2>自由に、生きて、いくが良い…」",
       "text": null
     },
     {
@@ -2958,7 +2958,7 @@
     {
       "offset": "0xF236",
       "type": "dialog",
-      "source": "ナチ「死神の、魔剣のうなりが\n聞こえる…」",
+      "source": "ナチ「死神の、魔剣のうなりが\n<FFD2>聞こえる…」",
       "text": null
     },
     {
@@ -2988,13 +2988,13 @@
     {
       "offset": "0xF324",
       "type": "dialog",
-      "source": "ヒナ「せめて魂の半分だけ、\n側にいる事を許して下さい…」",
+      "source": "ヒナ「せめて魂の半分だけ、\n<FFD2>側にいる事を許して下さい…」",
       "text": null
     },
     {
       "offset": "0xF360",
       "type": "dialog",
-      "source": "ヒナ「あなた達と共にいる間\n確かに、私達は兄弟だったのだ\nという、証しの為に………」",
+      "source": "ヒナ「あなた達と共にいる間\n<FFD2>確かに、私達は兄弟だったのだ\n<FFD2>という、証しの為に………」",
       "text": null
     },
     {
@@ -3048,19 +3048,19 @@
     {
       "offset": "0xF578",
       "type": "dialog",
-      "source": "ヒナ「このまま、共に行く事を\n許して下さい」",
+      "source": "ヒナ「このまま、共に行く事を\n<FFD2>許して下さい」",
       "text": null
     },
     {
       "offset": "0xF5A8",
       "type": "dialog",
-      "source": "ヒナ「兄と、弟が生きたこの迷宮を…\n最後まで歩いてみたいのです」",
+      "source": "ヒナ「兄と、弟が生きたこの迷宮を…\n<FFD2>最後まで歩いてみたいのです」",
       "text": null
     },
     {
       "offset": "0xF5EC",
       "type": "dialog",
-      "source": "ヒナ「それに、此度の御恩をお返し\nしなければ、なりませんもの」",
+      "source": "ヒナ「それに、此度の御恩をお返し\n<FFD2>しなければ、なりませんもの」",
       "text": null
     },
     {
@@ -3114,19 +3114,19 @@
     {
       "offset": "0xF7AC",
       "type": "dialog",
-      "source": "ナチ「フ………\nククククク………」",
+      "source": "ナチ「フ………\n<FFD2>ククククク………」",
       "text": null
     },
     {
       "offset": "0xF7D2",
       "type": "dialog",
-      "source": "ナチ「私は、全てを捨てたはずだ。\n魔神への復讐のために！！」",
+      "source": "ナチ「私は、全てを捨てたはずだ。\n<FFD2>魔神への復讐のために！！」",
       "text": null
     },
     {
       "offset": "0xF812",
       "type": "dialog",
-      "source": "ナチ「なのに、まだ、こんな感情が\n残っていたとはな」",
+      "source": "ナチ「なのに、まだ、こんな感情が\n<FFD2>残っていたとはな」",
       "text": null
     },
     {
@@ -3138,7 +3138,7 @@
     {
       "offset": "0xF876",
       "type": "dialog",
-      "source": "ヒナ「兄上…帰りましょう…\n帰って、もう一度やり直せば…」",
+      "source": "ヒナ「兄上…帰りましょう…\n<FFD2>帰って、もう一度やり直せば…」",
       "text": null
     },
     {
@@ -3150,13 +3150,13 @@
     {
       "offset": "0xF8D8",
       "type": "dialog",
-      "source": "ナチ「魔神を憎むあまりに\n侍としての魂も捨て去った。\n幾多の人を殺めた………」",
+      "source": "ナチ「魔神を憎むあまりに\n<FFD2>侍としての魂も捨て去った。\n<FFD2>幾多の人を殺めた………」",
       "text": null
     },
     {
       "offset": "0xF92C",
       "type": "dialog",
-      "source": "ナチ「この闇の底で私の魂もまた、\n闇に染まってしまったのだ…」",
+      "source": "ナチ「この闇の底で私の魂もまた、\n<FFD2>闇に染まってしまったのだ…」",
       "text": null
     },
     {
@@ -3174,7 +3174,7 @@
     {
       "offset": "0xF9BE",
       "type": "dialog",
-      "source": "ナチ「愚かな兄弟の、愚かな運命に\nつきあわせてしまった」",
+      "source": "ナチ「愚かな兄弟の、愚かな運命に\n<FFD2>つきあわせてしまった」",
       "text": null
     },
     {
@@ -3192,13 +3192,13 @@
     {
       "offset": "0xFAB0",
       "type": "dialog",
-      "source": "ナチ「もう、お前が私達にしばられる\n必要はない」",
+      "source": "ナチ「もう、お前が私達にしばられる\n<FFD2>必要はない」",
       "text": null
     },
     {
       "offset": "0xFAE4",
       "type": "dialog",
-      "source": "ナチ「後を追おうなどとは考えず\n自由に、生きて、いくが良い…」",
+      "source": "ナチ「後を追おうなどとは考えず\n<FFD2>自由に、生きて、いくが良い…」",
       "text": null
     },
     {
@@ -3210,7 +3210,7 @@
     {
       "offset": "0xFB40",
       "type": "dialog",
-      "source": "ナチ「死神の、魔剣のうなりが\n聞こえる…」",
+      "source": "ナチ「死神の、魔剣のうなりが\n<FFD2>聞こえる…」",
       "text": null
     },
     {
@@ -3240,13 +3240,13 @@
     {
       "offset": "0xFC30",
       "type": "dialog",
-      "source": "ヒナ「せめて魂の半分だけ、\n側にいる事を許して下さい…」",
+      "source": "ヒナ「せめて魂の半分だけ、\n<FFD2>側にいる事を許して下さい…」",
       "text": null
     },
     {
       "offset": "0xFC6C",
       "type": "dialog",
-      "source": "ヒナ「あなた達と共にいる間\n確かに、私達は兄弟だったのだ\nという、証しの為に………」",
+      "source": "ヒナ「あなた達と共にいる間\n<FFD2>確かに、私達は兄弟だったのだ\n<FFD2>という、証しの為に………」",
       "text": null
     },
     {
@@ -3300,19 +3300,19 @@
     {
       "offset": "0xFE84",
       "type": "dialog",
-      "source": "ヒナ「このまま、共に行く事を\n許して下さい」",
+      "source": "ヒナ「このまま、共に行く事を\n<FFD2>許して下さい」",
       "text": null
     },
     {
       "offset": "0xFEB4",
       "type": "dialog",
-      "source": "ヒナ「兄と、弟が生きたこの迷宮を…\n最後まで歩いてみたいのです」",
+      "source": "ヒナ「兄と、弟が生きたこの迷宮を…\n<FFD2>最後まで歩いてみたいのです」",
       "text": null
     },
     {
       "offset": "0xFEF8",
       "type": "dialog",
-      "source": "ヒナ「それに、此度の御恩をお返し\nしなければ、なりませんもの」",
+      "source": "ヒナ「それに、此度の御恩をお返し\n<FFD2>しなければ、なりませんもの」",
       "text": null
     },
     {
@@ -3366,19 +3366,19 @@
     {
       "offset": "0x100D4",
       "type": "dialog",
-      "source": "ナチ「フ………\nククククク………」",
+      "source": "ナチ「フ………\n<FFD2>ククククク………」",
       "text": null
     },
     {
       "offset": "0x100FA",
       "type": "dialog",
-      "source": "ナチ「私は、全てを捨てたはずだ。\n魔神への復讐のために！！」",
+      "source": "ナチ「私は、全てを捨てたはずだ。\n<FFD2>魔神への復讐のために！！」",
       "text": null
     },
     {
       "offset": "0x1013A",
       "type": "dialog",
-      "source": "ナチ「なのに、まだ、こんな感情が\n残っていたとはな」",
+      "source": "ナチ「なのに、まだ、こんな感情が\n<FFD2>残っていたとはな」",
       "text": null
     },
     {
@@ -3390,7 +3390,7 @@
     {
       "offset": "0x1019E",
       "type": "dialog",
-      "source": "ヒナ「兄上…帰りましょう…\n帰って、もう一度やり直せば…」",
+      "source": "ヒナ「兄上…帰りましょう…\n<FFD2>帰って、もう一度やり直せば…」",
       "text": null
     },
     {
@@ -3402,13 +3402,13 @@
     {
       "offset": "0x10200",
       "type": "dialog",
-      "source": "ナチ「魔神を憎むあまりに\n侍としての魂も捨て去った。\n幾多の人を殺めた………」",
+      "source": "ナチ「魔神を憎むあまりに\n<FFD2>侍としての魂も捨て去った。\n<FFD2>幾多の人を殺めた………」",
       "text": null
     },
     {
       "offset": "0x10254",
       "type": "dialog",
-      "source": "ナチ「この闇の底で私の魂もまた、\n闇に染まってしまったのだ…」",
+      "source": "ナチ「この闇の底で私の魂もまた、\n<FFD2>闇に染まってしまったのだ…」",
       "text": null
     },
     {
@@ -3426,7 +3426,7 @@
     {
       "offset": "0x102E6",
       "type": "dialog",
-      "source": "ナチ「愚かな兄弟の、愚かな運命に\nつきあわせてしまった」",
+      "source": "ナチ「愚かな兄弟の、愚かな運命に\n<FFD2>つきあわせてしまった」",
       "text": null
     },
     {
@@ -3444,13 +3444,13 @@
     {
       "offset": "0x103D8",
       "type": "dialog",
-      "source": "ナチ「もう、お前が私達にしばられる\n必要はない」",
+      "source": "ナチ「もう、お前が私達にしばられる\n<FFD2>必要はない」",
       "text": null
     },
     {
       "offset": "0x1040C",
       "type": "dialog",
-      "source": "ナチ「後を追おうなどとは考えず\n自由に、生きて、いくが良い…」",
+      "source": "ナチ「後を追おうなどとは考えず\n<FFD2>自由に、生きて、いくが良い…」",
       "text": null
     },
     {
@@ -3462,7 +3462,7 @@
     {
       "offset": "0x10468",
       "type": "dialog",
-      "source": "ナチ「死神の、魔剣のうなりが\n聞こえる…」",
+      "source": "ナチ「死神の、魔剣のうなりが\n<FFD2>聞こえる…」",
       "text": null
     },
     {
@@ -3492,13 +3492,13 @@
     {
       "offset": "0x10558",
       "type": "dialog",
-      "source": "ヒナ「せめて魂の半分だけ、\n側にいる事を許して下さい…」",
+      "source": "ヒナ「せめて魂の半分だけ、\n<FFD2>側にいる事を許して下さい…」",
       "text": null
     },
     {
       "offset": "0x10594",
       "type": "dialog",
-      "source": "ヒナ「あなた達と共にいる間\n確かに、私達は兄弟だったのだ\nという、証しの為に………」",
+      "source": "ヒナ「あなた達と共にいる間\n<FFD2>確かに、私達は兄弟だったのだ\n<FFD2>という、証しの為に………」",
       "text": null
     },
     {
@@ -3552,19 +3552,19 @@
     {
       "offset": "0x107AC",
       "type": "dialog",
-      "source": "ヒナ「このまま、共に行く事を\n許して下さい」",
+      "source": "ヒナ「このまま、共に行く事を\n<FFD2>許して下さい」",
       "text": null
     },
     {
       "offset": "0x107DC",
       "type": "dialog",
-      "source": "ヒナ「兄と、弟が生きたこの迷宮を…\n最後まで歩いてみたいのです」",
+      "source": "ヒナ「兄と、弟が生きたこの迷宮を…\n<FFD2>最後まで歩いてみたいのです」",
       "text": null
     },
     {
       "offset": "0x10820",
       "type": "dialog",
-      "source": "ヒナ「それに、此度の御恩をお返し\nしなければ、なりませんもの」",
+      "source": "ヒナ「それに、此度の御恩をお返し\n<FFD2>しなければ、なりませんもの」",
       "text": null
     },
     {
@@ -3612,19 +3612,19 @@
     {
       "offset": "0x109C0",
       "type": "dialog",
-      "source": "ナチ「フ………\nククククク………」",
+      "source": "ナチ「フ………\n<FFD2>ククククク………」",
       "text": null
     },
     {
       "offset": "0x109E6",
       "type": "dialog",
-      "source": "ナチ「私は、全てを捨てたはずだ。\n魔神への復讐のために！！」",
+      "source": "ナチ「私は、全てを捨てたはずだ。\n<FFD2>魔神への復讐のために！！」",
       "text": null
     },
     {
       "offset": "0x10A26",
       "type": "dialog",
-      "source": "ナチ「なのに、まだ、こんな感情が\n残っていたとはな」",
+      "source": "ナチ「なのに、まだ、こんな感情が\n<FFD2>残っていたとはな」",
       "text": null
     },
     {
@@ -3636,7 +3636,7 @@
     {
       "offset": "0x10A8A",
       "type": "dialog",
-      "source": "ヒナ「兄上…帰りましょう…\n帰って、もう一度やり直せば…」",
+      "source": "ヒナ「兄上…帰りましょう…\n<FFD2>帰って、もう一度やり直せば…」",
       "text": null
     },
     {
@@ -3648,13 +3648,13 @@
     {
       "offset": "0x10AEC",
       "type": "dialog",
-      "source": "ナチ「魔神を憎むあまりに\n侍としての魂も捨て去った。\n幾多の人を殺めた………」",
+      "source": "ナチ「魔神を憎むあまりに\n<FFD2>侍としての魂も捨て去った。\n<FFD2>幾多の人を殺めた………」",
       "text": null
     },
     {
       "offset": "0x10B40",
       "type": "dialog",
-      "source": "ナチ「この闇の底で私の魂もまた、\n闇に染まってしまったのだ…」",
+      "source": "ナチ「この闇の底で私の魂もまた、\n<FFD2>闇に染まってしまったのだ…」",
       "text": null
     },
     {
@@ -3672,7 +3672,7 @@
     {
       "offset": "0x10BD2",
       "type": "dialog",
-      "source": "ナチ「愚かな兄弟の、愚かな運命に\nつきあわせてしまった」",
+      "source": "ナチ「愚かな兄弟の、愚かな運命に\n<FFD2>つきあわせてしまった」",
       "text": null
     },
     {
@@ -3690,13 +3690,13 @@
     {
       "offset": "0x10CC4",
       "type": "dialog",
-      "source": "ナチ「もう、お前が私達にしばられる\n必要はない」",
+      "source": "ナチ「もう、お前が私達にしばられる\n<FFD2>必要はない」",
       "text": null
     },
     {
       "offset": "0x10CF8",
       "type": "dialog",
-      "source": "ナチ「後を追おうなどとは考えず\n自由に、生きて、いくが良い…」",
+      "source": "ナチ「後を追おうなどとは考えず\n<FFD2>自由に、生きて、いくが良い…」",
       "text": null
     },
     {
@@ -3708,7 +3708,7 @@
     {
       "offset": "0x10D54",
       "type": "dialog",
-      "source": "ナチ「死神の、魔剣のうなりが\n聞こえる…」",
+      "source": "ナチ「死神の、魔剣のうなりが\n<FFD2>聞こえる…」",
       "text": null
     },
     {
@@ -3738,13 +3738,13 @@
     {
       "offset": "0x10E44",
       "type": "dialog",
-      "source": "ヒナ「せめて魂の半分だけ、\n側にいる事を許して下さい…」",
+      "source": "ヒナ「せめて魂の半分だけ、\n<FFD2>側にいる事を許して下さい…」",
       "text": null
     },
     {
       "offset": "0x10E80",
       "type": "dialog",
-      "source": "ヒナ「あなた達と共にいる間\n確かに、私達は兄弟だったのだ\nという、証しの為に………」",
+      "source": "ヒナ「あなた達と共にいる間\n<FFD2>確かに、私達は兄弟だったのだ\n<FFD2>という、証しの為に………」",
       "text": null
     },
     {
@@ -3798,19 +3798,19 @@
     {
       "offset": "0x11098",
       "type": "dialog",
-      "source": "ヒナ「このまま、共に行く事を\n許して下さい」",
+      "source": "ヒナ「このまま、共に行く事を\n<FFD2>許して下さい」",
       "text": null
     },
     {
       "offset": "0x110C8",
       "type": "dialog",
-      "source": "ヒナ「兄と、弟が生きたこの迷宮を…\n最後まで歩いてみたいのです」",
+      "source": "ヒナ「兄と、弟が生きたこの迷宮を…\n<FFD2>最後まで歩いてみたいのです」",
       "text": null
     },
     {
       "offset": "0x1110C",
       "type": "dialog",
-      "source": "ヒナ「それに、此度の御恩をお返し\nしなければ、なりませんもの」",
+      "source": "ヒナ「それに、此度の御恩をお返し\n<FFD2>しなければ、なりませんもの」",
       "text": null
     },
     {
@@ -3858,19 +3858,19 @@
     {
       "offset": "0x112A6",
       "type": "dialog",
-      "source": "ナチ「フ………\nククククク………」",
+      "source": "ナチ「フ………\n<FFD2>ククククク………」",
       "text": null
     },
     {
       "offset": "0x112CC",
       "type": "dialog",
-      "source": "ナチ「私は、全てを捨てたはずだ。\n魔神への復讐のために！！」",
+      "source": "ナチ「私は、全てを捨てたはずだ。\n<FFD2>魔神への復讐のために！！」",
       "text": null
     },
     {
       "offset": "0x1130C",
       "type": "dialog",
-      "source": "ナチ「なのに、まだ、こんな感情が\n残っていたとはな」",
+      "source": "ナチ「なのに、まだ、こんな感情が\n<FFD2>残っていたとはな」",
       "text": null
     },
     {
@@ -3882,7 +3882,7 @@
     {
       "offset": "0x11370",
       "type": "dialog",
-      "source": "ヒナ「兄上…帰りましょう…\n帰って、もう一度やり直せば…」",
+      "source": "ヒナ「兄上…帰りましょう…\n<FFD2>帰って、もう一度やり直せば…」",
       "text": null
     },
     {
@@ -3894,13 +3894,13 @@
     {
       "offset": "0x113D2",
       "type": "dialog",
-      "source": "ナチ「魔神を憎むあまりに\n侍としての魂も捨て去った。\n幾多の人を殺めた………」",
+      "source": "ナチ「魔神を憎むあまりに\n<FFD2>侍としての魂も捨て去った。\n<FFD2>幾多の人を殺めた………」",
       "text": null
     },
     {
       "offset": "0x11426",
       "type": "dialog",
-      "source": "ナチ「この闇の底で私の魂もまた、\n闇に染まってしまったのだ…」",
+      "source": "ナチ「この闇の底で私の魂もまた、\n<FFD2>闇に染まってしまったのだ…」",
       "text": null
     },
     {
@@ -3918,7 +3918,7 @@
     {
       "offset": "0x114B8",
       "type": "dialog",
-      "source": "ナチ「愚かな兄弟の、愚かな運命に\nつきあわせてしまった」",
+      "source": "ナチ「愚かな兄弟の、愚かな運命に\n<FFD2>つきあわせてしまった」",
       "text": null
     },
     {
@@ -3936,13 +3936,13 @@
     {
       "offset": "0x115AA",
       "type": "dialog",
-      "source": "ナチ「もう、お前が私達にしばられる\n必要はない」",
+      "source": "ナチ「もう、お前が私達にしばられる\n<FFD2>必要はない」",
       "text": null
     },
     {
       "offset": "0x115DE",
       "type": "dialog",
-      "source": "ナチ「後を追おうなどとは考えず\n自由に、生きて、いくが良い…」",
+      "source": "ナチ「後を追おうなどとは考えず\n<FFD2>自由に、生きて、いくが良い…」",
       "text": null
     },
     {
@@ -3954,7 +3954,7 @@
     {
       "offset": "0x1163A",
       "type": "dialog",
-      "source": "ナチ「死神の、魔剣のうなりが\n聞こえる…」",
+      "source": "ナチ「死神の、魔剣のうなりが\n<FFD2>聞こえる…」",
       "text": null
     },
     {
@@ -3984,13 +3984,13 @@
     {
       "offset": "0x1172A",
       "type": "dialog",
-      "source": "ヒナ「せめて魂の半分だけ、\n側にいる事を許して下さい…」",
+      "source": "ヒナ「せめて魂の半分だけ、\n<FFD2>側にいる事を許して下さい…」",
       "text": null
     },
     {
       "offset": "0x11766",
       "type": "dialog",
-      "source": "ヒナ「あなた達と共にいる間\n確かに、私達は兄弟だったのだ\nという、証しの為に………」",
+      "source": "ヒナ「あなた達と共にいる間\n<FFD2>確かに、私達は兄弟だったのだ\n<FFD2>という、証しの為に………」",
       "text": null
     },
     {
@@ -4044,19 +4044,19 @@
     {
       "offset": "0x1197E",
       "type": "dialog",
-      "source": "ヒナ「このまま、共に行く事を\n許して下さい」",
+      "source": "ヒナ「このまま、共に行く事を\n<FFD2>許して下さい」",
       "text": null
     },
     {
       "offset": "0x119AE",
       "type": "dialog",
-      "source": "ヒナ「兄と、弟が生きたこの迷宮を…\n最後まで歩いてみたいのです」",
+      "source": "ヒナ「兄と、弟が生きたこの迷宮を…\n<FFD2>最後まで歩いてみたいのです」",
       "text": null
     },
     {
       "offset": "0x119F2",
       "type": "dialog",
-      "source": "ヒナ「それに、此度の御恩をお返し\nしなければ、なりませんもの」",
+      "source": "ヒナ「それに、此度の御恩をお返し\n<FFD2>しなければ、なりませんもの」",
       "text": null
     },
     {
@@ -4074,31 +4074,31 @@
     {
       "offset": "0x11A84",
       "type": "dialog",
-      "source": "ナチ「迷宮は願いを聞いてくれた！\nさらなる強さと、\n弟を殺した魔神への復讐を！」",
+      "source": "ナチ「迷宮は願いを聞いてくれた！\n<FFD2>さらなる強さと、\n<FFD2>弟を殺した魔神への復讐を！」",
       "text": null
     },
     {
       "offset": "0x11ADA",
       "type": "dialog",
-      "source": "ナチ「ハハッ…\nだが、なんという皮肉な事だ」",
+      "source": "ナチ「ハハッ…\n<FFD2>だが、なんという皮肉な事だ」",
       "text": null
     },
     {
       "offset": "0x11B0A",
       "type": "dialog",
-      "source": "ナチ「残されていた大切な者を\n奪って行ってしまうとは！！」",
+      "source": "ナチ「残されていた大切な者を\n<FFD2>奪って行ってしまうとは！！」",
       "text": null
     },
     {
       "offset": "0x11B48",
       "type": "dialog",
-      "source": "ナチ「迷宮は、私をおとしめ\nあざ笑っただけだというのか！？」",
+      "source": "ナチ「迷宮は、私をおとしめ\n<FFD2>あざ笑っただけだというのか！？」",
       "text": null
     },
     {
       "offset": "0x11B88",
       "type": "dialog",
-      "source": "ナチ「ククク、ならば、私も己の運命を\n嘲笑おうではないか！」",
+      "source": "ナチ「ククク、ならば、私も己の運命を\n<FFD2>嘲笑おうではないか！」",
       "text": null
     },
     {
@@ -4116,37 +4116,37 @@
     {
       "offset": "0x11C3C",
       "type": "dialog",
-      "source": "ジョセフ「おおおおお…\nとうとう第六階層まで\n来てしもうたのう…」",
+      "source": "ジョセフ「おおおおお…\n<FFD4>とうとう第六階層まで\n<FFD4>来てしもうたのう…」",
       "text": null
     },
     {
       "offset": "0x11C84",
       "type": "dialog",
-      "source": "ベス「そうですねえ…\n私達の迷宮名所ガイドブックも\nこの階層が最後ですからねえ」",
+      "source": "ベス「そうですねえ…\n<FFD2>私達の迷宮名所ガイドブックも\n<FFD2>この階層が最後ですからねえ」",
       "text": null
     },
     {
       "offset": "0x11CDA",
       "type": "dialog",
-      "source": "ジョセフ「この階層の名所は\n<FB01>カビ地獄の通り抜け<FB00>じゃ！」",
+      "source": "ジョセフ「この階層の名所は\n<FFD4><FB01>カビ地獄の通り抜け<FB00>じゃ！」",
       "text": null
     },
     {
       "offset": "0x11D18",
       "type": "dialog",
-      "source": "ベス「なんだか、本当に名所なのか\nよくわからない不気味な地名\nなんですけどねえ…」",
+      "source": "ベス「なんだか、本当に名所なのか\n<FFD2>よくわからない不気味な地名\n<FFD2>なんですけどねえ…」",
       "text": null
     },
     {
       "offset": "0x11D70",
       "type": "dialog",
-      "source": "ジョセフ「まあ、よいではないか！\nたまには物騒な所に行ってこそ\n真の冒険者じゃぞい！」",
+      "source": "ジョセフ「まあ、よいではないか！\n<FFD4>たまには物騒な所に行ってこそ\n<FFD4>真の冒険者じゃぞい！」",
       "text": null
     },
     {
       "offset": "0x11DCC",
       "type": "dialog",
-      "source": "ベス「じいさんは、いつから\n冒険者になったのですか…」",
+      "source": "ベス「じいさんは、いつから\n<FFD2>冒険者になったのですか…」",
       "text": null
     },
     {
@@ -4158,7 +4158,7 @@
     {
       "offset": "0x11E22",
       "type": "dialog",
-      "source": "ジョセフ「さぁ！\nあどべんちゃーわーるど\nとやらにレッツゴーじゃ！」",
+      "source": "ジョセフ「さぁ！\n<FFD4>あどべんちゃーわーるど\n<FFD4>とやらにレッツゴーじゃ！」",
       "text": null
     },
     {
@@ -4170,25 +4170,25 @@
     {
       "offset": "0x11E7E",
       "type": "dialog",
-      "source": "ジョセフ「おおおおおおおお…！\nな…なんじゃ、ここは！」",
+      "source": "ジョセフ「おおおおおおおお…！\n<FFD4>な…なんじゃ、ここは！」",
       "text": null
     },
     {
       "offset": "0x11EBA",
       "type": "dialog",
-      "source": "ジョセフ「モヤモヤして\n何にも見えないぞい…！」",
+      "source": "ジョセフ「モヤモヤして\n<FFD4>何にも見えないぞい…！」",
       "text": null
     },
     {
       "offset": "0x11EEE",
       "type": "dialog",
-      "source": "ベス「本当に、カビくさくて\n息がつまりそうですねえ…」",
+      "source": "ベス「本当に、カビくさくて\n<FFD2>息がつまりそうですねえ…」",
       "text": null
     },
     {
       "offset": "0x11F28",
       "type": "dialog",
-      "source": "ベス「もしかして、ここがあの\nカビ地獄ですかね、じいさん？」",
+      "source": "ベス「もしかして、ここがあの\n<FFD2>カビ地獄ですかね、じいさん？」",
       "text": null
     },
     {
@@ -4200,25 +4200,25 @@
     {
       "offset": "0x11F90",
       "type": "dialog",
-      "source": "ジョセフ「何せ、このカビ臭さは\n今まで歩いて来た所と\n比べ物にならん！」",
+      "source": "ジョセフ「何せ、このカビ臭さは\n<FFD4>今まで歩いて来た所と\n<FFD4>比べ物にならん！」",
       "text": null
     },
     {
       "offset": "0x11FDE",
       "type": "dialog",
-      "source": "ジョセフ「こうして話しておるだけで\n菌を鼻で吸い込んで\nしまっ…」",
+      "source": "ジョセフ「こうして話しておるだけで\n<FFD4>菌を鼻で吸い込んで\n<FFD4>しまっ…」",
       "text": null
     },
     {
       "offset": "0x12026",
       "type": "dialog",
-      "source": "ジョセフ「ゲフッ…！！\nゴホッ…ゴホッ…！！」",
+      "source": "ジョセフ「ゲフッ…！！\n<FFD4>ゴホッ…ゴホッ…！！」",
       "text": null
     },
     {
       "offset": "0x12058",
       "type": "dialog",
-      "source": "ベス「あらあら、じいさん\n言ってるそばから、菌を\n鼻で吸い込んでどうしますか…」",
+      "source": "ベス「あらあら、じいさん\n<FFD2>言ってるそばから、菌を\n<FFD2>鼻で吸い込んでどうしますか…」",
       "text": null
     },
     {
@@ -4236,13 +4236,13 @@
     {
       "offset": "0x12152",
       "type": "dialog",
-      "source": "ジョセフ「はぁ…はぁ…\n本当に息が止まるかと\n思ったわい…」",
+      "source": "ジョセフ「はぁ…はぁ…\n<FFD4>本当に息が止まるかと\n<FFD4>思ったわい…」",
       "text": null
     },
     {
       "offset": "0x12194",
       "type": "dialog",
-      "source": "ベス「まったく、いつ死んでも\n不思議でないんですから\n少しは気をつけて下さいよ」",
+      "source": "ベス「まったく、いつ死んでも\n<FFD2>不思議でないんですから\n<FFD2>少しは気をつけて下さいよ」",
       "text": null
     },
     {
@@ -4254,13 +4254,13 @@
     {
       "offset": "0x1220E",
       "type": "dialog",
-      "source": "ジョセフ「さあ、気を取り直して\nいよいよ通り抜けするぞい！\n張り切っ……」",
+      "source": "ジョセフ「さあ、気を取り直して\n<FFD4>いよいよ通り抜けするぞい！\n<FFD4>張り切っ……」",
       "text": null
     },
     {
       "offset": "0x1225E",
       "type": "dialog",
-      "source": "ジョセフ「ゲフッ…！！\nゴホッ…ゴホッ…！！」",
+      "source": "ジョセフ「ゲフッ…！！\n<FFD4>ゴホッ…ゴホッ…！！」",
       "text": null
     },
     {
@@ -4272,43 +4272,43 @@
     {
       "offset": "0x122A2",
       "type": "dialog",
-      "source": "ジョセフ「ふぅぅ…やっと\n出てこられたわい…」",
+      "source": "ジョセフ「ふぅぅ…やっと\n<FFD4>出てこられたわい…」",
       "text": null
     },
     {
       "offset": "0x122D4",
       "type": "dialog",
-      "source": "ベス「本当にカビ地獄でしたねえ…\nこんな場所を、名所と呼ぶなんて\n変な話だ事…」",
+      "source": "ベス「本当にカビ地獄でしたねえ…\n<FFD2>こんな場所を、名所と呼ぶなんて\n<FFD2>変な話だ事…」",
       "text": null
     },
     {
       "offset": "0x1232A",
       "type": "dialog",
-      "source": "ジョセフ「うむ…、確かにつらかったが\n本当に冒険者みたいで\n面白かったぞい！」",
+      "source": "ジョセフ「うむ…、確かにつらかったが\n<FFD4>本当に冒険者みたいで\n<FFD4>面白かったぞい！」",
       "text": null
     },
     {
       "offset": "0x1237E",
       "type": "dialog",
-      "source": "ベス「まったく、じいさんは\n幸せそうで良いですねえ…」",
+      "source": "ベス「まったく、じいさんは\n<FFD2>幸せそうで良いですねえ…」",
       "text": null
     },
     {
       "offset": "0x123B8",
       "type": "dialog",
-      "source": "ジョセフ「ふぉふぉふぉ！\nそのとおりじゃ！\nワシゃ幸せじゃぞい！」",
+      "source": "ジョセフ「ふぉふぉふぉ！\n<FFD4>そのとおりじゃ！\n<FFD4>ワシゃ幸せじゃぞい！」",
       "text": null
     },
     {
       "offset": "0x12400",
       "type": "dialog",
-      "source": "ジョセフ「じゃが、これで名所を\n全てまわってしもうた…」",
+      "source": "ジョセフ「じゃが、これで名所を\n<FFD4>全てまわってしもうた…」",
       "text": null
     },
     {
       "offset": "0x1243C",
       "type": "dialog",
-      "source": "ジョセフ「いよいよ街へ戻らねば\nならんのだのう…」",
+      "source": "ジョセフ「いよいよ街へ戻らねば\n<FFD4>ならんのだのう…」",
       "text": null
     },
     {
@@ -4320,25 +4320,25 @@
     {
       "offset": "0x1248A",
       "type": "dialog",
-      "source": "ベス「だけど、じいさん。\nもうよろしいでしょう」",
+      "source": "ベス「だけど、じいさん。\n<FFD2>もうよろしいでしょう」",
       "text": null
     },
     {
       "offset": "0x124BE",
       "type": "dialog",
-      "source": "ベス「私達は、ついこの間まで\n夢のまた夢だった事を\n成し遂げたのですよ」",
+      "source": "ベス「私達は、ついこの間まで\n<FFD2>夢のまた夢だった事を\n<FFD2>成し遂げたのですよ」",
       "text": null
     },
     {
       "offset": "0x1250C",
       "type": "dialog",
-      "source": "ベス「迷宮のこんな奥深くまで\n観光して回るだなんて\n普通じゃあ考えられませんよ」",
+      "source": "ベス「迷宮のこんな奥深くまで\n<FFD2>観光して回るだなんて\n<FFD2>普通じゃあ考えられませんよ」",
       "text": null
     },
     {
       "offset": "0x12562",
       "type": "dialog",
-      "source": "ベス「それだけで、\nもう充分じゃありませんか」",
+      "source": "ベス「それだけで、\n<FFD2>もう充分じゃありませんか」",
       "text": null
     },
     {
@@ -4350,13 +4350,13 @@
     {
       "offset": "0x125B0",
       "type": "dialog",
-      "source": "ジョセフ「今のご時世に、こんなに\n素晴らしい経験は\nそう滅多に出来ぬじゃろう」",
+      "source": "ジョセフ「今のご時世に、こんなに\n<FFD4>素晴らしい経験は\n<FFD4>そう滅多に出来ぬじゃろう」",
       "text": null
     },
     {
       "offset": "0x12604",
       "type": "dialog",
-      "source": "ジョセフ「ワシらは街で一番の\n幸せ者かも知れんのう！」",
+      "source": "ジョセフ「ワシらは街で一番の\n<FFD4>幸せ者かも知れんのう！」",
       "text": null
     },
     {
@@ -4368,25 +4368,25 @@
     {
       "offset": "0x1265C",
       "type": "dialog",
-      "source": "ベス「だから今度は、早く街へ戻って\n皆に楽しい話をたんと\n聞かせてあげればよいでしょう」",
+      "source": "ベス「だから今度は、早く街へ戻って\n<FFD2>皆に楽しい話をたんと\n<FFD2>聞かせてあげればよいでしょう」",
       "text": null
     },
     {
       "offset": "0x126BA",
       "type": "dialog",
-      "source": "ジョセフ「勿論じゃ！\nさあ、そうと決まれば\n早く帰るぞい！」",
+      "source": "ジョセフ「勿論じゃ！\n<FFD4>さあ、そうと決まれば\n<FFD4>早く帰るぞい！」",
       "text": null
     },
     {
       "offset": "0x126FC",
       "type": "dialog",
-      "source": "ジョセフ「帰りは、あの有名な転移の薬を\n使って帰ると、最初から\n決めておったのじゃ！」",
+      "source": "ジョセフ「帰りは、あの有名な転移の薬を\n<FFD4>使って帰ると、最初から\n<FFD4>決めておったのじゃ！」",
       "text": null
     },
     {
       "offset": "0x12758",
       "type": "dialog",
-      "source": "ベス「決めておった…って、じいさん\n転移の薬なんて何処にあるって\n言うんですか…」",
+      "source": "ベス「決めておった…って、じいさん\n<FFD2>転移の薬なんて何処にあるって\n<FFD2>言うんですか…」",
       "text": null
     },
     {
@@ -4404,7 +4404,7 @@
     {
       "offset": "0x1282C",
       "type": "dialog",
-      "source": "ベス「あれまっ！\n知らない間に、そんな所に\n詰めていたんですか…」",
+      "source": "ベス「あれまっ！\n<FFD2>知らない間に、そんな所に\n<FFD2>詰めていたんですか…」",
       "text": null
     },
     {
@@ -4416,7 +4416,7 @@
     {
       "offset": "0x12890",
       "type": "dialog",
-      "source": "ジョセフ「さぁ、たっぷりあるから\n贅沢に使えるぞい！」",
+      "source": "ジョセフ「さぁ、たっぷりあるから\n<FFD4>贅沢に使えるぞい！」",
       "text": null
     },
     {
@@ -4434,19 +4434,19 @@
     {
       "offset": "0x12992",
       "type": "dialog",
-      "source": "ジョセフ「おおお…！\nなんじゃ…体が無くなる様な\n感じがするぞい！」",
+      "source": "ジョセフ「おおお…！\n<FFD4>なんじゃ…体が無くなる様な\n<FFD4>感じがするぞい！」",
       "text": null
     },
     {
       "offset": "0x129DC",
       "type": "dialog",
-      "source": "ジョセフ「それに、街の風景が\nどんどんはっきりと\n見えてくるのじゃ！」",
+      "source": "ジョセフ「それに、街の風景が\n<FFD4>どんどんはっきりと\n<FFD4>見えてくるのじゃ！」",
       "text": null
     },
     {
       "offset": "0x12A28",
       "type": "dialog",
-      "source": "ジョセフ「ガイドさんや、報酬は\n酒場で渡すからの！\nさらばじゃ…！」",
+      "source": "ジョセフ「ガイドさんや、報酬は\n<FFD4>酒場で渡すからの！\n<FFD4>さらばじゃ…！」",
       "text": null
     },
     {
@@ -4488,61 +4488,61 @@
     {
       "offset": "0x12BB6",
       "type": "center",
-      "source": "「どうやら本格的な討伐に\nかかったようですね」",
+      "source": "<STYLE:2>「どうやら本格的な討伐に\n かかったようですね」",
       "text": null
     },
     {
       "offset": "0x12BEC",
       "type": "dialog",
-      "source": "女騎士「こんなに深い階層まで来て\nまだ初めてお目にかかる\n冒険者の方がいるとは…」",
+      "source": "女騎士「こんなに深い階層まで来て\n<FFD3>まだ初めてお目にかかる\n<FFD3>冒険者の方がいるとは…」",
       "text": null
     },
     {
       "offset": "0x12C44",
       "type": "dialog",
-      "source": "女騎士「初めまして。\nわたしは<FB01><FB09>グレース<FB00>と申します」",
+      "source": "女騎士「初めまして。\n<FFD3>わたしは<FB01><FB09>グレース<FB00>と申します」",
       "text": null
     },
     {
       "offset": "0x12C80",
       "type": "dialog",
-      "source": "グレース「ドゥーハンの兵士の姿が、\n迷宮のいたるところで\n見受けられます」",
+      "source": "グレース「ドゥーハンの兵士の姿が、\n<FFD4>迷宮のいたるところで\n<FFD4>見受けられます」",
       "text": null
     },
     {
       "offset": "0x12CD0",
       "type": "dialog",
-      "source": "グレース「女王誘拐を計画した\nユージン卿を捕まえるための\n処置だと聞きました」",
+      "source": "グレース「女王誘拐を計画した\n<FFD4>ユージン卿を捕まえるための\n<FFD4>処置だと聞きました」",
       "text": null
     },
     {
       "offset": "0x12D24",
       "type": "dialog",
-      "source": "グレース「だけど何故、女王誘拐なんて\n恐ろしい事を…」",
+      "source": "グレース「だけど何故、女王誘拐なんて\n<FFD4>恐ろしい事を…」",
       "text": null
     },
     {
       "offset": "0x12D5E",
       "type": "dialog",
-      "source": "グレース「ユージン卿は魔に魅入られた\nのでしょうか？」",
+      "source": "グレース「ユージン卿は魔に魅入られた\n<FFD4>のでしょうか？」",
       "text": null
     },
     {
       "offset": "0x12D98",
       "type": "dialog",
-      "source": "グレース「何しろ魔神と契約したと\nいう噂もあるほどです」",
+      "source": "グレース「何しろ魔神と契約したと\n<FFD4>いう噂もあるほどです」",
       "text": null
     },
     {
       "offset": "0x12DD4",
       "type": "dialog",
-      "source": "グレース「是非、会って彼の真意を\n確かめねば…」",
+      "source": "グレース「是非、会って彼の真意を\n<FFD4>確かめねば…」",
       "text": null
     },
     {
       "offset": "0x12E08",
       "type": "dialog",
-      "source": "グレース「もし…あなた方が…、\nユージン卿を見かける事が\nあったら……」",
+      "source": "グレース「もし…あなた方が…、\n<FFD4>ユージン卿を見かける事が\n<FFD4>あったら……」",
       "text": null
     },
     {
@@ -4554,7 +4554,7 @@
     {
       "offset": "0x12E78",
       "type": "dialog",
-      "source": "グレース「やはり他の方にご迷惑を\nかけては…」",
+      "source": "グレース「やはり他の方にご迷惑を\n<FFD4>かけては…」",
       "text": null
     },
     {
@@ -4572,13 +4572,13 @@
     {
       "offset": "0x12EFC",
       "type": "dialog",
-      "source": "リカルド「なんか廃墟の街って感じが\nしないか？」",
+      "source": "リカルド「なんか廃墟の街って感じが\n<FFD4>しないか？」",
       "text": null
     },
     {
       "offset": "0x12F30",
       "type": "dialog",
-      "source": "リカルド「戦争か、もしくは疫病で\n住民が全て死んでしまった\n街みたいな」",
+      "source": "リカルド「戦争か、もしくは疫病で\n<FFD4>住民が全て死んでしまった\n<FFD4>街みたいな」",
       "text": null
     },
     {
@@ -4590,43 +4590,43 @@
     {
       "offset": "0x12FAA",
       "type": "dialog",
-      "source": "リカルド「それにこのかび臭せえ\n匂いと湿気……」",
+      "source": "リカルド「それにこのかび臭せえ\n<FFD4>匂いと湿気……」",
       "text": null
     },
     {
       "offset": "0x12FDE",
       "type": "dialog",
-      "source": "リカルド「まったく頭がどうにか\nなってきそうだぜ」",
+      "source": "リカルド「まったく頭がどうにか\n<FFD4>なってきそうだぜ」",
       "text": null
     },
     {
       "offset": "0x13014",
       "type": "dialog",
-      "source": "サラ「妖気が強くなっているのを\n感じない？」",
+      "source": "サラ「妖気が強くなっているのを\n<FFD2>感じない？」",
       "text": null
     },
     {
       "offset": "0x13044",
       "type": "dialog",
-      "source": "サラ「ここに降りてきてから、\n頭にもやがかかったみたいに\n気分が悪くて仕方ないの」",
+      "source": "サラ「ここに降りてきてから、\n<FFD2>頭にもやがかかったみたいに\n<FFD2>気分が悪くて仕方ないの」",
       "text": null
     },
     {
       "offset": "0x1309C",
       "type": "dialog",
-      "source": "サラ「無数の怨念の様なものが、\nここには渦巻いている\nそんな感じがする…」",
+      "source": "サラ「無数の怨念の様なものが、\n<FFD2>ここには渦巻いている\n<FFD2>そんな感じがする…」",
       "text": null
     },
     {
       "offset": "0x130EC",
       "type": "dialog",
-      "source": "サラ「丁度…ほら、二層目で\n死神が出てきた時の様な、\nそれに近いっていうのかな」",
+      "source": "サラ「丁度…ほら、二層目で\n<FFD2>死神が出てきた時の様な、\n<FFD2>それに近いっていうのかな」",
       "text": null
     },
     {
       "offset": "0x13142",
       "type": "dialog",
-      "source": "サラ「なんか目の前の景色が色あせ、\n灰色になっていくような\nそんな嫌な気分…」",
+      "source": "サラ「なんか目の前の景色が色あせ、\n<FFD2>灰色になっていくような\n<FFD2>そんな嫌な気分…」",
       "text": null
     },
     {
@@ -4650,43 +4650,43 @@
     {
       "offset": "0x13234",
       "type": "dialog",
-      "source": "グレッグ「噂が事実ならば、\nあれはドゥーハンの兵士と\nユージン卿一味の戦い」",
+      "source": "グレッグ「噂が事実ならば、\n<FFD4>あれはドゥーハンの兵士と\n<FFD4>ユージン卿一味の戦い」",
       "text": null
     },
     {
       "offset": "0x13286",
       "type": "dialog",
-      "source": "グレッグ「ユージン卿が何の目的で\n女王をさらったのかは\nわからぬが」",
+      "source": "グレッグ「ユージン卿が何の目的で\n<FFD4>女王をさらったのかは\n<FFD4>わからぬが」",
       "text": null
     },
     {
       "offset": "0x132D0",
       "type": "dialog",
-      "source": "グレッグ「この強い瘴気といい、\nこの地で何かが行なわれて\nいるのは確かだ」",
+      "source": "グレッグ「この強い瘴気といい、\n<FFD4>この地で何かが行なわれて\n<FFD4>いるのは確かだ」",
       "text": null
     },
     {
       "offset": "0x13320",
       "type": "dialog",
-      "source": "グレッグ「先程の娘の話では、\n魔神と契約云々と言って\nいた程だから」",
+      "source": "グレッグ「先程の娘の話では、\n<FFD4>魔神と契約云々と言って\n<FFD4>いた程だから」",
       "text": null
     },
     {
       "offset": "0x1336A",
       "type": "dialog",
-      "source": "グレッグ「形勢が悪くなれば、\nユージン卿は魔神を呼び寄せる\nことすらもしかねぬ…」",
+      "source": "グレッグ「形勢が悪くなれば、\n<FFD4>ユージン卿は魔神を呼び寄せる\n<FFD4>ことすらもしかねぬ…」",
       "text": null
     },
     {
       "offset": "0x133C2",
       "type": "dialog",
-      "source": "グレッグ「この先に何が待ち受けて\nいるのかわからぬが」",
+      "source": "グレッグ「この先に何が待ち受けて\n<FFD4>いるのかわからぬが」",
       "text": null
     },
     {
       "offset": "0x133FC",
       "type": "dialog",
-      "source": "グレッグ「充分に気を引きしめて\nいかねばな」",
+      "source": "グレッグ「充分に気を引きしめて\n<FFD4>いかねばな」",
       "text": null
     },
     {
@@ -4698,13 +4698,13 @@
     {
       "offset": "0x1344C",
       "type": "dialog",
-      "source": "リカルド「なんか廃墟の街って感じが\nしないか？」",
+      "source": "リカルド「なんか廃墟の街って感じが\n<FFD4>しないか？」",
       "text": null
     },
     {
       "offset": "0x13480",
       "type": "dialog",
-      "source": "リカルド「戦争か、もしくは疫病で\n住民が全て死んでしまった\n街みたいな」",
+      "source": "リカルド「戦争か、もしくは疫病で\n<FFD4>住民が全て死んでしまった\n<FFD4>街みたいな」",
       "text": null
     },
     {
@@ -4716,43 +4716,43 @@
     {
       "offset": "0x134FA",
       "type": "dialog",
-      "source": "リカルド「それにこのかび臭せえ\n匂いと湿気……」",
+      "source": "リカルド「それにこのかび臭せえ\n<FFD4>匂いと湿気……」",
       "text": null
     },
     {
       "offset": "0x1352E",
       "type": "dialog",
-      "source": "リカルド「まったく頭がどうにか\nなってきそうだぜ」",
+      "source": "リカルド「まったく頭がどうにか\n<FFD4>なってきそうだぜ」",
       "text": null
     },
     {
       "offset": "0x13564",
       "type": "dialog",
-      "source": "サラ「妖気が強くなっているのを\n感じない？」",
+      "source": "サラ「妖気が強くなっているのを\n<FFD2>感じない？」",
       "text": null
     },
     {
       "offset": "0x13594",
       "type": "dialog",
-      "source": "サラ「ここに降りてきてから、\n頭にもやがかかったみたいに\n気分が悪くて仕方ないの」",
+      "source": "サラ「ここに降りてきてから、\n<FFD2>頭にもやがかかったみたいに\n<FFD2>気分が悪くて仕方ないの」",
       "text": null
     },
     {
       "offset": "0x135EC",
       "type": "dialog",
-      "source": "サラ「無数の怨念の様なものが、\nここには渦巻いている\nそんな感じがする…」",
+      "source": "サラ「無数の怨念の様なものが、\n<FFD2>ここには渦巻いている\n<FFD2>そんな感じがする…」",
       "text": null
     },
     {
       "offset": "0x1363C",
       "type": "dialog",
-      "source": "サラ「丁度…ほら、二層目で\n死神が出てきた時の様な、\nそれに近いっていうのかな」",
+      "source": "サラ「丁度…ほら、二層目で\n<FFD2>死神が出てきた時の様な、\n<FFD2>それに近いっていうのかな」",
       "text": null
     },
     {
       "offset": "0x13692",
       "type": "dialog",
-      "source": "サラ「なんか目の前の景色が色あせ、\n灰色になっていくような\nそんな嫌な気分…」",
+      "source": "サラ「なんか目の前の景色が色あせ、\n<FFD2>灰色になっていくような\n<FFD2>そんな嫌な気分…」",
       "text": null
     },
     {
@@ -4782,13 +4782,13 @@
     {
       "offset": "0x137A4",
       "type": "dialog",
-      "source": "リカルド「なんか廃墟の街って感じが\nしないか？」",
+      "source": "リカルド「なんか廃墟の街って感じが\n<FFD4>しないか？」",
       "text": null
     },
     {
       "offset": "0x137D8",
       "type": "dialog",
-      "source": "リカルド「戦争か、もしくは疫病で\n住民が全て死んでしまった\n街みたいな」",
+      "source": "リカルド「戦争か、もしくは疫病で\n<FFD4>住民が全て死んでしまった\n<FFD4>街みたいな」",
       "text": null
     },
     {
@@ -4800,13 +4800,13 @@
     {
       "offset": "0x13852",
       "type": "dialog",
-      "source": "リカルド「それにこのかび臭せえ\n匂いと湿気……」",
+      "source": "リカルド「それにこのかび臭せえ\n<FFD4>匂いと湿気……」",
       "text": null
     },
     {
       "offset": "0x13886",
       "type": "dialog",
-      "source": "リカルド「まったく頭がどうにか\nなってきそうだぜ」",
+      "source": "リカルド「まったく頭がどうにか\n<FFD4>なってきそうだぜ」",
       "text": null
     },
     {
@@ -4830,43 +4830,43 @@
     {
       "offset": "0x1395A",
       "type": "dialog",
-      "source": "グレッグ「噂が事実ならば、\nあれはドゥーハンの兵士と\nユージン卿一味の戦い」",
+      "source": "グレッグ「噂が事実ならば、\n<FFD4>あれはドゥーハンの兵士と\n<FFD4>ユージン卿一味の戦い」",
       "text": null
     },
     {
       "offset": "0x139AC",
       "type": "dialog",
-      "source": "グレッグ「ユージン卿が何の目的で\n女王をさらったのかは\nわからぬが」",
+      "source": "グレッグ「ユージン卿が何の目的で\n<FFD4>女王をさらったのかは\n<FFD4>わからぬが」",
       "text": null
     },
     {
       "offset": "0x139F6",
       "type": "dialog",
-      "source": "グレッグ「この強い瘴気といい、\nこの地で何かが行なわれて\nいるのは確かだ」",
+      "source": "グレッグ「この強い瘴気といい、\n<FFD4>この地で何かが行なわれて\n<FFD4>いるのは確かだ」",
       "text": null
     },
     {
       "offset": "0x13A46",
       "type": "dialog",
-      "source": "グレッグ「先程の娘の話では、\n魔神と契約云々と言って\nいた程だから」",
+      "source": "グレッグ「先程の娘の話では、\n<FFD4>魔神と契約云々と言って\n<FFD4>いた程だから」",
       "text": null
     },
     {
       "offset": "0x13A90",
       "type": "dialog",
-      "source": "グレッグ「形勢が悪くなれば、\nユージン卿は魔神を呼び寄せる\n事すらもしかねぬ…」",
+      "source": "グレッグ「形勢が悪くなれば、\n<FFD4>ユージン卿は魔神を呼び寄せる\n<FFD4>事すらもしかねぬ…」",
       "text": null
     },
     {
       "offset": "0x13AE6",
       "type": "dialog",
-      "source": "グレッグ「この先に何が待ち受けて\nいるのかわからぬが」",
+      "source": "グレッグ「この先に何が待ち受けて\n<FFD4>いるのかわからぬが」",
       "text": null
     },
     {
       "offset": "0x13B20",
       "type": "dialog",
-      "source": "グレッグ「充分に気を引きしめて\nいかねばな」",
+      "source": "グレッグ「充分に気を引きしめて\n<FFD4>いかねばな」",
       "text": null
     },
     {
@@ -4878,13 +4878,13 @@
     {
       "offset": "0x13B70",
       "type": "dialog",
-      "source": "リカルド「なんか廃墟の街って感じが\nしないか？」",
+      "source": "リカルド「なんか廃墟の街って感じが\n<FFD4>しないか？」",
       "text": null
     },
     {
       "offset": "0x13BA4",
       "type": "dialog",
-      "source": "リカルド「戦争か、もしくは疫病で\n住民が全て死んでしまった\n街みたいな」",
+      "source": "リカルド「戦争か、もしくは疫病で\n<FFD4>住民が全て死んでしまった\n<FFD4>街みたいな」",
       "text": null
     },
     {
@@ -4896,13 +4896,13 @@
     {
       "offset": "0x13C1E",
       "type": "dialog",
-      "source": "リカルド「それにこのかび臭せえ\n匂いと湿気……」",
+      "source": "リカルド「それにこのかび臭せえ\n<FFD4>匂いと湿気……」",
       "text": null
     },
     {
       "offset": "0x13C52",
       "type": "dialog",
-      "source": "リカルド「まったく頭がどうにか\nなってきそうだぜ」",
+      "source": "リカルド「まったく頭がどうにか\n<FFD4>なってきそうだぜ」",
       "text": null
     },
     {
@@ -4926,31 +4926,31 @@
     {
       "offset": "0x13D26",
       "type": "dialog",
-      "source": "サラ「妖気が強くなっているのを\n感じない？」",
+      "source": "サラ「妖気が強くなっているのを\n<FFD2>感じない？」",
       "text": null
     },
     {
       "offset": "0x13D56",
       "type": "dialog",
-      "source": "サラ「ここに降りてきてから、\n頭にもやがかかったみたいに\n気分が悪くて仕方ないの」",
+      "source": "サラ「ここに降りてきてから、\n<FFD2>頭にもやがかかったみたいに\n<FFD2>気分が悪くて仕方ないの」",
       "text": null
     },
     {
       "offset": "0x13DAE",
       "type": "dialog",
-      "source": "サラ「無数の怨念の様なものが、\nここには渦巻いている\nそんな感じがする…」",
+      "source": "サラ「無数の怨念の様なものが、\n<FFD2>ここには渦巻いている\n<FFD2>そんな感じがする…」",
       "text": null
     },
     {
       "offset": "0x13DFE",
       "type": "dialog",
-      "source": "サラ「丁度…ほら、二層目で\n死神が出てきた時の様な、\nそれに近いっていうのかな」",
+      "source": "サラ「丁度…ほら、二層目で\n<FFD2>死神が出てきた時の様な、\n<FFD2>それに近いっていうのかな」",
       "text": null
     },
     {
       "offset": "0x13E54",
       "type": "dialog",
-      "source": "サラ「なんか目の前の景色が色あせ、\n灰色になっていくような\nそんな嫌な気分…」",
+      "source": "サラ「なんか目の前の景色が色あせ、\n<FFD2>灰色になっていくような\n<FFD2>そんな嫌な気分…」",
       "text": null
     },
     {
@@ -4974,43 +4974,43 @@
     {
       "offset": "0x13F46",
       "type": "dialog",
-      "source": "グレッグ「噂が事実ならば、\nあれはドゥーハンの兵士と\nユージン卿一味の戦い」",
+      "source": "グレッグ「噂が事実ならば、\n<FFD4>あれはドゥーハンの兵士と\n<FFD4>ユージン卿一味の戦い」",
       "text": null
     },
     {
       "offset": "0x13F98",
       "type": "dialog",
-      "source": "グレッグ「ユージン卿が何の目的で\n女王をさらったのかは\nわからぬが」",
+      "source": "グレッグ「ユージン卿が何の目的で\n<FFD4>女王をさらったのかは\n<FFD4>わからぬが」",
       "text": null
     },
     {
       "offset": "0x13FE2",
       "type": "dialog",
-      "source": "グレッグ「この強い瘴気といい、\nこの地で何かが行なわれて\nいるのは確かだ」",
+      "source": "グレッグ「この強い瘴気といい、\n<FFD4>この地で何かが行なわれて\n<FFD4>いるのは確かだ」",
       "text": null
     },
     {
       "offset": "0x14032",
       "type": "dialog",
-      "source": "グレッグ「先程の娘の話では、\n魔神と契約云々と言って\nいた程だから」",
+      "source": "グレッグ「先程の娘の話では、\n<FFD4>魔神と契約云々と言って\n<FFD4>いた程だから」",
       "text": null
     },
     {
       "offset": "0x1407C",
       "type": "dialog",
-      "source": "グレッグ「形勢が悪くなれば、\nユージン卿は魔神を呼び寄せる\n事すらもしかねぬ…」",
+      "source": "グレッグ「形勢が悪くなれば、\n<FFD4>ユージン卿は魔神を呼び寄せる\n<FFD4>事すらもしかねぬ…」",
       "text": null
     },
     {
       "offset": "0x140D2",
       "type": "dialog",
-      "source": "グレッグ「この先に何が待ち受けて\nいるのかわからぬが」",
+      "source": "グレッグ「この先に何が待ち受けて\n<FFD4>いるのかわからぬが」",
       "text": null
     },
     {
       "offset": "0x1410C",
       "type": "dialog",
-      "source": "グレッグ「充分に気を引きしめて\nいかねばな」",
+      "source": "グレッグ「充分に気を引きしめて\n<FFD4>いかねばな」",
       "text": null
     },
     {
@@ -5034,73 +5034,73 @@
     {
       "offset": "0x141DA",
       "type": "dialog",
-      "source": "グレッグ「噂が事実ならば、\nあれはドゥーハンの兵士と\nユージン卿一味の戦い」",
+      "source": "グレッグ「噂が事実ならば、\n<FFD4>あれはドゥーハンの兵士と\n<FFD4>ユージン卿一味の戦い」",
       "text": null
     },
     {
       "offset": "0x1422C",
       "type": "dialog",
-      "source": "グレッグ「ユージン卿が何の目的で\n女王をさらったのかは\nわからぬが」",
+      "source": "グレッグ「ユージン卿が何の目的で\n<FFD4>女王をさらったのかは\n<FFD4>わからぬが」",
       "text": null
     },
     {
       "offset": "0x14276",
       "type": "dialog",
-      "source": "グレッグ「この強い瘴気といい、\nこの地で何かが行なわれて\nいるのは確かだ」",
+      "source": "グレッグ「この強い瘴気といい、\n<FFD4>この地で何かが行なわれて\n<FFD4>いるのは確かだ」",
       "text": null
     },
     {
       "offset": "0x142C6",
       "type": "dialog",
-      "source": "グレッグ「先程の娘の話では、\n魔神と契約云々と言って\nいた程だから」",
+      "source": "グレッグ「先程の娘の話では、\n<FFD4>魔神と契約云々と言って\n<FFD4>いた程だから」",
       "text": null
     },
     {
       "offset": "0x14310",
       "type": "dialog",
-      "source": "グレッグ「形勢が悪くなれば、\nユージン卿は魔神を呼び寄せる\n事すらもしかねぬ…」",
+      "source": "グレッグ「形勢が悪くなれば、\n<FFD4>ユージン卿は魔神を呼び寄せる\n<FFD4>事すらもしかねぬ…」",
       "text": null
     },
     {
       "offset": "0x14366",
       "type": "dialog",
-      "source": "グレッグ「この先に何が待ち受けて\nいるのかわからぬが」",
+      "source": "グレッグ「この先に何が待ち受けて\n<FFD4>いるのかわからぬが」",
       "text": null
     },
     {
       "offset": "0x143A0",
       "type": "dialog",
-      "source": "グレッグ「充分に気を引きしめて\nいかねばな」",
+      "source": "グレッグ「充分に気を引きしめて\n<FFD4>いかねばな」",
       "text": null
     },
     {
       "offset": "0x143D0",
       "type": "dialog",
-      "source": "サラ「妖気が強くなっているのを\n感じない？」",
+      "source": "サラ「妖気が強くなっているのを\n<FFD2>感じない？」",
       "text": null
     },
     {
       "offset": "0x14400",
       "type": "dialog",
-      "source": "サラ「ここに降りてきてから、\n頭にもやがかかったみたいに\n気分が悪くて仕方ないの」",
+      "source": "サラ「ここに降りてきてから、\n<FFD2>頭にもやがかかったみたいに\n<FFD2>気分が悪くて仕方ないの」",
       "text": null
     },
     {
       "offset": "0x14458",
       "type": "dialog",
-      "source": "サラ「無数の怨念の様なものが、\nここには渦巻いている\nそんな感じがする…」",
+      "source": "サラ「無数の怨念の様なものが、\n<FFD2>ここには渦巻いている\n<FFD2>そんな感じがする…」",
       "text": null
     },
     {
       "offset": "0x144A8",
       "type": "dialog",
-      "source": "サラ「丁度…ほら、二層目で\n死神が出てきた時の様な、\nそれに近いっていうのかな」",
+      "source": "サラ「丁度…ほら、二層目で\n<FFD2>死神が出てきた時の様な、\n<FFD2>それに近いっていうのかな」",
       "text": null
     },
     {
       "offset": "0x144FE",
       "type": "dialog",
-      "source": "サラ「なんか目の前の景色が色あせ、\n灰色になっていくような\nそんな嫌な気分…」",
+      "source": "サラ「なんか目の前の景色が色あせ、\n<FFD2>灰色になっていくような\n<FFD2>そんな嫌な気分…」",
       "text": null
     },
     {
@@ -5136,43 +5136,43 @@
     {
       "offset": "0x1466A",
       "type": "dialog",
-      "source": "ミシェル「もしかしてここは、\n古いエルフの街では…」",
+      "source": "ミシェル「もしかしてここは、\n<FFD4>古いエルフの街では…」",
       "text": null
     },
     {
       "offset": "0x146A2",
       "type": "dialog",
-      "source": "ミシェル「時間と人々から捨て去られ、\n永遠にその存在を封印された\n呪われたエルフの王国…」",
+      "source": "ミシェル「時間と人々から捨て去られ、\n<FFD4>永遠にその存在を封印された\n<FFD4>呪われたエルフの王国…」",
       "text": null
     },
     {
       "offset": "0x14702",
       "type": "dialog",
-      "source": "ミシェル「遥か昔の事なので、\nわたしも実際には見た事は\nありませんが」",
+      "source": "ミシェル「遥か昔の事なので、\n<FFD4>わたしも実際には見た事は\n<FFD4>ありませんが」",
       "text": null
     },
     {
       "offset": "0x1474E",
       "type": "dialog",
-      "source": "ミシェル「子供の頃から老人達に\n聞かされていた街並みに\n似ています」",
+      "source": "ミシェル「子供の頃から老人達に\n<FFD4>聞かされていた街並みに\n<FFD4>似ています」",
       "text": null
     },
     {
       "offset": "0x14798",
       "type": "dialog",
-      "source": "ミシェル「伝説では人心の腐敗と\n忌まわしき祭儀のために\n神に滅ぼされたと聞きます」",
+      "source": "ミシェル「伝説では人心の腐敗と\n<FFD4>忌まわしき祭儀のために\n<FFD4>神に滅ぼされたと聞きます」",
       "text": null
     },
     {
       "offset": "0x147F0",
       "type": "dialog",
-      "source": "ミシェル「だけど、どうしてこんな\n迷宮の奥底なんかに…」",
+      "source": "ミシェル「だけど、どうしてこんな\n<FFD4>迷宮の奥底なんかに…」",
       "text": null
     },
     {
       "offset": "0x1482C",
       "type": "dialog",
-      "source": "ミシェル「先を急ぎましょう。\n何やら嫌な予感がします」",
+      "source": "ミシェル「先を急ぎましょう。\n<FFD4>何やら嫌な予感がします」",
       "text": null
     },
     {
@@ -5202,7 +5202,7 @@
     {
       "offset": "0x14926",
       "type": "center",
-      "source": "「お、お嬢さん！\n奴らの魔法に気をつけて！」",
+      "source": "<STYLE:2>「お、お嬢さん！\n 奴らの魔法に気をつけて！」",
       "text": null
     },
     {
@@ -5214,7 +5214,7 @@
     {
       "offset": "0x14992",
       "type": "center",
-      "source": "「くそっ、きりがないぜ！」",
+      "source": "<STYLE:2>「くそっ、きりがないぜ！」",
       "text": null
     },
     {
@@ -5226,13 +5226,13 @@
     {
       "offset": "0x149DE",
       "type": "center",
-      "source": "「手を、手を貸してくれないか！」",
+      "source": "<STYLE:2>「手を、手を貸してくれないか！」",
       "text": null
     },
     {
       "offset": "0x14A02",
       "type": "center",
-      "source": "オルフェ達に手を貸しますか？\n\n手を貸す\n手を貸さない\n",
+      "source": "オルフェ達に手を貸しますか？\n\n<FFC0>手を貸す\n<FFC1>手を貸さない\n",
       "text": null
     },
     {
@@ -5262,7 +5262,7 @@
     {
       "offset": "0x14B4A",
       "type": "center",
-      "source": "オルフェ達に手を貸しますか？\n\n助けに入る\nひとまず退散する\n",
+      "source": "オルフェ達に手を貸しますか？\n\n<FFC0>助けに入る\n<FFC1>ひとまず退散する\n",
       "text": null
     },
     {
@@ -5280,37 +5280,37 @@
     {
       "offset": "0x14C6C",
       "type": "center",
-      "source": "「お嬢さん、怪我はないですか」",
+      "source": "<STYLE:2>「お嬢さん、怪我はないですか」",
       "text": null
     },
     {
       "offset": "0x14C8E",
       "type": "dialog",
-      "source": "アオバ「フェアリーの群れを見たら、\n逃げ出せってあれほど言った\nじゃないですか」",
+      "source": "アオバ「フェアリーの群れを見たら、\n<FFD3>逃げ出せってあれほど言った\n<FFD3>じゃないですか」",
       "text": null
     },
     {
       "offset": "0x14CE4",
       "type": "dialog",
-      "source": "アオバ「それを突っ込んで行くなんて\n自殺ものですぜ」",
+      "source": "アオバ「それを突っ込んで行くなんて\n<FFD3>自殺ものですぜ」",
       "text": null
     },
     {
       "offset": "0x14D1C",
       "type": "dialog",
-      "source": "オルフェ「父の姿がどこにもない…、\n兵士達に聞いても誰も\n父の事を知らぬ……」",
+      "source": "オルフェ「父の姿がどこにもない…、\n<FFD4>兵士達に聞いても誰も\n<FFD4>父の事を知らぬ……」",
       "text": null
     },
     {
       "offset": "0x14D70",
       "type": "dialog",
-      "source": "オルフェ「どういう事だ？\nいったい父はどこに消えた」",
+      "source": "オルフェ「どういう事だ？\n<FFD4>いったい父はどこに消えた」",
       "text": null
     },
     {
       "offset": "0x14DA8",
       "type": "dialog",
-      "source": "アオバ「さあ、それは……\n酒場の誰かが言っていたように\n街を出て行ったんじゃ？」",
+      "source": "アオバ「さあ、それは……\n<FFD3>酒場の誰かが言っていたように\n<FFD3>街を出て行ったんじゃ？」",
       "text": null
     },
     {
@@ -5322,31 +5322,31 @@
     {
       "offset": "0x14E18",
       "type": "dialog",
-      "source": "オルフェ「私を放って父がどこに行く\nというのだ！」",
+      "source": "オルフェ「私を放って父がどこに行く\n<FFD4>というのだ！」",
       "text": null
     },
     {
       "offset": "0x14E4E",
       "type": "dialog",
-      "source": "オルフェ「わたし達は…わたし達は……\nこの世でたった二人の\n家族なのだ……」",
+      "source": "オルフェ「わたし達は…わたし達は……\n<FFD4>この世でたった二人の\n<FFD4>家族なのだ……」",
       "text": null
     },
     {
       "offset": "0x14EA0",
       "type": "dialog",
-      "source": "アオバ「お嬢さん、怒らないで\nきいて下さいよ」",
+      "source": "アオバ「お嬢さん、怒らないで\n<FFD3>きいて下さいよ」",
       "text": null
     },
     {
       "offset": "0x14ED2",
       "type": "dialog",
-      "source": "アオバ「私はお父さんをこれ以上、\nいくら探しても無駄だと\n思うのですがね」",
+      "source": "アオバ「私はお父さんをこれ以上、\n<FFD3>いくら探しても無駄だと\n<FFD3>思うのですがね」",
       "text": null
     },
     {
       "offset": "0x14F22",
       "type": "dialog",
-      "source": "アオバ「何故なら、すでにお父さんは\nこの世の人じゃないからだと」",
+      "source": "アオバ「何故なら、すでにお父さんは\n<FFD3>この世の人じゃないからだと」",
       "text": null
     },
     {
@@ -5358,55 +5358,55 @@
     {
       "offset": "0x14F82",
       "type": "dialog",
-      "source": "アオバ「ちょ、ちょっと冷静に\n聞いてみて下さい」",
+      "source": "アオバ「ちょ、ちょっと冷静に\n<FFD3>聞いてみて下さい」",
       "text": null
     },
     {
       "offset": "0x14FB6",
       "type": "dialog",
-      "source": "アオバ「不死者がぞろぞろと、\n街に向かってきているって\n噂がありますよね」",
+      "source": "アオバ「不死者がぞろぞろと、\n<FFD3>街に向かってきているって\n<FFD3>噂がありますよね」",
       "text": null
     },
     {
       "offset": "0x15006",
       "type": "dialog",
-      "source": "アオバ「そして街に来たやつらは\nいずこへと姿を消して行く」",
+      "source": "アオバ「そして街に来たやつらは\n<FFD3>いずこへと姿を消して行く」",
       "text": null
     },
     {
       "offset": "0x15044",
       "type": "dialog",
-      "source": "アオバ「色々と噂話はされてますが、\n誰も不死者がどこに消えたか\n知らない」",
+      "source": "アオバ「色々と噂話はされてますが、\n<FFD3>誰も不死者がどこに消えたか\n<FFD3>知らない」",
       "text": null
     },
     {
       "offset": "0x15094",
       "type": "dialog",
-      "source": "アオバ「だけどおかしな事に、\nそれから数日の間に行方不明\nだった者や」",
+      "source": "アオバ「だけどおかしな事に、\n<FFD3>それから数日の間に行方不明\n<FFD3>だった者や」",
       "text": null
     },
     {
       "offset": "0x150E0",
       "type": "dialog",
-      "source": "アオバ「外からの訪問者が\n街に現われる」",
+      "source": "アオバ「外からの訪問者が\n<FFD3>街に現われる」",
       "text": null
     },
     {
       "offset": "0x1510C",
       "type": "dialog",
-      "source": "アオバ「確かめたわけじゃないですが、\nそれって結びつきませんか？\n不死者が街で消える事と…」",
+      "source": "アオバ「確かめたわけじゃないですが、\n<FFD3>それって結びつきませんか？\n<FFD3>不死者が街で消える事と…」",
       "text": null
     },
     {
       "offset": "0x1516E",
       "type": "dialog",
-      "source": "オルフェ「アオバ、お前それを本気で\n言っているのか？」",
+      "source": "オルフェ「アオバ、お前それを本気で\n<FFD4>言っているのか？」",
       "text": null
     },
     {
       "offset": "0x151A8",
       "type": "dialog",
-      "source": "オルフェ「わたしの父が、不死者\nだったと？」",
+      "source": "オルフェ「わたしの父が、不死者\n<FFD4>だったと？」",
       "text": null
     },
     {
@@ -5418,7 +5418,7 @@
     {
       "offset": "0x151FE",
       "type": "dialog",
-      "source": "アオバ「ちょ、ちょっと待って！\n怒らずに聞いて下さい」",
+      "source": "アオバ「ちょ、ちょっと待って！\n<FFD3>怒らずに聞いて下さい」",
       "text": null
     },
     {
@@ -5436,49 +5436,49 @@
     {
       "offset": "0x1528E",
       "type": "dialog",
-      "source": "アオバ「馬鹿馬鹿しい話だと自分でも\n思いますがね」",
+      "source": "アオバ「馬鹿馬鹿しい話だと自分でも\n<FFD3>思いますがね」",
       "text": null
     },
     {
       "offset": "0x152C4",
       "type": "dialog",
-      "source": "アオバ「突然現われたこの迷宮といい、\nおかしな事が立て続けに\n起こっている事からも」",
+      "source": "アオバ「突然現われたこの迷宮といい、\n<FFD3>おかしな事が立て続けに\n<FFD3>起こっている事からも」",
       "text": null
     },
     {
       "offset": "0x1531E",
       "type": "dialog",
-      "source": "アオバ「あながち的外れ…ってわけでも\nないと思うんだがな」",
+      "source": "アオバ「あながち的外れ…ってわけでも\n<FFD3>ないと思うんだがな」",
       "text": null
     },
     {
       "offset": "0x1535C",
       "type": "dialog",
-      "source": "アオバ「だけど不死者がいつの間にか\n街の者になっているとしたら」",
+      "source": "アオバ「だけど不死者がいつの間にか\n<FFD3>街の者になっているとしたら」",
       "text": null
     },
     {
       "offset": "0x153A0",
       "type": "dialog",
-      "source": "アオバ「私達も不死者…って\n事になりますかね？」",
+      "source": "アオバ「私達も不死者…って\n<FFD3>事になりますかね？」",
       "text": null
     },
     {
       "offset": "0x153D4",
       "type": "dialog",
-      "source": "アオバ「ハハハハ、そう考えれば\nやはり馬鹿馬鹿しい話ですな」",
+      "source": "アオバ「ハハハハ、そう考えれば\n<FFD3>やはり馬鹿馬鹿しい話ですな」",
       "text": null
     },
     {
       "offset": "0x15414",
       "type": "center",
-      "source": "「助けて頂いたお礼は\nまた近いうちに」",
+      "source": "<STYLE:2>「助けて頂いたお礼は\n また近いうちに」",
       "text": null
     },
     {
       "offset": "0x15442",
       "type": "center",
-      "source": "「お嬢さんを急いで捜さなきゃ。\nまた魔物に食ってかかっている\nかもしれないのでね」",
+      "source": "<STYLE:2>「お嬢さんを急いで捜さなきゃ。\n また魔物に食ってかかっている\n かもしれないのでね」",
       "text": null
     },
     {
@@ -5502,19 +5502,19 @@
     {
       "offset": "0x15564",
       "type": "center",
-      "source": "「いったい誰が予想しただろうか、\nこの悲劇の結末を」",
+      "source": "<STYLE:2>「いったい誰が予想しただろうか、\n この悲劇の結末を」",
       "text": null
     },
     {
       "offset": "0x155AA",
       "type": "dialog",
-      "source": "ユージン「我々が女王と呼んでいる\n愛しき者の正体は、\n魂無き紛い物だったのだ」",
+      "source": "ユージン「我々が女王と呼んでいる\n<FFD4>愛しき者の正体は、\n<FFD4>魂無き紛い物だったのだ」",
       "text": null
     },
     {
       "offset": "0x155FE",
       "type": "dialog",
-      "source": "ユージン「あれはホムンクルス。\n神から誕生を許されていない\n出来そこないの生物だよ」",
+      "source": "ユージン「あれはホムンクルス。\n<FFD4>神から誕生を許されていない\n<FFD4>出来そこないの生物だよ」",
       "text": null
     },
     {
@@ -5526,31 +5526,31 @@
     {
       "offset": "0x156A0",
       "type": "dialog",
-      "source": "ユージン「魔神インキュバスの反応を\n見て気づいたのだ」",
+      "source": "ユージン「魔神インキュバスの反応を\n<FFD4>見て気づいたのだ」",
       "text": null
     },
     {
       "offset": "0x156DA",
       "type": "dialog",
-      "source": "ユージン「あやつは楽しんでいたが、\n私にとっては無駄な時間に\n他ならなかった」",
+      "source": "ユージン「あやつは楽しんでいたが、\n<FFD4>私にとっては無駄な時間に\n<FFD4>他ならなかった」",
       "text": null
     },
     {
       "offset": "0x1572E",
       "type": "dialog",
-      "source": "ユージン「何故ならばあの女の心は、\nそこから何もくみだせぬ\n空っぽの泉と同じだった」",
+      "source": "ユージン「何故ならばあの女の心は、\n<FFD4>そこから何もくみだせぬ\n<FFD4>空っぽの泉と同じだった」",
       "text": null
     },
     {
       "offset": "0x15788",
       "type": "dialog",
-      "source": "ユージン「そう、ちょうどまるで\n人形の様にね」",
+      "source": "ユージン「そう、ちょうどまるで\n<FFD4>人形の様にね」",
       "text": null
     },
     {
       "offset": "0x157BA",
       "type": "dialog",
-      "source": "ユージン「我々全ては愚かにも、\nあのレドゥアという男に\n騙されていたというわけだ」",
+      "source": "ユージン「我々全ては愚かにも、\n<FFD4>あのレドゥアという男に\n<FFD4>騙されていたというわけだ」",
       "text": null
     },
     {
@@ -5562,19 +5562,19 @@
     {
       "offset": "0x1584A",
       "type": "dialog",
-      "source": "ユージン「だが女王が偽物だと考えると\n全てが符合してくる」",
+      "source": "ユージン「だが女王が偽物だと考えると\n<FFD4>全てが符合してくる」",
       "text": null
     },
     {
       "offset": "0x15888",
       "type": "dialog",
-      "source": "ユージン「住民達の嘆きに心を\n動かされないのも当然だ」",
+      "source": "ユージン「住民達の嘆きに心を\n<FFD4>動かされないのも当然だ」",
       "text": null
     },
     {
       "offset": "0x158C2",
       "type": "dialog",
-      "source": "ユージン「魂無き者に人の心がわかる\nはずはないのでな」",
+      "source": "ユージン「魂無き者に人の心がわかる\n<FFD4>はずはないのでな」",
       "text": null
     },
     {
@@ -5586,7 +5586,7 @@
     {
       "offset": "0x15922",
       "type": "dialog",
-      "source": "ユージン「あの閃光の時に死んだのか？\nそれともどこかにとらわれて\nいるのか？」",
+      "source": "ユージン「あの閃光の時に死んだのか？\n<FFD4>それともどこかにとらわれて\n<FFD4>いるのか？」",
       "text": null
     },
     {
@@ -5598,19 +5598,19 @@
     {
       "offset": "0x1599C",
       "type": "dialog",
-      "source": "ユージン「そのためには何度でも、\nこの魂を魔神に売り続ける\nつもりだ」",
+      "source": "ユージン「そのためには何度でも、\n<FFD4>この魂を魔神に売り続ける\n<FFD4>つもりだ」",
       "text": null
     },
     {
       "offset": "0x159E8",
       "type": "dialog",
-      "source": "ユージン「この魂が証文だらけで\n身動き出来なくなるまでな」",
+      "source": "ユージン「この魂が証文だらけで\n<FFD4>身動き出来なくなるまでな」",
       "text": null
     },
     {
       "offset": "0x15A26",
       "type": "center",
-      "source": "「皆が言っていた噂は\n本当だったのですか！」",
+      "source": "<STYLE:2>「皆が言っていた噂は\n 本当だったのですか！」",
       "text": null
     },
     {
@@ -5622,25 +5622,25 @@
     {
       "offset": "0x15A88",
       "type": "dialog",
-      "source": "グレース「ユージン、あなたは…、\nほんとに王国を乗っ取るため\n魔神と契約したのですか？」",
+      "source": "グレース「ユージン、あなたは…、\n<FFD4>ほんとに王国を乗っ取るため\n<FFD4>魔神と契約したのですか？」",
       "text": null
     },
     {
       "offset": "0x15AE6",
       "type": "center",
-      "source": "「いかにも、そうだとしたら？」",
+      "source": "<STYLE:2>「いかにも、そうだとしたら？」",
       "text": null
     },
     {
       "offset": "0x15B08",
       "type": "dialog",
-      "source": "グレース「そ、そのような事…、\n神がお許しになると思って\nいるのですか！」",
+      "source": "グレース「そ、そのような事…、\n<FFD4>神がお許しになると思って\n<FFD4>いるのですか！」",
       "text": null
     },
     {
       "offset": "0x15B58",
       "type": "dialog",
-      "source": "グレース「今ならまだ間に合います。\n目を覚まして下さい」",
+      "source": "グレース「今ならまだ間に合います。\n<FFD4>目を覚まして下さい」",
       "text": null
     },
     {
@@ -5652,19 +5652,19 @@
     {
       "offset": "0x15BBA",
       "type": "dialog",
-      "source": "グレース「悪魔の使いや妖術師の類に\n待っているのは、地獄の業火\nだけです！」",
+      "source": "グレース「悪魔の使いや妖術師の類に\n<FFD4>待っているのは、地獄の業火\n<FFD4>だけです！」",
       "text": null
     },
     {
       "offset": "0x15C0C",
       "type": "dialog",
-      "source": "グレース「神様が最後に祝福をお与えに\nなるのは、平和を愛する我々\nではないですか」",
+      "source": "グレース「神様が最後に祝福をお与えに\n<FFD4>なるのは、平和を愛する我々\n<FFD4>ではないですか」",
       "text": null
     },
     {
       "offset": "0x15C64",
       "type": "dialog",
-      "source": "グレース「信心深いご両親に育てられた\nあなたはそれをよく\nご存知のはず」",
+      "source": "グレース「信心深いご両親に育てられた\n<FFD4>あなたはそれをよく\n<FFD4>ご存知のはず」",
       "text": null
     },
     {
@@ -5682,49 +5682,49 @@
     {
       "offset": "0x15D0C",
       "type": "center",
-      "source": "「手を血に染める勇気がなければ、\n何事も成せぬ」",
+      "source": "<STYLE:2>「手を血に染める勇気がなければ、\n 何事も成せぬ」",
       "text": null
     },
     {
       "offset": "0x15D52",
       "type": "dialog",
-      "source": "グレース「よ、よくも…そんな…\n神を恐れぬ事を……」",
+      "source": "グレース「よ、よくも…そんな…\n<FFD4>神を恐れぬ事を……」",
       "text": null
     },
     {
       "offset": "0x15D8A",
       "type": "dialog",
-      "source": "ユージン「ここまで来れば死も破滅も\n恐れはしない」",
+      "source": "ユージン「ここまで来れば死も破滅も\n<FFD4>恐れはしない」",
       "text": null
     },
     {
       "offset": "0x15DC0",
       "type": "dialog",
-      "source": "ユージン「いずれにしても、\n私が取る道はただ一つ」",
+      "source": "ユージン「いずれにしても、\n<FFD4>私が取る道はただ一つ」",
       "text": null
     },
     {
       "offset": "0x15DF6",
       "type": "dialog",
-      "source": "ユージン「王冠をこの手にするか、\nそれとも屍になるか…」",
+      "source": "ユージン「王冠をこの手にするか、\n<FFD4>それとも屍になるか…」",
       "text": null
     },
     {
       "offset": "0x15E32",
       "type": "dialog",
-      "source": "ユージン「一度、手をつけた悪事。\n目的を達成するには\n悪事を重ねるしかない」",
+      "source": "ユージン「一度、手をつけた悪事。\n<FFD4>目的を達成するには\n<FFD4>悪事を重ねるしかない」",
       "text": null
     },
     {
       "offset": "0x15E84",
       "type": "center",
-      "source": "「そ、それなら私も\nご一緒させていただきます！」",
+      "source": "<STYLE:2>「そ、それなら私も\n ご一緒させていただきます！」",
       "text": null
     },
     {
       "offset": "0x15EC6",
       "type": "center",
-      "source": "「何かあった場合に一人よりも、\n二人の方が心強いと思います」",
+      "source": "<STYLE:2>「何かあった場合に一人よりも、\n 二人の方が心強いと思います」",
       "text": null
     },
     {
@@ -5736,19 +5736,19 @@
     {
       "offset": "0x15F28",
       "type": "dialog",
-      "source": "ユージン「そなたとは婚約はしたが\nまだ式をあげておらぬ」",
+      "source": "ユージン「そなたとは婚約はしたが\n<FFD4>まだ式をあげておらぬ」",
       "text": null
     },
     {
       "offset": "0x15F64",
       "type": "dialog",
-      "source": "ユージン「なれぬ格好までして\nこんな迷宮をうろつかずに」",
+      "source": "ユージン「なれぬ格好までして\n<FFD4>こんな迷宮をうろつかずに」",
       "text": null
     },
     {
       "offset": "0x15FA0",
       "type": "dialog",
-      "source": "ユージン「一刻も早く街へと戻り、\n別の人生を歩んだ方が\nそなたのためだ」",
+      "source": "ユージン「一刻も早く街へと戻り、\n<FFD4>別の人生を歩んだ方が\n<FFD4>そなたのためだ」",
       "text": null
     },
     {
@@ -5760,25 +5760,25 @@
     {
       "offset": "0x1600E",
       "type": "dialog",
-      "source": "ユージン「ドゥーハン王家を手に入れる\nその日まで、私にはこの世に\n大切な物など何一つない」",
+      "source": "ユージン「ドゥーハン王家を手に入れる\n<FFD4>その日まで、私にはこの世に\n<FFD4>大切な物など何一つない」",
       "text": null
     },
     {
       "offset": "0x1606E",
       "type": "dialog",
-      "source": "ユージン「それに、もし私がこの野望を\n捨てたとしても…」",
+      "source": "ユージン「それに、もし私がこの野望を\n<FFD4>捨てたとしても…」",
       "text": null
     },
     {
       "offset": "0x160AA",
       "type": "dialog",
-      "source": "ユージン「すでに私の魂も身体も、\n自分の物ではないのだ」",
+      "source": "ユージン「すでに私の魂も身体も、\n<FFD4>自分の物ではないのだ」",
       "text": null
     },
     {
       "offset": "0x160E6",
       "type": "center",
-      "source": "「ユ、ユージン……」",
+      "source": "<STYLE:2>「ユ、ユージン……」",
       "text": null
     },
     {
@@ -5802,19 +5802,19 @@
     {
       "offset": "0x16186",
       "type": "dialog",
-      "source": "グレース「あの閃光は街だけでなく\n人の心まで壊してしまった」",
+      "source": "グレース「あの閃光は街だけでなく\n<FFD4>人の心まで壊してしまった」",
       "text": null
     },
     {
       "offset": "0x161C6",
       "type": "dialog",
-      "source": "グレース「信心深く優しかったあの人は\nもうどこにもいない」",
+      "source": "グレース「信心深く優しかったあの人は\n<FFD4>もうどこにもいない」",
       "text": null
     },
     {
       "offset": "0x16204",
       "type": "dialog",
-      "source": "グレース「暗くにごった野望の炎が\n消えぬ限り…、\n彼が戻ってくる事はない」",
+      "source": "グレース「暗くにごった野望の炎が\n<FFD4>消えぬ限り…、\n<FFD4>彼が戻ってくる事はない」",
       "text": null
     },
     {
@@ -5826,7 +5826,7 @@
     {
       "offset": "0x16270",
       "type": "dialog",
-      "source": "グレース「もうわたしでは、彼を止める\n事は出来ません」",
+      "source": "グレース「もうわたしでは、彼を止める\n<FFD4>事は出来ません」",
       "text": null
     },
     {
@@ -5850,19 +5850,19 @@
     {
       "offset": "0x1636A",
       "type": "center",
-      "source": "「一体、誰が予想しただろうか、\nこの悲劇の結末を」",
+      "source": "<STYLE:2>「一体、誰が予想しただろうか、\n この悲劇の結末を」",
       "text": null
     },
     {
       "offset": "0x163AC",
       "type": "dialog",
-      "source": "ユージン「我々が女王と呼んでいる\n愛しき者の正体は、\n魂無き紛い物だったのだ」",
+      "source": "ユージン「我々が女王と呼んでいる\n<FFD4>愛しき者の正体は、\n<FFD4>魂無き紛い物だったのだ」",
       "text": null
     },
     {
       "offset": "0x16400",
       "type": "dialog",
-      "source": "ユージン「あれはホムンクルス。\n神から誕生を許されていない\n出来そこないの生物だよ」",
+      "source": "ユージン「あれはホムンクルス。\n<FFD4>神から誕生を許されていない\n<FFD4>出来そこないの生物だよ」",
       "text": null
     },
     {
@@ -5874,31 +5874,31 @@
     {
       "offset": "0x164A2",
       "type": "dialog",
-      "source": "ユージン「魔神インキュバスの反応を\n見て気づいたのだ」",
+      "source": "ユージン「魔神インキュバスの反応を\n<FFD4>見て気づいたのだ」",
       "text": null
     },
     {
       "offset": "0x164DC",
       "type": "dialog",
-      "source": "ユージン「あやつは楽しんでいたが、\n私にとっては無駄な時間に\n他ならなかった」",
+      "source": "ユージン「あやつは楽しんでいたが、\n<FFD4>私にとっては無駄な時間に\n<FFD4>他ならなかった」",
       "text": null
     },
     {
       "offset": "0x16530",
       "type": "dialog",
-      "source": "ユージン「何故ならばあの女の心は、\nそこから何もくみだせぬ\n空っぽの泉と同じだった」",
+      "source": "ユージン「何故ならばあの女の心は、\n<FFD4>そこから何もくみだせぬ\n<FFD4>空っぽの泉と同じだった」",
       "text": null
     },
     {
       "offset": "0x1658A",
       "type": "dialog",
-      "source": "ユージン「そう、ちょうどまるで\n人形の様にね」",
+      "source": "ユージン「そう、ちょうどまるで\n<FFD4>人形の様にね」",
       "text": null
     },
     {
       "offset": "0x165BC",
       "type": "dialog",
-      "source": "ユージン「我々全ては愚かにも、\nあのレドゥアという男に\n騙されていたというわけだ」",
+      "source": "ユージン「我々全ては愚かにも、\n<FFD4>あのレドゥアという男に\n<FFD4>騙されていたというわけだ」",
       "text": null
     },
     {
@@ -5910,19 +5910,19 @@
     {
       "offset": "0x1664C",
       "type": "dialog",
-      "source": "ユージン「だが女王が偽物だと考えると\n全てが符合してくる」",
+      "source": "ユージン「だが女王が偽物だと考えると\n<FFD4>全てが符合してくる」",
       "text": null
     },
     {
       "offset": "0x1668A",
       "type": "dialog",
-      "source": "ユージン「住民達の嘆きに心を\n動かされないのも当然だ」",
+      "source": "ユージン「住民達の嘆きに心を\n<FFD4>動かされないのも当然だ」",
       "text": null
     },
     {
       "offset": "0x166C4",
       "type": "dialog",
-      "source": "ユージン「魂無き者に人の心がわかる\nはずはないのでな」",
+      "source": "ユージン「魂無き者に人の心がわかる\n<FFD4>はずはないのでな」",
       "text": null
     },
     {
@@ -5934,7 +5934,7 @@
     {
       "offset": "0x16724",
       "type": "dialog",
-      "source": "ユージン「あの閃光の時に死んだのか？\nそれともどこかにとらわれて\nいるのか？」",
+      "source": "ユージン「あの閃光の時に死んだのか？\n<FFD4>それともどこかにとらわれて\n<FFD4>いるのか？」",
       "text": null
     },
     {
@@ -5946,19 +5946,19 @@
     {
       "offset": "0x1679E",
       "type": "dialog",
-      "source": "ユージン「そのためには何度でも、\nこの魂を魔神に売り続ける\nつもりだ」",
+      "source": "ユージン「そのためには何度でも、\n<FFD4>この魂を魔神に売り続ける\n<FFD4>つもりだ」",
       "text": null
     },
     {
       "offset": "0x167EA",
       "type": "dialog",
-      "source": "ユージン「この魂が証文だらけで\n身動き出来なくなるまでな」",
+      "source": "ユージン「この魂が証文だらけで\n<FFD4>身動き出来なくなるまでな」",
       "text": null
     },
     {
       "offset": "0x16828",
       "type": "center",
-      "source": "「皆が言っていた噂は\n本当だったのですか！」",
+      "source": "<STYLE:2>「皆が言っていた噂は\n 本当だったのですか！」",
       "text": null
     },
     {
@@ -5970,25 +5970,25 @@
     {
       "offset": "0x1688A",
       "type": "dialog",
-      "source": "グレース「ユージン、あなたは…、\n本当に王国を乗っ取るため\n魔神と契約したのですか？」",
+      "source": "グレース「ユージン、あなたは…、\n<FFD4>本当に王国を乗っ取るため\n<FFD4>魔神と契約したのですか？」",
       "text": null
     },
     {
       "offset": "0x168E6",
       "type": "center",
-      "source": "「いかにも、そうだとしたら？」",
+      "source": "<STYLE:2>「いかにも、そうだとしたら？」",
       "text": null
     },
     {
       "offset": "0x16908",
       "type": "dialog",
-      "source": "グレース「そ、そのような事…、\n神がお許しになると思って\nいるのですか！」",
+      "source": "グレース「そ、そのような事…、\n<FFD4>神がお許しになると思って\n<FFD4>いるのですか！」",
       "text": null
     },
     {
       "offset": "0x16958",
       "type": "dialog",
-      "source": "グレース「今ならまだ間に合います。\n目を覚まして下さい」",
+      "source": "グレース「今ならまだ間に合います。\n<FFD4>目を覚まして下さい」",
       "text": null
     },
     {
@@ -6000,19 +6000,19 @@
     {
       "offset": "0x169BA",
       "type": "dialog",
-      "source": "グレース「悪魔の使いや妖術師の類に\n待っているのは、地獄の業火\nだけです！」",
+      "source": "グレース「悪魔の使いや妖術師の類に\n<FFD4>待っているのは、地獄の業火\n<FFD4>だけです！」",
       "text": null
     },
     {
       "offset": "0x16A0C",
       "type": "dialog",
-      "source": "グレース「神様が最後に祝福をお与えに\nなるのは、平和を愛する我々\nではないですか」",
+      "source": "グレース「神様が最後に祝福をお与えに\n<FFD4>なるのは、平和を愛する我々\n<FFD4>ではないですか」",
       "text": null
     },
     {
       "offset": "0x16A64",
       "type": "dialog",
-      "source": "グレース「信心深いご両親に育てられた\nあなたはそれをよく\nご存知のはず」",
+      "source": "グレース「信心深いご両親に育てられた\n<FFD4>あなたはそれをよく\n<FFD4>ご存知のはず」",
       "text": null
     },
     {
@@ -6030,49 +6030,49 @@
     {
       "offset": "0x16B0C",
       "type": "center",
-      "source": "「手を血に染める勇気がなければ、\n何ごとも成せぬ」",
+      "source": "<STYLE:2>「手を血に染める勇気がなければ、\n 何ごとも成せぬ」",
       "text": null
     },
     {
       "offset": "0x16B52",
       "type": "dialog",
-      "source": "グレース「よ、よくも…そんな…\n神を恐れぬ事を……」",
+      "source": "グレース「よ、よくも…そんな…\n<FFD4>神を恐れぬ事を……」",
       "text": null
     },
     {
       "offset": "0x16B8A",
       "type": "dialog",
-      "source": "ユージン「ここまで来れば死も破滅も\n恐れはしない」",
+      "source": "ユージン「ここまで来れば死も破滅も\n<FFD4>恐れはしない」",
       "text": null
     },
     {
       "offset": "0x16BC0",
       "type": "dialog",
-      "source": "ユージン「いずれにしても、\n私が取る道はただ一つ」",
+      "source": "ユージン「いずれにしても、\n<FFD4>私が取る道はただ一つ」",
       "text": null
     },
     {
       "offset": "0x16BF6",
       "type": "dialog",
-      "source": "ユージン「王冠をこの手にするか、\nそれとも屍になるか…」",
+      "source": "ユージン「王冠をこの手にするか、\n<FFD4>それとも屍になるか…」",
       "text": null
     },
     {
       "offset": "0x16C32",
       "type": "dialog",
-      "source": "ユージン「一度、手をつけた悪事。\n目的を達成するには\n悪事を重ねるしかない」",
+      "source": "ユージン「一度、手をつけた悪事。\n<FFD4>目的を達成するには\n<FFD4>悪事を重ねるしかない」",
       "text": null
     },
     {
       "offset": "0x16C84",
       "type": "center",
-      "source": "「そ、それなら私もご一緒させて\nいただきます！」",
+      "source": "<STYLE:2>「そ、それなら私もご一緒させて\n いただきます！」",
       "text": null
     },
     {
       "offset": "0x16CBA",
       "type": "center",
-      "source": "「何かあった場合に一人よりも、\n二人が心強いと思います」",
+      "source": "<STYLE:2>「何かあった場合に一人よりも、\n 二人が心強いと思います」",
       "text": null
     },
     {
@@ -6084,19 +6084,19 @@
     {
       "offset": "0x16D18",
       "type": "dialog",
-      "source": "ユージン「そなたと婚約はしたが\nまだ式をあげておらぬ」",
+      "source": "ユージン「そなたと婚約はしたが\n<FFD4>まだ式をあげておらぬ」",
       "text": null
     },
     {
       "offset": "0x16D52",
       "type": "dialog",
-      "source": "ユージン「なれぬ格好までして\nこんな迷宮をうろつかずに」",
+      "source": "ユージン「なれぬ格好までして\n<FFD4>こんな迷宮をうろつかずに」",
       "text": null
     },
     {
       "offset": "0x16D8E",
       "type": "dialog",
-      "source": "ユージン「一刻も早く街へと戻り、\n別の人生を歩んだ方が\nそなたのためだ」",
+      "source": "ユージン「一刻も早く街へと戻り、\n<FFD4>別の人生を歩んだ方が\n<FFD4>そなたのためだ」",
       "text": null
     },
     {
@@ -6108,25 +6108,25 @@
     {
       "offset": "0x16DFC",
       "type": "dialog",
-      "source": "ユージン「ドゥーハン王家を手に入れる\nその日まで、私にはこの世に\n大切な物など何一つない」",
+      "source": "ユージン「ドゥーハン王家を手に入れる\n<FFD4>その日まで、私にはこの世に\n<FFD4>大切な物など何一つない」",
       "text": null
     },
     {
       "offset": "0x16E5C",
       "type": "dialog",
-      "source": "ユージン「それにもし私がこの野望を\n捨てたとしても…」",
+      "source": "ユージン「それにもし私がこの野望を\n<FFD4>捨てたとしても…」",
       "text": null
     },
     {
       "offset": "0x16E96",
       "type": "dialog",
-      "source": "ユージン「すでに私の魂も身体も、\n自分の物ではないのだ」",
+      "source": "ユージン「すでに私の魂も身体も、\n<FFD4>自分の物ではないのだ」",
       "text": null
     },
     {
       "offset": "0x16ED2",
       "type": "center",
-      "source": "「ユ、ユージン……」",
+      "source": "<STYLE:2>「ユ、ユージン……」",
       "text": null
     },
     {
@@ -6150,19 +6150,19 @@
     {
       "offset": "0x16F72",
       "type": "dialog",
-      "source": "グレース「あの閃光は街だけでなく\n人の心まで壊してしまった」",
+      "source": "グレース「あの閃光は街だけでなく\n<FFD4>人の心まで壊してしまった」",
       "text": null
     },
     {
       "offset": "0x16FB2",
       "type": "dialog",
-      "source": "グレース「信心深く優しかったあの人は\nもうどこにもいない」",
+      "source": "グレース「信心深く優しかったあの人は\n<FFD4>もうどこにもいない」",
       "text": null
     },
     {
       "offset": "0x16FF0",
       "type": "dialog",
-      "source": "グレース「暗くにごった野望の炎が\n消えぬかぎり…、\n彼が戻ってくる事はない」",
+      "source": "グレース「暗くにごった野望の炎が\n<FFD4>消えぬかぎり…、\n<FFD4>彼が戻ってくる事はない」",
       "text": null
     },
     {
@@ -6174,19 +6174,19 @@
     {
       "offset": "0x1705E",
       "type": "dialog",
-      "source": "グレース「もうわたしでは彼を止める\n事は出来ません」",
+      "source": "グレース「もうわたしでは彼を止める\n<FFD4>事は出来ません」",
       "text": null
     },
     {
       "offset": "0x17096",
       "type": "dialog",
-      "source": "リカルド「おいおい、聞いたかよ？\n奴が言った事を」",
+      "source": "リカルド「おいおい、聞いたかよ？\n<FFD4>奴が言った事を」",
       "text": null
     },
     {
       "offset": "0x170CC",
       "type": "dialog",
-      "source": "リカルド「俺達の女王様が\nホムンクルスだってよ！」",
+      "source": "リカルド「俺達の女王様が\n<FFD4>ホムンクルスだってよ！」",
       "text": null
     },
     {
@@ -6198,19 +6198,19 @@
     {
       "offset": "0x17128",
       "type": "dialog",
-      "source": "リカルド「ホムンクルスって、\n人造生物って事だよな」",
+      "source": "リカルド「ホムンクルスって、\n<FFD4>人造生物って事だよな」",
       "text": null
     },
     {
       "offset": "0x17160",
       "type": "dialog",
-      "source": "リカルド「そんなものを作って奴は\nどうするんだ？」",
+      "source": "リカルド「そんなものを作って奴は\n<FFD4>どうするんだ？」",
       "text": null
     },
     {
       "offset": "0x17196",
       "type": "dialog",
-      "source": "リカルド「もし本物の女王様が\n戻ってきたらどうする\nつもりなんだよ」",
+      "source": "リカルド「もし本物の女王様が\n<FFD4>戻ってきたらどうする\n<FFD4>つもりなんだよ」",
       "text": null
     },
     {
@@ -6222,259 +6222,259 @@
     {
       "offset": "0x17204",
       "type": "dialog",
-      "source": "グレッグ「ユージン卿が言った事が\n事実だとすれば…」",
+      "source": "グレッグ「ユージン卿が言った事が\n<FFD4>事実だとすれば…」",
       "text": null
     },
     {
       "offset": "0x1723C",
       "type": "dialog",
-      "source": "グレッグ「我々国民は今まで、\nだまされていた事になる」",
+      "source": "グレッグ「我々国民は今まで、\n<FFD4>だまされていた事になる」",
       "text": null
     },
     {
       "offset": "0x17276",
       "type": "dialog",
-      "source": "グレッグ「だが、何故レドゥアは、\nそんな馬鹿な事をした？」",
+      "source": "グレッグ「だが、何故レドゥアは、\n<FFD4>そんな馬鹿な事をした？」",
       "text": null
     },
     {
       "offset": "0x172B4",
       "type": "dialog",
-      "source": "グレッグ「そのような卑劣な事は、\nいつかは必ず陽の下に\nさらされるはず」",
+      "source": "グレッグ「そのような卑劣な事は、\n<FFD4>いつかは必ず陽の下に\n<FFD4>さらされるはず」",
       "text": null
     },
     {
       "offset": "0x17302",
       "type": "dialog",
-      "source": "グレッグ「それでなくとも国民の皆は、\n近頃の女王様の言動を\n不思議に思っていたのだ」",
+      "source": "グレッグ「それでなくとも国民の皆は、\n<FFD4>近頃の女王様の言動を\n<FFD4>不思議に思っていたのだ」",
       "text": null
     },
     {
       "offset": "0x1735C",
       "type": "dialog",
-      "source": "グレッグ「それともレドゥアは愚かにも、\n国民をずっとだまし続けられ\nるとでも思っていたのか…」",
+      "source": "グレッグ「それともレドゥアは愚かにも、\n<FFD4>国民をずっとだまし続けられ\n<FFD4>るとでも思っていたのか…」",
       "text": null
     },
     {
       "offset": "0x173C0",
       "type": "dialog",
-      "source": "サラ「わたし、レドゥアが\n何を考えているのか\n分かるような気がする」",
+      "source": "サラ「わたし、レドゥアが\n<FFD2>何を考えているのか\n<FFD2>分かるような気がする」",
       "text": null
     },
     {
       "offset": "0x1740A",
       "type": "dialog",
-      "source": "サラ「本物の女王様はどこかで\n生きているのよきっと」",
+      "source": "サラ「本物の女王様はどこかで\n<FFD2>生きているのよきっと」",
       "text": null
     },
     {
       "offset": "0x17442",
       "type": "dialog",
-      "source": "サラ「そしてわたし達冒険者は、\n女王様を探すために利用\nされているんじゃない？」",
+      "source": "サラ「そしてわたし達冒険者は、\n<FFD2>女王様を探すために利用\n<FFD2>されているんじゃない？」",
       "text": null
     },
     {
       "offset": "0x17498",
       "type": "dialog",
-      "source": "サラ「迷宮をそのままにしているのも、\n迷宮探索を奨励していたのも\nそう考えれば納得できる」",
+      "source": "サラ「迷宮をそのままにしているのも、\n<FFD2>迷宮探索を奨励していたのも\n<FFD2>そう考えれば納得できる」",
       "text": null
     },
     {
       "offset": "0x174F8",
       "type": "dialog",
-      "source": "サラ「もちろんこの推論は、\nユージン卿の言った事が\n正しいとしたらだけど」",
+      "source": "サラ「もちろんこの推論は、\n<FFD2>ユージン卿の言った事が\n<FFD2>正しいとしたらだけど」",
       "text": null
     },
     {
       "offset": "0x17548",
       "type": "dialog",
-      "source": "サラ「そうでも考えないと\nレドゥアの行動に説明が\nつかないわ」",
+      "source": "サラ「そうでも考えないと\n<FFD2>レドゥアの行動に説明が\n<FFD2>つかないわ」",
       "text": null
     },
     {
       "offset": "0x1758C",
       "type": "dialog",
-      "source": "ルイ「気味が悪いわね、\nホムンクルスだなんて…」",
+      "source": "ルイ「気味が悪いわね、\n<FFD2>ホムンクルスだなんて…」",
       "text": null
     },
     {
       "offset": "0x175C0",
       "type": "dialog",
-      "source": "ルイ「自分がそんな事されたらって\n考えたら、ぞっとする…」",
+      "source": "ルイ「自分がそんな事されたらって\n<FFD2>考えたら、ぞっとする…」",
       "text": null
     },
     {
       "offset": "0x175FE",
       "type": "dialog",
-      "source": "ルイ「何がレドゥアを狂わせたの\nかしら？」",
+      "source": "ルイ「何がレドゥアを狂わせたの\n<FFD2>かしら？」",
       "text": null
     },
     {
       "offset": "0x1762C",
       "type": "dialog",
-      "source": "ルイ「元々はそんな事をする人間\nだったわけじゃないでしょ」",
+      "source": "ルイ「元々はそんな事をする人間\n<FFD2>だったわけじゃないでしょ」",
       "text": null
     },
     {
       "offset": "0x1766A",
       "type": "dialog",
-      "source": "ルイ「もちろんレドゥアの事を\nそれほど知っているわけでは\nないけど」",
+      "source": "ルイ「もちろんレドゥアの事を\n<FFD2>それほど知っているわけでは\n<FFD2>ないけど」",
       "text": null
     },
     {
       "offset": "0x176B4",
       "type": "dialog",
-      "source": "ルイ「そんな人間だったらきっと、\nクイーンガードの長など\n勤まるわけないもの」",
+      "source": "ルイ「そんな人間だったらきっと、\n<FFD2>クイーンガードの長など\n<FFD2>勤まるわけないもの」",
       "text": null
     },
     {
       "offset": "0x17708",
       "type": "dialog",
-      "source": "ルイ「やっぱりユージン卿が言うように\n女王様が原因なのかしらね」",
+      "source": "ルイ「やっぱりユージン卿が言うように\n<FFD2>女王様が原因なのかしらね」",
       "text": null
     },
     {
       "offset": "0x1774C",
       "type": "dialog",
-      "source": "ダニエル「オイラ何かあやしいって\n前から思ってたんだよな」",
+      "source": "ダニエル「オイラ何かあやしいって\n<FFD4>前から思ってたんだよな」",
       "text": null
     },
     {
       "offset": "0x1778A",
       "type": "dialog",
-      "source": "ダニエル「昔の女王様なら、\nこんな迷宮や魔物なんか\n放っておきやしないんだ」",
+      "source": "ダニエル「昔の女王様なら、\n<FFD4>こんな迷宮や魔物なんか\n<FFD4>放っておきやしないんだ」",
       "text": null
     },
     {
       "offset": "0x177DC",
       "type": "dialog",
-      "source": "ダニエル「自ら先頭に立って\nぶっ壊していたはずだよ」",
+      "source": "ダニエル「自ら先頭に立って\n<FFD4>ぶっ壊していたはずだよ」",
       "text": null
     },
     {
       "offset": "0x17814",
       "type": "dialog",
-      "source": "ダニエル「なのに今は盗賊顔負けで\n迷宮探索に熱を上げて\nいるもんね」",
+      "source": "ダニエル「なのに今は盗賊顔負けで\n<FFD4>迷宮探索に熱を上げて\n<FFD4>いるもんね」",
       "text": null
     },
     {
       "offset": "0x1785E",
       "type": "dialog",
-      "source": "ダニエル「そんなのどう考えても\n別人としか思えないよ」",
+      "source": "ダニエル「そんなのどう考えても\n<FFD4>別人としか思えないよ」",
       "text": null
     },
     {
       "offset": "0x17898",
       "type": "dialog",
-      "source": "オルフェ「わたしもユージン卿の意見に\n賛成だな」",
+      "source": "オルフェ「わたしもユージン卿の意見に\n<FFD4>賛成だな」",
       "text": null
     },
     {
       "offset": "0x178CC",
       "type": "dialog",
-      "source": "オルフェ「あの閃光より王室の行動には\n奇妙な点が多い」",
+      "source": "オルフェ「あの閃光より王室の行動には\n<FFD4>奇妙な点が多い」",
       "text": null
     },
     {
       "offset": "0x17906",
       "type": "dialog",
-      "source": "オルフェ「決して国民の悲痛なる声に\n耳を傾ける事なく」",
+      "source": "オルフェ「決して国民の悲痛なる声に\n<FFD4>耳を傾ける事なく」",
       "text": null
     },
     {
       "offset": "0x17940",
       "type": "dialog",
-      "source": "オルフェ「街の復旧をする様子もないし\n被災者の援助もしない」",
+      "source": "オルフェ「街の復旧をする様子もないし\n<FFD4>被災者の援助もしない」",
       "text": null
     },
     {
       "offset": "0x17980",
       "type": "dialog",
-      "source": "オルフェ「挙句の果てには冒険者を集め\n迷宮探索を奨励する始末」",
+      "source": "オルフェ「挙句の果てには冒険者を集め\n<FFD4>迷宮探索を奨励する始末」",
       "text": null
     },
     {
       "offset": "0x179C2",
       "type": "dialog",
-      "source": "オルフェ「迷宮を存続させなければならぬ\n謎があるのだと考えるほうが\n自然ではないか？」",
+      "source": "オルフェ「迷宮を存続させなければならぬ\n<FFD4>謎があるのだと考えるほうが\n<FFD4>自然ではないか？」",
       "text": null
     },
     {
       "offset": "0x17A1E",
       "type": "dialog",
-      "source": "アオバ「確かにレドゥアの行為には、\n不可解な点が山ほど\nありますが」",
+      "source": "アオバ「確かにレドゥアの行為には、\n<FFD3>不可解な点が山ほど\n<FFD3>ありますが」",
       "text": null
     },
     {
       "offset": "0x17A68",
       "type": "dialog",
-      "source": "アオバ「その理由は我々が考えるより、\nもっと単純なものかもしれま\nせんよ」",
+      "source": "アオバ「その理由は我々が考えるより、\n<FFD3>もっと単純なものかもしれま\n<FFD3>せんよ」",
       "text": null
     },
     {
       "offset": "0x17AB8",
       "type": "dialog",
-      "source": "アオバ「冒険者の間で広まっている\n馬鹿な噂は知ってますね？」",
+      "source": "アオバ「冒険者の間で広まっている\n<FFD3>馬鹿な噂は知ってますね？」",
       "text": null
     },
     {
       "offset": "0x17AF8",
       "type": "dialog",
-      "source": "アオバ「この迷宮深くに眠る魔神の\n宝なるものの噂です」",
+      "source": "アオバ「この迷宮深くに眠る魔神の\n<FFD3>宝なるものの噂です」",
       "text": null
     },
     {
       "offset": "0x17B32",
       "type": "dialog",
-      "source": "アオバ「奴はそれを手に入れようと\nしているんじゃ？」",
+      "source": "アオバ「奴はそれを手に入れようと\n<FFD3>しているんじゃ？」",
       "text": null
     },
     {
       "offset": "0x17B6A",
       "type": "dialog",
-      "source": "アオバ「賢い者が賢い行動をする\nとは限りませんからね」",
+      "source": "アオバ「賢い者が賢い行動をする\n<FFD3>とは限りませんからね」",
       "text": null
     },
     {
       "offset": "0x17BA4",
       "type": "dialog",
-      "source": "アオバ「あながちそういった\nものかもしれませんよ」",
+      "source": "アオバ「あながちそういった\n<FFD3>ものかもしれませんよ」",
       "text": null
     },
     {
       "offset": "0x17BDA",
       "type": "dialog",
-      "source": "ヒナ「クイーンガード長が\n禁じられた秘術にたよる」",
+      "source": "ヒナ「クイーンガード長が\n<FFD2>禁じられた秘術にたよる」",
       "text": null
     },
     {
       "offset": "0x17C10",
       "type": "dialog",
-      "source": "ヒナ「それが意味する物は\nなんなのでしょう………」",
+      "source": "ヒナ「それが意味する物は\n<FFD2>なんなのでしょう………」",
       "text": null
     },
     {
       "offset": "0x17C46",
       "type": "dialog",
-      "source": "ヒナ「真実は、いつも彼方にあって\n容易に見えはしないけれど」",
+      "source": "ヒナ「真実は、いつも彼方にあって\n<FFD2>容易に見えはしないけれど」",
       "text": null
     },
     {
       "offset": "0x17C86",
       "type": "dialog",
-      "source": "ヒナ「この事は、ことさら深い闇に\n包まれている…………」",
+      "source": "ヒナ「この事は、ことさら深い闇に\n<FFD2>包まれている…………」",
       "text": null
     },
     {
       "offset": "0x17CC2",
       "type": "dialog",
-      "source": "ヒナ「その闇に触れた者は、\nきっと無事ではすまない。\nそんな不吉な予感がします」",
+      "source": "ヒナ「その闇に触れた者は、\n<FFD2>きっと無事ではすまない。\n<FFD2>そんな不吉な予感がします」",
       "text": null
     },
     {
       "offset": "0x17D18",
       "type": "dialog",
-      "source": "ヒナ「この迷宮は本当に………\n深い闇に満たされている\nのですね」",
+      "source": "ヒナ「この迷宮は本当に………\n<FFD2>深い闇に満たされている\n<FFD2>のですね」",
       "text": null
     },
     {
@@ -6486,31 +6486,31 @@
     {
       "offset": "0x17D7E",
       "type": "dialog",
-      "source": "ミシェル「レドゥアの行為が狂って\nいるとしても」",
+      "source": "ミシェル「レドゥアの行為が狂って\n<FFD4>いるとしても」",
       "text": null
     },
     {
       "offset": "0x17DB2",
       "type": "dialog",
-      "source": "ミシェル「完全なる絶望が決して人を\n狂わせる事はないと\n思うんです」",
+      "source": "ミシェル「完全なる絶望が決して人を\n<FFD4>狂わせる事はないと\n<FFD4>思うんです」",
       "text": null
     },
     {
       "offset": "0x17DFC",
       "type": "dialog",
-      "source": "ミシェル「レドゥアは絶望の中にある\n微かだけど、何か一つの\n希望のようなもの…」",
+      "source": "ミシェル「レドゥアは絶望の中にある\n<FFD4>微かだけど、何か一つの\n<FFD4>希望のようなもの…」",
       "text": null
     },
     {
       "offset": "0x17E52",
       "type": "dialog",
-      "source": "ミシェル「それにしがみつこうとして、\nああなっているんじゃない\nでしょうか」",
+      "source": "ミシェル「それにしがみつこうとして、\n<FFD4>ああなっているんじゃない\n<FFD4>でしょうか」",
       "text": null
     },
     {
       "offset": "0x17EA4",
       "type": "dialog",
-      "source": "ミシェル「それがユージン卿の言う\n女王様の行方なのかもしれ\nませんが」",
+      "source": "ミシェル「それがユージン卿の言う\n<FFD4>女王様の行方なのかもしれ\n<FFD4>ませんが」",
       "text": null
     },
     {
@@ -6528,7 +6528,7 @@
     {
       "offset": "0x17F6A",
       "type": "center",
-      "source": "「過去とは常にはかない物だ…」",
+      "source": "<STYLE:2>「過去とは常にはかない物だ…」",
       "text": null
     },
     {
@@ -6546,19 +6546,19 @@
     {
       "offset": "0x17FF6",
       "type": "dialog",
-      "source": "カザ「我々は昔から聞かされてきた。\n人間や他の種族共の忌まわしき\n所業の事を」",
+      "source": "カザ「我々は昔から聞かされてきた。\n<FFD2>人間や他の種族共の忌まわしき\n<FFD2>所業の事を」",
       "text": null
     },
     {
       "offset": "0x1804A",
       "type": "dialog",
-      "source": "カザ「確かにそれは間違いではない。\nだが血と呪いに満ちた歴史は、\n我々エルフもまた同じ」",
+      "source": "カザ「確かにそれは間違いではない。\n<FFD2>だが血と呪いに満ちた歴史は、\n<FFD2>我々エルフもまた同じ」",
       "text": null
     },
     {
       "offset": "0x180A8",
       "type": "dialog",
-      "source": "カザ「古き時代、我々もまた呪われし\n力をもって血を流し合ったのだ」",
+      "source": "カザ「古き時代、我々もまた呪われし\n<FFD2>力をもって血を流し合ったのだ」",
       "text": null
     },
     {
@@ -6576,43 +6576,43 @@
     {
       "offset": "0x1813C",
       "type": "dialog",
-      "source": "カザ「この風景はドゥーハンが誕生する\n遥か昔、我々エルフがその地に作っ\nたとされる失われた都の一部」",
+      "source": "カザ「この風景はドゥーハンが誕生する\n<FFD2>遥か昔、我々エルフがその地に作っ\n<FFD2>たとされる失われた都の一部」",
       "text": null
     },
     {
       "offset": "0x181A6",
       "type": "dialog",
-      "source": "カザ「かつて我々エルフ族は巨大なる\n魔法文明の元、あらゆる幸福を\n享受していた」",
+      "source": "カザ「かつて我々エルフ族は巨大なる\n<FFD2>魔法文明の元、あらゆる幸福を\n<FFD2>享受していた」",
       "text": null
     },
     {
       "offset": "0x181FC",
       "type": "dialog",
-      "source": "カザ「そこでは、あらゆる苦悩から\n解き放たれ、全ての者の心に\n平安があった」",
+      "source": "カザ「そこでは、あらゆる苦悩から\n<FFD2>解き放たれ、全ての者の心に\n<FFD2>平安があった」",
       "text": null
     },
     {
       "offset": "0x1824E",
       "type": "dialog",
-      "source": "カザ「だが古き言い伝えでは…\nたった一人の憎しみが発端で、\nその楽園は滅んだらしい」",
+      "source": "カザ「だが古き言い伝えでは…\n<FFD2>たった一人の憎しみが発端で、\n<FFD2>その楽園は滅んだらしい」",
       "text": null
     },
     {
       "offset": "0x182A8",
       "type": "dialog",
-      "source": "カザ「最初は小さな種だった。\n誰もが気にしないほどの小さい\nからし種程度の…」",
+      "source": "カザ「最初は小さな種だった。\n<FFD2>誰もが気にしないほどの小さい\n<FFD2>からし種程度の…」",
       "text": null
     },
     {
       "offset": "0x182FC",
       "type": "dialog",
-      "source": "カザ「しかし憎しみという闇の心は\n甘美な味を持っていた」",
+      "source": "カザ「しかし憎しみという闇の心は\n<FFD2>甘美な味を持っていた」",
       "text": null
     },
     {
       "offset": "0x18338",
       "type": "dialog",
-      "source": "カザ「心の暗黒面に初心だった彼らに\n闇の心が広がるのは、さほど時間は\nかからなかったに違いない」",
+      "source": "カザ「心の暗黒面に初心だった彼らに\n<FFD2>闇の心が広がるのは、さほど時間は\n<FFD2>かからなかったに違いない」",
       "text": null
     },
     {
@@ -6630,7 +6630,7 @@
     {
       "offset": "0x18416",
       "type": "dialog",
-      "source": "カザ「憎しみが憎しみを生み、\nその種を刈り取らない限り\n闇は大きくなっていく事を」",
+      "source": "カザ「憎しみが憎しみを生み、\n<FFD2>その種を刈り取らない限り\n<FFD2>闇は大きくなっていく事を」",
       "text": null
     },
     {
@@ -6654,7 +6654,7 @@
     {
       "offset": "0x184C6",
       "type": "dialog",
-      "source": "カザ「全てを失った我々には、\n憎む事しか何も残されて\nいないのだよ…」",
+      "source": "カザ「全てを失った我々には、\n<FFD2>憎む事しか何も残されて\n<FFD2>いないのだよ…」",
       "text": null
     },
     {
@@ -6666,37 +6666,37 @@
     {
       "offset": "0x1852E",
       "type": "dialog",
-      "source": "ミシェル「彼もわたしと同じ…、\n闇に追われているんです」",
+      "source": "ミシェル「彼もわたしと同じ…、\n<FFD4>闇に追われているんです」",
       "text": null
     },
     {
       "offset": "0x1856A",
       "type": "dialog",
-      "source": "ミシェル「忍び寄る虚無から…\n失った者の声無き叫びから」",
+      "source": "ミシェル「忍び寄る虚無から…\n<FFD4>失った者の声無き叫びから」",
       "text": null
     },
     {
       "offset": "0x185A6",
       "type": "dialog",
-      "source": "ミシェル「彼はそれらから逃れるために\n憎しみ続ける」",
+      "source": "ミシェル「彼はそれらから逃れるために\n<FFD4>憎しみ続ける」",
       "text": null
     },
     {
       "offset": "0x185DE",
       "type": "dialog",
-      "source": "ミシェル「きっと彼も、誰かに言って\nもらいたいんです」",
+      "source": "ミシェル「きっと彼も、誰かに言って\n<FFD4>もらいたいんです」",
       "text": null
     },
     {
       "offset": "0x18618",
       "type": "dialog",
-      "source": "ミシェル「これまで生きてきた事は\n意味があったと」",
+      "source": "ミシェル「これまで生きてきた事は\n<FFD4>意味があったと」",
       "text": null
     },
     {
       "offset": "0x1864E",
       "type": "dialog",
-      "source": "ミシェル「美しき記憶が幻でなく、\nそれこそ真実であったと」",
+      "source": "ミシェル「美しき記憶が幻でなく、\n<FFD4>それこそ真実であったと」",
       "text": null
     },
     {
@@ -6708,7 +6708,7 @@
     {
       "offset": "0x186A6",
       "type": "dialog",
-      "source": "ミシェル「閃光というわたし達の遺産が\nもたらした悲劇の結末を、\n見届けさせてください」",
+      "source": "ミシェル「閃光というわたし達の遺産が\n<FFD4>もたらした悲劇の結末を、\n<FFD4>見届けさせてください」",
       "text": null
     },
     {
@@ -6720,13 +6720,13 @@
     {
       "offset": "0x18732",
       "type": "center",
-      "source": "マユを拾いますか？\n\nは い\nいいえ\n",
+      "source": "マユを拾いますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
       "offset": "0x1875E",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -6756,13 +6756,13 @@
     {
       "offset": "0x18824",
       "type": "center",
-      "source": "司教の腕輪を拾いますか？\n\nは い\nいいえ\n",
+      "source": "司教の腕輪を拾いますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
       "offset": "0x18856",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -6798,13 +6798,13 @@
     {
       "offset": "0x18996",
       "type": "center",
-      "source": "僧侶の髪を拾いますか？\n\nは い\nいいえ\n",
+      "source": "僧侶の髪を拾いますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
       "offset": "0x189C6",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
@@ -6834,13 +6834,13 @@
     {
       "offset": "0x18A8A",
       "type": "center",
-      "source": "魔物の卵を拾いますか？\n\nは い\nいいえ\n",
+      "source": "魔物の卵を拾いますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {
       "offset": "0x18ABA",
       "type": "center",
-      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\nは い\nいいえ\n",
+      "source": "持ち物がいっぱいです。\n何か捨てますか？\n\n<FFC0>は い\n<FFC1>いいえ\n",
       "text": null
     },
     {

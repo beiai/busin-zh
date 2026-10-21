@@ -30,6 +30,9 @@ CONTROL_NAMES = {
 }
 TAGS = {name[1:-1]: code for code, name in CONTROL_NAMES.items()}
 # Line-leading choice marks, indents and styles. Kept on the same line index.
+CHOICE_MARKS = range(0xFFC0, 0xFFD0)
+INDENTS = range(0xFFD0, 0xFFE0)
+STYLES = range(0xFFE0, 0xFFE8)
 LAYOUT = range(0xFFC0, 0xFFE8)
 CENTER_LINE = 19  # centered scene text; a full line on the disc is 19 cells
 NARRATION_LINE = 21  # subtitles, type == "subtitle"
@@ -119,10 +122,10 @@ def split_lines(words: list[int]) -> list[list[int]]:
 
 
 def line_prose(words: list[int], align: str = "left") -> tuple[list[int], list[int], str]:
-    """Split a line into leading layout codes, the cells after them, and their reading.
+    """Split a line into leading layout codes, the cells after them, and their source reading.
 
-    Glyph 0 between two glyphs is a space. A centered line also keeps a leading run of blanks.
-    Left-aligned leading blanks and every trailing blank stay out of the reading.
+    Layout codes and visible leading blanks stay in the reading so source files show the layout.
+    Glyph 0 between two glyphs is a space. Trailing blanks stay out of the reading.
     """
     if align not in ("left", "center"):
         raise ValueError(f"unknown align {align}")
@@ -130,7 +133,7 @@ def line_prose(words: list[int], align: str = "left") -> tuple[list[int], list[i
     while body and body[0] in LAYOUT:
         prefix.append(body.pop(0))
     glyphs = [index for index, word in enumerate(body) if 0 < word < TEXT_LIMIT]
-    chars = []
+    chars = [decode_token(word) for word in prefix]
     if not glyphs:
         for word in body:
             if word != 0:
@@ -139,7 +142,7 @@ def line_prose(words: list[int], align: str = "left") -> tuple[list[int], list[i
     first, last = glyphs[0], glyphs[-1]
     for index, word in enumerate(body):
         if word == 0:
-            if first < index < last or (align == "center" and index < first):
+            if index < last:
                 chars.append(" ")
             continue
         if word >= TEXT_LIMIT:
@@ -170,13 +173,28 @@ def line_cells(line: str) -> int:
     return sum(1 for _tag, char in split_tags(line) if char)
 
 
+def body_cells(line: str) -> int:
+    """Visible cells after the leading layout prefix, which the dialog limit already reserves."""
+    parts = split_tags(line)
+    start = 0
+    while start < len(parts):
+        tag, char = parts[start]
+        if tag:
+            if _tag_code(tag) not in LAYOUT:
+                break
+        elif char not in " \u3000":
+            break
+        start += 1
+    return sum(1 for _tag, char in parts[start:] if char)
+
+
 def indent_cells(prefix: list[int]) -> int:
     """Columns taken before the first glyph. Blanks take one; FFDn takes n-0xD0+1."""
     cells = 0
     for word in prefix:
-        if word == 0:
+        if word in (0, PAD):
             cells += 1
-        elif 0xFFD0 <= word <= 0xFFDF:
+        elif word in INDENTS:
             cells += word - 0xFFD0 + 1
     return cells
 
@@ -192,13 +210,38 @@ def dialog_limits(original: list[int], align: str, count: int) -> list[int]:
     return [dialog_line_limit(parts[index][0] if index < len(parts) else []) for index in range(count)]
 
 
+def translated_dialog_limits(text: list[str]) -> list[int]:
+    """Per translated line, using only the layout written in that translation line."""
+    return [dialog_line_limit(_text_layout_prefix(line)) for line in text]
+
+
+def _tag_code(tag: str) -> int | None:
+    code = TAGS.get(tag)
+    if code is None and re.fullmatch(r"[0-9A-F]{4}", tag) and int(tag, 16) >= TEXT_LIMIT:
+        code = int(tag, 16)
+    return code
+
+
+def _text_layout_prefix(text: str) -> list[int]:
+    prefix = []
+    for tag, char in split_tags(text):
+        if char:
+            if char not in " \u3000":
+                break
+            prefix.append(PAD)
+            continue
+        code = _tag_code(tag)
+        if code not in LAYOUT:
+            break
+        prefix.append(code)
+    return prefix
+
+
 def parse_line(text: str, token_of) -> list[int]:
     tokens = []
     for tag, char in split_tags(text):
         if tag:
-            code = TAGS.get(tag)
-            if code is None and re.fullmatch(r"[0-9A-F]{4}", tag) and int(tag, 16) >= TEXT_LIMIT:
-                code = int(tag, 16)
+            code = _tag_code(tag)
             if code is None:
                 raise ValueError(f"unknown control <{tag}>")
             tokens.append(code)
@@ -216,6 +259,18 @@ def _line_parts(original: list[int], align: str) -> list[tuple[list[int], list[i
                 prefix.append(body.pop(0))
         parts.append((prefix, body))
     return parts
+
+
+def _translated_line_parts(words: list[int]) -> tuple[list[int], list[int]]:
+    prefix = []
+    body = list(words)
+    while body and (body[0] in LAYOUT or body[0] == PAD):
+        prefix.append(body.pop(0))
+    return prefix, body
+
+
+def _choice_marks(prefix: list[int]) -> list[int]:
+    return [word for word in prefix if word in CHOICE_MARKS]
 
 
 def _controls(words: list[int]) -> list[int]:
@@ -241,40 +296,47 @@ def encode_message(original: list[int], text: list[str], align: str, token_of, *
     if not text:
         raise ValueError("translation has no lines")
     parts = _line_parts(original, align)
-    encoded = [parse_line(line, token_of) for line in text]
+    translated = []
+    for index, line_text in enumerate(text):
+        prefix, body = _translated_line_parts(parse_line(line_text, token_of))
+        original_prefix, _original_body = parts[index] if index < len(parts) else ([], [])
+        # Choice marks select menu rows; layout control must not change their mapping.
+        if _choice_marks(prefix) != _choice_marks(original_prefix):
+            raise ValueError("translated layout changed a choice mark")
+        translated.append((prefix, body))
     # Same breaks and per-line fit: pad each line so a fixed-length translation stays byte-identical.
-    if len(encoded) == len(parts) and all(
-        _controls(line) == _controls(body) and len(line) <= len(body)
-        for line, (_prefix, body) in zip(encoded, parts)
+    if len(translated) == len(parts) and all(
+        _controls(body) == _controls(original_body)
+        and len(prefix) + len(body) <= len(original_prefix) + len(original_body)
+        for (prefix, body), (original_prefix, original_body) in zip(translated, parts)
     ):
         words = []
-        for index, ((prefix, body), line) in enumerate(zip(parts, encoded)):
-            fill = (len(body) - len(line)) if pad else 0
+        for index, ((prefix, body), (original_prefix, original_body)) in enumerate(zip(translated, parts)):
+            fill = len(original_prefix) + len(original_body) - len(prefix) - len(body) if pad else 0
             if index:
                 words.append(0xFFFE)
-            words.extend(_place_line(prefix, line, fill))
+            words.extend(_place_line(prefix, body, fill))
         if words.count(0xFFFE) != original.count(0xFFFE) or (pad and len(words) != len(original)):
             raise ValueError("translation moved a control code")
         if not pad and FILL in words:
             raise ValueError("compact translation contains padding")
         return words
     disc = [word for _prefix, body in parts for word in _controls(body)]
-    if [word for line in encoded for word in _controls(line)] != disc:
+    if [word for _prefix, body in translated for word in _controls(body)] != disc:
         raise ValueError("controls differ from the disc")
     original_len = len(original)
-    budget = original_len - sum(len(prefix) for prefix, _body in parts[:len(encoded)])
-    need = sum(len(line) for line in encoded) + len(encoded) - 1
+    budget = original_len - sum(len(prefix) for prefix, _body in translated)
+    need = sum(len(body) for _prefix, body in translated) + len(translated) - 1
     if fit and need > budget:
         raise ValueError(f"message needs {need} words, the disc message has {budget}")
     slack = (budget - need) if pad else 0
     words = []
-    for index, line in enumerate(encoded):
-        prefix = parts[index][0] if index < len(parts) else []
+    for index, (prefix, body) in enumerate(translated):
         # Leftover wait sits on the last line; borrowed cells are real glyphs.
-        fill = slack if index == len(encoded) - 1 else 0
+        fill = slack if index == len(translated) - 1 else 0
         if index:
             words.append(0xFFFE)
-        words.extend(_place_line(prefix, line, fill))
+        words.extend(_place_line(prefix, body, fill))
     if pad and len(words) != original_len:
         raise ValueError("translation moved a control code")
     if not pad and (FILL in words or (fit and len(words) > original_len)):
@@ -681,10 +743,10 @@ def check_lines(original: list[int], text: list[str], align: str, kind: str) -> 
                 if width > limit:
                     raise ValueError(f"{kind} line is {width} characters, limit {limit}: {part}")
     elif kind == "dialog":
-        for line, limit in zip(text, dialog_limits(original, align, len(text))):
+        for line, limit in zip(text, translated_dialog_limits(text)):
             for index, part in enumerate(_wait_parts(line)):
                 cap = limit if index == 0 else DIALOG_LINE
-                width = line_cells(part)
+                width = body_cells(part)
                 if width > cap:
                     raise ValueError(f"dialog line is {width} characters, limit {cap}: {part}")
     else:
@@ -749,7 +811,7 @@ def compact_chunk(data: bytes, cursor: int, records: list[dict], align: str, tok
 def render_dialogue(words):
     text = []
     for word in words:
-        if word == 0xFFFF or 0xFFD0 <= word <= 0xFFD9:
+        if word == 0xFFFF or word in INDENTS:
             continue
         if word == 0xFFFE:
             text.append("\n")
@@ -1160,9 +1222,9 @@ def self_test() -> None:
             raise AssertionError("invalid counted message was accepted")
 
     source = [0xFFD2, 0x003F, 0x0040, 0x0041, 0xFFFE, 0x0042, 0x0000]
-    assert message_prose(source) == ["あいう", "え"]
+    assert message_prose(source) == ["<FFD2>あいう", "え"]
     spaced = [0x003F, 0x0000, 0x0040, 0x0000, 0xFFFE, 0x0000, 0x0000, 0x0041]
-    assert message_prose(spaced) == ["あ い", "う"]
+    assert message_prose(spaced) == ["あ い", "  う"]
     assert message_prose(spaced, "center") == ["あ い", "  う"]
     assert message_prose([0, 0, 0], "center") == [""]
     check_lines([0x003F], ["甲" * 19], "center", "center")
@@ -1177,37 +1239,48 @@ def self_test() -> None:
         else:
             raise AssertionError("center line limit accepted an overlong line")
     assert line_cells("近乎疯狂的笑声在杜汉城中回荡开来。<BREAK>") == 17
+    assert body_cells("    <FB03>请多关照") == 4
+    assert body_cells("<FFD4>我无意舍弃」") == 6
     assert line_cells("男人像是受了伤，死死攥着剑，撑住衰弱的身体。") == 22
     assert indent_cells([0xFFD2, 0x003F]) == 3
     assert indent_cells([0xFFD4]) == 5
-    assert indent_cells([0, 0, 0xFFE2]) == 2
+    assert indent_cells([0, PAD, 0xFFE2]) == 2
     assert dialog_line_limit([]) == 19
     assert dialog_line_limit([0xFFD2]) == 16
     assert dialog_line_limit([0xFFD4]) == 14
     assert dialog_limits([0x003F, 0xFFFE, 0xFFD2, 0x0042, 0xFFFE, 0xFFD4, 0x0043], "left", 3) == [19, 16, 14]
+    assert translated_dialog_limits(["甲", "乙"]) == [19, 19]
+    assert translated_dialog_limits(["甲", "<FFD6>乙"]) == [19, 12]
+    assert translated_dialog_limits(["甲", "  乙"]) == [19, 17]
     tokens = {"甲": 0x4001, "乙": 0x4002}.__getitem__
     for align in ("center", "left"):
-        assert encode_message(source, ["甲", "乙"], align, tokens) == [0xFFD2, 0x4001, FILL, FILL, 0xFFFE, 0x4002, FILL]
-        assert encode_message(source, ["甲", "乙"], align, tokens, pad=False) == [0xFFD2, 0x4001, 0xFFFE, 0x4002]
-    assert encode_message([0, 0x003F, 0x0040, 0x0041], ["甲"], "left", tokens) == [0, 0x4001, FILL, FILL]
+        assert encode_message(source, ["甲", "乙"], align, tokens) == [0x4001, FILL, FILL, FILL, 0xFFFE, 0x4002, FILL]
+        assert encode_message(source, ["甲", "乙"], align, tokens, pad=False) == [0x4001, 0xFFFE, 0x4002]
+    assert encode_message([0, 0x003F, 0x0040, 0x0041], ["甲"], "left", tokens) == [0x4001, FILL, FILL, FILL]
     assert encode_message([0x003F] * 4, ["甲　乙"], "center", tokens) == [0x4001, PAD, 0x4002, FILL]
     assert encode_message([0x003F] * 6 + [0xFFFD], ["甲<BREAK>"], "left", tokens) == [0x4001] + [FILL] * 5 + [0xFFFD]
     assert encode_message([0x003F] * 3 + [0xFFF9], ["甲<PAGE>"], "left", tokens) == [0x4001, FILL, FILL, 0xFFF9]
     inline = [0xFFE2, 0x0000, 0x003F, 0xFB01, 0x0040, 0xFB00, 0x0041, 0xFFFD]
-    assert message_prose(inline) == ["あ<FB01>い<FB00>う<BREAK>"]
-    assert encode_message(inline, ["<FB01>甲<FB00>　乙<BREAK>"], "left", tokens) == [0xFFE2, 0, 0xFB01, 0x4001, 0xFB00, PAD, 0x4002, 0xFFFD]
-    assert encode_message(source, ["甲甲甲甲", "乙"], "left", tokens) == [0xFFD2, 0x4001, 0x4001, 0x4001, 0x4001, 0xFFFE, 0x4002]
-    assert encode_message(source, ["甲", "乙乙乙"], "left", tokens) == [0xFFD2, 0x4001, 0xFFFE, 0x4002, 0x4002, 0x4002, FILL]
-    assert encode_message(source, ["甲", "乙乙乙"], "left", tokens, pad=False) == [0xFFD2, 0x4001, 0xFFFE, 0x4002, 0x4002, 0x4002]
-    assert encode_message(source, ["甲乙乙乙乙乙"], "center", tokens) == [0xFFD2, 0x4001, 0x4002, 0x4002, 0x4002, 0x4002, 0x4002]
-    assert encode_message(source, ["甲", "乙", "甲"], "left", tokens) == [0xFFD2, 0x4001, 0xFFFE, 0x4002, 0xFFFE, 0x4001, FILL]
+    assert message_prose(inline) == ["<STYLE:2> あ<FB01>い<FB00>う<BREAK>"]
+    assert encode_message(inline, ["<STYLE:2> <FB01>甲<FB00>　乙<BREAK>"], "left", tokens) == [0xFFE2, PAD, 0xFB01, 0x4001, 0xFB00, PAD, 0x4002, 0xFFFD]
+    assert encode_message(source, ["甲甲甲甲", "乙"], "left", tokens) == [0x4001, 0x4001, 0x4001, 0x4001, 0xFFFE, 0x4002, FILL]
+    assert encode_message(source, ["甲", "乙乙乙"], "left", tokens) == [0x4001, 0xFFFE, 0x4002, 0x4002, 0x4002, FILL, FILL]
+    assert encode_message(source, ["甲", "乙乙乙"], "left", tokens, pad=False) == [0x4001, 0xFFFE, 0x4002, 0x4002, 0x4002]
+    assert encode_message(source, ["甲乙乙乙乙乙"], "center", tokens) == [0x4001, 0x4002, 0x4002, 0x4002, 0x4002, 0x4002, FILL]
+    layout = [0x003F, 0xFFFE, 0xFFD4, 0x0040]
+    assert encode_message(layout, ["甲", "乙"], "left", tokens) == [0x4001, 0xFFFE, 0x4002, FILL]
+    assert encode_message(layout, ["甲", "<FFD0>乙"], "left", tokens) == [0x4001, 0xFFFE, 0xFFD0, 0x4002]
+    style_layout = [0x003F, 0xFFFE, 0xFFE2, 0xFFD4, 0x0040]
+    assert encode_message(style_layout, ["甲", "<STYLE:3><FFD0>乙"], "left", tokens) == [0x4001, 0xFFFE, 0xFFE3, 0xFFD0, 0x4002]
+    assert encode_message(source, ["甲", "乙", "甲"], "left", tokens) == [0x4001, 0xFFFE, 0x4002, 0xFFFE, 0x4001, FILL, FILL]
     moved = [0x003F, 0xFB01, 0x0040, 0xFFFE, 0xFB00, 0x0041]
     assert encode_message(moved, ["<FB01><FB00>甲", "乙"], "left", tokens) == [0xFB01, 0xFB00, 0x4001, 0xFFFE, 0x4002, FILL]
-    assert encode_message([0xFFD2, 0x003F, 0xFFFE, 0xFFD3, 0x0040], ["甲乙乙"], "left", tokens) == [0xFFD2, 0x4001, 0x4002, 0x4002, FILL]
+    assert encode_message([0xFFD2, 0x003F, 0xFFFE, 0xFFD3, 0x0040], ["甲乙乙"], "left", tokens) == [0x4001, 0x4002, 0x4002, FILL, FILL]
     for original, text, align in (
         (source, ["甲甲甲甲甲", "乙乙"], "left"), (source, [], "left"), (source, ["甲", "乙"], "right"),
         (inline, ["甲乙<BREAK>"], "left"), (inline, ["<FB00>甲<FB01>乙<BREAK>"], "left"),
         (inline, ["<FB01>甲<FB00>乙<BREAK><XYZ>"], "left"), (moved, ["<FB00><FB01>甲", "乙"], "left"),
+        ([0xFFC0, 0x003F], ["甲"], "left"), ([0xFFC0, 0x003F], ["<FFC1>甲"], "left"),
     ):
         try:
             encode_message(original, text, align, tokens)
