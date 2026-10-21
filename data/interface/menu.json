@@ -12,22 +12,22 @@
   {
     "id": "02 43DD28",
     "source": " 名前の変更",
-    "text": " 更改姓名"
+    "text": "更改姓名"
   },
   {
     "id": "03 43DD38",
     "source": " 転{3}職",
-    "text": " 转{3}职"
+    "text": "转职"
   },
   {
     "id": "04 43DD48",
     "source": " 台帳を見る",
-    "text": " 查看名册"
+    "text": "查看名册"
   },
   {
     "id": "05 43DD58",
     "source": " 戻{3}る",
-    "text": " 返{3}回"
+    "text": "返回"
   },
   {
     "id": "06 43DD68",
@@ -642,17 +642,17 @@
   {
     "id": "80 43E610",
     "source": "Original",
-    "text": "原始"
+    "text": "Original"
   },
   {
     "id": "81 43E628",
     "source": "Made",
-    "text": "自建"
+    "text": "Made"
   },
   {
     "id": "82 43E638",
     "source": "Character",
-    "text": "角色"
+    "text": "Character"
   },
   {
     "id": "83 43E650",
@@ -707,12 +707,12 @@
   {
     "id": "8D 43E760",
     "source": "O N",
-    "text": "开"
+    "text": "O N"
   },
   {
     "id": "8E 43E768",
     "source": "OFF",
-    "text": "关"
+    "text": "OFF"
   },
   {
     "id": "8F 43E770",
@@ -782,7 +782,7 @@
   {
     "id": "9C 43E8D0",
     "source": "NOTHING",
-    "text": "无"
+    "text": "NOTHING"
   },
   {
     "id": "9D 43E8E0",
@@ -827,7 +827,7 @@
   {
     "id": "A5 43E978",
     "source": "MASTER",
-    "text": "精通"
+    "text": "MASTER"
   },
   {
     "id": "A6 43E988",
