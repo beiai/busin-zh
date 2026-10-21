@@ -11,7 +11,7 @@ def test_current_image_has_no_undeclared_changes(tmp_path):
     result = audit_image(output_path=tmp_path / "audit.json")
     assert result["ok"]
     assert result["sectors"]["prefix_changed"] == 545
-    assert result["sectors"]["moved_tail_changed"] == 116
+    assert result["sectors"]["moved_tail_changed"] == 120
     assert result["sectors"]["appended"] == 6014
     assert result["classified"]["moved_tail"]["elf.picture_rects"] == 1
     assert result["classified"]["prefix"]["picture.part"] == 179

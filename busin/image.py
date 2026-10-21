@@ -15,6 +15,7 @@ from busin.font import (
 )
 from busin.patch import emu
 from busin.patch.ledger import PatchLedger
+from busin.patch.runtime_names_patch import elf_writes as runtime_name_elf_writes
 from busin.patch.ui_pages import PAGE_BYTES, PAGE_COUNT, UI_LBA, UI_SECTORS
 from busin.patch.font_paging import (
     BLOCK_FONT_LBA, BLOCK_FONT_SECTORS, BLOCK_SLOTS, CAVE, CHUNK_BYTES, CHUNK_SECTOR, CHUNK_SLOTS,
@@ -428,19 +429,21 @@ def main():
     from busin.patch.picture_rects import elf_writes as picture_elf_writes
     from busin.ui import load_images
     from busin.ui_font import FONTS, ui_font_pages
-    from busin.ui_text import check_ui_text_report, ui_patches
+    from busin.ui_text import check_ui_text_report, ui_patches_with_table
 
     patches = PatchLedger()
     for offset, data in elf_writes(words, labels).items():
         patches.add_elf("elf.font_paging", offset, data)
     elf = load_elf()
-    ui_writes, ui_extra, ui_text_info = ui_patches(elf)
+    ui_writes, ui_extra, ui_text_info, ui_table = ui_patches_with_table(elf)
     check_ui_text_report(ui_text_info)
     pages = ui_font_pages(ui_extra)
     for offset, data in ui_elf_writes(elf).items():
         patches.add_elf("elf.ui_page_loader", offset, data)
     for offset, data in ui_writes.items():
         patches.add_elf("elf.ui_text_and_layout", offset, data)
+    for offset, data in runtime_name_elf_writes(elf, ui_table).items():
+        patches.add_elf("elf.runtime_names", offset, data, "memory-card and party rebuild name replacement")
     for offset, data in picture_elf_writes(elf, load_images(DATA / "picture" / "images.json")).items():
         patches.add_elf("elf.picture_rects", offset, data, "switch reuses the translated page_switch suffix")
     for item in packs:

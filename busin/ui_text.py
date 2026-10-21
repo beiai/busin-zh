@@ -8,7 +8,7 @@ from busin.disasm import load_elf
 from busin.paths import BUILD, DATA
 from busin.runtime_names import load_names
 from busin.ui_layout import (
-    _RACE_LABELS, _RACE_X, _STAT_X, _CREATE_STAT_X, _POINT_STAT_X, _address,
+    _RACE_LABELS, _RACE_X, _STAT_X, _CREATE_STAT_X, _POINT_STAT_X, _GUILD_MENU_X, _address,
     _assign, _encode, _fit, _fit_grid, _glyphs, _label, _layout_line,
     _layout_ok, _slacks, _tokens, _visible, _wrap,
 )
@@ -40,6 +40,76 @@ PAPER_WIDTH = 19
 _GEAR_NUDGE = {0x584308 + index * 12 for index in range(8) if index != 4}
 
 STRING_TABLE = 0x43E9C8
+
+DIRECT_UI_TEXT = (
+    {
+        "section": "ask",
+        "id": "552430",
+        "va": 0x552430,
+        "source": "街に戻りますか?",
+        "max_cells": 11,
+        "next_data": 0x552448,
+        "guards": (
+            (0x388F54, 0x3C020055),
+            (0x388F5C, 0x84442430),
+            (0x388F60, 0x24522430),
+            (0x388F6C, 0x94462430),
+            (0x389014, 0x0C042252),
+            (0x3890F0, 0x0C042252),
+        ),
+    },
+    {
+        "section": "ask",
+        "id": "567F78",
+        "va": 0x567F78,
+        "source": "宝箱を開けますか?",
+        "max_cells": 11,
+        "next_data": 0x567F90,
+        "guards": (
+            (0x3C7E24, 0x86A37F78),
+            (0x3C7E38, 0x26A57F78),
+            (0x3C81E4, 0x0C042252),
+        ),
+    },
+    {
+        "section": "debug",
+        "id": "569910",
+        "va": 0x569910,
+        "source": "死神{2}ON",
+        "max_cells": 7,
+        "next_data": 0x569920,
+        "guards": (
+            (0x3DAAC0, 0x3C020057),
+            (0x3DAAC8, 0x24519910),
+            (0x3DAB10, 0x0C042252),
+        ),
+    },
+    {
+        "section": "debug",
+        "id": "569920",
+        "va": 0x569920,
+        "source": "死神{2}OFF",
+        "max_cells": 7,
+        "next_data": 0x569930,
+        "guards": (
+            (0x3DAACC, 0x3C020057),
+            (0x3DAAD0, 0x24519920),
+            (0x3DAB10, 0x0C042252),
+        ),
+    },
+    {
+        "section": "menu",
+        "id": "59EB38",
+        "va": 0x59EB38,
+        "source": "タイトルへ戻ります。よろしいですか?",
+        "max_cells": 19,
+        "next_data": 0x59EB60,
+        "guards": (
+            (0x3E1268, 0x2447EB38),
+            (0x3E1440, 0x0C042252),
+        ),
+    },
+)
 
 
 def ui_char(code: int) -> str | None:
@@ -190,6 +260,53 @@ def _ptr_until(elf, table, lo, hi, extra=()):
     return rows
 
 
+DIRECT_SECTIONS = ("menu", "debug", "ask")
+
+
+def _direct_ui_by_section():
+    out = {name: [] for name in DIRECT_SECTIONS}
+    for item in DIRECT_UI_TEXT:
+        out[item["section"]].append(item)
+    return out
+
+
+def _with_direct(section, rows, elf, direct_first=False):
+    direct = [
+        (item["id"], _read_ffff(elf, item["va"]))
+        for item in _direct_ui_by_section()[section]
+    ]
+    return direct + rows if direct_first else rows + direct
+
+
+def _mixed_slacks(rows):
+    direct = {item["id"]: item for item in DIRECT_UI_TEXT}
+    pointer_rows = [row for row in rows if " " in _label(row[0])]
+    slack = _slacks(pointer_rows)
+    for label, codes in rows:
+        ident = _label(label)
+        if ident in direct:
+            slack[_address(label)] = direct[ident]["max_cells"] - len(codes)
+    return slack
+
+
+def _mixed_slots(elf, rows, slash):
+    direct = {item["id"]: item for item in DIRECT_UI_TEXT}
+    pointer_rows = [row for row in rows if " " in _label(row[0])]
+    pointer_slots = {slot["id"]: slot for slot in _ptr_slots(pointer_rows, slash)}
+    slots = []
+    for label, codes in rows:
+        ident = _label(label)
+        if ident in direct:
+            item = direct[ident]
+            slots.append(_slot(
+                ident, item["va"], "direct", codes, len(codes),
+                slack=item["max_cells"] - len(codes), slash=slash, ffff=True,
+            ))
+        else:
+            slots.append(pointer_slots[ident])
+    return slots
+
+
 def _ability_rows(elf):
     # 0x2854A0 multiplies the index by 0x5A. The 15×3 window starts at 0x4C04C6.
     # Record 0 is the packed blurb at 0x4C04C4. Record 37 would cross 0x4C1200.
@@ -268,7 +385,7 @@ def collect(elf):
     places = [(slot["id"], slot["raw"]) for slot in _place_slots(elf)]
 
     return (
-        ("menu", "菜单", menu),
+        ("menu", "菜单", _with_direct("menu", menu, elf)),
         ("controller", "手柄", _pointers(elf, 0x43AED8, 0x43AE40, 0x43AEE0)),
         ("save", "存档提示", [
             (f"{index:02X} {ptr:06X}", _grid(elf, ptr, 28, 4))
@@ -300,7 +417,7 @@ def collect(elf):
         ("monsters", "怪物", monsters),
         ("blurbs", "效果说明", _blurb_readings(elf)),
         ("places", "迷宫、城镇、委托", places),
-        ("debug", "调试菜单", _pointers(elf, 0x487198, 0x486000, 0x488000)),
+        ("debug", "调试菜单", _with_direct("debug", _pointers(elf, 0x487198, 0x486000, 0x488000), elf)),
         ("race", "种族说明", _grid_rows(elf, 0x581AC0, 0xAA, 5, 12, 7, skip=1)),
         ("align", "阵营说明", _grid_rows(elf, 0x581E18, 0xAA, 3, 12, 7, skip=1)),
         ("class", "职业说明", _grid_rows(elf, 0x582018, 0x44, 8, 11, 3, skip=1)),
@@ -309,7 +426,7 @@ def collect(elf):
         ("gear", "物品操作", _grid_rows(elf, 0x584308, 12, 8, 6, 1)),
         ("inn", "旅馆", _ptr_until(elf, 0x442C40, 0x580000, 0x582000, extra=(0xFFFD,))),
         ("room", "房间", _ptr_until(elf, 0x48367C, 0x483000, 0x484000)),
-        ("ask", "迷宫确认", _ptr_until(elf, 0x55282C, 0x59CF00, 0x59E000)),
+        ("ask", "迷宫确认", _with_direct("ask", _ptr_until(elf, 0x55282C, 0x59CF00, 0x59E000), elf, direct_first=True)),
         ("lift", "升降机", _packed(elf, 0x5525C0, 0x552650)),
         ("bark", "战斗喊话", [
             (f"{va:06X}", [_half(elf, va + cell * 2) for cell in range(width)])
@@ -404,7 +521,10 @@ def manuscript_lines(name, rows):
                 raise AssertionError(f"{name} {_label(label)} has {len(codes)} cells")
             lines.append(_entry(label, _grid_source(codes, width), f"{width}x{nrows}"))
         return lines
-    slack = _slacks(rows) if name in _POINTERS else None
+    if name in DIRECT_SECTIONS:
+        slack = _mixed_slacks(rows)
+    else:
+        slack = _slacks(rows) if name in _POINTERS else None
     if name == "create":
         widths = _CREATE_WIDTH
     elif name == "job":
@@ -482,6 +602,8 @@ def _paper_slots(rows):
 
 
 def _section_slots(elf, name, rows):
+    if name in DIRECT_SECTIONS:
+        return _mixed_slots(elf, rows, name in _SLASH)
     if name in _POINTERS:
         return _ptr_slots(rows, name in _SLASH)
     if name == "operations":
@@ -700,13 +822,15 @@ def _layout_patches(elf, writes):
         (_STAT_X, "stat name x"),
         (_CREATE_STAT_X, "create stat x"),
         (_POINT_STAT_X, "point stat x"),
+        (_GUILD_MENU_X, "guild menu x"),
     ):
         for va, (old, new) in patches.items():
             _replace_word(elf, writes, va, old, new, label)
 
 
-def ui_patches(elf):
+def _ui_patches(elf):
     """ELF writes for data/interface, plus glyphs on the new UI pages."""
+    check_direct_ui_text(elf)
     pending, chars, kept_original = _load_translations(elf)
     party = load_names()
     for name in party:
@@ -729,7 +853,42 @@ def ui_patches(elf):
         "glyphs": len(extra),
         "names": len(party),
     }
+    return writes, extra, info, table
+
+
+def ui_patches(elf):
+    writes, extra, info, _table = _ui_patches(elf)
     return writes, extra, info
+
+
+def ui_patches_with_table(elf):
+    return _ui_patches(elf)
+
+
+def check_direct_ui_text(elf):
+    sections = collect(elf)
+    collected = {
+        name: {_label(label) for label, _codes in rows}
+        for name, _title, rows in sections
+    }
+    for item in DIRECT_UI_TEXT:
+        ident = item["id"]
+        if ident not in collected.get(item["section"], set()):
+            raise AssertionError(f"direct UI text {ident} is not collected")
+        codes = _read_ffff(elf, item["va"], limit=item["max_cells"] + 1)
+        if unwrap(codes) != item["source"]:
+            raise AssertionError(f"direct UI text {ident} source changed")
+        if _half(elf, item["va"] + len(codes) * 2) != 0xFFFF:
+            raise AssertionError(f"direct UI text {ident} has no terminator")
+        stop = item["va"] + (len(codes) + 1) * 2
+        if stop > item["next_data"]:
+            raise AssertionError(f"direct UI text {ident} exceeds its record")
+        for at in range(stop, item["next_data"], 2):
+            if _half(elf, at) != 0:
+                raise AssertionError(f"direct UI text {ident} record is not clean")
+        for at, expected in item["guards"]:
+            if _word(elf, at) != expected:
+                raise AssertionError(f"direct UI text {ident} draw reference changed")
 
 def check_ui_text_report(info):
     """The report may list intentional keeps, but never an implicit skipped string."""
@@ -853,11 +1012,11 @@ def _span(writes, va):
 def disc_self_test():
     sections = {name: rows for name, _title, rows in collect(load_elf())}
     expect = {
-        "menu": 169, "controller": 4, "save": 32, "files": 40, "paper": 18, "job": 3,
+        "menu": 170, "controller": 4, "save": 32, "files": 40, "paper": 18, "job": 3,
         "create": 47, "personality": 15, "quest": 3, "town": 7, "shop": 158,
-        "names": 732, "monsters": 127, "blurbs": 382, "places": 314, "debug": 132,
+        "names": 732, "monsters": 127, "blurbs": 382, "places": 314, "debug": 134,
         "race": 5, "align": 3, "class": 8, "stat": 6, "rank": 7, "gear": 8,
-        "inn": 41, "room": 24, "ask": 34, "lift": 6, "bark": 4, "link": 30,
+        "inn": 41, "room": 24, "ask": 36, "lift": 6, "bark": 4, "link": 30,
     }
     got = {name: len(rows) for name, rows in sections.items() if name in expect}
     assert got == expect, got
@@ -877,6 +1036,7 @@ def disc_self_test():
     assert "仲間のHPを少し消費し、確実に逃走を成功させる(一部の敵は除く)" in text["places"]
     assert "vぉ" not in text["places"] and "書緊急時切" not in text["places"]
     assert "ヘルガの部屋" in text["room"] and "開けてみますか?" in text["ask"]
+    assert "街に戻りますか?" in text["ask"]
     assert "地下牢第1層" in text["lift"] and "オスカー" in text["bark"]
     assert "前衛と後衛が一斉に入れ替わる" in text["link"]
     joined = "\n".join(text.values())
@@ -970,6 +1130,7 @@ def disc_self_test():
     stat_x = {va - FILE_BASE for va in _STAT_X}
     create_stat_x = {va - FILE_BASE for va in _CREATE_STAT_X}
     point_stat_x = {va - FILE_BASE for va in _POINT_STAT_X}
+    guild_menu_x = {va - FILE_BASE for va in _GUILD_MENU_X}
     if any(writes.get(off) != struct.pack("<I", PAPER_PITCH_NEW) for off in pitch):
         raise AssertionError("paper line pitch was not written")
     for va, (_old, new) in _RACE_X.items():
@@ -984,6 +1145,9 @@ def disc_self_test():
     for va, (_old, new) in _POINT_STAT_X.items():
         if writes.get(va - FILE_BASE) != struct.pack("<I", new):
             raise AssertionError(f"point stat x at {va:#x}")
+    for va, (_old, new) in _GUILD_MENU_X.items():
+        if writes.get(va - FILE_BASE) != struct.pack("<I", new):
+            raise AssertionError(f"guild menu x at {va:#x}")
     stat_names = (
         list(range(0x43DDC0, 0x43DDF0, 8))
         + list(range(0x589F60, 0x589F84, 6))
@@ -996,6 +1160,9 @@ def disc_self_test():
         if codes[1] or not codes[0] or not codes[2]:
             raise AssertionError(f"stat name gap at {va:#x}")
     # Parchment rows are grouped into three pages before they are written.
+    direct = struct.unpack("<8H", _span(writes, 0x552430))
+    if len(direct) != 8 or direct[-1] != 0xFFFF or 0 in direct[:-1]:
+        raise AssertionError("maze return translation is not seven cells plus terminator")
     check_ui_text_report(info)
     written = sum(expect.values()) - info["kept_original"] - (expect["paper"] - 3)
     if info["strings"] != written:
@@ -1012,7 +1179,7 @@ def disc_self_test():
         raise AssertionError(info)
     ui_font_pages(extra)
     for off, data in writes.items():
-        if off in pitch or off in race_x or off in stat_x or off in create_stat_x or off in point_stat_x:
+        if off in pitch or off in race_x or off in stat_x or off in create_stat_x or off in point_stat_x or off in guild_menu_x:
             continue
         codes = struct.unpack(f"<{len(data) // 2}H", data)
         for index, code in enumerate(codes):

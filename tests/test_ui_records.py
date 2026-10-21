@@ -26,6 +26,14 @@ def _text(elf, reverse, va, cells):
         f"<{cells}H", elf, va - FILE_BASE)).rstrip()
 
 
+def test_guild_menu_rows_share_one_left_edge(translated_elf):
+    source, translated, _reverse = translated_elf
+    va = 0x1553A4
+    old, new = 0x2442003C, 0x24420044
+    assert struct.unpack_from("<I", source, va - FILE_BASE)[0] == old
+    assert struct.unpack_from("<I", translated, va - FILE_BASE)[0] == new
+
+
 def test_fixed_party_names_use_the_translated_ui_glyphs(translated_elf):
     from busin.runtime_names import load_names
 

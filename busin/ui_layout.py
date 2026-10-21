@@ -133,6 +133,13 @@ _POINT_STAT_X = {
     0x152DB4: (0x26020008, 0x26020000),
 }
 
+# The guild menu used x+68 for its first two rows and x+60 for later rows.
+# Chinese menu labels omit the source strings' leading blanks, so every row
+# must use the same x or their visible left edges split by eight pixels.
+_GUILD_MENU_X = {
+    0x1553A4: (0x2442003C, 0x24420044),
+}
+
 
 def _layout_line(text, raw, width, slack, table, slash, center=True):
     body = _encode(text, table, slash)
@@ -212,6 +219,11 @@ def _visible(text, slot):
 def _fit(text, slot, table):
     if slot.get("type") == "grid":
         return _fit_grid(text, slot, table)
+    if slot["mode"] == "direct":
+        body = _encode(text, table, slot["slash"])
+        if len(body) > slot["width"] + (slot["slack"] or 0):
+            raise ValueError(f"{len(body)} cells, budget {slot['width'] + (slot['slack'] or 0)}")
+        return body
     if slot["mode"] == "flow":
         return _wrap(_encode(text, table, False), slot["width"], slot["rows"])
     if slot["mode"] == "span":

@@ -64,6 +64,9 @@ class Asm:
     def sltiu(self, rt, rs, imm):
         self.i(11, rs, rt, imm)
 
+    def sltu(self, rd, rs, rt):
+        self.r(rd, rs, rt, 0x2B)
+
     def sll(self, rd, rt, sa):
         self.emit((rt << 16) | (rd << 11) | (sa << 6))
 

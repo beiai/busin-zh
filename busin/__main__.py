@@ -43,6 +43,10 @@ def main(argv=None):
     check = commands.add_parser("check-text", help="check translated lines and print dialog budgets")
     check.add_argument("chunk", type=int)
     check.add_argument("offsets", nargs="*")
+    ui_audit = commands.add_parser(
+        "ui-audit", help="report directly drawn UI strings missing from translations"
+    )
+    ui_audit.add_argument("--input", type=Path, default=None)
     copy = commands.add_parser("copy-text", help="copy translations onto chunks with the same source")
     copy.add_argument("source", type=int)
     copy.add_argument("targets", type=int, nargs="+")
@@ -103,6 +107,11 @@ def main(argv=None):
         print(dump_dialogue())
         print(dump_ui())
         print(dump_manuscript())
+        return 0
+    if args.command == "ui-audit":
+        from busin.ui_audit import format_report, run_audit
+        report = run_audit(args.input)
+        print(format_report(report))
         return 0
     if args.command in ("init-text", "apply-text", "check-text", "copy-text"):
         from busin.text_edit import apply_text, check_text, copy_text, init_text

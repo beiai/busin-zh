@@ -222,6 +222,103 @@ def _tag_code(tag: str) -> int | None:
     return code
 
 
+def quote_indent(line: str) -> str | None:
+    """Return the alignment indent for an unclosed quote, or None for other blocks."""
+    quote = line.find("「")
+    if quote < 0 or "」" in line[quote + 1:]:
+        return None
+    width = line_cells(line[: quote + 1])
+    if width > 16:
+        raise ValueError(f"quote prefix is {width} cells, limit 16: {line}")
+    return "" if width == 0 else f"<FFD{width - 1:X}>"
+
+
+def _leading_layout_width(line: str) -> int:
+    parts = split_tags(line)
+    width = 0
+    index = 0
+    while index < len(parts):
+        tag, char = parts[index]
+        if tag:
+            code = _tag_code(tag)
+            if code not in LAYOUT:
+                break
+            if code in INDENTS:
+                width += code - 0xFFD0 + 1
+            index += 1
+        elif char in " \u3000":
+            width += 1
+            index += 1
+        else:
+            break
+    return width
+
+
+def _indent_tag(width: int) -> str:
+    return "" if width == 0 else f"<FFD{width - 1:X}>"
+
+
+def _replace_indent(line: str, indent: str) -> str:
+    """Replace leading blanks and FFD tags, keeping other leading layout controls in place."""
+    parts = split_tags(line)
+    kept = []
+    index = 0
+    while index < len(parts):
+        tag, char = parts[index]
+        if tag:
+            code = _tag_code(tag)
+            if code not in LAYOUT:
+                break
+            if code not in INDENTS:
+                kept.append(f"<{tag}>")
+            index += 1
+        elif char in " \u3000":
+            index += 1
+        else:
+            break
+    body = "".join(f"<{tag}>" if tag else char for tag, char in parts[index:])
+    return "".join(kept) + indent + body
+
+
+def normalize_quote_indents(text: list[str], source: list[str] | None = None) -> list[str]:
+    """Normalize quote alignment and preserve paired-quote source indents."""
+    if any(not isinstance(line, str) for line in text):
+        raise ValueError("translation lines must be strings")
+    output = list(text)
+    block = []
+
+    def flush() -> None:
+        if not block:
+            return
+        first = output[block[0]]
+        indent = quote_indent(first)
+        if indent is not None:
+            for index in block[1:]:
+                output[index] = _replace_indent(output[index], indent)
+            return
+        if source is not None and "「" in first and "」" in first[first.find("「") + 1:]:
+            for index in block:
+                source_line = source[index] if index < len(source) and source[index] is not None else ""
+                output[index] = _replace_indent(output[index], _indent_tag(_leading_layout_width(source_line)))
+
+    for index, line in enumerate(text):
+        if line.strip():
+            block.append(index)
+        else:
+            flush()
+            block = []
+    flush()
+    return output
+
+
+def check_quote_indents(text: list[str], source: list[str] | None = None) -> None:
+    """Require quote blocks to use explicit FFD indents."""
+    normalized = normalize_quote_indents(text, source)
+    for index, (wanted, got) in enumerate(zip(normalized, text)):
+        if wanted != got:
+            raise ValueError(f"quoted block line {index + 1} should start with layout {wanted!r}: {got!r}")
+
+
 def _text_layout_prefix(text: str) -> list[int]:
     prefix = []
     for tag, char in split_tags(text):
@@ -735,6 +832,10 @@ def _wait_parts(line: str) -> list[str]:
 
 
 def check_lines(original: list[int], text: list[str], align: str, kind: str) -> None:
+    check_quote_indents(text, message_prose(original, align))
+    for line in text:
+        if line.startswith((" ", "\u3000")):
+            raise ValueError(f"text line starts with a blank: {line}")
     if kind in ("center", "subtitle"):
         limit = NARRATION_LINE if kind == "subtitle" else CENTER_LINE
         for line in text:
@@ -1231,6 +1332,23 @@ def self_test() -> None:
     check_lines([0x003F], ["甲" * 19 + "<BREAK>" + "甲" * 19], "center", "center")
     check_lines([0xFFD2, 0x003F], ["甲" * 16 + "<BREAK>" + "甲" * 19], "left", "dialog")
     check_lines([0x003F], ["甲" * 21], "center", "subtitle")
+    check_lines([0x003F], ["甲「乙", "<FFD1>丙"], "left", "dialog")
+    assert normalize_quote_indents(["甲「乙」", "丙"], ["甲「乙」", "  丙"]) == ["甲「乙」", "<FFD1>丙"]
+    assert normalize_quote_indents(["甲「乙」", "丙"], ["甲「乙」", "  丙"]) == normalize_quote_indents(
+        ["甲「乙」", "<FFD4>丙"], ["甲「乙」", "  丙"]
+    )
+    try:
+        check_lines([0x003F], [" 甲"], "left", "dialog")
+    except ValueError as error:
+        assert "starts with a blank" in str(error)
+    else:
+        raise AssertionError("translation accepted a leading blank")
+    try:
+        check_lines([0x003F], ["甲「乙", "丙"], "left", "dialog")
+    except ValueError as error:
+        assert "should start with layout" in str(error)
+    else:
+        raise AssertionError("quoted block accepted a plain continuation line")
     for bad in (("甲" * 22, "subtitle"), ("甲" * 20, "center"), ("甲" * 19 + "<BREAK>" + "甲" * 20, "center")):
         try:
             check_lines([0x003F], [bad[0]], "center", bad[1])
