@@ -176,9 +176,9 @@ def test_export_reuses_suffix_regardless_of_order_and_preserves_originals(
     folder = tmp_path / "menu"
     with Image.open(folder / "page_switch.zh.png") as parent:
         assert parent.size == (88, 16)
-        expected = parent.convert("RGBA").crop((32, 0, 80, 16))
+        expected = parent.convert("RGBA").crop((36, 0, 84, 16))
         assert expected.tobytes() == pixels(folder / "switch.zh.png")
-        assert parent.convert("RGB").crop((64, 0, 88, 16)).getbbox() is None
+        assert parent.convert("RGB").crop((68, 0, 88, 16)).getbbox() is None
     image = read_tmx_bytes(blob)
     with Image.open(folder / "switch.png") as original:
         expected = [
@@ -188,7 +188,7 @@ def test_export_reuses_suffix_regardless_of_order_and_preserves_originals(
         ]
         assert list(original.get_flattened_data()) == expected
     child = rect(item, "switch")
-    assert (child["x"], translated_rect(item, child)["x"]) == (100, 96)
+    assert (child["x"], translated_rect(item, child)["x"]) == (100, 100)
 
 
 def test_normal_export_preserves_a_manual_source_and_refreshes_derived_crops(
@@ -199,13 +199,13 @@ def test_normal_export_preserves_a_manual_source_and_refreshes_derived_crops(
     parent_path = tmp_path / "menu" / "page_switch.zh.png"
     with Image.open(parent_path) as bitmap:
         edited = bitmap.convert("RGBA")
-    edited.putpixel((32, 0), (248, 248, 248, 255))
+    edited.putpixel((36, 0), (248, 248, 248, 255))
     edited.save(parent_path)
     export_pictures(read, doc, tmp_path, row)
     assert pixels(parent_path) == edited.tobytes()
     assert (
         pixels(tmp_path / "menu" / "switch.zh.png")
-        == edited.crop((32, 0, 80, 16)).tobytes()
+        == edited.crop((36, 0, 84, 16)).tobytes()
     )
 
 
@@ -217,14 +217,14 @@ def test_force_zh_regenerates_the_programmatic_source_and_derived_crop(
     parent_path = tmp_path / "menu" / "page_switch.zh.png"
     with Image.open(parent_path) as bitmap:
         edited = bitmap.convert("RGBA")
-    edited.putpixel((32, 0), (248, 248, 248, 255))
+    edited.putpixel((36, 0), (248, 248, 248, 255))
     edited.save(parent_path)
     export_pictures(read, doc, tmp_path, row, force_zh=True)
     assert pixels(parent_path) != edited.tobytes()
     with Image.open(parent_path) as bitmap:
         assert (
             pixels(tmp_path / "menu" / "switch.zh.png")
-            == bitmap.convert("RGBA").crop((32, 0, 80, 16)).tobytes()
+            == bitmap.convert("RGBA").crop((36, 0, 84, 16)).tobytes()
         )
 
 
@@ -277,20 +277,13 @@ def test_build_rejects_broken_derived_images(tmp_path, original_menu, case):
 
 
 @pytest.mark.skipif(not BIN.exists(), reason="没有原盘")
-def test_sprite_patch_changes_only_source_x_and_checks_original_record():
+def test_sprite_patch_keeps_the_original_x_and_checks_original_record():
     from busin.disasm import load_elf
 
     doc, elf = manifest(), load_elf()
     offset = MENU_TABLE - FILE_BASE + SWITCH_INDEX * 12
-    writes = elf_writes(elf, doc)
-    assert writes == {offset: struct.pack("<h", 96)}
-    patched = bytearray(elf)
-    for at, data in writes.items():
-        patched[at : at + len(data)] = data
-    assert struct.unpack_from("<6h", patched, offset) == (96, 184, 48, 16, 48, 16)
-    assert (
-        patched[:offset] == elf[:offset] and patched[offset + 2 :] == elf[offset + 2 :]
-    )
+    assert elf_writes(elf, doc) == {}
+    assert struct.unpack_from("<6h", elf, offset) == (100, 184, 48, 16, 48, 16)
     for at in (offset, MENU_TABLE - FILE_BASE + 14 * 12):
         changed = bytearray(elf)
         changed[at] ^= 1

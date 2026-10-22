@@ -74,6 +74,8 @@ class MenuLabelSpec:
     template: str | None = None
     tracking: int = 0
     source_cell_width: int | None = None
+    suffix_start: int | None = None
+    suffix_shift: int = 0
 
 
 LABELS = {
@@ -100,7 +102,10 @@ LABELS = {
         "スキル", "技能", 56, palette=10, template="menu_title_tab2.png"
     ),
     "front_back_change": MenuLabelSpec("前後列交代", "前后切换", 64, palette=10),
-    "page_switch": MenuLabelSpec("ページ切り替え", "页签切换", 88),
+    # The battle help samples the suffix at its original x=100 too.
+    "page_switch": MenuLabelSpec(
+        "ページ切り替え", "页签切换", 88, suffix_start=32, suffix_shift=4
+    ),
 }
 
 
@@ -133,17 +138,38 @@ def _drop_low_indices(values: list[int]) -> list[int]:
     return [value if value >= MINIMUM_INK_INDEX else 0 for value in values]
 
 
+def _shift_suffix(values: list[int], spec: MenuLabelSpec) -> list[int]:
+    if spec.suffix_start is None:
+        return values
+    width = spec.width
+    shift = spec.suffix_shift
+    if not 0 < shift < width or not 0 <= spec.suffix_start < width - shift:
+        raise ValueError(f"{spec.source} suffix shift")
+    out = [0] * len(values)
+    for y in range(spec.height):
+        row = values[y * width:(y + 1) * width]
+        out[y * width:(y + 1) * width] = (
+            row[:spec.suffix_start]
+            + [0] * shift
+            + row[spec.suffix_start:width - shift]
+        )
+    return out
+
+
 def _render_values(spec: MenuLabelSpec, font) -> list[int]:
     if spec.source_cell_width is None:
-        return _drop_low_indices(
-            render_text_alpha(
-                spec.text,
-                font,
-                spec.width,
-                spec.height,
-                spec.source,
-                spec.tracking,
-            )
+        return _shift_suffix(
+            _drop_low_indices(
+                render_text_alpha(
+                    spec.text,
+                    font,
+                    spec.width,
+                    spec.height,
+                    spec.source,
+                    spec.tracking,
+                )
+            ),
+            spec,
         )
 
     if any(font.getlength(char) != spec.source_cell_width for char in spec.text):
@@ -277,6 +303,10 @@ def self_test() -> None:
         "front_back_change",
         "page_switch",
     }
+    shifted = [0] * (88 * 16)
+    shifted[32] = 15
+    shifted = _shift_suffix(shifted, LABELS["page_switch"])
+    assert shifted[32] == 0 and shifted[36] == 15
     font = load_font(FONT)
     for spec in LABELS.values():
         assert spec.source and spec.text

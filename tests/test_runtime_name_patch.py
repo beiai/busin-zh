@@ -1,173 +1,152 @@
 import struct
-from pathlib import Path
 
-from busin.patch.runtime_names_patch import (
-    CHECKSUM_HOOK, CHECKSUM_SIZE, CODE_BASE, DATA_BASE, PARTY_HOOK, PARTY_ARRAYS,
-    build_machine, elf_writes,
-    exact_patterns, memory_checksum, recompute_memory_checksum, replace_exact_names,
-)
-from busin.patch.asm import A0, A1, RA, SP, V0
+import pytest
+
+from busin.disasm import load_elf
+from busin.disc import BIN, FILE_BASE
+from busin.patch.asm import A0, GP, RA, SP
 from busin.patch.emu import RETURN, execute, junk_regs
-from busin.runtime_names import NAME_CELLS, load_names, source_codes
+from busin.patch.runtime_names_patch import (
+    CODE_BASE, DATA_BASE, DATA_LIMIT, HEAP_BASE, HOOK, POOL_SIZE, SEGMENT_OFFSET,
+    build_machine, elf_writes, exact_patterns,
+)
+from busin.runtime_names import load_names, source_codes
 
 
-def _table():
-    chars = []
-    for name in load_names():
-        chars.extend(name.text)
-    return {char: 0x601 + index for index, char in enumerate(dict.fromkeys(chars))}
+@pytest.fixture(scope="module")
+def source_elf():
+    if not BIN.exists():
+        pytest.skip("没有原盘")
+    return load_elf()
 
 
-def _codes(text):
-    return source_codes(text) + [0xFFFF] * (NAME_CELLS - len(source_codes(text)))
+@pytest.fixture(scope="module")
+def table(source_elf):
+    from busin.ui_text import ui_patches_with_table
+    return ui_patches_with_table(source_elf)[3]
 
 
-def _record(name_text):
-    record = bytearray(0x120)
-    record[0:8] = bytes([0xFF]) * 8
-    record[8:28] = bytes([0x46, 0x46]) * 10
-    struct.pack_into("<H", record, 0x20, 1)
-    struct.pack_into("<8H", record, 0x22, *_codes(name_text))
-    return record
+def _code(elf):
+    return {va: struct.unpack_from("<I", elf, va - FILE_BASE)[0]
+            for va in range(0x1A3778, 0x1A3B14, 4)}
 
 
-def _block_with_record(name_text, offset=0x100):
-    block = bytearray(0x47A30)
-    block[offset:offset + 0x120] = _record(name_text)
-    return block
-
-
-def test_exact_name_replacement_only_touches_complete_fields():
-    table = _table()
-    names = load_names()
-    block = _block_with_record("グレッグさん")
-    block += _record("オルフェ")
-    block += _record("グレッグ")
-    before = bytes(block)
-    after = replace_exact_names(before, 0, len(before), table)
-    assert after[:0x47A30] == before[:0x47A30]
-    assert after[-0x120:] != before[-0x120:]
-    source, target = exact_patterns(table)
-    assert after[-0x120 + 0x22:-0x120 + 0x22 + 16] == target[:16]
-    assert [name.text for name in names] == ["格雷格", "里卡多", "萨拉"]
-
-
-def test_already_translated_and_unknown_names_are_unchanged():
-    table = _table()
-    source, target = exact_patterns(table)
-    block = bytearray(0x47A30)
-    block[0x100:0x220] = _record("オルフェ")
-    block[0x300:0x420] = _record("グレッグ")
-    before = bytes(block)
-    once = replace_exact_names(before, 0, len(before), table)
-    twice = replace_exact_names(once, 0, len(once), table)
-    assert once != before
-    assert twice == once
-    assert once[0x100:0x220] == before[0x100:0x220]
-
-
-def test_memory_block_checksum_is_recomputed_without_changing_size():
-    table = _table()
-    block = _block_with_record("リカルド")
-    repaired = replace_exact_names(block, 0, len(block), table)
-    saved = recompute_memory_checksum(repaired)
-    assert len(saved) == len(block)
-    stored = struct.unpack_from("<I", saved, 0)[0]
-    check = bytearray(saved)
-    struct.pack_into("<I", check, 0, 0)
-    assert memory_checksum(check) == stored
-
-
-
-def test_generated_scanner_matches_reference():
-    table = _table()
-    words, labels, data = build_machine(table)
-    block = _block_with_record("サラ", offset=0x200)
-    block[0x600:0x720] = _record("リカルド")
-    expected = replace_exact_names(block, 0, len(block), table)
+def _run(elf, table, field, patched, source=0x700260, dest=0x4847C0):
+    # Real template layout, with only the eight-cell name varied.
+    record_at = load_names()[0].template - FILE_BASE - 2
+    record = bytearray(elf[record_at:record_at + 0x120])
+    record[2:18] = field
     memory = bytearray(0x800000)
-    buffer = 0x700000
-    memory[buffer:buffer + len(block)] = block
-    memory[DATA_BASE:DATA_BASE + len(data)] = data
-    code = {CODE_BASE + 4 * index: word for index, word in enumerate(words)}
+    memory[source:source + len(record)] = record
+    struct.pack_into("<I", memory, 0x5A9AF0 - 26124, dest)
     regs = junk_regs()
-    regs[RA], regs[SP] = RETURN, 0x180000
-    regs[A0], regs[A1] = buffer, len(block)
-    execute(code, memory, regs, labels["sanitize"], lambda pc: pc == RETURN,
-            lambda _target, _regs, _link: None, limit=2000000)
-    assert bytes(memory[buffer:buffer + len(block)]) == expected
+    regs[A0], regs[GP], regs[RA], regs[SP] = source, 0x5A9AF0, RETURN, 0x180000
+    # Seed upper 32 bits to catch accidental word-sized save/restore.
+    for i in range(16, 24):
+        regs[i] |= 0x1234567800000000
+    code = _code(elf)
+    if patched:
+        words, _labels, data = build_machine(table)
+        code.update({CODE_BASE + 4 * i: word for i, word in enumerate(words)})
+        code[HOOK], code[HOOK + 4] = 0x08000000 | (CODE_BASE >> 2), 0
+        memory[DATA_BASE:DATA_BASE + len(data)] = data
+    before = bytes(memory)
+
+    def writable(at, size):
+        return (dest <= at and at + size <= dest + 0x120
+                or regs[SP] <= at and at + size <= 0x180000)
+
+    execute(code, memory, regs, 0x1A3778, lambda pc: pc == RETURN,
+            lambda *_: None, writable=writable)
+    if source != dest:
+        assert memory[source:source + 0x120] == before[source:source + 0x120]
+    return bytes(memory[dest:dest + 0x120]), regs
 
 
-
-def _machine_code(table):
-    words, labels, data = build_machine(table)
-    code = {CODE_BASE + 4 * index: word for index, word in enumerate(words)}
-    return code, labels, data
-
-
-def _run(code, memory, regs, entry, stop):
-    execute(code, memory, regs, entry, stop,
-            lambda _target, _regs, _link: None, limit=2000000)
-
-
-def test_checksum_wrapper_repairs_then_returns_the_original_sum():
-    table = _table()
-    block = bytearray(_block_with_record("グレッグ"))
-    repaired = replace_exact_names(block, 0, len(block), table)
-    expected = memory_checksum(repaired)
-    code, labels, data = _machine_code(table)
-    elf = Path("build/iso/SLPM_620.98").read_bytes()
-    for index in range(0, 0x3C, 4):
-        code[CHECKSUM_HOOK + index] = struct.unpack_from("<I", elf, CHECKSUM_HOOK - 0xFF000 + index)[0]
-    memory = bytearray(0x800000)
-    buffer = 0x700000
-    memory[buffer:buffer + len(block)] = block
-    memory[DATA_BASE:DATA_BASE + len(data)] = data
-    regs = junk_regs()
-    regs[RA], regs[SP] = RETURN, 0x180000
-    regs[A0], regs[A1] = buffer, CHECKSUM_SIZE
-    _run(code, memory, regs, labels["checksum_wrapper"], lambda pc: pc == RETURN)
-    assert regs[V0] == expected
-    assert bytes(memory[buffer:buffer + len(block)]) == repaired
-
-
-def test_party_wrapper_repairs_both_arrays_and_restores_the_argument():
-    table = _table()
-    code, labels, data = _machine_code(table)
-    memory = bytearray(0x800000)
-    memory[DATA_BASE:DATA_BASE + len(data)] = data
-    for index, (base, _count) in enumerate(PARTY_ARRAYS):
-        name = load_names()[index].source
-        record = _record(name)
-        memory[base + 0x40:base + 0x160] = record
-    regs = junk_regs()
-    regs[RA], regs[SP] = RETURN, 0x180000
-    regs[A0] = 0x12
-    _run(code, memory, regs, labels["party_wrapper"], lambda pc: pc == PARTY_HOOK + 8)
-    assert regs[A0] == 0x12000000
+@pytest.mark.parametrize("index", range(3))
+@pytest.mark.parametrize("dest", [0x4836E0, 0x4847C0, 0x485D10, 0x700260])
+def test_original_copy_differs_only_in_name(source_elf, table, index, dest):
     source, target = exact_patterns(table)
-    assert memory[0x4836E0 + 0x62:0x4836E0 + 0x72] == target[:16]
-    assert memory[0x4847C0 + 0x62:0x4847C0 + 0x72] == target[16:32]
+    field = source[index * 16:(index + 1) * 16]
+    original, original_regs = _run(source_elf, table, field, False, dest=dest)
+    translated, patched_regs = _run(source_elf, table, field, True, dest=dest)
+    expected = original[:2] + target[index * 16:(index + 1) * 16] + original[18:]
+    assert translated == expected
+    assert patched_regs == original_regs
 
 
-def test_machine_fits_and_has_two_entry_holes():
-    words, labels, data = build_machine(_table())
-    assert CODE_BASE + len(words) * 4 <= DATA_BASE
-    assert labels["checksum_wrapper"] == CODE_BASE
-    assert labels["party_wrapper"] > labels["checksum_wrapper"]
-    assert len(data) == 3 * NAME_CELLS * 2 * 2
-    assert labels["sanitize"] < DATA_BASE
+@pytest.mark.parametrize("text", ["オルフェ", "グレッグさん", "", "サラサラ"])
+def test_custom_names_unchanged(source_elf, table, text):
+    words = source_codes(text)
+    field = struct.pack("<8H", *(words + [0xFFFF] * (8 - len(words))))
+    assert _run(source_elf, table, field, True) == _run(source_elf, table, field, False)
 
 
-def test_hook_source_words_and_writes_do_not_overlap():
-    elf_path = Path("build/iso/SLPM_620.98")
-    if not elf_path.exists():
-        return
-    elf = elf_path.read_bytes()
-    writes = elf_writes(elf, _table())
-    assert struct.unpack_from("<I", elf, CHECKSUM_HOOK - 0xFF000)[0] == 0x1080000C
-    assert struct.unpack_from("<I", elf, PARTY_HOOK - 0xFF000)[0] == 0x27BDFFD0
-    assert CHECKSUM_HOOK - 0xFF000 in writes
-    assert PARTY_HOOK - 0xFF000 in writes
-    spans = sorted((off, off + len(data)) for off, data in writes.items())
-    assert all(end <= next_start for (_start, end), (next_start, _end) in zip(spans, spans[1:]))
+def test_complete_padding_must_match_and_translation_is_idempotent(source_elf, table):
+    source, target = exact_patterns(table)
+    for index in range(3):
+        field = target[index * 16:(index + 1) * 16]
+        assert _run(source_elf, table, field, True) == _run(source_elf, table, field, False)
+        field = source[index * 16:(index + 1) * 16 - 2] + b"\x00\x00"
+        assert _run(source_elf, table, field, True) == _run(source_elf, table, field, False)
+
+
+def test_own_loaded_segment_survives_bss_clear_and_reserves_heap(source_elf, table):
+    elf = bytearray(source_elf)
+    for offset, data in elf_writes(source_elf, table).items():
+        elf[offset:offset + len(data)] = data
+    count = struct.unpack_from("<H", elf, 0x2C)[0]
+    assert count == 2
+    memory = bytearray(0x800000)
+    spans = []
+    for i in range(count):
+        kind, offset, va, pa, size, mem_size, flags, align = struct.unpack_from("<8I", elf, 0x34 + i * 32)
+        assert kind == 1 and va == pa and offset % align == va % align
+        assert flags & 1 and size <= mem_size
+        assert all(va + mem_size <= start or end <= va for start, end in spans)
+        spans.append((va, va + mem_size))
+        memory[va:va + size] = elf[offset:offset + size]
+    # Execute the startup clear's exact inclusive 16-byte bound.
+    for at in range(0x5A4E00, 0x62154C + 16, 16):
+        memory[at:at + 16] = bytes(16)
+    words, _, data = build_machine(table)
+    assert memory[CODE_BASE:CODE_BASE + len(words) * 4] == struct.pack(f"<{len(words)}I", *words)
+    assert memory[DATA_BASE:DATA_LIMIT] == data
+    assert struct.unpack_from("<I", elf, 0x100074 - FILE_BASE)[0] == 0x24842000
+    assert HEAP_BASE >= max(end for _, end in spans)
+    assert struct.unpack_from("<I", elf, 0x1000F4 - FILE_BASE)[0] == 0x3C040197
+    # Keep more than the heap shift as headroom for libc allocation metadata.
+    assert 0x1980000 - POOL_SIZE > HEAP_BASE - 0x62154C + 0x1000
+    assert elf[SEGMENT_OFFSET:SEGMENT_OFFSET + 4] == memory[CODE_BASE:CODE_BASE + 4]
+    # These earlier patch homes and hooks must be restored byte for byte.
+    for start, end in ((0x3F6BF0, 0x3F6ED4), (0x440B00, 0x440F00),
+                       (0x10B948, 0x10B984), (0x1A4858, 0x1A48FC), (0x1A8310, 0x1A8318)):
+        assert elf[start - FILE_BASE:end - FILE_BASE] == source_elf[start - FILE_BASE:end - FILE_BASE]
+
+
+def test_rejects_changed_source_or_occupied_padding(source_elf, table):
+    for at in (SEGMENT_OFFSET, HOOK - FILE_BASE, 0x1074, 0x44, 0x2C):
+        changed = bytearray(source_elf)
+        changed[at] ^= 1
+        with pytest.raises(ValueError):
+            elf_writes(changed, table)
+
+
+def test_report_recognizes_actual_translated_codes(source_elf, table):
+    from busin.runtime_names import inspect_memory
+    memory = bytearray(0x800000)
+    _, target = exact_patterns(table)
+    for i, name in enumerate(load_names()):
+        memory[name.display:name.display + 16] = target[i * 16:(i + 1) * 16]
+    assert [row["status"] for row in inspect_memory(memory)] == ["translated"] * 3
+
+
+def test_disassembler_reads_new_segment_by_its_header(source_elf, table, monkeypatch):
+    from busin import disasm
+    elf = bytearray(source_elf)
+    for offset, data in elf_writes(source_elf, table).items():
+        elf[offset:offset + len(data)] = data
+    monkeypatch.setattr(disasm, "load_elf", lambda _image: bytes(elf))
+    text = disasm.disassemble(CODE_BASE, CODE_BASE + 4)
+    assert f"{CODE_BASE:08x}: 24090000" in text
+    assert "addiu" in text

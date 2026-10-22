@@ -430,6 +430,7 @@ def main():
     from busin.ui import load_images
     from busin.ui_font import FONTS, ui_font_pages
     from busin.ui_text import check_ui_text_report, ui_patches_with_table
+    from busin.dungeon_text import pack_patches as dungeon_patches
 
     patches = PatchLedger()
     for offset, data in elf_writes(words, labels).items():
@@ -437,13 +438,18 @@ def main():
     elf = load_elf()
     ui_writes, ui_extra, ui_text_info, ui_table = ui_patches_with_table(elf)
     check_ui_text_report(ui_text_info)
+    dungeon_spans, dungeon_info = dungeon_patches(ui_table)
+    if dungeon_info != ui_text_info["dungeon"]:
+        raise ValueError("dungeon translations changed during build")
+    for offset, data in dungeon_spans:
+        patches.add_pack("interface.dungeon", offset, data)
     pages = ui_font_pages(ui_extra)
     for offset, data in ui_elf_writes(elf).items():
         patches.add_elf("elf.ui_page_loader", offset, data)
     for offset, data in ui_writes.items():
         patches.add_elf("elf.ui_text_and_layout", offset, data)
     for offset, data in runtime_name_elf_writes(elf, ui_table).items():
-        patches.add_elf("elf.runtime_names", offset, data, "memory-card and party rebuild name replacement")
+        patches.add_elf("elf.runtime_names", offset, data, "exact names in shared record copy; separate load segment and reserved heap start")
     for offset, data in picture_elf_writes(elf, load_images(DATA / "picture" / "images.json")).items():
         patches.add_elf("elf.picture_rects", offset, data, "switch reuses the translated page_switch suffix")
     for item in packs:

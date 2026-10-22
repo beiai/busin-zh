@@ -1,9 +1,10 @@
 """Disassemble a virtual-address range of the game ELF."""
 from pathlib import Path
+import struct
 
 import capstone
 
-from busin.disc import ELF_LBA, ELF_SIZE, FILE_BASE, read_user
+from busin.disc import ELF_LBA, ELF_SIZE, read_user
 from busin.paths import BIN, BUILD
 from busin.patch.font_paging import SHIFT
 
@@ -19,9 +20,17 @@ def disassemble(start, end, image=None):
     blob = load_elf(image)
     md = capstone.Cs(capstone.CS_ARCH_MIPS, capstone.CS_MODE_MIPS64 + capstone.CS_MODE_LITTLE_ENDIAN)
     md.skipdata = True
-    off = start - FILE_BASE
+    phoff = struct.unpack_from("<I", blob, 0x1C)[0]
+    phsize, phcount = struct.unpack_from("<HH", blob, 0x2A)
+    for index in range(phcount):
+        kind, offset, va, _pa, size = struct.unpack_from("<5I", blob, phoff + index * phsize)
+        if kind == 1 and va <= start < end <= va + size:
+            off = offset + start - va
+            break
+    else:
+        raise ValueError(f"range {start:#x}..{end:#x} is outside ELF file-backed load segments")
     lines = []
-    for ins in md.disasm(blob[off:end - FILE_BASE], start):
+    for ins in md.disasm(blob[off:off + end - start], start):
         word = int.from_bytes(ins.bytes, "little")
         lines.append(f"{ins.address:08x}: {word:08x}  {ins.mnemonic} {ins.op_str}")
     return "\n".join(lines)

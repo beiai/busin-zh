@@ -65,7 +65,7 @@ PATCH_SPECS = {
         "cock_00",
         "switch",
         "page_switch",
-        (32, 0),
+        (36, 0),
         SHARED_MENU_RECORDS["switch"],
         SWITCH_ORIGINAL,
         PAGE_ORIGINAL[:4],
@@ -149,6 +149,7 @@ def elf_writes(elf: bytes, manifest: dict) -> dict[int, bytes]:
         # Only source x changes; the original PNG rect stays for honest comparisons.
         if target["y"] != rect["y"]:
             raise ValueError(f"{spec.rect} sprite patch only supports moving source x")
-        offset = spec.record.table - FILE_BASE + spec.record.index * 12
-        writes[offset] = struct.pack("<h", target["x"])
+        if target["x"] != rect["x"]:
+            offset = spec.record.table - FILE_BASE + spec.record.index * 12
+            writes[offset] = struct.pack("<h", target["x"])
     return writes

@@ -66,8 +66,12 @@ def execute(code, mem, reg, pc, stop, on_call, limit=20000, writable=None):
             reg[b] = sx((reg[a] & MASK32) | im)
         elif o0 == 11:
             reg[b] = 1 if (reg[a] & MASK32) < im else 0
+        elif o0 == 10:
+            reg[b] = int(reg[a] < sm)
         elif o0 == 33:
             reg[b] = struct.unpack_from("<h", mem, address(reg[a], sm, 2))[0]
+        elif o0 == 37:
+            reg[b] = struct.unpack_from("<H", mem, address(reg[a], sm, 2))[0]
         elif o0 == 35:
             reg[b] = sx(struct.unpack_from("<I", mem, address(reg[a], sm, 4))[0])
         elif o0 == 36:
@@ -124,9 +128,9 @@ def execute(code, mem, reg, pc, stop, on_call, limit=20000, writable=None):
         delay = code.get(pc + 4, 0)
         taken = reg[rs] == reg[rt] if op0 in (4, 20) else reg[rs] != reg[rt] if op0 in (5, 21) else None
         if op0 == 1:
-            if rt != 0:
+            if rt not in (0, 1):
                 raise AssertionError(f"unsupported REGIMM {op:#x} at {pc:#x}")
-            taken = reg[rs] < 0  # bltz
+            taken = reg[rs] < 0 if rt == 0 else reg[rs] >= 0
         if op0 in (20, 21) and not taken:
             pc += 8
         elif op0 == 0 and fn == 8:

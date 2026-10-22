@@ -119,6 +119,10 @@ def write_text_plan(report: dict) -> str:
         f"  messages: {report['messages']['translated']} translated / {report['messages']['total']} total"
         f" ({report['messages']['pending']} pending)",
         f"  interface: {report['interface']['strings']} strings, {report['interface']['glyphs']} glyphs",
+        f"  dungeon: {report['interface']['dungeon']['translated']} translated / "
+        f"{report['interface']['dungeon']['total']} total "
+        f"({report['interface']['dungeon']['pending']} pending), "
+        f"{report['interface']['dungeon']['bytes']}/{report['interface']['dungeon']['capacity']} bytes",
         f"  sectors: {report['layout']['source_sectors']} source -> {report['layout']['image_sectors']} image",
         "Font slots:",
     ]

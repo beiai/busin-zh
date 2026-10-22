@@ -3,12 +3,13 @@ import json
 import struct
 from dataclasses import dataclass
 
+from busin import dungeon_text
 from busin.disc import FILE_BASE
 from busin.disasm import load_elf
 from busin.paths import BUILD, DATA
 from busin.runtime_names import load_names
 from busin.ui_layout import (
-    _RACE_LABELS, _RACE_X, _STAT_X, _CREATE_STAT_X, _POINT_STAT_X, _GUILD_MENU_X, _address,
+    _RACE_LABELS, _RACE_X, _STAT_X, _CREATE_STAT_X, _POINT_STAT_X, _GUILD_MENU_X, _SYSTEM_MENU_X, _address,
     _assign, _encode, _fit, _fit_grid, _glyphs, _label, _layout_line,
     _layout_ok, _slacks, _tokens, _visible, _wrap,
 )
@@ -433,6 +434,9 @@ def collect(elf):
             for va, width in _BARK
         ]),
         ("link", "连携说明", _ability_rows(elf)),
+        ("dungeon", "迷宫调查提示", [
+            (ident, codes) for ident, codes, _action in dungeon_text.read_source(elf)[0]
+        ]),
     )
 
 
@@ -505,6 +509,11 @@ def _paper_lines(rows):
 
 
 def manuscript_lines(name, rows):
+    if name == "dungeon":
+        return [
+            _entry(ident, dungeon_text.source(codes), "{}x{}".format(*dungeon_text.dimensions(codes)))
+            for ident, codes in rows
+        ]
     if name == "paper":
         return _paper_lines(rows)
     if name == "blurbs":
@@ -694,6 +703,12 @@ def _load_translations(elf):
     pending, chars = [], []
     kept_original = 0
     for name, _title, rows in collect(elf):
+        if name == "dungeon":
+            texts = dungeon_text.translations(rows, docs.get(name, []))
+            for text in texts:
+                if text is not None:
+                    chars.extend(_glyphs(text, True))
+            continue
         lines = manuscript_lines(name, rows)
         slots = _section_slots(elf, name, rows)
         doc = docs.get(name)
@@ -823,6 +838,7 @@ def _layout_patches(elf, writes):
         (_CREATE_STAT_X, "create stat x"),
         (_POINT_STAT_X, "point stat x"),
         (_GUILD_MENU_X, "guild menu x"),
+        (_SYSTEM_MENU_X, "system menu x"),
     ):
         for va, (old, new) in patches.items():
             _replace_word(elf, writes, va, old, new, label)
@@ -836,6 +852,7 @@ def _ui_patches(elf):
     for name in party:
         chars.extend(_glyphs(name.text, False))
     table, extra = _assign(chars, {})
+    _pack_writes, dungeon_info = dungeon_text.pack_patches(table)
     reverse = _reverse_table(table)
     cells = _record_cells(pending, table, reverse)
     writes = _serialize_cells(cells)
@@ -852,6 +869,7 @@ def _ui_patches(elf):
         "kept_original": kept_original,
         "glyphs": len(extra),
         "names": len(party),
+        "dungeon": dungeon_info,
     }
     return writes, extra, info, table
 
@@ -911,7 +929,10 @@ def dump_ui(out_dir=None):
     (out_dir / "codes.txt").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
     for name, title, rows in collect(load_elf()):
         body = [title]
-        body.extend(f"{label if isinstance(label, str) else f'{label:06X}'}  {render(codes)}" for label, codes in rows)
+        body.extend(
+            f"{_label(label)}  {dungeon_text.source(codes) if name == 'dungeon' else render(codes)}"
+            for label, codes in rows
+        )
         (out_dir / f"{name}.txt").write_text("\n".join(body) + "\n", encoding="utf-8", newline="\n")
     return out_dir
 
@@ -1017,10 +1038,15 @@ def disc_self_test():
         "names": 732, "monsters": 127, "blurbs": 382, "places": 314, "debug": 134,
         "race": 5, "align": 3, "class": 8, "stat": 6, "rank": 7, "gear": 8,
         "inn": 41, "room": 24, "ask": 36, "lift": 6, "bark": 4, "link": 30,
+        "dungeon": 213,
     }
     got = {name: len(rows) for name, rows in sections.items() if name in expect}
     assert got == expect, got
-    text = {name: "\n".join(render(codes) for _label, codes in rows) for name, rows in sections.items()}
+    text = {name: "\n".join(
+        dungeon_text.source(codes) if name == "dungeon" else render(codes)
+        for _label, codes in rows
+    ) for name, rows in sections.items()}
+    assert text["dungeon"].startswith("特に変わったところはない。")
     assert "FILE00(W)" in text["files"] and "酒場" in text["town"]
     assert text["shop"].startswith("いらっしゃい") and "転職必要条件" in text["job"]
     assert "好戦的" in text["create"] and "正義感" in text["create"]
@@ -1131,6 +1157,7 @@ def disc_self_test():
     create_stat_x = {va - FILE_BASE for va in _CREATE_STAT_X}
     point_stat_x = {va - FILE_BASE for va in _POINT_STAT_X}
     guild_menu_x = {va - FILE_BASE for va in _GUILD_MENU_X}
+    system_menu_x = {va - FILE_BASE for va in _SYSTEM_MENU_X}
     if any(writes.get(off) != struct.pack("<I", PAPER_PITCH_NEW) for off in pitch):
         raise AssertionError("paper line pitch was not written")
     for va, (_old, new) in _RACE_X.items():
@@ -1148,6 +1175,9 @@ def disc_self_test():
     for va, (_old, new) in _GUILD_MENU_X.items():
         if writes.get(va - FILE_BASE) != struct.pack("<I", new):
             raise AssertionError(f"guild menu x at {va:#x}")
+    for va, (_old, new) in _SYSTEM_MENU_X.items():
+        if writes.get(va - FILE_BASE) != struct.pack("<I", new):
+            raise AssertionError(f"system menu x at {va:#x}")
     stat_names = (
         list(range(0x43DDC0, 0x43DDF0, 8))
         + list(range(0x589F60, 0x589F84, 6))
@@ -1164,7 +1194,7 @@ def disc_self_test():
     if len(direct) != 8 or direct[-1] != 0xFFFF or 0 in direct[:-1]:
         raise AssertionError("maze return translation is not seven cells plus terminator")
     check_ui_text_report(info)
-    written = sum(expect.values()) - info["kept_original"] - (expect["paper"] - 3)
+    written = sum(expect.values()) - expect["dungeon"] - info["kept_original"] - (expect["paper"] - 3)
     if info["strings"] != written:
         raise AssertionError(info)
     for row, slot in shared:
@@ -1179,7 +1209,8 @@ def disc_self_test():
         raise AssertionError(info)
     ui_font_pages(extra)
     for off, data in writes.items():
-        if off in pitch or off in race_x or off in stat_x or off in create_stat_x or off in point_stat_x or off in guild_menu_x:
+        if (off in pitch or off in race_x or off in stat_x or off in create_stat_x
+                or off in point_stat_x or off in guild_menu_x or off in system_menu_x):
             continue
         codes = struct.unpack(f"<{len(data) // 2}H", data)
         for index, code in enumerate(codes):

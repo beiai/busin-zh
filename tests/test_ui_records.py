@@ -34,6 +34,14 @@ def test_guild_menu_rows_share_one_left_edge(translated_elf):
     assert struct.unpack_from("<I", translated, va - FILE_BASE)[0] == new
 
 
+def test_system_menu_return_rows_share_one_left_edge(translated_elf):
+    source, translated, _reverse = translated_elf
+    rows = ((0x445F7C, 0x0040008C, 0x0010008C), (0x445F80, 0x00400005, 0x00100005))
+    for va, old, new in rows:
+        assert struct.unpack_from("<I", source, va - FILE_BASE)[0] == old
+        assert struct.unpack_from("<I", translated, va - FILE_BASE)[0] == new
+
+
 def test_fixed_party_names_use_the_translated_ui_glyphs(translated_elf):
     from busin.runtime_names import load_names
 

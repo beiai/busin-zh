@@ -70,9 +70,11 @@ def source_codes(text: str) -> list[int]:
         raise ValueError(f"party name {text!r} has no UI glyph") from exc
 
 
-def _read_name(words: list[int]) -> str:
+def _read_name(words: list[int], extra: dict[str, int] | None = None) -> str:
     raw = json.loads((DATA / "font" / "small.json").read_text(encoding="utf-8"))
     chars = {int(code, 16): char for code, char in raw.items()}
+    if extra:
+        chars.update({code: char for char, code in extra.items()})
     out = []
     for word in words:
         if word == 0xFFFF:
@@ -101,7 +103,13 @@ def display_name(memory: bytes, name: RuntimeName) -> str:
     offset = name.display
     if offset < 0 or offset + NAME_CELLS * 2 > len(memory):
         raise ValueError(f"{name.ident} display is outside EE RAM")
-    return _read_name(list(struct.unpack_from(f"<{NAME_CELLS}H", memory, offset)))
+    words = list(struct.unpack_from(f"<{NAME_CELLS}H", memory, offset))
+    try:
+        return _read_name(words)
+    except ValueError:
+        from busin.disasm import load_elf
+        from busin.ui_text import ui_patches_with_table
+        return _read_name(words, ui_patches_with_table(load_elf())[3])
 
 
 def translate_display(value: str, names: list[RuntimeName]) -> str:

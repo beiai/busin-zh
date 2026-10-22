@@ -141,6 +141,14 @@ _GUILD_MENU_X = {
 }
 
 
+# The system menu gives its return rows x+64 while the adjacent option rows use x+16.
+# Keep the row IDs in these words so the table layout is checked with the x.
+_SYSTEM_MENU_X = {
+    0x445F7C: (0x0040008C, 0x0010008C),
+    0x445F80: (0x00400005, 0x00100005),
+}
+
+
 def _layout_line(text, raw, width, slack, table, slash, center=True):
     body = _encode(text, table, slash)
     limit = width + (slack or 0)

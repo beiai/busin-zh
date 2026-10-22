@@ -299,7 +299,7 @@
           "palette": 2,
           "reuse": {
             "name": "page_switch",
-            "x": 32,
+            "x": 36,
             "y": 0
           }
         },
