@@ -30,6 +30,7 @@ RENDERERS.update(
         ("cock_01", "second_allied"): render_menu,
         ("cock_01", "skill"): render_menu,
         ("cock_01", "front_back_change"): render_menu,
+        ("cock_01", "angle_switch"): render_menu,
     }
 )
 FACILITY_TEXT_NAMES = {

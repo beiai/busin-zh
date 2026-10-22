@@ -176,9 +176,9 @@ def test_export_reuses_suffix_regardless_of_order_and_preserves_originals(
     folder = tmp_path / "menu"
     with Image.open(folder / "page_switch.zh.png") as parent:
         assert parent.size == (88, 16)
-        expected = parent.convert("RGBA").crop((36, 0, 84, 16))
+        expected = parent.convert("RGBA").crop((32, 0, 80, 16))
         assert expected.tobytes() == pixels(folder / "switch.zh.png")
-        assert parent.convert("RGB").crop((68, 0, 88, 16)).getbbox() is None
+        assert parent.convert("RGB").crop((64, 0, 88, 16)).getbbox() is None
     image = read_tmx_bytes(blob)
     with Image.open(folder / "switch.png") as original:
         expected = [
@@ -188,7 +188,7 @@ def test_export_reuses_suffix_regardless_of_order_and_preserves_originals(
         ]
         assert list(original.get_flattened_data()) == expected
     child = rect(item, "switch")
-    assert (child["x"], translated_rect(item, child)["x"]) == (100, 100)
+    assert (child["x"], translated_rect(item, child)["x"]) == (100, 96)
 
 
 def test_normal_export_preserves_a_manual_source_and_refreshes_derived_crops(
@@ -199,13 +199,13 @@ def test_normal_export_preserves_a_manual_source_and_refreshes_derived_crops(
     parent_path = tmp_path / "menu" / "page_switch.zh.png"
     with Image.open(parent_path) as bitmap:
         edited = bitmap.convert("RGBA")
-    edited.putpixel((36, 0), (248, 248, 248, 255))
+    edited.putpixel((32, 0), (248, 248, 248, 255))
     edited.save(parent_path)
     export_pictures(read, doc, tmp_path, row)
     assert pixels(parent_path) == edited.tobytes()
     assert (
         pixels(tmp_path / "menu" / "switch.zh.png")
-        == edited.crop((36, 0, 84, 16)).tobytes()
+        == edited.crop((32, 0, 80, 16)).tobytes()
     )
 
 
@@ -217,14 +217,14 @@ def test_force_zh_regenerates_the_programmatic_source_and_derived_crop(
     parent_path = tmp_path / "menu" / "page_switch.zh.png"
     with Image.open(parent_path) as bitmap:
         edited = bitmap.convert("RGBA")
-    edited.putpixel((36, 0), (248, 248, 248, 255))
+    edited.putpixel((32, 0), (248, 248, 248, 255))
     edited.save(parent_path)
     export_pictures(read, doc, tmp_path, row, force_zh=True)
     assert pixels(parent_path) != edited.tobytes()
     with Image.open(parent_path) as bitmap:
         assert (
             pixels(tmp_path / "menu" / "switch.zh.png")
-            == bitmap.convert("RGBA").crop((36, 0, 84, 16)).tobytes()
+            == bitmap.convert("RGBA").crop((32, 0, 80, 16)).tobytes()
         )
 
 
@@ -277,12 +277,12 @@ def test_build_rejects_broken_derived_images(tmp_path, original_menu, case):
 
 
 @pytest.mark.skipif(not BIN.exists(), reason="没有原盘")
-def test_sprite_patch_keeps_the_original_x_and_checks_original_record():
+def test_sprite_patch_moves_only_source_x_and_checks_original_record():
     from busin.disasm import load_elf
 
     doc, elf = manifest(), load_elf()
     offset = MENU_TABLE - FILE_BASE + SWITCH_INDEX * 12
-    assert elf_writes(elf, doc) == {}
+    assert elf_writes(elf, doc) == {offset: struct.pack("<h", 96)}
     assert struct.unpack_from("<6h", elf, offset) == (100, 184, 48, 16, 48, 16)
     for at in (offset, MENU_TABLE - FILE_BASE + 14 * 12):
         changed = bytearray(elf)
@@ -292,6 +292,45 @@ def test_sprite_patch_keeps_the_original_x_and_checks_original_record():
     child = rect(menu(doc), "switch")
     child["name"] = "unverified"
     with pytest.raises(ValueError, match="no verified sprite-table patch"):
+        elf_writes(elf, doc)
+
+
+@pytest.mark.skipif(not BIN.exists(), reason="没有原盘")
+def test_angle_switch_matches_the_direct_battle_draw(tmp_path):
+    from busin.disasm import load_elf
+    from busin.patch.picture_rects import ANGLE_SWITCH_CALL
+
+    doc, elf = manifest(), load_elf()
+    item = next(item for item in doc["part"] if item["name"] == "cock_01")
+    label = rect(item, "angle_switch")
+    before = copy.deepcopy(item)
+    item["rects"] = [label]
+    with BIN.open("rb") as source:
+        read = lambda at, size: read_pack(source, at, size)
+        row = lambda chunk: chunk_row(source, chunk)
+        _, blob = entry_slices(read, item, row)
+        export_pictures(read, {"whole": [], "part": [item]}, tmp_path, row)
+        packed = read_tmx_bytes(_part_span(read, item, tmp_path, row)[1])
+    original = read_tmx_bytes(blob)
+    changed = {
+        i for i, (a, b) in enumerate(zip(original.pixels, packed.pixels)) if a != b
+    }
+    allowed = {y * 256 + x for y in range(72, 88) for x in range(152, 256)}
+    assert changed and changed <= allowed
+    assert original.palettes == packed.palettes
+    assert not {packed.pixels[i] for i in allowed} & {1, 2, 3}
+    assert pixels(tmp_path / "menu/angle_switch.zh.png") == pixels(
+        DATA / "picture/menu/angle_switch.zh.png"
+    )
+    item.update(before)
+    for address in ANGLE_SWITCH_CALL:
+        changed_elf = bytearray(elf)
+        changed_elf[address - FILE_BASE] ^= 1
+        with pytest.raises(ValueError, match="angle_switch draw differs"):
+            elf_writes(changed_elf, doc)
+    label = rect(item, "angle_switch")
+    label["palette"] = 10
+    with pytest.raises(ValueError, match="direct battle draw"):
         elf_writes(elf, doc)
 
 

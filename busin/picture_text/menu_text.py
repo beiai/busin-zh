@@ -61,6 +61,13 @@ PALETTE_10_COLORS = tuple(
         248,
     )
 )
+PALETTE_21_COLORS = (
+    (0, 0, 0, 255), (40, 40, 56, 255),
+    (0, 248, 0, 255), (0, 248, 0, 255),
+    *((value, value, value, 255) for value in
+      (40, 40, 56, 72, 88, 104, 120, 136, 152, 168, 184, 200)),
+)
+PALETTES = {PALETTE: PALETTE_COLORS, 10: PALETTE_10_COLORS, 21: PALETTE_21_COLORS}
 TEMPLATE_DIR = Path(__file__).resolve().parents[2] / "data" / "picture" / "templates"
 
 
@@ -74,8 +81,6 @@ class MenuLabelSpec:
     template: str | None = None
     tracking: int = 0
     source_cell_width: int | None = None
-    suffix_start: int | None = None
-    suffix_shift: int = 0
 
 
 LABELS = {
@@ -102,10 +107,8 @@ LABELS = {
         "スキル", "技能", 56, palette=10, template="menu_title_tab2.png"
     ),
     "front_back_change": MenuLabelSpec("前後列交代", "前后切换", 64, palette=10),
-    # The battle help samples the suffix at its original x=100 too.
-    "page_switch": MenuLabelSpec(
-        "ページ切り替え", "页签切换", 88, suffix_start=32, suffix_shift=4
-    ),
+    "page_switch": MenuLabelSpec("ページ切り替え", "页签切换", 88),
+    "angle_switch": MenuLabelSpec("アングル切り替え", "视角切换", 104, palette=21),
 }
 
 
@@ -138,38 +141,17 @@ def _drop_low_indices(values: list[int]) -> list[int]:
     return [value if value >= MINIMUM_INK_INDEX else 0 for value in values]
 
 
-def _shift_suffix(values: list[int], spec: MenuLabelSpec) -> list[int]:
-    if spec.suffix_start is None:
-        return values
-    width = spec.width
-    shift = spec.suffix_shift
-    if not 0 < shift < width or not 0 <= spec.suffix_start < width - shift:
-        raise ValueError(f"{spec.source} suffix shift")
-    out = [0] * len(values)
-    for y in range(spec.height):
-        row = values[y * width:(y + 1) * width]
-        out[y * width:(y + 1) * width] = (
-            row[:spec.suffix_start]
-            + [0] * shift
-            + row[spec.suffix_start:width - shift]
-        )
-    return out
-
-
 def _render_values(spec: MenuLabelSpec, font) -> list[int]:
     if spec.source_cell_width is None:
-        return _shift_suffix(
-            _drop_low_indices(
-                render_text_alpha(
-                    spec.text,
-                    font,
-                    spec.width,
-                    spec.height,
-                    spec.source,
-                    spec.tracking,
-                )
-            ),
-            spec,
+        return _drop_low_indices(
+            render_text_alpha(
+                spec.text,
+                font,
+                spec.width,
+                spec.height,
+                spec.source,
+                spec.tracking,
+            )
         )
 
     if any(font.getlength(char) != spec.source_cell_width for char in spec.text):
@@ -250,17 +232,13 @@ def render_initial(
             f"{name} must be {spec.width}x{spec.height} with palette {spec.palette}"
         )
 
+    palette_colors = PALETTES[spec.palette]
+    if tuple(image.palettes[spec.palette]) != palette_colors:
+        raise ValueError(f"{name} palette {spec.palette} colors changed")
     font = load_font(FONT)
     if spec.template is not None:
-        if tuple(image.palettes[spec.palette]) != PALETTE_10_COLORS:
-            raise ValueError(f"{name} palette {spec.palette} colors changed")
         bitmap = _template_bitmap(spec, font)
     else:
-        palette_colors = (
-            PALETTE_COLORS if spec.palette == PALETTE else PALETTE_10_COLORS
-        )
-        if tuple(image.palettes[spec.palette]) != palette_colors:
-            raise ValueError(f"{name} palette {spec.palette} colors changed")
         values = _render_values(spec, font)
         bitmap = Image.new("RGBA", (spec.width, spec.height))
         bitmap.putdata([palette_colors[value] for value in values])
@@ -302,11 +280,8 @@ def self_test() -> None:
         "skill",
         "front_back_change",
         "page_switch",
+        "angle_switch",
     }
-    shifted = [0] * (88 * 16)
-    shifted[32] = 15
-    shifted = _shift_suffix(shifted, LABELS["page_switch"])
-    assert shifted[32] == 0 and shifted[36] == 15
     font = load_font(FONT)
     for spec in LABELS.values():
         assert spec.source and spec.text

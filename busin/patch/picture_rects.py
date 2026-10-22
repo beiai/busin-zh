@@ -65,12 +65,25 @@ PATCH_SPECS = {
         "cock_00",
         "switch",
         "page_switch",
-        (36, 0),
+        (32, 0),
         SHARED_MENU_RECORDS["switch"],
         SWITCH_ORIGINAL,
         PAGE_ORIGINAL[:4],
         (0, "0x20700", 4, 256, 256),
     ),
+}
+
+# Battle help draws a complete cock_01 label directly, bypassing the shared
+# page_switch/switch records. Keep its palette and UV arguments verified.
+ANGLE_SWITCH_CALL = {
+    0x233540: 0x8F889628,  # cock_01 handle: $gp - 0x69d8
+    0x233554: 0x0C0FFD3A,  # jal sub_3FF4E8
+    0x233558: 0x24090015,  # palette 21, in the delay slot
+    0x233564: 0x24050098,  # x = 152
+    0x233568: 0x24060048,  # y = 72
+    0x23356C: 0x24070068,  # width = 104
+    0x233570: 0x0C0403E2,  # jal sub_100F88
+    0x233574: 0x24080010,  # height = 16, in the delay slot
 }
 
 
@@ -92,6 +105,20 @@ def _check_original_record(
 
 
 def elf_writes(elf: bytes, manifest: dict) -> dict[int, bytes]:
+    item = _texture(manifest, "cock_01")
+    angle = next((r for r in item["rects"] if r["name"] == "angle_switch"), None)
+    if (
+        (item["chunk"], item["offset"], item["slot"], item["width"], item["height"])
+        != (0, "0x28980", 5, 256, 256)
+        or angle is None
+        or tuple(angle[k] for k in ("x", "y", "width", "height", "palette"))
+        != (152, 72, 104, 16, 21)
+    ):
+        raise ValueError("angle_switch must match the direct battle draw")
+    for address, word in ANGLE_SWITCH_CALL.items():
+        if struct.unpack_from("<I", elf, address - FILE_BASE)[0] != word:
+            raise ValueError(f"angle_switch draw differs at {address:#x}")
+
     for item in manifest["part"]:
         for rect in item["rects"]:
             if "reuse" in rect and (item["name"], rect["name"]) not in PATCH_SPECS:

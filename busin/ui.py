@@ -829,7 +829,7 @@ def self_test() -> None:
         "bar_00", "ali_00", "ali_01", "ali_02", "ali_03", "yado3",
     ]
     assert {rect["palette"] for item in listed["part"] for rect in item["rects"]} == {
-        1, 2, 3, 6, 7, 10, 12, 17,
+        1, 2, 3, 6, 7, 10, 12, 17, 21,
     }
     cock01_rects = {
         rect["name"]: rect for item in listed["part"] if item["name"] == "cock_01"
@@ -938,6 +938,12 @@ def self_test() -> None:
             }
             for name, indexes in indexes_by_texture.items():
                 rects = {rect["name"]: rect for rect in by_name[name]["rects"]}
+                if name == "cock_01":
+                    # The battle hint uses immediate UVs, not a sprite-table row.
+                    angle = rects.pop("angle_switch")
+                    assert tuple(angle[k] for k in ("x", "y", "width", "height", "palette")) == (
+                        152, 72, 104, 16, 21,
+                    )
                 assert set(rects) == set(indexes)
                 for label, record in indexes.items():
                     values = tables[record.table](record.index)

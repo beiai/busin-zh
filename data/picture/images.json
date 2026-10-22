@@ -299,7 +299,7 @@
           "palette": 2,
           "reuse": {
             "name": "page_switch",
-            "x": 36,
+            "x": 32,
             "y": 0
           }
         },
@@ -383,6 +383,16 @@
           "palette": 10,
           "source": "前後列交代",
           "text": "前后切换"
+        },
+        {
+          "name": "angle_switch",
+          "x": 152,
+          "y": 72,
+          "width": 104,
+          "height": 16,
+          "palette": 21,
+          "source": "アングル切り替え",
+          "text": "视角切换"
         }
       ]
     },
