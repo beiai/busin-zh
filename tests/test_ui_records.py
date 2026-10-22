@@ -26,6 +26,51 @@ def _text(elf, reverse, va, cells):
         f"<{cells}H", elf, va - FILE_BASE)).rstrip()
 
 
+def test_single_character_runs_keep_padding_out():
+    from busin.ui_records import text_run
+
+    assert text_run([0x9C])  # The standalone treasure-item particle.
+    assert text_run([0, 0x1BE, 0])
+    assert not text_run([])
+    assert not text_run([0, 0x6E, 0xFFFE])
+
+
+def test_single_character_slots_preserve_record_boundaries(translated_elf):
+    from busin.ui_records import name_slots, place_slots
+
+    source, translated, reverse = translated_elf
+    places = {slot["va"] for slot in place_slots(source)}
+    assert {0x5681A8, 0x569FB8, 0x56A090, 0x56A0F0} <= places
+    for start, end in ((0x569A50, 0x569A68), (0x56A188, 0x56A2B0)):
+        assert not any(start <= va < end for va in places)
+        assert translated[start - FILE_BASE:end - FILE_BASE] == source[
+            start - FILE_BASE:end - FILE_BASE]
+    assert _text(translated, reverse, 0x5681A8, 1) == ""
+    assert translated[0x5681AA - FILE_BASE:0x5681B0 - FILE_BASE] == source[
+        0x5681AA - FILE_BASE:0x5681B0 - FILE_BASE]
+    for va, expected in ((0x4A4108, "攻"), (0x4A410C, "击"),
+                         (0x4A5706, "刀"), (0x4A571A, "?刀"),
+                         (0x4A7EC6, "头盔"), (0x4A7EDA, "?头盔")):
+        assert _text(translated, reverse, va, len(expected)) == expected
+    slots = {slot["id"]: slot for slot in name_slots(source)}
+    assert slots["4A4100"]["room"] == 1
+    assert slots["4A4100.2"]["room"] == 1
+    assert translated[0x4A410A - FILE_BASE:0x4A410C - FILE_BASE] == b"\0\0"
+    assert translated[0x4A410E - FILE_BASE:0x4A4140 - FILE_BASE] == source[
+        0x4A410E - FILE_BASE:0x4A4140 - FILE_BASE]
+
+
+@pytest.mark.parametrize("va", [0x569A50, 0x56A190, 0x56A1F4])
+def test_place_non_text_structure_changes_stop_packing(translated_elf, va):
+    from busin.ui_records import place_slots
+
+    source, _translated, _reverse = translated_elf
+    changed = bytearray(source)
+    changed[va - FILE_BASE] ^= 1
+    with pytest.raises(AssertionError, match="place non-text data"):
+        place_slots(changed)
+
+
 def test_guild_menu_rows_share_one_left_edge(translated_elf):
     source, translated, _reverse = translated_elf
     va = 0x1553A4

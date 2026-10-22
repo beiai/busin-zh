@@ -89,7 +89,7 @@ def read_ffff(elf, va: int, limit: int = 96, extra=()):
 
 def text_run(run) -> bool:
     body = [code for code in run if code not in (0x6E, 0xFFFE, 0)]
-    return len(body) >= 2 and any(code >= 0x70 for code in body)
+    return any(code >= 0x70 for code in body)
 
 
 def strip_pad(run):
@@ -184,13 +184,19 @@ def name_slots(elf):
         )
     slots = []
     for va in range(0x4A4000, NAME_END, 0x40):
-        for index, (start, stripped, raw, term) in enumerate(kept_spans(elf, va)):
+        spans = kept_spans(elf, va)
+        for index, (start, stripped, raw, term) in enumerate(spans):
             ident = f"{va:06X}" if index == 0 else f"{va:06X}.{index + 1}"
             source_room = (term - start) // 2
             if source_room != len(raw):
                 raise AssertionError(f"{ident} room")
             available = (va + 64 - start) // 2
+            if index + 1 < len(spans):
+                # Short runs can be separated by one zero cell inside a name record.
+                available = min(available, (spans[index + 1][0] - start) // 2 - 1)
             width = len(stripped)
+            if len(spans) > 1 and all(len(span[1]) == 1 for span in spans):
+                available = 1
             slack = min(NAME_DISPLAY_CELLS, available) - width
             if slack < 0:
                 slack = 0
@@ -334,16 +340,25 @@ def quest_detail_targets(elf):
 
 
 def place_slots(elf):
+    # These mixed-data ranges contain floats, pointers and rewards, not glyphs.
+    expect_words(elf, (
+        (0x569A50, 0x40000000), (0x569A58, 0x40800000),
+        (0x569A60, 0x3F800000),
+        (0x56A188, 0), (0x56A190, 0x569F78),
+        (0x56A1F0, 0), (0x56A1F4, 5), (0x56A2A8, 40000),
+    ), "place non-text data")
     slots = []
     for start, end in (
         (0x526CF0, 0x527400),
         (0x529C20, 0x52A000),
         (0x567F90, 0x5682D0),
-        (0x569940, PLACE_POINTER_RANGES[0][0]),
+        (0x569940, 0x569A50),
+        (0x569A68, PLACE_POINTER_RANGES[0][0]),
     ):
         slots.extend(packed_slots(elf, start, end))
     slots.extend(quest_title_slots(elf))
-    slots.extend(packed_slots(elf, PLACE_POINTER_RANGES[1][1], 0x56AF00))
+    slots.extend(packed_slots(elf, PLACE_POINTER_RANGES[1][1], 0x56A188))
+    slots.extend(packed_slots(elf, QUEST_DETAIL_START, 0x56AF00))
     by_va = {item["va"]: item for item in slots}
     for va in quest_detail_targets(elf):
         if va not in by_va:

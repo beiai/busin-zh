@@ -553,7 +553,9 @@ def manuscript_lines(name, rows):
         else:
             budget = len(codes)
         if name == "names":
-            extra = max(0, _NAME_DISPLAY_CELLS - budget)
+            parts = [run for key, run in rows if key.split(".")[0] == label.split(".")[0]]
+            split_letters = len(parts) > 1 and all(len(run) == 1 for run in parts)
+            extra = 0 if split_letters else max(0, _NAME_DISPLAY_CELLS - budget)
         else:
             extra = None if slack is None else slack.get(_address(label))
         source = _row_text(codes) if name in _LINE else unwrap(codes)
@@ -1035,7 +1037,7 @@ def disc_self_test():
     expect = {
         "menu": 170, "controller": 4, "save": 32, "files": 40, "paper": 18, "job": 3,
         "create": 47, "personality": 15, "quest": 3, "town": 7, "shop": 158,
-        "names": 732, "monsters": 127, "blurbs": 382, "places": 314, "debug": 134,
+        "names": 753, "monsters": 127, "blurbs": 382, "places": 318, "debug": 134,
         "race": 5, "align": 3, "class": 8, "stat": 6, "rank": 7, "gear": 8,
         "inn": 41, "room": 24, "ask": 36, "lift": 6, "bark": 4, "link": 30,
         "dungeon": 213,
