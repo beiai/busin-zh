@@ -11,8 +11,8 @@ def test_plan_reports_translation_and_font_budgets():
     assert report["messages"] == {"total": 25522, "translated": 7586, "pending": 17936}
     assert len(report["chunks"]) == 38
     assert report["interface"]["dungeon"] == {
-        "total": 213, "translated": 0, "pending": 213,
-        "original_bytes": 6784, "bytes": 6784, "capacity": 8192, "free_bytes": 1408,
+        "total": 182, "translated": 182, "pending": 0,
+        "original_bytes": 6784, "bytes": 5510, "capacity": 8192, "free_bytes": 2682,
     }
     assert report["font"]["reserved_slots"] == [16, 17]
     packed = next(item for item in report["chunks"] if item["chunk"] == 282)

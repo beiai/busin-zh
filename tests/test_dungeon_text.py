@@ -23,23 +23,36 @@ def test_source_roundtrip_and_collection(resource, tmp_path):
     rows, used, raw, doc = resource
     assert len(rows) == 213 and used == 6784
     assert sum(codes == [0xFFFE] for _, codes, _ in rows) == 31
-    assert all(row["text"] is None for row in doc)
-    assert doc[0] == {"id": "000", "source": "特に変わったところはない。", "text": None}
+    visible = [(ident, codes) for ident, codes, _ in rows if codes != [0xFFFE]]
+    assert len(doc) == 182 and all(row["source"] for row in doc)
+    assert doc[0]["source"] == "特に変わったところはない。"
     assert doc[9]["source"] == "ハコが置いてある。/中には何もない。"
-    assert [row["id"] for row in doc] == [f"{i:03d}" for i in range(213)]
-    assert dungeon.encode(rows, dungeon.translations(rows, doc), {}) == (raw, used)
-    spans, info = dungeon.pack_patches({})
+    assert [row["id"] for row in doc] == [ident for ident, _ in visible]
+    untranslated = [dict(row, text=None) for row in doc]
+    assert dungeon.encode(rows, dungeon.translations(rows, untranslated), {}) == (raw, used)
+    spans, info = dungeon.pack_patches({}, untranslated)
     assert spans == []
-    assert info == {"total": 213, "translated": 0, "pending": 213,
+    assert info == {"total": 182, "translated": 0, "pending": 182,
                     "original_bytes": 6784, "bytes": 6784, "capacity": 8192, "free_bytes": 1408}
     collected = next(r for name, _, r in collect(load_elf()) if name == "dungeon")
-    assert collected == [(ident, codes) for ident, codes, _ in rows]
+    assert collected == visible
     dump_ui(tmp_path / "ui")
     dump_manuscript(tmp_path / "src")
     assert "ハコが置いてある。/中には何もない。" in (tmp_path / "ui/dungeon.txt").read_text(encoding="utf-8")
     manuscript = (tmp_path / "src/dungeon.txt").read_text(encoding="utf-8")
     assert "000  特に変わったところはない。  width=13x1" in manuscript
     assert "{d}" not in manuscript
+    for ident, codes, _ in rows:
+        if codes == [0xFFFE]:
+            assert not any(line.startswith(f"{ident}  ") for line in manuscript.splitlines())
+
+
+def test_missing_extra_or_reordered_entries_fail(resource):
+    rows, _, _, doc = resource
+    for invalid in (doc[:-1], [*doc, {"id": "142", "source": "", "text": None}],
+                    [doc[1], doc[0], *doc[2:]]):
+        with pytest.raises(ValueError, match="dungeon"):
+            dungeon.translations(rows, invalid)
 
 
 def test_translation_uses_shared_glyphs_and_preserves_actions(resource, monkeypatch):
@@ -49,6 +62,7 @@ def test_translation_uses_shared_glyphs_and_preserves_actions(resource, monkeypa
     from busin.ui_text import ui_patches_with_table
 
     rows, _, raw, doc = resource
+    doc = [dict(row, text=None) for row in doc]
     doc[9]["text"] = "箱子。/里面没有东西。"
     read_text = type(dungeon.PATH).read_text
 
@@ -155,7 +169,7 @@ def test_disc_position_and_loader_guards(resource, monkeypatch):
         dungeon.read_source()
 
 
-def test_build_report_and_untranslated_image(resource):
+def test_build_report_and_translated_image(resource):
     import hashlib
 
     from busin.disc import read_pack
@@ -167,7 +181,12 @@ def test_build_report_and_untranslated_image(resource):
     report = json.loads(report_path.read_text(encoding="utf-8"))
     assert report["git"] and report["image_sha256"]
     assert report["inputs"]["data/interface/dungeon.json"] == hashlib.sha256(dungeon.PATH.read_bytes()).hexdigest()
-    assert report["ui_text"]["dungeon"]["pending"] == 213
-    assert report["ui_text"]["dungeon"]["free_bytes"] == 1408
+    from busin.disasm import load_elf
+    from busin.ui_text import ui_patches_with_table
+
+    _, _, _, table = ui_patches_with_table(load_elf())
+    spans, info = dungeon.pack_patches(table)
+    assert report["ui_text"]["dungeon"] == info
+    assert info["total"] == info["translated"] == 182 and info["pending"] == 0
     with (BUILD / "image/busin-zh.bin").open("rb") as handle:
-        assert read_pack(handle, dungeon.START * 2048, dungeon.CAPACITY) == resource[2]
+        assert read_pack(handle, dungeon.START * 2048, dungeon.CAPACITY) == spans[0][1]

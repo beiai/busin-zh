@@ -436,6 +436,7 @@ def collect(elf):
         ("link", "连携说明", _ability_rows(elf)),
         ("dungeon", "迷宫调查提示", [
             (ident, codes) for ident, codes, _action in dungeon_text.read_source(elf)[0]
+            if codes != [0xFFFE]
         ]),
     )
 
@@ -1040,7 +1041,7 @@ def disc_self_test():
         "names": 753, "monsters": 127, "blurbs": 382, "places": 318, "debug": 134,
         "race": 5, "align": 3, "class": 8, "stat": 6, "rank": 7, "gear": 8,
         "inn": 41, "room": 24, "ask": 36, "lift": 6, "bark": 4, "link": 30,
-        "dungeon": 213,
+        "dungeon": 182,
     }
     got = {name: len(rows) for name, rows in sections.items() if name in expect}
     assert got == expect, got

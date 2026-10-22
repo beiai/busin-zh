@@ -710,21 +710,6 @@
     "text": "这里放着一个木箱。"
   },
   {
-    "id": "142",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "143",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "144",
-    "source": "",
-    "text": null
-  },
-  {
     "id": "145",
     "source": "ルシーダの店・楽器修理",
     "text": "露西达的店・乐器修理"
@@ -800,26 +785,6 @@
     "text": "这里放着一个木箱。"
   },
   {
-    "id": "160",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "161",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "162",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "163",
-    "source": "",
-    "text": null
-  },
-  {
     "id": "164",
     "source": "袋が落ちている。",
     "text": "地上有个袋子。"
@@ -830,64 +795,14 @@
     "text": "地上有个袋子。"
   },
   {
-    "id": "166",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "167",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "168",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "169",
-    "source": "",
-    "text": null
-  },
-  {
     "id": "170",
     "source": "大きな岩が道をふさいでいる。",
     "text": "一块巨岩挡住了道路。"
   },
   {
-    "id": "171",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "172",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "173",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "174",
-    "source": "",
-    "text": null
-  },
-  {
     "id": "175",
     "source": "特に変わったところはない。",
     "text": "这里没有什么特别之处。"
-  },
-  {
-    "id": "176",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "177",
-    "source": "",
-    "text": null
   },
   {
     "id": "178",
@@ -898,71 +813,6 @@
     "id": "179",
     "source": "木箱が置いてある。",
     "text": "这里放着一个箱子。"
-  },
-  {
-    "id": "180",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "181",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "182",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "183",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "184",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "185",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "186",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "187",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "188",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "189",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "190",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "191",
-    "source": "",
-    "text": null
-  },
-  {
-    "id": "192",
-    "source": "",
-    "text": null
   },
   {
     "id": "193",
@@ -1033,11 +883,6 @@
     "id": "206",
     "source": "水の中に階段があるようだ。",
     "text": "水中似乎有楼梯。"
-  },
-  {
-    "id": "207",
-    "source": "",
-    "text": null
   },
   {
     "id": "208",

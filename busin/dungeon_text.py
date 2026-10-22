@@ -87,10 +87,16 @@ def dimensions(codes):
 def translations(rows, doc=None):
     if doc is None:
         doc = json.loads(PATH.read_text(encoding="utf-8"))
-    if not isinstance(doc, list) or len(doc) != len(rows):
+    if not isinstance(doc, list) or len(doc) != sum(codes != [0xFFFE] for _, codes, *_ in rows):
         raise ValueError("dungeon translations do not match the disc")
     texts = []
-    for row, (ident, codes, *_action) in zip(doc, rows):
+    entries = iter(doc)
+    for ident, codes, *_action in rows:
+        # Action-only events stay in the binary, not in the translation sheet.
+        if codes == [0xFFFE]:
+            texts.append(None)
+            continue
+        row = next(entries)
         if not isinstance(row, dict) or row.get("id") != ident or row.get("source") != source(codes):
             raise ValueError(f"dungeon {ident} does not match the disc")
         if "text" not in row or row.get("keep_original") or row.get("type") or row.get("width"):
@@ -142,7 +148,8 @@ def pack_patches(table, doc=None):
     texts = translations(rows, doc)
     data, used = encode(rows, texts, table)
     translated = sum(text is not None for text in texts)
-    info = {"total": len(rows), "translated": translated, "pending": len(rows) - translated,
+    total = sum(codes != [0xFFFE] for _, codes, _ in rows)
+    info = {"total": total, "translated": translated, "pending": total - translated,
             "original_bytes": original_used, "bytes": used, "capacity": CAPACITY,
             "free_bytes": CAPACITY - used}
     return ([(START * 2048, data)] if data != raw else []), info
